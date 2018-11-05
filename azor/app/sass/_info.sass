@@ -1,0 +1,193 @@
+@import "vars"
+
+/*-------------Info page-----------------*/
+.page--info
+	padding-bottom: 48px
+	.container
+		padding-right: 0
+
+.page__title--info
+	color: #0034ff
+	text-transform: uppercase
+
+.info-wrap
+	padding-left: 50px
+	+clearfix
+
+.info-nav
+	float: left
+	width: 344px
+	margin-right: 9px
+	&__title
+		margin-bottom: 12px
+		font-size: 20px
+		font-weight: 800
+
+.info-menu
+	padding: 14px 0
+	border-radius: 5px
+	background: #fff
+	> li
+		position: relative
+		> a
+			position: relative
+			display: block
+			padding: 15px 0 15px 47px
+			font-size: 25px
+			text-transform: uppercase
+			span
+				text-transform: none
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				right: 16px
+				width: 15px
+				height: 62px
+				z-index: 10
+				opacity: 0
+				background: #ededed
+		&:hover
+			> a
+				color: #0034ff
+				text-shadow: 0 0 1px #0034ff
+				box-shadow: 0 1px 9px rgba(0, 0, 0, 0.61)
+				background: #ededed
+				&:after
+					opacity: 1
+					transition: opacity .30s
+
+.info-dropmenu
+	display: none
+	position: absolute
+	top: -58px
+	right: -370px
+	width: 390px
+	padding: 26px 0
+	z-index: 9
+	box-shadow: 0 1px 9px rgba(0, 0, 0, 0.61)
+	background: #ededed
+	li
+		margin-bottom: 10px
+		padding: 0 25px
+		&:last-child
+			margin-bottom: 0
+	&__link
+		position: relative
+		display: block
+		padding: 9px 0 9px 85px
+		font-size: 20px
+		color: #fff
+		text-transform: uppercase
+		&:hover
+			&:before
+				left: 35px
+				transition: left .15s
+		&:before
+			content: ''
+			position: absolute
+			top: 9px
+			left: 45px
+		&--c1
+			background: #ff7e00
+			&:before
+				@include sprite($article)
+		&--c2
+			background: #8105c8
+			&:before
+				@include sprite($video)
+		&--c3
+			background: #45c300
+			&:before
+				@include sprite($foto)
+		&--c4
+			background: #1053af
+			&:before
+				@include sprite($present)
+
+.info-adv
+	float: left
+	width: 68.8%
+	&--mob
+		display: none
+	&__title
+		margin-bottom: 12px
+		font-size: 20px
+		font-weight: 800
+		span
+			font-weight: normal
+
+.info-links
+	height: 400px
+	padding: 57px 56px 25px
+	border-radius: 5px
+	background: #fff
+
+.info-list
+	float: left
+	width: 46%
+	li
+		margin-bottom: 32px
+		&:last-child
+			margin-bottom: 0
+		a
+			position: relative
+			display: block
+			padding-left: 44px
+			font-size: 20px
+			color: #0034ff
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				@include sprite($pdf)
+
+.info-main
+	display: none
+	padding-top: 40px
+	clear: both
+	&__title
+		margin-bottom: 15px
+		font-size: 20px
+		font-weight: 800
+
+.info-article
+	margin-bottom: 40px
+	padding-left: 35px
+	overflow: hidden
+	clear: both
+	&__title
+		margin-bottom: 10px
+		font-size: 20px
+		span
+			font-weight: 700
+	&__text
+		height: 200px
+		font-size: 20px
+		line-height: 25px
+		overflow: hidden
+		&.open
+			height: auto
+		p
+			margin-bottom: 22px
+			&:last-of-type
+				margin-bottom: 0
+	&__link
+		float: left
+		margin-top: 24px
+		font-size: 15px
+		color: #0034ff
+		&:hover
+			text-decoration: underline
+		span + span
+			display: none
+		&.active
+			> span
+				display: none
+			span + span
+				display: block
+/*----------------end---------------------*/

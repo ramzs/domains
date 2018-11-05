@@ -1,0 +1,354 @@
+@import "vars"
+
+/*------------Catalog page-----------------*/
+.filter
+	margin-top: 18px
+	padding: 21px 40px 14px
+	background: #f6f9fb
+	border: 3px solid #ff7600
+	&__title
+		font: 500 16px "OpenSans"
+		text-align: center
+
+.slider-wrap
+	position: relative
+	top: -12px
+	width: 100%
+	max-width: 100%
+	label
+		display: inline-block
+		font: 14px "OpenSans"
+	&__to
+		float: right
+		margin-top: 19px
+	input
+		display: block
+		width: 82px
+		height: 31px
+		margin-top: 10px
+		text-align: center
+		border: 1px solid #cdcfcf
+		box-shadow: inset 0 1px 3.4px 0.6px rgba(0, 0, 0, 0.12)
+
+/*--------jqueryUi slider--------*/
+/* Ширина слайдера*/
+#slider-price
+	width: 96%
+	max-width: 100%
+	margin: 30px auto 0
+
+/* Контейнер слайдера*/
+.ui-slider
+	position: relative
+	.ui-slider-handle
+		position: absolute
+		@include sprite($change)
+		z-index: 2
+		cursor: pointer
+		outline: none
+	.ui-slider-range
+		position: absolute
+		z-index: 1
+		font-size: .7em
+		display: block
+		border: 0
+		overflow: hidden
+
+/* Ползунок*/
+
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок)*/
+.ui-slider-horizontal
+	height: 5px/* задаем высоту согласно дизайна*/
+	.ui-slider-handle /* позиционируем ползунки*/
+		top: -15px
+		margin-left: -16px
+	.ui-slider-range
+		top: 0
+		height: 100%
+	.ui-slider-range-min
+		left: 0
+	.ui-slider-range-max
+		right: 0
+
+/* оформление полосы по которой ходит ползунок*/
+.ui-widget-content
+	box-shadow: 0 1px 0 0 rgba(255,255,255,.35), inset 0 1px 1px 0 rgba(0,0,0,.15)
+    border-radius: 3px
+	background: #bbd8e0
+
+/* оформление активного участка (между двумя ползунками)*/
+.ui-widget-header
+	background: #ff7600
+
+/* скругление для полосы слайдера*/
+.ui-corner-all
+	-moz-border-radius: 4px
+	-webkit-border-radius: 4px
+	border-radius: 4px
+/*------------end----------------*/
+
+.filter-list
+	margin-top: 48px
+
+.filter-container
+	display: inline-block
+	width: 195px
+	margin-bottom: 6px
+	padding-right: 20px
+	vertical-align: top
+	&__title
+		display: inline-block
+		font: 12px "OpenSans"
+		cursor: pointer
+		border-bottom: 1px dashed $main-color
+		&:hover, &.active
+			border-bottom: none
+	&__block
+		display: none
+		margin-top: 10px
+		label
+			display: block
+			margin-bottom: 5px
+		input
+			display: inline-block
+			vertical-align: middle
+			margin-right: 5px
+			outline: none
+
+.filter-btn
+	margin-top: 33px
+	text-align: center
+	a
+		display: inline-block
+		height: 34px
+		margin: 0 8px
+		font: 700 14px "OpenSans"
+		line-height: 32px
+		text-align: center
+		background-color: #f6f9fb
+		background-image: linear-gradient(to top, #e5f0f8 0%, #f5f9fe 100%)
+		border: 1px solid #b6b6b6
+		border-radius: 4px
+		&:hover
+			background-image: linear-gradient(to top, #f5f9fe 0%, #e5f0f8 100%)
+	&__look
+		width: 92px
+	&__reset
+		width: 92px
+
+.catalog
+	margin-top: 42px
+	padding-bottom: 27px
+	border-bottom: 1px solid #8d8d8d
+	&__title
+		margin-bottom: 14px
+		padding-bottom: 8px
+		font: 700 24px "OpenSans"
+		border-bottom: 1px solid #8d8d8d
+	&-descr
+		position: relative
+		height: 138px
+		margin-bottom: 90px
+		&__pict
+			position: relative
+			float: left
+			width: 153px
+			height: 138px
+			text-align: center
+			background: #dde5ef
+			span
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+				font: 700 30px/26px "OpenSans"
+		&__text
+			display: table
+			padding-left: 28px
+			font: 14px "OpenSans"
+		&__link
+			position: absolute
+			display: block
+			bottom: 0
+			right: 0
+			font: 500 14px "OpenSans"
+			text-decoration: underline
+	&-item
+		position: relative
+		float: left
+		width: 272px
+		height: 308px
+		z-index: 5
+		overflow: hidden
+		&:hover
+			overflow: visible
+			z-index: 10
+			.catalog-item__wrap
+				border: 1px solid #d0d2d2
+				box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22)
+				background: #fff
+		&__wrap
+			padding: 30px 35px 17px
+			border: 1px solid transparent
+			transition: all .15s ease
+		&__type
+			display: none
+		&__pict
+			margin-bottom: 19px
+			@include justify
+			height: 197px
+			overflow: hidden
+			img
+				display: inline-block
+				width: 47.5%
+				height: 100%
+		&__title
+			margin-bottom: 5px
+			font: 14px "OpenSans"
+		&__price
+			margin-bottom: 20px
+			font: 700 14px "OpenSans"
+			color: #0e0d0d
+			&--mob
+				display: none
+		.jq-number
+			display: block
+			width: 110px
+			height: 26px
+			margin: 0 auto
+			padding-right: 0
+			text-align: center
+			&__field
+				width: 50px
+				height: 26px
+				margin: 0 auto
+				border: none
+				border-radius: 0
+				box-shadow: none
+				input
+					padding: 0
+					font: 700 20px "OpenSans"
+					color: #000
+					text-align: center
+			&__spin
+				width: 26px
+				height: 26px
+				background-image: linear-gradient(to top, #f3f3f3 0%, #fafafa 100%)
+				border: 1px solid #d7e3e4
+				border-radius: 5px
+				box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03)
+				&.minus
+					left: 0
+					&:after
+						top: 10px
+						left: 9px
+						width: 6px
+						height: 3px
+						border: none
+						background: #000
+				&.plus
+					&:after
+						top: 10px
+						left: 6px
+						width: 11px
+						height: 3px
+						border: none
+						background: #000
+					&:before
+						content: ' '
+						position: absolute
+						top: 6px
+						left: 10px
+						height: 11px
+						width: 3px
+						background: #000
+		&__btn
+			display: block
+			width: 137px
+			height: 33px
+			margin: 20px auto 16px
+			font: 700 16px "OpenSans"
+			color: #ff8e13
+			text-align: center
+			line-height: 29px
+			border: 2px solid #ff8e13
+			border-radius: 5px
+			&:hover
+				color: #fff
+				background: #ff8e13
+		&__info
+			font: 12px/18px "OpenSans"
+			color: $sec-color
+			span
+				font-weight: 700
+				color: #004545
+
+.btn--catalog
+	display: none
+
+.catalog-info__btn
+	display: none
+
+.pagination
+	margin-top: 40px
+	&__title
+		display: inline-block
+		margin-right: 17px
+		font: 14px "OpenSans"
+	&-list
+		display: inline-block
+		li
+			display: inline-block
+			margin-right: 6px
+			&.active, &:hover
+				a
+					background-color: #dbecf4
+					border-radius: 4px
+					box-shadow: inset 0 2px 3.9px 0.1px rgba(0, 0, 0, 0.28)
+			a
+				display: block
+				width: 26px
+				height: 25px
+				font: 14px "OpenSans"
+				text-align: center
+				line-height: 25px
+	&__next
+		position: relative
+		top: -2px
+		left: 0
+		display: inline-block
+		vertical-align: middle
+		@include sprite($arrow-pag)
+	&__all
+		display: inline-block
+		margin-left: 11px
+		font: 14px "OpenSans"
+	&-total
+		float: right
+		margin: 5px 30px 0 0
+
+.advantage
+	margin-top: 39px
+	&__title
+		font: 700 18px "OpenSans"
+	&-list
+		margin: 13px 0 55px
+		padding-left: 20px
+		li
+			position: relative
+			padding-left: 15px
+			font: 12px "OpenSans"
+			line-height: 18px
+			&:before
+				content: ' '
+				position: absolute
+				top: 5px
+				left: 0
+				width: 8px
+				height: 8px
+				border-radius: 50%
+				background: $main-color
+	p
+		font-size: 12px
+		line-height: 22px
+/*----------------end---------------------*/

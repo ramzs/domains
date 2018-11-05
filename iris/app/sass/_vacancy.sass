@@ -1,0 +1,79 @@
+@import "vars"
+
+/*------------------Vacancy page---------------*/
+.vacancy-page
+	padding: 43px 0 102px
+
+.vacancy-item
+	display: inline-block
+	margin-bottom: 75px
+	&:nth-child(even)
+		float: right
+	&__title
+		margin-bottom: 16px
+		font-size: 27px
+		font-weight: 600
+		color: #000
+
+.vacancy-wrap
+	margin-bottom: 21px
+	padding: 27px 28px 11px
+	background: #e8e8e8
+
+.vacancy-block
+	margin-bottom: 18px
+	&__title
+		font-size: 16px
+		font-weight: 600
+		color: #000
+	&__descr
+		font-size: 16px
+		color: #000
+
+.upload-wrap
+	display: inline-block
+	width: 287px
+	margin-right: 24px
+	vertical-align: middle
+	text-align: center
+	.upload-in
+		display: block
+		width: 100%
+		font-size: 14px
+		text-align: center
+		border: none
+		background: #fff
+
+.btn--upload
+	display: inline-block
+	width: 100%
+	overflow: hidden
+	background: #888
+	.upload-in
+		display: block
+		width: 100%
+		font-size: 14px
+		text-align: center
+		border: none
+		background: #fff
+	&:hover
+		background: #999
+	input[type="file"]
+		display: none
+	label
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		cursor: pointer
+
+.btn--send
+	display: inline-block
+	width: 204px
+	margin-top: 16px
+	vertical-align: middle
+	border: none
+	cursor: pointer
+/*----------------------end--------------------*/

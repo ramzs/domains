@@ -1,0 +1,117 @@
+@import "vars.sass"
+/*--------------Contact page---------------*/
+.content__work
+	&.content__work-contact
+		&:before
+			display: none
+
+.section__title
+	&.section__title-contact
+		&:after
+			background: url(../img/contact-title-line.png) 0 0 no-repeat
+			background-size: 100%
+
+.contact__table
+	display: table
+	width: 100%
+	margin-top: 74px
+	border-collapse: collapse
+
+.contact__row
+	display: table-row
+	&.contact__row-head
+		border-bottom: 2px solid $color-3
+
+.contact__cell
+	display: table-cell
+	width: 33.33%
+	padding-left: 40px
+	border-left: 2px solid $color-3
+	&.contact__cell-head
+		padding-bottom: 32px
+		font: 500 19px "helvetica"
+		span
+			display: none
+			font-size: 36px
+			color: #fff
+	&.contact__cell-body
+		padding-top: 32px
+		font: 500 16px "helvetica"
+		color: $color-1
+
+.contact__map
+	position: relative
+	height: 490px
+	margin-top: 20px
+
+.map__wrap
+	position: absolute
+	top: 0
+	left: -34.9%
+	width: 3000px
+	height: 490px
+	z-index: 1
+	overflow: hidden
+	border-radius: 0 0 0 26px
+	&:before
+		content: ' '
+		position: absolute
+		display: block
+		top: 0
+		left: 0
+		width: 690px
+		height: 50px
+		z-index: 2
+		background: #fff
+		border-radius: 0 0 50px 0
+	&:after
+		content: ' '
+		position: absolute
+		display: block
+		top: 0
+		left: 690px
+		width: 2500px
+		height: 50px
+		z-index: 2
+		background: #fff
+		border-radius: 0 0 0 50px
+	.triang__map
+		position: absolute
+		top: 26px
+		left: -24px
+		width: 50px
+		height: 50px
+		z-index: 2
+		background: url(../img/triangle-map.png) 0 0 no-repeat
+
+.contact__about
+	margin-top: 40px
+	.section__title
+		margin: 0 0 85px 45px
+
+.contact__pict
+	float: left
+	width: 335px
+	margin-right: 15px
+	overflow: hidden
+	&.contact__pict-1
+		margin-left: -30px
+		border-radius: 0 50px 50px
+	&.contact__pict-2
+		border-radius: 50px
+	&.contact__pict-3
+		margin-right: 0
+		border-radius: 50px 0 50px 50px
+	img
+		display: block
+		width: 100%
+
+.section__seo
+	&.section__seo-contact
+		padding-top: 107px
+		.section__title
+			h2
+				color: $main-color
+				&:after
+					background: $color-9
+/*-----------------end------------------*/

@@ -1,0 +1,110 @@
+@import "vars.sass"
+
+/*------------Textpage---------------------*/
+.header--inner
+	height: auto
+	background: none
+	.header__top
+		.container
+			position: relative
+			&:before,
+			&:after
+				content: " "
+				display: table
+			&:after
+				clear: both
+
+.btn__link--in
+	float: none
+	position: absolute
+	bottom: -7px
+	right: 15px
+	margin: 0
+
+.content
+	margin-top: -98px
+	padding: 238px 0 45px
+	background: url(../img/content.jpg) center no-repeat
+	background-size: cover
+	&__title
+		display: block
+		margin: 0 0 18px
+		font-size: 42px
+		font-weight: 800
+	p
+		margin: 0 0 26px
+		font-size: 30px
+		font-weight: 800
+	&__subtitle
+		display: block
+		margin: 0 0 17px
+		font-size: 30px
+		font-weight: 800
+	&__list
+		margin-bottom: 60px
+		li
+			position: relative
+			margin-bottom: 30px
+			font-size: 18px
+			font-weight: 300
+			line-height: 30px
+		&--var2
+			li
+				padding-left: 18px
+				&:before
+					content: ''
+					position: absolute
+					top: 11px
+					left: 0
+					width: 8px
+					height: 8px
+					border-radius: 50%
+					background: #6bb4ec
+
+.price__block
+	width: 706px
+	margin: 49px 0 79px
+	padding: 47px 40px 46px 52px
+	background: #fff
+	&-table
+		display: table
+		width: 100%
+	&-row
+		display: table-row
+	&-cell
+		display: table-cell
+		padding: 0 20px 25px 0
+		font-size: 18px
+		color: #000
+		&--head
+			font-size: 30px
+			font-weight: 800
+			color: #000
+			&.price__block-cell--count
+				padding-right: 0
+		&--count
+			text-align: right
+	&-total
+		font-size: 30px
+		font-weight: 800
+		color: #521d71
+	&--var2
+		.price__block-cell
+			padding-right: 50px
+			&--head
+				font-size: 20px
+			&--count
+				text-align: left
+				padding-left: 32px
+
+.footer--inner
+	height: auto
+	margin-top: 0
+	padding-bottom: 75px
+	background: url(../img/footer-in-bg.jpg) top center no-repeat
+	background-size: cover
+	&__block
+		margin-top: 64px
+	&__contact
+		margin-top: 0
+/*---------------end------------------------*/

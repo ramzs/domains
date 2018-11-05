@@ -1,0 +1,132 @@
+// SASS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home
+//   width: $icon-home-width
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites
+$arrow-down-name: 'arrow-down'
+$arrow-down-x: 59px
+$arrow-down-y: 35px
+$arrow-down-offset-x: -59px
+$arrow-down-offset-y: -35px
+$arrow-down-width: 17px
+$arrow-down-height: 10px
+$arrow-down-total-width: 82px
+$arrow-down-total-height: 72px
+$arrow-down-image: '../img/sprite.png'
+$arrow-down: (59px, 35px, -59px, -35px, 17px, 10px, 82px, 72px, '../img/sprite.png', 'arrow-down', )
+$arrow-right-name: 'arrow-right'
+$arrow-right-x: 29px
+$arrow-right-y: 30px
+$arrow-right-offset-x: -29px
+$arrow-right-offset-y: -30px
+$arrow-right-width: 10px
+$arrow-right-height: 17px
+$arrow-right-total-width: 82px
+$arrow-right-total-height: 72px
+$arrow-right-image: '../img/sprite.png'
+$arrow-right: (29px, 30px, -29px, -30px, 10px, 17px, 82px, 72px, '../img/sprite.png', 'arrow-right', )
+$arrow-work-name: 'arrow-work'
+$arrow-work-x: 0px
+$arrow-work-y: 0px
+$arrow-work-offset-x: 0px
+$arrow-work-offset-y: 0px
+$arrow-work-width: 29px
+$arrow-work-height: 48px
+$arrow-work-total-width: 82px
+$arrow-work-total-height: 72px
+$arrow-work-image: '../img/sprite.png'
+$arrow-work: (0px, 0px, 0px, 0px, 29px, 48px, 82px, 72px, '../img/sprite.png', 'arrow-work', )
+$location-name: 'location'
+$location-x: 59px
+$location-y: 0px
+$location-offset-x: -59px
+$location-offset-y: 0px
+$location-width: 23px
+$location-height: 35px
+$location-total-width: 82px
+$location-total-height: 72px
+$location-image: '../img/sprite.png'
+$location: (59px, 0px, -59px, 0px, 23px, 35px, 82px, 72px, '../img/sprite.png', 'location', )
+$mail-name: 'mail'
+$mail-x: 0px
+$mail-y: 48px
+$mail-offset-x: 0px
+$mail-offset-y: -48px
+$mail-width: 30px
+$mail-height: 24px
+$mail-total-width: 82px
+$mail-total-height: 72px
+$mail-image: '../img/sprite.png'
+$mail: (0px, 48px, 0px, -48px, 30px, 24px, 82px, 72px, '../img/sprite.png', 'mail', )
+$phone-name: 'phone'
+$phone-x: 29px
+$phone-y: 0px
+$phone-offset-x: -29px
+$phone-offset-y: 0px
+$phone-width: 30px
+$phone-height: 30px
+$phone-total-width: 82px
+$phone-total-height: 72px
+$phone-image: '../img/sprite.png'
+$phone: (29px, 0px, -29px, 0px, 30px, 30px, 82px, 72px, '../img/sprite.png', 'phone', )
+$spritesheet-width: 82px
+$spritesheet-height: 72px
+$spritesheet-image: '../img/sprite.png'
+$spritesheet-sprites: ($arrow-down, $arrow-right, $arrow-work, $location, $mail, $phone, )
+$spritesheet: (82px, 72px, '../img/sprite.png', $spritesheet-sprites, )
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home
+//   @include sprite-width($icon-home)
+//
+// .icon-email
+//   @include sprite($icon-email)
+//
+// Example usage in HTML:
+//   `display: block` sprite:
+//   <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//   // CSS
+//   .icon {
+//     display: inline-block;
+//   }
+//
+//   // HTML
+//   <i class="icon icon-home"></i>
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SASS
+//
+// @include sprites($spritesheet-sprites)
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)

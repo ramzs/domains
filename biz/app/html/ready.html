@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp-4.html')
+
+	<div class="page-top page-top--var3">
+		<div class="container">
+
+			<div class="breadcrumb">
+				<ul class="breadcrumb-list">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Готовые решения</a></li>
+					<li><a href="#">Готовый бизнес</a></li>
+					<li>Список предложений по продаже готового бизнеса</li>
+				</ul>
+			</div>
+
+			<div class="page-title">Список предложений по продаже готового бизнеса</div>
+		</div>
+	</div>
+
+	<div class="content content--var4">
+		<div class="container">
+			<div class="sidebar">
+				<ul class="second-menu">
+					<li>
+						<a href="#">Постановка бухгалтерского<br>и налогового учета</a>
+						<ul >
+							<li>
+								<a href="#">Разработка учетной политики</a>
+								<ul>
+									<li><a href="#">Расчет заработной платы</a></li>
+									<li><a href="#">Составление и сдача отчетности</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Персонифицированный учет</a></li>
+							<li><a href="#">Кадровый учет</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Ведение бухгалтерского учета</a>
+						<ul >
+							<li>
+								<a href="#">Разработка учетной политики</a>
+								<ul>
+									<li><a href="#">Расчет заработной платы</a></li>
+									<li><a href="#">Составление и сдача отчетности</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Персонифицированный учет</a></li>
+							<li><a href="#">Кадровый учет</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Восстановление бухучета</a>
+						<ul >
+							<li>
+								<a href="#">Разработка учетной политики</a>
+								<ul>
+									<li><a href="#">Расчет заработной платы</a></li>
+									<li><a href="#">Составление и сдача отчетности</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Персонифицированный учет</a></li>
+							<li><a href="#">Кадровый учет</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Расчет заработной платы</a></li>
+					<li><a href="#">Составление и сдача отчетности</a></li>
+					<li><a href="#">Нулевая отчетность</a></li>
+					<li><a href="#">Бухгалтерский аудит</a></li>
+					<li><a href="#">Для физлиц 3-НДФЛ</a></li>
+					<li><a href="#">Консультация бухгалтера</a></li>
+					<li><a href="#">Вопросы бухгалтеру</a></li>
+					<li><a href="#">Стоимость бухгалтерских услуг</a></li>
+				</ul>
+
+				<div class="banner">
+					<div class="banner__title">Бесплатная консультация</div>
+					<div class="banner-content">
+						<p>Свяжитесь с нами по телефону в Москве:</p>
+						<a href="tel:+74957282855" class="banner-content__phone">+7 (495) 728-28-55</a>
+						<p>или оставьте онлайн заявку и мы Вам перезвоним!</p>
+					</div>
+					<a href="#callback-form" class="btn btn--center popup" data-effect="mfp-zoom-in">Оставить заявку</a>
+				</div>
+			</div>
+
+			<div class="main">
+
+				<div class="sort">
+					<div class="sort__title">Сортировка</div>
+					<div class="sort-form">
+						<label for="year" class="sort-form__year">
+							<span>Год создания:</span>
+							<select name="year" id="year">
+								<option>2014</option>
+								<option>2013</option>
+								<option>2012</option>
+								<option>2011</option>
+								<option>2010</option>
+							</select>
+						</label>
+						<label for="tax" class="sort-form__tax">
+							<span>Налогообложение:</span>
+							<select name="tax" id="tax">
+								<option>фирмы с УСН 15%</option>
+								<option>фирмы с УСН 6%</option>
+							</select>
+						</label>
+						<label for="reg" class="sort-form__reg">
+							<span>Место регистрации:</span>
+							<select name="reg" id="reg">
+								<option>Московская обл.</option>
+								<option>Саратовская обл.</option>
+							</select>
+						</label>
+						<label for="act" class="sort-form__act">
+							<span>Вид деятельности:</span>
+							<select name="act" id="act">
+								<option>микрофинансовые фирмы</option>
+								<option>макрофинансовые фирмы</option>
+							</select>
+						</label>
+						<label for="outer" class="sort-form__outer">
+							<span>Другие критерии:</span>
+							<select name="outer" id="outer">
+								<option>фирмы с допуском СРО</option>
+								<option>фирмы без допуска СРО</option>
+							</select>
+						</label>
+					</div>
+				</div>
+
+				<div class="list-item">
+					<div class="list-item__title">ООО «Экспресс деньги»</div>
+					<dl>
+						<dt>Дата регистрации:</dt>
+						<dd>17.02.2014</dd>
+
+						<dt>ИФНС:</dt>
+						<dd>ИФНС №3</dd>
+
+						<dt>Регион:</dt>
+						<dd>Москва, ЦАО</dd>
+
+						<dt>Уставной капитал:</dt>
+						<dd>100 000 руб./имущ.</dd>
+
+						<dt>Расчетный счёт:</dt>
+						<dd>«Ланта-банк»</dd>
+
+						<dt>Наличие "банк-клиента":</dt>
+						<dd>есть</dd>
+
+						<dt>Основной вид деятельности:</dt>
+						<dd>65.2</dd>
+
+						<dt>Система налогооблажения:</dt>
+						<dd>ОСНО</dd>
+
+						<dt>Период осуществления деятельности:</dt>
+						<dd>Деятельность не велась</dd>
+
+						<dt>Среднемесячные обороты:</dt>
+						<dd>нет</dd>
+					</dl>
+					<div class="list-item__price">Стоимость фирмы:<span>150 000 руб.</span></div>
+					<a href="#" class="btn btn--center">Подробнее</a>
+				</div>
+
+				<div class="list-item">
+					<div class="list-item__title">ООО «Экспресс деньги»</div>
+					<dl>
+						<dt>Дата регистрации:</dt>
+						<dd>17.02.2014</dd>
+
+						<dt>ИФНС:</dt>
+						<dd>ИФНС №3</dd>
+
+						<dt>Регион:</dt>
+						<dd>Москва, ЦАО</dd>
+
+						<dt>Уставной капитал:</dt>
+						<dd>100 000 руб./имущ.</dd>
+
+						<dt>Расчетный счёт:</dt>
+						<dd>«Ланта-банк»</dd>
+
+						<dt>Наличие "банк-клиента":</dt>
+						<dd>есть</dd>
+
+						<dt>Основной вид деятельности:</dt>
+						<dd>65.2</dd>
+
+						<dt>Система налогооблажения:</dt>
+						<dd>ОСНО</dd>
+
+						<dt>Период осуществления деятельности:</dt>
+						<dd>Деятельность не велась</dd>
+
+						<dt>Среднемесячные обороты:</dt>
+						<dd>нет</dd>
+					</dl>
+					<div class="list-item__price">Стоимость фирмы:<span>150 000 руб.</span></div>
+					<a href="#" class="btn btn--center">Подробнее</a>
+				</div>
+
+				<div class="list-item">
+					<div class="list-item__title">ООО «Экспресс деньги»</div>
+					<dl>
+						<dt>Дата регистрации:</dt>
+						<dd>17.02.2014</dd>
+
+						<dt>ИФНС:</dt>
+						<dd>ИФНС №3</dd>
+
+						<dt>Регион:</dt>
+						<dd>Москва, ЦАО</dd>
+
+						<dt>Уставной капитал:</dt>
+						<dd>100 000 руб./имущ.</dd>
+
+						<dt>Расчетный счёт:</dt>
+						<dd>«Ланта-банк»</dd>
+
+						<dt>Наличие "банк-клиента":</dt>
+						<dd>есть</dd>
+
+						<dt>Основной вид деятельности:</dt>
+						<dd>65.2</dd>
+
+						<dt>Система налогооблажения:</dt>
+						<dd>ОСНО</dd>
+
+						<dt>Период осуществления деятельности:</dt>
+						<dd>Деятельность не велась</dd>
+
+						<dt>Среднемесячные обороты:</dt>
+						<dd>нет</dd>
+					</dl>
+					<div class="list-item__price">Стоимость фирмы:<span>150 000 руб.</span></div>
+					<a href="#" class="btn btn--center">Подробнее</a>
+				</div>
+
+				<div class="list-item">
+					<div class="list-item__title">ООО «Экспресс деньги»</div>
+					<dl>
+						<dt>Дата регистрации:</dt>
+						<dd>17.02.2014</dd>
+
+						<dt>ИФНС:</dt>
+						<dd>ИФНС №3</dd>
+
+						<dt>Регион:</dt>
+						<dd>Москва, ЦАО</dd>
+
+						<dt>Уставной капитал:</dt>
+						<dd>100 000 руб./имущ.</dd>
+
+						<dt>Расчетный счёт:</dt>
+						<dd>«Ланта-банк»</dd>
+
+						<dt>Наличие "банк-клиента":</dt>
+						<dd>есть</dd>
+
+						<dt>Основной вид деятельности:</dt>
+						<dd>65.2</dd>
+
+						<dt>Система налогооблажения:</dt>
+						<dd>ОСНО</dd>
+
+						<dt>Период осуществления деятельности:</dt>
+						<dd>Деятельность не велась</dd>
+
+						<dt>Среднемесячные обороты:</dt>
+						<dd>нет</dd>
+					</dl>
+					<div class="list-item__price">Стоимость фирмы:<span>150 000 руб.</span></div>
+					<a href="#" class="btn btn--center">Подробнее</a>
+				</div>
+
+				<div class="list-item">
+					<div class="list-item__title">ООО «Экспресс деньги»</div>
+					<dl>
+						<dt>Дата регистрации:</dt>
+						<dd>17.02.2014</dd>
+
+						<dt>ИФНС:</dt>
+						<dd>ИФНС №3</dd>
+
+						<dt>Регион:</dt>
+						<dd>Москва, ЦАО</dd>
+
+						<dt>Уставной капитал:</dt>
+						<dd>100 000 руб./имущ.</dd>
+
+						<dt>Расчетный счёт:</dt>
+						<dd>«Ланта-банк»</dd>
+
+						<dt>Наличие "банк-клиента":</dt>
+						<dd>есть</dd>
+
+						<dt>Основной вид деятельности:</dt>
+						<dd>65.2</dd>
+
+						<dt>Система налогооблажения:</dt>
+						<dd>ОСНО</dd>
+
+						<dt>Период осуществления деятельности:</dt>
+						<dd>Деятельность не велась</dd>
+
+						<dt>Среднемесячные обороты:</dt>
+						<dd>нет</dd>
+					</dl>
+					<div class="list-item__price">Стоимость фирмы:<span>150 000 руб.</span></div>
+					<a href="#" class="btn btn--center">Подробнее</a>
+				</div>
+
+				<div class="list-item">
+					<div class="list-item__title">ООО «Экспресс деньги»</div>
+					<dl>
+						<dt>Дата регистрации:</dt>
+						<dd>17.02.2014</dd>
+
+						<dt>ИФНС:</dt>
+						<dd>ИФНС №3</dd>
+
+						<dt>Регион:</dt>
+						<dd>Москва, ЦАО</dd>
+
+						<dt>Уставной капитал:</dt>
+						<dd>100 000 руб./имущ.</dd>
+
+						<dt>Расчетный счёт:</dt>
+						<dd>«Ланта-банк»</dd>
+
+						<dt>Наличие "банк-клиента":</dt>
+						<dd>есть</dd>
+
+						<dt>Основной вид деятельности:</dt>
+						<dd>65.2</dd>
+
+						<dt>Система налогооблажения:</dt>
+						<dd>ОСНО</dd>
+
+						<dt>Период осуществления деятельности:</dt>
+						<dd>Деятельность не велась</dd>
+
+						<dt>Среднемесячные обороты:</dt>
+						<dd>нет</dd>
+					</dl>
+					<div class="list-item__price">Стоимость фирмы:<span>150 000 руб.</span></div>
+					<a href="#" class="btn btn--center">Подробнее</a>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

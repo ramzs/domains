@@ -1,0 +1,93 @@
+.header
+	padding: 24px 0 12px
+	background: #f8f8f8
+
+.logo
+	float: left
+	margin-top: 5px
+
+.navbar
+	float: left
+	margin: 10px 0 0 35px
+	border-right: 0
+	+clearfix
+
+.navbar-toggle
+	float: none
+	position: absolute
+	top: 0
+	left: 15px
+	margin-top: 15px
+	padding: 0
+	z-index: 999
+	.icon-bar
+		width: 36px
+		height: 4px
+		transition: background .15s ease
+		background: $bg-green
+	&.active
+		.icon-bar
+			position: relative
+			transition: all .25s ease
+			background: $second-color
+			&_top
+				top: 8px
+				transform: rotate(-45deg)
+			&_center
+				opacity: 0
+			&_bottom
+				top: -8px
+				transform: rotate(45deg)
+
+.navbar-collapse
+	padding: 0
+
+.nav
+	> li
+		display: inline-block
+		margin-right: 30px
+		&:last-child
+			margin-right: 0
+		> a
+			padding: 5px
+			font-size: 15px
+			font-weight: 600
+			color: #5e5e5e
+			text-transform: uppercase
+			&:hover, &:focus
+				color: $green
+				background: none
+
+.callback
+	float: right
+	&-phone
+		position: relative
+		display: block
+		font-size: 20px
+		color: #505050
+		font-weight: 600
+		&:hover
+			color: #505050
+		span
+			font-weight: 400
+		&:before
+			content: ''
+			position: absolute
+			top: 3px
+			left: -22px
+			@include sprite($phone)
+	&-link
+		display: inline-block
+		margin-left: 10px
+		font-size: 16px
+		font-weight: 600
+		color: $green
+		text-transform: uppercase
+		text-decoration: underline
+		&:hover
+			color: $green
+			text-decoration: none
+			outline: none
+		&:focus
+			color: $green
+			outline: none

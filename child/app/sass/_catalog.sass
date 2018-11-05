@@ -1,0 +1,199 @@
+@import "vars"
+
+/*---------------Catalog page------------------*/
+.nav--inner
+	margin-bottom: 0
+	background: url(../img/nav-bg.jpg) center top no-repeat
+	background-size: cover
+
+.content--inner
+	margin-top: 0
+	padding: 39px 0 118px
+
+.block-title--page
+	margin: 28px 0 12px
+
+.select
+	display: inline-block
+	margin-right: 18px
+	&--category
+		width: 264px
+	&--brend
+		width: 262px
+	&--male
+		width: 195px
+	&--age
+		width: 231px
+		margin-right: 0
+	.jq-selectbox
+		width: 100%
+		background: #fff
+		&.focused
+			.jq-selectbox__select
+				border: 1px solid #455a64
+		&__select
+			height: 27px
+			font: 16px/23px "BloggerSans"
+			color: #000
+			border: 1px solid #455a64
+			border-radius: 10px
+			box-shadow: none
+			background: none
+			&:hover
+				background: none
+		.placeholder
+			font-size: 16px
+			color: #000
+		&__trigger
+			border-left: none
+			&-arrow
+				top: 9px
+				right: 9px
+				border-top: 9px solid #455a64
+				border-right: 5px solid transparent
+				border-left: 5px solid transparent
+		&__dropdown
+			margin-top: 0
+
+.slider-count
+	margin-top: 17px
+	&__title
+		font-size: 18px
+		color: #000
+
+.price-in
+	position: absolute
+	top: -26px
+	left: 6px
+	right: 0
+	width: 65px
+	font-size: 19px
+	font-weight: 500
+	color: #c2185b
+	text-align: center
+	transform: translate(-50%,0)
+/*--------jqueryUi slider--------*/
+/* Ширина слайдера*/
+.slider-price
+	width: 100%
+	margin: 35px 0 22px
+	&__max
+		position: absolute
+		top: -25px
+		right: 0
+		font-size: 16px
+		font-weight: 500
+		color: #b0bec5
+
+/* Контейнер слайдера*/
+.ui-slider
+	position: relative
+	.ui-slider-handle
+		position: absolute
+		z-index: 2
+		width: 15px /* Задаем нужную ширину*/
+		height: 15px  /* и высоту*/
+		background: #000 /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления*/
+		cursor: pointer
+	.ui-slider-range
+		position: absolute
+		z-index: 1
+		font-size: .7em
+		display: block
+		border: 0
+		overflow: hidden
+		background-color: #3f1746
+		border-radius: 3px
+
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок)*/
+.ui-slider-horizontal
+	height: 7px/* задаем высоту согласно дизайна*/
+	.ui-slider-handle /* позиционируем ползунки*/
+		top: -5px
+		width: 15px
+		height: 15px
+		margin-left: -6px
+		outline: none
+		border-radius: 50%
+		border: 1px solid #057d01
+		box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.15)
+		background-image: linear-gradient(to top, #752360 0%, #9e3187 100%)
+	.ui-slider-range
+		top: 0
+		height: 100%
+	.ui-slider-range-min
+		left: 0
+	.ui-slider-range-max
+		right: 0
+
+/* оформление полосы по которой ходит ползунок*/
+.ui-widget-content
+	height: 7px
+	background-color: #b0bec5
+	border-radius: 3px
+/*-------------------end-----------------------*/
+
+.btn--filter
+	display: inline-block
+	width: 164px
+	height: 42px
+	font-size: 19px
+	color: #fff
+	line-height: 40px
+
+.sort
+	float: right
+	margin-top: 15px
+	&__title
+		display: inline-block
+		font-size: 18px
+		color: #000
+	&__link
+		display: inline-block
+		margin-left: 15px
+		font-size: 18px
+		color: #000
+		border-bottom: 1px dashed #000
+		&:hover
+			border-bottom: 1px dashed transparent
+		&.active
+			color: #c2185b
+			border-bottom: 1px dashed transparent
+
+.product-block--inner
+	margin-bottom: 35px
+
+.pagination
+	&-list
+		display: inline-block
+		li
+			display: inline-block
+			margin-right: 5px
+			a
+				display: block
+				width: 38px
+				height: 38px
+				font-size: 18px
+				color: #3f1746
+				line-height: 38px
+				text-align: center
+				text-decoration: underline
+				border-radius: 10px
+				background: #cfd8dc
+				&:hover, &.active
+					color: #fff
+					text-decoration: none
+					background: #a80e8d
+					&.active
+						cursor: default
+
+.btn--pag
+	display: inline-block
+	width: 183px
+	height: 38px
+	font-size: 18px
+	color: #fff
+	font-weight: normal
+	line-height: 36px
+	span
+		display: none

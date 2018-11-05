@@ -1,0 +1,129 @@
+@import "vars.sass"
+/*-----------------About page---------------*/
+.content__page
+	&.content__page-about
+		padding-bottom: 50px
+.about__descr
+	margin-top: 26px
+
+.descr__block
+	float: left
+	width: 47%
+	font-size: 15px
+	&.descr__block-1
+		margin-right: 40px
+	p
+		margin: 0 0 15px
+	ul
+		margin-bottom: 15px
+		li
+			position: relative
+			margin-bottom: 2px
+			padding-left: 12px
+			&:before
+				content: ' '
+				position: absolute
+				top: 7px
+				left: 0
+				width: 5px
+				height: 5px
+				border-radius: 50%
+				background: #ff4800
+
+.about__banner
+	margin-top: 50px
+	text-align: center
+
+.banner__item
+	display: inline-block
+	width: 470px
+	height: 180px
+	margin: 0 10px
+	text-align: left
+	border: 4px solid #ebebeb
+	transition: all .15s ease
+	&:hover
+		box-shadow: 0 0 25px -5px #000
+	img
+		float: left
+	.banner__descr
+		display: table
+		padding: 40px 0 0 20px
+		.banner__title
+			display: block
+			margin-bottom: 16px
+			font-size: 18px
+			font-weight: 700
+
+.about__benefits
+	margin-top: 26px
+	text-align: center
+
+.benefit__title
+	margin-bottom: 25px
+
+.benefit__item
+	position: relative
+	display: inline-block
+	width: 160px
+	height: 190px
+	padding: 120px 12px 0
+	vertical-align: top
+	text-align: center
+	transition: all .15s ease
+	.benefit__icon
+		position: absolute
+		bottom: 105px
+		left: 0
+		right: 0
+		margin: 0 auto
+	span
+		display: block
+		font-size: 15px
+	&:hover
+		background: #ff4800
+		span
+			color: #fff
+	&.benefit__item-1
+		.benefit__icon
+			@include sprite($benefit-1)
+		&:hover
+			.benefit__icon
+				@include sprite($benefit-1_1)
+	&.benefit__item-2
+		.benefit__icon
+			@include sprite($benefit-2)
+		&:hover
+			.benefit__icon
+				@include sprite($benefit-2_2)
+	&.benefit__item-3
+		.benefit__icon
+			@include sprite($benefit-3)
+		&:hover
+			.benefit__icon
+				@include sprite($benefit-3_3)
+	&.benefit__item-4
+		.benefit__icon
+			@include sprite($benefit-4)
+		&:hover
+			.benefit__icon
+				@include sprite($benefit-4_4)
+	&.benefit__item-5
+		.benefit__icon
+			@include sprite($benefit-5)
+		&:hover
+			.benefit__icon
+				@include sprite($benefit-5_5)
+	&.benefit__item-6
+		.benefit__icon
+			@include sprite($benefit-6)
+		&:hover
+			.benefit__icon
+				@include sprite($benefit-6_6)
+	&.benefit__item-7
+		.benefit__icon
+			@include sprite($benefit-7)
+		&:hover
+			.benefit__icon
+				@include sprite($benefit-7_7)
+/*-------------------end-------------------*/

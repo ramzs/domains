@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="wrapper">
+		<div class="content">
+			<div class="container">
+
+				<div class="sidebar">
+					<div class="profile-name">Здравствуйте,<span>Николай Семенович</span></div>
+					<div class="profile-nav">
+						<ul class="profile-list">
+							<li class="profile-list__item"><a href="#" class="profile-list__link">Профиль</a></li>
+							<li class="profile-list__item"><a href="#" class="profile-list__link">Моя команда</a></li>
+							<li class="profile-list__item"><a href="#" class="profile-list__link active">Финансы</a></li>
+							<li class="profile-list__item"><a href="#" class="profile-list__link">FAQ</a></li>
+						</ul>
+						<a href="#" class="profile-exit">Выйти</a>
+					</div>
+				</div>
+
+				<div class="main-content">
+
+					<div class="finance">
+						<div class="finance__title">Финансы</div>
+						<div class="finance-block finance-block--balance">
+							<div class="finance-block__title">Ваш баланс</div>
+							<div class="finance-block__count finance-block__count--balance">12 000 руб</div>
+						</div>
+						<div class="finance-block finance-block--total">
+							<div class="finance-block__title">Заработанная сумма</div>
+							<div class="finance-block__count">30 000 руб</div>
+						</div>
+						<div class="finance-block">
+							<div class="finance-block__title">Потрачено</div>
+							<div class="finance-block__count">5 500 руб</div>
+						</div>
+						<a href="#" class="btn btn--var2 btn--finance">Вывести деньги</a>
+					</div>
+
+					<div class="finance-history">
+						<div class="finance-history__title">История финансов</div>
+						<div class="finance-table">
+							<div class="finance-row finance-row--head">
+								<div class="finance-cell finance-cell--head">Дата:</div>
+								<div class="finance-cell finance-cell--head">Сумма:</div>
+								<div class="finance-cell finance-cell--head">Событие:</div>
+								<div class="finance-cell finance-cell--head">Примечание:</div>
+							</div>
+
+							<div class="finance-row finance-row--body">
+								<div class="finance-cell finance-cell--body finance-cell--date">
+									<span>Дата:</span>
+									<p>20 апреля, 2017</p>
+								</div>
+								<div class="finance-cell finance-cell--body finance-cell--total">
+									<span>Сумма:</span>
+									<p>500 руб</p>
+								</div>
+								<div class="finance-cell finance-cell--body finance-cell--event">
+									<span>Событие:</span>
+									<p style="color: red;">Потрачено</p>
+								</div>
+								<div class="finance-cell finance-cell--body finance-cell--message">
+									<span>Примечание:</span>
+									<p>Продление услуг сервиса на 1 месяц</p>
+								</div>
+							</div>
+
+							<div class="finance-row finance-row--body">
+								<div class="finance-cell finance-cell--body finance-cell--date">
+									<span>Дата:</span>
+									<p>12 апреля, 2017</p>
+								</div>
+								<div class="finance-cell finance-cell--body finance-cell--totla">
+									<span>Сумма:</span>
+									<p>1000 руб</p>
+								</div>
+								<div class="finance-cell finance-cell--body finance-cell--event">
+									<span>Событие:</span>
+									<p>Получено</p>
+								</div>
+								<div class="finance-cell finance-cell--body finance-cell--message">
+									<span>Примечание:</span>
+									<p>Вы привели 2 пользователей</p>
+								</div>
+							</div>
+
+							<div class="finance-row finance-row--body">
+								<div class="finance-cell finance-cell--body finance-cell--date">
+									<span>Дата:</span>
+									<p>3 февраля, 2017</p>
+								</div>
+								<div class="finance-cell finance-cell--body finance-cell--total">
+									<span>Сумма:</span>
+									<p>500 руб</p>
+								</div>
+								<div class="finance-cell finance-cell--body finance-cell--event">
+									<span>Событие:</span>
+									<p>Получено</p>
+								</div>
+								<div class="finance-cell finance-cell--body finance-cell--message">
+									<span>Примечание:</span>
+									<p>Вы привели 1 пользователей</p>
+								</div>
+							</div>
+
+							<div class="finance-row finance-row--body">
+								<div class="finance-cell finance-cell--body finance-cell--date">
+									<span>Дата:</span>
+									<p>1 февраля, 2017</p>
+								</div>
+								<div class="finance-cell finance-cell--body finance-cell--total">
+									<span>Сумма:</span>
+									<p>2000 руб</p>
+								</div>
+								<div class="finance-cell finance-cell--body finance-cell--event">
+									<span>Событие:</span>
+									<p>Получено</p>
+								</div>
+								<div class="finance-cell finance-cell--body finance-cell--message">
+									<span>Примечание:</span>
+									<p>Вы привели 4 пользователей</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="finance-bottom">
+						<div class="finance-bottom__title">Продлить услуги нашего сервиса на месяц?</div>
+						<a href="#" class="btn btn--ext">Продлить</a>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

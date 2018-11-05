@@ -1,0 +1,65 @@
+/*-------------Login page----------------*/
+.login-welcome
+	float: right
+	&__name
+		margin-bottom: 6px
+		font-size: 15px
+		color: $link
+	&__link
+		display: block
+		position: relative
+		padding-left: 20px
+		font-size: 15px
+		color: $link
+		text-decoration: underline
+		&:before
+			content: ''
+			position: absolute
+			top: 5px
+			left: 0
+			transform: rotate(180deg)
+			@include sprite($login)
+
+.login-page
+	margin-bottom: -16px
+	padding: 34px 0 104px
+	background: #fcf7d3
+	+clearfix
+
+.tb
+	border-collapse: collapse
+	&_main
+		margin-bottom: 32px
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2)
+		.tb-row
+			&:not(:first-child)
+				.tb-cell
+					padding-top: 0
+	&-row
+		box-shadow: none
+	&-cell
+		position: relative
+		&_data
+	&__data
+		position: absolute
+		top: 0
+		right: 0
+		width: 178px
+		height: 103px
+		text-align: center
+		background: #fcabdb
+		span
+			display: block
+			width: 100%
+			font-size: 20px
+			font-weight: 900
+			color: #493943
+			line-height: 20px
+			+vcenter
+
+.login-page__accent
+	margin-top: 37px
+	font: 700 48px/48px "summer"
+	color: #533e4a
+	text-align: center
+/*-----------------end-------------------*/

@@ -1,0 +1,856 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+.header
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.15)
+
+.header-mob
+	display: none
+	padding: 9px 0 10px
+	text-align: center
+	background-color: #042b60
+
+.header-top
+	padding: 30px 0 25px
+	+clearfix
+
+.logo
+	float: left
+	width: 17.4%
+	img
+		width: 100%
+
+.header-main
+	float: left
+	display: block
+	width: 82.6%
+	padding: 15px 0 0 100px
+
+.header-menu
+	display: inline-block
+	margin-bottom: 20px
+	li
+		display: inline-block
+		margin-right: 39px
+		&:last-child
+			margin-right: 0
+		a
+			display: block
+			font-size: 15px
+			font-weight: 500
+			color: #141515
+
+.location
+	position: relative
+	display: inline-block
+	margin-right: 57px
+	padding-left: 24px
+	font-size: 14px
+	font-weight: 300
+	color: #737373
+	span
+		display: block
+	&:before
+		content: ''
+		position: absolute
+		top: 12px
+		left: 0
+		@include sprite($location)
+
+.work
+	position: relative
+	display: inline-block
+	padding-left: 27px
+	font-size: 14px
+	font-weight: 300
+	color: #737373
+	span
+		display: block
+	&:before
+		content: ''
+		position: absolute
+		top: 12px
+		left: 0
+		@include sprite($clock)
+
+.callback
+	position: relative
+	float: right
+	top: -5px
+	text-align: right
+	&-phone
+		position: relative
+		display: inline-block
+		margin-bottom: 8px
+		font-size: 18px
+		font-weight: 700
+		color: $second
+		&:before
+			content: ''
+			position: absolute
+			top: 7px
+			left: -27px
+			@include sprite($phone)
+
+.btn
+	display: block
+	width: 180px
+	height: 47px
+	font-size: 13px
+	color: #fff
+	line-height: 45px
+	text-align: center
+	text-transform: uppercase
+	outline: none
+	border: none
+	border-radius: 24px
+	background: #4384c2
+	&:hover
+		background: #1b67af
+	&--center
+		margin: 0 auto
+
+.btn-menu
+	position: relative
+	display: none
+	float: right
+	width: 47px
+	height: 47px
+	margin-top: 26px
+	padding: 14px 0
+	text-align: center
+	cursor: pointer
+	z-index: 991
+	border-radius: 50%
+	background: #ff3d00
+	&__burger
+		display: inline-block
+		width: 21px
+		transition: all .35s ease
+		b
+			position: relative
+			display: block
+			top: 0
+			width: 100%
+			height: 2px
+			margin-bottom: 6px
+			transform: rotate(0deg)
+			transition: transform .35s
+			background: #fff
+			&:last-child
+				margin-bottom: 0
+	&.active
+		.btn-menu__burger
+			b
+				&:first-child
+					top: 9px
+					transition: transform .35s
+					transform: rotate(45deg)
+				&:nth-child(2)
+					opacity: 0
+					transition: opacity .35s
+				&:last-child
+					top: -7px
+					transition: transform .35s
+					transform: rotate(-45deg)
+
+.nav
+	border-top: 1px solid #dadada
+	background: #fff
+	+clearfix
+	&.fixed
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		width: 100%
+		z-index: 900
+		border-bottom: 1px solid #dadada
+	.container
+		position: relative
+	&-link
+		display: none
+		width: 100%
+		height: 48px
+		padding-left: 20px
+		font-size: 17px
+		font-weight: 500
+		line-height: 46px
+		color: #fff
+		cursor: pointer
+		border-radius: 48px
+		background: #1a67af
+		.caret
+			float: right
+			position: relative
+			top: 22px
+			right: 20px
+			+arr(9,6, #fff, b)
+	&-list
+		float: left
+		border-radius: 0 0 10px 10px
+		+clearfix
+		> li
+			position: relative
+			float: left
+			margin-right: 74px
+			&:last-of-type
+				margin-right: 0
+			> a
+				position: relative
+				display: block
+				padding: 24px 0
+				font-size: 17px
+				font-weight: 500
+				color: $second
+				.caret
+					display: inline-block
+					position: relative
+					top: -2px
+					margin-left: 9px
+					+arr(9,6, #448ac7, b)
+			> ul
+				display: none
+				position: absolute
+				top: 71px
+				left: -15px
+				padding: 30px 0
+				z-index: 800
+				border-radius: 10px
+				background: #042b60
+				ul
+					display: none
+					li
+						a
+							padding-left: 46px
+							color: #4384c2
+							&:hover
+								color: #fff
+					ul
+						li
+							a
+								padding-left: 66px
+				&:before
+					content: ''
+					position: absolute
+					top: 0
+					left: 40px
+					+arr(30,13, #fff,b)
+				li
+					a
+						display: block
+						padding: 5px 32px 6px
+						white-space: nowrap
+						font-size: 14px
+						font-weight: 300
+						color: #fff
+						&:hover
+							background: #4384c2
+
+.search-link
+	float: right
+	margin: 26px 23px 0 0
+	font-size: 0
+	transition: none
+	i
+		display: block
+		@include sprite($search)
+		&:hover
+			@include sprite($search-hover)
+
+.search-block
+	display: none
+	position: absolute
+	top: 12px
+	left: 0
+	right: 0
+	width: 97.5%
+	margin: 0 auto
+	&__in
+		width: 100%
+		height: 47px
+		padding-left: 32px
+		font-size: 14px
+		outline: none
+		background-color: #f9f9f9
+		border: 1px solid #dadada
+		border-radius: 24px
+	&__icon
+		position: absolute
+		top: 13px
+		right: 23px
+		font-size: 0
+		@include sprite($search-in)
+
+.slider-block
+	height: 500px
+	overflow: hidden
+	background: #eff0ed
+	> .container
+		width: 1200px
+		max-width: 100%
+		padding: 0
+
+.slider-home
+	.slider-item
+		position: relative
+		outline: none
+		overflow: hidden
+		img
+			height: 500px
+	.slick-arrow
+		position: absolute
+		bottom: 40px
+		padding: 0
+		width: 47px
+		height: 47px
+		margin-right: 15px
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		border: none
+		border-radius: 50%
+		background: #fff
+		&:hover
+			transition: background .25s
+			background: #ff3d00
+		span
+			position: absolute
+			top: 17px
+		&.slick-prev
+			right: 57px
+			span
+				left: 19px
+				@include sprite($arrow-left)
+			&:hover
+				span
+					@include sprite($arrow-left-hover)
+		&.slick-next
+			right: 0
+			span
+				left: 21px
+				@include sprite($arrow-right)
+			&:hover
+				span
+					@include sprite($arrow-right-hover)
+
+.slider-caption
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	margin: 0 auto
+
+.caption-block
+	float: right
+	width: 570px
+	margin-top: 80px
+	padding: 39px 90px 44px 49px
+	border-radius: 10px
+	background: #fff
+	&__title
+		margin-bottom: 17px
+		font: 700 28px/40px "ptserif"
+		color: #4384c2
+	&__text
+		font-size: 16px
+		font-weight: 300
+		color: #3c3c3c
+		line-height: 24px
+
+.proposal
+	padding: 70px 0 0
+
+.block-title
+	display: block
+	margin-bottom: 30px
+	font: 700 28px "ptserif"
+	&--pos
+		text-align: center
+	&--color
+		color: $second
+	&--mob
+		display: none
+
+.proposal
+	&-wrap
+		padding-bottom: 52px
+		border-bottom: 1px solid #dadada
+		+clearfix
+	&-item
+		float: left
+		width: 33.33%
+		padding-right: 35px
+		&__pict
+			height: 60px
+			margin-bottom: 25px
+			img
+				display: block
+				max-width: 100%
+				height: 100%
+		&__text
+			font-size: 14px
+			font-weight: 300
+			line-height: 21px
+
+.service
+	padding: 50px 0 0
+	+clearfix
+	&-wrap
+		padding-bottom: 60px
+		border-bottom: 1px solid #dadada
+		+clearfix
+	&-item
+		position: relative
+		float: left
+		width: 270px
+		height: 306px
+		margin-right: 30px
+		overflow: hidden
+		z-index: 1
+		border-radius: 10px
+		&:last-of-type
+			margin-right: 0
+		img
+			position: relative
+			display: block
+			width: 100%
+			filter: blur(2px)
+			z-index: -1
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba(4,43,96, .15)
+		.plus
+			position: absolute
+			top: 30px
+			right: 30px
+			width: 28px
+			height: 28px
+			z-index: 11
+			border-radius: 50%
+			background: #fff
+			transition: all .30s ease
+			&:before
+				content: ''
+				+vcenter
+				@include sprite($plus)
+		&__wrap
+			position: absolute
+			display: table
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 107px
+			z-index: 10
+			border-radius: 0 0 10px 10px
+			background: #042b60
+		&__descr
+			display: table-cell
+			vertical-align: middle
+			width: 100%
+			height: 100%
+			padding: 30px 37px
+			cursor: pointer
+		&__title
+			display: block
+			margin-bottom: 31px
+			font-size: 17px
+			font-weight: 500
+			color: #fff
+			&:hover
+				color: #4384c2
+		&__text
+			display: block
+			font-size: 14px
+			font-weight: 300
+			color: #fff
+			line-height: 21px
+			opacity: 0
+			height: 0
+		&:hover
+			.plus
+				background: #ff3d00
+				&:before
+					@include sprite($plus-hover)
+			.service-item__wrap
+				height: 100%
+				border-radius: 10px
+				transition: height .30s
+			.service-item__descr
+
+			.service-item__text
+				height: auto
+				opacity: 1
+				transition: opacity 1s
+
+.news
+	padding: 50px 0 60px
+	+clearfix
+	&-carousel
+		margin: 0 -15px
+		.slick-arrow
+			position: absolute
+			top: 50%
+			width: 47px
+			height: 47px
+			margin-top: -23px
+			padding: 0
+			font-size: 0
+			z-index: 9
+			outline: none
+			cursor: pointer
+			border: none
+			border-radius: 50%
+			background: #fff
+			border: 1px solid #e6e6e6
+			&:hover
+				transition: background .25s
+				background: #4384c2
+			span
+				position: absolute
+				top: 53%
+				left: 48%
+				transform: translate(-50%,-50%)
+			&.slick-prev
+				left: 0
+				&:hover
+					span
+						@include sprite($arrow-left-hover)
+				span
+					@include sprite($arrow-left)
+			&.slick-next
+				right: 0
+				&:hover
+					span
+						@include sprite($arrow-right-hover)
+				span
+					left: 53%
+					@include sprite($arrow-right)
+
+.carousel-item
+	padding: 0 15px
+	outline: none
+	border: none !important
+
+.news-item
+	width: 370px
+	max-width: 100%
+	height: 201px
+	padding: 28px 34px 20px
+	cursor: pointer
+	border: 1px solid #e6e6e6
+	border-radius: 10px
+	transition: all .15s ease
+	&:hover
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08)
+		.news-item__title
+			color: $second
+	&__date
+		margin-bottom: 20px
+		font-size: 14px
+		font-weight: 300
+		color: #737373
+		span
+			display: block
+			font: 700 24px "ptsrif"
+			color: #ff3d00
+	&__title
+		display: block
+		font-size: 17px
+		font-weight: 500
+		line-height: 24px
+		outline: none
+
+.news-all
+	display: none
+	width: 107px
+	height: 24px
+	margin: 13px auto 0
+	font-size: 14px
+	font-weight: 300
+	color: #737373
+	line-height: 22px
+	text-align: center
+	border-radius: 12px
+	background: #e6e6e6
+
+.blog
+	padding: 60px 0
+	background: #eff0ed
+	+clearfix
+
+.blog-wrap
+	position: relative
+
+.slider-nav
+	float: left
+	width: 48.7%
+	&__item
+		width: 100%
+		outline: none
+		overflow: hidden
+		border-radius: 10px
+		img
+			width: 100%
+	.slick-arrow
+		position: absolute
+		bottom: -23px
+		padding: 0
+		width: 47px
+		height: 47px
+		margin-right: 35px
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		border: none
+		border-radius: 50%
+		background: #fff
+		&:hover
+			transition: background .25s
+			background: #ff3d00
+		span
+			position: absolute
+			top: 17px
+		&.slick-prev
+			right: 57px
+			span
+				left: 19px
+				@include sprite($arrow-left)
+			&:hover
+				span
+					@include sprite($arrow-left-hover)
+		&.slick-next
+			right: 0
+			span
+				left: 21px
+				@include sprite($arrow-right)
+			&:hover
+				span
+					@include sprite($arrow-right-hover)
+
+.slider-blog
+	float: right
+	width: 51.3%
+	padding-left: 130px
+	.slider-item
+		outline: none
+
+.block-title--blog
+	outline: none
+
+.blog-preview
+	padding: 26px 0
+	&__text
+		margin-bottom: 34px
+		font-size: 14px
+		font-weight: 300
+		line-height: 21px
+
+.blog-link
+	position: absolute
+	top: 0
+	right: 0
+	width: 107px
+	height: 24px
+	font-size: 14px
+	font-weight: 300
+	color: #737373
+	line-height: 22px
+	text-align: center
+	z-index: 9
+	border-radius: 12px
+	background: #fff
+	&:hover
+		color: #fff
+		background: #042b60
+
+.about
+	padding: 50px 0 80px
+	&__text
+		margin-bottom: 34px
+		font-size: 14px
+		font-weight: 300
+		line-height: 21px
+		column-count: 2
+		column-gap: 40px
+
+.footer
+	background: #151922
+	&-top
+		padding: 74px 0
+		background: #13171f
+		+clearfix
+	&-menu
+		> li
+			float: left
+			width: 25%
+			vertical-align: top
+			a
+				display: block
+				font-size: 17px
+				font-weight: 500
+				color: #fff
+				&:hover
+					color: #4384c2
+		&__droplist
+			margin-top: 32px
+			li
+				margin-bottom: 5px
+				a
+					font-size: 12px
+					font-weight: 300
+					color: #a7a7a7
+					&:hover
+						color: #4384c2
+	&-nav
+		padding: 33px 0 30px
+		border-bottom: 1px solid #1a1f2a
+		+clearfix
+	&-list
+		display: inline-block
+		li
+			float: left
+			margin-right: 46px
+			&:last-child
+				margin-right: 0
+			a
+				display: block
+				font-size: 15px
+				font-weight: 300
+				color: #fff
+				&:hover
+					color: #4384c2
+	&-sitemap
+		float: right
+		font-size: 15px
+		font-weight: 300
+		color: #a7a7a7
+		&:hover
+			color: #4384c2
+	&-info
+		padding: 37px 0 74px
+	&-location
+		display: inline-block
+		vertical-align: top
+		margin-right: 65px
+		font-size: 12px
+		font-weight: 300
+		color: #fff
+		line-height: 21px
+		a
+			display: block
+			font-size: 12px
+			font-weight: 300
+			color: #4384c2
+			&:hover
+				text-decoration: underline
+	&-phone
+		display: inline-block
+		vertical-align: top
+		font-size: 16px
+		font-weight: 500
+		color: #fff
+		line-height: 21px
+		a
+			display: block
+			font-size: 12px
+			font-weight: 500
+			color: #4384c2
+			&:hover
+				text-decoration: underline
+	&-copyright
+		float: right
+		font-size: 12px
+		font-weight: 300
+		color: #fff
+		line-height: 21px
+	&-developer
+		float: left
+		margin-right: 140px
+		font-size: 12px
+		font-weight: 300
+		color: #fff
+		a
+			display: inline-block
+			font-size: 12px
+			font-weight: 300
+			color: #fff
+			&:hover
+				color: #4384c2
+
+.callback-form
+	position: relative
+	max-width: 370px
+	margin: 0 auto
+	padding: 50px 0px 40px
+	text-align: center
+	border-radius: 10px
+	background: #fff
+	&__title
+		margin-bottom: 18px
+		font: 700 28px "ptserif"
+	form
+		width: 300px
+		margin: 0 auto
+	label
+		position: relative
+	input
+		width: 100%
+		height: 38px
+		margin-bottom: 21px
+		outline: none
+		border: none
+		border-bottom: 1px solid #dadada
+		&:invalid
+			+ .placeholder
+				display: block
+				text-align: left
+				cursor: text
+	textarea
+		width: 100%
+		height: 70px
+		outline: none
+		resize: none
+		border: none
+		border-bottom: 1px solid #dadada
+	.mfp-close
+		top: 2px
+		right: 5px
+		font: 300 30px "ubuntu"
+
+.placeholder
+	display: none
+	position: absolute
+	top: 0
+	width: 100%
+	font-size: 14px
+	font-weight: 300
+	color: #3c3c3c
+	span
+		color: #ff3d00
+
+.btn--form
+	margin: 35px auto 0
+	border: none
+
+@import "service-1"
+@import "service-2"
+@import "service-3"
+@import "blog-1"
+@import "blog-2"
+@import "ready"
+@import "contact"
+@import "news-1"
+@import "news-2"
+@import "about"
+@import "info"

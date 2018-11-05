@@ -1,0 +1,135 @@
+@import "vars.sass"
+
+/*---------------------Blog-1--------------------*/
+.page__top
+	height: 152px
+	padding-top: 20px
+	background: #dee3e8
+
+.breadcrumb
+	li
+		display: inline-block
+		position: relative
+		margin-right: 10px
+		font: 18px "ProximaNova"
+		&:not(:first-child):before
+			content: '/'
+			position: absolute
+			top: 0
+			left: -9px
+		a
+			color: $main-color
+			&:hover
+				text-decoration: underline
+
+.page__title
+	display: block
+	margin-top: 12px
+	font: 600 48px "ProximaNova"
+	text-align: center
+
+.topics
+	padding: 110px 0 30px
+
+.topic__item
+	display: inline-block
+	position: relative
+	width: 360px
+	height: 150px
+	margin: 0 25px 80px 0
+	vertical-align: top
+	&:nth-child(3n)
+		margin-right: 0
+
+.topic__title
+	display: block
+	position: relative
+	top: -8px
+	font: 800 30px "ProximaNova"
+	color: $main-color
+	text-transform: uppercase
+	z-index: 9
+	&:hover
+		color: $hover-link
+	i
+		content: ' '
+		position: absolute
+		bottom: -50px
+		left: 0
+		width: 45px
+		height: 45px
+		background: url(../img/sprites/sprites.png) -52px -159px no-repeat
+	.icon__2
+		width: 46px
+		height: 48px
+		background-position: -50px -70px
+	.icon__3
+		bottom: -30px
+		width: 48px
+		height: 22px
+		background-position: -52px -209px
+	.icon__4
+		width: 62px
+		height: 48px
+		background-position: -52px -281px
+	.icon__5
+		width: 60px
+		height: 43px
+		background-position: -51px -234px
+	.icon__6
+		bottom: -40px
+		width: 43px
+		height: 35px
+		background-position: -51px -120px
+
+.topic__img
+	position: absolute
+	bottom: 0
+	right: 0
+	width: 220px
+	height: 140px
+	img
+		width: 100%
+
+.topic__link
+	position: absolute
+	bottom: 18px
+	right: 12px
+	font-size: 0
+	width: 40px
+	height: 37px
+	background: url(../img/sprites/sprites.png) -27px -28px no-repeat
+
+.banners
+	padding: 0 0 85px
+
+.banner__item
+	display: inline-block
+	position: relative
+	width: 360px
+	height: 280px
+	margin-right: 25px
+	&:last-child
+		margin-right: 0
+	img
+		width: 100%
+		height: 100%
+
+.banner__title
+	position: absolute
+	top: 55px
+	left: 10px
+	color: #fff
+	&:hover
+		color: $hover-link
+
+.banner__link
+	position: absolute
+	bottom: 12px
+	right: 12px
+	font-size: 0
+	font-weight: 800
+	width: 40px
+	height: 37px
+	background: url(../img/sprites/sprites.png) -27px -28px no-repeat
+/*-----------------------end--------------------*/

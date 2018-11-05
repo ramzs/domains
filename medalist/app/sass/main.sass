@@ -1,0 +1,619 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+.header-top
+	position: relative
+	padding: 20px 0 22px
+
+.logo
+	float: left
+	max-width: 274px
+	vertical-align: top
+	img
+		display: block
+		width: 100%
+	&__title
+		display: inline-block
+		font-size: 14px
+		font-weight: 300
+		letter-spacing: 2.7px
+		text-align: center
+
+.phone-block
+	display: inline-block
+	margin-left: 14.5%
+	vertical-align: top
+	line-height: 1.4
+	text-align: left
+	&__link
+		position: relative
+		display: block
+		margin-bottom: 14px
+		font-size: 15px
+		span
+			display: block
+			font-size: 12px
+			font-weight: 300
+			color: #000
+		&:before
+			content: ' '
+			position: absolute
+			top: 1px
+			left: -27px
+			@include sprite($phone-ico)
+
+.work-block
+	display: inline-block
+	margin-left: 6.9%
+	vertical-align: top
+	&__title
+		display: block
+		font-size: 15px
+		color: #00d0c0
+
+.work-list
+	span
+		display: inline-block
+		vertical-align: bottom
+	&__day
+		min-width: 63px
+		margin-right: 16px
+		font-size: 14px
+	&__time
+		font-size: 12px
+		font-weight: 300
+
+.mail-block
+	float: right
+	margin-top: 5px
+	text-align: right
+	vertical-align: top
+	&__link
+		position: relative
+		display: block
+		margin-bottom: 7px
+		font-size: 15px
+		&:before
+			content: ' '
+			position: absolute
+			top: 2px
+			left: -36px
+			@include sprite($mail-ico)
+	&__write
+		position: relative
+		display: inline-block
+		padding-bottom: 2px
+		font-size: 15px
+		font-weight: 300
+		&:after
+			content: ' '
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 1px
+			background: #59DCED
+			transform: scaleX(1)
+			transition: transform 250ms ease-in-out
+		&:hover
+			&:after
+				transform: scaleX(0)
+
+.menu-btn
+	display: none
+	position: absolute
+	top: 10px
+	right: 0
+	z-index: 999
+	cursor: pointer
+	b
+		position: relative
+		display: block
+		width: 30px
+		height: 5px
+		margin-bottom: 5px
+		transition: all .35s ease
+		background: $main-color
+		&:last-child
+			margin-bottom: 0
+	&.active
+		b
+			background: $title
+			&:first-child
+				top: 10px
+				transform: rotate(45deg)
+			&:nth-child(2)
+				opacity: 0
+				transition: opacity .35s
+			&:last-child
+				top: -10px
+				transform: rotate(-45deg)
+
+.nav-menu
+	&--header
+		margin-bottom: 28px
+	&__list
+		display: inline-block
+		width: 100%
+		@include justify
+		li
+			display: inline-block
+			a
+				display: inline-block
+				font-size: 14px
+				letter-spacing: 2.5px
+				text-transform: uppercase
+				&:hover
+					color: $hover
+
+.header-main
+	padding: 32px 0 130px
+	background: url(../img/header-bg.jpg) center top no-repeat
+	background-size: cover
+
+.header-caption
+	&__title
+		display: block
+		font: 60px "intro"
+		color: #fff
+		text-align: center
+		span
+			display: block
+			margin-top: 25px
+			font-size: 36px
+
+@keyframes si-button-pulse
+	from
+		box-shadow: 0 0 8px 6px #fff323, 0 0 12px 14px #fff323
+	to
+		box-shadow: 0 0 18px 6px rgba(255, 243, 35, 0), 0 0 4px 71px rgba(255, 243, 35, 0)
+
+.btn
+	position: relative
+	display: block
+	width: 238px
+	height: 79px
+	font-size: 14px
+	color: $btn-color
+	line-height: 76px
+	letter-spacing: 2px
+	text-align: center
+	text-transform: uppercase
+	outline: none
+	cursor: pointer
+	border-radius: 80px
+	border: 3px solid $btn
+	&:hover
+		background: $btn
+	i
+		display: inline-block
+		position: relative
+		top: 4px
+		right: -23px
+		margin-left: 8px
+	&--more
+		margin: 81px auto 0
+		color: #fff
+		i
+			@include sprite($arrow-inner)
+		&:hover
+			color: $btn-color
+			background: $btn
+			i
+				@include sprite($arrow-more)
+	&--pulse
+		&:hover
+			box-shadow:none
+			animation: si-button-pulse 0.8s 0s ease-out 1
+
+.section-callback
+	padding: 64px 0 70px
+	background: #f0f0f0
+
+.section-title
+	float: left
+	margin: 17px 0
+	font-size: 38px
+	color: $title
+	text-transform: uppercase
+
+.callback-form
+	float: right
+	&__in
+		display: inline-block
+		width: 238px
+		height: 79px
+		margin-right: 47px
+		vertical-align: top
+		font-size: 14px
+		color: $btn-color
+		text-align: center
+		outline: none
+		border-radius: 80px
+		border: 3px solid #dadada
+		transition: all .15s ease
+		&:focus
+			box-shadow: 0 0 30px 10px #dadada
+
+.btn
+	&--form
+		display: inline-block
+		cursor: pointer
+		background: none
+
+.section-service
+	padding: 35px 0 37px
+	background: #f6f6f6
+
+.section-title
+	span
+		display: inline-block
+		margin-left: 19px
+		font-size: 14px
+		color: $main-color
+		line-height: 1.2
+
+.services-block
+	margin-top: 40px
+	clear: both
+	&:after
+		display: none
+
+.service-item
+	position: relative
+	float: left
+	width: 260px
+	height: 260px
+	margin: 0 110px 40px 0
+	text-align: center
+	line-height: 1.4
+	border-radius: 4px
+	background: #fff
+	transition: all .35s ease
+	&:nth-child(3n+3)
+		margin-right: 0
+	&__descr
+		position: absolute
+		width: 100%
+		height: 197px
+		bottom: 66px
+		z-index: 2
+		border-radius: 0 0 4px 4px
+		background: #fff
+	&__pict
+		position: relative
+		height: 110px
+		img
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			max-height: 84px
+			margin: 0 auto
+	&__title
+		display: block
+		margin: 22px 0 0
+		padding: 0 30px
+		font-size: 14px
+		letter-spacing: 2.3px
+		text-transform: uppercase
+	&__more
+		position: absolute
+		display: block
+		bottom: 0
+		left: 0
+		right: 0
+		height: 68px
+		font-size: 14px
+		font-weight: 300
+		color: $title
+		line-height: 68px
+		i
+			position: relative
+			display: inline-block
+			top: 5px
+			right: -8px
+			margin-left: 75px
+			@include sprite($arrow)
+		&:hover
+			i
+				right: -25px
+				transition: all .35s ease
+	&:hover
+		height: 325px
+		margin-top: -65px
+		z-index: 10
+		box-shadow: 0 0 70px rgba(110, 110, 110, 0.2)
+		.service-item__more
+			color: #fff
+			background: $title
+			i
+				@include sprite($arrow-inner)
+
+.section-order
+	padding: 35px 0
+
+.order-text
+	position: relative
+	display: block
+	padding-left: 40px
+	font-size: 18px
+	text-align: left
+	span
+		color: $title
+		letter-spacing: 1.5px
+	&:before
+		content: ' '
+		position: absolute
+		top: 0
+		left: 0
+		width: 15px
+		height: 100%
+		background: $btn
+
+.section-order
+	&--form
+		padding: 50px 0 52px
+		background: url(../img/main-bg.jpg) center top no-repeat
+		background-size: cover
+
+.section-title
+	&--order
+		color: #fff
+
+.btn
+	&--order
+		float: right
+		margin-top: 5px
+		color: #fff
+		background: transparent
+		&:hover
+			color: #003b3f
+
+.section-price
+	padding: 43px 0 63px
+	clear: both
+
+.price__text
+	font-size: 18px
+	font-weight: 300
+	span
+		font-weight: 800
+	&--descr
+		float: left
+		width: 53%
+	&--about
+		clear: both
+
+.price-banner
+	float: right
+	width: 429px
+	height: 365px
+	margin: 18px 0 40px
+	padding: 14px 0 0 25px
+	background-color: #f6f6f6
+	border-radius: 4px
+	&__item
+		position: relative
+		margin-bottom: 22px
+		padding-left: 35px
+		font-size: 18px
+		&:before
+			content: ' '
+			position: absolute
+			top: 10px
+			left: -2px
+			width: 19px
+			height: 2px
+			background: #00cfcc
+		p
+			margin-bottom: 12px
+		span
+			margin-top: 0
+			font-size: 24px
+			text-transform: uppercase
+
+.section-title
+	&--price
+		float: none
+		margin-bottom: 2px
+		font-family: "intro"
+
+.dir-block
+	float: left
+	width: 50%
+	&--main
+		text-align: right
+		background: #f6f6f6
+	&__wrap
+		position: relative
+		display: inline-block
+		max-width: 500px
+		width: 100%
+		text-align: left
+		&--left
+			padding: 145px 0 165px
+			&:after
+				content: ' '
+				position: absolute
+				top: 230px
+				right: -35px
+				width: 0
+				height: 0
+				border-style: solid
+				border-width: 32.5px 0 32.5px 35px
+				border-color: transparent transparent transparent #f6f6f6
+		&--right
+			padding: 27px 0 0 65px
+			font-size: 18px
+
+.section-title
+	&--dir
+		float: none
+		margin-bottom: 85px
+		span
+			display: block
+			margin: 14px 0 0
+.btn
+	&--dir
+		color: $main-color
+		i
+			@include sprite($arrow)
+		&:hover
+			color: #fff
+			i
+				@include sprite($arrow-inner)
+
+.section-clients
+	padding: 59px 0 50px
+	clear: both
+
+.clients-logo
+	float: right
+	text-align: right
+	img
+		display: inline-block
+		max-width: 91px
+		margin-left: 56px
+		vertical-align: middle
+
+footer
+	padding: 40px 0 55px
+	background-color: #00aadf
+	background-image: linear-gradient(to left, #00bcf2 0%, #00c3a7 100%)
+
+.nav-menu
+	&--footer
+		margin-bottom: 55px
+
+.nav-menu__list
+	&--footer
+		li
+			a
+				color: #fff
+				&:hover
+					color: $main-color
+
+.logo__title
+	&--footer
+		color: #fff
+
+.phone-block
+	&--footer
+		margin-left: 11%
+
+.phone-block__link
+	&--footer
+		display: inline-block
+		margin-left: 45px
+		vertical-align: top
+		color: #fff
+		span
+			color: #fff
+		&:before
+			@include sprite($phone-ico-2)
+
+.mail-block
+	&--footer
+		margin-top: 0
+
+.mail-block__link
+	&--footer
+		color: #fff
+		&:before
+			@include sprite($mail-ico-2)
+
+.mail-block__write
+	&--footer
+		color: #fff
+		&:after
+			background: #fff
+
+.footer__contact
+	margin: 45px 0 35px
+	font-size: 14px
+	color: #fff
+	font-weight: 300
+	text-align: right
+	clear: both
+	span
+		font-weight: 800
+
+.copyright
+	display: inline-block
+	font-size: 14px
+	color: #fff
+
+.developer
+	float: right
+	font-size: 14px
+	color: #fff
+	font-weight: 300
+	a
+		font-weight: 800
+		color: #fff
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+/*-----------Callback form--------------*/
+.order-form
+	max-width: 1000px
+	margin: 0 auto
+	padding: 25px 0 62px
+	text-align: center
+	background: #fff
+	.section-title
+		float: none
+		margin-bottom: 30px
+		font-family: "intro"
+		font-weight: normal
+	.callback-form
+		float: none
+		&__in
+			display: block
+			width: 318px
+			height: 55px
+			margin: 0 auto 14px
+			font-size: 18px
+		.btn
+			width: 318px
+			height: 55px
+			line-height: 55px
+
+	.mfp-close
+		top: 4px
+		right: 2px
+		&:active
+			top: 4px
+/*----------------end--------------------*/
+
+/*-------Плавное появление magnific popup------------*/
+.mfp-zoom-in
+	.mfp-with-anim
+		opacity: 0
+		transition: all 0.2s ease-in-out
+		transform: scale(0.8)
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.3s ease-out
+		background: rgba(22,177,204, .89)
+		background-image: linear-gradient(266deg, #30c5ed 0%, #23cfbe 100%)
+	&.mfp-ready
+		.mfp-with-anim
+			opacity: 1
+			transform: scale(1)
+		&.mfp-bg
+			opacity: 0.8
+	&.mfp-removing
+		.mfp-with-anim
+			transform: scale(0.8)
+			opacity: 0
+		&.mfp-bg
+			opacity: 0
+/*-------------end-----------------------*/
+
+@import "gos.sass"

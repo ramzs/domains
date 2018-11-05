@@ -1,0 +1,63 @@
+/*----------------Tovar page------------------*/
+.tovar-pict
+	height: 350px
+	img
+		display: block
+		max-width: 100%
+		height: 100%
+		margin: 0 auto
+
+.tovar-descr
+	margin-top: 30px
+
+.descr-list
+	max-width: 400px
+	margin: 0 auto
+	li
+		position: relative
+		display: block
+		margin-bottom: 20px
+		&:after
+			content: ''
+			position: absolute
+			bottom: 6px
+			left: 0
+			width: 100%
+			z-index: 0
+			border-bottom: 1px dotted #000
+		span, a
+			position: relative
+			z-index: 2
+			font-size: 16px
+			background: #fff
+	&__name
+		display: inline-block
+	&__info, &__brend
+		float: right
+		color: $lightblue
+	&__brend
+		text-decoration: underline
+		&:hover
+			color: $lightblue
+			text-decoration: none
+
+.btn-order
+	display: block
+	max-width: 320px
+	width: 100%
+	height: 40px
+	margin: 40px auto 0
+	font-size: 18px
+	font-weight: 500
+	line-height: 38px
+	text-align: center
+	color: #fff
+	border-radius: 5px
+	background-image: linear-gradient(to top, #073091 0%, #0d44c6 100%)
+	&:hover
+		background-image: linear-gradient(to top, #093cb3 0%, #032269 100%)
+
+.tovar-info
+	margin-top: 20px
+	font-size: 16px
+/*--------------------end-----------------------*/

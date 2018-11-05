@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "houschkapro";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/HouschkaProDemiBold/HouschkaProDemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HouschkaProDemiBold/HouschkaProDemiBold.woff") format("woff"), url("../fonts/HouschkaProDemiBold/HouschkaProDemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "houschkapro";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/HouschkaProLight/HouschkaProLight.eot?#iefix") format("embedded-opentype"), url("../fonts/HouschkaProLight/HouschkaProLight.woff") format("woff"), url("../fonts/HouschkaProLight/HouschkaProLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "houschkapro";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/HouschkaProMedium/HouschkaProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/HouschkaProMedium/HouschkaProMedium.woff") format("woff"), url("../fonts/HouschkaProMedium/HouschkaProMedium.ttf") format("truetype");
+}

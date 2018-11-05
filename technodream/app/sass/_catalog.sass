@@ -1,0 +1,338 @@
+/*----------------Catalog page------------*/
+.page-welcome
+	position: relative
+	height: 344px
+	background: $blue
+	.col-md-12
+		height: 344px
+	&__wrap
+		position: absolute
+		top: 50%
+		left: 15px
+		transform: translate(0, -50%)
+
+
+.page-title
+	display: block
+	margin-bottom: 38px
+	font: 45px "eurofurence"
+	color: #fff
+	text-transform: uppercase
+
+.page-descr
+	max-width: 515px
+	font-size: 15px
+	color: #fff
+
+.page-pict
+	float: right
+	margin-top: 35px
+	img
+		display: block
+		max-width: 100%
+
+.content
+	position: relative
+	padding-bottom: 32px
+
+.filter
+	position: relative
+	margin: 40px 0 20px
+	text-align: right
+	&:after
+		content: ''
+		position: absolute
+		top: 18px
+		left: 0
+		right: 0
+		width: 100%
+		height: 1px
+		z-index: -1
+		background: #dedede
+	&-wrap
+		position: relative
+		display: inline-block
+		margin-right: -20px
+		padding: 0 20px
+		z-index: 5
+		background: #fff
+	&-btn
+		display: none
+		width: 150px
+		height: 36px
+		margin: 0 5px
+		font-size: 16px
+		font-weight: 600
+		color: #fff
+		line-height: 36px
+		cursor: pointer
+		border-radius: 3px
+		text-transform: uppercase
+		text-align: center
+		background: $blue
+		transition: all .15s ease
+		&:hover, &.active
+			color: #202020
+			background: $accent
+	&-price
+		display: inline-block
+		margin-right: 25px
+		text-align: left
+		.jq-selectbox
+			width: 231px
+	&__title
+		padding-right: 10px
+		font-size: 13px
+		color: #cacaca
+	&-count
+		display: inline-block
+		margin-right: 25px
+		text-align: left
+		.jq-selectbox
+			width: 53px
+	&-view
+		display: inline-block
+		text-align: left
+		&__item
+			display: inline-block
+			vertical-align: middle
+			width: 24px
+			height: 24px
+			font-size: 0
+			&_grid
+				background: url(../img/plitka.png) 0 0 no-repeat
+			&_table
+				margin-left: 10px
+				background: url(../img/table.png) 0 0 no-repeat
+
+	.jq-selectbox
+		&.focused
+			.jq-selectbox__select
+				border: 1px solid #ebebeb
+		&__select
+			height: 36px
+			padding: 0 22px 0 7px
+			font: 13px/34px "pfbeausans"
+			color: #202020
+			border-radius: 0
+			border: 1px solid #ebebeb
+			box-shadow: none
+			background: none
+			&:hover
+				background: none
+			&:active
+				box-shadow: none
+				background: none
+		&__trigger
+			border-left: none
+			&-arrow
+				border-top-color: #d9d9d9
+		&:hover
+			.jq-selectbox__trigger-arrow
+				border-top-color: #d9d9d9
+		&__dropdown
+			font: 13px/34px "pfbeausans"
+			color: #202020
+		 li
+		 	padding: 2px 10px 2px
+
+.sidebar
+	float: left
+	width: 23.8%
+	margin-left: -100px
+
+.search-option
+	border: 1px solid #dedede
+	&__title
+		padding: 15px 20px 16px
+		font: 16px "eurofurence"
+		color: #fff
+		text-transform: uppercase
+		background-color: #3f8ee0
+
+.option-change
+	padding: 12px 0 8px
+	&_large
+		height: 212px
+		overflow: hidden
+		&.open
+			height: auto
+	&__item
+		display: block
+		margin-bottom: 3px
+		padding: 2px 0 3px 28px
+		font-size: 14px
+		color: #202020
+		&:hover
+			color: #fff
+			text-decoration: underline
+			background: #3f8ee0
+		.jq-checkbox
+			width: 16px
+			height: 16px
+			border: 1px solid #b5b5b5
+			border-radius: 3px
+			box-shadow: inset 0 2px 0 white
+			background: #fefefe
+			background-image: linear-gradient(to top, transparent 0%, transparent 100%)
+			&.focused
+				border: 1px solid #b5b5b5
+			&.checked
+				.jq-checkbox__div
+					margin: 4px 0 0 3px
+					background: none
+					@include sprite($check)
+					border-radius:
+					box-shadow: none
+
+.range-in
+	margin-bottom: 20px
+	text-align: center
+	input
+		position: relative
+		display: block
+		width: 100%
+		height: 27px
+		font-size: 15px
+		color: #202020
+		text-align: center
+		outline: none
+		border: 1px solid #cacaca
+		border-radius: 3px
+	.price-min
+		position: relative
+		display: inline-block
+		width: 80px
+		margin: 0 7px 0 0
+		&:after
+			content: ''
+			position: absolute
+			top: 13px
+			right: -13px
+			width: 9px
+			height: 1px
+			background: #cacaca
+	.price-max
+		position: relative
+		display: inline-block
+		width: 80px
+		margin: 0 0 0 7px
+	button
+		display: inline-block
+		width: 27px
+		height: 21px
+		margin-left: 10px
+		padding: 0
+		font-size: 13px
+		color: #202020
+		text-align: center
+		text-transform: uppercase
+		outline: none
+		border: 1px solid #cacaca
+		border-radius: 5px
+		background: #fefefe
+		&:hover
+			color: $accent
+			border-color: $accent
+
+.slider-range
+	max-width: 207px
+	width: 100%
+	margin: 0 auto 12px
+	&.ui-corner-all
+		border-radius: 0
+	&.ui-widget.ui-widget-content
+		height: 1px
+		width: 100%
+		background: #cacaca
+		border: none
+	&.ui-slider
+		.ui-slider-range
+			height: 1px
+			background: $blue
+		.ui-slider-handle
+			top: -7px
+			width: 15px
+			height: 15px
+			outline: none
+			border-radius: 50%
+			border: 1px solid #cacaca
+			background: #fff
+
+.more-link
+	display: inline-block
+	margin: 0 0 15px
+	padding-left: 28px
+	font-size: 15px
+	color: #3f8ee0
+	transition: none
+	i
+		position: relative
+		display: inline-block
+		top: -1px
+		left: 1px
+		margin-right: 8px
+		@include sprite($arrow-down)
+	span
+		display: none
+	&:hover
+		color: #3f8ee0
+		text-decoration: underline
+	&:focus
+		color: #3f8ee0
+		text-decoration: none
+	&.active
+		font-size: 0
+		i
+			transform: rotate(180deg)
+		span
+			display: inline
+			font-size: 15px
+
+.main
+	float: right
+	width: 81%
+
+.catalog-wrap
+	+clearfix
+	.tovar-item
+		float: left
+		width: 100%
+		max-width: 24.7%
+		margin-bottom: 2px
+
+.pagination-wrap
+	padding: 20px 0
+	&__text
+		display: inline-block
+		margin-top: 5px
+		font-size: 15px
+		color: #202020
+
+.pagination
+	float: right
+	margin: 0
+	> li
+		a
+			width: 27px
+			height: 27px
+			margin-left: 2px
+			padding: 0
+			font-size: 15px
+			line-height: 25px
+			color: #202020
+			text-align: center
+			border: 1px solid #ebebeb
+			background: #ebebeb
+			&:hover
+				border: 1px solid #317bc9
+	> .active
+		> a
+			color: #cacaca
+			border: 1px solid #ebebeb
+			background: none
+			&:hover
+				color: #cacaca
+				border: 1px solid #ebebeb
+				background: none
+/*--------------------end-----------------*/

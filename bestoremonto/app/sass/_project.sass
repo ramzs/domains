@@ -1,0 +1,104 @@
+@import "vars.sass"
+/*--------------Project page---------------*/
+.content__work
+	position: relative
+	&.content__work-project
+		&:before
+			content: ' '
+			display: block
+			position: absolute
+			top: 375px
+			left: -34.9%
+			width: 3000px
+			height: 440px
+			z-index: 1
+			border-radius: 50px 0 0 50px
+			background: $color-3
+
+.section__title
+	&.section__title-project
+		margin-top: -40px
+		&:after
+			background: url(../img/project-title-line.png) 0 0 no-repeat
+			background-size: 100%
+
+.bredcrumb
+	position: relative
+	margin: 17px 0 0 40px
+	z-index: 5
+	li
+		display: inline-block
+		position: relative
+		margin-right: 20px
+		font: 200 14px "helvetica"
+		&:not(:first-child):before
+			content: ' '
+			position: absolute
+			top: 2px
+			left: -15px
+			@include sprite($arrow-bread)
+		a
+			color: $color-2
+			&:hover
+				text-decoration: underline
+
+.project__wrap
+	margin-top: 55px
+
+.project__item
+	position: relative
+	float: left
+	max-width: 488px
+	margin: 0 30px 30px 0
+	z-index: 5
+	background: #fafafa
+	&:nth-child(even)
+		margin-right: 0
+
+.project__pict
+	overflow: hidden
+	height: 325px
+	img
+		width: 100%
+
+.project__descr
+	padding: 27px 40px 36px
+
+.project__title
+	font: 500 23px/35px "helvetica"
+
+.project__table
+	display: table
+	width: 100%
+	margin-top: 20px
+	padding: 0 40px
+	border-collapse: collapse
+	.descr__row
+		display: table-row
+		&.descr__row-head
+			border-bottom: 2px solid $color-9
+	.descr__cell
+		display: table-cell
+		font: 15px "helvetica"
+		&:not(:last-child)
+			border-right: 2px solid $color-9
+		&:not(:first-child)
+			padding-left: 15px
+		&.descr__cell-head
+			padding-bottom: 8px
+		&.descr__cell-body
+			padding-top: 8px
+			color: $color-2
+
+.section__seo
+	&.section__seo-project
+		background: #fff
+
+.section__title
+	&.section__title-seo
+		&.section__title-project
+			padding-top: 36px
+			h2
+				&.mob__title
+					display: none
+/*------------------end---------------------*/

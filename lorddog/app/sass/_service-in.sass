@@ -1,0 +1,151 @@
+/*------------------Service page-----------------*/
+.service-in
+	padding: 0
+
+.service-main
+	padding-bottom: 60px
+	background: #e8e8eb
+
+.service-top
+	position: relative
+	margin-top: -132px
+	text-align: center
+
+.service-location
+	float: left
+	width: 33%
+	margin-top: 37px
+	text-align: right
+	&__title
+		margin-bottom: 7px
+		font-size: 13px
+		font-weight: 700
+		text-transform: uppercase
+	&__descr
+		font: 14px/22px $sec-font
+
+.service-pict
+	position: relative
+	display: inline-block
+	width: 270px
+	height: 270px
+	margin: 0 auto 26px
+	overflow: hidden
+	border-radius: 50%
+	img
+		display: block
+		+vcenter
+
+.service-entry
+	float: right
+	width: 33.3%
+	margin-top: 37px
+	text-align: left
+	&__title
+		margin-bottom: 5px
+		font-size: 13px
+		font-weight: 700
+		text-transform: uppercase
+	&__phone
+		display: block
+		font-size: 22px
+
+.service-price
+	text-align: left
+	&__title
+		position: relative
+		margin-bottom: 18px
+		font-size: 15px
+		font-weight: 700
+		line-height: 22px
+		text-transform: uppercase
+		&:before
+			content: ''
+			position: absolute
+			bottom: -10px
+			left: 0
+			width: 69px
+			height: 2px
+			background: $accent
+	&__count
+		margin-bottom: 22px
+		font-size: 36px
+		font-weight: 700
+		text-transform: uppercase
+
+.btn_order
+	width: 179px
+	height: 49px
+	line-height: 49px
+
+.service-list
+	list-style-type: disc
+	text-align: left
+	li
+		padding-left: 2px
+		font: 15px/22px $sec-font
+
+.service-descr
+	padding: 95px 0 56px
+
+.service-wrap
+	position: relative
+	padding: 35px 0 17px
+	background: #dfdcd5
+	&__title
+		margin-bottom: 30px
+		font: 36px $accent-font
+		text-align: center
+
+.service-cl
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -16px
+		padding: 0
+		font-size: 0
+		z-index: 101
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&:hover
+			opacity: 1
+		&.slick-prev
+			left: 20px
+			@include sprite($arrow-left4)
+		&.slick-next
+			right: 20px
+			@include sprite($arrow-right4)
+	&__item
+		outline: none
+	.work-item
+		max-width: 260px
+		margin: 0 auto
+		padding: 21px
+		box-shadow: 0 10px 18px rgba(0, 0, 0, 0.17)
+		background: #f6f6f6
+		img
+			width: 100%
+
+.btn_all
+	position: absolute
+	bottom: -24px
+	left: 0
+	right: 0
+	width: 189px
+	height: 49px
+	margin: 0 auto 0
+	font-size: 13px
+	color: #fff
+	line-height: 49px
+	&:hover
+		color: #fff
+
+.service-descr
+	&__text
+		font: 15px/22px $sec-font
+		p
+			margin-bottom: 20px
+/*--------------------end-----------------------*/

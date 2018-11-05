@@ -1,0 +1,136 @@
+.header
+	position: relative
+	&-top
+		padding: 43px 30px
+		background: #fff
+	&-logo
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		transform: translate(0,-50%)
+		max-width: 190px
+		margin: 0 auto
+		img
+			display: block
+			max-width: 100%
+
+.menu-mob
+	display: none
+	position: absolute
+	top: 0
+	right: 15px
+	width: 40px
+	height: 44px
+	cursor: pointer
+	z-index: 900
+	transition: all .25s ease
+	span
+		position: absolute
+		display: block
+		left: 0
+		width: 100%
+		height: 4px
+		margin: 8px 0
+		transition: all .3s ease
+		background: $btn
+		&:nth-child(1)
+			top: 0
+		&:nth-child(2)
+			top: 12px
+		&:nth-child(3)
+			top: 24px
+	&:hover, &.active
+		span
+			background: $hover
+	&.active
+		span
+			&:nth-child(1)
+				top: 12px
+				transform: rotate(45deg)
+			&:nth-child(2)
+				left: -1500px
+				transition: left .8s ease
+			&:nth-child(3)
+				top: 12px
+				transform: rotate(-45deg)
+
+.mail
+	position: relative
+	display: table
+	padding-left: 40px
+	&:hover
+		color: $link
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 0
+		margin-top: -15px
+		@include sprite($mail)
+	&-header
+		display: inline-block
+		font: 300 18px $secfont
+		color: #7f7f7f
+
+.phone
+	position: relative
+	display: table
+	padding-left: 40px
+	&:hover
+		color: $link
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 0
+		margin-top: -15px
+		@include sprite($phone)
+	&-header
+		float: right
+		font: 300 23px $secfont
+		color: #7f7f7f
+
+.header
+	&-nav
+		position: absolute
+		left: 0
+		right: 0
+		border-top: 3px solid $blue
+		background: rgba(#000,.5)
+	&-menu
+		width: 100%
+		padding: 0 15px
+		+justify
+		li
+			position: relative
+			display: inline-block
+			vertical-align: middle
+			text-align-last: auto
+			text-align: center
+			transform: perspective(1px) translateZ(0)
+			&:before
+				content: ''
+				position: absolute
+				top: -3px
+				left: 0
+				right: 100%
+				height: 3px
+				transition-property: right
+				transition-duration: 0.3s
+				transition-timing-function: ease-out
+				background: $link
+			&:hover
+				&:before
+					right: 0
+			a
+				display: table-cell
+				vertical-align: middle
+				height: 78px
+				font-size: 15px
+				font-weight: 700
+				color: #fff
+				line-height: 1.4
+				text-transform: uppercase
+				&:hover
+					color: $link

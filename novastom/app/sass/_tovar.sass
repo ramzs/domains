@@ -1,0 +1,117 @@
+@import "vars"
+
+/*----------------Tovar page-------------*/
+.content--tovar
+	padding-bottom: 20px
+
+.tovar
+	margin-bottom: 20px
+	&__pict
+		position: relative
+		float: left
+		width: 490px
+		height: 495px
+		overflow: hidden
+		border: 1px solid #eaeaea
+		border-radius: 10px
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 100%
+			transform: translate(-50%, -50%)
+	&-descr
+		display: table
+		padding-left: 25px
+		&__logo
+			margin-bottom: 27px
+			text-align: center
+		&__text
+			margin-bottom: 30px
+			font-size: 16px
+			font-weight: 300
+		&__price
+			margin-bottom: 15px
+			font-size: 36px
+			font-weight: 800
+			color: $in-color
+			text-align: center
+			span
+				font-size: 24px
+
+.btn--tovar
+	margin: 0 auto
+	i
+		position: relative
+		display: inline-block
+		top: 5px
+		margin-right: 12px
+		@include sprite($cart-btn)
+
+.btn--click
+	margin: 10px auto 0
+	letter-spacing: -1px
+	background: url(../img/btn-bg2.png) center top no-repeat
+	background-size: cover
+	i
+		position: relative
+		display: inline-block
+		top: 10px
+		margin: 0 5px 0 7px
+		@include sprite($oneclick)
+
+.tab-block
+	margin-bottom: 25px
+
+.tab-head
+	overflow: hidden
+	border-bottom: 1px solid $in-color
+	&__link
+		float: left
+		padding: 10px 43px 11px
+		font-size: 16px
+		color: $in-color
+		cursor: pointer
+		&.active
+			color: #fff
+			background: $in-color
+
+.tab-item
+	display: none
+	&.open
+		display: block
+
+.tov-title
+	margin: 18px 0 16px
+	font-size: 16px
+	font-weight: 800
+	color: $in-color
+
+.tb
+	display: table
+	width: 100%
+	&-row
+		display: table-row
+	&-cell
+		display: table-cell
+		&--title
+			width: 50%
+			padding-left: 20px
+			font-weight: 800
+		&--descr
+			width: 50%
+			font-weight: 300
+	&-tovar
+		.tb-row
+			&:nth-child(odd)
+				background: #f2f6f8
+		.tb-cell
+			padding: 5px 0 6px
+			font-size: 16px
+			color: $in-color
+
+.block-tovar
+	padding-bottom: 0
+	.block-item
+		width: 289px
+/*-------------------end-----------------*/

@@ -1,0 +1,246 @@
+@import "vars.sass"
+/*-----------------Project page---------------*/
+.content__page
+	&.content__page-projects
+		padding-bottom: 30px
+		background: url(../img/work-bg.jpg) center top no-repeat
+
+.content
+	margin-top: 30px
+
+.filter__link
+	position: relative
+	display: none
+	width: 100%
+	height: 60px
+	margin-bottom: 20px
+	padding-left: 50px
+	font: 700 14px "roboto"
+	color: #37474f
+	line-height: 60px
+	text-align: left
+	text-transform: uppercase
+	background: #ebebeb
+	.link__title
+		&.link__title-2
+			display: none
+	&:after
+		content: ' '
+		position: absolute
+		top: 28px
+		right: 50px
+		@include sprite($arrow)
+	&.open
+		.link__title
+			&.link__title-1
+				display: none
+			&.link__title-2
+				display: block
+		&:after
+			transform: rotate(90deg)
+
+.sidebar
+	position: relative
+	float: left
+	width: 23.6%
+
+.project__filter
+	padding: 35px 25px 8px
+	background: #6e777b
+	&.project__filter-mob
+		display: none
+
+.filter__block
+	margin-bottom: 32px
+	label
+		display: block
+		font-size: 14px
+		color: #fff
+	.jq-checkbox
+		width: 16px
+		height: 16px
+		margin-right: 8px
+		border-radius: 3px
+		&.checked
+			.jq-checkbox__div
+				margin: 3px 0 0 3px
+				background: none
+				box-shadow: none
+				border-radius: 0
+				@include sprite($check-icon)
+		&.focused
+			border: 1px solid transparent
+	&.filter__block-price, &.filter__block-area
+		label
+			display: inline-block
+			font-size: 14px
+			color: #fff
+			input
+				width: 43px
+				height: 23px
+				margin: 0 8px 0 7px
+				font-size: 14px
+				text-align: center
+				border-radius: 3px
+				border: none
+				outline: none
+	&.filter__block-category, &.filter__block-floor
+		label
+			margin-bottom: 10px
+	&.filter__block-total
+		margin-top: 40px
+		padding-top: 12px
+		text-align: center
+		border-top: 1px solid #808A8E
+	.block__title
+		display: block
+		margin-bottom: 12px
+		padding-bottom: 10px
+		font-size: 17px
+		color: #fff
+		border-bottom: 1px solid #808A8E
+	.slider__wrap
+		form
+			margin-bottom: 23px
+
+.btn__filter
+	display: block
+	max-width: 213px
+	width: 100%
+	height: 44px
+	margin: 0 auto
+	font: 700 14px "roboto"
+	color: #fff
+	line-height: 40px
+	text-align: center
+	text-transform: uppercase
+	cursor: pointer
+	border: none
+	background: #842326
+	outline: none
+	transition: all .15s ease
+	&:hover
+		background: #8e272a
+
+
+.reset__link
+	display: inline-block
+	margin-top: 20px
+	text-align: center
+	font-size: 14px
+	color: #fff
+	border-bottom: 1px dashed #fff
+	&:hover
+		border-bottom: none
+
+/*--------jqueryUi slider--------*/
+/* Ширина слайдера*/
+#slider
+	width: 100%
+
+/* Контейнер слайдера*/
+.ui-slider
+	position: relative
+	.ui-slider-handle
+		position: absolute
+		z-index: 2
+		width: 10px /* Задаем нужную ширину*/
+		height: 10px  /* и высоту*/
+		border-radius: 50%
+		outline: none
+		background: #fff /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления*/
+		cursor: pointer
+	.ui-slider-range
+		position: absolute
+		z-index: 1
+		font-size: .7em
+		display: block
+		border: 0
+		overflow: hidden
+
+/* Ползунок*/
+
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок)*/
+.ui-slider-horizontal
+	height: 2px/* задаем высоту согласно дизайна*/
+	.ui-slider-handle /* позиционируем ползунки*/
+		top: -4px
+		margin-left: -6px
+	.ui-slider-range
+		top: 0
+		height: 100%
+	.ui-slider-range-min
+		left: 0
+	.ui-slider-range-max
+		right: 0
+
+/* оформление полосы по которой ходит ползунок*/
+.ui-widget-content
+	border: none
+	background: #fff
+
+/* оформление активного участка (между двумя ползунками)*/
+.ui-widget-header
+	border: none
+	background: #842326
+
+/* скругление для полосы слайдера*/
+.ui-corner-all
+	-moz-border-radius: 4px
+	-webkit-border-radius: 4px
+	border-radius: 4px
+/*------------end----------------*/
+
+.main
+	display: inline-block
+	width: 76.4%
+	padding-left: 22px
+	text-align: justify
+	&:after
+		content: ' '
+		display: inline-block
+		width: 100%
+		height: 0
+		overflow: hidden
+		visibility: hidden
+
+.project__item
+	display: inline-block
+	width: 273px
+	margin-bottom: 22px
+	border: 1px solid #cfd8dc
+	background: #fff
+	transition: all .15s ease
+	&:hover
+		box-shadow: 0 0 25px -5px #000
+	img
+		display: block
+		width: 100%
+		height: 200px
+	.item__descr
+		padding: 23px 30px 29px
+		.item__number
+			margin-bottom: 3px
+			font-size: 14px
+		.item__area
+			margin-bottom: 15px
+			font-size: 14px
+		.item__price
+			position: relative
+			margin-bottom: 18px
+			padding-left: 30px
+			font-size: 14px
+			span
+				font: 600 17px "roboto"
+			&:before
+				content: ' '
+				position: absolute
+				top: 2px
+				left: 0
+				@include sprite($price-icon)
+
+.calc__link
+	&.calc__link-project
+		width: 100%
+		margin: 0 auto
+/*--------------------end-----------------------*/

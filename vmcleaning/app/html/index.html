@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<section class="section-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="main-block">
+						<h1 class="main-block__title">Vladimir<br>Moscow<br>Cleaning</h1>
+						<div class="main-block__text">Уборка квартир,<br>домов и офисов</div>
+						<a href="#order-form" class="btn btn_size1 btn-main popup" data-effect="mfp-zoom-in">Оставить заявку</a>
+					</div>
+					<div class="main-bottom">
+						<div class="main-bottom__title">Чистота вашего дома – наша забота!</div>
+						<div class="main-bottom__text">Мы берем на себя любые клининговые работы и дарим вам свободное время</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="calc" class="section-calc">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="section-title"><p>Рассчитать</p><p>стоимость</p><p>уборки</p></h2>
+				</div>
+			</div>
+		</div>
+		<div class="calc">
+			<div class="container calc-block">
+				<div class="calc-item">
+					<div class="calc-item__pict"><img src="../../img/calc-1.jpg" alt=""></div>
+					<div class="calc-item__title"><p>1 комната</p><p>1 санузел</p><p>Стандартная</p><div class="calc-item__price">От <span>1800</span> руб</div></div>
+					<a href="#calc-form" class="btn btn_size2 btn-calc popup" data-effect="mfp-zoom-in">Рассчитать</a>
+				</div>
+				<div class="calc-item">
+					<div class="calc-item__pict"><img src="../../img/calc-2.jpg" alt=""></div>
+					<div class="calc-item__title"><p>1 комната</p><p>1 санузел</p><p>Генеральная</p><div class="calc-item__price">От <span>3500</span> руб</div></div>
+					<a href="#calc-form" class="btn btn_size2 btn-calc popup" data-effect="mfp-zoom-in">Рассчитать</a>
+				</div>
+				<div class="calc-item">
+					<div class="calc-item__pict"><img src="../../img/calc-3.jpg" alt=""></div>
+					<div class="calc-item__title"><p>1 комната</p><p>1 санузел</p><p>После ремонта</p><div class="calc-item__price">От <span>5500</span> руб</div></div>
+					<a href="#calc-form" class="btn btn_size2 btn-calc popup" data-effect="mfp-zoom-in">Рассчитать</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="price" class="section-price">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="section-title section-title_color2"><p>Наши</p><p>расценки</p></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 price">
+					<div class="price-tb">
+						<div class="price-tr">
+							<div class="price-td price-td_head">Количество комнат</div>
+							<div class="price-td price-td_head">Стандартная уборка</div>
+							<div class="price-td price-td_head">Генеральная уборка</div>
+							<div class="price-td price-td_head">Уборка после ремонта</div>
+						</div>
+						<div class="price-tr">
+							<div class="price-td">1-комнатная квартира</div>
+							<div class="price-td">1 800 руб</div>
+							<div class="price-td">3 500 руб</div>
+							<div class="price-td">5 500 руб</div>
+						</div>
+						<div class="price-tr">
+							<div class="price-td">2-комнатная квартира</div>
+							<div class="price-td">2 100 руб</div>
+							<div class="price-td">4 500 руб</div>
+							<div class="price-td">6 500 руб</div>
+						</div>
+						<div class="price-tr">
+							<div class="price-td">3-комнатная квартира</div>
+							<div class="price-td">2 500 руб</div>
+							<div class="price-td">5 900 руб</div>
+							<div class="price-td">8 500 руб</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="service" class="section-service">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="section-title"><p>Что входит</p><p>в уборку</p></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 service">
+					<div class="service-head">
+						<ul class="service-tab" role="tablist">
+							<li class="active"><a href="#s-1" role="tab" data-toggle="tab">Стандартная</a></li>
+							<li><a href="#s-2" role="tab" data-toggle="tab">Генеральная</a></li>
+							<li><a href="#s-3" role="tab" data-toggle="tab">После ремонта</a></li>
+							<li><a href="#s-4" role="tab" data-toggle="tab">Дополнительно</a></li>
+						</ul>
+					</div>
+					<div class="service-body">
+						<div id="s-1" class="service-content fade in active" role="tabpanel">
+							<div class="service-text">
+								<div class="service-text__title">Стандартная</div>
+								<ul class="service-list">
+									<li>Раскладывание вещей</li>
+									<li>Заправка кроватей</li>
+									<li>Мойка посуды и плиты</li>
+									<li>Протирание пыли, включая подоконники и светильники</li>
+									<li>Мойка зеркал</li>
+									<li>Уборка пылесосом</li>
+									<li>Мойка пола и плинтусов</li>
+									<li>Вынос мусора из корзин</li>
+									<li>Мойка и дезинфекция унитаза, раковины и душевой кабины</li>
+								</ul>
+							</div>
+							<div class="service-pict"><img src="../../img/woman.png" alt=""></div>
+						</div>
+						<div id="s-2" class="service-content fade in" role="tabpanel">
+							<div class="service-text">
+								<div class="service-text__title">Генеральная</div>
+								<ul class="service-list">
+									<li>Раскладывание вещей</li>
+									<li>Заправка кроватей</li>
+									<li>Мойка посуды и плиты</li>
+									<li>Протирание пыли, включая подоконники и светильники</li>
+									<li>Мойка зеркал</li>
+									<li>Уборка пылесосом</li>
+								</ul>
+							</div>
+							<div class="service-pict"><img src="../../img/woman.png" alt=""></div>
+						</div>
+						<div id="s-3" class="service-content fade in" role="tabpanel">
+							<div class="service-text">
+								<div class="service-text__title">После ремонта</div>
+								<ul class="service-list">
+									<li>Раскладывание вещей</li>
+									<li>Заправка кроватей</li>
+									<li>Мойка посуды и плиты</li>
+									<li>Протирание пыли, включая подоконники и светильники</li>
+								</ul>
+							</div>
+							<div class="service-pict"><img src="../../img/woman.png" alt=""></div>
+						</div>
+						<div id="s-4" class="service-content fade in" role="tabpanel">
+							<div class="service-text">
+								<div class="service-text__title">Дополнительно</div>
+								<ul class="service-list">
+									<li>Раскладывание вещей</li>
+									<li>Заправка кроватей</li>
+									<li>Мойка посуды и плиты</li>
+									<li>Протирание пыли, включая подоконники и светильники</li>
+									<li>Мойка зеркал</li>
+									<li>Уборка пылесосом</li>
+									<li>Мойка пола и плинтусов</li>
+								</ul>
+							</div>
+							<div class="service-pict"><img src="../../img/woman.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="section-work">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="section-title section-title_color2"><p>Как мы</p><p>работаем</p></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="work">
+						<div class="work-item">
+							<div class="work-item__title work-item__title_ic1">Оперативно</div>
+							<div class="work-item__text">
+								<p>Приезжаем в день заказа, действуем четко, знаем свое дело. Заказ можно сделать прямо на нашем сайте</p>
+							</div>
+						</div>
+						<div class="work-item">
+							<div class="work-item__title work-item__title_ic2">Качественно</div>
+							<div class="work-item__text">
+								<p>Если вы остались недовольны проведенными работами, мы готовы немедленно исправить недочет</p>
+							</div>
+						</div>
+						<div class="work-item">
+							<div class="work-item__title work-item__title_ic3">Под ключ</div>
+							<div class="work-item__text">
+								<p>Выполняем все виды уборочных работ без подключения сторонних специалистов</p>
+							</div>
+						</div>
+						<div class="work-item">
+							<div class="work-item__title work-item__title_ic4">Профессионально</div>
+							<div class="work-item__text">
+								<p>Мы ответственно подходим к вопросу чистоты и безопасности, у нас работают только проверенные и подготовленные сотрудники.</p>
+							</div>
+						</div>
+						<div class="work-item">
+							<div class="work-item__title work-item__title_ic5">Экономично</div>
+							<div class="work-item__text">
+								<p>Постоянные клиенты могут рассчитывать на нашу скидку. Мы принимаем любые способы оплаты</p>
+							</div>
+						</div>
+						<div class="work-item">
+							<div class="work-item__title work-item__title_ic6">В любых условиях</div>
+							<div class="work-item__text">
+								<p>Мы справляемся с самыми сложными случаями благодаря своему профессионализму и современному оснащению</p>
+							</div>
+						</div>
+						<div class="work-item">
+							<div class="work-item__title work-item__title_ic7">Наши специалисты</div>
+							<div class="work-item__text">
+								<p>Все наши сотрудники - настоящие профессионалы, снабженные новейшими экологически чистыми моющими средствами. Мы действуем максимально аккуратно, поэтому вы можете быть спокойны за хрупкие детали своего интерьера. Все сотрудники прошли тщательный отбор и отлично себя зарекомендовали</p>
+							</div>
+						</div>
+						<div class="work-item">
+							<div class="work-item__title work-item__title_ic8">Что мы используем</div>
+							<div class="work-item__text">
+								<p>Мы применяем исключительно профессиональные чистящие средства для уборки, а также современное оборудование, включая подметальные и поломоечные машины Karcher, промышленные пылесосы. Гипоаллергенные средства для уборки Synegetic применяются в соответствии с типом работ и видом мебели, что исключает повреждение полированных частей, появление пятен и разводов</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="gallery" class="section-gallery">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="section-title"><p>Наши</p><p>работы</p></h2>
+				</div>
+			</div>
+		</div>
+		<div class="gallery gallery-popup">
+			<div class="gallery-item gallery-item_twopict">
+				<a href="../../img/g-1.jpg" class="gallery-item__pict">
+					<span>До</span>
+					<img src="../../img/g-1s.jpg" alt="">
+				</a>
+				<a href="../../img/g-2.jpg" class="gallery-item__pict">
+					<span>После</span>
+					<img src="../../img/g-2s.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery-item gallery-item_fourpict">
+				<a href="../../img/g-3.jpg" class="gallery-item__pict">
+					<span>До</span>
+					<img src="../../img/g-3s.jpg" alt="">
+				</a>
+				<a href="../../img/g-4.jpg" class="gallery-item__pict">
+					<span>После</span>
+					<img src="../../img/g-4s.jpg" alt="">
+				</a>
+				<a href="../../img/g-5.jpg" class="gallery-item__pict">
+					<span>До</span>
+					<img src="../../img/g-5s.jpg" alt="">
+				</a>
+				<a href="../../img/g-6.jpg" class="gallery-item__pict">
+					<span>После</span>
+					<img src="../../img/g-6s.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery-item gallery-item_fourpict">
+				<a href="../../img/g-7.jpg" class="gallery-item__pict">
+					<span>До</span>
+					<img src="../../img/g-7s.jpg" alt="">
+				</a>
+				<a href="../../img/g-8.jpg" class="gallery-item__pict">
+					<span>После</span>
+					<img src="../../img/g-8s.jpg" alt="">
+				</a>
+				<a href="../../img/g-9.jpg" class="gallery-item__pict">
+					<span>До</span>
+					<img src="../../img/g-9s.jpg" alt="">
+				</a>
+				<a href="../../img/g-10.jpg" class="gallery-item__pict">
+					<span>После</span>
+					<img src="../../img/g-10s.jpg" alt="">
+				</a>
+			</div>
+			<div class="gallery-item gallery-item_twopict">
+				<a href="../../img/g-11.jpg" class="gallery-item__pict">
+					<span>До</span>
+					<img src="../../img/g-11s.jpg" alt="">
+				</a>
+				<a href="../../img/g-12.jpg" class="gallery-item__pict">
+					<span>После</span>
+					<img src="../../img/g-12s.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-form">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-6 col-md-6 col-lg-offset-7 col-lg-5">
+					<h2 class="section-title section-title_color2"><p>Быстрый</p><p>заказ</p><p>уборки</p></h2>
+					<div class="form-front">
+						<div class="success"><span>Ваша сообщение отправлено!</span></div>
+						<form action="#" class="form-block form-3">
+							<fieldset>
+								<label for="text-2">
+									<span class="placeholder">Имя<sup>*</sup></span>
+									<input id="text-2" type="text" name="name" required>
+								</label>
+								<label for="phone-2">
+									<span class="placeholder">Телефон<sup>*</sup></span>
+									<input id="phone-2" class="phone-in" type="phone" name="phone" required>
+								</label>
+								<label for="mail-2">
+									<span class="placeholder">E-mail<sup>*</sup></span>
+									<input id="mail-2" type="mail" name="mail">
+								</label>
+							</fieldset>
+							<button class="btn btn_size1 btn-form" type="submit">Заказать уборку</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="section-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="section-title"><p>Контакты</p></h2>
+				</div>
+			</div>
+		</div>
+		<div class="contact">
+			<div class="container contact-wrap">
+				<div class="contact-block">
+					<a href="tel:+74954894887" class="phone phone-footer">+7 (495) 489-48-87</a>
+					<a href="tel:+74954894887" class="phone phone-footer">+7 (495) 489-48-87</a>
+					<a href="mailto:vmc@gmail.com" class="mail mail-footer">vmc@gmail.com</a>
+					<div class="location">Москва, ул. Героев Сталинграда, д. 45, офис 5</div>
+					<a href="#callback-form" class="btn btn_size2 btn-callback popup" data-effect="mfp-zoom-in">Обратный звонок</a>
+				</div>
+			</div>
+			<div class="contact-map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3b15003f446cc2aab01579f46a6588811824e8364dc237a78ec2ed9cb854224a&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script></div>
+		</div>
+	</section>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

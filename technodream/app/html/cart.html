@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="breadcrumb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="#">Главная</a></li>
+						<li class="active">Корзина</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="section section-cart">
+		<div class="section-title"><span>Корзина</span></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="cart-main">
+						<div class="tb">
+						<div class="tb-row tb-row_head">
+								<div class="tb-cell tb-cell_head">Товар</div>
+								<div class="tb-cell tb-cell_head">Цена</div>
+								<div class="tb-cell tb-cell_head">Количествово</div>
+								<div class="tb-cell tb-cell_head">Сумма</div>
+								<div class="tb-cell tb-cell_head">&nbsp;</div>
+							</div>
+
+							<div class="tb-row tb-row_body">
+
+								<div class="tb-cell tb-cell_body tb-cell_tovar">
+									<div class="cart-pict">
+										<img src="img/tovar-8.jpg" alt="">
+									</div>
+									<div class="cart-descr">
+										<a href="#">Робот-пылесос <strong>ECOVACS DEEBOT DM88</strong></a>
+										Артикул: 0863<br>Производитель: Ecovacs<br>Модель: Deebot DM88<br>Гарантия: 12 месяцев
+									</div>
+								</div>
+
+								<div class="tb-cell tb-cell_body tb-cell_price">
+									26 999 руб
+								</div>
+
+								<div class="tb-cell tb-cell_body tb-cell_count">
+									<input type="number" name="cart-count" min="1" value="3">
+								</div>
+
+								<div class="tb-cell tb-cell_body tb-cell_total">
+									80 997 руб
+								</div>
+
+								<div class="tb-cell tb-cell_body tb-cell_del">
+									<a href="#" class="del-link">del</a>
+								</div>
+
+							</div>
+
+							<div class="tb-row tb-row_body">
+
+								<div class="tb-cell tb-cell_body tb-cell_tovar">
+									<div class="cart-pict">
+										<img src="img/tovar-9.jpg" alt="">
+									</div>
+									<div class="cart-descr">
+										<a href="#">Утюг с парогенератором <strong>Tefal GV8962E0</strong></a>
+										<p>Артикул: 0319<br>Производитель: Tefal<br>Модель: GV8964 EO<br>Гарантия: 12 месяцев</p>
+									</div>
+								</div>
+
+								<div class="tb-cell tb-cell_body tb-cell_price">
+									20 900 руб
+								</div>
+
+								<div class="tb-cell tb-cell_body tb-cell_count">
+									<input type="number" name="cart-count" min="1" value="1">
+								</div>
+
+								<div class="tb-cell tb-cell_body tb-cell_total">
+									20 900 руб
+								</div>
+
+								<div class="tb-cell tb-cell_body tb-cell_del">
+									<a href="#" class="del-link">del</a>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<div class="cart-bottom">
+						<div class="promo">
+							<div class="promo-in">
+								<input type="text" placeholder="Промо-код">
+								<button>Применить</button>
+							</div>
+							<div class="promo-text">
+								<p><span>*</span>Промокод в корзине действует в течении 10 дней на след покупку - 5 %. Если товар не участвует в акции. Промокод вы получите сразу, но использовать сможете после оплаты текущего заказа</p>
+							</div>
+						</div>
+						<div class="cart-total"><span>Итого:</span>28 998 руб</div>
+					</div>
+
+					<div class="order-form">
+						<div class="order-form__title">Оформление заказа</div>
+
+						<form action="#">
+							<fieldset class="form-in">
+								<input type="text" placeholder="Имя">
+								<input type="text" placeholder="E-mail">
+								<input type="text" placeholder="Телефон">
+								<textarea cols="30" rows="10" placeholder="Сообщение"></textarea>
+							</fieldset>
+							<fieldset class="form-sel">
+								<div class="form-delivery">
+									<span class="form-sel__title">Способ доставки</span>
+									<div class="form-sel__wrap">
+										<select>
+											<option>Самовывоз</option>
+											<option>Курьер</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-location">
+									<span class="form-sel__title">Адрес доставки</span>
+									<div class="form-sel__wrap">
+										<select>
+											<option>Москва</option>
+											<option>Санкт-Петербург</option>
+										</select>
+										<input type="text" placeholder="Улица, дом, подъезд">
+									</div>
+								</div>
+								<div class="form-pay">
+									<span class="form-sel__title">Способ оплаты</span>
+									<div class="form-sel__wrap">
+										<label for="r-1"><input type="radio" name="" id="r-1">Наложенный платеж</label>
+										<label for="r-2"><input type="radio" name="" id="r-2" checked>Оплата курьеру при получении</label>
+										<label for="r-3"><input type="radio" name="" id="r-3">Оплата банковской картой</label>
+									</div>
+								</div>
+								<button class="order-btn">Оформить заказ</button>
+							</fieldset>
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-about">
+		<div class="section-title"><span>О магазине</span></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="cl-about">
+						<div class="cl-item">
+							<div class="about-item about-item_1"><i></i><span>Мы 16 лет на рынке</span></div>
+						</div>
+						<div class="cl-item">
+							<div class="about-item about-item_2"><i></i><span>Наши курьеры<br>профессионалы со стажем</span></div>
+						</div>
+						<div class="cl-item">
+							<div class="about-item about-item_3"><i></i><span>Быстрая доставка</span></div>
+						</div>
+						<div class="cl-item">
+							<div class="about-item about-item_4"><i></i><span>Лучшая гарантия</span></div>
+						</div>
+						<div class="cl-item">
+							<div class="about-item about-item_5"><i></i><span>Доставка товаров<br>по всей России</span></div>
+						</div>
+						<div class="cl-item">
+							<div class="about-item about-item_6"><i></i><span>Проведение<br>постоянных акций</span></div>
+						</div>
+						<div class="cl-item">
+							<div class="about-item about-item_7"><i></i><span>Лучшая цена</span></div>
+						</div>
+						<div class="cl-item">
+							<div class="about-item about-item_8"><i></i><span>Покупать в нашем магазине -<br>одно удовольствие</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

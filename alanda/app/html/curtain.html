@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/curtain-bg.html')
+
+	@@include('./template/header-tmp-inner-4.html')
+
+	<div class="breadcrumb">
+		<div class="container">
+			<ul class="breadcrumb-list">
+				<li><a href="#">Главная</a></li>
+				<li>Шторы</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="section-one section-one--inner section-one--curtain">
+		<div class="container">
+			<div class="catalog catalog--gost catalog--curtain">
+				<a href="#" class="catalog-item catalog-item--gos catalog-item--curtain">
+					<img src="img/curtain-1.png" alt="">
+					<div class="catalog-item__title">Ткани</div>
+				</a>
+
+				<a  href="#" class="catalog-item catalog-item--gos catalog-item--curtain">
+					<img src="img/curtain-2.png" alt="">
+					<div class="catalog-item__title">Стили штор</div>
+				</a>
+
+				<a href="#" class="catalog-item catalog-item--gos catalog-item--curtain">
+					<img src="img/curtain-3.png" alt="">
+					<div class="catalog-item__title">Жилые зоны</div>
+				</a>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="section-form">
+		<div class="container">
+			<div class="form-call">
+				<div class="form-call__title">вызовите<br>бесплатно дизайнера</div>
+				<span class="form-call__accent">На дом с образцами материалов!</span>
+				<form action="#">
+					<input type="text" placeholder="имя">
+					<input type="text" placeholder="e-mail">
+					<input type="text" placeholder="телефон">
+					<button class="btn-form popup-alert mfp-zoom-in">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

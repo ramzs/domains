@@ -1,0 +1,1198 @@
+/*-------Base styles----------*/
+*::-webkit-input-placeholder {
+  color: #413933;
+  font-weight: 200;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #413933;
+  font-weight: 200;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #413933;
+  font-weight: 200;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #413933;
+  font-weight: 200;
+  opacity: 1;
+}
+
+html.js .loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+html.js .loader .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green;
+}
+
+body {
+  font-family: "opensans", sans-serif;
+  color: #413933;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+.row {
+  margin: 0 -30px;
+}
+
+/*----------end---------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+.header {
+  padding: 24px 0 40px;
+}
+
+.logo {
+  margin-left: -50px;
+  text-align: center;
+}
+
+.logo img {
+  max-width: 370px;
+}
+
+.mob__btn {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.mob__btn b {
+  display: block;
+  width: 21px;
+  height: 3px;
+  margin-bottom: 3px;
+  background: #ef9c93;
+}
+
+.header__menu {
+  margin: 18px 0 0 -62px;
+}
+
+.menu__list {
+  display: table;
+  margin: 0 auto;
+}
+
+.menu__list .list__item {
+  display: table-cell;
+  position: relative;
+  padding: 0 20px;
+}
+
+.menu__list .list__item:not(:last-child):after {
+  content: ' ';
+  position: absolute;
+  width: 1px;
+  height: 22px;
+  top: 0;
+  right: 0;
+  background: #413933;
+}
+
+.menu__list .list__item.active .link__item {
+  color: #ce7f76;
+}
+
+.menu__list .link__item {
+  display: inline-block;
+  font: 700 16px "merriweather";
+  color: #413933;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.menu__list .link__item:hover {
+  color: #ce7f76;
+}
+
+.section {
+  padding: 3px 0 32px;
+}
+
+.grid {
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+.grid__item {
+  float: left;
+  width: 20%;
+  padding: 0 7px;
+  margin-bottom: 10px;
+}
+
+.grid__item:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  background: rgba(255, 255, 255, 0);
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.grid__item:hover .zoom__link {
+  display: block;
+}
+
+.grid__item:hover:before {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.grid__item img {
+  display: block;
+  width: 100%;
+}
+
+.zoom__link {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 46px;
+  height: 46px;
+  margin: auto;
+  font-size: 0;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #fff;
+  z-index: 998;
+  -webkit-box-shadow: 0 0 21px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 21px rgba(0, 0, 0, 0.3);
+}
+
+.zoom__link i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url(../img/sprite.png);
+  background-position: -48px 0px;
+  width: 19px;
+  height: 18px;
+}
+
+.main__about {
+  margin-top: 100px;
+  text-align: left;
+}
+
+.about__title {
+  font: 30px "merriweather";
+  text-align: center;
+}
+
+.about__text {
+  margin-top: 40px;
+}
+
+footer {
+  padding: 48px 0 30px;
+  border-top: 1px solid #DFDAD6;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #A4A2A2;
+  text-align: center;
+}
+
+.mfp-bg {
+  display: none;
+}
+
+.mfp-close {
+  display: none !important;
+}
+
+img.mfp-img {
+  padding: 0 !important;
+  -webkit-box-shadow: 0 0 90px 50px rgba(255, 255, 255, 0.6);
+          box-shadow: 0 0 90px 50px rgba(255, 255, 255, 0.6);
+}
+
+.mfp-counter {
+  display: none !important;
+}
+
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-------------Blog page---------------*/
+.header.header_inner {
+  border-bottom: 1px solid #E5E1DE;
+}
+
+.section.section__blog {
+  padding-bottom: 75px;
+}
+
+.section__title {
+  display: block;
+  font: 36px "merriweather";
+  text-align: center;
+}
+
+.content {
+  margin-top: 25px;
+}
+
+.sidebar {
+  margin-right: -23px;
+}
+
+.sidebar__menu {
+  margin-bottom: 45px;
+}
+
+.menu__title {
+  height: 46px;
+  padding-left: 20px;
+  font: 18px "merriweather";
+  color: #fff;
+  line-height: 46px;
+  background: #e2837c;
+}
+
+.sidebar__list {
+  margin-top: 10px;
+}
+
+.sidebar__list .list__item {
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.sidebar__list .list__item:hover {
+  background: #edebeb;
+}
+
+.sidebar__list .list__item .item__link {
+  display: block;
+  padding: 10px 0 10px 20px;
+  font: 15px "merriweather";
+  color: #413933;
+}
+
+.sidebar__list .list__item .item__link .item__count {
+  margin-left: 2px;
+  color: #ce7f76;
+}
+
+.menu__tags {
+  margin-top: 25px;
+  padding-left: 20px;
+}
+
+.menu__tags a {
+  display: inline-block;
+  margin: 0 15px 14px 0;
+  font: italic 14px "merriweather";
+  color: #413933;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.menu__tags a:hover {
+  color: #ce7f76;
+}
+
+.main__content {
+  margin-left: -7px;
+}
+
+.blog__item {
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E5E1DE;
+}
+
+.blog__item img {
+  float: left;
+  width: 350px;
+  margin-right: 28px;
+}
+
+.blog__descr .item__title {
+  display: block;
+  margin-bottom: 7px;
+  color: #413933;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.blog__descr .item__title h2 {
+  margin: 0;
+  font: 20px "merriweather";
+}
+
+.blog__descr .item__title:hover {
+  color: #ce7f76;
+}
+
+.blog__descr .item__data {
+  display: block;
+  margin-bottom: 25px;
+  font: italic 300 15px "merriweather";
+}
+
+.blog__descr img {
+  display: none;
+}
+
+.blog__descr .item__text {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.blog__descr .item__text p {
+  margin: 0;
+}
+
+.link__more {
+  display: inline-block;
+  font: 15px "merriweather";
+  color: #ce7f76;
+}
+
+.link__more:hover {
+  color: #ce7f76;
+  text-decoration: underline;
+}
+
+.page__count {
+  display: inline-block;
+  font: 18px "merriweather";
+}
+
+.pagination__list {
+  position: relative;
+  float: right;
+  top: -5px;
+  margin-right: 22px;
+}
+
+.pagination__list li {
+  display: inline-block;
+}
+
+.pagination__list li:not(.active) a:hover {
+  color: #ce7f76;
+}
+
+.pagination__list li.active a {
+  background: #edebeb;
+  cursor: default;
+}
+
+.pagination__list li a {
+  display: block;
+  width: 33px;
+  height: 33px;
+  font: 700 18px "merriweather";
+  color: #413933;
+  line-height: 33px;
+  text-align: center;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.link__up {
+  display: none;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  margin: 25px auto 0;
+  font-size: 0;
+  opacity: .6;
+  background-color: #eeeded;
+  border: 2px solid #d2d2d2;
+}
+
+.link__up:hover {
+  opacity: 1;
+  -webkit-transition: opacity .25s;
+  transition: opacity .25s;
+}
+
+.link__up:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url(../img/sprite.png);
+  background-position: -48px -18px;
+  width: 10px;
+  height: 6px;
+}
+
+/*---------------end-------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-------------Blog page---------------*/
+.section.section__article {
+  padding-bottom: 85px;
+}
+
+.article__title {
+  display: block;
+  margin: 0 0 6px;
+  font: 36px "merriweather";
+}
+
+.article__data {
+  display: block;
+  margin-bottom: 37px;
+  font: italic 300 18px "merriweather";
+}
+
+.article__text {
+  font-size: 15px;
+}
+
+.article__text img {
+  width: 100%;
+  margin: 14px 0 8px;
+}
+
+.article__text span {
+  display: block;
+  margin: 10px 0;
+  font: 22px "merriweather";
+}
+
+.share {
+  margin-top: 20px;
+}
+
+.share .share__title {
+  display: block;
+  margin-bottom: 12px;
+  font: 700 18px "merriweather";
+}
+
+.comments {
+  margin-top: 40px;
+}
+
+.comments__title {
+  margin-bottom: 30px;
+  font: 700 18px "merriweather";
+}
+
+.comment__item {
+  margin-bottom: 20px;
+  clear: both;
+  overflow: hidden;
+}
+
+.comment__avatar {
+  float: left;
+  width: 80px;
+}
+
+.comment__avatar img {
+  width: 100%;
+}
+
+.comment__top {
+  display: inline-block;
+  padding-left: 19px;
+}
+
+.comment__date {
+  position: relative;
+  float: right;
+  top: -1px;
+  margin-left: 15px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.comment__name {
+  float: left;
+  margin-bottom: 12px;
+  font: 14px "merriweather";
+}
+
+.comment__main {
+  display: table;
+  padding-left: 19px;
+}
+
+.comment__submit {
+  width: 460px;
+  margin-top: 45px;
+}
+
+.comment__submit .submit__title {
+  margin-bottom: 22px;
+  font: 700 18px "merriweather";
+}
+
+.comment__submit label {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.comment__submit label span {
+  float: left;
+  margin-top: 10px;
+}
+
+.comment__submit label input {
+  float: right;
+  width: 324px;
+  height: 38px;
+  margin-bottom: 14px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #413933;
+  border: 1px solid #c5beb9;
+}
+
+.comment__submit label textarea {
+  float: right;
+  width: 324px;
+  height: 87px;
+  margin-bottom: 14px;
+  padding: 10px 0 0 10px;
+  font-size: 14px;
+  color: #413933;
+  border: 1px solid #c5beb9;
+}
+
+.comment__submit .btn__form {
+  float: right;
+  width: 150px;
+  height: 38px;
+  color: #fff;
+  background: #e2837c;
+  border: none;
+  clear: both;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.comment__submit .btn__form:hover {
+  background: #ce7f76;
+}
+
+/*----------------end------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-------------Portfolio page---------------*/
+.section.section__portfolio {
+  padding-bottom: 25px;
+}
+
+.portfolio__title {
+  display: block;
+  margin-bottom: 80px;
+  font: 36px "merriweather";
+  text-align: center;
+}
+
+.portfolio__item {
+  margin-bottom: 22px;
+}
+
+.portfolio__preview {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.portfolio__preview img {
+  width: 100%;
+}
+
+.portfolio__preview.portfolio__preview-double {
+  font-size: 0;
+  line-height: 0;
+  text-align: justify;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+}
+
+.portfolio__preview.portfolio__preview-double:after {
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.portfolio__preview.portfolio__preview-double img {
+  display: inline-block;
+  width: 48.5%;
+  vertical-align: top;
+}
+
+.portfolio__name {
+  float: none;
+  display: inline-block;
+  margin-left: -30px;
+  vertical-align: middle;
+  text-align: left;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.portfolio__name h2 {
+  font: 30px "merriweather";
+  color: #413933;
+  text-transform: uppercase;
+}
+
+.portfolio__name:hover h2 {
+  color: #ce7f76;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+/*-----------------end----------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-------------Portfolio-one page---------------*/
+.section.section__portfolio-one {
+  padding: 8px 0 75px;
+}
+
+.article__title.article__title-portfolio {
+  margin-bottom: 0;
+}
+
+.article__data.article__data-portfolio {
+  margin-bottom: 15px;
+}
+
+.article__text.article__text-portfolio img {
+  width: 100%;
+  margin: 4px 0;
+}
+
+.block__pict {
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+  text-align: justify;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+}
+
+.block__pict:after {
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.block__pict img {
+  display: inline-block;
+  width: 48.5%;
+  vertical-align: top;
+}
+
+.block__pict-full img {
+  width: 100%;
+}
+
+.share.share__portfolio {
+  margin-top: 37px;
+  text-align: center;
+}
+
+.share.share__portfolio .share__title {
+  margin-bottom: 20px;
+}
+
+/*-------------------end------------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-------------Contact page---------------*/
+.section.section__contact {
+  padding: 15px 0 85px;
+}
+
+.section__title.section__title-contact {
+  margin-bottom: 82px;
+}
+
+.contact__item {
+  float: none;
+  display: inline-block;
+  margin: 0 -2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  vertical-align: bottom;
+}
+
+.contact__item .contact__link {
+  display: block;
+  font-size: 24px;
+  color: #413933;
+  text-align: center;
+}
+
+.contact__item .contact__link i {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 40px;
+}
+
+.contact__item .contact__link.contact__link-phone {
+  margin-bottom: -4px;
+}
+
+.contact__item .contact__link.contact__link-phone i {
+  margin-bottom: 30px;
+  background: url(../img/phone-call.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.contact__item .contact__link.contact__link-mail {
+  font-size: 18px;
+}
+
+.contact__item .contact__link.contact__link-mail i {
+  margin-bottom: 37px;
+  background: url(../img/envelope.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.contact__item .map__contact {
+  display: block;
+  font-size: 18px;
+  color: #413933;
+  text-align: center;
+}
+
+.contact__item .map__contact i {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 38px;
+  background: url(../img/placeholder.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.contact__item .social__link {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.contact__item .social__link a {
+  display: inline-block;
+  margin: 0 10px;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.contact__item .social__link .fb__icon {
+  background: url(../img/facebook-logo.svg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.contact__item .social__link .vk__icon {
+  background: url(../img/vk.svg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.contact__item .social__link .gl__icon {
+  background: url(../img/google-plus.svg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.contact__item .social__link .tw__icon {
+  background: url(../img/twitter-logo.svg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.contact__item .social__title {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+}
+
+.comment__submit.comment__submit-contact {
+  width: 100%;
+  margin-top: 85px;
+  text-align: center;
+}
+
+.comment__submit.comment__submit-contact .submit__title {
+  margin-bottom: 15px;
+  font: normal 18px "opensans";
+}
+
+.comment__submit.comment__submit-contact label {
+  display: inline;
+}
+
+.comment__submit.comment__submit-contact label span {
+  float: none;
+  display: inline-block;
+  margin: 12px 0 8px;
+}
+
+.comment__submit.comment__submit-contact label input, .comment__submit.comment__submit-contact label textarea {
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.comment__submit.comment__submit-contact label input::-webkit-input-placeholder, .comment__submit.comment__submit-contact label textarea::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.comment__submit.comment__submit-contact label input:-moz-placeholder, .comment__submit.comment__submit-contact label textarea:-moz-placeholder {
+  opacity: 0;
+}
+
+.comment__submit.comment__submit-contact label input::-moz-placeholder, .comment__submit.comment__submit-contact label textarea::-moz-placeholder {
+  opacity: 0;
+}
+
+.comment__submit.comment__submit-contact label input:-ms-input-placeholder, .comment__submit.comment__submit-contact label textarea:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.comment__submit.comment__submit-contact .btn__form {
+  float: none;
+  margin: 30px auto 0;
+}
+
+/*----------------end---------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-------------Price page---------------*/
+.section.section__price {
+  padding: 15px 0 52px;
+}
+
+.section__title.section__title-price {
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 16px;
+}
+
+.price span {
+  display: block;
+  margin: 33px 0 10px;
+  font: 22px "merriweather";
+}
+
+/*----------------end--------------------*/

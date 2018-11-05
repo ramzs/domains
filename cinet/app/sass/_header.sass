@@ -1,0 +1,232 @@
+.header
+	.container
+		+clearfix
+	&-brend
+		float: left
+		width: 25.39%
+		padding-top: 58px
+		.logo
+			position: relative
+			display: inline-block
+			img
+				display: block
+				max-width: 169px
+		&_mob
+			display: none
+	&-main
+		display: table
+		width: 74.61%
+		padding-left: 20px
+	&-top
+		padding: 20px 0 0
+
+.line-wrap
+	position: absolute
+	top: -42px
+	left: 10px
+	width: 52px
+	height: 47px
+	background: url(../img/logo-brain.png) 0 0 no-repeat
+
+.logo
+	&__line
+		opacity: 0
+		position: absolute
+		top: -11px
+		left: 21px
+		width: 12px
+		height: 3px
+		transform: rotate(90deg)
+		border-radius: 2px
+		background: #f41d69
+		transition: all .25s ease-in-out
+	&:hover
+		.line-wrap
+			opacity: 1
+			transition: all .35s ease-in-out
+			transform: rotateY(360deg)
+			background: url(../img/logo-brain-hover.png) 0 0 no-repeat
+		.logo__line
+			opacity: 1
+			&_1
+				top: 25px
+				left: -16px
+				transform: rotate(0deg)
+			&_2
+				top: 2px
+				left: -10px
+				transform: rotate(34deg)
+			&_3
+				top: -11px
+				left: 21px
+				transform: rotate(90deg)
+			&_4
+				top: 2px
+				left: 52px
+				transform: rotate(136deg)
+			&_5
+				top: 25px
+				left: 58px
+				transform: rotate(0deg)
+
+.btn-menu
+	display: none
+	position: relative
+	cursor: pointer
+	b
+		display: block
+		width: 81px
+		height: 19px
+		margin-bottom: 2px
+		background: $blue
+	&:hover
+		b
+			background: $accent
+
+.header-menu
+	display: inline-block
+
+.nav
+	display: inline-block
+	li
+		display: inline-block
+		margin-right: 10px
+		&:last-child
+			margin-right: 0
+	a
+		display: block
+		font-size: 15px
+		color: $gray
+		&:hover
+			color: $accent
+
+.link-compare
+	display: inline-block
+	margin-left: 195px
+	font-size: 17px
+	color: $blue
+	&:hover
+		color: $accent
+		text-decoration: underline
+
+.callback
+	position: relative
+	display: inline-block
+	bottom: -50px
+	right: 0
+	padding-left: 26px
+	font-size: 17px
+	color: $blue
+	outline: none
+	&_inmenu
+		display: none
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		@include sprite($callback)
+	&:hover
+		color: $accent
+		text-decoration: underline
+
+.header-bottom
+	padding: 15px 0 17px
+	&__left
+		display: inline-block
+	&__right
+		display: inline-block
+
+.mail
+	position: relative
+	display: inline-block
+	margin-right: 16px
+	padding-left: 26px
+	font-size: 20px
+	&:before
+		content: ''
+		position: absolute
+		top: 5px
+		left: 0
+		@include sprite($mail)
+
+.phone
+	position: relative
+	display: inline-block
+	margin-right: 30px
+	padding-left: 27px
+	font-size: 20px
+	font-weight: 700
+	&:before
+		content: ''
+		position: absolute
+		top: 3px
+		left: 0
+		@include sprite($phone)
+
+.location
+	display: inline-block
+	vertical-align: middle
+	margin-right: 20px
+	font-size: 15px
+
+.work
+	display: inline-block
+	vertical-align: middle
+	font-size: 15px
+
+.cart
+	position: relative
+	float: right
+	margin-right: 21px
+	@include sprite($cart)
+	&_inmenu
+		display: none
+	&__count
+		position: relative
+		top: -14px
+		right: -26px
+		width: 24px
+		height: 24px
+		font: 17px/25px $second-font
+		text-align: center
+		color: #fff
+		border-radius: 50%
+		background: $accent
+
+.search-wrap
+	padding-left: 26px
+	+clearfix
+
+.search
+	position: relative
+	float: right
+	width: 74.61%
+	height: 54px
+	border: 1px solid #007eff
+	&-in
+		display: block
+		width: 100%
+		height: 100%
+		padding-left: 20px
+		font-size: 17px
+		outline: none
+		border: none
+	&-btn
+		position: absolute
+		top: -1px
+		right: 0
+		width: 159px
+		height: 54px
+		font-size: 0
+		cursor: pointer
+		outline: none
+		border: none
+		background-color: #007eff
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			@include sprite($search)

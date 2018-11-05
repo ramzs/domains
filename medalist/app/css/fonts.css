@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "intro";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Intro/Intro.eot?#iefix") format("embedded-opentype"), url("../fonts/Intro/Intro.woff") format("woff"), url("../fonts/Intro/Intro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "intro";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/IntroLight/IntroLight.eot?#iefix") format("embedded-opentype"), url("../fonts/IntroLight/IntroLight.woff") format("woff"), url("../fonts/IntroLight/IntroLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "gilroy";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/GilroyExtraBold/GilroyExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GilroyExtraBold/GilroyExtraBold.woff") format("woff"), url("../fonts/GilroyExtraBold/GilroyExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "gilroy";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/GilroyLight/GilroyLight.eot?#iefix") format("embedded-opentype"), url("../fonts/GilroyLight/GilroyLight.woff") format("woff"), url("../fonts/GilroyLight/GilroyLight.ttf") format("truetype");
+}

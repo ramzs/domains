@@ -1,0 +1,95 @@
+@import "vars"
+
+/*----------------Service page-------------------*/
+.content
+	position: relative
+	margin: -583px 0 -548px
+	z-index: 8
+	.container
+		padding: 0
+
+.sidebar
+	float: left
+	width: 365px
+	padding: 33px 0 0 45px
+	background: url(../img/sidebar-bg.jpg) center top no-repeat
+	background-size: cover
+
+.second-menu
+	&--mob
+		display: none
+	&__item
+		margin-bottom: 20px
+		a
+			position: relative
+			display: inline-block
+			font-size: 16px
+			font-weight: 800
+			font-style: italic
+			color: #fff
+			outline: none
+			text-decoration: none
+			i
+				position: absolute
+				top: 6px
+				left: -20px
+				margin-right: 10px
+				transition: all .15s ease
+				@include sprite($arrow-down)
+			&:hover
+				color: #ec943d
+				i
+					transform: rotate(180deg)
+		&.active
+			> a
+				color: #ec943d
+				i
+					transform: rotate(180deg)
+
+
+.second-dropmenu
+	display: none
+	margin: 17px 0 0 16px
+	&.open
+		display: block
+	&__item
+		margin-bottom: 11px
+		a
+			display: block
+			font: 700 14px "opensans"
+			color: #fff
+			text-transform: uppercase
+			&:hover
+				color: #ec943d
+		&.active
+			a
+				color: #ec943d
+
+.main
+	float: left
+	width: 745px
+	background: #fff
+
+.inner-page
+	padding: 0 25px 20px
+	background: #fff
+
+.page-title
+	display: block
+	font-size: 36px
+	font-weight: 800
+	font-style: italic
+	&--inner
+		display: none
+
+.service-block
+	margin: 45px -25px 0
+
+.service-block
+	.service-item
+		width: 50%
+		margin-right: 0
+		padding: 0 5px
+		img
+			width: 100%
+/*--------------------end------------------------*/

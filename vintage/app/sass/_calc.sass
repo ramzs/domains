@@ -1,0 +1,98 @@
+@import "vars.sass"
+/*----------Calculator page--------------*/
+.content__page
+	background: url(../img/calc-bg.jpg) center top no-repeat
+	background-size: cover
+	&.content__page-calc
+		padding: 0 0 70px
+		text-align: center
+
+.breadcrumb
+	padding: 18px 0
+	text-align: left
+
+.breadcrumb__list
+	li
+		display: inline-block
+		position: relative
+		margin-left: 15px
+		font-size: 14px
+		color: #7d7d7d
+		&:first-child
+			margin-left: 0
+		&:not(:first-child):before
+			content: '-'
+			position: absolute
+			top: 0
+			left: -12px
+
+		a
+			display: block
+			color: #7d7d7d
+			&:hover
+				color: #842326
+
+.page__title
+	margin-top: 5px
+	text-align: center
+	font: 600 30px "roboto"
+
+.page__accent
+	display: block
+	max-width: 420px
+	margin: 25px auto
+	font-size: 15px
+
+.calc__block
+	width: 420px
+	height: 599px
+	margin: 65px auto 0
+	padding: 50px 42px 0
+	background: #842326
+
+.count__box
+	text-align: right
+	border-bottom: 1px solid #9f2e31
+	label
+		display: block
+		margin-bottom: 16px
+		font-size: 15px
+		color: #fff
+	input
+		width: 135px
+		height: 40px
+		margin-left: 6px
+		padding-left: 10px
+		border-radius: 3px
+		border: none
+		&::-webkit-input-placeholder
+			color: #000
+
+		&:-moz-placeholder
+			color: #000
+
+		&::-moz-placeholder
+			color: #000
+
+		&:-ms-input-placeholder
+			color: #000
+
+.total__box
+	padding: 32px 0 16px
+	border-bottom: 1px solid #9f2e31
+
+.total__list
+	li
+		margin-bottom: 20px
+		font-size: 17px
+		color: #fff
+		text-align: left
+		span
+			float: right
+			font-weight: 700
+
+.btn__form
+	&.btn__form-calc
+		width: 213px
+		margin: 40px auto 0
+/*--------------end----------------------*/

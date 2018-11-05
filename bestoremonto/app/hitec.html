@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>BestoRemonto</title>
+	<meta name="description" content="Ремонт под ключ">
+
+	<meta property="og:image" content="img/home.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="libs/normalize/normilize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+	<header>
+
+		<div class="header__top clearfix">
+			<div class="container">
+
+				<div class="logo">
+					<a href="#"><img src="img/logo.png" alt=""></a>
+				</div>
+
+				<div class="header__contact clearfix">
+					<div class="header__address">Адрес: <span>г. Москва, ул. Пушкина, дом 13</span></div>
+					<div class="header__callback">
+						<a href="#callback-1" class="callback__link popup">Обратный звонок</a>
+					</div>
+					<div class="header__phone">
+						<a href="tel:+7(495)5325468" class="phone__link">+7 (495) 532-54-68</a>
+					</div>
+				</div>
+
+				<div class="header__nav clearfix">
+					<ul class="header__list">
+						<li class="list__item"><a href="#">Главная</a></li>
+						<li class="list__item"><a href="#">Дизайн-проект</a></li>
+						<li class="list__item list__item-drop">
+							<a href="#">Стили<i></i></a>
+							<ul class="header__list header__list-dropmenu">
+								<li class="list__item list__item-dropmenu"><a href="#">Минимализм</a></li>
+								<li class="list__item list__item-dropmenu"><a href="#">Эко стиль</a></li>
+								<li class="list__item list__item-dropmenu"><a href="#">Хай-тек</a></li>
+								<li class="list__item list__item-dropmenu"><a href="#">Лофт</a></li>
+							</ul>
+						</li>
+						<li class="list__item"><a href="#">О нас</a></li>
+						<li class="list__item"><a href="#">Партнерам</a></li>
+						<li class="list__item"><a href="#">Контакты</a></li>
+					</ul>
+
+					<div class="header__price">
+						<a href="#" class="price__link">Скачать прайс</a>
+					</div>
+				</div>
+
+				<div class="header__icons clearfix">
+					<div class="icon__item icon__item-1">
+						<a href="#">home</a>
+					</div>
+
+					<div class="icon__item icon__item-2">
+						<a href="#">map</a>
+					</div>
+
+					<div class="icon__item icon__item-3">
+						<a href="#">email</a>
+					</div>
+
+					<div class="icon__item icon__item-4">
+						<a href="tel:+7(495)5325468">phone</a>
+					</div>
+
+					<div class="icon__item icon__item-5">
+						<a href="#">event</a>
+					</div>
+
+					<div class="icon__item icon__item-6">
+						<a id="btn__menu" href="#" class="btn__menu"><b></b><b></b><b></b></a>
+					</div>
+				</div>
+
+				<div class="menu__mob">
+					<ul class="mob__list">
+						<li class="list__item"><a href="#">Дизайн-проект</a></li>
+						<li class="list__item list__item-drop">
+							<a href="#" class="drop__link">Стили<i></i></a>
+							<ul class="mob__list mob__list-dropmenu">
+								<li class="list__item list__item-dropmenu"><a href="#">Минимализм</a></li>
+								<li class="list__item list__item-dropmenu"><a href="#">Эко стиль</a></li>
+								<li class="list__item list__item-dropmenu"><a href="#">Хай-тек</a></li>
+								<li class="list__item list__item-dropmenu"><a href="#">Лофт</a></li>
+							</ul>
+						</li>
+						<li class="list__item"><a href="#">О нас</a></li>
+						<li class="list__item"><a href="#">Партнерам</a></li>
+						<li class="list__item"><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+
+				<div class="header__main clearfix">
+					<div class="price__icon">
+						<a href="#">Скачать прайс</a>
+					</div>
+
+					<div class="logo__mob">
+						<a href="#"><img src="img/logo.png" alt=""></a>
+					</div>
+
+					<div class="callback__icon">
+						<a href="#callback-1" class="popup">вызов замерщика</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__banner header__banner-loft header__banner-hitec clearfix">
+			<div class="container">
+				<div class="banner__caption">
+					<h1 class="banner__title">В стиле Хай-тек</h1>
+					<div class="banner__text">
+						<span>Отделка и ремонт квартир, коттеджей, офисов в Москве и области</span>
+					</div>
+					<a href="#" class="more__link">Подробнее</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="section__main clearfix">
+		<div class="container">
+			<div class="sidebar">
+
+				<div class="sidebar__menu">
+					<span class="sidebar__title">Услуги</span>
+					<ul class="sidebar__list">
+						<li class="list__item"><a href="#">Отделочные работы</a></li>
+						<li class="list__item"><a href="#">Ремонт под ключ</a></li>
+						<li class="list__item"><a href="#">Сварочные работы</a></li>
+						<li class="list__item"><a href="#">Проектирование</a></li>
+						<li class="list__item"><a href="#">Дизайн интерьеров</a></li>
+						<li class="list__item"><a href="#">Электрика</a></li>
+						<li class="list__item"><a href="#">Штукатурные работы</a></li>
+						<li class="list__item"><a href="#">Услуги плотника</a></li>
+						<li class="list__item"><a href="#">Укладка плитки</a></li>
+					</ul>
+				</div>
+
+				<div class="sidebar__menu sidebar__menu-2">
+					<span class="sidebar__title">Разделы</span>
+					<ul class="sidebar__list sidebar__list-2">
+						<li class="list__item"><a href="#">Отделочные работы</a></li>
+						<li class="list__item"><a href="#">Ремонт под ключ</a></li>
+						<li class="list__item"><a href="#">Сварочные работы</a></li>
+					</ul>
+				</div>
+
+				<div class="sidebar__menu sidebar__menu-3">
+					<span class="sidebar__title">Документы</span>
+					<ul class="sidebar__list sidebar__list-3">
+						<li class="list__item"><a href="#">Прайс на ремонтные работы</a></li>
+						<li class="list__item"><a href="#">Образец договора по ремонту помещений</a></li>
+						<li class="list__item"><a href="#">Образец договора по дизайну интерьера</a></li>
+						<li class="list__item"><a href="#">Типовая смета на ремонт санузла</a></li>
+						<li class="list__item"><a href="#">Типовая смета на ремонт кухни</a></li>
+						<li class="list__item"><a href="#">Типовая смета на ремонт комнаты</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="content">
+				<div class="content__work">
+					<div class="section__title section__title-work section__title-mini ">
+						<h2>Работы в стиле Хай-тек</h2>
+						<span>Что мы предлагаем!?</span>
+					</div>
+					<div class="block__slider">
+
+						<div class="slider__work">
+							<div class="slider__item">
+								<img src="img/hitec-1.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/hitec-2.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/hitec-3.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/hitec-1.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/hitec-2.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/hitec-3.jpg" alt="">
+							</div>
+
+						</div>
+
+						<div id="work-mob" class="slider__work-mob">
+							<div class="slider__item">
+								<img src="img/hitec-1.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/hitec-2.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/hitec-3.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/hitec-1.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/hitec-2.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/hitec-3.jpg" alt="">
+							</div>
+
+						</div>
+					</div>
+					<div class="block__like block__like-loft block__like-mini block__like-hitec">
+						<span class="like__title like__title-loft">Нравится?</span>
+						<a href="#callback-2" class="more__link more__link-like more__link-loft popup">Я тоже так хочу</a>
+					</div>
+				</div>
+
+				<div class="content__about content__about-hitec">
+					<div class="section__title section__title-about">
+						<h2>О стиле хай-тек</h2>
+						<span>Жертвование функциональностью в угоду дизайну</span>
+					</div>
+
+					<div class="about__block about__block-loft">
+						<p>Хай-тек (высокие технологии) — стиль в архитектуре и дизайне, зародившийся в недрах постмодернистской архитектуры в 1970-х и нашедший широкое применение в 1980-х.</p>
+						<p>Хай-тек –  художественное осмысление высоких технологий. Интерьер высоких технологий. Стиль пропагандирует эстетику материала.</p>
+						<p>Хай-тек  - стиль конца ХХ века, основными чертами которого являются максимально функциональное использование пространства и сдержанный декор. Стилю характерны стремительные, прямые линии, обилие стеклянных и металлических деталей. Хай-тек можно отнести к ультрасовременным стилям, в нем применяются конструкции, свойственные промышленным зданиям. Широко используются мобильные перегородки, способные смыкаться и раскрываться, что позволяет менять планировку. Технологический дизайн везде: потолки, стены, полы, лестницы, окна, двери.</p>
+						<p>Материалы – стекло, металл, натуральное дерево. Формы и пропорции мебели тщательно продуманы. Полное отсутствие украшений компенсируется “работой” материала: игрой света на стекле, блеском хромированных и металлических поверхностей политурой древесины и т.д.</p>
+						<p>Стекло, так же как и металл, трубы – излюбленный материал хай-тека. Металл и стекло. Стекло и металл. Немного пластика. Строгость и простота конструкций. Прямизна линий. Никакого дерева, сложной отделки и обоев в цветочек. Таков рецепт правильного интерьера хай-тек (hi tech).</p>
+						<p>Разумеется, стиль хай-тек подходит в основном для больших помещений, разделенных на функциональные зоны с помощью перегородок и дверей из небьющегося стекла. Прозрачные двери-купе в алюминиевой раме не только дань последней моде, но и одновременно с этим вещь удобная и функциональная, так как позволяет экономить пространство. Прозрачные двери-купе в алюминиевой раме не только дань последней моде, но и одновременно с этим вещь удобная и функциональная, так как позволяет экономить пространство.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section__loft section__loft-mini clearfix">
+		<div class="container clearfix">
+			<div class="section__title section__title-loft">
+				<h2>Особенности стиля хай-тек</h2>
+				<span>Основные черты стиля Хай-тек:</span>
+			</div>
+
+			<div class="descr__style descr__style-hitec">
+				<p>Хай-тек характеризуют использование высоких технологий, прагматизм,представление об архитекторе как элитном профессионале, обеспечение архитектурой обслуживания, сложная простота,<br>скульптурная форма, гипербола, технологичность,<br>структура и конструкция как орнамент,<br>анти-историчность, монументальность.</p>
+				<ul>
+					<li><b>Преобладающие и модные цвета:</b>белый, серый, черный, а так же насыщенные<br>чистые цвета - красный, зеленый, желтый.</li>
+					<li><span>Двери стиля Хай-тек:</span>прямоугольные, простые, лаконичные<br> Часто из металла или стекла.</li>
+				</ul>
+			</div>
+
+			<div class="loft__descr loft__descr-hitec">
+				<ul>
+					<li>использование прямых линий и простых фигур;</li>
+					<li>широкое применение стекла, пластика, металла;</li>
+					<li>трубчатые конструкции из металла;</li>
+					<li>децентрированное освещение, создающее эффект просторного, хорошо освещённого помещения;</li>
+					<li>широкое использование серебристого металла;</li>
+					<li>высокий прагматизм в планировании пространства;</li>
+					<li>частое обращение к элементам конструктивизма.</li>
+				</ul>
+			</div>
+			<div class="bottom__line bottom__line-mini"></div>
+		</div>
+	</section>
+
+	<section class="section__price section__price-loft clearfix">
+		<div class="container">
+			<div class="section__title section__title-price">
+				<h2>Стоимость работ</h2>
+				<span>Расчитайте экогомию!</span>
+			</div>
+
+			<div class="price__form">
+				<div class="price__item price__item-1">
+					<span class="item__title">предпочитаемый Вами стиль:</span>
+
+					<fieldset class="fieldset-1">
+						<label for="mini">
+							<span>Минимализм</span>
+							<input type="checkbox" name="mini" id="mini" checked>
+						</label>
+
+						<label for="eco">
+							<span>Эко стиль</span>
+							<input type="checkbox" name="eco" id="eco">
+						</label>
+					</fieldset>
+
+					<fieldset class="fieldset-2">
+						<label for="hi-tek">
+							<span>Хай-тек</span>
+							<input type="checkbox" name="hi-tek" id="hi-tek">
+						</label>
+
+						<label for="loft">
+							<span>Лофт</span>
+							<input type="checkbox" name="loft" id="loft">
+						</label>
+					</fieldset>
+
+				</div>
+
+				<div class="price__item price__item-2">
+					<span class="item__title">площадь в кв. метрах</span>
+					<div id="slider-range" class="slider__range"></div>
+					<label for="slider-total" class="slider__total">
+						<input type="text" id="slider-total">
+						<i></i>
+					</label>
+				</div>
+
+				<div class="price__item price__item-3">
+					<span class="item__title">стоимость ремонта:</span>
+					<label for="price-total" class="price__total">
+						<input type="text" id="price-total" placeholder="0" value="259000">
+						<i></i>
+					</label>
+				</div>
+
+				<a href="#" class="form__btn form__btn-range">Рассчитать</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section__seo section__seo-loft">
+		<div class="container">
+			<div class="section__title section__title-seo section__title-style">
+				<h2>немного текста о стиле хай-тек</h2>
+				<h2 class="mob__title">О стиле хай-тек</h2>
+			</div>
+
+			<div class="block__seo">
+				<p>Дизайн проект. Заказчику предоставляется готовый дизайн квартир со всем комплексом ремонтных работ под контролем прораба и дизайнера «авторский надзор»,указанием сроков и проектной документацией. Ремонт квартир «евро» стандарта, перепланировка и обустройство с применением современных ремонтных технологий и высококачественных материалов.</p>
+				<p>Отделка потолков. Вариаций выполнения с применением необычных раскрасок и форм потолочных покрытий зависит от дизайна квартиры и замысла дизайнера помещения под евроремонт. Используем практичные ткани натяжных потолков, отделку штукатуркой, индивидуальную роспись и другие комбинации строительных материалов.</p>
+				<p>Спальня, гостиная. Основные комнаты в любой квартире спальня, гостиная в их ремонте используют схожий спектр технических и материальных ресурсов.	Наиболее разумно реализуют их планировку специалисты компании в личной консультации, а так же замерщик-мастер при выезде на объект.</p>
+				<p>Ванная комната. Ремонт квартиры начинается с ванной комнаты по причине самых трудоемких и продолжительных работ. Евроремонт ванной комнаты – разводка	сантехнической части и благоустройство рабочей площади комнаты с применением водостойкой мебели и укладка плитки на пол. Цветные ванные комнаты, джакузи, парилки, душевые кабины подходят для «евро» класса.</p>
+			</div>
+
+			<div class="block__seo block__seo-mob">
+				<p>Дизайн проект. Заказчику предоставляется готовый дизайн квартир со всем комплексом ремонтных работ под контролем прораба и дизайнера «авторский надзор»,указанием сроков и проектной документацией. Ремонт квартир «евро» стандарта, перепланировка и обустройство с применением современных ремонтных технологий и высококачественных материалов.</p>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer__main">
+			<div class="container">
+
+				<div class="footer__block">
+					<a href="#" class="footer__logo"><img src="img/logo-footer.png" alt=""></a>
+
+					<div class="footer__menu">
+						<ul class="header__list header__list-footer">
+							<li class="list__item"><a href="#">Главная</a></li>
+							<li class="list__item"><a href="#">Дизайн-проект</a></li>
+							<li class="list__item list__item-drop">
+								<a href="#">Стили<i></i></a>
+								<ul class="header__list header__list-footer header__list-dropmenu">
+									<li class="list__item list__item-dropmenu"><a href="#">Минимализм</a></li>
+									<li class="list__item list__item-dropmenu"><a href="#">Эко стиль</a></li>
+									<li class="list__item list__item-dropmenu"><a href="#">Хай-тек</a></li>
+									<li class="list__item list__item-dropmenu"><a href="#">Лофт</a></li>
+								</ul>
+							</li>
+							<li class="list__item"><a href="#">О нас</a></li>
+							<li class="list__item"><a href="#">Партнерам</a></li>
+							<li class="list__item"><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer__block footer__block-contact">
+					<span class="block__title">Контакты</span>
+					<ul class="contact__list">
+						<li><span>Адрес:</span>г. Москва, ул. Пушкина, дом 13</li>
+						<li><span>Телефон:</span>+7 (495) 532-54-68</li>
+						<li><span>Email:</span>info@remont-pod-cluch.ru</li>
+					</ul>
+				</div>
+
+				<div class="callback__form callback__form-footer">
+					<span class="form__title">Обратная связь</span>
+					<form action="#">
+						<input type="text" placeholder="Ваше имя:" required>
+						<input type="text" placeholder="Ваш телефон:" required>
+						<button class="form__btn" type="submit">Отправить</button>
+					</form>
+					<span class="form__thank">Наш менеджер свяжется с Вами в течение 15 минут и ответит на все Ваши вопросы</span>
+				</div>
+
+			</div>
+		</div>
+		<div class="footer__bottom clearfix">
+			<div class="container">
+				<div class="copyright">&copy; 2016. Все права защищены.</div>
+				<div class="developer">
+					<a href="#" title="Рекламотерапия"><img src="img/adtherapy.png" alt="Рекламотерапия"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div class="hidden">
+		<div id="callback-1" class="callback__form callback__form-popup">
+			<span class="form__title">Обратная связь</span>
+			<form action="#">
+				<input type="text" placeholder="Ваше имя:" required>
+				<input type="text" placeholder="Ваш телефон:" required>
+				<button class="form__btn" type="submit">Отправить</button>
+			</form>
+			<span class="form__thank">Наш менеджер свяжется с Вами в течение 15 минут и ответит на все Ваши вопросы</span>
+		</div>
+
+		<div id="callback-2" class="callback__form callback__form-order">
+			<span class="form__title">заявка на разработку<br>дизайн-проекта</span>
+			<form action="#">
+				<input type="text" placeholder="Ваше имя:" required>
+				<input type="text" placeholder="Ваш телефон:" required>
+				<input type="text" placeholder="Ваша электронная почта:" required>
+				<label for="style">
+					<span>Выберите стиль:</span>
+					<select name="style" id="style">
+						<option>Минимализм</option>
+						<option>Эко стиль</option>
+						<option>Хай-тек</option>
+						<option>Лофт</option>
+					</select>
+				</label>
+				<button class="form__btn" type="submit">Отправить заявку</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.12.4.min.js"></script>
+	<script src="libs/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+	<script src="libs/magnific/jquery.magnific-popup.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+
+	<script src="js/common.js"></script>
+
+</body>
+</html>

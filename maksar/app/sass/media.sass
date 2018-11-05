@@ -1,0 +1,575 @@
+@import "bourbon"
+@import "vars"
+@import "sprite"
+@import "mixins"
+
+@media (min-width: 1200px)
+	.container
+		width: 1200px
+
+@media only screen and (max-width : 1950px)
+	.grid
+		max-width: 1500px
+		&-item
+			max-height: 229px
+			&_h2
+				max-height: 485px
+
+@media only screen and (max-width : 1500px)
+	.grid
+		max-width: 1200px
+		&-item
+			max-height: 180px
+			margin-bottom: 20px
+			padding: 0 10px
+			&_h2
+				max-height: 380px
+
+
+@media only screen and (max-width : 1200px)
+	.header-phone
+		margin-left: 0
+		font-size: 22px
+
+	.link-callback
+		margin-left: 30px
+		&:before
+			left: -18px
+
+	.social
+		margin-left: 0
+
+	.section-about
+		.container
+			&:after
+				left: 32.5%
+
+	.sidebar
+		padding-left: 0
+
+	.about-citace
+		width: 70%
+		&:after
+			width: 450px
+			background-position: top right
+
+	.grid
+		&-item
+			max-height: 152px
+			margin-bottom: 10px
+			padding: 0 5px
+			&_h2
+				max-height: 315px
+	/**/
+
+
+@media only screen and (max-width : 991px)
+	.header
+		padding: 12px 0 10px
+
+	.header-phone
+		float: right
+
+	.header-menu
+		li
+			margin-right: 5px
+			a
+				font-size: 15px
+
+	.social
+		float: right
+		padding-bottom: 10px
+
+	.link-callback
+		display: none
+		&_mob
+			float: right
+			display: block
+			margin: 0
+			text-align: right
+			clear: both
+
+	.section-main
+		padding: 160px 0 25px
+
+	.main
+		&:before
+			// display: none
+			top: -35px
+			left: 0
+			width: 350px
+			height: 250px
+			background-size: 100%
+		&-title
+			font-size: 40px
+		&-text
+			margin-top: 15px
+			font-size: 24px
+		&-form
+			margin-top: 20px
+			&__title
+				margin-bottom: 5px
+				font-size: 24px
+			&__text
+				margin-bottom: 20px
+				font-size: 16px
+			input
+				padding-left: 10px
+				font-size: 16px
+
+	.btn
+		margin-top: 15px
+		font-size: 16px
+
+	.section-about
+		padding: 20px 0 0
+		.container
+			&:after
+				width: 300px
+				height: 212px
+				left: 39.5%
+				background-size: 100%
+
+	.section-title
+		font-size: 30px
+
+	.about
+		padding-bottom: 30px
+		&-toptitle
+			margin-bottom: 5px
+			font-size: 16px
+		&-title
+			margin-bottom: 12px
+		&-text
+			font: 16px
+			p
+				margin-bottom: 10px
+		&-citace
+			margin-top: 60px
+			padding-left: 30px
+			font-size: 16px
+			&:after
+				width: 340px
+				top: -30px
+
+	.sidebar-list
+		li
+			margin-bottom: 20px
+			padding: 5px 0 0 15px
+			font-size: 16px
+			&:before
+				top: 12px
+			&:after
+				left: 15px
+
+	.section-adv
+		padding: 20px 0 0
+
+	.adv
+		&-title
+			margin-bottom: 12px
+		&-text
+			font-size: 18px
+			p
+				margin-bottom: 10px
+		&-block
+			padding-top: 20px
+		&-item
+			width: 33%
+			margin-bottom: 30px
+			padding-right: 30px
+			&__text
+				padding-top: 12px
+				font-size: 16px
+				line-height: 1.4
+				&:before
+					width: 120px
+
+	.section-form
+		padding: 20px 0
+		&__title
+			font-size: 24px
+
+	.form-step
+		&__item
+			width: 218px
+			font-size: 14px
+			&:after
+				top: -32px
+				background-size: 100%
+			&_1
+				i
+					right: 55px
+				&:after
+					width: 100px
+					height: 16px
+					right: -88px
+					background-size: 100%
+			&_2
+				i
+					right: 85px
+				&:after
+					width: 230px
+					right: -186px
+
+	.form-block
+		fieldset
+			margin-bottom: 15px
+		input
+			width: 224px
+			margin-right: 5px
+			padding-left: 10px
+			font-size: 16px
+		&__text
+			margin-left: 15px
+			font-size: 14px
+
+	.section-type
+		padding: 20px 0 0
+		&__title
+			margin-bottom: 20px
+
+	.type
+		&-item
+			padding: 20px 0
+			&__pict
+				width: 200px
+			&__main
+				padding-left: 15px
+			&__title
+				margin-bottom: 5px
+				font-size: 20px
+			&__price
+				margin-bottom: 10px
+				font-size: 18px
+			&__list
+				li
+					margin-bottom: 10px
+					padding-left: 15px
+					font-size: 16px
+					line-height: 1.2
+
+	.btn.btn-type
+		width: 100%
+
+	.sidebar
+		padding: 0
+		&-title
+			margin-bottom: 15px
+			font-size: 18px
+		&-form
+			padding-top: 20px
+			&__title
+				margin-bottom: 10px
+				font-size: 18px
+			&__text
+				font-size: 16px
+			form
+				margin-top: 15px
+			input
+				width: 100%
+				margin-bottom: 10px
+				padding-left: 10px
+				font-size: 16px
+
+	.btn.btn-sidebar
+		width: 100%
+
+	.section-faq
+		padding: 20px 0
+		&__title
+			margin-bottom: 10px
+
+	.faq
+		&-item
+			margin-bottom: 10px
+			padding: 10px 0
+			&__title
+				font-size: 18px
+			&__text
+				padding-top: 10px
+				font-size: 16px
+
+	.section-qs
+		padding: 20px 0
+
+	.qs-form
+		&__title
+			margin-bottom: 5px
+			font-size: 24px
+			line-height: 1.2
+		&__text
+			margin-bottom: 12px
+			font-size: 16px
+		input
+			padding-left: 10px
+			font-size: 16px
+		&__mes
+			margin-top: 15px
+			font-size: 14px
+
+	.section-gallery
+		padding: 20px 0
+		&__title
+			margin-bottom: 20px
+
+	.grid
+		max-width: 767px
+		&-item
+			max-height: 119px
+
+	.footer
+		.container
+			position: relative
+			width: 100%
+			padding: 0
+
+	.map
+		height: 220px
+
+	.contact
+		position: relative
+		padding: 20px 77px 20px 30px
+		&-item
+			margin-bottom: 10px
+			&__phone
+				font-size: 20px
+			&__mail
+				font-size: 20px
+			&__loc
+				font-size: 20px
+			.social
+				float: none
+				margin-left: 10px
+	/**/
+
+
+@media only screen and (max-width : 767px)
+	.logo
+		max-width: 200px
+
+	.header-phone
+		margin-top: 5px
+		font-size: 20px
+
+	.mob-nav
+		position: static
+
+	.menu-mob
+	    display: inline-block
+
+	.header-nav
+		position: absolute
+		top: 0
+		left: -100%
+		width: 270px
+		padding: 40px 15px 40px 30px
+		transition: all .35s ease
+		z-index: 900
+		box-shadow: 0 0 15px rgba(#000, .9)
+		background: rgba(#000, .95)
+		&:before, &:after
+			display: none
+		&.open
+			left: 0
+
+	.header-menu
+		li
+			display: block
+			margin: 0 0 12px
+			a
+				font-size: 18px
+
+	.section-main
+		padding-top: 130px
+
+	.main
+		&-title
+			font-size: 32px
+		&-text
+			margin-top: 5px
+			font-size: 20px
+		&-form
+			&__title
+				font-size: 22px
+			&__text
+				margin-bottom: 10px
+			input
+				max-width: 320px
+				margin: 0 0 10px
+
+	.btn-main
+		width: 100%
+		max-width: 320px
+		margin-top: 10px
+
+	.section-title
+		font-size: 24px
+
+	.section-about
+		.container
+			&:after
+				display: none
+
+	.about
+		&-citace
+			width: 100%
+			&:after
+				width: 100%
+
+	.sidebar
+		padding-bottom: 15px
+		&-list
+			li
+				&:after
+					width: 50%
+
+	.adv
+		&-item
+			width: 49%
+
+	.section-form
+		&__title
+			margin-bottom: 20px
+
+	.form-step
+		padding-bottom: 0
+		&__item
+			display: table
+			margin: 0 0 30px
+			padding: 0 0 0 50px
+			i
+				top: 0
+				right: auto
+				left: 15px
+			&:after
+				display: none
+
+	.form-block
+		form
+			max-width: 320px
+		fieldset
+			margin-bottom: 5px
+		input
+			width: 100%
+			max-width: 320px
+			margin: 0 0 10px
+		&__text
+			display: block
+			margin: 12px 0 0
+			text-align: center
+
+	.btn.btn-form
+		width: 100%
+		max-width: 320px
+
+	.sidebar-form
+		form
+			max-width: 320px
+
+	.qs-form
+		form
+			max-width: 320px
+			margin: 0 auto
+		input
+			width: 100%
+			margin: 0 0 10px
+
+	.btn-qs
+		margin-top: 5px
+
+	.grid-item
+		width: 50%
+		max-height: 137px
+
+	.contact
+		text-align: center
+		&-item
+			display: block
+			width: 100%
+			&__title
+				&_dib
+					display: block
+			.social
+				margin: 5px 0 0
+
+	.callback-form
+		padding: 20px 10px 20px
+		text-align: center
+		&__title
+			margin-bottom: 5px
+			font-size: 24px
+		&__text
+			margin-bottom: 15px
+			font-size: 16px
+		form
+			width: 100%
+			max-width: 320px
+			margin: 0 auto
+		input
+			max-width: 100%
+			margin: 0 0 10px
+			padding-left: 10px
+			font-size: 16px
+
+	.mfp-close
+		top: 15px !important
+		right: 5px !important
+
+	.btn.btn-modal
+		width: 100%
+		margin-top: 5px
+	/**/
+
+
+@media only screen and (max-width : 480px)
+	.header-phone
+		margin-top: 0
+		font-size: 16px
+
+	.header-nav
+		width: 220px
+
+	.main
+		&:before
+			left: -60px
+		&-title
+			font-size: 24px
+		&-text
+			font-size: 15px
+		&-form
+			&__title
+				font-size: 20px
+			&__text
+				margin-bottom: 10px
+				font-size: 15px
+			input
+				max-width: 320px
+				margin: 0 0 10px
+
+	.section-title
+		font-size: 20px
+
+	.type
+		&-item
+			display: block
+			&__left
+				display: block
+			&__pict
+				width: 100%
+			&__main
+				display: block
+				padding: 15px 0 0
+
+	.btn
+		&.btn-type
+			display: none
+			&_mob
+				display: block
+
+	.contact
+		padding-right: 60px
+
+	.btn.btn-footer
+		width: 50px
+	/**/

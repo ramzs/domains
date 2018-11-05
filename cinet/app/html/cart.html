@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="content">
+		<div class="container">
+			@@include('./template/sidebar-tmp.html')
+
+			<div class="main">
+
+				<div class="breadcrumb">
+					<ul class="breadcrumb-list">
+						<li><a href="#">Главная</a></li>
+						<li>Корзина</li>
+					</ul>
+				</div>
+
+				<div class="page-title">Корзина</div>
+
+				<div class="cart-page">
+
+					<div class="cart-main">
+						<div class="tb">
+
+							<div class="tb-row tb-row_head">
+								<div class="tb-cell tb-cell_head">Фото</div>
+								<div class="tb-cell tb-cell_head">Наименование</div>
+								<div class="tb-cell tb-cell_head">Цена</div>
+								<div class="tb-cell tb-cell_head">Кол-во</div>
+								<div class="tb-cell tb-cell_head">Сумма</div>
+							</div>
+
+							<div class="tb-row tb-row_body">
+								<div class="tb-cell tb-cell_body tb-cell_pict">
+									<img src="img/product.jpg" alt="">
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_name">
+									<a href="#">400W 3Cott 3Cott-400ATX v2.0 OEM</a>
+									<p>мощность 400 Вт, вентилятор 120x120 мм</p>
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_price">
+									34000 руб
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_count">
+									<input type="number" name="cart-count" min="1" value="1">
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_total">
+									<p><span>Сумма:</span>34000 руб</p>
+									<a href="#" class="del-link">del</a>
+								</div>
+							</div>
+
+							<div class="tb-row tb-row_body">
+								<div class="tb-cell tb-cell_body tb-cell_pict">
+									<img src="img/product.jpg" alt="">
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_name">
+									<a href="#">400W 3Cott 3Cott-400ATX v2.0 OEM</a>
+									<p>мощность 400 Вт, вентилятор 120x120 мм</p>
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_price">
+									34000 руб
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_count">
+									<input type="number" name="cart-count" min="1" value="1">
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_total">
+									34000 руб
+									<a href="#" class="del-link">del</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="order">
+						<div class="order__title">Оформление заказа</div>
+						<div class="order-block">
+
+							<div class="order-checkbox">
+								<div class="order-block__title">Покупатель:</div>
+								<label for="r-1"><input type="radio" name="buyer" id="r-1" checked>Частное лицо</label>
+								<label for="r-2"><input type="radio" name="buyer" id="r-2">Организация</label>
+							</div>
+
+							<div class="order-checkbox">
+								<div class="order-block__title">Способ получения товара:</div>
+								<label for="r-3"><input type="radio" name="delivery" id="r-3" checked>Доставка</label>
+								<label for="r-4"><input type="radio" name="delivery" id="r-4">Самовывоз</label>
+							</div>
+
+							<div class="order-date">
+								<div class="order-block__title">Желаемые дата и время доставки:</div>
+								<select name="day" class="order-date__day" data-placeholder="Сегодня, понедельник, 23 мая,2017">
+									<option></option>
+									<option>Сегодня, понедельник, 23 мая,2017</option>
+								</select>
+								<span>с</span>
+								<select name="time" class="order-date__time" data-placeholder="12.00">
+									<option></option>
+									<option>12.00</option>
+									<option>13.00</option>
+								</select>
+								<span>до</span>
+								<select name="time" class="order-date__time" data-placeholder="15.00">
+									<option></option>
+									<option>15.00</option>
+									<option>16.00</option>
+								</select>
+							</div>
+
+							<div class="order-location">
+								<div class="order-block__title">Адрес доставки:</div>
+
+								<label for="s-1" class="order-location__city"><span>Город:</span>
+									<select name="city" id="s-1" data-placeholder="Москва">
+										<option></option>
+										<option>Москва</option>
+										<option>Санкт-Петербург</option>
+									</select>
+								</label>
+								<label for="s-2" class="order-location__street"><span>Улица:</span>
+									<select name="city" id="s-2" data-placeholder="ул. Пушкина">
+										<option></option>
+										<option>ул. Пушкина</option>
+										<option>ул. Пушкина</option>
+									</select>
+								</label>
+								<label for="s-3" class="order-location__house"><span>Дом:</span>
+									<select name="city" id="s-3" data-placeholder="13">
+										<option></option>
+										<option>13</option>
+										<option>17</option>
+									</select>
+								</label>
+
+								<label for="s-4" class="order-location__1"><span>Корпус:</span>
+									<select name="city" id="s-4" data-placeholder="13">
+										<option></option>
+										<option>13</option>
+										<option>14</option>
+									</select>
+								</label>
+
+								<label for="s-5" class="order-location__2"><span>Строение:</span>
+									<select name="city" id="s-5" data-placeholder="13">
+										<option></option>
+										<option>13</option>
+										<option>14</option>
+									</select>
+								</label>
+
+								<label for="s-6" class="order-location__3"><span>Подъезд:</span>
+									<select name="city" id="s-6" data-placeholder="13">
+										<option></option>
+										<option>13</option>
+										<option>14</option>
+									</select>
+								</label>
+
+								<label for="s-7" class="order-location__4"><span>Этаж:</span>
+									<select name="city" id="s-7" data-placeholder="13">
+										<option></option>
+										<option>13</option>
+										<option>14</option>
+									</select>
+								</label>
+
+								<label for="s-8" class="order-location__5"><span>Квартира (офис):</span>
+									<select name="city" id="s-8" data-placeholder="13">
+										<option></option>
+										<option>13</option>
+										<option>14</option>
+									</select>
+								</label>
+
+							</div>
+
+							<div class="order-contact">
+								<div class="order-block__title">Контактная информация:</div>
+								<form action="#">
+									<label>Ваше имя:
+										<input type="text" name="name" placeholder="Николай">
+									</label>
+									<label>Электронная почта:
+										<input type="text" name="mail" placeholder="kolya@mail.ru">
+									</label>
+									<label>Номер телефона:
+										<input type="text" name="phone" placeholder="Николай">
+									</label>
+									<label>Дополнительный номер телефона:
+										<input type="text" name="phone2" placeholder="kolya@mail.ru">
+									</label>
+									<label class="order-contact__message">Дополнительная информация:
+										<textarea name="message" cols="30" rows="10" placeholder="Николай"></textarea>
+									</label>
+									<button class="btn btn_order">Оформить заказ</button>
+								</form>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

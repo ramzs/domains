@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="breadcrumb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="#">Главная</a></li>
+						<li class="active">О компании</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content content-inner">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-4 col-md-3 mob-smenu">
+					<sidebar class="sidebar-inner">
+
+						<div class="sidebar-title">Сервис</div>
+						<ul class="sidebar-menu">
+							<li>
+								<a href="#">Хранение овощей</a>
+								<ul class="sidebar-dropmenu">
+									<li><a href="#">Хранение картофеля и лука</a></li>
+									<li><a href="#">Хранение моркови, свеклы, капусты</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Хранение фруктов</a></li>
+							<li><a href="#">Доработка овощей</a></li>
+							<li><a href="#">Фасовка овощей<br>и фруктов</a></li>
+							<li><a href="#">Чистка и нарезка<br>овощей</a></li>
+							<li><a href="#">Грибное производство</a></li>
+							<li><a href="#">Обработчик семечек<br>и орехов</a></li>
+						</ul>
+
+						<div class="vk-block vk-block_sm">
+							<a href="#" class="vk-block__link">Посетить страницу в VK</a>
+						</div>
+
+					</sidebar>
+				</div>
+
+				<div class="col-xs-12 col-sm-8 col-md-9">
+
+					<a href="#" class="btn btn-smenu">Открыть меню</a>
+
+					<div class="vk-block vk-block_xs">
+						<a href="#" class="vk-block__link">Посетить страницу в VK</a>
+					</div>
+
+					<main class="main">
+						<div class="inner-content">
+
+							<h1 class="page-title">О компании</h1>
+
+							<div class="about">
+
+								<div class="map">
+									<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4de9dedcfe97af3c985e979239d50c7961ca9c49e134d5718b6c95b269dd79fa&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+								</div>
+
+								<div class="about-contact">
+									<div class="about-contact__title">Контактная информация</div>
+									<div class="contact-item contact-item_phone">
+										<div class="contact-item__title">Телефон:</div>
+										<a href="tel:+74957839484" class="contact-item__main">+7 (495) 783 94 84</a>
+									</div>
+									<div class="contact-item contact-item_location">
+										<div class="contact-item__title">Адрес:</div>
+										<div class="contact-item__main">г. Москва, 2-ая Синичкина ул., 9а, БЦ Синица Плаза</div>
+									</div>
+									<div class="contact-item contact-item_mail">
+										<div class="contact-item__title">Электронная почта:</div>
+										<a href="mailto:info@interagro.info" class="contact-item__main">info@interagro.info</a>
+									</div>
+									<div class="contact-item contact-item_social">
+										<div class="contact-item__title">Сеть:</div>
+										<a href="#" class="contact-item__main">vk</a>
+									</div>
+								</div>
+
+								<div class="form-block form-block_about">
+									<div class="form-block__title">Задать вопрос:</div>
+									<form action="#">
+										<fieldset>
+											<input type="text" placeholder="Ваше имя">
+											<input type="text" placeholder="Ваша эл.почта">
+										</fieldset>
+										<textarea cols="30" rows="10" placeholder="Сообщение"></textarea>
+										<button type="submit" class="btn btn-form">Отправить</button>
+										<div class="form-message">
+											<p>Мы отправим ответ на вашу электронную почту,<br>спасибо за обращение!</p>
+										</div>
+									</form>
+								</div>
+
+							</div>
+
+						</div>
+					</main>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

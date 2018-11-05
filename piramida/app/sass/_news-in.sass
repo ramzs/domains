@@ -1,0 +1,34 @@
+@import "vars"
+
+/*------------------News-in page---------------*/
+.news-in
+	padding: 24px 35px 64px
+	border-radius: 5px
+	background: #f4f4f4
+	&__title
+		margin-bottom: 38px
+		font: 700 25px "ptsansnarrow"
+	&__pict
+		margin-bottom: 14px
+		img
+			display: block
+			max-width: 100%
+			height: 100%
+	&__text
+		max-width: 999px
+		font-size: 15px
+		line-height: 24px
+		p
+			margin-bottom: 22px
+	&__date
+		position: relative
+		padding-left: 33px
+		font-size: 15px
+		color: #0057b9
+		&:before
+			content: ''
+			position: absolute
+			top: -3px
+			left: 0
+			@include sprite($date)
+/*----------------------end---------------------*/

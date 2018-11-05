@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "MuseoCyrl";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/MuseoCyrl-100/MuseoCyrl-100.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoCyrl-100/MuseoCyrl-100.woff") format("woff"), url("../fonts/MuseoCyrl-100/MuseoCyrl-100.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoCyrl";
+  font-style: italic;
+  font-weight: 100;
+  src: url("../fonts/MuseoCyrl-100Italic/MuseoCyrl-100Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoCyrl-100Italic/MuseoCyrl-100Italic.woff") format("woff"), url("../fonts/MuseoCyrl-100Italic/MuseoCyrl-100Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoCyrl";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/MuseoCyrl-300/MuseoCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoCyrl-300/MuseoCyrl-300.woff") format("woff"), url("../fonts/MuseoCyrl-300/MuseoCyrl-300.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoCyrl";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/MuseoCyrl-300Italic/MuseoCyrl-300Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoCyrl-300Italic/MuseoCyrl-300Italic.woff") format("woff"), url("../fonts/MuseoCyrl-300Italic/MuseoCyrl-300Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoCyrl";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/MuseoCyrl-500/MuseoCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoCyrl-500/MuseoCyrl-500.woff") format("woff"), url("../fonts/MuseoCyrl-500/MuseoCyrl-500.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoCyrl";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/MuseoCyrl-500Italic/MuseoCyrl-500Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoCyrl-500Italic/MuseoCyrl-500Italic.woff") format("woff"), url("../fonts/MuseoCyrl-500Italic/MuseoCyrl-500Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoCyrl";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/MuseoCyrl-700/MuseoCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoCyrl-700/MuseoCyrl-700.woff") format("woff"), url("../fonts/MuseoCyrl-700/MuseoCyrl-700.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoCyrl";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/MuseoCyrl-700Italic/MuseoCyrl-700Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoCyrl-700Italic/MuseoCyrl-700Italic.woff") format("woff"), url("../fonts/MuseoCyrl-700Italic/MuseoCyrl-700Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoCyrl";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/MuseoCyrl-900/MuseoCyrl-900.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoCyrl-900/MuseoCyrl-900.woff") format("woff"), url("../fonts/MuseoCyrl-900/MuseoCyrl-900.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoCyrl";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/MuseoCyrl-900Italic/MuseoCyrl-900Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoCyrl-900Italic/MuseoCyrl-900Italic.woff") format("woff"), url("../fonts/MuseoCyrl-900Italic/MuseoCyrl-900Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/SourceSansProRegular/SourceSansProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansProRegular/SourceSansProRegular.woff") format("woff"), url("../fonts/SourceSansProRegular/SourceSansProRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/SourceSansProLight/SourceSansProLight.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansProLight/SourceSansProLight.woff") format("woff"), url("../fonts/SourceSansProLight/SourceSansProLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/SourceSansProBold/SourceSansProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SourceSansProBold/SourceSansProBold.woff") format("woff"), url("../fonts/SourceSansProBold/SourceSansProBold.ttf") format("truetype");
+}

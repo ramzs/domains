@@ -1,0 +1,85 @@
+.footer
+	&-logo
+		display: table
+		margin: 100px auto 0
+		clear: both
+		img
+			max-width: 100%
+	&-bottom
+		padding: 19px 0 13px
+		+clearfix
+
+.copyright
+	float: left
+	font-size: 15px
+	color: #767676
+
+.development
+	position: relative
+	float: right
+	font-size: 15px
+	color: #767676
+	text-decoration: underline
+	&:before
+		content: ''
+		position: absolute
+		top: -6px
+		left: -38px
+		width: 31px
+		height: 31px
+		background: url(../img/reklamoterapy-logo.png) 0 0 no-repeat
+	&:hover
+		text-decoration: none
+
+/*----------Callback-form------------------*/
+.mfp-bg
+	background: rgba(#00253d, .7) !important
+
+.callback-form
+	position: relative
+	max-width: 433px
+	width: 100%
+	margin: 0 auto
+	padding: 30px 70px 40px
+	border-radius: 10px
+	background: #fff
+	&__title
+		margin-bottom: 32px
+		font: 48px/1 $titlefont
+		color: #cecece
+		text-align: center
+	input
+		display: block
+		width: 280px
+		height: 54px
+		margin: 0 auto 10px
+		padding-left: 15px
+		font-size: 16px
+		outline: none
+		border: 2px solid #e1e1e1
+	.mfp-close
+		top: 0
+		right: 0
+
+.success
+	display: none
+	position: absolute
+	width: 320px
+	height: 100px
+	top: 50%
+	left: 50%
+	font-size: 16px
+	font-weight: 700
+	color: #fff
+	z-index: 800
+	border-radius: 20px
+	text-transform: uppercase
+	transform: translate(-50%, -50%)
+	background: rgba($red, 0.6)
+	span
+		position: absolute
+		top: 50%
+		left: 50%
+		white-space: nowrap
+		transform: translate(-50%, -50%)
+/*--------------end-----------------------*/

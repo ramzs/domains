@@ -1,0 +1,2448 @@
+@charset "UTF-8";
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-------Base styles----------*/
+*::-webkit-input-placeholder {
+  color: #fff;
+  font-weight: 200;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #fff;
+  font-weight: 200;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #fff;
+  font-weight: 200;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #fff;
+  font-weight: 200;
+  opacity: 1;
+}
+
+html.js .loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+html.js .loader .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green;
+}
+
+body {
+  font-family: "ptsans", sans-serif;
+  color: #000;
+  font-weight: normal;
+  font-size: 15px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*----------end---------------*/
+header {
+  position: relative;
+  -webkit-box-shadow: 0 4px 15px rgba(158, 158, 158, 0.2);
+          box-shadow: 0 4px 15px rgba(158, 158, 158, 0.2);
+}
+
+.header__top {
+  padding-top: 30px;
+  text-align: right;
+}
+
+.header__city {
+  display: inline-block;
+  margin-right: 9%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.city__name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.map__link {
+  display: block;
+  margin-top: 7px;
+  font-size: 14px;
+  color: #7d7d7d;
+  border-bottom: 1px dashed #7d7d7d;
+}
+
+.map__link:hover {
+  border-bottom: 1px dashed transparent;
+}
+
+.header__phone {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  margin-right: 8%;
+  text-align: left;
+}
+
+.phone__link {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.callback__link {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 14px;
+  color: #7d7d7d;
+  border-bottom: 1px dashed #7d7d7d;
+}
+
+.callback__link:hover {
+  border-bottom: 1px dashed transparent;
+}
+
+.header__calc {
+  float: right;
+  position: relative;
+  top: 6px;
+}
+
+.header__calc.header__calc-mob {
+  display: block;
+  width: 100%;
+  margin-top: 22px;
+}
+
+.calc__link {
+  display: block;
+  position: relative;
+  width: 224px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background: #ff4800;
+  z-index: 10;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.calc__link:hover {
+  background: #ed4503;
+}
+
+.calc__link.calc__link-mob {
+  margin: 0 auto;
+}
+
+.header__bottom {
+  position: relative;
+  text-align: right;
+}
+
+.header__bottom .container {
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  top: -42px;
+  left: 20px;
+}
+
+.logo__link {
+  float: left;
+}
+
+.logo__link img {
+  width: 100%;
+}
+
+.logo__name {
+  display: inline-block;
+  position: relative;
+  margin-left: 50px;
+  font: 600 20px "roboto";
+  color: #842326;
+  text-align: left;
+}
+
+.logo__name:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: -16px;
+  width: 1px;
+  height: 48px;
+  background: #ff4800;
+}
+
+.header__menu {
+  display: inline-block;
+  position: relative;
+  margin-top: 43px;
+  text-align: right;
+  vertical-align: middle;
+  z-index: 99;
+}
+
+.header__menu .menu__list {
+  display: inline-block;
+  margin: 0 42px -4px 0;
+}
+
+.header__menu .menu__list li {
+  display: table-cell;
+  padding-left: 46px;
+}
+
+.header__menu .menu__list li a {
+  display: block;
+  padding-bottom: 32px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  border-bottom: 5px solid transparent;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.header__menu .menu__list li a:hover, .header__menu .menu__list li a.active {
+  border-bottom: 5px solid #ff4800;
+}
+
+.header__search {
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  vertical-align: middle;
+  z-index: 100;
+}
+
+.search__link {
+  display: inline-block;
+  font-size: 0;
+  background-image: url(../img/sprite.png);
+  background-position: -203px -153px;
+  width: 20px;
+  height: 21px;
+}
+
+.search__link.search__link-mob {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  background-image: url(../img/sprite.png);
+  background-position: -223px -153px;
+  width: 20px;
+  height: 21px;
+}
+
+.search__block {
+  display: none;
+  position: absolute;
+  bottom: -84px;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  height: 84px;
+  text-align: left;
+  background: #842326;
+  z-index: 99;
+}
+
+.search__block input {
+  display: inline-block;
+  width: 80%;
+  height: 44px;
+  padding-left: 10px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: none;
+}
+
+.search__block input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.search__block input:-moz-placeholder {
+  color: #000;
+}
+
+.search__block input::-moz-placeholder {
+  color: #000;
+}
+
+.search__block input:-ms-input-placeholder {
+  color: #000;
+}
+
+.btn__search {
+  display: inline-block;
+  width: 133px;
+  height: 44px;
+  margin-left: 17px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: #ff4800;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.btn__search:hover {
+  background: #ed4503;
+}
+
+.search__close {
+  float: right;
+  margin: 12px 0 0 55px;
+  font-size: 0;
+  background-image: url(../img/sprite.png);
+  background-position: -223px -130px;
+  width: 21px;
+  height: 21px;
+}
+
+.menu__mob {
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+  padding: 35px 0 55px;
+  background: #842326;
+  z-index: 99;
+}
+
+.menu__mob .menu__list {
+  display: block;
+  margin: 45px 0 0;
+  text-align: center;
+}
+
+.menu__mob .menu__list li {
+  display: block;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.menu__mob .menu__list li a {
+  display: inline-block;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.menu__mob .menu__list li a:hover, .menu__mob .menu__list li a.active {
+  color: #ff4800;
+}
+
+.search__mob {
+  display: block;
+  position: relative;
+  height: 35px;
+}
+
+.search__mob input {
+  height: 35px;
+  width: 100%;
+  padding-right: 35px;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ae3b3f;
+}
+
+.menu__btn {
+  display: none;
+  position: relative;
+  float: right;
+  width: 53px;
+  height: 53px;
+  margin-top: 29px;
+  font-size: 0;
+  cursor: pointer;
+  background: #ff4800;
+}
+
+.menu__btn .btn__line {
+  position: absolute;
+  top: 25px;
+  left: 13px;
+  width: 27px;
+  height: 2px;
+  background: #fff;
+  -webkit-transition: background 0s .3s;
+  transition: background 0s .3s;
+}
+
+.menu__btn .btn__line:before {
+  content: ' ';
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 27px;
+  height: 2px;
+  background: #fff;
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform;
+  -webkit-transition-duration: .3s, .3s;
+          transition-duration: .3s, .3s;
+  -webkit-transition-delay: .3s, 0s;
+          transition-delay: .3s, 0s;
+}
+
+.menu__btn .btn__line:after {
+  content: ' ';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 27px;
+  height: 2px;
+  background: #fff;
+  background-transition-property: bottom, transform;
+  -webkit-transition-duration: .3s, .3s;
+          transition-duration: .3s, .3s;
+  -webkit-transition-delay: .3s, 0s;
+          transition-delay: .3s, 0s;
+}
+
+.menu__btn.active .btn__line {
+  background: none;
+}
+
+.menu__btn.active .btn__line:before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition-delay: 0s, .3s;
+          transition-delay: 0s, .3s;
+}
+
+.menu__btn.active .btn__line:after {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition-delay: 0s, .3s;
+          transition-delay: 0s, .3s;
+}
+
+.header__banner {
+  position: relative;
+  height: 460px;
+  background: url(../img/header-bg.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.banner__overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.banner__caption {
+  position: relative;
+  display: inline-block;
+  margin: 90px 0 0 100px;
+  z-index: 2;
+}
+
+.header__title {
+  display: block;
+  margin-bottom: 16px;
+  font: 600 40px "roboto";
+  color: #fff;
+}
+
+.header__accent {
+  display: block;
+  margin-bottom: 45px;
+  font-size: 17px;
+  color: #fff;
+}
+
+footer {
+  padding: 48px 0 50px;
+  background: #000;
+}
+
+.footer__menu {
+  display: inline-block;
+}
+
+.footer__menu .menu__list {
+  display: inline-block;
+  margin-right: 205px;
+  vertical-align: top;
+}
+
+.footer__menu .menu__list li {
+  margin-bottom: 15px;
+}
+
+.footer__menu .menu__list li a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #c7c7c7;
+  text-transform: uppercase;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.footer__menu .menu__list li a:hover {
+  color: #ff4800;
+}
+
+.footer__contact {
+  float: right;
+  text-align: left;
+}
+
+.contact__address {
+  text-align: left;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.contact__address p {
+  margin: 0;
+}
+
+.contact__phone {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.contact__mail {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.contact__mail a {
+  color: #ff4800;
+  text-decoration: underline;
+}
+
+.contact__mail a:hover {
+  text-decoration: none;
+}
+
+.footer__copyright {
+  margin-top: 85px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/*----------Callback form-------------*/
+.callback__form {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 280px;
+  height: 411px;
+  margin: auto;
+  padding-top: 40px;
+  text-align: center;
+  border: 5px solid #fff;
+  z-index: 999;
+}
+
+.callback__form form {
+  padding: 0 25px;
+}
+
+.callback__form form input {
+  width: 100%;
+  height: 28px;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
+
+.btn__form {
+  display: block;
+  width: 219px;
+  height: 44px;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  background: #ff4800;
+}
+
+.btn__form:hover {
+  background: #ed4503;
+}
+
+.modal__close {
+  position: absolute;
+  top: -38px;
+  right: -5px;
+  font-size: 0;
+  cursor: pointer;
+  background-image: url(../img/sprite.png);
+  background-position: -223px -130px;
+  width: 21px;
+  height: 21px;
+}
+
+.form__title {
+  font: 600 24px "roboto";
+  color: #fff;
+}
+
+.form__accent {
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: #cfd8dc;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+}
+
+/*----------------end-------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*----------Calculator page--------------*/
+.content__page {
+  background: url(../img/calc-bg.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.content__page.content__page-calc {
+  padding: 0 0 70px;
+  text-align: center;
+}
+
+.breadcrumb {
+  padding: 18px 0;
+  text-align: left;
+}
+
+.breadcrumb__list li {
+  display: inline-block;
+  position: relative;
+  margin-left: 15px;
+  font-size: 14px;
+  color: #7d7d7d;
+}
+
+.breadcrumb__list li:first-child {
+  margin-left: 0;
+}
+
+.breadcrumb__list li:not(:first-child):before {
+  content: '-';
+  position: absolute;
+  top: 0;
+  left: -12px;
+}
+
+.breadcrumb__list li a {
+  display: block;
+  color: #7d7d7d;
+}
+
+.breadcrumb__list li a:hover {
+  color: #842326;
+}
+
+.page__title {
+  margin-top: 5px;
+  text-align: center;
+  font: 600 30px "roboto";
+}
+
+.page__accent {
+  display: block;
+  max-width: 420px;
+  margin: 25px auto;
+  font-size: 15px;
+}
+
+.calc__block {
+  width: 420px;
+  height: 599px;
+  margin: 65px auto 0;
+  padding: 50px 42px 0;
+  background: #842326;
+}
+
+.count__box {
+  text-align: right;
+  border-bottom: 1px solid #9f2e31;
+}
+
+.count__box label {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.count__box input {
+  width: 135px;
+  height: 40px;
+  margin-left: 6px;
+  padding-left: 10px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: none;
+}
+
+.count__box input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.count__box input:-moz-placeholder {
+  color: #000;
+}
+
+.count__box input::-moz-placeholder {
+  color: #000;
+}
+
+.count__box input:-ms-input-placeholder {
+  color: #000;
+}
+
+.total__box {
+  padding: 32px 0 16px;
+  border-bottom: 1px solid #9f2e31;
+}
+
+.total__list li {
+  margin-bottom: 20px;
+  font-size: 17px;
+  color: #fff;
+  text-align: left;
+}
+
+.total__list li span {
+  float: right;
+  font-weight: 700;
+}
+
+.btn__form.btn__form-calc {
+  width: 213px;
+  margin: 40px auto 0;
+}
+
+/*--------------end----------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-----------------Contact page---------------*/
+.content__page.content__page-contact {
+  text-align: center;
+}
+
+.contact__block {
+  margin: 25px 0 65px;
+  text-align: center;
+}
+
+.contact__address.contact__address-page {
+  font-size: 17px;
+  text-align: center;
+  color: #000;
+}
+
+.contact__phone.contact__phone-page {
+  margin-top: 26px;
+  font-size: 17px;
+  font-weight: normal;
+  color: #000;
+}
+
+.contact__mail.contact__mail-page {
+  margin-top: 5px;
+  font-size: 17px;
+  color: #000;
+}
+
+.contact__map iframe {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*--------------------end--------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-----------------Work page---------------*/
+.content__page.content__page-work {
+  padding-bottom: 50px;
+  background: url(../img/work-bg.jpg) center top no-repeat;
+}
+
+.work__tabs {
+  margin: 32px 0 40px;
+}
+
+.tab__link {
+  display: inline-block;
+  width: 224px;
+  height: 44px;
+  margin-right: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff4800;
+  line-height: 42px;
+  text-align: center;
+  border: 2px dashed #ff4800;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.tab__link:hover, .tab__link.active {
+  color: #fff;
+  background: #ff4800;
+}
+
+.work__block {
+  display: none;
+}
+
+.work__block.open {
+  display: block;
+}
+
+.work__block a {
+  float: left;
+  width: 23%;
+  height: auto;
+  margin: 0 25px 25px 0;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.work__block a:hover {
+  -webkit-box-shadow: 0 0 25px -5px #000;
+          box-shadow: 0 0 25px -5px #000;
+}
+
+.work__block a:nth-child(4n) {
+  margin-right: 0;
+}
+
+.work__block a img {
+  width: 100%;
+}
+
+/*-------------------end-------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-----------------About page---------------*/
+.content__page.content__page-about {
+  padding-bottom: 50px;
+}
+
+.about__descr {
+  margin-top: 26px;
+}
+
+.descr__block {
+  float: left;
+  width: 47%;
+  font-size: 15px;
+}
+
+.descr__block.descr__block-1 {
+  margin-right: 40px;
+}
+
+.descr__block p {
+  margin: 0 0 15px;
+}
+
+.descr__block ul {
+  margin-bottom: 15px;
+}
+
+.descr__block ul li {
+  position: relative;
+  margin-bottom: 2px;
+  padding-left: 12px;
+}
+
+.descr__block ul li:before {
+  content: ' ';
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #ff4800;
+}
+
+.about__banner {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.banner__item {
+  display: inline-block;
+  width: 470px;
+  height: 180px;
+  margin: 0 10px;
+  text-align: left;
+  border: 4px solid #ebebeb;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.banner__item:hover {
+  -webkit-box-shadow: 0 0 25px -5px #000;
+          box-shadow: 0 0 25px -5px #000;
+}
+
+.banner__item img {
+  float: left;
+}
+
+.banner__item .banner__descr {
+  display: table;
+  padding: 40px 0 0 20px;
+}
+
+.banner__item .banner__descr .banner__title {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.about__benefits {
+  margin-top: 26px;
+  text-align: center;
+}
+
+.benefit__title {
+  margin-bottom: 25px;
+}
+
+.benefit__item {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  height: 190px;
+  padding: 120px 12px 0;
+  vertical-align: top;
+  text-align: center;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.benefit__item .benefit__icon {
+  position: absolute;
+  bottom: 105px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.benefit__item span {
+  display: block;
+  font-size: 15px;
+}
+
+.benefit__item:hover {
+  background: #ff4800;
+}
+
+.benefit__item:hover span {
+  color: #fff;
+}
+
+.benefit__item.benefit__item-1 .benefit__icon {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -98px;
+  width: 47px;
+  height: 48px;
+}
+
+.benefit__item.benefit__item-1:hover .benefit__icon {
+  background-image: url(../img/sprite.png);
+  background-position: -47px -98px;
+  width: 47px;
+  height: 47px;
+}
+
+.benefit__item.benefit__item-2 .benefit__icon {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -56px;
+  width: 58px;
+  height: 42px;
+}
+
+.benefit__item.benefit__item-2:hover .benefit__icon {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -56px;
+  width: 58px;
+  height: 42px;
+}
+
+.benefit__item.benefit__item-3 .benefit__icon {
+  background-image: url(../img/sprite.png);
+  background-position: -94px -98px;
+  width: 47px;
+  height: 46px;
+}
+
+.benefit__item.benefit__item-3:hover .benefit__icon {
+  background-image: url(../img/sprite.png);
+  background-position: -156px 0px;
+  width: 47px;
+  height: 46px;
+}
+
+.benefit__item.benefit__item-4 .benefit__icon {
+  background-image: url(../img/sprite.png);
+  background-position: -41px -146px;
+  width: 47px;
+  height: 43px;
+}
+
+.benefit__item.benefit__item-4:hover .benefit__icon {
+  background-image: url(../img/sprite.png);
+  background-position: -156px -98px;
+  width: 47px;
+  height: 43px;
+}
+
+.benefit__item.benefit__item-5 .benefit__icon {
+  background-image: url(../img/sprite.png);
+  background-position: -156px -46px;
+  width: 41px;
+  height: 52px;
+}
+
+.benefit__item.benefit__item-5:hover .benefit__icon {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -146px;
+  width: 41px;
+  height: 52px;
+}
+
+.benefit__item.benefit__item-6 .benefit__icon {
+  background-image: url(../img/sprite.png);
+  background-position: -106px 0px;
+  width: 50px;
+  height: 51px;
+}
+
+.benefit__item.benefit__item-6:hover .benefit__icon {
+  background-image: url(../img/sprite.png);
+  background-position: -56px 0px;
+  width: 50px;
+  height: 51px;
+}
+
+.benefit__item.benefit__item-7 .benefit__icon {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -48px;
+  width: 41px;
+  height: 48px;
+}
+
+.benefit__item.benefit__item-7:hover .benefit__icon {
+  background-image: url(../img/sprite.png);
+  background-position: -203px 0px;
+  width: 41px;
+  height: 48px;
+}
+
+/*-------------------end-------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-----------------Partner page---------------*/
+.content__page.content__page-partner {
+  padding-bottom: 50px;
+}
+
+.partner__descr {
+  width: 410px;
+  margin: 26px auto 0;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.partner__descr a {
+  display: block;
+  color: #ff4800;
+  text-decoration: underline;
+}
+
+.partner__descr a:hover {
+  text-decoration: none;
+}
+
+.partner__items {
+  margin-top: 65px;
+}
+
+.item__logo {
+  float: left;
+  position: relative;
+  width: 170px;
+  height: 120px;
+  margin: 0 22px 20px 0;
+  border: 4px solid #ff4800;
+}
+
+.item__logo img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/*---------------------end--------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-----------------Find page---------------*/
+.content__page.content__page-find {
+  padding-bottom: 70px;
+}
+
+.page__accent.page__accent-find {
+  max-width: 765px;
+  text-align: center;
+}
+
+.find__form {
+  width: 670px;
+  height: auto;
+  margin: 66px auto 0;
+  padding: 45px 40px 47px;
+  background: #ebebeb;
+}
+
+.find__form label {
+  display: block;
+  margin-bottom: 23px;
+  font-size: 15px;
+}
+
+.find__form label span {
+  font-weight: bold;
+}
+
+.find__form label i {
+  color: #ff4800;
+}
+
+.find__form label input {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #AFB6BA;
+}
+
+.find__form fieldset {
+  margin-top: 63px;
+  padding: 0;
+  border: none;
+}
+
+.find__form fieldset input {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #AFB6BA;
+}
+
+.find__form fieldset input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.find__form fieldset input:-moz-placeholder {
+  color: #000;
+}
+
+.find__form fieldset input::-moz-placeholder {
+  color: #000;
+}
+
+.find__form fieldset input:-ms-input-placeholder {
+  color: #000;
+}
+
+.find__form .form__left {
+  float: left;
+  width: 45%;
+}
+
+.find__form .form__right {
+  float: right;
+  width: 45%;
+}
+
+.find__form .find__accent {
+  display: block;
+  margin-top: 24px;
+  font-size: 14px;
+  color: #555555;
+}
+
+/*-------------------end--------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-----------------Add page---------------*/
+.content__page.content__page-add {
+  padding-bottom: 70px;
+}
+
+.page__accent.page__accent-add {
+  max-width: 730px;
+  text-align: center;
+}
+
+.find__form.find__form-add {
+  max-width: 990px;
+  width: 100%;
+}
+
+.find__form .jq-selectbox {
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.find__form .jq-selectbox__select {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #fff;
+}
+
+.find__form .jq-selectbox__select:hover {
+  background: #fff;
+}
+
+.find__form .jq-selectbox__trigger {
+  border-left: none;
+}
+
+.find__form .jq-file {
+  display: block !important;
+  width: 220px;
+  margin: 5px 0 24px;
+  overflow: visible !important;
+}
+
+.find__form .jq-file:hover .jq-file__browse {
+  background: none;
+}
+
+.find__form .jq-file input {
+  height: 35px;
+  right: -32px !important;
+  overflow: hidden;
+}
+
+.find__form .jq-file__name {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.find__form .jq-file__browse {
+  right: -30px;
+  font-size: 0;
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.find__form .jq-file__browse:after {
+  content: ' ';
+  position: absolute;
+  top: 3px;
+  right: 0;
+  background-image: url(../img/sprite.png);
+  background-position: -203px -130px;
+  width: 20px;
+  height: 23px;
+}
+
+.find__form textarea {
+  width: 100%;
+  height: 225px;
+  margin-top: 5px;
+  border: 1px solid #AFB6BA;
+  background-color: transparent;
+}
+
+.form__1 {
+  float: left;
+  width: 29%;
+}
+
+.form__2 {
+  float: left;
+  width: 270px;
+  margin-left: 75px;
+  overflow: hidden;
+}
+
+.form__2 span i {
+  color: #ff4800;
+}
+
+.form__3 {
+  float: right;
+  width: 30%;
+}
+
+.form__3 label {
+  margin-bottom: 46px;
+}
+
+/*-------------------end-------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-----------------Project page---------------*/
+.content__page.content__page-projects {
+  padding-bottom: 30px;
+  background: url(../img/work-bg.jpg) center top no-repeat;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.filter__link {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  font: 700 14px "roboto";
+  color: #37474f;
+  line-height: 60px;
+  text-align: left;
+  text-transform: uppercase;
+  background: #ebebeb;
+}
+
+.filter__link .link__title.link__title-2 {
+  display: none;
+}
+
+.filter__link:after {
+  content: ' ';
+  position: absolute;
+  top: 28px;
+  right: 50px;
+  background-image: url(../img/sprite.png);
+  background-position: -232px -103px;
+  width: 5px;
+  height: 7px;
+}
+
+.filter__link.open .link__title.link__title-1 {
+  display: none;
+}
+
+.filter__link.open .link__title.link__title-2 {
+  display: block;
+}
+
+.filter__link.open:after {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.sidebar {
+  position: relative;
+  float: left;
+  width: 23.6%;
+}
+
+.project__filter {
+  padding: 35px 25px 8px;
+  background: #6e777b;
+}
+
+.project__filter.project__filter-mob {
+  display: none;
+}
+
+.filter__block {
+  margin-bottom: 32px;
+}
+
+.filter__block label {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+}
+
+.filter__block .jq-checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.filter__block .jq-checkbox.checked .jq-checkbox__div {
+  margin: 3px 0 0 3px;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background-image: url(../img/sprite.png);
+  background-position: -232px -96px;
+  width: 8px;
+  height: 7px;
+}
+
+.filter__block .jq-checkbox.focused {
+  border: 1px solid transparent;
+}
+
+.filter__block.filter__block-price label, .filter__block.filter__block-area label {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+}
+
+.filter__block.filter__block-price label input, .filter__block.filter__block-area label input {
+  width: 43px;
+  height: 23px;
+  margin: 0 8px 0 7px;
+  font-size: 14px;
+  text-align: center;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.filter__block.filter__block-category label, .filter__block.filter__block-floor label {
+  margin-bottom: 10px;
+}
+
+.filter__block.filter__block-total {
+  margin-top: 40px;
+  padding-top: 12px;
+  text-align: center;
+  border-top: 1px solid #808A8E;
+}
+
+.filter__block .block__title {
+  display: block;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  color: #fff;
+  border-bottom: 1px solid #808A8E;
+}
+
+.filter__block .slider__wrap form {
+  margin-bottom: 23px;
+}
+
+.btn__filter {
+  display: block;
+  max-width: 213px;
+  width: 100%;
+  height: 44px;
+  margin: 0 auto;
+  font: 700 14px "roboto";
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  background: #842326;
+  outline: none;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.btn__filter:hover {
+  background: #8e272a;
+}
+
+.reset__link {
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  border-bottom: 1px dashed #fff;
+}
+
+.reset__link:hover {
+  border-bottom: none;
+}
+
+/*--------jqueryUi slider--------*/
+/* Ширина слайдера*/
+#slider {
+  width: 100%;
+}
+
+/* Контейнер слайдера*/
+.ui-slider {
+  position: relative;
+}
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  outline: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  overflow: hidden;
+}
+
+/* Ползунок*/
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок)*/
+.ui-slider-horizontal {
+  height: 2px;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -4px;
+  margin-left: -6px;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+
+/* оформление полосы по которой ходит ползунок*/
+.ui-widget-content {
+  border: none;
+  background: #fff;
+}
+
+/* оформление активного участка (между двумя ползунками)*/
+.ui-widget-header {
+  border: none;
+  background: #842326;
+}
+
+/* скругление для полосы слайдера*/
+.ui-corner-all {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/*------------end----------------*/
+.main {
+  display: inline-block;
+  width: 76.4%;
+  padding-left: 22px;
+  text-align: justify;
+}
+
+.main:after {
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.project__item {
+  display: inline-block;
+  width: 273px;
+  margin-bottom: 22px;
+  border: 1px solid #cfd8dc;
+  background: #fff;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.project__item:hover {
+  -webkit-box-shadow: 0 0 25px -5px #000;
+          box-shadow: 0 0 25px -5px #000;
+}
+
+.project__item img {
+  display: block;
+  width: 100%;
+  height: 200px;
+}
+
+.project__item .item__descr {
+  padding: 23px 30px 29px;
+}
+
+.project__item .item__descr .item__number {
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.project__item .item__descr .item__area {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.project__item .item__descr .item__price {
+  position: relative;
+  margin-bottom: 18px;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+.project__item .item__descr .item__price span {
+  font: 600 17px "roboto";
+}
+
+.project__item .item__descr .item__price:before {
+  content: ' ';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-image: url(../img/sprite.png);
+  background-position: -203px -174px;
+  width: 17px;
+  height: 17px;
+}
+
+.calc__link.calc__link-project {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*--------------------end-----------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-----------------Project-1 page---------------*/
+.content__page.content__page-project {
+  padding-bottom: 50px;
+  background: url(../img/work-bg.jpg) center top no-repeat;
+}
+
+.content.content__project {
+  text-align: right;
+}
+
+.project__slider {
+  display: inline-block;
+  width: 775px;
+  text-align: left;
+}
+
+.project__slider .bx-wrapper {
+  margin-bottom: 0;
+}
+
+.project__slider .bx-wrapper .bx-viewport {
+  left: 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+}
+
+.project__slider .bx-wrapper .bx-controls-direction a {
+  display: none;
+}
+
+.project__slider .bx-pager a {
+  position: relative;
+  float: left;
+  width: 175px;
+  height: 135px;
+  margin: 25px 25px 0 0;
+  overflow: hidden;
+}
+
+.project__slider .bx-pager a img {
+  width: 100%;
+}
+
+.project__slider .bx-pager a:nth-child(4n) {
+  margin-right: 0;
+}
+
+.project__slider .bx-pager a:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: .4;
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 56px;
+  height: 56px;
+}
+
+.project__slider .bx-pager a:hover:before {
+  opacity: 1;
+  -webkit-transition: opacity .25s;
+  transition: opacity .25s;
+}
+
+.info__block {
+  float: right;
+  width: 273px;
+  height: 389px;
+  margin-left: 15px;
+  padding: 37px 25px 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.info__block .info__title {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.info__block .info__list {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.info__block .info__list li {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.info__block .info__price {
+  position: relative;
+  margin-bottom: 62px;
+  padding-left: 32px;
+  font: 600 22px "roboto";
+  color: #fff;
+  text-align: left;
+}
+
+.info__block .info__price:before {
+  content: ' ';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background-image: url(../img/sprite.png);
+  background-position: -203px -174px;
+  width: 17px;
+  height: 17px;
+}
+
+.project__wrap {
+  margin: 70px 0 0 97px;
+  text-align: left;
+}
+
+.tab__link.tab__link-project {
+  color: #842326;
+  border: 2px dashed #842326;
+}
+
+.tab__link.tab__link-project:hover, .tab__link.tab__link-project.active {
+  color: #fff;
+  background: #842326;
+}
+
+.project__body {
+  padding-top: 37px;
+}
+
+.project__block {
+  display: none;
+}
+
+.project__block.open {
+  display: block;
+}
+
+.project__block span {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ff4800;
+  text-transform: uppercase;
+}
+
+/*---------------------end--------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-----------------Service-1 page---------------*/
+.content__page.content__page-services {
+  padding-bottom: 70px;
+  background: url(../img/work-bg.jpg) center top no-repeat;
+}
+
+.service__block {
+  margin-top: 44px;
+}
+
+.service__item {
+  margin-bottom: 40px;
+}
+
+.service__item .item__img {
+  float: left;
+  width: 470px;
+  height: auto;
+  overflow: hidden;
+}
+
+.service__item .item__img img {
+  width: 100%;
+}
+
+.service__item .item__descr {
+  display: table;
+  padding-left: 95px;
+}
+
+.service__item .item__descr .item__title {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff4800;
+}
+
+.service__item .item__descr ul li {
+  position: relative;
+  margin-bottom: 2px;
+  padding-left: 12px;
+}
+
+.service__item .item__descr ul li:before {
+  content: ' ';
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #ff4800;
+}
+
+.info__link {
+  display: block;
+  width: 224px;
+  height: 44px;
+  margin-top: 26px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #842326;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #842326;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.info__link:hover {
+  color: #fff;
+  background: #842326;
+}
+
+.info__link.info__link-black {
+  color: #333;
+  border: 2px solid #333;
+}
+
+.info__link.info__link-black:hover {
+  color: #fff;
+  background: #333;
+}
+
+.bottom__title {
+  margin-bottom: 35px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.bottom__item .item__descr {
+  float: left;
+  width: 42%;
+}
+
+.bottom__item .item__descr .item__title {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff4800;
+}
+
+.bottom__item .item__map {
+  float: right;
+}
+
+.bottom__item .item__map img {
+  width: 100%;
+}
+
+/*----------------------end---------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-----------------Service-2 page---------------*/
+.content__page.content__page-service {
+  padding-bottom: 50px;
+}
+
+.service__descr {
+  margin-top: 25px;
+}
+
+.service__descr ul li {
+  position: relative;
+  margin-bottom: 2px;
+  padding-left: 12px;
+}
+
+.service__descr ul li:before {
+  content: ' ';
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #ff4800;
+}
+
+.service__descr ol {
+  margin-left: 35px;
+}
+
+.service__descr ol li {
+  list-style-type: decimal-leading-zero;
+}
+
+.calc__link.calc__link-service {
+  margin: 35px 0 34px;
+}
+
+/*-------------------end--------------------*/

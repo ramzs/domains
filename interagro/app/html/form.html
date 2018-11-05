@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="breadcrumb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="#">Главная</a></li>
+						<li class="active">Рассчитать линию по доработке и упаковке</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content content-inner">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-4 col-md-3 mob-smenu">
+					<sidebar class="sidebar-inner">
+
+						<div class="sidebar-title">Выберите вид рассчета:</div>
+						<ul class="sidebar-countmenu">
+							<li><a href="#">РАСЧЕТ ХРАНИЛИЩА</a></li>
+							<li><a href="#">ЛИНИЯ ПО ДОРАБОТКЕ И УПАКОВКЕ</a></li>
+							<li><a href="#">ЛИНИЯ ПО УПАКОВКЕ</a></li>
+							<li><a href="#">ЛИНИЯ ПО СОРТИРОВКЕ</a></li>
+							<li><a href="#">ЛИНИЯ ПО ОБРАБОТКЕ</a></li>
+							<li><a href="#">ЛИНИЯ ПО ОЧИСТКЕ И НАРЕЗКЕ</a></li>
+							<li><a href="#">РАСЧЕТ ТЕПЛИЦЫ</a></li>
+							<li><a href="#">РАСЧЕТ ГРИБНОЙ ФЕРМЫ</a></li>
+						</ul>
+
+						<div class="vk-block vk-block_sm">
+							<a href="#" class="vk-block__link">Посетить страницу в VK</a>
+						</div>
+
+					</sidebar>
+				</div>
+
+				<div class="col-xs-12 col-sm-8 col-md-9">
+
+					<a href="#" class="btn btn-smenu">Открыть меню</a>
+
+					<div class="vk-block vk-block_xs">
+						<a href="#" class="vk-block__link">Посетить страницу в VK</a>
+					</div>
+
+					<main class="main">
+						<div class="inner-content">
+
+							<h1 class="page-title page-title_withline">Рассчитать линию по доработке и упаковке</h1>
+
+							<div class="request">
+								<form action="#" class="form-request">
+									<div class="form-row form-row_1">
+										<div class="form-row__title">Контактные данные:</div>
+										<fieldset>
+											<label for="in-1">Ваше имя: <i>*</i><input id="in-1" type="text" placeholder="Иван Иванов"></label>
+											<label for="in-2">Ваш номер телефона: <i>*</i><input id="in-2" type="text" placeholder="8 999 999 99 99"></label>
+										</fieldset>
+										<fieldset>
+											<label for="in-3">Ваша электронная почта: <i>*</i><input id="in-3" type="text" placeholder="info@info.ru"></label>
+											<label for="in-4">Регион:<input id="in-4" type="text" placeholder="Московская область"></label>
+										</fieldset>
+									</div>
+									<div class="form-row form-row_2">
+										<div class="form-row__title">Данные по линии:</div>
+										<fieldset>
+											<div class="form-col">
+												<div class="form-col__title">Продукт: <i>*</i></div>
+												<label for="ch-1"><input type="checkbox" id="ch-1">Картофель
+												</label>
+												<label for="ch-2"><input type="checkbox" id="ch-2">Морковь
+												</label>
+												<label for="ch-3"><input type="checkbox" id="ch-3">Свекла
+												</label>
+												<label for="ch-4"><input type="checkbox" id="ch-4">Лук
+												</label>
+												<label for="ch-5"><input type="checkbox" id="ch-5">Свекла
+												</label>
+												<label for="ch-6"><input type="checkbox" id="ch-6">Яблоки
+												</label>
+											</div>
+											<div class="form-col">
+												<div class="form-col__title">Виды обработки: <i>*</i></div>
+												<label for="ch-7"><input type="checkbox" id="ch-7">Удаление камней
+												</label>
+												<label for="ch-8"><input type="checkbox" id="ch-8">Сухая чистка
+												</label>
+												<label for="ch-9"><input type="checkbox" id="ch-9">Мойка
+												</label>
+												<label for="ch-10"><input type="checkbox" id="ch-10">Полировка
+												</label>
+												<label for="ch-11"><input type="checkbox" id="ch-11">Обрезка(лук)
+												</label>
+												<label for="ch-12"><input type="checkbox" id="ch-12">Ручная инспекция
+												</label>
+												<label for="ch-13"><input type="checkbox" id="ch-13">Сортировка
+												</label>
+												<label for="ch-14"><input type="checkbox" id="ch-14">Калибровка
+												</label>
+											</div>
+										</fieldset>
+										<fieldset>
+											<label for="in-5">Производительность т/час:<input id="in-5" type="text" placeholder="100"></label>
+										</fieldset>
+									</div>
+									<div class="form-row form-row_3">
+										<div class="form-row__title">Линия по упаковке:</div>
+										<fieldset>
+											<div class="form-col">
+												<div class="form-col__title">Виды упаковок: <i>*</i></div>
+												<label for="ch-15"><input type="checkbox" id="ch-15">Сетка-мешок на рулоне (картофель, лук, морковь, свекла)
+												</label>
+												<label for="ch-16"><input type="checkbox" id="ch-16">Пакет-подушка ПЭ (морковь, свекла)
+												</label>
+												<label for="ch-17"><input type="checkbox" id="ch-17">Сетка-домик (картофель, лук, цитрусы)
+												</label>
+												<label for="ch-18"><input type="checkbox" id="ch-18">Сетка-рукав, бандероль (картофель, лук)
+												</label>
+												<label for="ch-19"><input type="checkbox" id="ch-19">Сетка-клипса (картофель, лук, цитрусы)
+												</label>
+											</div>
+										</fieldset>
+									</div>
+									<div class="form-row form-row_4">
+										<label for="txt-1">Ваш комментарий к запросу:<textarea id="txt-1" cols="30" rows="10" placeholder="Ваш комментарий"></textarea></label>
+										<button class="btn btn-request">Отправить запрос</button>
+										<div class="form-request__message">Обязательные к заполнению поля помечены <i>*</i></div>
+									</div>
+								</form>
+							</div>
+
+						</div>
+					</main>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

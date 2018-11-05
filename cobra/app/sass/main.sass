@@ -1,0 +1,454 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+@import "header"
+
+.s-welcome
+	max-width: 1920px
+	background: url(../img/bg-1.jpg) center top no-repeat
+	background-size: cover
+
+.s-welcome-caption
+	display: table-cell
+	height: 930px
+	vertical-align: middle
+	padding-left: 45px
+	text-align: center
+	&__top
+		font: 72px/110px "Eurofurence"
+		color: #fff
+		text-transform: uppercase
+	&__center
+		font: 140px/110px "Eurofurence"
+		color: #fff
+		text-transform: uppercase
+	&__bottom
+		font: 140px/140px "GangofThree"
+		color: $accent-red
+		text-transform: uppercase
+
+.about
+	max-width: 1920px
+	min-height: 1080px
+	padding: 65px 0 30px
+	background: url(../img/bg-2.jpg) center top no-repeat
+	background-size: cover
+
+.section-title
+	display: block
+	font: 300 72px/110px "Eurofurence"
+	color: #fff
+	text-align: center
+	text-transform: uppercase
+	&_black
+		color: #000
+	&_lh
+		line-height: 1
+
+.about-block
+	max-width: 615px
+	margin: 40px auto 0
+	&__text
+		font-size: 16px
+		color: #fff
+		p
+			position: relative
+			margin-bottom: 53px
+			&:not(:last-child):after
+				content: ''
+				position: absolute
+				bottom: -28px
+				left: 0
+				width: 100%
+				height: 2px
+				background-image: linear-gradient(left, transparent 0%, #939393 5%, #939393 95%, transparent 100%)
+		strong
+			font-size: 18px
+		span
+			font-size: 18px
+			font-weight: 600
+
+.couch
+	max-width: 1920px
+	min-height: 1025px
+	padding: 67px 0 30px
+	background: url(../img/bg-3.jpg) center top no-repeat
+	background-size: cover
+
+.couch-block
+	margin-top: 25px
+	font-size: 16px
+	color: #515151
+	text-align: center
+	&__pict
+		max-width: 430px
+		margin: 0 auto 32px
+		box-shadow: 0 0 15px rgba(#000, .5)
+		img
+			display: block
+			width: 100%
+	&__spec
+		font-size: 18px
+	&__name
+		margin-bottom: 25px
+		font-size: 22px
+		color: #ff7800
+	&__loc
+		margin-bottom: 21px
+	&__text
+		p
+			margin-bottom: 20px
+
+.way
+	padding: 60px 0 160px
+	overflow: hidden
+
+.way-block
+	position: relative
+	padding-top: 11px
+	&:before
+		content: ''
+		position: absolute
+		bottom: -210px
+		left: -185px
+		width: 440px
+		height: 458px
+		background: url(../img/bonsai.png) 0 0 no-repeat
+	&:after
+		content: ''
+		position: absolute
+		bottom: -70px
+		right: 25px
+		width: 241px
+		height: 241px
+		background: url(../img/los-simbolos.png) 0 0 no-repeat
+	&__title
+		font: 300 30px "Eurofurence"
+		text-align: center
+		text-transform: uppercase
+
+.tabs
+	margin-top: 30px
+	text-align: center
+	&__item
+		display: inline-block
+		margin: 0 15px
+		a
+			display: block
+			width: 275px
+			height: 60px
+			font: 20px "Eurofurence"
+			color: #000
+			line-height: 58px
+			text-align: center
+			transform: skew(-25deg)
+			border: 1px solid #c7c7c7
+			border-right: 2px solid $accent
+		span
+			display: block
+			transform: skew(25deg)
+		&.active
+			a
+				color: #fff
+				border: 1px solid transparent
+				border-right: 2px solid $accent
+				background: $accent
+
+.tabs-content
+	display: none
+	padding: 35px 0 0
+	&.active
+		display: block
+
+.tabs-wrap
+	margin: 0 -1px
+	+clearfix
+
+.tab-in
+	float: left
+	width: 24.8%
+	margin: 0 1px
+	text-align: center
+	&__pict
+		position: relative
+		display: block
+		height: 203px
+		overflow: hidden
+		img
+			position: absolute
+			display: block
+			left: 50%
+			z-index: -1
+			transform: translate(-50%,0)
+	&__title
+		display: block
+		margin-top: 12px
+		font-size: 18px
+		color: #6e6e6e
+		text-transform: uppercase
+		&:hover
+			color: #ff8e2a
+			font-weight: 700
+	&__descr
+		display: block
+		margin-top: 8px
+		font: 20px "Eurofurence"
+		color: $red
+	&:hover, &.active
+		.tab-in__pict
+			box-shadow: inset 0 0 0 4px #ff8e2a
+		.tab-in__title
+			color: #ff8e2a
+			font-weight: 700
+			// text-shadow: 0 0 1px #ff8e2a
+
+.tab-body
+	padding-top: 70px
+
+.body-content
+	display: none
+	max-width: 725px
+	margin: 0 auto
+	font-size: 16px
+	color: #717171
+	&.active
+		display: block
+	p
+		margin-bottom: 18px
+	span
+		font-size: 17px
+		color: #ff8e2a
+
+.found
+	max-width: 1920px
+	min-height: 1080px
+	padding: 68px 0 30px
+	background: url(../img/bg-4.jpg) center top no-repeat
+	background-size: cover
+
+.found-block
+	max-width: 805px
+	margin: 0 auto
+	padding-top: 68px
+
+.found-item
+	display: table
+	width: 100%
+	margin-bottom: 12px
+	&__icon
+		position: relative
+		display: table-cell
+		vertical-align: middle
+		width: 148px
+		height: 148px
+		border-radius: 50%
+		border: 3px solid #a9b5bf
+		img
+			+vcenter
+	&__descr
+		display: table-cell
+		vertical-align: middle
+		padding-left: 37px
+		font-size: 16px
+		color: #fff
+
+.place
+	max-width: 1920px
+	min-height: 1080px
+	padding: 84px 0 30px
+	background: url(../img/bg-5.jpg) center top no-repeat
+	background-size: cover
+
+.place-block
+	padding-top: 35px
+	text-align: center
+	&__text
+		font-size: 16px
+		color: #fff
+
+.place-images
+	position: relative
+	margin: 50px 0 85px
+	z-index: 0
+	overflow: hidden
+	&__item
+		float: left
+		width: 33.33%
+		height: 275px
+		overflow: hidden
+		img
+			position: relative
+			display: block
+			z-index: -1
+		&:hover
+			box-shadow: inset 0 0 0 4px #ff8e2a
+
+.form-block
+	&__title
+		margin-bottom: 32px
+		font: 300 72px "Eurofurence"
+		color: #fff
+		text-transform: uppercase
+	&__text
+		max-width: 830px
+		margin: 0 auto 35px
+		font-size: 16px
+		color: #fff
+
+.form-sb
+	position: relative
+	label
+		display: inline-block
+		width: 270px
+		margin: 0 12px
+		transform: skew(-25deg)
+		border: 1px solid #fff
+		background: none
+	input
+		width: 100%
+		height: 60px
+		font: 20px "Eurofurence"
+		color: #fff
+		text-align: center
+		transform: skew(25deg)
+		outline: none
+		border: none
+		background: none
+	.btn-form
+		display: inline-block
+		width: 270px
+		height: 60px
+		margin-left: 12px
+		transform: skew(-25deg)
+		outline: none
+		border: none
+		transition: background .15s ease
+		background: $accent
+		&:hover
+			background: #ffab5f
+		span
+			display: block
+			transform: skew(25deg)
+
+.success
+	display: none
+	position: absolute
+	width: 320px
+	height: 100px
+	top: 50%
+	left: 50%
+	font-size: 16px
+	font-weight: 700
+	color: #000
+	z-index: 800
+	border-radius: 20px
+	text-transform: uppercase
+	background: rgba($accent, 0.8)
+
+.success
+	span
+		position: absolute
+		top: 50%
+		left: 50%
+		white-space: nowrap
+		transform: translate(-50%, -50%)
+
+.info
+	max-width: 1920px
+	min-height: 675px
+	padding: 68px 0 30px
+	background: url(../img/bg-6.jpg) center top no-repeat
+	background-size: cover
+
+.partner-block
+	padding: 15px 0
+	text-align: center
+
+.partner-item
+	display: inline-block
+	width: 19%
+	&__logo
+		height: 190px
+		text-align: center
+		overflow: hidden
+		background-color: transparent
+		img
+			display: inline-block
+			max-height: 100%
+			background-color: transparent
+	&__name
+		display: block
+		font: 23px "Eurofurence"
+		color: #6c6c6c
+
+.contact-block
+	padding-top: 47px
+	text-align: center
+	&__title
+		display: block
+		margin-bottom: 12px
+		font: 300 72px/110px "Eurofurence"
+		color: #000
+		text-align: center
+		text-transform: uppercase
+
+.social
+	display: inline-block
+	vertical-align: middle
+	margin-left: 45px
+	&__title
+		display: inline-block
+		vertical-align: middle
+		margin-right: 5px
+		font-size: 16px
+	&-link
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		margin: 0 9px
+		font-size: 0
+		transform: perspective(1px) translateZ(0)
+		&:hover
+			animation: s-anim .5s ease-in-out
+		&_vk
+			@include sprite($vk)
+		&_inst
+			@include sprite($inst)
+
+@keyframes s-anim
+	10%
+		transform: translateX(3px) rotate(2deg)
+	20%
+		transform: translateX(-3px) rotate(-2deg)
+	30%
+		transform: translateX(3px) rotate(2deg)
+	40%
+		transform: translateX(-3px) rotate(-2deg)
+	50%
+		transform: translateX(2px) rotate(1deg)
+	60%
+		transform: translateX(-2px) rotate(-1deg)
+	70%
+		transform: translateX(2px) rotate(1deg)
+	80%
+		transform: translateX(-2px) rotate(-1deg)
+	90%
+		transform: translateX(1px) rotate(0)
+	100%
+		transform: translateX(-1px) rotate(0)
+
+.map
+	.container-fluid
+		padding: 0
+
+.map-block
+	height: 470px
+	iframe
+		width: 100%
+		height: 100%
+
+
+@import "footer"

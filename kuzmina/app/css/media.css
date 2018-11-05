@@ -1,0 +1,530 @@
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+@media only screen and (max-width: 1650px) {
+  .logo {
+    margin-left: 0;
+  }
+  .header__menu {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid__item {
+    width: 25%;
+  }
+  /*--------------Blog page------------*/
+  .blog__item img {
+    width: 250px;
+  }
+  /*-----------------end---------------*/
+}
+
+@media only screen and (max-width: 991px) {
+  .menu__list .list__item {
+    padding: 0 8px;
+  }
+  .grid__item {
+    width: 33.33%;
+  }
+  /*------------Blog page-------------*/
+  .section.section__blog {
+    padding: 0 0 40px;
+  }
+  .content {
+    margin-top: 0;
+  }
+  .sidebar__menu {
+    margin-bottom: 25px;
+  }
+  .menu__title {
+    height: 40px;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .sidebar__list .list__item .item__link {
+    padding-left: 15px;
+    font-size: 12px;
+  }
+  .menu__tags {
+    padding-left: 15px;
+  }
+  .menu__tags a {
+    font-size: 12px;
+  }
+  .blog__item img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .blog__descr .item__title {
+    margin-bottom: 15px;
+  }
+  .blog__descr .item__title h2 {
+    font-size: 18px;
+  }
+  .blog__descr .item__data {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .blog__descr .item__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .blog__descr .link__more {
+    font-size: 13px;
+  }
+  .page__count {
+    font-size: 16px;
+  }
+  .pagination__list li a {
+    font-size: 16px;
+  }
+  /*------------end----------------*/
+  /*-----------Article page----------*/
+  .article__title {
+    font-size: 28px;
+  }
+  .article__data {
+    margin-bottom: 20px;
+  }
+  .article__text span {
+    font-size: 20px;
+  }
+  /*---------------end---------------*/
+  /*---------Portfolio page----------*/
+  .portfolio__name h2 {
+    font-size: 24px;
+  }
+  /*--------------end----------------*/
+  /*----------Contact page------------*/
+  .section__title.section__title-contact {
+    margin-bottom: 50px;
+  }
+  .contact__item {
+    margin-bottom: 50px;
+  }
+  .comment__submit.comment__submit-contact {
+    margin-top: 35px;
+  }
+  /*--------------end-----------------*/
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 3px;
+  }
+  .container--text {
+    padding: 0 11px;
+  }
+  .header {
+    padding: 20px 0 5px;
+  }
+  .row {
+    margin-left: -3px;
+    margin-right: -3px;
+  }
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding: 0 3px;
+  }
+  .logo img {
+    width: 196px;
+  }
+  .mob__btn {
+    display: block;
+  }
+  .header__menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    width: 270px;
+    height: 100%;
+    z-index: 999;
+  }
+  .menu__list {
+    display: block;
+    height: 100%;
+    padding: 10px 5px 60px;
+    text-align: center;
+    background: #fff;
+  }
+  .menu__list .list__item {
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px solid #DFDAD6;
+  }
+  .menu__list .list__item:after {
+    display: none;
+  }
+  .menu__list .link__item {
+    font: 14px "opensans";
+    text-transform: uppercase;
+  }
+  .section {
+    padding: 15px 0 31px;
+  }
+  .grid__item {
+    width: 50%;
+    padding: 0 5px;
+    margin-bottom: 5px;
+  }
+  .main__about {
+    margin-top: 0;
+  }
+  .main__about .container {
+    padding: 0 11px;
+  }
+  .about__title {
+    font-size: 16px;
+  }
+  .about__text {
+    margin-top: 17px;
+  }
+  footer {
+    padding: 29px 0 57px;
+  }
+  .copyright {
+    font-size: 10px;
+  }
+  /*------------Blog page----------*/
+  .header.header_inner {
+    padding-bottom: 21px;
+    border-bottom: none;
+  }
+  .main__content {
+    margin-left: 0;
+  }
+  .blog__item {
+    margin-bottom: 18px;
+    padding-bottom: 40px;
+  }
+  .blog__item img {
+    display: none;
+  }
+  .blog__descr .item__title {
+    padding: 0 9px;
+  }
+  .blog__descr .item__title h2 {
+    font-size: 16px;
+  }
+  .blog__descr .item__data {
+    margin: 0 0 25px 7px;
+  }
+  .blog__descr img {
+    display: block;
+    margin: 0 0 20px 0;
+  }
+  .blog__descr .item__text {
+    padding: 0 9px;
+  }
+  .blog__descr .link__more {
+    margin-left: 9px;
+  }
+  .page__count {
+    display: block;
+    padding: 0 9px;
+    font-size: 14px;
+  }
+  .pagination__list {
+    float: none;
+    margin: 16px 0 0;
+    text-align: center;
+  }
+  .pagination__list li a {
+    font-size: 14px;
+  }
+  .link__up {
+    display: block;
+  }
+  /*--------------end--------------*/
+  /*-----------Article page----------*/
+  .section.section__article {
+    padding: 0 0 37px;
+  }
+  .article__title {
+    margin-bottom: 15px;
+    padding: 0 9px;
+    font-size: 16px;
+  }
+  .article__data {
+    margin-bottom: 2px;
+    padding: 0 9px;
+    font-size: 14px;
+  }
+  .article__text p {
+    padding: 0 9px;
+  }
+  .article__text .first__p {
+    display: none;
+  }
+  .article__text span {
+    font-size: 14px;
+  }
+  .share {
+    padding: 0 9px;
+  }
+  .share .share__title {
+    margin-bottom: 7px;
+    font-size: 14px;
+  }
+  .comments {
+    margin-top: 22px;
+    padding: 0 9px;
+  }
+  .comments__title {
+    margin-bottom: 22px;
+    font-size: 14px;
+  }
+  .comment__item {
+    margin-bottom: 30px;
+  }
+  .comment__avatar {
+    float: none;
+    display: inline-block;
+  }
+  .comment__date {
+    float: none;
+    display: block;
+    margin: 0 0 12px;
+  }
+  .comment__name {
+    float: none;
+  }
+  .comment__main {
+    display: block;
+    margin-top: 8px;
+    padding-left: 0;
+  }
+  .comment__submit {
+    width: 100%;
+  }
+  .comment__submit .submit__title {
+    margin-bottom: 9px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .comment__submit label {
+    margin-bottom: 17px;
+    text-align: center;
+  }
+  .comment__submit label span {
+    float: none;
+    display: block;
+    margin: 0 0 7px;
+  }
+  .comment__submit label input {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  .comment__submit label textarea {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  .comment__submit .btn__form {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  .link__up {
+    margin-top: 37px;
+  }
+  /*---------------end---------------*/
+  /*---------Portfolio page----------*/
+  .section.section__portfolio {
+    padding: 0 0 40px;
+  }
+  .portfolio__title {
+    display: none;
+  }
+  .portfolio__item {
+    margin-bottom: 12px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e2dbd7;
+  }
+  .portfolio__preview {
+    margin: 0 -3px;
+  }
+  .portfolio__preview.portfolio__preview-double .left__pos {
+    padding-right: 5px;
+  }
+  .portfolio__preview.portfolio__preview-double .right__pos {
+    padding-left: 5px;
+  }
+  .portfolio__name {
+    margin-left: -12px;
+    vertical-align: top;
+  }
+  .portfolio__name h2 {
+    margin: 0;
+    font-size: 16px;
+  }
+  /*--------------end----------------*/
+  /*----------Portfolio-one page---------*/
+  .section.section__portfolio-one {
+    padding: 0 0 27px;
+  }
+  .article__title.article__title-portfolio {
+    margin-bottom: 14px;
+    padding: 0 9px;
+  }
+  .share.share__portfolio {
+    margin-top: 6px;
+    text-align: left;
+  }
+  .share.share__portfolio .share__title {
+    margin-bottom: 6px;
+  }
+  .link__up.link__up-portfolio {
+    margin-top: 30px;
+  }
+  /*----------------end------------------*/
+  /*----------Contact page------------*/
+  .section.section__contact {
+    padding: 0 0 33px;
+  }
+  .contact__block {
+    width: 257px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .contact__item {
+    margin-bottom: 8px;
+  }
+  .contact__item .contact__link {
+    display: inline-block;
+  }
+  .contact__item .contact__link i {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    margin: 0 20px 0 0;
+  }
+  .contact__item .contact__link.contact__link-phone {
+    margin-top: -9px;
+    font-size: 14px;
+  }
+  .contact__item .contact__link.contact__link-phone i {
+    margin-bottom: 0;
+  }
+  .contact__item .contact__link.contact__link-mail {
+    font-size: 14px;
+  }
+  .contact__item .contact__link.contact__link-mail i {
+    margin-bottom: 0;
+  }
+  .contact__item .map__contact {
+    display: inline-block;
+    font-size: 14px;
+  }
+  .contact__item .map__contact i {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    margin: 0 20px 0 0;
+  }
+  .contact__item.contact__item-social {
+    margin-top: 17px;
+  }
+  .contact__item .social__link {
+    margin-bottom: 0;
+  }
+  .contact__item .social__link a {
+    margin: 0 6px;
+  }
+  .contact__item .social__title {
+    display: none;
+  }
+  .comment__submit.comment__submit-contact {
+    width: 257px;
+    margin: 22px auto;
+  }
+  .comment__submit.comment__submit-contact .submit__title {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .comment__submit.comment__submit-contact label {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .comment__submit.comment__submit-contact label span {
+    display: none;
+  }
+  .comment__submit.comment__submit-contact label input {
+    height: 26px;
+  }
+  .comment__submit.comment__submit-contact label textarea {
+    height: 60px;
+    padding-top: 5px;
+  }
+  .comment__submit.comment__submit-contact label input, .comment__submit.comment__submit-contact label textarea {
+    padding-left: 0;
+    text-align: center;
+  }
+  .comment__submit.comment__submit-contact label input::-webkit-input-placeholder, .comment__submit.comment__submit-contact label textarea::-webkit-input-placeholder {
+    opacity: 1;
+  }
+  .comment__submit.comment__submit-contact label input:-moz-placeholder, .comment__submit.comment__submit-contact label textarea:-moz-placeholder {
+    opacity: 1;
+  }
+  .comment__submit.comment__submit-contact label input::-moz-placeholder, .comment__submit.comment__submit-contact label textarea::-moz-placeholder {
+    opacity: 1;
+  }
+  .comment__submit.comment__submit-contact label input:-ms-input-placeholder, .comment__submit.comment__submit-contact label textarea:-ms-input-placeholder {
+    opacity: 1;
+  }
+  .comment__submit.comment__submit-contact .btn__form {
+    margin-top: 19px;
+  }
+  /*--------------end-----------------*/
+  /*-------------Price page---------------*/
+  .section.section__price {
+    padding: 0 0 40px;
+  }
+  .price {
+    margin-top: -35px;
+    padding: 0 9px;
+    font-size: 14px;
+  }
+  .price span {
+    font-size: 16px;
+  }
+  /*----------------end--------------------*/
+}

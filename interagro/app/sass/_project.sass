@@ -1,0 +1,53 @@
+/*----------------Project page---------------*/
+.project
+	padding-bottom: 40px
+
+.project-item
+	margin-bottom: 68px
+	&__pict
+		position: relative
+		display: block
+		width: 100%
+		img
+			display: block
+			width: 100%
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			opacity: 0
+			background: rgba(#262626, .66)
+		&:hover
+			&:before
+				opacity: 1
+				transition: opacity .15s ease
+			.project-item__link
+				opacity: 1
+				transition: opacity .15s ease
+	&__link
+		opacity: 0
+		font-size: 16px
+		font-weight: 300
+		color: #008aff
+		text-decoration: underline
+		+vcenter
+		&:hover
+			color: #008aff
+			text-decoration: none
+		i
+			display: block
+			margin: 0 auto 10px
+			@include sprite($view)
+	&__title
+		display: block
+		margin-top: 10px
+		font-size: 24px
+		font-weight: 700
+		text-decoration: underline
+		&:hover
+			color: $accent
+			text-decoration: none
+/*--------------------end--------------------*/

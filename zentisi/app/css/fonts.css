@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "BlissPro";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BlissPro/BlissPro.eot?#iefix") format("embedded-opentype"), url("../fonts/BlissPro/BlissPro.woff") format("woff"), url("../fonts/BlissPro/BlissPro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BebasNeueRegular/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueRegular/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeueRegular/BebasNeueRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Compact";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/CompactLight/CompactLight.eot?#iefix") format("embedded-opentype"), url("../fonts/CompactLight/CompactLight.woff") format("woff"), url("../fonts/CompactLight/CompactLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GearedSlab";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GearedSlabRegular/GearedSlabRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GearedSlabRegular/GearedSlabRegular.woff") format("woff"), url("../fonts/GearedSlabRegular/GearedSlabRegular.ttf") format("truetype");
+}

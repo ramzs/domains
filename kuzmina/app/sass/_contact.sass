@@ -1,0 +1,110 @@
+@import "vars.sass"
+@import "sprite.sass"
+
+/*-------------Contact page---------------*/
+.section
+	&.section__contact
+		padding: 15px 0 85px
+
+.section__title
+	&.section__title-contact
+		margin-bottom: 82px
+
+.contact__item
+	float: none
+	display: inline-block
+	margin: 0 -2px
+	padding-left: 15px
+	padding-right: 15px
+	vertical-align: bottom
+	.contact__link
+		display: block
+		font-size: 24px
+		color: $main-color
+		text-align: center
+		i
+			display: block
+			width: 30px
+			height: 30px
+			margin: 0 auto 40px
+		&.contact__link-phone
+			margin-bottom: -4px
+			i
+				margin-bottom: 30px
+				background: url(../img/phone-call.png) 0 0 no-repeat
+				background-size: cover
+		&.contact__link-mail
+			font-size: 18px
+			i
+				margin-bottom: 37px
+				background: url(../img/envelope.png) 0 0 no-repeat
+				background-size: cover
+	.map__contact
+		display: block
+		font-size: 18px
+		color: $main-color
+		text-align: center
+		i
+			display: block
+			width: 30px
+			height: 30px
+			margin: 0 auto 38px
+			background: url(../img/placeholder.png) 0 0 no-repeat
+			background-size: cover
+	.social__link
+		margin-bottom: 45px
+		text-align: center
+		a
+			display: inline-block
+			margin: 0 10px
+			width: 24px
+			height: 24px
+			font-size: 0
+			vertical-align: middle
+		.fb__icon
+			background: url(../img/facebook-logo.svg) 0 0 no-repeat
+			background-size: cover
+		.vk__icon
+			background: url(../img/vk.svg) 0 0 no-repeat
+			background-size: cover
+		.gl__icon
+			background: url(../img/google-plus.svg) 0 0 no-repeat
+			background-size: cover
+		.tw__icon
+			background: url(../img/twitter-logo.svg) 0 0 no-repeat
+			background-size: cover
+	.social__title
+		display: block
+		font-size: 18px
+		text-align: center
+
+.comment__submit
+	&.comment__submit-contact
+		width: 100%
+		margin-top: 85px
+		text-align: center
+		.submit__title
+			margin-bottom: 15px
+			font: normal 18px "opensans"
+		label
+			display: inline
+			span
+				float: none
+				display: inline-block
+				margin: 12px 0 8px
+			input, textarea
+				float: none
+				display: block
+				margin: 0 auto
+				&::-webkit-input-placeholder
+					opacity: 0
+				&:-moz-placeholder
+					opacity: 0
+				&::-moz-placeholder
+					opacity: 0
+				&:-ms-input-placeholder
+					opacity: 0
+		.btn__form
+			float: none
+			margin: 30px auto 0
+/*----------------end---------------------*/

@@ -1,0 +1,169 @@
+/*--------------Product page--------------------*/
+.content_tovar
+	padding-bottom: 70px
+
+.tovar
+	position: relative
+	padding: 30px 0 10px
+	+clearfix
+	&-available
+		position: absolute
+		top: -37px
+		right: 0
+		font-size: 17px
+		color: $green
+		&_color
+			color: $orange
+	&-main
+		+clearfix
+	&-pict
+		float: left
+		width: 45.5%
+		padding-right: 20px
+		overflow: hidden
+		img
+			display: block
+			max-width: 100%
+	&-param
+		position: relative
+		float: left
+		width: 54.5%
+		&__title
+			margin-bottom: 28px
+			font-size: 17px
+			line-height: 22px
+		&__price
+			margin-bottom: 16px
+			font: 800 30px $second-font
+			color: $blue
+			span
+				text-transform: uppercase
+	&-orgprice
+		margin-bottom: 22px
+		padding: 10px 17px 17px
+		border: 1px solid #cdcdcd
+		background: #e2e2e2
+		&__title
+			margin-bottom: 5px
+			font-size: 17px
+			line-height: 22px
+		&__line
+			font: 800 30px $second-font
+			color: $blue
+			span
+				color: $accent
+	&-param
+		&__compare
+			display: inline-block
+			font-size: 17px
+			color: $blue
+		&__bottom
+			margin-top: 22px
+			+clearfix
+	.jq-number
+		display: inline-block
+		width: 102px
+		height: 40px
+		margin-right: 14px
+		padding-right: 0
+		vertical-align: middle
+		&__field
+			width: 48px
+			height: 40px
+			margin: 0 auto
+			border: none
+			border-radius: 0
+			box-shadow: none
+			border: 1px solid #989898
+			input
+				height: 100%
+				padding: 0 0 0 10px
+				font-size: 20px
+				font-weight: 700
+				color: #000
+				text-align: left
+		&__spin
+			width: 25px
+			height: 40px
+			border-radius: 0
+			border: 1px solid #007eff
+			background: #fff
+			&.minus
+				left: 0
+				top: 0
+				&:after
+					content: '-'
+					top: 50%
+					left: 50%
+					width: auto
+					height: auto
+					font-size: 20px
+					font-weight: 700
+					transform: translate(-50%,-50%)
+					border: none
+			&.plus
+				&:after
+					content: '+'
+					top: 50%
+					left: 50%
+					width: auto
+					height: auto
+					font-size: 20px
+					font-weight: 700
+					transform: translate(-50%,-50%)
+					border: none
+	.btn_buy
+		float: none
+		display: inline-block
+		width: 116px
+		margin-right: 3px
+		vertical-align: top
+	.btn-oneclick
+		float: none
+		display: inline-block
+		width: 128px
+
+.tovar
+	&-descr
+		margin-top: 78px
+		+clearfix
+		&__option
+			float: left
+			width: 45.5%
+			padding-right: 20px
+		.block-title
+			margin-bottom: 10px
+	&-list
+		max-width: 320px
+		li
+			margin-bottom: 20px
+			font-size: 17px
+			color: $gray
+			border-bottom: 1px solid #e0e0e0
+			span
+				position: relative
+				bottom: -5px
+				background: #fff
+		&__left
+			padding-right: 10px
+		&__right
+			float: right
+			padding-left: 10px
+
+.tovar-descr
+	&__text
+		float: left
+		width: 54.5%
+		font-size: 17px
+		line-height: 24px
+		p
+			margin-bottom: 25px
+.tovar-info
+	margin-top: 12px
+	.block-title
+		margin-bottom: 19px
+	&__text
+		font-size: 17px
+		p
+			margin-bottom: 18px
+/*-----------------end--------------------------*/

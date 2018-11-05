@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-inner-tmp.html')
+
+	<div class="page-top">
+		<div class="container">
+			<div class="breadcrumb">
+				<ul class="breadcrumb-list">
+					<li><a href="#">Главная</a></li>
+					<li>Контакты</li>
+				</ul>
+			</div>
+
+			<h1 class="page-title">Контакты</h1>
+		</div>
+	</div>
+
+	<div class="contact">
+		<div class="contact-wrap">
+
+			<div class="container">
+				<div class="contact-block">
+					<div class="contact-block__item contact-block__item_phone">+7 (495) 234-45-67</div>
+					<a href="#" class="contact-block__item contact-block__item_mail">cakestoday@mail.ru</a>
+					<div class="contact-block__item contact-block__item_loc">г. Москва, ул. Пушкина,<br>23 / 234</div>
+					<div class="contact-block__item contact-block__item_work">График работы:<br>С 9.00 до 20.00 <span>(без выходных)</span></div>
+					<div class="social">
+						<a href="#" class="social__link social__link_1">vkontakte</a>
+						<a href="#" class="social__link social__link_2">instagram</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="map">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A925b271b46d4305b9143eaef4cc91662a969b22c4272042d6c5bd064dfd1dc0c&amp;width=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+			</div>
+
+		</div>
+
+		<div class="contact-form">
+			<div class="container">
+				<div class="modal-form">
+					<div class="modal-form__title">Задать вопрос:</div>
+					<form action="#">
+						<fieldset class="in-wrap">
+							<input type="text" placeholder="Ваше имя:">
+							<input type="text" placeholder="Ваша электронная почта:">
+						</fieldset>
+						<textarea cols="30" rows="10" placeholder="Ваш вопрос:"></textarea>
+						<button class="btn btn_var7">Отправить</button>
+						<div class="modal-form__info">
+							<p>Мы вам ответим на указанный вами адрес электронной почты</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

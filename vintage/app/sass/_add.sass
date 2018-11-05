@@ -1,0 +1,82 @@
+@import "vars.sass"
+/*-----------------Add page---------------*/
+.content__page
+	&.content__page-add
+		padding-bottom: 70px
+
+.page__accent
+	&.page__accent-add
+		max-width: 730px
+		text-align: center
+
+.find__form
+	&.find__form-add
+		max-width: 990px
+		width: 100%
+
+	.jq-selectbox
+		width: 100%
+		height: 40px
+		margin-top: 5px
+		border-radius: 3px
+	.jq-selectbox__select
+		border: none
+		box-shadow: none
+		background: #fff
+		&:hover
+			background: #fff
+	.jq-selectbox__trigger
+		border-left: none
+	.jq-file
+		display: block !important
+		width: 220px
+		margin: 5px 0 24px
+		overflow: visible !important
+		&:hover
+			.jq-file__browse
+				background: none
+		input
+			height: 35px
+			right: -32px !important
+			overflow: hidden
+	.jq-file__name
+		box-shadow: none
+		border: none
+	.jq-file__browse
+		right: -30px
+		font-size: 0
+		background: none
+		border: none
+		box-shadow: none
+		&:after
+			content: ' '
+			position: absolute
+			top: 3px
+			right: 0
+			@include sprite($add-icon)
+	textarea
+		width: 100%
+		height: 225px
+		margin-top: 5px
+		border: 1px solid #AFB6BA
+		background-color: transparent
+
+.form__1,
+	float: left
+	width: 29%
+
+.form__2
+	float: left
+	width: 270px
+	margin-left: 75px
+	overflow: hidden
+	span
+		i
+			color: #ff4800
+
+.form__3
+	float: right
+	width: 30%
+	label
+		margin-bottom: 46px
+/*-------------------end-------------------*/

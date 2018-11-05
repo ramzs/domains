@@ -1,0 +1,45 @@
+@import "vars"
+/*---------------Pay page------------------*/
+.pay__banner
+	position: relative
+	max-width: 684px
+	width: 100%
+	margin: 0 0 47px 35px
+	padding: 40px 25px 24px
+	font: 700 20px "lato"
+	color: #846762
+	text-align: center
+	border: 3px solid #0081bc
+	border-radius: 2px
+	p
+		margin-bottom: 18px
+
+.pay__block
+	position: relative
+	margin-bottom: 68px
+	font: 18px "lato"
+	color: #515151
+	&:last-child
+		margin-bottom: 0
+	p
+		margin-bottom: 32px
+		line-height: 26px
+
+.pay__title
+	position: relative
+	display: block
+	margin-bottom: 20px
+	font-size: 18px
+	i
+		position: absolute
+		top: -5px
+		left: -50px
+	&.pay__title-1
+		i
+			@include sprite($delivery-ico)
+	&.pay__title-2
+		i
+			top: -12px
+			@include sprite($pay-ico)
+
+/*------------------end---------------------*/

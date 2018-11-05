@@ -1,0 +1,115 @@
+@import "vars.sass"
+/*-----------------Project-1 page---------------*/
+.content__page
+	&.content__page-project
+		padding-bottom: 50px
+		background: url(../img/work-bg.jpg) center top no-repeat
+.content
+	&.content__project
+		text-align: right
+
+.project__slider
+	display: inline-block
+	width: 775px
+	text-align: left
+	.bx-wrapper
+		margin-bottom: 0
+		.bx-viewport
+			left: 0
+			border: none
+			box-shadow: none
+			background: none
+		.bx-controls-direction
+			a
+				display: none
+	.bx-pager
+		a
+			position: relative
+			float: left
+			width: 175px
+			height: 135px
+			margin: 25px 25px 0 0
+			overflow: hidden
+			img
+				width: 100%
+			&:nth-child(4n)
+				margin-right: 0
+			&:before
+				content: ' '
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				margin: auto
+				opacity: .4
+				@include sprite($zoom-icon)
+			&:hover
+				&:before
+					opacity: 1
+					transition: opacity .25s
+
+
+.info__block
+	float: right
+	width: 273px
+	height: 389px
+	margin-left: 15px
+	padding: 37px 25px 0
+	text-align: center
+	background: rgba(0,0,0, .75)
+	.info__title
+		display: block
+		margin-bottom: 30px
+		font-size: 15px
+		font-weight: 700
+		color: #fff
+		text-transform: uppercase
+	.info__list
+		margin-bottom: 30px
+		text-align: left
+		li
+			display: block
+			margin-bottom: 5px
+			font-size: 15px
+			color: #fff
+	.info__price
+		position: relative
+		margin-bottom: 62px
+		padding-left: 32px
+		font: 600 22px "roboto"
+		color: #fff
+		text-align: left
+		&:before
+			content: ' '
+			position: absolute
+			top: 4px
+			left: 0
+			@include sprite($price-icon)
+
+.project__wrap
+	margin: 70px 0 0 97px
+	text-align: left
+
+.tab__link
+	&.tab__link-project
+		color: #842326
+		border: 2px dashed #842326
+		&:hover, &.active
+			color: #fff
+			background: #842326
+
+.project__body
+	padding-top: 37px
+
+.project__block
+	display: none
+	&.open
+		display: block
+	span
+		display: block
+		font-size: 15px
+		font-weight: 700
+		color: #ff4800
+		text-transform: uppercase
+/*---------------------end--------------------*/

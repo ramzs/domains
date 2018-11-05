@@ -1,0 +1,167 @@
+/*-------Base styles----------*/
+*::-webkit-input-placeholder {
+  color: #b4b6ba;
+  font-weight: 200;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #b4b6ba;
+  font-weight: 200;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #b4b6ba;
+  font-weight: 200;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #b4b6ba;
+  font-weight: 200;
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "liberation", sans-serif;
+  color: #000;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  height: 100%;
+  position: relative;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  background: #bdf0fe;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*----------end---------------*/
+.content {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  height: 85vh;
+  max-height: 250px;
+  padding-bottom: 20px;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.logo img {
+  display: inline-block;
+  max-width: 100%;
+  height: 100%;
+}
+
+.slogan {
+  position: relative;
+  margin-top: 10px;
+  font-size: 23px;
+  color: #000;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.slogan:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+  width: 110px;
+  height: 1px;
+  margin: 0 auto;
+  background: #cfa550;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 19vh;
+  max-height: 100px;
+  text-align: center;
+}
+
+.footer-mail {
+  display: table;
+  margin: 0 auto 5px;
+  font-size: 20px;
+  line-height: 1.2;
+}

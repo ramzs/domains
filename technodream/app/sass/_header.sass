@@ -1,0 +1,765 @@
+.header-top
+	padding: 18px 0
+	border-bottom: 1px solid #dedede
+
+.menu-btn
+	display: none
+	position: relative
+	float: left
+	cursor: pointer
+	&__line
+		position: relative
+		display: block
+		width: 30px
+		height: 3px
+		margin-bottom: 5px
+		transition: all .25s ease
+		background: $blue
+		&:last-child
+			margin-bottom: 0
+	&:hover
+		span
+			background: $accent
+	&.active
+		span
+			background: $accent
+		.menu-btn__line_top
+			top: 8px
+			transform: rotate(45deg)
+		.menu-btn__line_center
+			opacity: 0
+		.menu-btn__line_bottom
+			bottom: 8px
+			transform: rotate(-45deg)
+
+.search-block_mob
+	display: none
+	float: left
+	width: 55%
+	margin-left: 20px
+	.search-link
+		padding: 0
+		span
+			display: none
+		&:after
+			top: 0
+			right: auto
+			left: 0
+			width: 20px
+			height: 20px
+			background-size: 100%
+	&.active
+		.search-link
+			float: right
+			&:after
+				left: auto
+	.search-in
+		top: -8px
+		right: auto
+		left: 0
+		width: 100%
+		font-size: 14px
+		background: #fff
+
+.right-block
+	display: none
+	float: right
+
+.favorite-mob
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	width: 24px
+	height: 20px
+	margin-right: 15px
+	font-size: 0
+	background: url(../img/favorite.png) center no-repeat
+	background-size: auto 100%
+	&:hover
+		background: url(../img/favorite-h.png) center no-repeat
+		background-size: auto 100%
+
+.cart-mob
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	width: 22px
+	height: 20px
+	font-size: 0
+	background: url(../img/cart.png) center no-repeat
+	background-size: 100%
+	&:hover
+		background: url(../img/cart-h.png) center no-repeat
+		background-size: auto 100%
+
+.menu-top
+	float: left
+	> li
+		float: left
+		margin-right: 33px
+		&:last-child
+			margin-right: 0
+		> a
+			display: block
+			font-size: 16px
+			color: #717171
+			letter-spacing: 0.35px
+			&:hover
+				color: $accent
+
+.work
+	position: relative
+	font-size: 16px
+	color: #b1b1b1
+	letter-spacing: 0.2px
+	&-header
+		float: left
+		margin-left: 6.4%
+	&:before
+		content: ''
+		position: absolute
+		top: 1px
+		left: -26px
+		width: 20px
+		height: 20px
+		background: url(../img/clock.png) 0 0 no-repeat
+
+.personal-block
+	position: relative
+	float: right
+
+.signin
+	position: relative
+	display: inline-block
+	margin-right: 43px
+	font-size: 16px
+	color: #717171
+	&:hover
+		color: $accent
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: -23px
+		width: 16px
+		height: 20px
+		background: url(../img/users.png) 0 0 no-repeat
+
+.login
+	position: relative
+	display: inline-block
+	padding-right: 12px
+	font-size: 16px
+	color: $blue
+	&:before
+		content: ''
+		position: absolute
+		top: 1px
+		left: -26px
+		width: 20px
+		height: 20px
+		background: url(../img/login.png) 0 0 no-repeat
+	&:after
+		content: ''
+		position: absolute
+		top: 10px
+		right: 0
+		+arr(9,5,$blue,b)
+	&:hover, &.active
+		color: $accent
+		&:after
+			transition: all .15s ease
+			+arr(9,5,$accent,b)
+	&:focus
+		text-decoration: none
+
+.login-form
+	display: none
+	position: absolute
+	top: 25px
+	right: 0
+	width: 264px
+	padding: 15px
+	text-align: right
+	z-index: 1020
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.81)
+	background: #317bc9
+	input
+		display: block
+		width: 100%
+		height: 37px
+		margin-bottom: 10px
+		padding-left: 12px
+		outline: none
+		border: 1px solid #bebebe
+		background: #fff
+	&__rem
+		display: inline-block
+		font-size: 13px
+		font-weight: 300
+		color: #fff
+		&:hover
+			color: #ffa100
+	&__btn
+		display: block
+		width: 102px
+		height: 32px
+		margin: 15px auto 0
+		padding: 0
+		font-size: 16px
+		color: #fff
+		text-transform: uppercase
+		outline: none
+		transition: all .15s ease
+		border: 2px solid #ffa100
+		background: none
+		&:hover
+			background: #ffa100
+
+.header-main
+	padding: 11px 0 22px
+
+.logo-block
+	float: left
+	width: 310px
+	margin-top: 12px
+
+.logo
+	img
+		float: left
+		max-width: 69px
+		margin-top: 5px
+	&-descr
+		display: table
+		padding-left: 10px
+	&__title
+		display: block
+		font: 45px "eurofurence"
+		color: $blue
+		letter-spacing: 0.1px
+	&__text
+		display: block
+		font-size: 17px
+		color: #666
+		letter-spacing: 0.2px
+
+.callback-block
+	float: left
+	&_header
+		margin: 15px 0 0 88px
+
+.phone
+	position: relative
+	display: block
+	margin-bottom: 9px
+	font-size: 22px
+	letter-spacing: 0.3px
+	&:hover
+		color: $main-color
+	&:before
+		content: ''
+		position: absolute
+		top: 1px
+		left: -26px
+		width: 20px
+		height: 20px
+		background: url(../img/phone.png) 0 0 no-repeat
+
+.favorite-block
+	position: relative
+	float: left
+	margin: 9px 0 0 30px
+	padding: 12px 0 12px 30px
+	border-left: 1px solid #dedede
+
+.compare-block
+	position: relative
+	float: left
+	margin: 9px 0 0 35px
+	padding: 12px 35px 12px 30px
+	border-left: 1px solid #dedede
+	border-right: 1px solid #dedede
+
+.cart-block
+	position: relative
+	float: right
+	margin-top: 9px
+	padding: 12px 0
+
+.count-link
+	position: relative
+	display: inline-block
+	padding-left: 30px
+	font-size: 15px
+	color: $blue
+	letter-spacing: 0.3px
+	text-align: center
+	text-transform: uppercase
+	span
+		display: block
+		width: 25px
+		height: 25px
+		margin: 0 auto 10px
+		font-size: 16px
+		color: #fff
+		line-height: 25px
+		text-align: center
+		border-radius: 50%
+		background: $blue
+	&:before
+		content: ''
+		position: absolute
+		top: 33px
+		left: 0
+	&_favorite
+		&:before
+			width: 24px
+			height: 20px
+			background: url(../img/favorite.png) 0 0 no-repeat
+			background-size: 100% 100%
+		&:hover
+			&:before
+				width: 24px
+				height: 20px
+				background: url(../img/favorite-h.png) 0 0 no-repeat
+				background-size: 100% 100%
+	&_compare
+		padding-left: 32px
+		&:before
+			width: 25px
+			height: 20px
+			background: url(../img/compare.png) 0 0 no-repeat
+			background-size: 100% 100%
+		&:hover
+			&:before
+				width: 25px
+				height: 20px
+				background: url(../img/compare-h.png) 0 0 no-repeat
+				background-size: 100% 100%
+	&_cart
+		&:before
+			width: 22px
+			height: 20px
+			background: url(../img/cart.png) 0 0 no-repeat
+			background-size: 100% 100%
+		&:hover
+			&:before
+				width: 22px
+				height: 20px
+				background: url(../img/cart-h.png) 0 0 no-repeat
+				background-size: 100% 100%
+	&:hover
+		color: $accent
+		span
+			background: $accent
+
+.navbar
+	min-height: auto
+	margin-bottom: 0
+	border-radius: 0
+	border: none
+	background: #317bc9
+
+.navbar-collapse
+	padding: 0
+
+.nav
+	float: left
+	> li
+		float: left
+		> a
+			position: relative
+			padding: 23px 22px
+			font-size: 16px
+			color: #fff
+			z-index: 1001
+			&:before
+				display: none
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 10px
+				height: 100%
+				box-shadow: -5px 0 6px -2px rgba(0, 0, 0, 0.2)
+			&:after
+				display: none
+				content: ''
+				position: absolute
+				top: 0
+				right: 0
+				width: 10px
+				height: 100%
+				box-shadow: 5px 0 6px -2px rgba(0, 0, 0, 0.2)
+			&:hover
+				background: $blue
+				&:before, &:after
+					display: block
+			&:focus
+				background: none
+	.open
+		> a
+			background: $blue
+			&:before, &:after
+					display: block
+			&:hover, &:focus
+				background: $blue
+				&:before, &:after
+					display: block
+
+.nav
+	> li
+		&:first-child
+			.dropdown-menu
+				width: 1170px
+		&:nth-child(2)
+			.dropdown-menu
+				width: 994px
+		&:nth-child(3)
+			.dropdown-menu
+				width: 811px
+		&:nth-child(4)
+			.dropdown-menu
+				width: 618px
+		&:nth-child(5)
+			.dropdown-menu
+				left: auto
+				right: 0
+				width: 897px
+			.nav-in
+				float: right
+			.dropdown-menu-img
+				float: left
+		&:nth-child(6)
+			.dropdown-menu
+				left: auto
+				right: 0
+				width: 1075px
+			.nav-in
+				float: right
+			.dropdown-menu-img
+				float: left
+
+
+.dropdown-menu
+	padding: 16px 22px
+	margin: 0
+	font-size: 17px
+	color: #fff
+	border: none
+	box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.3)
+	border-radius: 0
+	background: $blue
+
+.nav-in
+	float: left
+	.nav-in__title
+		margin-bottom: 11px
+	> li
+		margin-bottom: 5px
+		> a
+			font-size: 14px
+			color: #fff
+			&:hover
+				color: $accent
+
+.dropdown-menu-img
+	float: right
+	max-width: 40%
+	margin-right: 20px
+	padding: 12px 0 10px
+	img
+		display: block
+		max-width: 100%
+
+.search-block
+	position: relative
+	float: right
+	&.active
+		z-index: 1004
+		.search-link
+			span
+				display: none
+			&:after
+				right: 10px
+				background: url(../img/search-black.png) 0 0 no-repeat
+		.search-in
+			display: block
+
+.search-link
+	position: relative
+	display: block
+	padding: 23px 30px 23px 0
+	font-size: 16px
+	color: #d6d6d6
+	z-index: 906
+	cursor: pointer
+	outline: none
+	border: none
+	background: none
+	&:hover, &:focus
+		color: #d6d6d6
+		text-decoration: none
+	&:after
+		content: ''
+		position: absolute
+		top: 20px
+		right: 0
+		width: 23px
+		height: 23px
+		background: url(../img/search.png) 0 0 no-repeat
+
+.search-in
+	display: none
+	position: absolute
+	top: 14px
+	right: 0
+	width: 472px
+	height: 37px
+	padding-left: 12px
+	font-size: 15px
+	font-weight: 300
+	color: #4b4b4b
+	outline: none
+	z-index: 905
+	border: 1px solid #bebebe
+	background: #fff
+
+
+/*----------Menu mobile--------------*/
+.menu-mobile
+	position: absolute
+	top: 0
+	left: -100%
+	width: 270px
+	padding: 7px 0 20px
+	z-index: 999
+	background: $blue
+	transition: left .35s ease-in-out
+	box-shadow: 0 0 10px rgba(#000, .8)
+	&.open
+		left: 0
+
+.menu-close
+	position: relative
+	top: 10px
+	margin-left: 17px
+	padding: 0
+	font-size: 0
+	border: none
+	outline: none
+	background: none
+	@include sprite($close)
+
+.callback-block.callback-block_mobile
+	float: right
+	margin-right: 15px
+	.phone
+		font-size: 16px
+		font-weight: 300
+		color: #fff
+		&:before
+			top: 2px
+			left: -18px
+			width: 13px
+			height: 13px
+			background-size: 100%
+
+.nav-mobile
+	position: relative
+	clear: both
+	&:after
+		content: ''
+		position: absolute
+		bottom: -12px
+		left: -2px
+		right: 0
+		width: 91%
+		height: 1px
+		margin: 0 auto
+		background: #1e4f84
+	> li
+		> a
+			position: relative
+			display: block
+			padding: 8px 0 8px 17px
+			font-size: 16px
+			color: #fff
+			&:after
+				content: ''
+				position: absolute
+				top: 8px
+				right: 15px
+				@include sprite($arrow-d)
+			&:focus
+				text-decoration: none
+		&:hover, &.open
+			> a
+				color: $accent
+				background: #fff
+				&:after
+					@include sprite($arrow-u)
+		> ul
+			display: none
+			position: relative
+			float: none
+			top: 0
+			padding: 0
+			box-shadow: none
+			li
+				a
+					display: block
+					padding: 7px 0 8px 25px
+					font-size: 14px
+					color: #fff
+					&:focus
+						text-decoration: none
+				&:hover
+					a
+						color: $accent
+						background: #fff
+
+.menu-top.menu-top_mobile
+	position: relative
+	float: none
+	margin-top: 21px
+	&:after
+		content: ''
+		position: absolute
+		bottom: -12px
+		left: -2px
+		right: 0
+		width: 91%
+		height: 1px
+		margin: 0 auto
+		background: #1e4f84
+	li
+		float: none
+		display: block
+		margin-right: 0
+		a
+			padding: 8px 15px 8px 17px
+			font-size: 16px
+			color: #fff
+			&:focus
+				text-decoration: none
+			&:hover
+				color: $accent
+				background: #fff
+
+.personal-block.personal-block_mobile
+	float: none
+	display: block
+	margin-top: 32px
+	padding-left: 43px
+	.signin
+		display: block
+		margin: 0 0 15px
+		font-size: 16px
+		color: #fff
+		&:hover
+			color: $accent
+		&:focus
+			text-decoration: none
+	.login
+		display: table
+		padding-right: 0
+		font-size: 16px
+		color: #fff
+		&:after
+			right: -12px
+		&:hover, &.active
+			color: $accent
+			&:after
+				transition: all .15s ease
+				+arr(9,5,$accent,b)
+		&:focus
+			text-decoration: none
+/*------------end menu mobile---------*/
+
+/*-----------Фиксированное меню сбоку----------*/
+.menu-fix
+	position: fixed
+	top: 50%
+	right: 30px
+	transform: translate(0,-50%)
+	z-index: 950
+	a
+		display: block
+		margin-bottom: 20px
+	&__item
+		position: relative
+		width: 60px
+		height: 60px
+		border-radius: 50%
+		border: 3px solid $accent
+		background: #fff
+		span
+			position: absolute
+			top: -12px
+			right: -15px
+			width: 29px
+			height: 29px
+			font-size: 14px
+			line-height: 25px
+			text-align: center
+			border-radius: 50%
+			border: 3px solid $light-blue
+			background: #fff
+		&:before
+			content: ''
+			+vcenter
+		&_favorite
+			&:before
+				width: 37px
+				height: 34px
+				background: url(../img/favorite.png) center no-repeat
+				background-size: 100%
+		&_compare
+			&:before
+				width: 40px
+				height: 32px
+				background: url(../img/compare.png) center no-repeat
+				background-size: 100%
+		&_cart
+			&:before
+				width: 45px
+				height: 41px
+				background: url(../img/cart.png) center no-repeat
+				background-size: 100%
+		&:hover
+			span
+				border: 3px solid $accent
+			&.menu-fix__item_favorite
+				&:before
+					width: 37px
+					height: 34px
+					background: url(../img/favorite-h.png) center no-repeat
+					background-size: 100%
+			&.menu-fix__item_compare
+				&:before
+					width: 40px
+					height: 32px
+					background: url(../img/compare-h.png) center no-repeat
+					background-size: 100%
+			&.menu-fix__item_cart
+				&:before
+					width: 45px
+					height: 41px
+					background: url(../img/cart-h.png) center no-repeat
+					background-size: 100%
+	&__phone
+		position: relative
+		right: -10px
+		width: 47px
+		height: 47px
+		font-size: 0
+		background: url(../img/phone-side.png) center no-repeat
+	&__chat
+		position: relative
+		right: -10px
+		width: 47px
+		height: 47px
+		font-size: 0
+		background: url(../img/chat.png) center no-repeat
+/*---------------конец фикс меню---------------*/

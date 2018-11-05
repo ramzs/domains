@@ -1,0 +1,42 @@
+@import "vars"
+
+/*-------------Qst page-----------------*/
+.page--qst
+	padding-bottom: 57px
+
+.qst-item
+	margin-bottom: 40px
+	&__title
+		position: relative
+		margin-bottom: 18px
+		padding-left: 45px
+		font-size: 20px
+		font-weight: 500
+		&:before
+			content: ''
+			position: absolute
+			top: -4px
+			left: 0
+			@include sprite($qst-2)
+	&__main
+		display: none
+		margin-bottom: 23px
+		padding-left: 45px
+		font-size: 15px
+		line-height: 20px
+	&__btn
+		display: block
+		width: 178px
+		height: 44px
+		margin-left: 45px
+		font-size: 16px
+		font-weight: 700
+		color: #1078af
+		line-height: 44px
+		text-align: center
+		border: 2px solid #1078af
+		border-radius: 22px
+		&:hover
+			color: #fff
+			background: #1078af
+/*-----------------end---------------------*/

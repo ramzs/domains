@@ -1,0 +1,235 @@
+@import "vars.sass"
+@import "sprite.sass"
+/*-------------Contact page---------------*/
+.header__inner
+	&.header__inner-contact
+		height: auto
+		padding-bottom: 160px
+		background: url(../img/contact-bg-1.jpg) center top no-repeat
+		background-size: cover
+
+.header__top
+	&.header__top-inner
+		&._contact
+			background: transparent
+
+.container
+	&.container_inner
+		width: 1060px
+
+.header__menu
+	&.header__menu-inner
+		&._contact
+			li
+				a
+					color: #fff
+
+.phone__link
+	&.phone__link-inner
+		&._contact
+			color: #fff
+
+.callback__link
+	&.callback__link-inner
+		&._contact
+			color: #fff
+
+.header__logo
+	&.header__logo-inner
+		&._contact
+			margin: -30px -15px 0
+
+.logo__title
+	&.logo__title-inner
+		&._contact
+			color: #fff
+
+.logo__text
+	&.logo__text-inner
+		&._contact
+			display: block
+			font-size: 16px
+			color: #fff
+
+.header__main
+	&.header__main-contact
+		margin-top: 55px
+		text-align: center
+
+.contact__item
+	display: inline-block
+	width: 373px
+	height: 238px
+	padding: 25px 20px 0
+	margin: 0 13px
+	vertical-align: top
+	background: rgba(26,23,50, .89)
+	.item__title
+		margin-bottom: 6px
+		font: 40px "kelson"
+		color: #fff
+		&.item__title-mob
+			display: none
+			outline: none
+	.item__loc
+		margin-bottom: 10px
+		font: 25px "kelson"
+	.item__phone
+		display: block
+		margin-bottom: 13px
+		font-size: 25px
+		font-weight: 700
+		color: #fcb413
+	.item__email
+		display: block
+		font-size: 22px
+		color: #fff
+
+.btn__link
+	&.btn__link-contact
+		width: 255px
+		height: 47px
+		margin-top: 22px
+		line-height: 47px
+
+.help__form
+	&.help__form-contact
+		float: none
+		width: 1179px
+		height: 385px
+		margin: 55px auto 0
+		padding: 50px 0 0
+		background-color: rgba(0, 0, 0, 0.44)
+		border: 3px solid #fff
+		input
+			display: inline-block
+			margin: 0 6px
+
+.form__btn
+	&.form__btn-contact
+		margin-top: 27px
+
+.section__city
+	height: auto
+	padding: 75px 0 175px
+	background: url(../img/contact-bg-2.jpg) center top no-repeat
+	background-size: cover
+
+.section__title
+	&.section__title-city
+		display: inline-block
+		padding-left: 10px
+		font-size: 36px
+		font-weight: 700
+		line-height: 50px
+		span
+			font-size: 90px
+			vertical-align: bottom
+
+.city__search
+	display: inline-block
+	margin-left: 75px
+	vertical-align: bottom
+	input
+		width: 308px
+		height: 47px
+		padding-left: 15px
+		font-size: 18px
+		border: 3px solid #ffa800
+.slider__city
+	&.slick-slider
+		margin-top: 55px
+		.slick-arrow
+			position: absolute
+			right: 0
+			bottom: -105px
+			font-size: 0
+			background: none
+			border: none
+			outline: none
+			cursor: pointer
+		.slick-next
+			@include sprite($contact-arrow-right-small)
+		.slick-prev
+			right: 95px
+			@include sprite($contact-arrow-left-small)
+
+.slick-slide
+	&:focus
+		outline: none
+
+.city__list
+	li
+		display: block
+		position: relative
+		margin-bottom: 10px
+		font: 20px "segoe"
+		color: #000
+		span
+			display: inline-block
+			position: relative
+			padding: 0 35px 5px 15px
+			transition: all .15s ease
+			cursor: pointer
+		&:hover, &.active
+			> span
+				background: #fcb413
+				&:after
+					content: ' '
+					position: absolute
+					top: 0
+					right: -80px
+					width: 100px
+					height: 35px
+					z-index: 9999 !important
+
+
+.webui-popover
+	&.in
+		width: 375px
+		height: 209px
+		padding-top: 32px
+		text-align: center
+		background: #fff
+		box-shadow: 1.5px 2.6px 21px rgba(0, 0, 0, 0.08)
+		&.left-bottom
+			margin-left: -100px !important
+		span
+			display: block
+			margin-bottom: 20px
+			font-size: 36px
+			font-weight: 700
+			color: #000
+		.consalt__link
+			display: block
+			width: 308px
+			height: 57px
+			margin: 0 auto
+			font: 700 20px "segoe"
+			color: #000
+			line-height: 55px
+			background-color: #fcb413
+			border-radius: 4px
+
+.webui-popover
+	&.in
+		margin-left: 10px !important
+		z-index: 98 !important
+
+.slick-arrow
+	position: absolute
+	right: 0
+	bottom: -105px
+	font-size: 0
+	background: none
+	border: none
+	outline: none
+	cursor: pointer
+
+.slick-next
+	@include sprite($contact-arrow-right-small)
+
+.slick-prev
+	right: 95px
+	@include sprite($contact-arrow-left-small)
+/*-----------------end--------------------*/

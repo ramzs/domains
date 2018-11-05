@@ -1,0 +1,41 @@
+@import "vars"
+
+/*----------------Gallery page-------------------*/
+.content--gallery
+	padding-bottom: 1180px
+
+.gallery-block
+	margin: 55px -25px 0
+	padding-left: 25px
+
+.gallery-item
+	float: left
+	width: 160px
+	margin: 0 20px 29px 0
+	&__pict
+		position: relative
+		height: 120px
+		overflow: hidden
+		img
+			width: 100%
+		span
+			position: absolute
+			top: 0
+			left: 0
+			width: 28px
+			height: 28px
+			background: rgba(0,0,0, .9)
+			&:before
+				content: ' '
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+				@include sprite($folder)
+	&__descr
+		display: block
+		margin-top: 14px
+		font: 14px/20px "opensans"
+		&:hover
+			color: #aca701
+/*---------------------end------------------------*/

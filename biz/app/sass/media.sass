@@ -1,0 +1,841 @@
+@import "bourbon"
+@import "grid"
+@import "vars"
+@import "sprite"
+
+@media only screen and (max-width : 1199px)
+	.header-main
+		padding: 0 0 0 20px
+
+	.header-menu
+		margin-top: 5px
+
+	.callback
+		margin-top: 4px
+
+	.location
+		margin-right: 15px
+
+	.nav-list
+		> li
+			margin-right: 25px
+			&:last-of-type
+				> ul
+					left: auto
+					right: -75px
+					&:before
+						left: auto
+						right: 120px
+
+	.search-link
+		margin-right: 0
+
+	.slider-block
+		> .container
+			width: 992px
+
+	.slider-home
+		.slick-arrow
+			margin-right: 40px
+
+	.service-item
+		width: 24.1%
+		margin-right: 10px
+		&__descr
+			padding: 30px 15px 15px
+		&__title
+			margin-bottom: 15px
+
+	.news
+		&-carousel
+			margin: 0 -5px
+			.slick-arrow
+				&.slick-prev
+					left: -25px
+				&.slick-next
+					right: -25px
+
+	.carousel-item
+		padding: 0 5px
+
+	.news-item
+		padding: 28px 15px 20px
+
+	.slider-blog
+		padding-left: 90px
+
+	.footer-developer
+		margin-right: 70px
+
+	/*-------------Service-1 page---------------*/
+	.sidebar
+		width: 30%
+
+	.second-menu
+		> li
+			> a
+				padding-left: 15px
+			ul
+				margin-left: 35px
+
+	.main
+		width: 70%
+		&--full
+			width: auto
+	/*-----------------end----------------------*/
+
+	/*-------------Service-2 page---------------*/
+	.service-banner
+		width: 49.1%
+		margin-right: 10px
+		padding: 28px 20px 22px
+	/*-----------------end----------------------*/
+
+	/*-------------Service-3 page---------------*/
+	.service-price__cell--2
+		padding-left: 10%
+	/*-----------------end----------------------*/
+
+	/*----------------Ready page-----------------*/
+	.sort-form
+		.jq-selectbox
+			&__select
+				padding: 0 35px 0 12px
+
+	.list-item
+		width: 48.4%
+		margin: 0 5px 30px
+	/*-------------------end----------------------*/
+
+	/*----------------Contact page-----------------*/
+	.contact-item
+		width: 40%
+		padding-left: 0
+	/*---------------------end----------------------*/
+
+	/*----------------News-1 page-----------------*/
+	.news-item--in
+		width: 47.5%
+	/*---------------------end----------------------*/
+
+	/*----------------Blog-1 page-----------------*/
+	.blog-item
+		width: 30.1%
+		height: 493px
+		&__text
+			max-height: 126px
+	/*-------------------end-----------------------*/
+
+
+@media only screen and (max-width : 991px)
+	.header-main
+		padding-left: 15px
+
+	.header-menu
+		li
+			margin-right: 10px
+			a
+				font-size: 14px
+
+	.location
+		float: left
+		width: 235px
+		margin-right: 5px
+		padding-left: 20px
+
+	.work
+		float: left
+		width: 140px
+		padding-left: 20px
+
+	.callback
+		&-phone
+			font-size: 16px
+			&:before
+				top: 5px
+				left: -20px
+
+	.nav-list
+		> li
+			margin-right: 12px
+			&:last-of-type
+				.nav-droplist
+					right: -55px
+			> a
+				font-size: 14px
+				.caret
+					top: 0
+					margin-left: 5px
+			> ul
+				top: 67px
+				min-width: 250px
+				padding: 20px 0
+				li
+					a
+						padding: 5px 10px 6px
+						white-space: normal
+				ul
+					li
+						a
+							padding-left: 25px
+					ul
+						li
+							a
+								padding-left: 40px
+
+	.search-link
+		margin-top: 22px
+
+	.search-block
+		top: 13px
+
+	.slider-block
+		> .container
+			width: 768px
+
+	.slider-home
+		.slick-arrow
+			margin-right: 30px
+
+	.caption-block
+		margin-bottom: 100px
+
+	.proposal-item
+		padding-right: 20px
+
+	.service-item
+		width: 49.2%
+		margin-bottom: 10px
+		&:nth-of-type(even)
+			margin-right: 0
+		&__descr
+			padding: 30px
+		&__title
+			margin-bottom: 31px
+
+	.slider-blog
+		padding-left: 20px
+
+	.footer-menu
+		>
+			li
+				width: 23.9%
+				margin-right: 10px
+				&:last-child
+					margin-right: 0
+				a
+					font-size: 14px
+
+	.footer-developer
+		margin-right: 20px
+
+	.footer-location
+		width: 175px
+		margin-right: 15px
+
+	/*-------------Service-1 page---------------*/
+	.content
+		padding: 40px 0
+
+	.sidebar
+		display: none
+
+	.banner
+		display: none
+		&--mob
+			display: block
+			max-width: 100%
+			margin-top: 50px
+			text-align: center
+
+	.main
+		float: none
+		width: 100%
+		&--width
+			width: auto
+			margin: 0 -5px
+	/*-----------------end----------------------*/
+
+	/*-------------Service-2 page---------------*/
+	.service-banner
+		width: 49.2%
+	/*-----------------end----------------------*/
+
+	/*----------------Blog-1 page-----------------*/
+	.content--var2
+		padding-bottom: 0
+
+	.blog-item
+		width: 48.6%
+		height: 467px
+		margin: 0 5px 60px
+	/*-------------------end-----------------------*/
+
+	/*----------------Blog-2 page-----------------*/
+	.content--var3
+		padding-bottom: 0
+
+	.comment
+		&.container
+			width: 100%
+			padding: 51px 0 54px
+		&-cont
+			width: 740px
+			padding: 0 15px
+	/*--------------------end----------------------*/
+
+	/*----------------Ready page-----------------*/
+	.sort
+		margin: 0 15px 60px
+		&-form
+			label
+				margin: 0 10px 20px 0
+			.jq-selectbox
+				&__select
+					padding: 0 35px 0 12px
+
+	.list-item
+		width: 48.5%
+		margin: 0 5px 10px
+		padding: 0 10px 20px
+	/*-------------------end----------------------*/
+
+	/*----------------Contact page-----------------*/
+	.contact-item
+		width: 49%
+	/*---------------------end----------------------*/
+
+	/*----------------News-1 page-----------------*/
+	.sidebar--right
+		display: none
+
+	.news-item--in
+		width: 47.8%
+	/*---------------------end----------------------*/
+
+	/*----------------Info page-----------------*/
+	.info-item
+		margin-right: 0
+	/*---------------------end----------------------*/
+
+
+@media only screen and (max-width : 767px)
+	.container
+		padding: 0 25px
+
+	.header
+		padding-top: 0
+		&-top
+			padding-top: 0
+
+	.header-mob
+		display: block
+
+	.logo
+		width: 145px
+		margin-top: 15px
+
+	.header-main
+		display: none
+		float: none
+		position: absolute
+		top: 47px
+		left: 0
+		right: 0
+		width: 95%
+		margin: 0 auto
+		padding: 80px 25px 85px
+		z-index: 990
+		border-radius: 0 0 10px 10px
+		border: 1px solid #1b67af
+		border-top: none
+		box-shadow: 0 0 5px #6e6e6e
+		background: #f4f7f9
+
+	.header-menu
+		margin-bottom: 43px
+		li
+			display: block
+			margin-right: 0
+			border-bottom: 1px dashed #1b67af
+			a
+				position: relative
+				padding: 6px 0 6px 16px
+				font-size: 20px
+				font-weight: 700
+				&:before
+					content: ''
+					position: absolute
+					top: 13px
+					left: 0
+					@include sprite($arrow-right-menu2)
+
+	.location
+		display: none
+
+	.work
+		display: none
+
+	.callback
+		float: none
+		&-phone
+			display: none
+			&--mob
+				display: inline-block
+				margin-bottom: 0
+				font-size: 20px
+				color: #fff
+				&:before
+					top: 6px
+					left: -30px
+		.btn
+			display: inline-block
+
+	.btn-menu
+		display: block
+
+
+	.nav
+		padding: 5px 0 6px
+		&-link
+			display: block
+			float: left
+			width: 100%
+			max-width: 235px
+			&.active
+				.caret
+					transform: rotate(180deg)
+		&-list
+			display: none
+			float: none
+			position: absolute
+			top: 54px
+			left: 0
+			right: 0
+			width: 95%
+			margin: 0 auto
+			padding-bottom: 20px
+			z-index: 990
+			border: 1px solid #e6e6e6
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08)
+			background: #fff
+			> li
+				display: block
+				float: none
+				margin: 0 5px
+				border-bottom: 1px dashed #e6e6e6
+				&.active
+					border-bottom: none
+				&:last-child
+					margin-right: 5px
+				&:last-of-type
+					.nav-droplist
+						left: 0
+						right: auto
+						&:before
+							left: 40px
+				> a
+					padding: 15px 25px
+				> ul
+					position: relative
+					top: 0
+					left: 0
+					margin: 0 -5px
+					border-radius: 0
+					li
+						a
+							padding: 5px 25px 6px
+					ul
+						li
+							a
+								padding-left: 40px
+						ul
+							li
+								a
+									padding-left: 60px
+
+	.search-link
+		margin: 12px 5px 0 0
+
+	.search-block
+		top: -1px
+		width: 93.5%
+		&__in
+			height: 50px
+		&__icon
+			right: 20px
+
+	.slider-block
+		height: 385px
+		overflow: hidden
+		> .container
+			width: 100%
+			padding: 0
+
+	.slider-home
+		.slick-arrow
+			bottom: 14px
+			margin-right: 25px
+		.slider-item
+			height: 385px
+			img
+				position: relative
+				left: -310px
+				height: 100%
+
+	.caption-block
+		width: 100%
+		margin-top: 24px
+		padding: 23px 20px 28px
+		&__title
+			margin-bottom: 15px
+			font-size: 24px
+			line-height: 30px
+		&__text
+			font-size: 14px
+			line-height: 21px
+
+	.proposal
+		padding: 50px 0 0
+
+	.block-title
+		font-size: 24px
+
+	.proposal-wrap
+		padding-bottom: 20px
+
+	.proposal-item
+		float: none
+		width: 100%
+		margin-bottom: 34px
+		padding-right: 0
+		&__pict
+			margin-bottom: 14px
+
+	.service-wrap
+		margin: 33px -5px 0 -10px
+		padding-bottom: 55px
+		text-align: center
+
+	.service-item
+		float: none
+		display: inline-block
+		width: 48.3%
+		height: 365px
+		margin: 0 5px 10px
+		text-align: left
+
+	.block-title--news
+		margin-bottom: 21px
+		text-align: center
+
+	.news-carousel
+		margin: 0
+
+	.carousel-item
+		padding: 11px 0
+
+	.news-item
+		width: 100%
+		height: 215px
+		padding: 28px 33px 20px
+		&__date
+			margin-bottom: 25px
+
+	.news-all
+		display: block
+
+	.block-title
+		&--mob
+			display: block
+			text-align: center
+		&--blog
+			margin-bottom: 15px
+			font-size: 20px
+
+	.slider-nav
+		float: none
+		width: 100%
+		.slick-arrow
+			margin-right: 30px
+
+	.slider-blog
+		float: none
+		width: 100%
+		padding-left: 0
+
+	.blog-preview
+		padding: 29px 0
+		&__text
+			margin-bottom: 24px
+
+	.btn--blog
+		margin: 0 auto
+
+	.blog-link
+		position: relative
+		display: block
+		margin: 11px auto 0
+
+	.about
+		padding-bottom: 60px
+		&__text
+			margin-bottom: 24px
+			column-count: 1
+			column-gap: 0px
+
+	.footer-top
+		display: none
+
+	.footer-nav
+		padding: 53px 0 55px
+		text-align: center
+
+	.footer-list
+		text-align: center
+		li
+			float: none
+			display: block
+			margin: 0 0 21px
+
+	.footer-sitemap
+		float: none
+		display: block
+
+	.footer
+		&-info
+			padding: 53px 0 55px
+			text-align: center
+		&-location
+			width: 100%
+			margin: 0 0 10px
+		&-phone
+			width: 100%
+			margin-bottom: 26px
+		&-copyright
+			float: none
+			display: inline-block
+			width: 100%
+			margin-bottom: 22px
+		&-developer
+			float: none
+			display: inline-block
+			width: 100%
+			margin-right: 0
+
+	/*-------------Service-1 page---------------*/
+	.page-top
+		padding: 23px 0 30px
+
+	.breadcrumb
+		margin-bottom: 15px
+
+	.page-title
+		font-size: 28px
+
+	.banner
+		padding: 30px 25px
+		&__title
+			font-size: 24px
+
+	.main-title
+		font-size: 20px
+
+	.howto
+		margin-top: 30px
+		&-item
+			padding: 0 10px 0
+			&__title
+				font-size: 14px
+		&-body
+			padding: 25px 0 20px
+
+	.text-list
+		margin: 23px 0
+		li
+			padding-left: 10px
+	/*-----------------end----------------------*/
+
+	/*-------------Service-2 page---------------*/
+	.service-banner
+		display: block
+		width: 100%
+		margin: 0 0 30px
+
+	.accent
+		margin-top: 30px
+		padding: 31px 15px 30px
+	/*-----------------end----------------------*/
+
+	/*-------------Service-3 page---------------*/
+	.service-price
+		display: block
+		margin-bottom: 30px
+		padding: 15px 15px
+		&__row
+			display: block
+		&__cell
+			display: block
+			&--1
+				border-bottom: none
+			&--2
+				padding: 0 0 20px
+	/*-----------------end----------------------*/
+
+	/*----------------Blog-1 page-----------------*/
+	.main--width
+		margin: 0 -1%
+
+	.blog-item
+		width: 48%
+		height: 470px
+		margin: 0 1% 50px
+		&__text
+			max-height: 108px
+	/*-------------------end-----------------------*/
+
+	/*----------------Blog-2 page-----------------*/
+	.text-pict
+		max-width: 270px
+		margin-bottom: 30px
+
+	.social
+		&__title
+			display: block
+			margin-bottom: 10px
+
+	.comment
+		&-cont
+			width: 100%
+			padding: 0 25px
+		&__title
+			font-size: 22px
+		&-form
+			&__title
+				font-size: 22px
+	/*--------------------end----------------------*/
+
+	/*----------------Ready page-----------------*/
+	.sort
+		margin: 0 0 40px
+		&-form
+			text-align: left
+			text-align-last: auto
+
+	.list-item
+		width: 100%
+		margin: 0 0 20px
+		padding: 0 35px 20px
+	/*-------------------end----------------------*/
+
+	/*----------------Contact page-----------------*/
+	.contact-item
+		width: 100%
+
+	.contact-map
+		height: 300px
+		margin-top: 20px
+	/*---------------------end----------------------*/
+
+	/*----------------News-1 page-----------------*/
+	.navpage
+		margin-top: 30px
+		&-list
+			width: 270px
+			li
+				display: block
+				margin: 0 0 10px
+				text-align: center
+
+	.news-item--in
+		height: auto
+		padding-bottom: 35px
+	/*---------------------end----------------------*/
+
+
+@media only screen and (max-width : 600px)
+	.service-wrap
+		margin: 33px 0 2px
+		padding-bottom: 34px
+
+	.service-item
+		width: 49.3%
+		height: 306px
+		margin: 0 auto 20px
+		.plus
+			right: 12px
+		&__descr
+			padding: 20px 12px 12px
+		&__title
+			margin-bottom: 15px
+			padding-right: 35px
+		&__text
+			line-height: 16px
+
+	/*----------------Blog-1 page-----------------*/
+	.main--width
+		margin: 0
+
+	.blog-item
+		width: 100%
+		height: auto
+		margin: 0 0 50px
+		&__text
+			max-height: none
+
+	.btn--blog2
+		position: relative
+	/*-------------------end-----------------------*/
+
+@media only screen and (max-width : 480px)
+	.service-item
+		width: 100%
+		height: 360px
+		.plus
+			right: 30px
+		&__wrap
+			height: 107px
+		&__descr
+			padding: 30px
+		&__title
+			margin-bottom: 31px
+		&__text
+			line-height: 21px
+	/*----------------Ready page-----------------*/
+	.sort
+		margin: 0 0 40px
+		&-form
+			label
+				width: 100%
+				margin-bottom: 15px
+				span
+					font-size: 16px
+			.jq-selectbox
+				width: 100%
+
+
+	.list-item
+		padding: 0 12px 20px
+		&__title
+			margin-bottom: 20px
+			font-size: 20px
+		dl
+			font-size: 16px
+			dt
+				float: none
+				width: 100%
+			dd
+				float: none
+				width: 100%
+				padding-bottom: 8px
+				border-bottom: 1px solid #e6e6e6
+		&__price
+			text-align: center
+			span
+				float: none
+				display: block
+	/*-------------------end----------------------*/
+
+
+@media only screen and (max-width : 320px)
+	/**/

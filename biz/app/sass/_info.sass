@@ -1,0 +1,21 @@
+/*----------------Info page-----------------*/
+.info-item
+	display: block
+	position: relative
+	margin: 0 0 15px
+	padding: 29px 60px 30px 35px
+	font-size: 17px
+	font-weight: 500
+	border: 1px solid #e6e6e6
+	border-radius: 10px
+	&:hover
+		color: $second
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08)
+	&:after
+		content: ''
+		position: absolute
+		top: 50%
+		right: 35px
+		transform: translate(0, -50%)
+		@include sprite($plus)
+/*-------------------end----------------------*/

@@ -1,0 +1,210 @@
+@import "vars.sass"
+@import "sprite.sass"
+/*--------------Trening page---------------*/
+.header__inner
+	&.header__inner-trening
+		background: #fff
+
+.header__main
+	&.header__main-trening
+		margin-top: 0
+		> .container
+			position: relative
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: row
+			justify-content: space-around
+			align-items: stretch
+			max-width: 1920px
+
+.tr__item
+	position: relative
+	float: left
+	min-width: 600px
+	width: 100%
+	height: 905px
+	padding: 38px 0 0 16%
+	text-align: left
+	z-index: 1
+	.item__pict
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 1
+		transition: all .15s ease
+	.container
+		width: 100%
+	.item__title
+		position: relative
+		padding-right: 140px
+		z-index: 9
+		font: 30px "kelson"
+		color: #000
+		text-shadow: 0 0 98px rgba(255, 255, 255, 0.52)
+		span
+			display: block
+			font-size: 42px
+			font-weight: 700
+	.item__descr
+		position: relative
+		z-index: 9
+		margin-top: 10px
+		padding-right: 115px
+		font-size: 24px
+		color: #000
+	.item__price
+		position: absolute
+		top: 367px
+		width: 229px
+		height: 57px
+		font: 30px "kelson"
+		line-height: 55px
+		color: #000
+		text-align: center
+		text-shadow: 0 0 98px rgba(255, 255, 255, 0.52)
+		z-index: 1
+		border-bottom: 5px solid #000
+		background: #fcb413
+	&.tr__item-1
+		max-width: 615px
+		min-width: 480px
+		padding: 38px 0 0 5%
+		z-index: 5
+		.item__pict
+			background: url(../img/trening-pict-thin-1.png) left top no-repeat
+			background-size: 100% 100%
+		&:hover
+			.item__pict
+				width: 178%
+				background: url(../img/trening-pict-1.png) left top no-repeat
+				background-size: 100% 100%
+			.item__descr
+				position: absolute
+				top: 72px
+				left: 490px
+				width: 420px
+			.item__price
+				top: 165px
+				left: 490px
+	&.tr__item-2
+		max-width: 730px
+		margin-left: -260px
+		z-index: 4
+		.item__pict
+			background: url(../img/trening-pict-thin-2.png) left top no-repeat
+			background-size: 100% 100%
+		&:hover
+			.item__pict
+				width: 164%
+				background: url(../img/trening-pict-2.png) left top no-repeat
+				background-size: 100% 100%
+			.item__price
+				top: 265px
+	&.tr__item-3
+		max-width: 730px
+		margin-left: -262px
+		z-index: 3
+		.item__pict
+			background: url(../img/trening-pict-thin-3.png) left top no-repeat
+			background-size: 100% 100%
+		&:hover
+			z-index: 4
+			.item__pict
+				width: 165%
+				left: -65%
+				background: url(../img/trening-pict-3.png) left top no-repeat
+				background-size: 100% 100%
+			.item__title
+				position: absolute
+				left: -24%
+				width: 500px
+			.item__descr
+				top: 35px
+				width: 420px
+			.item__price
+				top: 220px
+	&.tr__item-4
+		max-width: 616px
+		min-width: 530px
+		margin-left: -258px
+		padding-right: 50px
+		z-index: 2
+		.item__pict
+			background: url(../img/trening-pict-thin-4.png) left top no-repeat
+			background-size: 100% 100%
+		.item__descr
+			padding-right: 30px
+		&:hover
+			z-index: 4
+			.item__pict
+				width: 176%
+				left: -76%
+				background: url(../img/trening-pict-4.png) left top no-repeat
+				background-size: 100% 100%
+			.item__title
+				position: absolute
+				left: -16%
+				width: 400px
+			.item__descr
+				top: 40px
+			.item__price
+				top: 225px
+
+.section__reason
+	height: auto
+	padding: 60px 0 100px
+	background: url(../img/home-bg-1.jpg) center top no-repeat
+	background-size: cover
+
+.section__title
+	&.section__title-reason
+		font-size: 90px
+
+.reason__items
+	margin: 57px 0 65px
+	text-align: justify
+	text-align-last: justify
+
+.reason__item
+	display: inline-block
+	width: 30%
+	text-align: left
+	&:last-child
+		margin-right: -150px
+	img
+		display: block
+		width: 127px
+	.item__descr
+		margin-top: 25px
+		font-size: 24px
+		color: #000
+
+.help__form
+	&.help__form-reason
+		float: none
+		width: 1176px
+		height: 116px
+		margin: 0 auto
+		padding: 30px 0
+		clear: both
+		border: none
+		background: rgba(255,255,255, .25)
+		input
+			display: inline-block
+			margin-right: 10px
+
+.form__btn
+	&.form__btn-reason
+		display: inline-block
+		width: 308px
+		height: 57px
+		margin: 0 0 0 10px
+		color: #fff
+		background: #000
+		border-radius: 4px
+/*----------------end--------------------*/

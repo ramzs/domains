@@ -1,0 +1,65 @@
+@import "vars"
+
+/*----------------Service page-------------------*/
+.content--inner
+	padding-bottom: 1330px
+
+.inner-page
+	padding: 0 25px 25px
+	background: #fff
+
+.breadcrumb
+	margin: 43px 0 10px
+	&-list
+		&__item
+			position: relative
+			display: inline-block
+			margin-right: 15px
+			font: 14px "opensans"
+			&:last-child
+				margin-right: 0
+			&:not(:last-child):after
+				content: '>'
+				position: absolute
+				top: 0
+				right: -13px
+				font-size: 14px
+				color: $main-color
+			a
+				display: block
+				font: 14px "opensans"
+				&:hover
+					color: $main-color
+					text-decoration: underline
+
+.page-title--inner
+	display: block
+	font-size: 36px
+	font-weight: 800
+	font-style: italic
+
+.service-block
+	margin-top: 55px
+
+.service-item
+	float: left
+	margin: 0 13px 13px 0
+	&:last-child
+		margin-right: 0
+	&__pict
+		display: block
+		max-width: 255px
+		height: 181px
+		overflow: hidden
+		img
+			width: 100%
+	&__title
+		display: block
+		margin-top: 14px
+		font-size: 18px
+		font-weight: 800
+		font-style: italic
+		color: $main-color
+		&:hover
+			color: $accent
+/*--------------------end------------------------*/

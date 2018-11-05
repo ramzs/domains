@@ -1,0 +1,823 @@
+@import "bourbon"
+@import "vars"
+@import "sprite"
+@import "mixins"
+
+@media only screen and (max-width : 1199px)
+	.logo
+		max-width: 255px
+
+	.navbar
+		margin-left: 25px
+
+	.nav
+		> li
+			margin-right: 10px
+
+	.btn-callback
+		width: 160px
+
+	.sidebar-menu
+		> li
+			> a
+				padding: 14px 15px
+
+	.main-body__wrap
+		padding: 0 15px
+
+	.vk-block__link
+		padding-left: 50px
+		&:before
+			top: 0
+
+	.sidebar-spec__text
+		padding: 18px 15px 30px
+
+	.main-event__wrap
+		padding: 18px 15px 32px
+
+	.form-block
+		width: 55%
+		fieldset
+			width: 220px
+		input
+			padding-left: 12px
+		textarea
+			width: 280px
+			padding-left: 12px
+
+	.footer-right
+		width: 45%
+		padding-left: 15px
+
+	.copyright
+		width: 45%
+		padding-left: 15px
+
+
+	/*------------Service page-------------*/
+	.service-item
+		max-width: 300px
+	/*-----------------end-----------------*/
+
+	/*------------About page-------------*/
+	.contact-item
+		&_location
+			width: 41%
+			padding-left: 20px
+		&_mail
+			padding-left: 20px
+		&_social
+			padding-left: 20px
+
+	.form-block.form-block_about
+		width: 100%
+		padding: 20px 40px 35px
+		fieldset
+			width: 260px
+		textarea
+			width: 350px
+	/*-----------------end-----------------*/
+
+	/*----------------Special page---------------*/
+	.special-item
+		width: 47.7%
+	/*--------------------end--------------------*/
+
+	/*----------------Service-type page---------------*/
+	.category-item
+		width: 47.7%
+	/*---------------------end------------------------*/
+
+	/*----------------Form page---------------*/
+	.form-request
+		padding: 25px 5px 30px
+		.form-col
+			margin-right: 15px
+	/*-------------------end-------------------*/
+
+
+@media only screen and (max-width : 991px)
+	.header
+		padding-bottom: 0
+
+	.logo
+		display: block
+		max-width: 300px
+
+	.navbar
+		display: block
+		margin: 10px 0 0
+
+	.nav
+		+justify
+		> li
+			margin-right: 0
+			> a
+				line-height: 1.3
+
+	.btn-callback
+		position: absolute
+		top: -4px
+		right: 15px
+		width: 170px
+		margin-top: 0
+
+	.sl-main
+		.sl-item
+			height: 320px
+		.slick-dots
+			bottom: 15px
+
+	.sl-caption
+		&__title
+			margin-bottom: 10px
+			font-size: 38px
+
+	.sidebar-inner
+		padding-top: 9px
+
+	.vk-block_sm
+		display: block
+		margin-top: 0
+
+	.main-title
+		font-size: 32px
+
+	.main-body__title
+		font-size: 28px
+
+	.main-event__title
+		font-size: 28px
+
+	.way-item
+		width: 49%
+
+	.scroll-top
+		right: 15px
+
+	.form-block
+		width: 40%
+		fieldset
+			width: 100%
+			margin-bottom: 7px
+		textarea
+			width: 100%
+
+	.form-message
+		margin: 10px 0 0
+		font-size: 13px
+
+	.footer-right
+		width: 60%
+		padding-left: 30px
+
+	.copyright
+		width: 100%
+		padding-left: 0
+		text-align: center
+
+	/*------------Service page-------------*/
+	.service-item
+		max-width: 100%
+		margin-bottom: 35px
+	/*-----------------end-----------------*/
+
+	/*------------Service-in page-------------*/
+	.page-title
+		margin-bottom: 20px
+		font-size: 32px
+		&_withline
+			padding-bottom: 12px
+
+	.sl-service-in
+		margin-bottom: 25px
+
+	.service-in
+		h2
+			font-size: 28px
+		p
+			margin-bottom: 15px
+		> ul
+			margin-bottom: 30px
+		&-accent
+			margin: 15px 0
+		&-picts
+			margin: 25px -1px
+	/*-----------------end-----------------*/
+
+	/*------------Consalt page--------------*/
+	.sidebar-title_sm
+		display: block
+		margin-bottom: 15px
+
+	.sidebar-secmenu
+		&_sm
+			display: block
+	/*----------------end-------------------*/
+
+	/*------------About page-------------*/
+	.contact-item
+		width: 50%
+		margin-bottom: 20px
+		&_location
+			width: 50%
+			padding-left: 0
+		&_mail
+			padding-left: 0
+		&_social
+			padding-left: 0
+
+	.form-block.form-block_about
+		width: 100%
+		padding: 20px 40px 35px
+		fieldset
+			width: 100%
+			margin-right: 0
+		textarea
+			max-width: 100%
+			width: 100%
+	/*-----------------end-----------------*/
+
+	/*------------Project page-------------*/
+	.project-item
+		margin-bottom: 30px
+		&__title
+			font-size: 20px
+	/*----------------end----------------*/
+
+	/*----------------Special page---------------*/
+	.special-item
+		width: 47.9%
+		margin: 0 15px 20px 0
+		&__pict
+			margin-bottom: 12px
+		&__title
+			margin-bottom: 10px
+			font-size: 20px
+		&__text
+			margin-bottom: 12px
+			font-size: 16px
+		&__date
+			font-size: 16px
+	/*--------------------end--------------------*/
+
+	/*----------------Service-type page---------------*/
+	.category
+		padding-bottom: 20px
+
+	.category-item
+		width: 47.9%
+		margin-right: 15px
+		&__pict
+			margin-bottom: 12px
+		&__title
+			margin-bottom: 10px
+			font-size: 20px
+
+	.seo-text
+		&__title
+			font-size: 32px
+	/*---------------------end------------------------*/
+
+	/*----------------Form page---------------*/
+	.sidebar-countmenu
+		li
+			a
+				font-size: 16px
+
+	.form-request
+		padding: 25px 15px 30px
+		.form-row
+			&__title
+				margin-bottom: 10px
+				padding: 0
+				font-size: 22px
+			&_1
+				label
+					margin-bottom: 12px
+			&_2
+				margin-bottom: 20px
+			&_4
+				padding: 0
+		fieldset
+			width: 100%
+			padding: 0
+		.form-col
+			width: 50%
+			margin-right: 0
+		&__message
+			padding: 5px 0 5px 15px
+	/*-------------------end-------------------*/
+
+
+@media only screen and (max-width : 767px)
+	.header
+		padding: 15px 0 15px
+
+	.logo
+		display: block
+		max-width: 320px
+		margin: 0 auto 15px
+
+	.navbar
+		position: absolute
+		top: 0
+		left: 15px
+		margin: 0
+		padding: 0
+
+	.nav
+		text-align: center
+		text-align-last: auto
+		> li
+			display: block
+			margin-bottom: 12px
+
+	.navbar-collapse
+		position: absolute
+		top: 30px
+		left: -15px
+		width: 270px
+		z-index: 998
+		box-shadow: 2px 8px 8px rgba(#000, .3)
+		background: #fff
+
+	.dropdown-menu
+		position: relative
+		top: 0
+		width: 100%
+		margin: 5px 0 10px
+		text-align: center
+		box-shadow: none
+		background: none
+
+	.btn-callback
+		float: none
+		display: block
+		position: relative
+		top: 0
+		right: 0
+		width: 195px
+		margin: 0 auto
+
+	.sl-main
+		.sl-item
+			height: 250px
+		.slick-dots
+			bottom: 10px
+
+	.sl-caption
+		&__title
+			margin-bottom: 10px
+			font-size: 24px
+			line-height: 1.3
+		&__text
+			font-size: 16px
+			line-height: 1.3
+
+	.content
+		&_col3
+			padding-top: 30px
+		&_col2
+			padding: 0 0 20px
+
+	.sidebar-title
+		margin-bottom: 15px
+
+	.mob-smenu
+		position: absolute
+		top: 0
+		left: -100%
+		padding: 0
+		max-width: 270px
+		width: 100%
+		transition: left .25s ease
+		z-index: 900
+		box-shadow: 0 7px 7px rgba(#000, .4)
+		background: #fff
+		&.open
+			left: 0
+		.sidebar-title
+			display: none
+
+	.sidebar-menu
+		padding: 0
+		text-align: center
+		> li
+			> a
+				padding: 8px 15px
+
+	.sidebar-dropmenu
+		position: relative
+		left: 0
+		padding: 10px 15px 10px
+		li
+			a
+				font-size: 16px
+				white-space: normal
+
+	.vk-block
+		&_sm
+			display: none
+		&_xs
+			display: block
+			float: right
+			.vk-block__link
+				top: -10px
+				width: 37px
+				height: 37px
+				margin-top: 0
+				padding-left: 0
+				font-size: 0
+
+	.btn-smenu
+		display: inline-block
+		width: 200px
+
+	.main
+		display: block
+		padding: 20px 0 20px
+
+	.main-title
+		font-size: 26px
+		margin-bottom: 15px
+
+	.main-body
+		&__pict
+			margin-bottom: 15px
+		&__wrap
+			padding: 0 10px
+		&__title
+			font-size: 22px
+			margin-bottom: 10px
+		&__text
+			font-size: 16px
+			p
+				margin-bottom: 12px
+
+	.sidebar-title
+		font-size: 26px
+
+	.sidebar-spec
+		&__text
+			padding: 15px 10px
+			font-size: 16px
+
+	.btn-spec
+		margin-bottom: 20px
+
+	.main-data
+		margin-top: 12px
+
+	.main-event
+		&__wrap
+			padding: 15px 10px 20px
+		&__title
+			margin-bottom: 10px
+			font-size: 22px
+		&__text
+			font-size: 16px
+
+	.btn-event
+		margin-top: 20px
+
+	.section-way
+		padding: 35px 0 0
+
+	.section-title
+		font-size: 28px
+		margin-bottom: 10px
+
+	.way-block
+		padding: 15px 0 12px
+
+	.way-item
+		width: 100%
+		margin-bottom: 25px
+		padding-right: 0
+		&__descr
+			font-size: 16px
+
+	.footer
+		padding: 20px 0 10px
+
+	.scroll-top
+		top: -59px
+
+	.form-block
+		float: none
+		width: 100%
+		max-width: 320px
+		margin: 0 auto
+		&__title
+			margin-bottom: 12px
+			text-align: center
+
+	.btn-form
+		width: 100%
+
+	.footer-right
+		float: none
+		width: 100%
+		max-width: 320px
+		margin: 0 auto
+		padding: 15px 0 0
+
+	.footer-menu
+		display: block
+		text-align: center
+		li
+			margin-bottom: 5px
+			a
+				display: inline-block
+
+	.footer-contact
+		float: none
+		padding-top: 10px
+		text-align: center
+		&__phone
+			margin-bottom: 10px
+		&__location
+			margin-bottom: 15px
+
+	.copyright
+		margin-top: 25px
+
+	.breadcrumb-block
+		display: none
+	/*------------Service page-------------*/
+	.content-inner
+		padding: 25px 0
+
+	.sidebar-inner
+		padding-top: 0
+
+	.page-title
+		font-size: 26px
+
+	.service-item
+		margin-bottom: 30px
+		&__title
+			font-size: 22px
+
+	.service-menu
+		margin: 15px 0 20px
+		li
+			a
+				font-size: 16px
+	/*-----------------end-----------------*/
+
+	/*------------Service-in page-------------*/
+	.sl-service-in
+		margin-bottom: 25px
+
+	.service-in
+		padding-bottom: 20px
+		font-size: 16px
+		h2
+			font-size: 22px
+		p
+			margin-bottom: 10px
+		> ul
+			margin-bottom: 20px
+			li
+				font-size: 16px
+		a
+			font-size: 16px
+		&-accent
+			margin: 10px 0
+		&-picts
+			margin: 15px -1px
+	/*-----------------end-----------------*/
+
+	/*------------Consalt page--------------*/
+	.sidebar-title_sm
+		display: block
+		margin-bottom: 15px
+
+	.sidebar-secmenu
+		margin-top: 20px
+		padding: 0 30px 20px
+		text-align: center
+		li
+			margin-bottom: 5px
+	/*----------------end-------------------*/
+
+	/*------------About page-------------*/
+	.about-contact
+		padding-top: 20px
+		text-align: center
+		&__title
+			margin-bottom: 10px
+			font-size: 22px
+
+	.contact-item
+		width: 100%
+		margin-bottom: 10px
+		&_location
+			width: 100%
+		&_social
+			.contact-item__main
+				margin: 0 auto
+
+	.form-block.form-block_about
+		max-width: 500px
+		margin-top: 15px
+		padding: 15px 15px 20px
+		.form-block__title
+			margin-bottom: 12px
+			font-size: 24px
+		.form-message
+			font-size: 13px
+	/*-----------------end-----------------*/
+
+	/*------------Project page-------------*/
+	.project
+		padding-bottom: 10px
+
+	.project-item
+		margin-bottom: 25px
+		&__title
+			font-size: 16px
+	/*----------------end----------------*/
+
+	/*----------------Special page---------------*/
+	.special
+		margin: 0 -7px
+		padding-bottom: 10px
+
+	.special-item
+		width: 49.6%
+		margin: 0 0 20px
+		padding: 0 7px
+		&__pict
+			margin-bottom: 10px
+		&__title
+			font-size: 18px
+	/*--------------------end--------------------*/
+
+	/*----------------Event page---------------*/
+	.event
+		padding-bottom: 10px
+
+	.event-item
+		margin-bottom: 20px
+		&__pict
+			margin-bottom: 12px
+		&__title
+			margin-bottom: 10px
+			font-size: 18px
+		&__text
+			margin-bottom: 10px
+			font-size: 16px
+	/*--------------------end--------------------*/
+
+	/*----------------Service-type page---------------*/
+	.category
+		margin: 0 -7px
+		padding-bottom: 10px
+
+	.category-item
+		width: 49.6%
+		margin: 0 0 15px
+		padding: 0 7px
+		&__pict
+			margin-bottom: 10px
+		&__title
+			font-size: 18px
+
+	.seo-text
+		padding-bottom: 15px
+		&__title
+			margin-bottom: 10px
+			font-size: 20px
+		&__main
+			font-size: 16px
+	/*---------------------end------------------------*/
+
+	/*----------------Form page---------------*/
+	.sidebar-countmenu
+		padding: 15px 15px
+		text-align: center
+		li
+			margin-bottom: 10px
+			a
+				font-size: 16px
+
+	.form-request
+		.form-row
+			&__title
+				font-size: 20px
+		label
+			font-size: 16px
+		input
+			font-size: 16px
+		textarea
+			margin-bottom: 20px
+			font-size: 16px
+	/*-------------------end-------------------*/
+
+
+@media only screen and (max-width : 480px)
+	.logo
+		display: block
+		max-width: 320px
+		margin: 30px auto 15px
+
+	.navbar
+		position: absolute
+		top: -30px
+		left: 15px
+		margin: 0
+		padding: 0
+
+	.sl-caption
+		&__title
+			font-size: 18px
+		&__text
+			font-size: 14px
+
+	.main-title
+		font-size: 22px
+
+	.main-body
+		&__title
+			margin-bottom: 5px
+			font-size: 20px
+
+	.sidebar-title
+		font-size: 22px
+		margin-bottom: 10px
+
+	.main-event__title
+		font-size: 20px
+
+	.section-title
+		font-size: 22px
+
+
+	/*------------Service page-----------*/
+	.page-title
+		font-size: 22px
+
+	.service-item__title
+		font-size: 20px
+	/*-----------------end---------------*/
+
+	/*------------Service-in page-------------*/
+	.sl-service-in
+		margin-bottom: 15px
+
+	.service-in
+		h2
+			font-size: 20px
+		> ul
+			padding-left: 0
+			list-style-type: none
+		&-accent
+			img
+				float: none
+				display: block
+				margin-bottom: 10px
+			p
+				display: block
+				padding-left: 0
+	/*-----------------end-----------------*/
+
+	/*----------------Special page---------------*/
+	.special
+		margin: 0
+
+	.special-item
+		width: 100%
+		max-width: 100%
+		padding: 0
+		&__pict
+			margin-bottom: 10px
+		&__title
+			font-size: 18px
+	/*--------------------end--------------------*/
+
+	/*----------------Service-type page---------------*/
+	.category
+		margin: 0
+
+	.category-item
+		width: 100%
+		max-width: 100%
+		padding: 0
+	/*---------------------end------------------------*/
+
+	/*----------------Form page---------------*/
+	.form-request
+		.form-col
+			width: 100%
+		&__message
+			display: block
+			padding: 10px 0
+
+	.btn-request
+		float: none
+		display: block
+	/*-------------------end-------------------*/

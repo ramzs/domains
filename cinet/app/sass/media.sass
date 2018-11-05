@@ -1,0 +1,999 @@
+@import "bourbon"
+@import "grid"
+@import "vars"
+@import "sprite"
+@import "mixins"
+
+@media only screen and (max-width : 1349px)
+	.link-compare
+		margin-left: 45px
+
+	.callback
+		bottom: 0
+		right: 0
+		margin-left: 27px
+
+	.slider-caption
+		padding-top: 20px
+
+	.product-item
+		padding: 0 15px 0 45px
+
+	.footer-contact
+		margin-right: 45px
+
+	/*--------------Catalog page----------------*/
+	.catalog-product
+		.product-item
+			padding-right: 50px
+	/*------------------end---------------------*/
+
+	/*--------------Contact page--------------------*/
+	.info
+		&-block
+			ul
+				margin-left: 25px
+	/*-------------------end-------------------------*/
+
+	/*--------------Compare page--------------------*/
+	.compare-cl
+		.product-item
+			padding: 0 70px 0 10px
+	/*-------------------end---------------------------*/
+
+	/*--------------Cart page--------------------*/
+	.order-location
+		&__house
+			max-width: 126px
+		&__1, &__2, &__3, &__4, &__5
+			max-width: 141px
+	/*-----------------end------------------------*/
+
+
+@media only screen and (max-width : 1209px)
+	.nav
+		li
+			margin-right: 5px
+
+	.link-compare
+		margin-left: 10px
+
+	.callback
+		float: right
+		margin-left: 0
+
+	.mail
+		margin-right: 60px
+
+	.header-bottom__right
+		margin-top: 5px
+
+	.location
+		margin: 0 142px 0 28px
+
+	.cart
+		top: 20px
+
+	.adv-item
+		margin-right: 7%
+
+	.product-item
+		padding: 0 16px
+
+	.footer-nav
+		margin-left: 20px
+
+	.footer-contact
+		margin-right: 0
+		&__bottom
+			padding-left: 5px
+
+	/*--------------Catalog page----------------*/
+	.filter
+		&__title
+			margin-right: 10px
+		fieldset
+			margin-right: 15px
+		input
+			width: 85px
+		.btn_filter
+			width: 110px
+		.btn-oneclick_filter
+			width: 115px
+
+	.catalog-product
+		.product-item
+			padding-right: 15px
+	/*------------------end---------------------*/
+
+	/*--------------Service-in page--------------------*/
+	.form
+		input
+			width: 210px
+	/*-------------------end---------------------------*/
+
+	/*--------------Compare page--------------------*/
+	.compare-cl
+		.product-item
+			padding: 0 10px 0 10px
+
+	.delete-link
+		right: 10%
+
+	.compare-info
+		.tb
+			width: 100%
+			&-cell
+				&_head
+					width: 25.35%
+				&_1, &_2, &_3
+					width: 24.88%
+	/*-------------------end---------------------------*/
+
+	/*---------------Product page-------------------*/
+	.tovar-orgprice__line
+		font-size: 28px
+
+	.tovar
+		.jq-number
+			margin-right: 3px
+		.btn_buy
+			margin-right: 2px
+	/*-------------------end------------------------*/
+
+	/*--------------Cart page--------------------*/
+	.order-date__time
+		max-width: 111px
+
+	.order-location
+		&__city
+			max-width: 235px
+		&__street
+			max-width: 235px
+		&__house
+			max-width: 111px
+		&__1, &__2, &__3, &__4, &__5
+			max-width: 111px
+
+	.order-contact
+		max-width: 617px
+	/*-----------------end------------------------*/
+
+
+@media only screen and (max-width : 992px)
+	.header
+		&-brend
+			display: none
+		&-main
+			float: none
+			width: 100%
+			padding: 55px 0 10px
+		&-top
+			float: left
+			padding: 0
+		&-bottom
+			float: right
+			padding: 0
+
+	.btn-menu
+		position: relative
+		display: inline-block
+		z-index: 991
+		&.active
+			b
+				background: #fff
+
+	.header-menu
+		position: absolute
+		top: 0
+		left: -100%
+		width: 100%
+		padding-bottom: 90px
+		z-index: 990
+		transition: left .15s ease-in-out
+		background: #0e68ff
+		&.open
+			left: 0
+			transition: left .15s ease-in-out
+
+	.menu-wrap
+		max-width: 740px
+		margin: 0 auto
+		padding: 0 55px
+
+	.nav
+		margin: 183px 0 105px
+		li
+			display: block
+			margin-bottom: 47px
+			a
+				font-size: 60px
+				color: #fff
+
+	.link-compare
+		display: none
+
+	.callback
+		display: none
+		&_inmenu
+			float: none
+			display: block
+			margin-bottom: 100px
+			padding-left: 116px
+			font-size: 67px
+			color: #fff
+			&:before
+				top: -8px
+				@include sprite($callback-mob)
+
+	.mail
+		display: none
+
+	.phone
+		margin: 13px 40px 0 0
+		padding-left: 50px
+		font-size: 40px
+		&:before
+			@include sprite($phone-mob)
+
+	.header-bottom__right
+		display: none
+
+	.cart
+		top: 0
+		margin-right: 46px
+		@include sprite($cart-mob)
+		&__count
+			width: 51px
+			height: 51px
+			top: -27px
+			right: -55px
+			font-size: 36px
+			line-height: 52px
+		&_inmenu
+			float: none
+			display: block
+			@include sprite($cart-mob-white)
+			.cart__count
+				width: 87px
+				height: 87px
+				top: -45px
+				right: -95px
+				font-size: 62px
+				line-height: 88px
+
+	.header-brend_mob
+		display: block
+		float: none
+		width: 100%
+		padding-top: 0
+		text-align: center
+		.logo
+			display: inline-block
+
+	.search-wrap
+		padding: 30px 0 30px
+
+	.search
+		width: 100%
+		height: 98px
+		&-in
+			font-size: 35px
+		&-btn
+			width: 159px
+			height: 98px
+			&:before
+				@include sprite($search-mob)
+
+	.sidebar
+		float: none
+		width: 100%
+		margin-top: 0
+		&-title
+			position: relative
+			padding: 41px 0 40px 0
+			font-size: 35px
+			text-align: center
+			cursor: pointer
+			&:after
+				content: ''
+				position: absolute
+				top: 50%
+				right: 55px
+				margin-top: -7px
+				@include sprite($menu-arrow-down2)
+		&-menu
+		&-nav
+			li
+				a
+					padding: 25px 75px 26px 30px
+					font-size: 27px
+					&:after
+						right: 55px
+						margin-top: -13px
+						@include sprite($menu-arrow-right3)
+					&:hover
+						&:after
+							@include sprite($menu-arrow-right2)
+
+	.main
+		float: none
+		width: 100%
+		padding-left: 0
+
+	.slider-home
+		margin: 28px -30px 50px
+		.slider-item
+			height: 422px
+			img
+				max-width: 100%
+				height: 100%
+
+	.slider-caption
+		padding-top: 60px
+		&__title
+			font-size: 45px
+		&__accent
+			font-size: 45px
+		&__bottom
+			display: none
+
+	.service-block
+		&__title
+			margin-bottom: 40px
+			font-size: 35px
+
+	.service-list
+		li
+			margin: 0 2px 30px 0
+			a
+				padding: 9px 18px
+				font-size: 30px
+
+	.adv-block
+		padding: 14px 0
+
+	.block-title
+		font-size: 45px
+
+	.adv-item
+		width: 50%
+		margin: 0 0 80px 0
+		padding: 0 15px
+		&__pict
+			margin-bottom: 0
+		&__descr
+			font-size: 30px
+
+	.s-block
+		padding: 0 0 45px
+		&__pict
+			display: none
+		&__main
+			float: none
+			width: 100%
+			padding-left: 0
+		.block-title
+			margin-bottom: 8px
+		&__text
+			height: 610px
+			font-size: 30px
+			p
+				margin-bottom: 40px
+
+	.link-more
+		font-size: 30px
+
+	.product-block
+		margin-bottom: 87px
+		.block-title
+			margin-left: 0
+
+	.product-item
+		float: none
+		width: 100%
+		margin-bottom: 116px
+		padding: 0 150px 0 55px
+		&:last-of-type
+			margin-bottom: 0
+		&__pict
+			height: 345px
+			margin-bottom: 53px
+			img
+				height: 100%
+		&__available
+			margin-bottom: 16px
+			font-size: 40px
+		&__title
+			height: 140px
+			font-size: 40px
+		&__price
+			margin-bottom: 30px
+			font-size: 40px
+			span
+				font-size: 40px
+		&__compare
+			margin-bottom: 16px
+			font-size: 40px
+
+	.btn-wrap
+		max-width: 440px
+
+	.btn
+		height: 103px
+		font-size: 38px
+		i
+			margin-right: 15px
+			@include sprite($cart-btn2)
+		&_buy
+
+
+	.btn-oneclick
+		height: 103px
+		font-size: 34px
+
+	.footer-nav
+		display: none
+
+	.footer-contact
+		float: none
+		margin-right: 0
+		padding-left: 175px
+		&__top
+			margin-bottom: 30px
+			.phone
+				margin-bottom: 50px
+				padding-left: 0
+				font-size: 60px
+				&:before
+					top: 6px
+					left: -100px
+					@include sprite($phone-mob2)
+			.mail
+				display: block
+				padding-left: 55px
+				font-size: 40px
+				&:before
+					top: 13px
+					@include sprite($mail-mob)
+		&__bottom
+			padding-left: 0
+			.location
+				display: block
+				margin: 0 0 35px
+				font-size: 40px
+			.work
+				display: block
+				margin: 0
+				font-size: 40px
+
+	.footer-bottom
+		margin-top: 93px
+
+	.copyright
+		font-size: 16px
+		line-height: 40px
+
+	.callback-form
+		.form-wrap
+			width: 360px
+		&__title
+			font-size: 35px
+		input
+			width: 360px
+			height: 80px
+			font-size: 30px
+		.btn_modform
+			width: 100%
+		&__accent
+			font-size: 30px
+			text-align: center
+
+	/*--------------Garant--------------------*/
+	.breadcrumb
+		display: none
+
+	.page-title
+		margin-top: 43px
+		font-size: 45px
+
+	.garant
+		padding-top: 30px
+		font-size: 30px
+		p
+			margin-bottom: 40px
+	/*-----------------end--------------------*/
+
+	/*---------------Product page--------------*/
+	.content_tovar
+		padding-bottom: 0
+
+	.tovar
+		padding: 12px 0 0
+		&-available
+			position: relative
+			top: 0
+			font-size: 25px
+		&-pict
+			float: none
+			width: 100%
+			padding: 44px 0 40px
+			img
+				margin: 0 auto
+		&-param
+			float: none
+			width: 100%
+			&__title
+				margin-bottom: 33px
+				font-size: 35px
+				line-height: 1.2
+			&__price
+				margin-bottom: 26px
+				font-size: 45px
+		&-orgprice
+			margin-bottom: 30px
+			padding: 29px 17px 12px
+			&__title
+				margin-bottom: 10px
+				font-size: 30px
+			&__line
+				font-size: 45px
+		&-param
+			&__compare
+				font-size: 35px
+			&__bottom
+				margin-top: 42px
+		.jq-number
+			width: 194px
+			height: 75px
+			margin-right: 28px
+			vertical-align: middle
+			&__field
+				width: 91px
+				height: 75px
+				input
+					padding-left: 20px
+					font-size: 32px
+			&__spin
+				width: 47px
+				height: 75px
+				&.minus, &.plus
+					&:after
+						top: 47%
+						font-size: 38px
+		.btn_buy
+			width: 219px
+			height: 87px
+			margin-right: 7px
+			vertical-align: middle
+		.btn-oneclick
+			width: 242px
+			height: 87px
+			vertical-align: middle
+		&-descr
+			margin-top: 70px
+			&__option
+				float: none
+				width: 100%
+				margin-bottom: 85px
+		&-list
+			max-width: 100%
+			li
+				margin-bottom: 35px
+				font-size: 35px
+				span
+					bottom: -9px
+		&-descr
+			&__text
+				float: none
+				width: 100%
+				font-size: 30px
+				line-height: 1.2
+				.block-title
+					margin-bottom: 30px
+				p
+					margin-bottom: 37px
+		&-info
+			margin-top: 20px
+			.block-title
+				margin-bottom: 26px
+			&__text
+				font-size: 30px
+				line-height: 1.2
+				p
+					margin-bottom: 35px
+
+	.product-block_1
+		margin-bottom: 42px
+
+	.product-block_2
+		display: none
+	/*-------------------end-------------------*/
+
+	/*--------------Catalog page----------------*/
+	.content_catalog
+		padding-bottom: 0
+
+	.page-title
+		span
+			display: block
+
+	.catalog
+		padding: 22px 0 0
+
+	.brand-list
+		width: 100%
+		+justify
+		li
+			margin: 0 45px 17px 0
+			a
+				font-size: 35px
+				line-height: 1.2
+
+	.filter
+		margin-top: 20px
+		&__title
+			margin-right: 25px
+			font-size: 30px
+		fieldset
+			margin-right: 0
+		label
+			font-size: 30px
+		input
+			width: 177px
+			height: 69px
+			margin: 0 15px 0 15px
+			font-size: 29px
+		.btn-wrap
+			display: block
+			width: 100%
+			margin-top: 70px
+		.btn_filter
+			width: 260px
+			height: 103px
+		.btn-oneclick_filter
+			width: 332px
+			height: 103px
+
+	.catalog-product
+		padding: 80px 0 0
+		.product-item
+			width: 100%
+			margin-bottom: 130px
+			padding: 0 220px 0 58px
+	/*------------------end---------------------*/
+
+	/*--------------Contact page--------------------*/
+	.contact
+		padding: 40px 0 90px
+		.phone
+			margin: 0 0 55px
+			padding-left: 80px
+			font-size: 70px
+			&:before
+				top: 10px
+				@include sprite($phone-mob2)
+		.mail
+			margin: 0 0 30px
+			padding-left: 45px
+			font-size: 40px
+			&:before
+				top: 12px
+				@include sprite($mail-mob)
+		.location
+			display: block
+			margin: 0 0 33px
+			font-size: 40px
+		.work
+			display: block
+			font-size: 40px
+
+	.contact-map
+		height: 770px
+		margin-top: 103px
+
+	.contact-info
+		margin-top: 78px
+		&__title
+			font-size: 45px
+		&__details
+			font-size: 35px
+			line-height: 48px
+	/*------------------end--------------------------*/
+
+	/*--------------Contact page--------------------*/
+	.about
+		padding: 30px 0 20px
+		&-text
+			font-size: 30px
+			line-height: 40px
+			p
+				margin-bottom: 40px
+			&__pict
+				margin-bottom: 35px
+	.adv-block
+		padding: 0
+	/*-------------------end-------------------------*/
+
+	/*--------------Contact page--------------------*/
+	.info
+		&-block
+			font-size: 30px
+			line-height: 46px
+			strong
+				font-size: 32px
+				line-height: 70px
+			ul
+				margin-left: 25px
+	/*-------------------end-------------------------*/
+
+	/*--------------Service page--------------------*/
+	.service
+		padding: 30px 0 55px
+		font-size: 30px
+		&-list
+			&__title
+				font-size: 31px
+		&-box
+			&__link
+				font-size: 30px
+	/*-------------------end-------------------------*/
+
+	/*--------------Service-in page--------------------*/
+	.service-inner
+		padding: 25px 0 80px
+
+	.form
+		margin-bottom: 60px
+		&__title
+			margin-bottom: 30px
+			font-size: 35px
+		input
+			display: block
+			width: 500px
+			height: 69px
+			margin: 0 0 20px
+			font-size: 29px
+
+	.btn_form
+		width: 500px
+		margin: 0
+
+	.service-details
+		font-size: 30px
+		img
+			margin-bottom: 30px
+
+	.btn_service
+		width: 500px
+		height: 69px
+		line-height: 63px
+	/*-------------------end---------------------------*/
+
+	/*--------------Compare page--------------------*/
+	.compare-cl
+		.product-item
+			padding: 0 10px 0 10px
+			&__pict
+				height: 164px
+				margin-bottom: 18px
+				img
+					height: auto
+			&__available
+				margin-bottom: 8px
+				font-size: 17px
+			&__title
+				height: 60px
+				font-size: 17px
+			&__price
+				margin-bottom: 12px
+				font-size: 20px
+				span
+					font-size: 17px
+			&__compare
+				margin-bottom: 7px
+				font-size: 17px
+			.btn-wrap
+				width: auto
+			.btn_buy
+				height: 46px
+				font-size: 17px
+				i
+					margin-right: 8px
+					@include sprite($cart-btn)
+			.btn-oneclick
+				height: 46px
+				font-size: 15px
+
+	.delete-link
+		right: 10%
+
+	.compare-info
+		.tb
+			width: 100%
+			&-cell
+				&_head
+					display: none
+				&_1, &_2, &_3
+					width: 33.33%
+					span
+						margin-left: 0
+				&_1, &_2
+					span
+						margin-right: 10px
+	/*-------------------end---------------------------*/
+
+	/*--------------Cart page--------------------*/
+	.cart-page
+		padding: 32px 0 43px
+
+	.cart-main
+		margin-bottom: 0
+		.tb
+			display: block
+			text-align: center
+			&-row
+				display: block
+				margin-bottom: 32px
+				padding: 62px 60px 68px
+				border: 1px solid #cdcdcd
+				&_head
+					display: none
+			.jq-number
+				width: 338px
+				height: 132px
+				margin-right: 0
+				vertical-align: middle
+				&__field
+					width: 159px
+					height: 132px
+					input
+						padding-left: 36px
+						font-size: 56px
+				&__spin
+					width: 83px
+					height: 132px
+					&.minus, &.plus
+						&:after
+							top: 47%
+							font-size: 66px
+			&-cell
+				position: static
+				display: block
+				border: none
+				width: 100%
+				&_body
+					padding: 0
+				&_pict
+					margin-bottom: 7px
+					img
+						max-width: 100%
+				&_name
+					margin-bottom: 28px
+					padding-right: 0
+					font-size: 45px
+					a
+						margin-bottom: 22px
+						font-size: 45px
+				&_price
+					margin-bottom: 65px
+					font-size: 60px
+				&_total
+					margin-top: 55px
+					font-size: 35px
+					span
+						display: inline-block
+						margin-right: 10px
+			.del-link
+				top: 48px
+				right: 48px
+				@include sprite($delete-mob)
+
+	.order__title
+		display: none
+
+	.order-block
+		padding: 40px 49px 80px
+		&__title
+			display: block
+			font-size: 45px
+
+	.order-checkbox
+		margin-bottom: 52px
+		.order-block__title
+			margin-bottom: 45px
+		label
+			font-size: 35px
+		.jq-radio
+			width: 45px
+			height: 45px
+			margin-right: 20px
+			&.checked
+				.jq-radio__div
+					width: 17px
+					height: 17px
+					margin: 13px 0 0 13px
+
+	.order-block
+		.jq-selectbox
+			&__select
+				height: 83px
+				padding: 0 70px 0 33px
+				font-size: 35px
+				&-text
+					padding: 15px 0
+			&__trigger
+				&-arrow
+					top: 35px
+					right: 34px
+					@include sprite($arrow-down-mob)
+			&__dropdown
+				font-size: 35px
+			li
+				padding-left: 37px
+
+	.order-date
+		margin-bottom: 40px
+		.order-block__title
+			margin-bottom: 43px
+		&__day
+			max-width: 100%
+			margin-bottom: 60px
+		span
+			margin-right: 16px
+			font-size: 35px
+		&__time
+			max-width: 211px
+
+	.order-location
+		.order-block__title
+			margin-bottom: 28px
+		label
+			margin-right: 0
+		span
+			font-size: 35px
+		&__city
+			max-width: 100%
+			margin-bottom: 28px
+		&__street
+			max-width: 100%
+			margin-bottom: 38px
+		&__house
+			float: left
+			max-width: 50%
+			padding-right: 22px
+		&__1, &__2, &__3, &__4, &__5
+			float: left
+			max-width: 50%
+		&__2, &__4
+			padding-right: 22px
+		&__1, &__3, &__5
+			margin-bottom: 28px
+			padding-left: 22px
+
+	.order-contact
+		max-width: 100%
+		.order-block__title
+			margin-bottom: 53px
+		label
+			float: none
+			display: block
+			width: 100%
+			margin-bottom: 44px
+			padding-right: 0
+			font-size: 35px
+		input
+			height: 83px
+			margin-top: 8px
+			padding-left: 35px
+			font-size: 35px
+		textarea
+			height: 725px
+			padding: 20px 0 0 35px
+			font-size: 35px
+
+	.btn_order
+		width: 312px
+		height: 87px
+		margin: 0 auto
+	/*-----------------end------------------------*/

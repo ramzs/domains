@@ -1,0 +1,150 @@
+@import "vars"
+/*---------------Material page------------------*/
+.content
+	&.content__inner
+		padding: 24px 0 110px
+		.container
+			padding: 0 20px
+
+.breadcrumb
+	margin-bottom: 23px
+	li
+		display: inline-block
+		margin-right: 18px
+		font: 15px "lato"
+		color: #8e8e8e
+		a
+			position: relative
+			display: block
+			font: 15px "lato"
+			color: #00c7ff
+			text-decoration: underline
+			&:after
+				content: ' '
+				position: absolute
+				top: 1px
+				right: -14px
+				@include sprite($arrow-bc)
+			&:hover
+				text-decoration: none
+
+.page__title
+	&.page__title-inner
+		margin-bottom: 4px
+
+.select__block
+	label
+		float: left
+		width: 50%
+		margin-bottom: 25px
+		span
+			margin-right: 12px
+			font-size: 13px
+			color: #a1a1a1
+	.jq-selectbox
+		width: 195px
+		text-align: left
+		li
+			padding: 5px 3px 6px
+			color: #808080
+			&.selected
+				color: $price
+				background: none
+			&:hover
+				color: $price
+				background: none
+		&.opened
+			.jq-selectbox__trigger-arrow
+				@include sprite($arrow-select-up)
+		&.focused
+			.jq-selectbox__select
+				border: 1px solid #c1c1c1
+	.jq-selectbox__select
+		height: 21px
+		padding: 0 23px 0 3px
+		font: 15px/18px "roboto"
+		color: #808080
+		border: 1px solid #c1c1c1
+		border-radius: 0
+		box-shadow: none
+		background: none
+		&:active
+			box-shadow: none
+		&:hover
+			background: none
+	.jq-selectbox__trigger
+		width: 23px
+		border-left: 1px solid #c1c1c1
+	.jq-selectbox__trigger-arrow
+		top: 7px
+		right: 6px
+		@include sprite($arrow-select)
+		border: none
+	.jq-selectbox__dropdown
+		width: 172px
+		margin-top: -1px
+		border-radius: 0
+		border-top: none
+		box-shadow: none
+	.sel__in
+		&.sel__in-2, &.sel__in-4
+			text-align: right
+		&.sel__in-2
+			span
+				margin-right: 18px
+		&.sel__in-3
+			span
+				margin-right: 15px
+
+.block__accent
+	display: block
+	margin-bottom: 10px
+	font-size: 15px
+	color: #a1a1a1
+	text-align: right
+
+.product
+	clear: both
+	&:hover
+		.text__hide
+			display: block
+
+.text__hide
+	display: none
+	.list__title
+		display: block
+		margin-top: 13px
+		font-size: 15px
+		color: #a1a1a1
+		line-height: 24px
+		li
+			line-height: 24px
+
+.nav__page
+	a
+		position: relative
+		display: inline-block
+		font-size: 20px
+		color: #969696
+		&:hover
+			color: #ff9000
+		i
+			display: inline-block
+			position: relative
+			top: 1px
+	.nav__page-left
+		i
+			margin-right: 5px
+			@include sprite($page-left)
+		&:hover
+			i
+				@include sprite($page-left-hover)
+	.nav__page-right
+		float: right
+		i
+			margin-left: 5px
+			@include sprite($page-right)
+		&:hover
+			i
+				@include sprite($page-right-hover)
+/*-------------------end------------------------*/

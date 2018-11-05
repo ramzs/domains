@@ -1,0 +1,565 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+.header-top
+	height: 50px
+	line-height: 50px
+	background: #210038
+	&__block
+		display: inline-block
+		color: #fff
+		i
+			position: relative
+			display: inline-block
+			width: 26px
+			height: 26px
+			top: 7px
+			margin-right: 13px
+		&--phone
+			margin-right: 67px
+			i
+				@include sprite($speech-bubble)
+		&--work
+			margin-right: 62px
+			i
+				@include sprite($clock)
+		&--address
+			text-decoration: underline
+			i
+				@include sprite($placeholder)
+			&:hover
+				text-decoration: none
+
+
+.btn
+	position: relative
+	display: block
+	width: 175px
+	height: 32px
+	font-size: 18px
+	font-weight: 500
+	color: #fff
+	text-align: center
+	line-height: 30px
+	outline: none
+	border-radius: 16px
+	background: $btn-bg
+	&:hover
+		background: $btn-hover
+	&--callback
+		float: right
+		margin-top: 9px
+
+.header-banner
+	height: 165px
+	text-align: center
+	overflow: hidden
+	background: url(../img/header-bg.jpg) center top no-repeat
+	background-size: cover
+
+.logo
+	position: relative
+	display: block
+	top: -78px
+	width: 400px
+	margin: 0 auto
+	img
+		width: 100%
+
+.navbar
+	position: relative
+	height: 74px
+	border-top: 1px solid #210038
+
+.btn
+	&--menu
+		display: none
+		position: absolute
+		top: -12px
+		left: 0
+		right: 0
+		width: 142px
+		height: 27px
+		margin: 0 auto
+		line-height: 26px
+		z-index: 201
+		cursor: pointer
+		background-color: #210038
+		border-radius: 14px
+		&:hover
+			background: #5d009e
+
+.nav
+	margin-top: 10px
+	@include justify
+	&__item
+		position: relative
+		display: inline-block
+	&__link
+		display: block
+		padding: 15px 0
+		font-size: 20px
+		font-weight: 600
+		line-height: 19px
+		color: $main-color
+		&:hover, &.active
+			color: $hover-link
+
+.nav-submenu
+	display: none
+	position: absolute
+	top: 45px
+	left: -13px
+	padding: 20px 25px 4px
+	z-index: 100
+	background: #fff
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.53)
+	&:before, &:after
+		bottom: 100%
+		left: 52px
+		border: solid transparent
+		content: " "
+		height: 0
+		width: 0
+		position: absolute
+		pointer-events: none
+	&:after
+		border-color: rgba(255, 255, 255, 0)
+		border-bottom-color: #fff
+		border-width: 10px
+		margin-left: -10px
+	&:before
+		border-color: rgba(53, 53, 53, 0)
+		border-bottom-color: #cbcccb
+		border-width: 11px
+		margin-left: -11px
+		bottom: 101%
+	&__item
+		display: block
+		margin-bottom: 17px
+	&__link
+		font-size: 18px
+		font-weight: 600
+		line-height: 19px
+		color: $main-color
+		white-space: nowrap
+		&:hover
+			color: $hover-link
+			text-decoration: underline
+
+.slider-wrap
+	position: relative
+	border-top: 1px solid #210038
+	background: #edebee
+	&:after
+		content: ' '
+		position: absolute
+		bottom: -7px
+		left: 0
+		width: 100%
+		height: 8px
+		background: url(../img/border-slide.png) center top no-repeat
+		background-size: cover
+
+.slider-nav
+	position: absolute
+	top: 50%
+	left: 0
+	right: 0
+	margin-top: -22px
+	z-index: 99
+	.slick-arrow
+		position: absolute
+		padding: 0
+		font-size: 0
+		opacity: .7
+		cursor: pointer
+		outline: none
+		z-index: 99
+		border: none
+		background: none
+		&:hover
+			opacity: 1
+		&.slick-prev
+			left: 20px
+			@include sprite($arrows-left)
+		&.slick-next
+			right: 20px
+			@include sprite($arrows-right)
+
+.slider
+	position: relative
+	max-width: 1300px
+	margin: 0 auto
+	.slick-slide
+		position: relative
+		outline: none
+	.container
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+
+.slider-caption
+	padding-left: 92px
+	&__title
+		margin: 53px 0 32px
+		font-size: 55px
+		color: #210038
+
+.btn
+	&--slider
+		width: 278px
+		height: 42px
+		font-size: 20px
+		color: #4e198e
+		line-height: 36px
+		border: 2px solid #4a148c
+		border-radius: 21px
+		background: none
+		&:hover
+			color: #fff
+			background: #4e198e
+
+.about
+	padding: 77px 0 53px
+	&__text
+		font-size: 18px
+		font-weight: 500
+
+.section-title
+	margin-bottom: 53px
+	font-size: 42px
+	font-weight: 500
+	color: $accent
+
+.section-salon
+	display: table
+	width: 100%
+	background: #f1f8e9 url(../img/bg-salon.png) center top no-repeat
+	background-size: cover
+	&--one
+		margin-bottom: 50px
+	&__pict
+		display: table-cell
+		width: 566px
+		vertical-align: middle
+		overflow: hidden
+		img
+			display: block
+			width: 100%
+		&--mob
+			display: none
+	&__descr
+		display: table-cell
+		padding: 38px 0 30px 60px
+		vertical-align: middle
+		font-size: 16px
+		font-weight: 500
+		p
+			margin-bottom: 20px
+		&--two
+			padding: 38px 60px 30px 0
+	&__title
+		margin-bottom: 27px
+		font-size: 34px
+		font-weight: 500
+		color: $accent
+		&--mob
+			display: none
+
+.btn
+	&--more
+		margin-top: 35px
+
+.section-adv
+	padding: 43px 0 100px
+
+.section-title
+	&--adv
+		text-align: center
+
+.adv-item
+	float: left
+	width: 25%
+	text-align: center
+	&__icon
+		position: relative
+		width: 80px
+		height: 80px
+		margin: 0 auto 20px
+		border-radius: 50%
+		background: #623086
+		i
+			position: absolute
+			@include vcenter
+		&--one
+			i
+				width: 40px
+				height: 51px
+				background: url(../img/avatar.png) no-repeat
+		&--two
+			i
+				width: 53px
+				height: 37px
+				background: url(../img/diamond.png) no-repeat
+		&--three
+			i
+				width: 42px
+				height: 40px
+				background: url(../img/thumb-up.png) no-repeat
+		&--four
+			i
+				width: 43px
+				height: 38px
+				background: url(../img/heart.png) no-repeat
+	&__title
+		margin-bottom: 18px
+		font-size: 22px
+		font-weight: 500
+		color: $accent
+		text-transform: uppercase
+	&__descr
+		padding: 0 20px
+		font-size: 16px
+		font-weight: 500
+
+footer
+	padding: 59px 0 31px
+	background: #281932 url(../img/footer-bg.png) center top no-repeat
+	background-size: cover
+	&:before,
+	&:after
+		content: " "
+		display: table
+	&:after
+		clear: both
+
+.footer-logo
+	float: left
+	margin: 42px 30px 0 -10px
+	img
+		width: 100%
+
+.footer-title
+	margin-bottom: 18px
+	font-size: 20px
+	font-weight: 600
+	color: #fff
+
+.footer-contact
+	float: left
+	width: 335px
+	margin-right: 70px
+
+.contact-item
+	margin-bottom: 31px
+	&__address
+		position: relative
+		margin-bottom: 19px
+		padding-left: 35px
+		font-size: 14px
+		font-weight: 500
+		line-height: 22px
+		color: #fff
+		&:before
+			content: ' '
+			position: absolute
+			top: -5px
+			left: 0
+			@include sprite($placeholder)
+	&__link
+		display: inline-block
+		margin-left: 8px
+		font-size: 12px
+		font-weight: 500
+		color: #fff
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	&__phone
+		position: relative
+		display: inline-block
+		padding-left: 35px
+		font-size: 14px
+		font-weight: 500
+		color: #fff
+		&:before
+			content: ' '
+			position: absolute
+			top: -5px
+			left: 0
+			@include sprite($speech-bubble)
+
+.footer-nav
+	float: left
+
+.footer-menu
+	display: inline-block
+	margin-right: 37px
+	vertical-align: top
+	&:last-of-type
+		margin-right: 0
+	&--two
+		margin-right: 26px
+	li
+		display: block
+		margin-bottom: 18px
+		a
+			display: inline-block
+			font-size: 16px
+			font-weight: 300
+			color: #fff
+			&:hover
+				text-decoration: underline
+
+.footer-social
+	float: right
+
+.social
+	position: relative
+	display: inline-block
+	width: 40px
+	height: 41px
+	top: -13px
+	margin-right: 23px
+	font-size: 0
+	&:last-of-type
+		margin-right: 0
+	&--inst
+		background: url(../img/instagram-logo.png) no-repeat
+		background-size: cover
+	&--fb
+		background: url(../img/facebook-logo.png) no-repeat
+		background-size: cover
+	&--vk
+		background: url(../img/vk-logo.png) no-repeat
+		background-size: cover
+
+.form-callback
+	max-width: 566px
+	margin: 0 auto
+	padding: 0 0 19px
+	text-align: center
+	background: #fff
+	&__title
+		padding: 12px 0 15px
+		font-size: 28px
+		font-weight: 500
+		color: #fff
+		background: #623087
+	&__text
+		margin: 13px 0 17px
+		font-size: 18px
+		color: #000
+	form
+		padding: 0 48px
+	input
+		display: block
+		width: 100%
+		height: 42px
+		margin-bottom: 14px
+		padding: 0 5px
+		font-size: 18px
+		text-align: center
+		outline: none
+		border: 2px solid #4a148c
+		border-radius: 21px
+	.jq-selectbox
+		width: 100%
+		height: 42px
+		margin-bottom: 14px
+		outline: none
+		&.focused
+			.jq-selectbox__select
+				border: 2px solid #4a148c
+		&.opened
+			.jq-selectbox__trigger-arrow
+				border-top-color: #4a148c
+				transform: rotate(180deg)
+		&__select
+			height: 42px
+			padding: 0 25px
+			font: 300 18px/38px "houschkapro"
+			color: #6a6a6a
+			border: 2px solid #4a148c
+			border-radius: 21px
+			background: none
+			outline: none
+			&:hover
+				background: none
+			&:active
+				background: none
+				box-shadow: none
+		&__trigger
+			border: none
+		&__trigger-arrow
+			top: 17px
+			right: 17px
+			border-top-color: #4a148c
+		&__dropdown
+			top: 38px !important
+			font: 300 16px/16px "houschkapro"
+			overflow: hidden
+			border-radius: 10px
+			border: 2px solid #4a148c
+			li
+				height: 25px
+				line-height: 16px
+				&:hover
+					background: #4a148c
+	.datepicker-here
+		float: left
+		width: 45%
+	.time-in
+		float: right
+		width: 45%
+	.mfp-close
+		display: none
+
+.btn--form
+	margin: 0 auto
+	width: 220px
+	height: 42px
+	line-height: 40px
+	border-radius: 21px
+	border: none
+	cursor: pointer
+
+.datepickers-container
+	z-index: 1050
+
+/*-------Плавное появление magnific popup------------*/
+.mfp-zoom-in
+	.mfp-with-anim
+		opacity: 0
+		transition: all 0.2s ease-in-out
+		transform: scale(0.8)
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.3s ease-out
+	&.mfp-ready
+		.mfp-with-anim
+			opacity: 1
+			transform: scale(1)
+		&.mfp-bg
+			opacity: 0.86
+	&.mfp-removing
+		.mfp-with-anim
+			transform: scale(0.8)
+			opacity: 0
+		&.mfp-bg
+			opacity: 0
+/*-------------end-----------------------*/
+
+@import "brend.sass"
+@import "vacancy.sass"
+@import "answer.sass"
+@import "contact.sass"
+@import "service.sass"
+@import "gallery.sass"
+@import "salons.sass"
+@import "salon-one.sass"

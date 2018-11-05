@@ -1,0 +1,732 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+@import "header"
+
+.section-main
+	position: relative
+	padding: 235px 0 140px
+	text-align: center
+	background: url(../img/Layer-11.jpg) center top no-repeat
+	background-size: cover
+
+.prlx
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	overflow: hidden
+	z-index: 5
+
+.prlx1-item
+	position: absolute
+	&_1
+		top: 25% !important
+		left: -5% !important
+	&_2
+		top: 48% !important
+		left: 13% !important
+	&_3
+		top: 73% !important
+		left: 26% !important
+	&_4
+		top: 30% !important
+		left: 68% !important
+	&_5
+		top: 45% !important
+		left: 88% !important
+	&_6
+		top: 70% !important
+		left: 92% !important
+
+
+.main-block
+	position: relative
+	display: inline-block
+	max-width: 469px
+	padding: 182px 78px 98px
+	text-align: left
+	background: url(../img/Mario_De_Meyer_04.png) 0 0 no-repeat
+	background-size: 100% 100%
+	&__title
+		position: absolute
+		top: 40px
+		left: -105px
+		font-size: 130px
+		font-weight: 900
+		white-space: nowrap
+	&__subtitle
+		font: 30px/1.2 $sec-font
+	&__sale
+		margin: 33px 0 19px
+		font-size: 20px
+		line-height: 1.3
+		span
+			display: block
+			font-size: 48px
+			font-weight: 900
+			opacity: .1
+
+.btn
+	height: 47px
+	padding: 0
+	font-weight: 900
+	color: #fff
+	line-height: 47px
+	text-transform: uppercase
+	box-shadow: 0 3px 0 rgba(#92471e, 1)
+	border: none
+	border-radius: 0
+	background: #ff6a19
+	&:hover
+		color: #fff
+	&:focus
+		color: #fff
+	&_size1
+		width: 195px
+	&_size2
+		width: 155px
+	&_size3
+		width: 239px
+	&_size4
+		width: 242px
+	&_anim1
+		transform: perspective(1px) translateZ(0)
+		transition-duration: 0.3s
+		transition-property: transform, opacity
+		&:before
+			pointer-events: none;
+			position: absolute
+			z-index: -1
+			content: ''
+			top: 100%
+			left: 5%
+			height: 10px
+			width: 90%
+			opacity: 0
+			background: radial-gradient(ellipse at center, rgba(#ff6a19, 0.35) 0%, rgba(#92471e, 0) 80%)
+			transition-duration: 0.3s
+			transition-property: transform, opacity
+		&:hover
+			transform: translateY(-5px)
+			transition: all .3s ease
+			box-shadow: 0 3px 0 rgba(#92471e, 0)
+			&:before
+				opacity: 1
+				transform: translateY(5px)
+		&:focus
+			outline: none
+	&_anim2
+		transform: perspective(1px) translateZ(0)
+		transition-duration: 0.3s
+		transition-property: box-shadow, transform
+		&:hover
+			transform: scale(1.1)
+		&:focus
+			outline: none
+	&-order
+		display: block
+		font-size: 14px
+
+
+.main-service
+	display: inline-block
+	vertical-align: bottom
+	max-width: 370px
+	padding: 0 0 0 92px
+
+.service-list
+	text-align: left
+	&__item
+		position: relative
+		display: block
+		margin-bottom: 26px
+		font: 20px/1.1 $sec-font
+		transition: all .3s ease
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			transform: translate(0,-50%)
+		&:hover
+			color: $green
+		&_1
+			&:before
+				left: -50px
+				width: 31px
+				height: 40px
+				background: url(../img/wipes.png) 0 0 no-repeat
+		&_2
+			&:before
+				left: -48px
+				width: 35px
+				height: 45px
+				background: url(../img/drop-and-a-shield.png) 0 0 no-repeat
+		&_3
+			&:before
+				left: -48px
+				width: 34px
+				height: 34px
+				background: url(../img/vekt.png) 0 0 no-repeat
+		&_4
+			&:before
+				left: -52px
+				width: 40px
+				height: 22px
+				background: url(../img/car.png) 0 0 no-repeat
+		&_5
+			&:before
+				left: -48px
+				width: 28px
+				height: 40px
+				background: url(../img/seat.png) 0 0 no-repeat
+
+.section-adv
+	position: relative
+	background: url(../img/Layer-123.jpg) center top no-repeat
+	background-size: cover
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 1
+		background: rgba(#000, .6)
+
+.adv
+	position: relative
+	padding: 330px 0 458px
+	z-index: 2
+	&-title
+		margin-bottom: 22px
+		font-size: 83px
+		font-weight: 900
+		line-height: 63px
+	&-subtitle
+		display: inline-block
+		font-size: 46px
+		font-weight: 300
+		line-height: 1
+		color: #2c2c2c
+		span
+			display: table
+			padding: 5px 45px 19px 17px
+			background: $lightgreen
+			&:first-child
+				padding-bottom: 5px
+			&:last-child
+				padding-top: 0
+	&-item
+		position: absolute
+		max-width: 230px
+		font-size: 20px
+		font-weight: 500
+		line-height: 1.3
+		i
+			position: absolute
+			top: 5px
+			left: -50px
+			width: 20px
+			height: 20px
+			border-radius: 50%
+			box-shadow: 0 0 0 10px rgba(2, 225, 163, 0.3)
+			background: $lightgreen
+			transition: box-shadow .3s ease
+			&:before
+				content: ''
+				position: absolute
+				width: 0
+				height: 0
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+				transition: all .3s ease
+				border-radius: 50%
+				border: 2px solid #02e1a3
+			&:after
+				content: ''
+				position: absolute
+				width: 0
+				height: 0
+				+vcenter
+				border-radius: 50%
+				transition: all .5s ease
+		&:hover
+			i
+				&:before
+					width: 50px
+					height: 50px
+				&:after
+					width: 190px
+					height: 190px
+					background: radial-gradient(ellipse at center, rgba(#fff, 0.35) 0%, rgba(#fff, 0) 70%)
+		&_1
+			top: 13%
+			left: 51.3%
+		&_2
+			top: 15%
+			left: 81.8%
+			i
+				top: -14px
+		&_3
+			top: 35.7%
+			left: 81.8%
+		&_4
+			top: 63.9%
+			left: 81.8%
+		&_5
+			bottom: 8.2%
+			left: 71.5%
+			i
+				top: -37px
+				left: 0
+		&_6
+			bottom: 8.2%
+			left: 40.3%
+			i
+				top: -37px
+				left: 0
+		&_7
+			bottom: 27%
+			left: 20.8%
+			i
+				top: -37px
+				left: 0
+
+.section-about
+	padding: 170px 0 100px
+
+.about-item
+	margin-bottom: 110px
+	&:hover
+		.about-item__num
+			left: 45%
+	&__pict
+		position: relative
+		float: left
+		width: 325px
+		height: 265px
+		background: url(../img/Mario_De_Meyer_05.png) 0 0 no-repeat
+		background-size: 100% 100%
+	&__wrap
+		+vcenter
+		width: 240px
+		height: 190px
+		overflow: hidden
+		img
+			+vcenter
+			display: block
+			max-width: 100%
+	&__num
+		position: absolute
+		top: -17px
+		left: 49px
+		font-size: 46px
+		font-weight: 900
+		line-height: 1
+		color: $lightgreen
+		transition: all .3s ease
+	&__text
+		display: table
+		padding: 35px 0 0 24px
+		font-size: 18px
+		color: #d3d7e0
+		font-weight: 300
+		line-height: 1.2
+
+.section-port
+	padding: 100px 0 100px
+
+.port
+	&-title
+		display: inline-block
+		font-size: 72px
+		font-weight: 900
+	&-count
+		float: right
+		max-width: 505px
+	&-wrap
+		display: table
+		&__text
+			display: table-cell
+			vertical-align: middle
+			padding: 0 10px
+			text-align: right
+			font: 20px/1.1 $sec-font
+			&_mod
+				font-size: 30px
+		&__pict
+			display: table-cell
+			vertical-align: middle
+			width: 260px
+			img
+				max-width: 100%
+
+.gallery
+	margin-top: 25px
+	+clearfix
+	&-item
+		position: relative
+		float: left
+		width: 33.33%
+		overflow: hidden
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			transition: all .3s ease
+			background: rgba(#000, 0)
+		&:hover
+			&:before
+				background: rgba(#000, .7)
+		&:focus
+			outline: none
+		img
+			max-width: 100%
+
+.section-ceramic
+	position: relative
+	padding: 120px 0 100px
+	text-align: center
+	&__title
+		margin-bottom: 11px
+		img
+			display: inline-block
+			max-width: 100%
+	&__text
+		max-width: 750px
+		margin: 0 auto
+		font: 20px/1.2 $sec-font
+		color: #7f89a1
+
+.prlx2-item
+	position: absolute
+	&_1
+		top: 15% !important
+		left: 0% !important
+	&_2
+		top: 45% !important
+		left: 80% !important
+
+
+.ceramic
+	margin-top: 93px
+	&-item
+		float: left
+		width: 20%
+		padding-right: 15px
+		text-align: left
+		&__pict
+			position: relative
+			height: 110px
+			img
+				max-width: 100%
+		&__num
+			position: absolute
+			top: -20px
+			left: 26px
+			font-size: 24px
+			font-weight: 900
+			color: $lightgreen
+			line-height: 1
+			span
+				display: inline-block
+				vertical-align: top
+				font-size: 48px
+		&__title
+			margin-top: 32px
+			font-size: 20px
+			font-weight: 300
+
+.section-form
+	position: relative
+	padding: 118px 0 95px
+	background: url(../img/Mario_De_Meyer_041.jpg) center top no-repeat
+	background-size: cover
+
+.prlx3-item
+	position: absolute
+	&_1
+		top: 25% !important
+		left: -5% !important
+	&_2
+		top: 73% !important
+		left: 18% !important
+	&_3
+		top: 22% !important
+		left: 73% !important
+	&_4
+		top: 20% !important
+		left: 84% !important
+	&_5
+		top: 60% !important
+		left: 88% !important
+
+.form-block
+	display: table
+	max-width: 1138px
+	margin: 0 auto
+	padding: 119px 50px 130px 92px
+	background: url(../img/Mario_De_Meyer_042.png) 0 0 no-repeat
+	background-size: 100% 100%
+	&__text
+		display: table-cell
+		width: 33.4%
+		padding-right: 15px
+		font-size: 32px
+		font-weight: 900
+		line-height: 1.2
+	&__wrap
+		position: relative
+		display: table-cell
+		width: 66.6%
+	&__title
+		margin-bottom: 21px
+		font: 18px/1.2 $sec-font
+		color: #b4b8c3
+	input
+		display: inline-block
+		vertical-align: middle
+		width: 227px
+		height: 47px
+		padding-left: 20px
+		font-size: 20px
+		color: #000
+		outline: none
+		border: none
+
+.btn-form
+	display: inline-block
+	vertical-align: middle
+
+.section-info
+	padding: 212px 0 100px
+	background: url(../img/Layer-251.jpg) center top no-repeat
+	background-size: cover
+	&__title
+		font-size: 80px
+		font-weight: 900
+		color: #fefefe
+		line-height: 1.1
+	&__subtitle
+		display: inline-block
+		padding: 7px 10px 10px
+		font-size: 46px
+		line-height: 1
+		color: #2c2c2c
+		background: $lightgreen
+
+.info
+	padding-top: 127px
+	&-item
+		&:hover
+			.info-item__text
+				color: $lightgreen
+		&__pict
+			img
+				max-width: 100%
+		&__text
+			margin-top: 34px
+			font-size: 18px
+			font-weight: 300
+			color: #caceda
+			line-height: 1.2
+			transition: all .3s ease
+
+.section-service
+	padding: 50px 0 150px
+	&__title
+		margin-bottom: 38px
+		font-size: 50px
+		font-weight: 900
+		text-align: center
+
+.service
+	+clearfix
+	&-item
+		position: relative
+		float: left
+		width: 33.33%
+		height: 330px
+		padding: 40px 37px 20px
+		transition: all .3s ease
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			z-index: 0
+			background: rgba(#000, .5)
+		&:hover
+			transition: all .3s ease
+			background-size: auto 130% !important
+			.service-item__title
+				color: $lightgreen
+		&__title
+			position: relative
+			height: 125px
+			margin-bottom: 20px
+			font-size: 32px
+			font-weight: 700
+			line-height: .95
+			overflow: hidden
+			z-index: 1
+			transition: all .3s ease
+		&__text
+			position: relative
+			height: 87px
+			margin-bottom: 0
+			font: 18px/1.2 $sec-font
+			overflow: hidden
+			z-index: 1
+		&__price
+			position: absolute
+			bottom: 15px
+			left: 37px
+			font-size: 18px
+			font-weight: 300
+			line-height: 1.1
+			z-index: 1
+			span
+				font-size: 36px
+				color: $green
+
+.btn-download
+	display: block
+	margin: 68px auto 0
+
+.section-contact
+	position: relative
+
+@keyframes s-anim
+	10%
+		transform: translateX(3px) rotate(2deg)
+	20%
+		transform: translateX(-3px) rotate(-2deg)
+	30%
+		transform: translateX(3px) rotate(2deg)
+	40%
+		transform: translateX(-3px) rotate(-2deg)
+	50%
+		transform: translateX(2px) rotate(1deg)
+	60%
+		transform: translateX(-2px) rotate(-1deg)
+	70%
+		transform: translateX(2px) rotate(1deg)
+	80%
+		transform: translateX(-2px) rotate(-1deg)
+	90%
+		transform: translateX(1px) rotate(0)
+	100%
+		transform: translateX(-1px) rotate(0)
+
+.contact
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	width: 100%
+	height: 100%
+	max-width: 500px
+	margin: 0 auto
+	padding-top: 98px
+	text-align: center
+	z-index: 4
+	transition: all .2s ease
+	background: rgba(#000, 0)
+	&.active
+		display: none
+	&-title
+		margin-bottom: 46px
+		font-size: 50px
+		font-weight: 900
+	&-loc
+		position: relative
+		margin-bottom: 119px
+		font: 20px $sec-font
+		&:after
+			content: ''
+			position: absolute
+			bottom: -85px
+			left: 0
+			right: 0
+			width: 39px
+			height: 51px
+			margin: 0 auto
+			background: url(../img/placeholder-filled-point.png) 0 0 no-repeat
+	&-phone
+		display: inline-block
+		margin-right: 132px
+		font: 700 20px/1.1 $sec-font
+		color: #fff
+		text-align: left
+		&__link
+			&:hover
+				color: #fff
+		span
+			display: block
+			margin-bottom: 10px
+			font-weight: 400
+	&-work
+		display: inline-block
+		font: 700 20px/1.1 $sec-font
+		text-align: left
+		span
+			display: block
+			margin-bottom: 10px
+			font-weight: 400
+	&-social
+		margin: 64px 0 36px
+		&__link
+			position: relative
+			display: inline-block
+			vertical-align: middle
+			margin: 0 15px
+			font-size: 0
+			transform: perspective(1px) translateZ(0)
+			&:hover
+				animation: s-anim .5s ease-in-out
+			&_1
+				width: 33px
+				height: 34px
+				background: url(../img/skype-logo.png) 0 0 no-repeat
+			&_2
+				width: 30px
+				height: 28px
+				background: url(../img/telegram.png) 0 0 no-repeat
+
+.map
+	height: 698px
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 100%
+		height: 100%
+		transform: translate(-50%,-50%)
+		z-index: 3
+		transition: all .35s ease
+		background: rgba(#000, .8)
+	&.active
+		&:before
+			width: 0%
+			height: 0%
+			background: rgba(#000, 0)
+	iframe
+		height: 100%
+
+
+@import "footer"

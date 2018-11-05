@@ -1,0 +1,134 @@
+@import "vars"
+
+/*--------------Event page-------------*/
+.event
+	padding-bottom: 20px
+
+.event__wrap
+	.container
+		padding: 0 15px
+
+.grid
+	width: 1140px
+
+.grid__item
+	width: 270px
+	margin-bottom: 32px
+	outline: none
+	img
+		width: 100%
+	&.grid__item-w1
+		width: 550px
+
+.event__title
+	display: block
+	margin: 10px 0 3px
+	font-size: 20px
+	font-weight: 300
+	color: $main-color
+
+.event__descr
+	font-size: 13px
+	font-weight: 300
+	line-height: 22px
+	color: $main-color
+
+.event__modal
+	position: relative
+	display: block
+	width: 1110px
+	margin: 0 auto
+	padding: 37px 55px 60px
+	background: #fff
+	.mfp-close
+		display: none
+
+.nav__modal
+	position: relative
+	height: 38px
+	.nav__btn
+		position: absolute
+		width: 266px
+		height: 38px
+		font-size: 12px
+		font-weight: 600
+		color: #fff
+		text-transform: uppercase
+		outline: none
+		cursor: pointer
+		border: none
+		border-radius: 60px
+		background: $r-color1
+		i
+			position: relative
+			display: inline-block
+			top: 2px
+	.prev__mod
+		left: 0
+		i
+			margin-right: 20px
+			@include sprite($arrow-left)
+	.next__mod
+		right: 0
+		i
+			margin-left: 20px
+			@include sprite($arrow-right)
+
+.modal__title
+	display: block
+	margin: 30px 0 42px
+	font-size: 36px
+	font-weight: 300
+	line-height: 42px
+
+.modal__descr
+	font-size: 14px
+	line-height: 22px
+	p
+		margin: 0
+
+.modal__slider
+	margin-top: 45px
+	.owl-controls
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		width: 100%
+		height: 44px
+		background: #8d65ab
+	.owl-nav
+		position: absolute
+		bottom: 34px
+		left: 0
+		right: 0
+		width: 100%
+		font-size: 0
+		z-index: 15
+		.owl-prev
+			position: absolute
+			left: 15px
+			@include sprite($arrow-prev)
+		.owl-next
+			position: absolute
+			right: 15px
+			@include sprite($arrow-next)
+	.owl-dots
+		position: absolute
+		bottom: 12px
+		left: 0
+		right: 0
+		text-align: center
+		.owl-dot
+			display: inline-block
+			margin: 0 8px
+			&.active
+				span
+					background: $main-color
+			span
+				display: block
+				width: 6px
+				height: 6px
+				border-radius: 50%
+				background: #fff
+/*-----------------end-----------------*/

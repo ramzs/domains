@@ -1,0 +1,150 @@
+@import "vars"
+
+/*----------------Service page-------------------*/
+.content--service
+	padding-bottom: 260px
+
+.sidebar
+	float: left
+	width: 270px
+	padding: 25px 0 14px 43px
+	background: #2d2d2d
+
+.second-menu
+	&--mob
+		display: none
+	&__item
+		position: relative
+		display: block
+		margin-bottom: 13px
+		&:before
+			content: ' '
+			position: absolute
+			top: 3px
+			left: -25px
+			@include sprite($circle-ico)
+		&:hover, &.active
+			&:before
+				@include sprite($circle-ico-active)
+		a
+			display: block
+			font-size: 16px
+			font-weight: 800
+			font-style: italic
+			color: #fff
+
+.main
+	float: left
+	width: 840px
+
+.wrap-menu
+	display: none
+	margin: 0 -12px
+	text-align: center
+	background: #2d2d2d
+
+.slider-content
+	margin: 56px 0 20px
+	.slick-prev
+		left: 13px
+	.slick-next
+		right: 13px
+	.slick-dots
+		bottom: -25px
+		li
+			button
+				width: 9px
+				height: 9px
+				border: none
+				background: #000
+			&.slick-active
+				button
+					background: #eee70f
+
+.service-text
+	margin-top: 60px
+	font: 16px/28px "opensans"
+	&__accent
+		margin-bottom: 24px
+		font: 800 italic 16px/28px "panton"
+		text-align: center
+
+.service-price
+	margin-top: 39px
+	&__title
+		margin-bottom: 21px
+		font-size: 16px
+		font-weight: 800
+		font-style: italic
+		line-height: 28px
+
+.price-item
+	padding: 17px 0 12px
+	border-bottom: 1px solid #cdcdcd
+	&:first-child
+		border-top: 1px solid #cdcdcd
+
+.price-descr
+	display: inline-block
+	width: 60%
+	&__title
+		margin-bottom: 4px
+		font-size: 16px
+		font-weight: 800
+		font-style: italic
+	&__text
+		font: 14px/22px "opensans"
+
+.price-box
+	float: right
+	margin-top: 2px
+	&__in
+		display: inline-block
+		vertical-align: middle
+		margin-right: 12px
+		font-size: 26px
+		font-weight: 300
+		font-style: italic
+		span
+			font-size: 18px
+	&__btn
+		display: inline-block
+		width: 115px
+		height: 37px
+		vertical-align: middle
+		font-size: 14px
+		font-weight: 800
+		font-style: italic
+		text-transform: uppercase
+		text-align: center
+		line-height: 37px
+		background: #eee70f
+
+.service-about
+	margin-top: 78px
+	font: 14px/22px "opensans"
+	p
+		margin-bottom: 13px
+	&__title
+		margin-bottom: 30px
+		font: 800 italic 24px "panton"
+		text-transform: uppercase
+	&__video
+		position: relative
+		max-width: 645px
+		margin: 34px 0 32px
+		padding-bottom: 56.25%
+		padding-top: 30px
+		overflow: hidden
+		iframe
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+
+	&__accent
+		margin-top: 22px
+		font: 800 italic 24px "panton"
+		text-transform: uppercase
+/*---------------------end------------------------*/

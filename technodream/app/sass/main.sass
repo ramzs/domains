@@ -1,0 +1,682 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+@import "header"
+
+.section-welcome
+	position: relative
+	background: #000
+
+.arrows-wrap
+	position: absolute
+	left: 0
+	right: 0
+	max-width: 1366px
+	width: 100%
+	margin: 0 auto
+	height: 700px
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -24px
+		padding: 0
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&:hover
+			opacity: 1
+		&.slick-prev
+			left: 0
+			@include sprite($arrow-left)
+			&:hover
+				@include sprite($arrow-left-h)
+		&.slick-next
+			right: 0
+			@include sprite($arrow-right)
+			&:hover
+				@include sprite($arrow-right-h)
+
+.slider-home
+	.slider-item
+		height: 700px
+		outline: none
+		img
+			display: block
+			max-width: 1920px
+
+.slider-caption
+	padding-top: 110px
+	color: #fff
+	&__wrap
+		display: inline-block
+		max-width: 630px
+	&__model
+		display: block
+		margin-bottom: 14px
+		font: 30px "eurofurence"
+		text-shadow: 0 0 20px #000;
+	&__slogan
+		display: block
+		margin-bottom: 13px
+		font: 70px "eurofurence"
+		text-shadow: 0 0 20px #000;
+	&__descr
+		font-size: 18px
+		font-weight: 300
+		text-shadow: 0 0 20px #000;
+
+.button
+	display: block
+	width: 216px
+	height: 54px
+	margin-top: 34px
+	font-size: 16px
+	color: #fff
+	line-height: 52px
+	text-transform: uppercase
+	text-shadow: 0 0 20px #000;
+	text-align: center
+	border: 2px solid #ffa100
+	background: none
+	&:hover
+		color: #fff
+		background: $accent
+		text-shadow: none
+	&:focus
+		color: #fff
+		text-decoration: none
+		text-shadow: none
+
+.block-accent
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	max-width: 1320px
+	margin: 0 auto
+	padding-bottom: 19px
+	&__title
+		display: block
+		margin-bottom: 22px
+		font-size: 20px
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		text-shadow: 0 0 20px #000;
+
+.cl-day
+	.cl-item
+		outline: none
+		&.slick-current
+			.tovar-d__descr
+				color: $accent
+	.slick-arrow
+		position: absolute
+		top: 40%
+		margin-top: -10px
+		padding: 0
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&.slick-prev
+			left: 5px
+			@include sprite($arrow-l)
+		&.slick-next
+			right: 5px
+			@include sprite($arrow-r)
+		&:hover
+			opacity: 1
+			&.slick-prev
+				@include sprite($arrow-l-h)
+			&.slick-next
+				@include sprite($arrow-r-h)
+
+.tovar-d
+	max-width: 218px
+	margin: 0 2px
+	&__pict
+		position: relative
+		display: block
+		width: 100%
+		height: 128px
+		overflow: hidden
+		border: 2px solid #ffa100
+		background-color: #fff
+		img
+			+vcenter
+			max-width: 100%
+			padding: 27px
+	&__descr
+		display: block
+		margin-top: 7px
+		font-size: 14px
+		color: #fff
+		text-align: center
+		outline: none
+		&:focus
+			outline: none
+	&:hover
+		.tovar-d__descr
+			color: $accent
+
+.section-category
+	padding: 50px 0 20px
+	text-align: center
+
+.cl-category
+	.cl-item
+		outline: none
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -10px
+		padding: 0
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&.slick-prev
+			left: -15px
+			@include sprite($arrow-l)
+		&.slick-next
+			right: -15px
+			@include sprite($arrow-r)
+		&:hover
+			opacity: 1
+			&.slick-prev
+				@include sprite($arrow-l-h)
+			&.slick-next
+				@include sprite($arrow-r-h)
+
+
+.icon-item
+	position: relative
+	display: inline-block
+	max-width: 195px
+	width: 100%
+	padding: 22px 10px 15px
+	i
+		display: block
+		width: 89px
+		height: 71px
+		margin: 0 auto
+	&_1
+		i
+			background: url(../img/cat-1.png) bottom center no-repeat
+	&_2
+		i
+			background: url(../img/cat-2.png)bottom center no-repeat
+	&_3
+		i
+			background: url(../img/cat-3.png)bottom center no-repeat
+	&_4
+		i
+			background: url(../img/cat-4.png)bottom center no-repeat
+	&_5
+		i
+			background: url(../img/cat-5.png)bottom center no-repeat
+	&_6
+		i
+			background: url(../img/cat-6.png)bottom center no-repeat
+	span
+		display: block
+		margin-top: 24px
+		font-size: 16px
+		color: $blue
+	&:hover
+		background: $blue
+		&.icon-item_1
+			i
+				background: url(../img/cat-1-h.png) bottom center no-repeat
+		&.icon-item_2
+			i
+				background: url(../img/cat-2-h.png) bottom center no-repeat
+		&.icon-item_3
+			i
+				background: url(../img/cat-3-h.png) bottom center no-repeat
+		&.icon-item_4
+			i
+				background: url(../img/cat-4-h.png) bottom center no-repeat
+		&.icon-item_5
+			i
+				background: url(../img/cat-5-h.png) bottom center no-repeat
+		&.icon-item_6
+			i
+				background: url(../img/cat-6-h.png) bottom center no-repeat
+		span
+			color: #fff
+
+.section
+	padding: 25px 0 30px
+
+.section-title
+	position: relative
+	display: block
+	margin-bottom: 35px
+	font-size: 28px
+	letter-spacing: 0.1px
+	text-align: center
+	text-transform: uppercase
+	&:after
+		content: ''
+		position: absolute
+		bottom: 17px
+		left: auto
+		right: 0
+		width: 100%
+		height: 1px
+		background: #dedede
+	span
+		position: relative
+		display: inline-block
+		padding: 0 18px
+		z-index: 10
+		background: #fff
+
+.news-all
+	position: relative
+	display: block
+	bottom: -5px
+	width: 240px
+	height: 40px
+	font: 16px/40px "eurofurence"
+	color: #fff
+	text-align: center
+	text-transform: uppercase
+	background: $blue
+	i
+		position: relative
+		display: inline-block
+		top: 6px
+		right: 0
+		transition: all .25s ease
+		margin-left: 15px
+		@include sprite($arrow-title)
+	&:hover
+		color: #fff
+		i
+			position: relative
+			right: -10px
+	&:focus
+		color: #fff
+		text-decoration: none
+
+.news-block
+	padding: 25px 0 20px
+	border-top: 5px solid $blue
+	background: #fafcff
+	+clearfix
+
+.cl-news
+	.cl-item
+		outline: none
+		&.slick-active
+			&:not(:last-of-type)
+				.news-item__text:after
+					content: ''
+					position: absolute
+					top: 0
+					right: -15px
+					width: 1px
+					height: 120px
+					background: #b6c4d0
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -10px
+		padding: 0
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&.slick-prev
+			left: -15px
+			@include sprite($arrow-l)
+		&.slick-next
+			right: -15px
+			@include sprite($arrow-r)
+		&:hover
+			opacity: 1
+			&.slick-prev
+				@include sprite($arrow-l-h)
+			&.slick-next
+				@include sprite($arrow-r-h)
+
+.news-item
+	padding: 0 15px
+	&__title
+		display: table
+		height: 58px
+		margin-bottom: 27px
+		overflow: hidden
+		font-size: 16px
+		font-weight: 700
+		color: $dark-blue
+		letter-spacing: -0.25px
+		text-transform: uppercase
+		p
+			display: table-cell
+			vertical-align: middle
+	&__date
+		float: left
+		font-size: 18px
+		color: $dark-blue
+		text-align: center
+		span
+			display: block
+			font: 300 36px/1 "roboto"
+	&__text
+		position: relative
+		display: table
+		padding-left: 14px
+		font-size: 14px
+		font-weight: 300
+		color: #686868
+
+.cl-tovar
+	.slick-list
+		padding: 5px 10px
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -10px
+		padding: 0
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&.slick-prev
+			left: -7px
+			@include sprite($arrow-l)
+		&.slick-next
+			right: -7px
+			@include sprite($arrow-r)
+		&:hover
+			opacity: 1
+			&.slick-prev
+				@include sprite($arrow-l-h)
+			&.slick-next
+				@include sprite($arrow-r-h)
+
+.tovar-item
+	position: relative
+	max-width: 231px
+	height: 315px
+	margin: 0 1px
+	padding: 0 15px
+	text-align: center
+	border: 1px solid #ebebeb
+	background: #fff
+	&:hover
+		z-index: 10
+		box-shadow: 0 2px 12px 3px rgba(56, 56, 56, 0.3)
+	&__stick
+		position: absolute
+		top: 12px
+		left: 10px
+		font: 14px "eurofurence"
+		text-transform: uppercase
+	&__avbl
+		position: absolute
+		top: 9px
+		right: 10px
+		font-size: 13px
+		color: $blue
+	&__pict
+		position: relative
+		display: block
+		height: 192px
+		overflow: hidden
+		outline: none
+		img
+			+vcenter
+			max-width: 100%
+	&__title
+		display: block
+		height: 32px
+		margin-bottom: 12px
+		overflow: hidden
+		font-size: 14px
+		color: $light-blue
+		text-transform: uppercase
+		outline: none
+		&:hover
+			color: $light-blue
+			text-decoration: underline
+		&:focus
+			color: $light-blue
+			text-decoration: none
+	&__sale
+		display: none
+		position: relative
+		float: left
+		top: -3px
+		font-size: 13px
+		color: $green
+		span
+			display: block
+			color: #9b9b9b
+			text-decoration: line-through
+	&__price
+		display: block
+		font-size: 20px
+		color: #202020
+		&_red
+			color: #e90000
+	&__footer
+		position: absolute
+		bottom: 15px
+		left: 0
+		right: 0
+		text-align: center
+	&__icon
+		display: inline-block
+		margin: 0 4.5%
+		&_favorite
+			width: 27px
+			height: 24px
+			background: url(../img/favorite.png) center no-repeat
+			background-size: 100%
+			&:hover
+				width: 27px
+				height: 24px
+				background: url(../img/favorite-h.png) center no-repeat
+				background-size: 100%
+		&_compare
+			width: 30px
+			height: 25px
+			background: url(../img/compare.png) center no-repeat
+			background-size: 100%
+			&:hover
+				width: 30px
+				height: 25px
+				background: url(../img/compare-h.png) center no-repeat
+				background-size: 100%
+		&_cart
+			width: 27px
+			height: 25px
+			background: url(../img/cart.png) center no-repeat
+			background-size: 100%
+			&:hover
+				width: 27px
+				height: 25px
+				background: url(../img/cart-h.png) center no-repeat
+				background-size: 100%
+		&_quick
+			width: 33px
+			height: 24px
+			background: url(../img/eye.png) center no-repeat
+			background-size: 100%
+			&:hover
+				width: 33px
+				height: 24px
+				background: url(../img/eye-h.png) center no-repeat
+				background-size: 100%
+	&_new
+		.tovar-item__stick
+			color: $blue
+	&_sale
+		.tovar-item__stick
+			color: $green
+	&_hot
+		.tovar-item__stick
+			color: $red
+	&_not
+		.tovar-item__avbl
+			color: #cacaca
+		.tovar-item__icon_quick
+			display: none
+	&_sale
+		.tovar-item__sale
+			display: block
+		.tovar-item__price
+			float: right
+
+.cl-about
+	text-align: center
+	.cl-item
+		display: inline-block
+		width: 25%
+		vertical-align: top
+		margin-bottom: 50px
+		outline: none
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -10px
+		padding: 0
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&.slick-prev
+			left: -15px
+			@include sprite($arrow-l)
+		&.slick-next
+			right: -15px
+			@include sprite($arrow-r)
+		&:hover
+			opacity: 1
+			&.slick-prev
+				@include sprite($arrow-l-h)
+			&.slick-next
+				@include sprite($arrow-r-h)
+
+.about-item
+	position: relative
+	display: inline-block
+	i
+		display: block
+		width: 93px
+		height: 78px
+		margin: 0 auto
+	span
+		display: block
+		margin-top: 10px
+		font-size: 16px
+		color: #686868
+	&_1
+		i
+			background: url(../img/adv-1.png) bottom center no-repeat
+	&_2
+		i
+			background: url(../img/adv-2.png) bottom center no-repeat
+	&_3
+		i
+			background: url(../img/adv-3.png) bottom center no-repeat
+	&_4
+		i
+			background: url(../img/adv-4.png) bottom center no-repeat
+	&_5
+		i
+			background: url(../img/adv-5.png) bottom center no-repeat
+	&_6
+		i
+			background: url(../img/adv-6.png) bottom center no-repeat
+	&_7
+		i
+			background: url(../img/adv-7.png) bottom center no-repeat
+	&_8
+		i
+			background: url(../img/adv-8.png) bottom center no-repeat
+
+.cl-brend
+	padding: 25px 0 0
+	text-align: center
+	.cl-item
+		display: inline-block
+		vertical-align: middle
+		width: 25%
+		margin-bottom: 50px
+		outline: none
+		img
+			display: inline-block
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -10px
+		padding: 0
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&.slick-prev
+			left: -15px
+			@include sprite($arrow-l)
+		&.slick-next
+			right: -15px
+			@include sprite($arrow-r)
+		&:hover
+			opacity: 1
+			&.slick-prev
+				@include sprite($arrow-l-h)
+			&.slick-next
+				@include sprite($arrow-r-h)
+
+
+.brend-item
+	padding: 0 15px
+	text-align: center
+	img
+		max-width: 100%
+
+.section-map
+	height: 420px
+	padding: 5px 0
+	border-top: 1px solid #dedede
+	iframe
+		height: 100%
+
+
+@import "footer"
+@import "pay"
+@import "contact"
+@import "catalog"
+@import "cart"
+@import "tovar"

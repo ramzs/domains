@@ -1,0 +1,96 @@
+@import "vars"
+
+/*-------------Tovar page-----------------*/
+.content--inner
+	padding: 55px 0 50px
+
+.sidebar--inner
+	width: 26.6%
+	padding: 14px 0 0 40px
+	text-align: left
+
+.tovar-name
+	margin-bottom: 48px
+	font-size: 30px
+	font-weight: 800
+	color: #ff0000
+
+.tovar-pict
+	width: 278px
+	margin-bottom: 37px
+	img
+		display: block
+		width: 100%
+
+.tovar-menu
+	&__title
+		margin-bottom: 17px
+		font-size: 20px
+		font-weight: 700
+
+.menu-list
+	li
+		display: block
+		margin-bottom: 22px
+		a
+			display: block
+			font-size: 20px
+			color: #004eff
+			letter-spacing: 1px
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+
+.main--inner
+	width: 73.4%
+
+.tovar-text
+	font-size: 20px
+	text-align: left
+	p
+		margin-bottom: 20px
+	&__title
+		margin-bottom: 8px
+		font-weight: 700
+	a
+		color: #0034ff
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+.tovar-descr
+	&--mob
+		display: none
+
+.tovar-carousel
+	margin: 27px 50px 34px 25px
+	.slick-arrow
+		position: absolute
+		top: 50%
+		padding: 0
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		transform: translate(0, -50%)
+		border: none
+		background: none
+		&:hover
+			opacity: 1
+		&.slick-prev
+			left: -20px
+			@include sprite($arrow-left-c)
+		&.slick-next
+			right: -20px
+			@include sprite($arrow-right-c)
+	.carousel-item
+		text-align: center
+		outline: none
+		&__pict
+			display: block
+			outline: none
+			img
+				display: block
+				width: 100%
+/*-----------------end--------------------*/

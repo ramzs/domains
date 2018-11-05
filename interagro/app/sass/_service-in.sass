@@ -1,0 +1,82 @@
+/*-------------Service-in page----------------*/
+.sl-service-in
+	margin-bottom: 48px
+	.sl-item
+		img
+			max-width: 100%
+	.slick-dots
+		position: absolute
+		bottom: 30px
+		left: 0
+		right: 0
+		text-align: center
+		li
+			display: inline-block
+			margin: 0 2px
+			button
+				display: block
+				width: 11px
+				height: 11px
+				padding: 0
+				font-size: 0
+				cursor: pointer
+				outline: none
+				border: none
+				border-radius: 50%
+				border: 1px solid $accent
+				background: none
+			&.slick-active
+				button
+					background: $accent
+
+.service-in
+	padding-bottom: 28px
+	font-size: 18px
+	font-weight: 300
+	color: #494949
+	h2
+		display: block
+		margin-bottom: 16px
+		font-size: 30px
+		font-weight: 700
+	p
+		margin-bottom: 25px
+	p, ul
+		a
+			font-size: 18px
+			font-weight: 700
+			color: #004eff
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	> img
+		display: block
+		width: 100%
+		margin-bottom: 25px
+	> ul
+		margin-bottom: 64px
+		padding-left: 30px
+		list-style-type: disc
+		li
+			display: block
+			margin-bottom: 7px
+			font-size: 18px
+			font-weight: 700
+			color: #000
+	&-accent
+		max-width: 570px
+		margin: 40px auto
+		+clearfix
+		img
+			float: left
+		p
+			display: table
+			padding-left: 20px
+	&-picts
+		margin: 37px -1px 43px
+		+clearfix
+		img
+			float: left
+			width: 49.5%
+			margin: 0 1px
+/*------------------end-----------------------*/

@@ -1,0 +1,86 @@
+@import "vars.sass"
+/*-----------------Service-1 page---------------*/
+.content__page
+	&.content__page-services
+		padding-bottom: 70px
+		background: url(../img/work-bg.jpg) center top no-repeat
+
+.service__block
+	margin-top: 44px
+
+.service__item
+	margin-bottom: 40px
+	.item__img
+		float: left
+		width: 470px
+		height: auto
+		overflow: hidden
+		img
+			width: 100%
+	.item__descr
+		display: table
+		padding-left: 95px
+		.item__title
+			display: block
+			margin-bottom: 20px
+			font-size: 18px
+			font-weight: 700
+			color: #ff4800
+		ul
+			li
+				position: relative
+				margin-bottom: 2px
+				padding-left: 12px
+				&:before
+					content: ' '
+					position: absolute
+					top: 7px
+					left: 0
+					width: 5px
+					height: 5px
+					border-radius: 50%
+					background: #ff4800
+
+.info__link
+	display: block
+	width: 224px
+	height: 44px
+	margin-top: 26px
+	font-size: 14px
+	font-weight: 700
+	line-height: 40px
+	color: #842326
+	text-align: center
+	text-transform: uppercase
+	border: 2px solid #842326
+	transition: all .15s ease
+	&:hover
+		color: #fff
+		background: #842326
+	&.info__link-black
+		color: #333
+		border: 2px solid #333
+		&:hover
+			color: #fff
+			background: #333
+
+.bottom__title
+	margin-bottom: 35px
+	font-size: 30px
+	font-weight: 600
+	text-align: center
+.bottom__item
+	.item__descr
+		float: left
+		width: 42%
+		.item__title
+			display: block
+			margin-bottom: 20px
+			font-size: 18px
+			font-weight: 700
+			color: #ff4800
+	.item__map
+		float: right
+		img
+			width: 100%
+/*----------------------end---------------------*/

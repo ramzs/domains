@@ -1,0 +1,130 @@
+@import "vars"
+
+/*-------------Contact page----------------*/
+.header-main--inner
+	position: absolute
+	left: 0
+	right: 0
+	height: 1079px
+	background: none
+	background-image: linear-gradient(to top, rgba(255,255,255, .44) -30%, rgba(0,198,211, .7))
+	&:before
+		display: none
+
+.wrapper
+	position: relative
+	margin-top: 290px
+	padding-bottom: 125px
+
+.content
+	float: right
+	width: 92.5%
+	padding-bottom: 40px
+	background: rgba(255,255,255, .9)
+
+.breadcrumb
+	margin-left: 192px
+	padding: 22px 0
+	&-list
+		li
+			position: relative
+			display: inline-block
+			margin-right: 20px
+			font-size: 14px
+			color: $accent
+			&:not(:last-child):after
+				content: ' '
+				position: absolute
+				top: 5px
+				right: -13px
+				@include sprite($bread-arrow)
+			a
+				display: block
+				font-size: 14px
+				color: $sec-color
+				&:hover
+					color: $accent
+
+.sidebar
+	float: left
+	width: 33.5%
+	&-pict
+		position: relative
+		width: 650px
+		height: 435px
+		margin-left: -131px
+		overflow: hidden
+		img
+			display: block
+			width: 100%
+
+.sidebar-menu
+	margin-top: 55px
+	padding-left: 184px
+	overflow: hidden
+	li
+		position: relative
+		display: block
+		margin-bottom: 13px
+		&:before
+			content: ' '
+			position: absolute
+			top: 2px
+			left: -40px
+			width: 19px
+			height: 19px
+			z-index: 1
+			border: 1px solid $sec-color
+			border-radius: 50%
+			// background: rgba(255,255,255, .9)
+		&:after
+			content: ' '
+			position: absolute
+			top: 12px
+			left: -184px
+			width: 146px
+			height: 1px
+			background: $sec-color
+		&:hover, &.active
+			a
+				color: $accent
+			&:before
+				border-color: $accent
+			&:after
+				background: $accent
+		a
+			display: inline-block
+			font-size: 18px
+			font-weight: 700
+			color: $sec-color
+			text-transform: uppercase
+
+.main
+	float: left
+	width: 66.5%
+	margin-top: -10px
+	padding: 0 15px 0 35px
+
+.section-title
+	&--inner
+		text-align: left
+	&--mob
+		display: none
+
+.main-text
+	margin-top: 38px
+	&__title
+		display: block
+		margin: 31px 0 15px
+		font-size: 24px
+		font-weight: 700
+		font-style: italic
+		color: $accent
+		text-transform: uppercase
+		&--noupper
+			text-transform: none
+	p
+		margin-bottom: 35px
+		font-size: 16px
+		line-height: 30px
+/*----------------end----------------------*/

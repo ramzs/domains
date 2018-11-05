@@ -1,0 +1,43 @@
+/*----------------Event page---------------*/
+.event
+	padding-bottom: 33px
+
+.event-item
+	margin-bottom: 30px
+	&__date
+		position: relative
+		margin-bottom: 12px
+		padding-left: 30px
+		font-size: 12px
+		font-weight: 300
+		color: #a2cb61
+		&:before
+			content: ''
+			position: absolute
+			top: -4px
+			left: 0
+			@include sprite($data-green)
+	&__pict
+		margin-bottom: 30px
+		img
+			display: block
+			width: 100%
+	&__title
+		display: block
+		margin-bottom: 18px
+		font-size: 22px
+		font-weight: 700
+		&:hover
+			color: $accent
+	&__text
+		margin-bottom: 14px
+		font-size: 20px
+		font-weight: 300
+	&__more
+		font-size: 16px
+		font-weight: 700
+		color: #008aff
+		&:hover
+			color: #008aff
+			text-decoration: underline
+/*-------------------end-------------------*/

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="page">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="page-title">Контакты</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-5">
+					<div class="contact">
+						<div class="contact-item">
+							<div class="contact-item__location">г. Москва, улица Бахчисарайская 113, дом 2</div>
+						</div>
+						<div class="contact-item">
+							<div class="contact-item__phone">Номер телефона: 8 (495) 66-55-292</div>
+							<div class="contact-item__email">Почта: onyx@gmail.com</div>
+						</div>
+						<form action="#" class="contact-form">
+							<div class="contact-form__title">Обратная связь</div>
+							<fieldset>
+								<input type="text" name="name" placeholder="Имя">
+								<input type="text" name="phone" placeholder="Телефон">
+							</fieldset>
+							<textarea name="message" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+							<button class="contact-form__btn">Отправить</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-7">
+					<div class="map">
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6af73f8ab8a1fc9b33067dbd08b68b315e94fd98aa56c7ee38aad5f037b9b6c0&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

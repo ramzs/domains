@@ -1,0 +1,1116 @@
+@import "bourbon"
+@import "grid"
+@import "vars"
+@import "sprite"
+
+@media only screen and (max-width : 1625px)
+	.header__topline
+		text-align: right
+
+	.topline__city
+		.city__change
+			margin-left: 0
+
+	.topline__right
+		margin-left: 75px
+
+	.header__main
+		text-align: left
+
+	.header__nav
+		margin-left: 18px
+
+	.header__menu
+		.menu__item
+			margin: 0 16px
+
+	.content
+		.container
+			padding: 0 45px
+
+	.sidebar__left
+		width: 16%
+
+	.main__center
+		width: 61.7%
+		padding: 0 60px 0 35px
+
+	.sidebar__right
+		width: 22.3%
+		text-align: left
+
+	.sidebar__slider
+		margin: 0
+
+
+	/*--------------Build page-------------*/
+	.product__cart
+		.product__price
+			margin-right: 188px
+	/*-----------------end------------------*/
+
+	/*--------------News page----------------*/
+	.main__center
+		&.main__center-news
+			padding-left: 70px
+
+	.page__title
+		&.page__title-news
+			margin-left: 195px
+	/*-----------------end--------------------*/
+
+	/*---------------Feedback page------------------*/
+	.main__center
+		&.main__center-feedback
+			width: 84%
+	/*-------------------end------------------------*/
+
+	/*---------------Consult page------------------*/
+	.main__center
+		&.main__center-consult
+			padding: 0 62px 0 18px
+	/*-------------------end------------------------*/
+
+	/*----------------Pay page----------------------*/
+	.pay__banner
+		max-width: 100%
+		margin-left: 0
+
+	.pay__block
+		padding-left: 50px
+	/*------------------end-------------------------*/
+
+	/*----------------Contact page-------------------*/
+	.content
+		&.content__inner-contact
+			padding-bottom: 51px
+	/*--------------------end------------------------*/
+
+@media only screen and (max-width : 1366px)
+	.header__logo
+		width: 200px
+
+	.header__nav
+		margin-top: 25px
+
+	.header__menu
+		.menu__item
+			margin: 0 10px
+
+	.btn
+		&.btn__callback
+			margin-top: 16px
+
+	.slider__accent
+		width: 71%
+		.accent__title
+			font-size: 34px
+		.accent__text
+			font-size: 16px
+
+	.header__carousel
+		.container
+			max-width: 1170px
+
+	.content
+		.container
+			padding: 0 20px
+
+	.sidebar__left
+		width: 18%
+
+	.team__list
+		li
+			padding-left: 50px
+			img
+				left: 20px
+
+	.main__center
+		width: 59.7%
+		padding: 0 30px
+
+	.product__descr
+		padding-left: 20px
+
+	.sidebar__slider
+		.slick-arrow
+			width: 25px
+			opacity: .5
+			&:hover
+				opacity: 1
+			&.slick-prev
+				left: 0
+			&.slick-next
+				right: 0
+
+	.news__pict
+		max-width: 415px
+
+	footer
+		.container
+			max-width: 1170px
+
+	.footer__left
+		width: 61%
+		padding-left: 0
+
+	.footer__main
+		width: 39%
+		padding-left: 30px
+
+	.footer__contact
+		float: right
+		margin-left: 0
+
+	.copyright
+		margin-top: 90px
+
+	/*--------------Material page--------------*/
+	.select__block
+		.sel__in
+			span
+				margin-right: 0
+			&.sel__in-2
+				span
+					margin-right: 0
+			&.sel__in-3
+				span
+					margin-right: 3px
+	/*-------------------end--------------------*/
+
+	/*--------------Build page-------------*/
+	.product__cart
+		.product__price
+			margin-right: 110px
+	/*-----------------end------------------*/
+
+	/*--------------News page----------------*/
+	.main__center
+		&.main__center-news
+			padding: 0
+	/*-----------------end--------------------*/
+
+	/*---------------Feedback page------------------*/
+	.main__center
+		&.main__center-feedback
+			width: 82%
+	/*-------------------end------------------------*/
+
+
+@media only screen and (max-width : 1200px)
+	.header__topline
+		height: 55px
+
+	.menu__btn
+		display: block
+		float: left
+
+	.topline__city
+		display: none
+
+	.topline__phone
+		display: none
+
+	.topline__email
+		display: none
+
+	.topline__right
+		margin-left: 0
+
+	.topline__search
+		.search__in
+			right: -65px
+
+	.cart__mob
+		display: inline-block
+
+	.topline__cart
+		display: none
+
+	.header__main
+		display: none
+
+	/*--------------Menu mobile----------------*/
+	.menu__overlay
+		display: none
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 997
+
+	.header__nav
+		&.header__nav-mob
+			display: block
+			position: absolute
+			width: 400px
+			top: 55px
+			left: -100%
+			bottom: 291px
+			margin: 0
+			padding: 32px 25px 0 32px
+			transition: left 0.2s ease-out
+			box-shadow: 4px 37.8px 45.9px 8.1px rgba(0, 0, 0, 0.35)
+			background: #fff
+			z-index: 998
+			&.open
+				left: 0
+
+	.header__menu
+		width: 100%
+		padding-bottom: 41px
+		border-bottom: 3px solid #0081bc
+		.menu__item
+			display: block
+			margin: 0
+			text-align: left
+			.menu__link
+				padding: 7.5px 10px
+				font-size: 18px
+				background: linear-gradient(180deg, rgb(245, 245, 245) 0%, rgb(217, 217, 217) 70%)
+				&:hover
+					text-decoration: none
+			&.active
+				.menu__link
+					text-decoration: none
+					background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(217, 217, 217) 100%)
+
+	.menu__drop
+		&.menu__drop-mob
+			position: relative
+			max-width: 100%
+			padding: 18px 15px 17px
+			background: linear-gradient(3deg, rgb(151, 206, 248) 0%, rgb(0, 123, 217) 70%)
+			.drop__item
+				margin-bottom: 25px
+				white-space: normal
+
+	.menu__service
+		&.menu__service-mob
+			margin-top: 37px
+			text-align: left
+			.service__list
+				margin-top: 24px
+				li
+					margin-bottom: 28px
+					a
+						&:hover
+							text-decoration: none
+	/*------------------end---------------------*/
+
+	.header__logo
+		float: none
+		&.header__logo-mob
+			display: block
+			position: absolute
+			top: -16px
+			left: 0
+			right: 0
+			width: 225px
+			margin: 0 auto
+
+	.header__slider
+		.slick-list
+			height: 255px
+
+	.slider__caption
+		overflow: hidden
+		height: 100%
+		.container
+			max-width: 970px
+
+	.slider__accent
+		width: 80%
+		margin: 60px 0 0 0
+		padding: 7px 220px 10px 0
+		&:before
+			content: ' '
+			position: absolute
+			width: 200px
+			height: 100%
+			top: 0
+			left: -200px
+			background: rgba(22,22,22, .85)
+		.accent__title
+			font-size: 26px
+		.accent__text
+			padding-left: 27px
+			font-size: 11px
+			p
+				&:before
+					left: -25px
+					@include sprite($slider-ico-mob)
+		&.slider__accent-outer
+			width: auto
+			height: 89px
+			padding: 0 50px
+			&:before
+				background: rgba(28,28,28, .55)
+			.accent__text
+				font-size: 20px
+				p
+					&:before
+						left: -25px
+
+	.stick
+		width: 242px
+		height: 218px
+		top: 18px
+		right: 0
+		padding: 5px
+		&:before
+			top: 5px
+			@include sprite($slider-ico-2mob)
+		.stick__wrap
+			padding: 74px 5px 0
+			.stick__title
+				font-size: 17px
+			.stick__text
+				margin: 18px 0 22px
+				font-size: 11px
+
+	.btn
+		&.btn__stick
+			width: 124px
+			height: 31px
+			font-size: 10px
+			line-height: 31px
+
+	.slider__dots
+		bottom: 24px
+		li
+			margin: 3px
+			button
+				width: 6px
+				height: 6px
+				padding: 0
+
+	.header__carousel
+		.container
+			max-width: 970px
+
+	.carousel__item
+		.item__pict
+			height: 80px
+			img
+				width: 85px
+
+	.content
+		padding: 22px 0 68px
+
+	.sidebar__left
+		display: none
+
+	.main__center
+		width: 100%
+
+	.btn
+		&.btn__cart
+			margin-right: 94px
+			opacity: 1
+			visibility: visible
+
+	.sidebar__right
+		display: none
+
+	.news__section
+		padding-bottom: 39px
+
+	.news
+		padding: 0 78px
+
+	.news__pict
+		float: none
+		max-width: 100%
+
+	.news__descr
+		display: block
+		margin-top: 38px
+		padding-left: 0
+
+	.more__link
+		display: none
+
+	.about__pict
+		position: relative
+		float: none
+		height: 296px
+		padding: 0 78px
+		overflow: hidden
+		img
+			width: 100%
+
+	.about__descr
+		display: block
+		margin-top: 38px
+		padding: 0 78px
+
+	.form
+		&.form__footer
+			input
+				width: 270px
+				padding-left: 15px
+				font-size: 16px
+			textarea
+				width: 300px
+				padding-left: 15px
+				font-size: 16px
+
+	.cart__modal
+		width: 85%
+
+	/*--------------Build page-------------*/
+	.product__cart
+		.product__price
+			margin-right: 275px
+	/*-----------------end------------------*/
+
+	/*--------------News page----------------*/
+	.page__title
+		&.page__title-news
+			margin: 0 0 44px 0
+
+	.news
+		&.news__inner
+			margin-bottom: 43px
+			padding-bottom: 39px
+			.news__date
+				display: none
+				&.news__date-mob
+					display: block
+			.news__descr
+				margin-top: 56px
+			.news__text
+				height: 168px
+
+	.nav__page
+		&.nav__page-news
+			margin-top: 44px
+	/*-----------------end--------------------*/
+
+	/*---------------Feedback page------------------*/
+	.page__title
+		&.page__title-feedback
+			margin-left: 0
+
+	.main__center
+		&.main__center-feedback
+			width: 100%
+
+	.feedback__item
+		margin-left: 0
+
+	.link__form
+		margin: 80px auto 0
+
+	.form__box
+		margin: 49px auto 0
+	/*-------------------end------------------------*/
+
+	/*---------------Consult page------------------*/
+	.main__center
+		&.main__center-consult
+			padding: 0
+
+	.page__title
+		&.page__title-consult
+			margin-left: 21px
+
+	.consult
+		padding: 0
+	/*-------------------end------------------------*/
+
+	/*----------------Contact page-------------------*/
+	.content
+		&.content__inner-contact
+			padding-bottom: 40px
+	/*--------------------end------------------------*/
+
+
+@media only screen and (max-width : 992px)
+	.slider__caption
+		.container
+			max-width: 770px
+
+	.slider__accent
+		padding-right: 80px
+
+	.header__carousel
+		display: none
+
+	.breadcrumb
+		display: none
+
+	.main__center
+		padding: 0 47px
+
+	.product__pict
+		width: 147px
+
+	.btn
+		&.btn__cart
+			margin-right: 37px
+
+	.about__section
+		display: none
+
+	footer
+		.container
+			max-width: 770px
+	.btn
+		&.btn__top
+			display: none
+
+	.footer__left
+		display: none
+
+	.footer__main
+		width: 100%
+		padding-left: 0
+
+	.footer__menu
+		li
+			a
+				&:hover
+					text-decoration: none
+
+	.footer__social
+		float: none
+		margin-top: 24px
+		text-align: center
+
+	.copyright
+		margin-top: 32px
+		text-align: center
+
+	.cart__modal
+		padding: 30px 20px
+
+	.cart__title
+		margin-bottom: 15px
+
+	.table__cell
+		padding: 20px 0
+		&.table__cell-pict
+			width: 100px
+			padding-right: 10px
+		&.table__cell-count
+			padding-right: 0
+		&.table__cell-total
+			width: 140px
+
+	.cart__img
+		width: 100%
+
+	.name__link
+		margin-bottom: 10px
+
+	.name__price
+		span
+			margin-left: 25px
+
+	.count__total
+		.jq-number
+			padding: 0 30px
+
+	.total__order
+		margin-right: 0
+
+	.cart__link
+		width: 215px
+		height: 55px
+		line-height: 55px
+
+	/*--------------Build page-------------*/
+	.product__cart
+		.product__price
+			margin-right: 152px
+	/*-----------------end------------------*/
+
+	/*--------------News page---------------*/
+	.content
+		&.content__inner-news
+			padding-bottom: 57px
+			.container
+				width: 100%
+				padding: 0
+
+	.page__title
+		&.page__title-news
+			max-width: 770px
+			margin: 0 auto 44px
+			padding: 0 20px 0 50px
+			&:after
+				max-width: 545px
+
+	.news
+		&.news__inner
+			padding-bottom: 19px
+			.wrap__mob
+				max-width: 630px
+				margin: 0 auto
+				padding: 0 20px
+			.news__text
+				height: auto
+
+	.nav__page
+		&.nav__page-news
+			max-width: 770px
+			margin-top: 26px
+			padding: 0 15px
+	/*-----------------end------------------*/
+
+	/*---------------News-one page---------------*/
+	.news
+		&.news__inner-page
+			.news__pict
+				display: none
+				margin-top: 0
+				&.news__pict-mob
+					display: block
+	/*------------------end-------------------*/
+
+	/*---------------Feedback page------------------*/
+	.main__center
+		&.main__center-feedback
+			padding: 0
+
+	.page__title
+		&.page__title-feedback
+			margin-left: 47px
+	/*-------------------end-------------------------*/
+
+
+@media only screen and (max-width : 770px)
+	.menu__btn
+		margin-left: 0
+
+	.topline__search
+		margin-right: 10px
+		.search__in
+			bottom: -41px
+			right: -40px
+
+	.cart__mob
+		margin: 0
+
+	.slider__accent
+		width: 90%
+		padding-right: 20px
+		.accent__title
+			font-size: 24px
+		.accent__text
+			font-size: 14px
+
+	.stick
+		display: none
+
+	.content
+		padding: 15px 0 10px
+
+	.page__title
+		h2
+			font-size: 24px
+		&.page__title-hit
+			margin-bottom: 20px
+
+	.main__center
+		padding: 0
+
+	.btn
+		&.btn__cart
+			margin-right: 0
+
+	.news__section
+		padding-top: 10px
+		.container
+			padding: 0 20px
+
+	.section__top
+		margin-bottom: 25px
+
+	.news__date
+		font-size: 12px
+		&:before
+			left: -25px
+
+	.news
+		padding: 0
+
+	.cart__modal
+		width: 97%
+		.mfp-close
+			display: block
+
+	.cart__title
+		font-size: 24px
+
+	.table__cell
+		&.table__cell-pict
+			width: 70px
+		&.table__cell-total
+			padding: 8px 0
+			width: 125px
+
+	.name__link
+		margin-bottom: 5px
+		font-size: 16px
+
+	.name__price
+		font-size: 16px
+		span
+			margin-left: 15px
+
+	.count__total
+		.jq-number
+			margin-top: 15px
+
+	.total__block
+		.block__price
+			font-size: 16px
+
+	.total__order
+		.order__title
+			margin-bottom: 5px
+			font-size: 22px
+		.order__price
+			width: 130px
+			height: 35px
+			margin-bottom: 10px
+			font-size: 22px
+			line-height: 35px
+
+	.cart__link
+		width: 202px
+		height: 50px
+		font-size: 16px
+		line-height: 50px
+		&.cart__link-pay
+			margin-top: 76px
+
+	/*------------Material page--------------*/
+	.content
+		&.content__inner
+			padding-bottom: 40px
+
+	.page__title
+		&.page__title-material
+			margin-bottom: 15px
+
+	.select__block
+		margin-bottom: 30px
+		.sel__in
+			float: none
+			display: block
+			width: 195px
+			margin: 0 auto 10px
+			span
+				display: block
+				margin-bottom: 5px
+				text-align: left
+
+	.block__accent
+		font-size: 12px
+
+	.nav__page
+		a
+			font-size: 16px
+			i
+				top: 2px
+	/*----------------end---------------------*/
+
+	/*--------------Build page-------------*/
+	.product__cart
+		text-align: left
+		.product__price
+			margin-right: 0
+	/*-----------------end------------------*/
+
+	/*--------------News page---------------*/
+	.page__title
+		&.page__title-news
+			padding-left: 20px
+			&:after
+				right: 20px
+				max-width: 70%
+	/*-----------------end------------------*/
+
+	/*---------------Feedback page------------------*/
+	.page__title
+		&.page__title-feedback
+			margin-left: 0
+			&:after
+				right: 0
+				width: 95%
+
+	.feedback__name
+		margin-left: 0
+		font-size: 20px
+
+	.feedback__date
+		margin: 6px 0 0
+
+	.feedback__title
+		font-size: 16px
+
+	.feedback__text
+		font-size: 14px
+
+	.feedback__pict
+		display: none
+
+	.link__form
+		margin-top: 40px
+
+	.form__box
+		margin-top: 40px
+	/*-------------------end-------------------------*/
+
+	/*---------------Consult page------------------*/
+	.page__title
+		&.page__title-consult
+			margin-left: 0
+	/*-------------------end------------------------*/
+
+	/*----------------Pay page----------------------*/
+	.pay__banner
+		padding: 20px 11px 5px
+
+	.pay__block
+		margin-bottom: 50px
+		.pay__title
+			margin-bottom: 15px
+		p
+			margin-bottom: 15px
+	/*------------------end-------------------------*/
+
+
+@media only screen and (max-width : 600px)
+	.slider__accent
+		&.slider__accent-outer
+			padding: 0 20px 0 0
+			.accent__text
+				font-size: 18px
+				p
+					&:before
+						top: 2px
+
+	.product__pict
+		float: none
+		width: 100%
+
+	.product__descr
+		display: block
+		margin-top: 15px
+		padding-left: 0
+
+	.cart__title
+		font-size: 22px
+
+	.table__row
+		display: block
+		overflow: hidden
+		border-bottom: 1px solid #d9d9d9
+
+	.table__cell
+		&.table__cell-pict
+			display: inline-block
+			width: 25%
+		&.table__cell-name
+			display: inline-block
+			width: 70%
+		&.table__cell-count
+			float: left
+			width: 58%
+			text-align: right
+		&.table__cell-total
+			float: right
+			width: 42%
+
+	.total__order
+		float: none
+		margin-top: 15px
+		text-align: right
+		.order__price
+			display: inline-block
+
+	.cart__link
+		width: 100%
+		&.cart__link-pay
+			margin-top: 15px
+
+	/*---------------Feedback page------------------*/
+	.feedback__date
+		float: none
+		margin: 0 0 10px
+		text-align: right
+
+	.link__form
+		max-width: 100%
+		height: 60px
+		font-size: 20px
+		line-height: 60px
+
+	.form__box
+		height: auto
+		padding: 15px
+		text-align: center
+		input
+			max-width: 70%
+		.btn__send
+			float: none
+			display: block
+			margin: 15px auto 0
+	/*-------------------end-------------------------*/
+
+	/*----------------Contact page-------------------*/
+	.contact__body
+		text-align: center
+
+	.contact__item
+		float: none
+		display: inline-block
+		width: 100%
+		min-height: auto
+		margin-bottom: 20px
+		text-align: left
+
+	.contact__map
+		margin-top: 15px
+	/*--------------------end------------------------*/
+
+
+@media only screen and (max-width : 480px)
+	.header__logo
+		&.header__logo-mob
+			width: 120px
+			top: 5px
+			left: -25px
+
+	.header__nav
+		&.header__nav-mob
+			width: 280px
+			bottom: 357px
+			padding: 20px
+
+	.slider__accent
+		width: 100%
+		margin-top: 40px
+		.accent__title
+			font-size: 18px
+
+	.product
+		margin-bottom: 30px
+		padding-bottom: 30px
+		border-bottom: 2px solid #d9d9d9
+
+	.product__text
+		font-size: 16px
+
+	.product__price
+		float: none
+		display: block
+		padding-right: 35px
+		text-align: right
+		&:after
+			right: 0
+
+	.btn
+		&.btn__cart
+			float: none
+			width: 100%
+			margin-top: 15px
+			font-size: 16px
+
+	.news__pict
+		height: auto
+		img
+			position: static
+			transform: none
+
+	.news__descr
+		margin-top: 15px
+
+	.news__title
+		font-size: 20px
+
+	.news__text
+		height: auto
+		font-size: 16px
+		line-height: 20px
+
+	footer
+		padding: 15px 0 20px
+		background-size: cover
+
+	.footer__main
+		text-align: center
+
+	.footer__menu
+		display: block
+
+	.footer__contact
+		float: none
+		margin-top: 15px
+
+	.footer__social
+		margin-top: 30px
+		span
+			display: none
+
+	/*--------------Material page-------------*/
+	.product
+		&.product__material
+			&:nth-last-of-type(2)
+				padding-bottom: 0
+				border-bottom: none
+	/*-----------------end------------------*/
+
+	/*--------------Build page-------------*/
+	.product
+		&.product__build
+			&:nth-last-of-type(2)
+				padding-bottom: 0
+				border-bottom: none
+
+	.text__hide
+		li
+			a
+				font-size: 16px
+	/*-----------------end------------------*/
+
+	/*---------------News page---------------*/
+	.nav__page
+		&.nav__page-news
+			margin-top: 15px
+	/*------------------end-------------------*/
+
+	/*---------------Feedback page------------------*/
+	.form__box
+		input
+			max-width: 100%
+	/*-------------------end------------------------*/
+
+	/*---------------Consult page------------------*/
+	.consult
+		font-size: 16px
+	/*-------------------end------------------------*/
+
+	/*----------------Pay page----------------------*/
+	.pay__banner
+		font-size: 18px
+
+	.pay__block
+		padding-left: 0
+		font-size: 16px
+		.pay__title
+			margin-left: 50px
+	/*------------------end-------------------------*/
+
+	/*----------------Contact page-------------------*/
+	.contact__text
+		font-size: 16px
+		p
+			margin-bottom: 15px
+	/*--------------------end------------------------*/

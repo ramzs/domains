@@ -1,0 +1,149 @@
+@import "vars"
+
+/*------------------Profile page---------------*/
+.sidebar
+	float: left
+	width: 16.4%
+	min-width: 183px
+	padding-top: 10px
+
+.profile-name
+	margin-bottom: 25px
+	font-size: 20px
+	font-weight: 700
+	color: #fff
+	span
+		display: block
+
+.profile-nav
+	padding: 25px 25px 15px
+	border-radius: 5px
+	background: #f4f4f4
+
+.profile-list
+	&__item
+		display: block
+		margin-bottom: 14px
+	&__link
+		font-size: 20px
+		font-weight: 700
+		color: #4d4d4d
+		&:hover, &.active
+			color: #c41b8c
+
+.profile-exit
+	display: inline-block
+	margin-top: 36px
+	font-size: 20px
+	font-weight: 700
+	color: #0057b9
+
+.main-content
+	float: left
+	width: 83.6%
+	padding: 5px 0 0 10px
+
+.profile
+	position: relative
+	margin-bottom: 3px
+	padding: 28px 38px 20px
+	border-radius: 5px
+	background: #f4f4f4
+	&-title
+		margin-bottom: 15px
+		font-size: 25px
+		font-weight: 700
+	&-block
+		display: inline-block
+		vertical-align: top
+		&--contact
+			margin-right: 40px
+		&--ref
+			margin-right: 65px
+		&__title
+			margin-bottom: 19px
+			font: 700 20px "ptsansnarrow"
+			color: #0154b4
+	&-contact
+		margin-bottom: 12px
+		font-size: 15px
+		font-weight: 700
+		span
+			margin-right: 5px
+			font-weight: normal
+	&-reflink
+		display: inline-block
+		width: 215px
+		font-size: 15px
+		color: #006cff
+		word-break: break-word
+		text-decoration: underline
+
+.edit-link
+	position: absolute
+	bottom: 16px
+	right: 19px
+	font-size: 15px
+	color: #c41b8c
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: -25px
+		@include sprite($edit)
+		transition: all .8s ease-in-out
+	&:hover
+		text-decoration: underline
+		&:before
+			transform: rotate(360deg)
+
+.profile-block
+	&--outer
+		margin-right: 18px
+
+.news-block
+	float: right
+	width: 82.8%
+	margin-bottom: 10px
+	padding: 20px 38px 33px
+	border-radius: 5px
+	background: #f4f4f4
+	+clearfix
+	&__title
+		margin-bottom: 24px
+		font: 700 20px "ptsansnarrow"
+		color: #0154b4
+
+.news-carousel
+	margin-bottom: 36px
+	padding: 0 27px
+	.slick-arrow
+		position: absolute
+		top: 31%
+		padding: 0
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&:hover
+			opacity: 1
+		&.slick-prev
+			left: 14px
+			@include sprite($carousel-left)
+		&.slick-next
+			right: 14px
+			@include sprite($carousel-right)
+
+.carousel-item
+	padding: 0 16px
+	outline: none
+
+.btn--carousel
+	float: none
+	display: block
+	top: 0
+	margin: 0 auto
+/*---------------------end-------------------*/

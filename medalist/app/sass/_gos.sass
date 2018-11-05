@@ -1,0 +1,136 @@
+@import "vars"
+
+/*-----------------Gos page----------------*/
+.header-main
+	&--inner
+		padding-bottom: 70px
+		background: url(../img/header-inner-bg.jpg) center top no-repeat
+		background-size: cover
+
+.content
+	padding: 40px 0 75px
+	clear: both
+	background: #f6f6f6
+
+.breadcrumb
+	margin-bottom: 6px
+	li
+		position: relative
+		display: inline-block
+		margin-right: 33px
+		font-size: 14px
+		color: #27c0df
+		font-weight: 300
+		&:not(:last-child):after
+			content: ' '
+			position: absolute
+			top: 4px
+			right: -22px
+			@include sprite($arrow-right)
+		a
+			display: block
+			font-size: 14px
+			font-weight: 300
+			&:hover
+				text-decoration: underline
+
+.content-wrap
+	display: table
+	margin-top: 28px
+
+.sidebar
+	display: table-cell
+	padding-right: 63px
+	vertical-align: top
+
+.sidebar-menu
+	width: 297px
+	li
+		display: table
+		width: 100%
+		height: 72px
+		border-bottom: 1px solid #fff
+		background-image: linear-gradient(to right, #23cfbe 0%, #30c5ed 100%)
+		&:last-child
+			border-bottom: none
+		a
+			position: relative
+			display: table-cell
+			padding: 0 75px 0 20px
+			vertical-align: middle
+			font-size: 14px
+			color: #fff
+			text-transform: uppercase
+			&:before
+				content: ' '
+				position: absolute
+				top: 25px
+				right: 22px
+				@include sprite($arrow-inner)
+
+.content-main
+	display: table-cell
+	padding-bottom: 119px
+	background: #fff
+	&__title
+		display: block
+		padding-left: 36px
+		font-size: 24px
+		color: $title
+		text-transform: uppercase
+	&__text
+		padding: 3px 36px 0
+		font-size: 18px
+		font-weight: 300
+
+.price-banner
+	&--inner
+		float: none
+		margin: 52px 0 0 36px
+		padding: 0
+		background: none
+
+.section-title
+	&--content
+		margin-bottom: 5px
+		font-size: 24px
+
+.btn
+	&--inner
+		float: none
+		margin-left: 36px
+		color: #2acad8
+
+.section-callback
+	&--inner
+		clear: both
+		padding: 54px 0 59px
+		background: url(../img/main-inner-bg.jpg) center top no-repeat
+		background-size: cover
+
+.section-title
+	&--inner
+		margin: 5px 0
+		text-align: left
+		color: #fff
+		span
+			display: block
+			margin-left: 0
+			color: #fff
+
+.callback-form__in
+	&--inner
+		color: #fff
+		border-color: #fff
+		background-color: transparent
+		@include placeholder
+			font-size: 14px
+			color: #fff
+			text-transform: uppercase
+
+.btn
+	&--signup
+		float: none
+		display: inline-block
+		margin-top: 0
+/*--------------------end-------------------*/

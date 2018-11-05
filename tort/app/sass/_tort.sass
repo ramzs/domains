@@ -1,0 +1,166 @@
+/*-------------Tort page----------------*/
+.tovar
+	&_tort
+		padding-bottom: 105px
+	&-main
+		float: left
+		width: 57.65%
+	&-about
+		margin-top: 55px
+	&-cl
+		width: 100%
+		.cl-item
+			img
+				width: 100%
+		.slick-arrow
+			position: absolute
+			top: 50%
+			margin-top: -35px
+			padding: 0
+			font-size: 0
+			z-index: 1
+			outline: none
+			cursor: pointer
+			opacity: .8
+			border: none
+			background: none
+			&:hover
+				opacity: 1
+			&.slick-prev
+				left: 0
+				@include sprite($arrow-left2)
+			&.slick-next
+				right: 0
+				@include sprite($arrow-right2)
+		.slick-dots
+			position: absolute
+			bottom: 40px
+			left: 0
+			right: 0
+			text-align: center
+			li
+				display: inline-block
+				margin: 0 5px
+				button
+					display: block
+					width: 13px
+					height: 13px
+					padding: 0
+					font-size: 0
+					cursor: pointer
+					border: none
+					border-radius: 50%
+					background: #d6c4ce
+				&.slick-active
+					button
+						background: #6d425c
+
+.change-block
+	margin-bottom: 8px
+	+clearfix
+	.tovar-descr__title
+		margin-bottom: 42px
+	&_fill
+		.tovar-descr__title
+			margin-bottom: 37px
+	&__item
+		display: block
+		margin-bottom: 22px
+		&:hover, &.active
+			.change-block__info
+				color: #502346
+	.jq-radio
+		width: 20px
+		height: 20px
+		margin-right: 14px
+		border: none
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.36)
+		background: #fff
+		&.focused
+			border: none
+		&.checked
+			.jq-radio__div
+				width: 6px
+				height: 6px
+				margin: 7px 0 0 7px
+				background: #000
+	.jq-selectbox
+		&.sel-count
+			float: none
+			width: 70px
+			margin-top: 0
+			.jq-selectbox__select
+				height: 30px
+				padding: 0 25px 0 5px
+				line-height: 28px
+			.jq-selectbox__trigger
+				width: 25px
+				&-arrow
+					top: 10px
+					right: 5px
+	&__info
+		display: inline-block
+		font-size: 18px
+		color: #625f49
+		&_size
+			min-width: 185px
+		&_price
+			margin-left: 10px
+	&__selpict
+		position: relative
+		float: left
+		width: 87px
+		height: 87px
+		overflow: hidden
+		border-radius: 50%
+		img
+			display: block
+			height: 100%
+	.jq-selectbox
+		float: right
+		width: 336px
+		margin-top: 15px
+		&__select
+			height: 56px
+			padding: 0 45px 0 25px
+			font: 15px/54px "roboto"
+			color: #000
+			border: 1px solid #c9c49e
+			border-radius: 5px
+			box-shadow: none
+			background: #fff
+			&:hover
+				background: #fff
+		&.focused
+			.jq-selectbox__select
+				border: 1px solid #c9c49e
+		&__trigger
+			border-left: none
+			&-arrow
+				top: 25px
+				right: 25px
+				border: none
+				@include sprite($arrow-down-bl)
+		li
+			&:hover
+				background: #502346
+			&.selected
+				background: #502346
+
+.tovar-total
+	margin-top: 35px
+	clear: both
+	.tovar-descr__title
+		margin-bottom: 17px
+	&__price
+		margin-bottom: 35px
+		font: 700 53px "summer"
+		color: #502244
+	.btn
+		margin-left: 0
+	&__accent
+		margin-top: 15px
+		font-size: 15px
+		line-height: 22px
+		color: $gray
+/*-----------------end--------------------*/

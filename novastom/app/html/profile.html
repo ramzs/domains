@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp-profile.html')
+
+	<div class="content clearfix">
+		<div class="container">
+			<div class="breadcrumb">
+				<ul class="breadcrumb-list">
+					<li><a href="#">Главная</a></li>
+					<li>Ваш аккаунт</li>
+				</ul>
+			</div>
+
+			<div class="page-title page-title--profile">Ваш аккаунт</div>
+
+			<div class="profile">
+				<div class="profile-title">Ваши персональные данные</div>
+				<ul class="profile-list">
+					<li class="profile-list__item">
+						<div class="profile-list__title">Имя:</div>
+						<div class="profile-list__descr">Владимир</div>
+						<a href="#" class="edit-link">edit</a>
+					</li>
+					<li class="profile-list__item">
+						<div class="profile-list__title">Фамилия:</div>
+						<div class="profile-list__descr">Коновалов</div>
+						<a href="#" class="edit-link">edit</a>
+					</li>
+					<li class="profile-list__item">
+						<div class="profile-list__title">Отчество:</div>
+						<div class="profile-list__descr">Анатольевич</div>
+						<a href="#" class="edit-link">edit</a>
+					</li>
+					<li class="profile-list__item">
+						<div class="profile-list__title">E-mail:</div>
+						<div class="profile-list__descr">konoval@yandex.ru</div>
+						<a href="#" class="edit-link">edit</a>
+					</li>
+					<li class="profile-list__item">
+						<div class="profile-list__title">Телефон:</div>
+						<div class="profile-list__descr">+7 495 999-88-77</div>
+						<a href="#" class="edit-link">edit</a>
+					</li>
+					<li class="profile-list__item">
+						<div class="profile-list__title">Пароль:</div>
+						<div class="profile-list__descr">******</div>
+						<a href="#" class="edit-link">edit</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="profile">
+				<div class="profile-title">Ваши адреса доставки</div>
+				<ul class="profile-list">
+					<li class="profile-list__item">
+						<div class="profile-list__title profile-list__title--delivery">1.</div>
+						<div class="profile-list__descr profile-list__descr--delivery">г.Москва, ул.Театральная, д.139, кв.504</div>
+						<a href="#" class="delete-link">del</a>
+					</li>
+					<li class="profile-list__item">
+						<div class="profile-list__title profile-list__title--delivery">2.</div>
+						<div class="profile-list__descr profile-list__descr--delivery">г.Москва, ул.Заовражная, д.56, корп.9, оф.196</div>
+						<a href="#" class="delete-link">del</a>
+					</li>
+					<li class="profile-list__item">
+						<div class="profile-list__title profile-list__title--delivery">3.</div>
+						<div class="profile-list__descr profile-list__descr--delivery">г.Москва, пр.Вернадского, д.71, кв.12</div>
+						<a href="#" class="delete-link">del</a>
+					</li>
+				</ul>
+				<a href="#" class="add-link">Добавить адрес</a>
+			</div>
+
+			<div class="profile profile--history">
+				<div class="profile-title">История заказов</div>
+
+				<div class="tb tb-profile">
+					<div class="tb-row tb-row--head">
+						<div class="tb-cell tb-cell--head">&nbsp;</div>
+						<div class="tb-cell tb-cell--head">№ заказа и дата</div>
+						<div class="tb-cell tb-cell--head">Сумма к оплате</div>
+						<div class="tb-cell tb-cell--head">Статус заказа</div>
+					</div>
+					<div class="tb-row">
+						<div class="tb-cell tb-cell--count">105.</div>
+						<div class="tb-cell tb-cell--order"><a href="#">Заказ №105 от 12.11.2014</a></div>
+						<div class="tb-cell tb-cell--price"><span>Сумма:</span>1 250 руб.</div>
+						<div class="tb-cell tb-cell--status"><span>Статус:</span>Обработан но не доставлен</div>
+					</div>
+					<div class="tb-row">
+						<div class="tb-cell tb-cell--count">50.</div>
+						<div class="tb-cell tb-cell--order"><a href="#">Заказ №105 от 12.11.2014</a></div>
+						<div class="tb-cell tb-cell--price"><span>Сумма:</span>1 250 руб.</div>
+						<div class="tb-cell tb-cell--status"><span>Статус:</span>Выполнен</div>
+					</div>
+					<div class="tb-row">
+						<div class="tb-cell tb-cell--count">5.</div>
+						<div class="tb-cell tb-cell--order"><a href="#">Заказ №105 от 12.11.2014</a></div>
+						<div class="tb-cell tb-cell--price"><span>Сумма:</span>10 250 руб.</div>
+						<div class="tb-cell tb-cell--status"><span>Статус:</span>Не обработан</div>
+					</div>
+					<div class="tb-row">
+						<div class="tb-cell tb-cell--count">10.</div>
+						<div class="tb-cell tb-cell--order"><a href="#">Заказ №105 от 12.11.2014</a></div>
+						<div class="tb-cell tb-cell--price"><span>Сумма:</span>100 250 руб.</div>
+						<div class="tb-cell tb-cell--status"><span>Статус:</span>Не доставлен</div>
+					</div>
+					<div class="tb-row">
+						<div class="tb-cell tb-cell--count">105.</div>
+						<div class="tb-cell tb-cell--order"><a href="#">Заказ №105 от 12.11.2014</a></div>
+						<div class="tb-cell tb-cell--price">200 250 руб.</div>
+						<div class="tb-cell tb-cell--price"><span>Сумма:</span>1 250 руб.</div>
+						<div class="tb-cell tb-cell--status"><span>Статус:</span>Обработан но не доставлен</div>
+					</div>
+					<div class="tb-row">
+						<div class="tb-cell tb-cell--count">105.</div>
+						<div class="tb-cell tb-cell--order"><a href="#">Заказ №105 от 12.11.2014</a></div>
+						<div class="tb-cell tb-cell--price"><span>Сумма:</span>1 250 руб.</div>
+						<div class="tb-cell tb-cell--status"><span>Статус:</span>Обработан но не доставлен</div>
+					</div>
+					<div class="tb-row">
+						<div class="tb-cell tb-cell--count">105.</div>
+						<div class="tb-cell tb-cell--order"><a href="#">Заказ №105 от 12.11.2014</a></div>
+						<div class="tb-cell tb-cell--price"><span>Сумма:</span>1 250 руб.</div>
+						<div class="tb-cell tb-cell--status"><span>Статус:</span>Обработан но не доставлен</div>
+					</div>
+					<div class="tb-row">
+						<div class="tb-cell tb-cell--count">105.</div>
+						<div class="tb-cell tb-cell--order"><a href="#">Заказ №105 от 12.11.2014</a></div>
+						<div class="tb-cell tb-cell--price"><span>Сумма:</span>1 250 руб.</div>
+						<div class="tb-cell tb-cell--status"><span>Статус:</span>Обработан но не доставлен</div>
+					</div>
+					<div class="tb-row">
+						<div class="tb-cell tb-cell--count">105.</div>
+						<div class="tb-cell tb-cell--order"><a href="#">Заказ №105 от 12.11.2014</a></div>
+						<div class="tb-cell tb-cell--price"><span>Сумма:</span>1 250 руб.</div>
+						<div class="tb-cell tb-cell--status"><span>Статус:</span>Обработан но не доставлен</div>
+					</div>
+					<div class="tb-row">
+						<div class="tb-cell tb-cell--count">105.</div>
+						<div class="tb-cell tb-cell--order"><a href="#">Заказ №105 от 12.11.2014</a></div>
+						<div class="tb-cell tb-cell--price"><span>Сумма:</span>1 250 руб.</div>
+						<div class="tb-cell tb-cell--status"><span>Статус:</span>Обработан но не доставлен</div>
+					</div>
+				</div>
+
+				<div class="pagination pagination--profile">
+					<a href="#" class="pagination-nav pagination-nav--profile pagination-nav--prev">назад</a>
+					<ul class="pagination-list pagination-list--profile">
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">...</a></li>
+						<li><a href="#">11</a></li>
+					</ul>
+					<a href="#" class="pagination-nav pagination-nav--profile pagination-nav--next active">вперед</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

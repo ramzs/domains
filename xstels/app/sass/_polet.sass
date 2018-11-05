@@ -1,0 +1,252 @@
+@import "vars"
+
+/*---------------Polet page---------------*/
+.breadcrumb-list
+	margin: 9px 0 28px
+	li
+		position: relative
+		display: inline-block
+		margin-right: 40px
+		font-size: 14px
+		color: #b8716d
+		&:not(:last-child):after
+			content: ' '
+			position: absolute
+			top: 6px
+			right: -24px
+			@include sprite($bread-arrow)
+		a
+			display: block
+			font-size: 14px
+			text-decoration: underline
+			&:hover
+				color: #000
+				text-decoration: none
+
+.page__title
+	margin-bottom: 20px
+	font: 700 30px "RobotoSlab"
+	color: $title
+	text-transform: uppercase
+
+.tovar-block
+	&__title
+		margin-bottom: 22px
+		font: 700 22px "RobotoSlab"
+		color: $title
+		text-transform: uppercase
+
+.main-card
+	max-width: 750px
+	min-height: 575px
+	padding: 20px 27px
+	background: url(../img/bg-card.png) 0 0 no-repeat
+	background-size: 100% 100%
+	&__pict
+		float: left
+		position: relative
+		width: 292px
+		height: 301px
+		margin-bottom: 40px
+		overflow: hidden
+		img
+			position: absolute
+			display: block
+			top: 50%
+			left: 50%
+			width: 100%
+			transform: translate(-50%,-50%)
+	&__descr
+		display: table
+		padding: 67px 0 0 60px
+	&__title
+		margin-bottom: 20px
+		font-size: 16px
+		font-weight: 700
+		color: #b8716d
+	&__list
+		li
+			margin-bottom: 16px
+			font-size: 16px
+			font-weight: 300
+			color: #1b1b1b
+			span
+				font-weight: 700
+	&__text
+		height: 77px
+		font-size: 16px
+		font-weight: 300
+		color: #1b1b1b
+		overflow: hidden
+		clear: both
+		&.open
+			height: auto
+	&__read
+		display: block
+		margin-top: 20px
+		font-size: 16px
+		font-weight: 800
+		color: #239ed7
+		&:hover
+			color: #239ed7
+			text-decoration: underline
+
+
+.price
+	margin: 11px 0 0
+	&__title
+		margin-bottom: 22px
+		padding-right: 150px
+		font: 700 22px/36px "RobotoSlab"
+		color: $title
+		text-transform: uppercase
+	&-item
+		float: left
+		max-width: 233px
+		margin-right: 23px
+		padding: 0 0 38px
+		background: url(../img/bg-price.png) 0 20px/100% 95% no-repeat
+		&:last-of-type
+			margin-right: 0
+		&.active
+			padding-bottom: 73px
+		&--one
+			.price-item__title
+				background: url(../img/title-bg.png) 0 0 no-repeat
+				background-size: 97% 100%
+		&--two
+			.price-item__title
+				background: url(../img/title-bg2.png) 0 0 no-repeat
+				background-size: 97% 100%
+		&--three
+			.price-item__title
+				background: url(../img/title-bg3.png) 0 0 no-repeat
+				background-size: 97% 100%
+		&__title
+			height: 75px
+			padding-top: 10px
+			font: 700 22px "RobotoSlab"
+			color: #fff
+			text-align: center
+			text-transform: uppercase
+			span
+				display: block
+				margin-top: 5px
+				font-size: 14px
+				font-weight: normal
+				color: #fff
+	&-in
+		height: 210px
+		padding: 20px 20px 10px
+		overflow: hidden
+		background: url(../img/price-in-bg.png) 0 0/97% 100% no-repeat
+		&.open
+			height: 587px
+			background: none
+			.price-in__preview
+				display: none
+			.price-list
+				visibility: visible
+		&__title
+			margin-bottom: 18px
+			font-size: 14px
+			font-weight: 700
+			color: #1b1b1b
+		&__preview
+			font-size: 14px
+			font-weight: 300
+			span
+				font-weight: 700
+		&__read
+			display: block
+			font-size: 16px
+			font-weight: 800
+			color: #239ed7
+			text-align: center
+			&:hover
+				color: #239ed7
+				text-decoration: underline
+	&-list
+		visibility: hidden
+		li
+			margin-bottom: 15px
+			font-size: 14px
+			font-weight: 300
+			color: #1b1b1b
+			lh17px
+			span
+				font-weight: 700
+	&-total
+		padding: 2px 20px 0
+		text-align: center
+		&__title
+			margin-bottom: 2px
+			font-size: 14px
+			font-weight: 700
+			color: #1b1b1b
+		&__count
+			font: 700 24px "RobotoSlab"
+			color: #b8716d
+
+.btn-main--book
+	position: relative
+	right: 4px
+	width: 175px
+	margin: 31px auto 0
+	outline: none
+	&.btn-main--one
+		background: url(../img/btn-book-1.png) 0 0 no-repeat
+		background-size: cover
+	&.btn-main--two
+		background: url(../img/btn-book-2.png) 0 0 no-repeat
+		background-size: cover
+	&.btn-main--three
+		background: url(../img/btn-book-3.png) 0 0 no-repeat
+		background-size: cover
+
+.main-video
+	position: relative
+	width: 100%
+	height: 305px
+	margin: 42px 0 40px
+	padding: 50% 0 45px
+	overflow: hidden
+	&:before
+		content: ' '
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(27,27,27, .46)
+	img
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+	&__play
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		width: 68px
+		height: 68px
+		margin: auto
+		font-size: 0
+		border-radius: 50%
+		background: rgba(255,255,255, .21)
+		&:before
+			content: ' '
+			position: absolute
+			top: 50%
+			left: 55%
+			transform: translate(-50%,-50%)
+			@include sprite($play)
+	iframe
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+/*-----------------end-------------------*/

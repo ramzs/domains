@@ -1,0 +1,158 @@
+/*-------------Cart page----------------*/
+.cart
+	padding-bottom: 55px
+	&-main
+		margin-bottom: 40px
+		padding: 33px 0 34px
+		background: #fcf7d3
+
+.tb
+	display: table
+	width: 100%
+	border-collapse: separate
+	border-spacing: 0 8px
+	&-row
+		display: table-row
+		box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2)
+		background: #fff
+		&_head
+			box-shadow: none
+			background: none
+	&-cell
+		display: table-cell
+		vertical-align: middle
+		&_head
+			font-size: 15px
+			color: #4c1a39
+			line-height: 30px
+		&_body
+			padding: 35px 15px 35px 0
+			&:first-child
+				padding-left: 35px
+			&:last-child
+				padding-right: 35px
+		&_pict
+			width: 17%
+		&_name
+			width: 24.4%
+		&_price
+			width: 16.6%
+		&_count
+			width: 15.5%
+		&_total
+			width: 16.7%
+	&__pict
+		width: 149px
+		overflow: hidden
+		img
+			display: block
+			width: 100%
+	&__name
+		display: block
+		font: 700 48px/48px "summer"
+		color: $title-card
+	&__price
+		font-size: 20px
+		font-weight: 900
+		color: #493943
+		line-height: 15px
+	&__count
+		width: 109px
+		height: 56px
+		padding-left: 20px
+		font-size: 15px
+		color: #7f7f7f
+		outline: none
+		border: 1px solid #c9c49e
+		border-radius: 5px
+	&__total
+		font-size: 20px
+		font-weight: 900
+		color: #493943
+		line-height: 15px
+	&__remove
+		display: block
+		font-size: 0
+		width: 57px
+		height: 57px
+		background: url(../img/delete.png) center no-repeat
+		background-size: cover
+
+.cart__total
+	margin-top: 25px
+	font: 700 53px/53px "summer"
+	text-align: center
+
+.order
+	margin-bottom: 25px
+	&-block
+		margin-top: 25px
+		padding: 23px 0 23px
+		background: #fedcf0
+		&__title
+			display: inline-block
+			margin-right: 12px
+			font-size: 20px
+			font-weight: 900
+			color: #493943
+		form
+			display: inline-block
+			margin-right: 40px
+		input
+			width: 177px
+			height: 56px
+			margin-right: 5px
+			padding-left: 20px
+			outline: none
+			border: 1px solid #c9c49e
+			border-radius: 5px
+			background: white
+		.btn
+			display: inline-block
+		&__link
+			display: inline-block
+			font-size: 15px
+			color: $link
+			text-decoration: underline
+			outline: none
+
+.cart-form
+	form
+		margin-top: 25px
+	fieldset
+		float: left
+		width: 25%
+		margin: 0
+		padding: 0 15px 0 0
+		border: none
+	input
+		display: block
+		width: 100%
+		height: 56px
+		margin-bottom: 6px
+		padding-left: 20px
+		outline: none
+		border: 1px solid #c9c49e
+		border-radius: 5px
+		background: #fff
+		&:last-child
+			margin-bottom: 0
+	textarea
+		float: left
+		width: 50%
+		height: 118px
+		padding: 15px 0 0 20px
+		outline: none
+		border: 1px solid #c9c49e
+		border-radius: 5px
+	.btn
+		display: inline-block
+		margin-top: 29px
+		clear: both
+	&__info
+		display: inline-block
+		margin-left: 17px
+		vertical-align: middle
+		font-size: 15px
+		color: #aaa685
+/*-------------------end--------------------*/

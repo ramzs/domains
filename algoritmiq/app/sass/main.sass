@@ -1,0 +1,481 @@
+@import "bourbon/bourbon"
+@import "vars.sass"
+@import "base.sass"
+
+.header
+	position: relative
+	height: 977px
+	z-index: 10
+	background: url(../img/bg-1.png) center top no-repeat
+
+.header__top
+	height: 98px
+	background: #131313
+	.container
+		position: relative
+		&:before,
+		&:after
+			content: " "
+			display: table
+		&:after
+			clear: both
+
+.logo
+	float: left
+	img
+		width: 100%
+
+.menu__list
+	float: left
+	width: 60%
+	margin: 20px 0 82px 55px
+	.menu__item
+		display: inline-block
+		margin-right: 30px
+		&-contact
+			margin-top: 10px
+		.menu__link
+			font-size: 13px
+			color: $yellow-color
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+			&.menu__link-contact
+				font-size: 16px
+				color: $blue-light
+				text-decoration: none
+				&:hover
+					text-decoration: underline
+
+.header__contact
+	float: right
+	margin-top: 15px
+	text-align: left
+	a
+		display: block
+		color: #fff
+	.phone__link
+		font-size: 25px
+		font-weight: 300
+	.email__link
+		margin-top: 10px
+		font-size: 13px
+		padding-left: 17px
+
+.btn__link
+	float: right
+	width: 184px
+	height: 47px
+	margin: -82px 0 0
+	font-size: 17px
+	font-weight: 700
+	color: #fff
+	line-height: 45px
+	text-align: center
+	background: $btn-blue
+	border-radius: 22px
+	box-shadow: inset 0 -2px 0 #0099B5
+	outline: none
+	&:hover
+		background: $blue-light
+
+.header__icons
+	position: relative
+	width: 360px
+	height: 395px
+	margin: 115px auto 0
+	z-index: 2
+	a
+		position: absolute
+		font-size: 0
+		border-radius: 10px
+		transition: all .15s ease
+		&:hover
+			box-shadow: 0 0 20px #000
+	.home__icon
+		top: 5px
+		left: 135px
+		width: 71px
+		height: 64px
+		animation-delay: 1s
+		background: url(../img/home-icon.png) 0 0 no-repeat
+	.defend__icon
+		top: 66px
+		right: 77px
+		width: 79px
+		height: 70px
+		animation-delay: 1.2s
+		background: url(../img/defend-icon.png) 0 0 no-repeat
+	.climat__icon
+		top: 167px
+		left: 0
+		width: 108px
+		height: 97px
+		animation-delay: 1s
+		background: url(../img/climat-icon.png) 0 0 no-repeat
+	.sound__icon
+		bottom: 88px
+		right: 78px
+		width: 69px
+		height: 62px
+		animation-delay: 1.4s
+		background: url(../img/sound-icon.png) 0 0 no-repeat
+	.plus__icon
+		bottom: 0
+		left: 0
+		width: 89px
+		height: 80px
+		animation-delay: 1.3s
+		background: url(../img/plus-icon.png) 0 0 no-repeat
+	.light__icon
+		bottom: 0
+		right: 0
+		width: 93px
+		height: 83px
+		animation-delay: 1.6s
+		background: url(../img/light-icon.png) 0 0 no-repeat
+
+.header__title
+	position: absolute
+	bottom: 272px
+	left: 0
+	right: 0
+	width: 100%
+	margin: 0 auto
+	text-align: center
+	h1
+		margin-right: 10px
+		font-weight: 800
+		color: #000
+		letter-spacing: 2px
+		text-transform: uppercase
+
+.section__home
+	position: relative
+	height: 1064px
+	margin-top: -114px
+	padding-top: 180px
+	z-index: 9
+	background: url(../img/bg-2.png) center top no-repeat
+
+.home__block
+	h2
+		margin-bottom: 0
+		font-weight: 800
+		text-shadow: 0 1px 3px #000
+	h4
+		margin: 58px 0 0
+		font-weight: 800
+	p
+		margin: 9px 0 27px
+		font-size: 15px
+		font-weight: 300
+		text-shadow: 0 1px 3px #000
+
+.section__climat
+	position: relative
+	height: 1052px
+	margin-top: -80px
+	z-index: 8
+	background: url(../img/bg-3.png) center top no-repeat
+
+.block__list
+	float: left
+	margin-top: 110px
+	li
+		position: relative
+		display: block
+		margin-bottom: 14px
+		padding-left: 30px
+		font-size: 20px
+		color: #000
+		&:before
+			content: ' '
+			position: absolute
+			top: 8px
+			left: 0
+			width: 14px
+			height: 14px
+			background: url(../img/bullit-1.png) 0 0 no-repeat
+
+.climat__block
+	position: relative
+	float: right
+	width: 405px
+	height: 400px
+	margin-top: 320px
+	padding: 14px 20px 20px
+	background: #fff
+	border-radius: 0 10px 10px 10px
+	h3
+		position: absolute
+		top: -90px
+		left: 0
+		padding: 10px 70px 0 20px
+		font-weight: 800
+		color: $blue-dark
+		background: #fff
+		border-radius: 10px 10px 0 0
+	p
+		margin-top: 0
+		font-size: 15px
+		color: #000
+		line-height: 22px
+
+.section__defend
+	position: relative
+	height: 1162px
+	margin-top: -80px
+	z-index: 7
+	background: url(../img/bg-4.png) center top no-repeat
+
+.defend__block
+	position: relative
+	width: 660px
+	height: 825px
+	margin-top: 148px
+	padding: 1px 35px 0
+	background: rgba(0,0,0, .74)
+	border-radius: 0 10px 10px 10px
+	p
+		font-size: 15px
+		font-weight: 300
+		color: #b2b2b2
+
+.section__title
+	&.section__title-defend
+		position: absolute
+		top: -107.4px
+		left: 0
+		padding: 15px 35px 0
+		background: rgba(0,0,0, .74)
+		border-radius: 10px 10px 0 0
+
+.block__list
+	&.block__list-defend
+		float: none
+		margin-top: 35px
+		li
+			color: #fff
+			&:before
+				background: url(../img/bullit-2.png) 0 0 no-repeat
+
+.section__sound
+	position: relative
+	height: 1132px
+	margin-top: -95px
+	z-index: 6
+	background: url(../img/bg-5.png) center top no-repeat
+
+.sound__block
+	width: 870px
+	height: 440px
+	margin: 135px auto 0
+	padding: 0 30px 0
+	text-align: center
+	p
+		font-size: 15px
+		font-weight: 300
+		line-height: 22px
+
+.section__title
+	&.section__title-sound
+		margin-bottom: 110px
+
+.sound__bottom
+	margin-top: 175px
+	text-align: center
+	ul
+		float: none
+		display: inline-block
+		margin-right: 40px
+		text-align: left
+		li
+			color: #fff
+			&:before
+				background: url(../img/bullit-3.png) 0 0 no-repeat
+
+.section__light
+	position: relative
+	height: 844px
+	margin-top: -80px
+	z-index: 5
+	background: url(../img/bg-6.png) center top no-repeat
+
+.light__block
+	position: relative
+	width: 860px
+	margin-top: 80px
+	padding: 0 35px
+	p
+		margin-top: 10px
+		font-size: 15px
+		font-weight: 300
+		color: #e1e1e1
+
+.section__title
+	&.section__title-light
+		margin-bottom: 0
+
+.block__list
+	&.block__list-light
+		margin-top: 27px
+		li
+			color: #fff
+			&:before
+				background: url(../img/bullit-4.png) 0 0 no-repeat
+
+.section__media
+	position: relative
+	height: 990px
+	margin-top: -82px
+	z-index: 5
+	background: url(../img/bg-7.png) center top no-repeat
+
+.media__block
+	position: relative
+	width: 880px
+	margin: 85px auto 0
+	padding: 0 50px 0 10px
+	h4
+		font-weight: 500
+		color: #000
+	p
+		font-size: 15px
+		color: #000
+
+.section__title
+	&.section__title-media
+		position: relative
+		left: -200px
+		margin-bottom: 55px
+
+.media__bottom
+	margin-top: 40px
+	text-align: center
+
+.block__list
+	&.block__list-media
+		display: inline-block
+		float: none
+		width: 30%
+		margin: 0 10px 0
+		text-align: left
+		vertical-align: top
+		li
+			font-size: 15px
+			font-weight: 500
+			color: #000
+			&:before
+				background: url(../img/bullit-5.png) 0 0 no-repeat
+
+.footer
+	position: relative
+	height: 754px
+	margin-top: -84px
+	z-index: 4
+	background: url(../img/bg-8.png) center top no-repeat
+
+.footer__block
+	margin-top: 132px
+	text-align: center
+
+.contact__form
+	fieldset
+		display: inline-block
+		margin: 0
+		padding: 0
+		vertical-align: top
+		border: none
+	input
+		display: block
+		width: 313px
+		height: 44px
+		margin-bottom: 12px
+		padding-left: 20px
+		border-radius: 22px
+		border: none
+		outline: none
+	textarea
+		display: inline-block
+		width: 479px
+		height: 101px
+		margin-left: 5px
+		padding: 15px 0 0 20px
+		border-radius: 22px
+		border: none
+		outline: none
+
+.btn__form
+	display: block
+	width: 198px
+	height: 47px
+	margin: 28px auto 0
+	font-size: 16px
+	font-weight: 700
+	color: #000
+	text-align: center
+	background: $yellow-color
+	border-radius: 22px
+	border: none
+	box-shadow: inset 0 -2px 0 #ffa600
+	&:hover
+		background: #ffa600
+
+.footer__contact
+	margin-top: 100px
+	span
+		display: block
+		margin-bottom: 14px
+		font-size: 20px
+		font-weight: 300
+
+.footer__phone
+	margin-bottom: 14px
+	font-size: 20px
+	font-weight: 300
+	a
+		font-size: 20px
+		font-weight: 300
+		color: #fff
+
+.footer__email
+	font-size: 20px
+	font-weight: 300
+	a
+		font-size: 20px
+		font-weight: 300
+		color: #fff
+
+/*---------Callback form-------------*/
+.callback__form
+	width: 500px
+	margin: 0 auto
+	padding: 30px
+	text-align: center
+	border-radius: 22px
+	background: rgba(255,255,255, .74)
+	input
+		display: block
+		width: 100%
+		height: 44px
+		margin-bottom: 10px
+		padding-left: 20px
+		border-radius: 22px
+		border: none
+		outline: none
+	textarea
+		display: block
+		width: 100%
+		height: 101px
+		padding: 15px 0 0 20px
+		border-radius: 22px
+		border: none
+		outline: none
+.form__title
+	margin: 0 0 25px
+	color: #000
+	line-height: 34px
+/*------------end--------------------*/
+
+@import "textpage.sass"

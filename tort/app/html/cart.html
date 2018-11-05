@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-inner-tmp.html')
+
+	<div class="page-top">
+		<div class="container">
+			<div class="breadcrumb">
+				<ul class="breadcrumb-list">
+					<li><a href="#">Главная</a></li>
+					<li>Корзина</li>
+				</ul>
+			</div>
+
+			<h1 class="page-title">Корзина</h1>
+		</div>
+	</div>
+
+	<div class="cart">
+		<div class="cart-main">
+			<div class="container">
+
+				<div class="tb">
+					<div class="tb-row tb-row_head">
+						<div class="tb-cell tb-cell_head">&nbsp;</div>
+						<div class="tb-cell tb-cell_head">Наименование</div>
+						<div class="tb-cell tb-cell_head">Стоимость</div>
+						<div class="tb-cell tb-cell_head">Количество</div>
+						<div class="tb-cell tb-cell_head">Сумма</div>
+						<div class="tb-cell tb-cell_head">&nbsp;</div>
+					</div>
+					<div class="tb-row tb-row_body">
+						<div class="tb-cell tb-cell_body tb-cell_pict">
+							<div class="tb__pict"><img src="img/c-pict1.jpg" alt=""></div>
+						</div>
+						<div class="tb-cell tb-cell_body tb-cell_name">
+							<a href="#" class="tb__name">Сливочный с кремом и шоколадом</a>
+						</div>
+						<div class="tb-cell tb-cell_body tb-cell_price">
+							<div class="tb__price">400 500 руб/кг</div>
+						</div>
+						<div class="tb-cell tb-cell_body tb-cell_count">
+							<input type="text" class="tb__count" value="2">
+						</div>
+						<div class="tb-cell tb-cell_body tb-cell_total">
+							<div class="tb__total">900 000 руб</div>
+						</div>
+						<div class="tb-cell tb-cell_body tb-cell_remove">
+							<a href="#" class="tb__remove">remove</a>
+						</div>
+					</div>
+
+					<div class="tb-row tb-row_body">
+						<div class="tb-cell tb-cell_body tb-cell_pict">
+							<div class="tb__pict"><img src="img/c-pict1.jpg" alt=""></div>
+						</div>
+						<div class="tb-cell tb-cell_body tb-cell_name">
+							<a href="#" class="tb__name">Сливочный с кремом и шоколадом</a>
+						</div>
+						<div class="tb-cell tb-cell_body tb-cell_price">
+							<div class="tb__price">4500 руб/кг</div>
+						</div>
+						<div class="tb-cell tb-cell_body tb-cell_count">
+							<input type="text" class="tb__count" value="2">
+						</div>
+						<div class="tb-cell tb-cell_body tb-cell_total">
+							<div class="tb__total">9000 руб</div>
+						</div>
+						<div class="tb-cell tb-cell_body tb-cell_remove">
+							<a href="#" class="tb__remove">remove</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="cart__total">Стоимость заказа: 18 000 руб</div>
+
+			</div>
+		</div>
+
+		<div class="order">
+			<div class="block-title block-title_left container">Оформление заказа</div>
+
+			<div class="order-block">
+				<div class="container">
+					<div class="order-block__title">Уже зарегистрированы? Войти:</div>
+					<form action="#">
+						<input type="text" placeholder="Логин:">
+						<input type="text" placeholder="Пароль:">
+						<button class="btn btn_var6">Войти</button>
+					</form>
+					<a href="#reg-form" class="order-block__link popup" data-effect="mfp-zoom-in">Зарегистрироваться</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart-form">
+			<div class="block-title block-title_left container">Заказать торт без регистрации:</div>
+			<div class="container">
+				<form action="#">
+					<fieldset>
+						<input type="text" placeholder="Ваше имя:">
+						<input type="text" placeholder="Ваша электронная почта:">
+					</fieldset>
+					<fieldset>
+						<input type="text" placeholder="Ваш номер телефона:">
+						<input type="text" placeholder="Ваш адрес:">
+					</fieldset>
+					<textarea cols="30" rows="10" placeholder="Комментарий к заказу:"></textarea>
+					<button class="btn btn_var7">Заказать</button>
+					<div class="cart-form__info">
+						<p>Мы свяжемся с вами в ближайшее время для уточнения нюансов,<br>Спасибо за ожидание</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

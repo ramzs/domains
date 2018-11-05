@@ -1,0 +1,565 @@
+@import "bourbon/bourbon"
+@import "vars.sass"
+@import "base.sass"
+
+.container
+	width: 1170px
+	padding: 0 15px
+	margin: 0 auto
+
+.header__top
+	padding: 7px 0 10px
+	background: $head-bg
+.head__phone
+	display: inline-block
+	position: relative
+	padding-left: 28px
+	vertical-align: middle
+	font-size: 22px
+	color: #fff
+	text-align: left
+	a
+		color: #fff
+	span
+		display: block
+		font-size: 13px
+	&:before
+		content: ' '
+		position: absolute
+		top: 6px
+		left: 0
+		width: 22px
+		height: 18px
+		background: url(../img/sprites/sprites.png) -30px 0 no-repeat
+
+.head__address
+	display: inline-block
+	position: relative
+	margin-left: 72px
+	padding-left: 24px
+	vertical-align: middle
+	font-size: 15px
+	color: #fff
+	text-align: left
+	&:before
+		content: ' '
+		position: absolute
+		top: 3px
+		left: 0
+		width: 18px
+		height: 24px
+		background: url(../img/sprites/sprites.png) -55px 0 no-repeat
+
+.head__social
+	display: inline-block
+	margin-left: 52px
+	vertical-align: middle
+	a
+		display: inline-block
+		margin-right: 4px
+		vertical-align: middle
+		font-size: 0
+		width: 22px
+		height: 21px
+		background: url(../img/sprites/sprites.png) 0 -27px no-repeat
+	.ok__ico
+		background-position: 0 -49px
+	.inst__ico
+		width: 20px
+		background-position: 0 -72px
+	.tw__ico
+		width: 20px
+		background-position: 0 -95px
+	.vk__ico
+		width: 20px
+		background-position: 0 -117px
+
+.top__menu
+	display: inline-block
+	margin-left: 75px
+	li
+		display: inline-block
+		position: relative
+		margin-right: 25px
+		&:not(:last-child):after
+			content: '|'
+			position: absolute
+			top: 0
+			right: -19px
+			color: #fff
+		a
+			font-size: 16px
+			color: #fff
+			&:hover
+				color: $main-color
+
+.main__btn
+	display: block
+	width: 200px
+	height: 40px
+	margin-top: 5px
+	font: 700 14px "ProximaNova"
+	color: #fff
+	line-height: 40px
+	letter-spacing: 1.5px
+	text-align: center
+	text-transform: uppercase
+	background: $btn-color
+	border-radius: 3px
+	box-shadow: inset 0 -2px 0 #548d09
+	&:hover
+		background: $btn-hover
+	&:focus
+		background: $btn-focus
+	&.main__btn-callback
+		float: right
+
+.header__main
+	height: 110px
+	line-height: 110px
+.header__logo
+	display: inline-block
+	margin-top: 10px
+
+.header__menu
+	float: right
+	li
+		display: inline-block
+		margin-left: 25px
+		a
+			font: 700 14px "ProximaNova"
+			color: $main-color
+			text-transform: uppercase
+			&:hover
+				color: $hover-link
+
+.header__slider
+	height: 550px
+	text-align: center
+	background: url(../img/slide-1.jpg) center top no-repeat
+
+.slide__caption
+	display: inline-block
+	padding-top: 80px
+
+.caption__top
+	display: inline-block
+	width: 432px
+	height: 51px
+	font-size: 16px
+	font-weight: 500
+	line-height: 51px
+	color: #fff
+	text-transform: uppercase
+	background: #3b4d61
+
+.caption__date
+	display: block
+	margin-top: 14px
+	font: 600 42px "ProximaNova"
+	color: #3b4d61
+
+.caption__title
+	margin-top: 10px
+	font: 600 68px/48px "ProximaNova"
+	color: #fff
+
+.caption__descr
+	margin: 29px 0 20px
+	font-size: 24px
+
+.main__btn
+	&.main__btn-detailed
+		width: 300px
+		height: 55px
+		margin: 0 auto
+		font-size: 18px
+		line-height: 55px
+
+.service
+	height: 415px
+	background: url(../img/home-bg-1.jpg) center top no-repeat
+
+.service__item
+	display: inline-block
+	position: relative
+	top: 105px
+	width: 420px
+	&:nth-child(2)
+		margin-left: 155px
+	img
+		width: 100%
+
+.service__title
+	display: block
+	position: relative
+	margin-bottom: 15px
+	font: 600 36px "ProximaNova"
+	color: #fff
+	text-transform: uppercase
+	i
+		position: absolute
+		top: 0
+		right: 0
+		width: 40px
+		height: 37px
+		background: url(../img/sprites/sprites.png) -27px -28px no-repeat
+
+.events
+	padding: 242px 0 126px
+
+.event__title
+	margin-bottom: 32px
+	font: 800 24px "ProximaNova"
+	text-transform: uppercase
+
+.event__item
+	display: inline-block
+	position: relative
+	width: 360px
+	height: 280px
+	margin-right: 25px
+	overflow: hidden
+	&:last-child
+		margin-right: 0
+	img
+		width: 100%
+		height: 100%
+
+.event__caption
+	position: absolute
+	top: 0
+	left: 0
+	padding: 35px 20px 0
+
+.event__date
+	display: block
+	margin-bottom: 10px
+	font: 300 14px "ProximaNova"
+	color: #fff
+
+.event__descr
+	font: 800 28px "ProximaNova"
+	color: #fff
+	&:hover
+		color: $hover-link
+
+.afisha
+	padding-bottom: 50px
+
+.afisha__top
+	height: 153px
+	padding-top: 55px
+	background: url(../img/home-bg-2.jpg) center top no-repeat
+
+.afisha__title
+	float: left
+	width: 30%
+	margin-right: 50px
+	font: 800 36px "ProximaNova"
+	color: #fff
+	text-align: left
+	text-transform: uppercase
+	&:last-child
+		margin-right: 0
+
+.afisha__block
+	float: left
+	width: 30%
+	margin-right: 50px
+	padding-top: 35px
+	&:last-child
+		margin-right: 0
+
+.news__item
+	margin-bottom: 22px
+
+.news__date
+	display: block
+	margin-top: 5px
+	font-size: 12px
+	font-style: italic
+
+.news__preview
+	margin: 9px 0 12px
+
+.link__more
+	display: block
+	font-size: 14px
+	color: $hover-link
+	text-align: right
+	&:hover
+		text-decoration: underline
+	i
+		display: inline-block
+		width: 26px
+		height: 26px
+		margin-left: 7px
+		line-height: 26px
+		text-align: center
+		vertical-align: middle
+		border-radius: 50%
+		background: $head-bg url(../img/arrow.png) center center no-repeat
+
+.video__item
+	margin-bottom: 10px
+
+.blog__item
+	margin-bottom: 22px
+	img
+		float: left
+
+.blog__title
+	display: block
+	margin-bottom: 20px
+	font: 800 20px "ProximaNova"
+	color: $main-color
+	&:hover
+		color: $hover-link
+
+.blog__preview
+	display: table
+	margin-top: 0
+	padding-left: 12px
+
+.follow
+	padding: 70px 0 88px
+
+.follow__step
+	float: left
+
+.follow__title
+	display: block
+	margin-bottom: 8px
+	font: 800 28px "ProximaNova"
+	text-transform: uppercase
+
+.follow__text
+	display: block
+	font: 400 20px "ProximaNova"
+
+.follow__accent
+	margin: 4px 0 20px
+	font: 800 24px "ProximaNova"
+	color: $head-bg
+
+.accent__price
+	font-size: 48px
+
+.accent__month
+	font-size: 36px
+
+.follow__video
+	margin-bottom: 25px
+
+.main__btn
+	&.main__btn-video
+		width: 240px
+		height: 55px
+		line-height: 55px
+
+.follow__read
+	float: right
+
+.widget__block
+	width: 375px
+	margin-top: 38px
+
+.subscribe
+	height: 105px
+	overflow: hidden
+	background: $head-bg
+	box-shadow: inset 0px -12px 10px 5px rgba(0, 0, 0, 0.1)
+
+.subscribe__title
+	display: inline-block
+	margin-top: 34px
+	font: 800 30px "ProximaNova"
+	color: #fff
+	i
+		float: left
+		position: relative
+		top: -22px
+
+.main__btn
+	&.main__btn-subscribe
+		float: right
+		margin-top: 34px
+
+.footer
+	padding: 35px 0 100px
+	text-align: center
+	background: $foot-bg
+
+.foot__logo
+	float: left
+
+.foot__menu
+	display: inline-block
+	text-align: left
+	vertical-align: top
+	&.foot__menu-left
+		margin: 0 32px 0 52px
+	li
+		margin-bottom: 5px
+		a
+			font-size: 14px
+			color: #fff
+			&:hover
+				color: $main-color
+
+.foot__contact
+	float: right
+	margin: -5px 33px 0 0
+	text-align: left
+
+.foot__phone
+	margin-bottom: 7px
+	a
+		display: inline-block
+		position: relative
+		padding-left: 30px
+		font-size: 24px
+		color: #fff
+		&:before
+			content: ' '
+			position: absolute
+			top: 9px
+			left: 0
+			width: 22px
+			height: 17px
+			background: url(../img/sprites/sprites.png) -101px 0 no-repeat
+
+.foot__mail
+	a
+		display: inline-block
+		position: relative
+		padding-left: 30px
+		font-size: 14px
+		color: #fff
+		&:before
+			content: ' '
+			position: absolute
+			top: 2px
+			left: 0
+			width: 20px
+			height: 16px
+			background: url(../img/sprites/sprites.png) -76px 0 no-repeat
+
+.head__social
+	&.foot__social
+		margin: 20px 0 0
+		a
+			margin-right: 8px
+			font-size: 0
+			width: 35px
+			height: 33px
+			background: url(../img/sprites/sprites.png) 0 -284px no-repeat
+		.ok__ico
+			background-position: 0 -212px
+		.inst__ico
+			width: 33px
+			background-position: 0 -248px
+		.tw__ico
+			width: 33px
+			background-position: 0 -177px
+		.vk__ico
+			width: 33px
+			background-position: 0 -141px
+
+/*-----------Callback form-----------*/
+.callback__form
+	position: relative
+	width: 500px
+	margin: 0 auto
+	padding: 30px 50px
+	text-align: center
+	background: #fff
+	border-radius: 3px
+	input
+		display: block
+		width: 100%
+		height: 40px
+		margin-bottom: 15px
+		padding-left: 10px
+
+.form__title
+	margin-bottom: 20px
+	font: 800 48px "ProximaNova"
+	color: $head-bg
+
+.main__btn
+	&.main__btn-callback
+		float: none
+		display: inline-block
+/*--------------end------------------*/
+
+/*-------------Video form---------------*/
+.video__form
+	position: relative
+	width: 500px
+	margin: 0 auto
+	padding: 30px 50px
+	text-align: center
+	background: #fff
+	border-radius: 3px
+	input
+		display: block
+		width: 100%
+		height: 40px
+		margin-bottom: 15px
+		padding-left: 10px
+
+.form__top
+	margin-bottom: 20px
+	font: 800 24px "ProximaNova"
+
+.form__accent
+	margin-bottom: 15px
+	font: 800 28px "ProximaNova"
+	color: $head-bg
+	text-transform: uppercase
+
+.main__btn
+	&.main__btn-get
+		float: none
+		display: inline-block
+		width: 100%
+		height: 50px
+		font-size: 20px
+		line-height: 50px
+
+.form__warn
+	display: block
+	margin-top: 15px
+
+.callback__form
+	&.callback__form-subscribe
+		width: 590px
+
+.form__title
+	&.form__title-subscribe
+		line-height: 40px
+
+.main__btn
+	&.main__btn-subs
+		float: none
+		width: 220px
+		height: 45px
+		border: none
+		margin: 0 auto
+/*---------------end------------------*/
+
+@import "blog-1.sass"
+
+@import "blog-2.sass"
+
+@import "blog-3.sass"
+
+@import "news.sass"
+
+@import "article.sass"
+
+@import "contact.sass"
+
+@import "schedule.sass"

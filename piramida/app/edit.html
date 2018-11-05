@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Пирамида</title>
+
+	<meta name="description" content="">
+
+	<meta property="og:image" content="img/home-og.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="libs/normalize/normilize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+		<header class="header">
+		<div class="container">
+
+			<a href="#" class="logo">Логотип</a>
+
+			<a href="#" class="main-link">На главную</a>
+
+			<div class="counter">
+				<div class="counter__title">Уже на сайте:</div>
+				<div class="counter__total">10487</div>
+				<div class="counter__num"><span>5</span>человек</div>
+			</div>
+
+			<div class="account">
+				<a href="#personal" class="btn btn--signin popup" data-effect="mfp-zoom-in">В личный кабинет</a>
+
+				<div class="account__total">Ваш счет: <span>12 000 руб.</span></div>
+			</div>
+
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<div class="content">
+			<div class="container">
+
+				<div class="sidebar">
+					<div class="profile-name">Здравствуйте,<span>Николай Семенович</span></div>
+					<div class="profile-nav">
+						<ul class="profile-list">
+							<li class="profile-list__item"><a href="#" class="profile-list__link active">Профиль</a></li>
+							<li class="profile-list__item"><a href="#" class="profile-list__link">Моя команда</a></li>
+							<li class="profile-list__item"><a href="#" class="profile-list__link">Финансы</a></li>
+							<li class="profile-list__item"><a href="#" class="profile-list__link">FAQ</a></li>
+						</ul>
+						<a href="#" class="profile-exit">Выйти</a>
+					</div>
+				</div>
+
+				<div class="main-content">
+
+					<div class="edit">
+						<div class="profile-title">Редактирование профиля</div>
+						<div class="edit-block edit-block--contact">
+							<div class="edit-block__title">Ваши контактные данные</div>
+							<form action="#">
+								<label for="name">
+									Ваше имя:
+									<input type="text" id="name" placeholder="Витя">
+								</label>
+								<label for="phone">
+									Ваш номер телефона:
+									<input type="text" id="phone" placeholder="+7 (495) 234-65-66">
+								</label>
+								<label for="mail">
+									Электронная почта:
+									<input type="text" id="mail" placeholder="komar@mail.ru">
+								</label>
+								<label for="city">
+									Ваш город:
+									<select name="city" id="city">
+										<option>Москва</option>
+										<option>Санкт-Петербург</option>
+									</select>
+								</label>
+							</form>
+						</div>
+
+						<div class="edit-block edit-block--password">
+							<div class="edit-block__title">Изменение пароля:</div>
+							<form action="#">
+								<label for="pass">
+									Новый пароль:
+									<input type="text" id="pass" placeholder="********************">
+								</label>
+								<label for="pass-repeat">
+									Повторить новый пароль:
+									<input type="text" id="pass-repeat" placeholder="********************">
+								</label>
+							</form>
+						</div>
+
+						<div class="edit-block edit-block--about">
+							<div class="edit-block__title">Пару слов о себе (статус)</div>
+							<form action="#">
+								<label for="about">
+									Напишите о себе:
+									<textarea class="about-in" name="about" id="about" cols="30" rows="10" placeholder="https://www.behance.net/search/komarov/nikolay"></textarea>
+								</label>
+							</form>
+							<div class="edit-block__title edit-block__title--ref">Ваша реферальная ссылка</div>
+							<form action="#">
+								<label for="ref">
+									Вставьте ссылку:
+									<textarea class="ref-in" name="ref" id="ref" cols="30" rows="10" placeholder="https://www.behance.net/search/komarov/nikolay https://www.behance.net/search/komarov/nikolay"></textarea>
+								</label>
+							</form>
+						</div>
+
+						<a href="#" class="save-link">Сохранить изменения</a>
+
+					</div>
+
+					<div class="profile profile--outer">
+
+						<div class="profile-block profile-block--outer">
+							<div class="profile-block__title">Профиль пригласившего вас друга</div>
+							<div class="profile-contact"><span>Имя:</span>Николаенко Сергей</div>
+							<div class="profile-contact"><span>E-mail:</span>serg@gmail.com</div>
+							<div class="profile-contact"><span>Город:</span>г.Санкт-Петербург</div>
+						</div>
+
+						<div class="profile-block profile-block--ref">
+							<div class="profile-block__title">Реферальная ссылка</div>
+							<a href="#" class="profile-reflink">https://www.behance.net/search/komarov/nikolay</a>
+						</div>
+
+						<div class="profile-block profile-block--status">
+							<div class="profile-block__title">Статус</div>
+							<div class="profile-status">Хочу квартиру и машину!</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="news-wrap">
+				<div class="container">
+					<div class="news-block">
+						<div class="news-block__title">Новости</div>
+
+						<div class="news-carousel">
+
+							<div class="carousel-item">
+								<div class="news-item news-item--carousel">
+									<div class="news-item__pict">
+										<img src="img/news-pict.jpg" alt="">
+										<div class="news-item__accent">Мы подсоединили Web Money!</div>
+									</div>
+									<div class="news-item__descr">
+										<div class="news-item__text">
+											<p>Если он в течение 1 месяца он пригласил хотя бы одного человека, то он к сроку месяц после регистрации оплачивает</p>
+										</div>
+										<a href="#" class="news-item__link">Читать далее</a>
+										<div class="news-item__date">20 апреля, 2017</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="news-item news-item--carousel">
+									<div class="news-item__pict">
+										<img src="img/news-pict.jpg" alt="">
+										<div class="news-item__accent">Мы подсоединили Web Money!</div>
+									</div>
+									<div class="news-item__descr">
+										<div class="news-item__text">
+											<p>Если он в течение 1 месяца он пригласил хотя бы одного человека, то он к сроку месяц после регистрации оплачивает</p>
+										</div>
+										<a href="#" class="news-item__link">Читать далее</a>
+										<div class="news-item__date">20 апреля, 2017</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="news-item news-item--carousel">
+									<div class="news-item__pict">
+										<img src="img/news-pict.jpg" alt="">
+										<div class="news-item__accent">Мы подсоединили Web Money!</div>
+									</div>
+									<div class="news-item__descr">
+										<div class="news-item__text">
+											<p>Если он в течение 1 месяца он пригласил хотя бы одного человека, то он к сроку месяц после регистрации оплачивает</p>
+										</div>
+										<a href="#" class="news-item__link">Читать далее</a>
+										<div class="news-item__date">20 апреля, 2017</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<a href="#" class="btn btn--carousel">Смотреть все новости</a>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+		<footer class="footer">
+		<div class="container">
+			<a href="#" class="logo logo--footer">Логотип</a>
+			<a href="#" class="main-link main-link--footer">На главную</a>
+			<a href="#" class="account-link">В личный кабинет</a>
+			<a href="mailto:info@gmail.com" class="mail-link">info@gmail.com</a>
+			<div class="copyright">&copy; 2017. Все права защищены.</div>
+		</div>
+	</footer>
+
+	<div class="hidden">
+		<div id="faq-form" class="form-modal container mfp-with-anim">
+			<div class="form-modal__title">Задать свой вопрос</div>
+			<form action="#">
+				<label for="name-m">
+					Ваше имя:
+					<input type="text" id="name-m" placeholder="Витя">
+				</label>
+				<label for="message">
+					Ваш вопрос:
+					<textarea name="message" id="message" cols="30" rows="10" placeholder="https://www.behance.net/search/komarov/nikolay"></textarea>
+				</label>
+				<button class="btn btn--modal">Отправить</button>
+			</form>
+		</div>
+
+		<div id="personal" class="form-modal container mfp-with-anim">
+			<div class="form-modal__title">Вход в личный кабинет</div>
+			<form action="#">
+				<label for="login">
+					Ваш логин:
+					<input type="text" id="login" placeholder="Витя">
+				</label>
+				<label for="password">
+					Ваш пароль:
+					<input type="text" id="password" placeholder="****************">
+				</label>
+				<button class="btn btn--modal">Войти</button>
+			</form>
+		</div>
+
+		<div id="login-form" class="form-modal form-modal--2 container mfp-with-anim">
+			<div class="form-modal__wrap">
+				<div class="form-modal__title">Денис, cпасибо за регистрацию, вас пригласил Михаил,<br>оплатите <span>500 руб</span></div>
+				<form action="#">
+					<label for="phone">
+						Ваш номер телефона:
+						<input type="text" id="phone" placeholder="89258888888">
+					</label>
+					<span class="form-modal__message">После оплаты вы получите код на указанный номер телефона и активируете свой аккаунт</span>
+					<a href="#code" class="btn btn--modal popup" data-effect="mfp-zoom-in">Оплатить</a>
+				</form>
+			</div>
+		</div>
+
+		<div id="code" class="form-modal form-modal--3 container mfp-with-anim">
+			<div class="form-modal__wrap">
+				<div class="form-modal__title">Введите код и активируйте свой аккаунт</div>
+				<form action="#">
+					<label for="code">
+						Код из смс:
+						<input type="text" id="code" placeholder="234453">
+					</label>
+					<button class="btn btn--modal">Активировать</button>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.12.4.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/magnific/jquery.magnific-popup.min.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+
+	<script src="js/common.js"></script>
+
+
+</body>
+</html>

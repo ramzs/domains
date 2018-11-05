@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="page">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="page-title">Корзина</h1>
+				</div>
+			</div>
+			<div class="cart-block">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="tb-cart">
+							<div class="tb-row tb-row_head">
+								<div class="tb-cell tb-cell_head">Цвет</div>
+								<div class="tb-cell tb-cell_head">Название цвета</div>
+								<div class="tb-cell tb-cell_head">Количество</div>
+								<div class="tb-cell tb-cell_head">Цена</div>
+								<div class="tb-cell tb-cell_head">Сумма</div>
+							</div>
+							<div class="tb-row tb-row_body">
+								<div class="tb-cell tb-cell_body tb-cell_color">
+									<div class="cart-color" style="background: #f74102;"></div>
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_name">
+									<span>Огненный драматит</span>
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_count">
+									<div class="count-change">
+										<a href="#" class="count-change__arrow count-change__arrow_left">left</a>
+										<input class="count-change__in" type="text" value="224 литра">
+										<a href="#" class="count-change__arrow count-change__arrow_right">right</a>
+									</div>
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_price">
+									<span>90 000 руб.</span>
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_total">
+									<span class="total-title">Всего:</span>
+									<span>90 000 руб.</span>
+									<a href="#" class="del-link">убрать товар</a>
+								</div>
+							</div>
+
+							<div class="tb-row tb-row_body">
+								<div class="tb-cell tb-cell_body tb-cell_color">
+									<div class="cart-color" style="background: #5bdad5;"></div>
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_name">
+									<span>Лазурная лазурь</span>
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_count">
+									<div class="count-change">
+										<a href="#" class="count-change__arrow count-change__arrow_left">left</a>
+										<input class="count-change__in" type="text" value="24 литра">
+										<a href="#" class="count-change__arrow count-change__arrow_right">right</a>
+									</div>
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_price">
+									<span>290 000 руб.</span>
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_total">
+									<span class="total-title">Всего:</span>
+									<span>290 000 руб.</span>
+									<a href="#" class="del-link">убрать товар</a>
+								</div>
+							</div>
+
+							<div class="tb-row tb-row_body">
+								<div class="tb-cell tb-cell_body tb-cell_color">
+									<div class="cart-color" style="background: #faf04a;"></div>
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_name">
+									<span>Кукурузный светлый</span>
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_count">
+									<div class="count-change">
+										<a href="#" class="count-change__arrow count-change__arrow_left">left</a>
+										<input class="count-change__in" type="text" value="4 литра">
+										<a href="#" class="count-change__arrow count-change__arrow_right">right</a>
+									</div>
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_price">
+									<span>9 000 руб.</span>
+								</div>
+								<div class="tb-cell tb-cell_body tb-cell_total">
+									<span class="total-title">Всего:</span>
+									<span>9 000 руб.</span>
+									<a href="#" class="del-link">убрать товар</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="cart-total">
+							<input type="text" class="cart-total__vin" placeholder="VIN-код">
+							<div class="cart-total__sale">Скидка VIN: <span>67 842 руб.</span></div>
+							<div class="cart-total__price">Сумма к оплате: <span>567 842 руб.</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

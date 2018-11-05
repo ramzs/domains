@@ -1,0 +1,1035 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+.header
+	position: relative
+
+.header-top
+	background: #fff
+	background-image: linear-gradient(to top, rgba(233, 78, 217, 0.17) 0%, rgba(255, 182, 247, 0.17) 100%)
+
+.header-wrap
+	margin-bottom: 9px
+
+.logo
+	float: left
+	width: 194px
+	margin-top: 27px
+	img
+		width: 100%
+
+.cart
+	position: relative
+	display: inline-block
+	width: 259px
+	height: 83px
+	margin: 14px 0 0 164px
+	padding: 5px 0 0 63px
+	vertical-align: top
+	border-radius: 10px
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), inset 0 -1px 1px #fff
+	background-color: rgba(255, 186, 0, 0.21)
+	background: linear-gradient(to bottom, rgba(253,213,221, .75) 0%,rgba(249,190,215, .75) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdd5dd', endColorstr='#f9bed7',GradientType=0 )
+	&:before
+		content: ' '
+		position: absolute
+		top: 10px
+		left: 15px
+		@include sprite($cart)
+	&-wrap
+		text-align: left
+	&__row
+		font-size: 17px
+		font-weight: 300
+		color: #0c1e71
+		span
+			font-weight: 500
+			color: #2e2e2e
+	&__link
+		display: block
+		margin-top: 5px
+		font-size: 17px
+		font-weight: 300
+		color: #2b2b2c
+		text-decoration: underline
+
+.contact
+	display: inline-block
+	margin: 10px 0 0 156px
+	vertical-align: top
+	text-align: left
+	&-phone
+		position: relative
+		padding-left: 35px
+		&__link
+			display: block
+			font-size: 20px
+			font-weight: 500
+			color: #2e2e2e
+			span
+				color: #0c1e71
+		&:before
+			content: ' '
+			position: absolute
+			top: 2px
+			left: 0
+			@include sprite($phone)
+	&-work
+		position: relative
+		margin-top: 7px
+		padding-left: 35px
+		font-size: 15px
+		font-weight: 500
+		color: #2e2e2e
+		&:before
+			content: ' '
+			position: absolute
+			top: 0
+			left: 0
+			@include sprite($work)
+
+.callback
+	float: right
+	margin-top: 18px
+	text-align: center
+	&__link
+		display: block
+		width: 195px
+		height: 41px
+		font-size: 20px
+		font-weight: 500
+		color: #60123f
+		line-height: 38px
+		text-align: center
+		outline: none
+		border: 1px solid #BC780A
+		border-radius: 10px
+		box-shadow: inset 0 -4px 0 rgba(230, 101, 15, 0.66)
+		background-color: #ffba00
+		background-image: linear-gradient(to top, #e28c13 0%, #f0ca2d 100%)
+		&:hover
+			background-image: linear-gradient(to bottom, #e28c13 0%, #f0ca2d 100%)
+		&--mob
+			display: none
+	&__mail
+		position: relative
+		display: inline-block
+		left: 15px
+		margin-top: 8px
+		font-size: 19px
+		color: #60123f
+		border-bottom: 1px dashed #60123f
+		&:before
+			content: ' '
+			position: absolute
+			top: 4px
+			left: -30px
+			@include sprite($mail)
+		&:hover
+			border-color: transparent
+
+.nav
+	position: relative
+	height: 39px
+	margin-bottom: -39px
+	z-index: 5
+	line-height: 39px
+	background-color: rgba(140, 140, 140, 0.54)
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0.5)
+	&-list
+		@include justify
+		li
+			position: relative
+			display: inline-block
+			&:not(:last-child):after
+				content: ' '
+				position: absolute
+				top: 14px
+				right: -79px
+				width: 3px
+				height: 11px
+				opacity: .62
+				background: #fff
+			a
+				position: relative
+				display: block
+				font-size: 24px
+				font-weight: 300
+				color: #fff
+				line-height: 39px
+				&:hover
+					text-shadow: 0 0 1px #ffba00
+					color: #ffba00
+
+.btn-menu
+	display: none
+	width: 321px
+	height: 34px
+	margin: 0 auto
+	overflow: hidden
+	font-size: 18px
+	color: #63055c
+	text-align: center
+	line-height: 32px
+	cursor: pointer
+	border: 1px solid #63055c
+	border-radius: 10px
+	&__title
+		&--open
+			display: none
+
+.header-main
+	padding: 45px 0 80px
+	background: url(../img/slider-bg.png) center top no-repeat
+	background-size: cover
+
+.main-slider
+	max-width: 881px
+	margin: 0 auto
+	.slider-item
+		padding: 0 32px
+		outline: none
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -57px
+		font-size: 0
+		z-index: 9
+		opacity: .8
+		outline: none
+		cursor: pointer
+		border: none
+		background: none
+		&:hover
+			opacity: 1
+		&.slick-prev
+			left: -32px
+			@include sprite($arrow-left)
+		&.slick-next
+			right: -32px
+			@include sprite($arrow-right)
+
+.slider-caption
+	max-width: 675px
+	margin: 0 auto
+	&__descr
+		display: inline-block
+	&__title
+		font-size: 35px
+		font-weight: 500
+		color: #fff
+		text-shadow: 0 3px 0 rgba(0, 0, 0, 0.44)
+	&__accent
+		margin-bottom: 7px
+		font-size: 35px
+		font-weight: 700
+		color: #fc0
+		text-shadow: 0 3px 0 rgba(0, 0, 0, 0.44)
+	&__pict
+		float: right
+		width: 215px
+		height: 205px
+		margin-top: 12px
+		img
+			width: 100%
+
+.btn
+	display: block
+	width: 198px
+	height: 37px
+	font-size: 20px
+	font-weight: 500
+	line-height: 35px
+	text-align: center
+	border-radius: 10px
+	&--var1
+		color: #22108d
+		box-shadow: inset 0 -4px 0 rgba(58, 0, 175, 0.66)
+		background-image: linear-gradient(to top, #17a2ca 0%, #6fdbff 100%)
+		&:hover
+			background-image: linear-gradient(to bottom, #17a2ca 0%, #6fdbff 100%)
+
+.content
+	margin-top: -18px
+	padding-bottom: 150px
+	overflow: hidden
+
+.sidebar
+	float: left
+	width: 19.7%
+
+.block-title
+		font-size: 24px
+		font-weight: 700
+		color: #52054c
+		&--catalog
+			margin-bottom: 38px
+
+.catalog-list
+	> li
+		display: block
+		margin-bottom: 7px
+		> a
+			position: relative
+			display: block
+			width: 263px
+			height: 54px
+			padding: 0 12px
+			font-size: 22px
+			color: #181818
+			line-height: 54px
+			border-radius: 10px
+			box-shadow: inset 0.1px -4px 0 rgba(0, 0, 0, 0.06)
+			background-image: linear-gradient(7deg, gainsboro 0%, #ededed 100%)
+			&:hover
+				text-decoration: underline
+			&:after
+				content: ' '
+				position: absolute
+				top: 22px
+				right: 10px
+				@include sprite($arrow-down)
+			&.active
+				color: #fff
+				box-shadow: inset 0.1px -4px 0 rgba(0, 0, 0, 0.19)
+				background-image: linear-gradient(180deg, #bd0e8d 0%, #8f0f8d 100%)
+				&:hover
+					text-decoration: none
+				&:after
+					@include sprite($arrow-up)
+	&__dropdown
+		visibility: hidden
+		height: 0px
+		margin: 2px 0 0
+		padding-left: 9px
+		&.open
+			visibility: visible
+			height: auto
+		li
+			a
+				display: inline-block
+				font-size: 18px
+				font-weight: 300
+				color: #3a0038
+				line-height: 38px
+				text-decoration: underline
+				&:hover, &.active
+					color: #a600a1
+
+.brend-block
+	margin: 65px 0 37px
+	&--mob
+		display: none
+
+.block-title--brend
+	margin-bottom: 20px
+
+.brend-pict
+	display: inline-block
+	width: 263px
+	@include justify
+	img
+		display: inline-block
+		width: 45%
+		margin-bottom: 10px
+
+.news-block-mob
+	display: none
+
+.block-title--news
+	margin-bottom: 20px
+
+.news-item
+	width: 263px
+	min-height: 129px
+	margin-bottom: 7px
+	padding: 18px 22px
+	border-radius: 10px
+	box-shadow: inset 0.1px -4px 0 rgba(0, 0, 0, 0.03)
+	background-image: linear-gradient(48deg, #abf0f1 0%, #ddfffe 100%)
+	&__text
+		font-size: 18px
+		color: #000
+		span
+			display: block
+			font-size: 16px
+			color: #707070
+	&__link
+		display: inline-block
+		margin-top: 7px
+		font-size: 18px
+		color: #0071b9
+		text-decoration: underline
+
+.btn
+	&--news
+		width: 263px
+		height: 47px
+		margin-top: 9px
+		line-height: 45px
+		color: #fff
+	&--var2
+		box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.22)
+		background-image: linear-gradient(to top, #1c70a4 0%, #2592d5 80%, #2592d5 100%)
+		&:hover
+			background-image: linear-gradient(to bottom, #1c70a4 0%, #2592d5 80%, #2592d5 100%)
+
+.banner
+	position: relative
+	width: 262px
+	margin-top: 58px
+	padding: 78px 25px 20px
+	border-radius: 15px
+	box-shadow: inset 0.1px -4px 0 rgba(0, 0, 0, 0.19)
+	background-image: linear-gradient(48deg, #bd0e8d 0%, #8f0f8d 100%)
+	&--mob
+		display: none
+	&__pict
+		position: absolute
+		top: -30px
+		left: 16px
+		width: 134px
+		height: 112px
+		img
+			display: block
+			width: 100%
+	&__text
+		margin: 12px 0 20px
+		font-size: 23px
+		font-weight: 700
+		line-height: 22px
+		color: #fff
+	&-form
+		input
+			width: 212px
+			height: 42px
+			font-size: 25px
+			font-weight: 300
+			color: #707070
+			text-align: center
+			outline: none
+			border-radius: 10px
+			border: none
+			box-shadow: inset 2.8px 2.8px 0 rgba(0, 0, 0, 0.21)
+			background-color: white
+			&::-webkit-input-placeholder
+				color: #707070
+			&:-moz-placeholder
+				color: #707070
+			&::-moz-placeholder
+				color: #707070
+			&:-ms-input-placeholder
+				color: #707070
+
+.btn--form
+	width: 212px
+	height: 47px
+	margin-top: 12px
+	font-size: 23px
+	color: #60123f
+	cursor: pointer
+	outline: none
+	border: none
+	box-shadow: inset 0 -4px 0 rgba(175, 0, 78, 0.66)
+	background-image: linear-gradient(to top, #e28c13 0%, #f0ca2d 100%)
+	&:hover
+		background-image: linear-gradient(to bottom, #e28c13 0%, #f0ca2d 100%)
+
+.article-block
+	margin-top: 40px
+	&--mob
+		display: none
+
+.block-title--help
+	margin-bottom: 23px
+
+.article-preview
+	width: 263px
+	margin-bottom: 7px
+	padding: 16px 22px 23px
+	border-radius: 10px
+	box-shadow: inset 0.1px -4px 0 rgba(0, 0, 0, 0.03)
+	background-image: linear-gradient(48deg, #abf0f1 0%, #ddfffe 100%)
+	&__title
+		margin-bottom: 12px
+		font-size: 20px
+		font-weight: 500
+		color: #000
+	&__text
+		height: 80px
+		overflow: hidden
+		font-size: 14px
+		color: #000
+	&__link
+		display: inline-block
+		margin-top: 10px
+		font-size: 18px
+		color: #0071b9
+		text-decoration: underline
+
+.main
+	float: left
+	width: 80.3%
+	margin-top: -2px
+	padding-left: 47px
+
+.search
+	position: relative
+	&--mob
+		display: none
+	&-in
+		display: block
+		width: 100%
+		height: 36px
+		padding-left: 22px
+		outline: none
+		border: 1px solid #b0bec5
+		border-radius: 10px
+		box-shadow: inset 2.8px 2.8px 0 rgba(0, 0, 0, 0.15)
+	&-btn
+		position: absolute
+		top: 0
+		right: 0
+		width: 195px
+		height: 36px
+		padding: 0
+		font-size: 20px
+		font-weight: 500
+		color: #fff
+		line-height: 30px
+		outline: none
+		cursor: pointer
+		border: none
+		border-radius: 10px
+		box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.22)
+		background-image: linear-gradient(to top, #1c70a4 0%, #2592d5 80%, #2592d5 100%)
+		i
+			position: relative
+			display: inline-block
+			top: 3px
+			left: -3px
+			margin-right: 5px
+			@include sprite($search)
+		&:hover
+			background-image: linear-gradient(to bottom, #1c70a4 0%, #2592d5 80%, #2592d5 100%)
+
+.catalog
+	margin: 24px -32px 0 0
+	&-item
+		float: left
+		position: relative
+		max-width: 323px
+		width: 100%
+		height: 260px
+		margin: 0 30px 23px 0
+		overflow: hidden
+		border-radius: 15px
+		border: 1px solid #ddd
+		background: #ffba00
+		&__pict
+			overflow: hidden
+			img
+				display: block
+				width: 100%
+		&__title
+			position: absolute
+			display: table
+			width: 100%
+			bottom: 0
+			left: 0
+			right: 0
+			height: 78px
+			font-size: 28px
+			color: #55004f
+			line-height: 22px
+			text-align: center
+			border-radius: 15px 15px 0 0
+			background: rgba(255,255,255, .86)
+			span
+				display: table-cell
+				vertical-align: middle
+			&:hover
+				background: rgba(255,255,255, 1)
+
+.product-block
+	margin: 23px 0 49px
+
+.block-title--product
+	margin-bottom: 36px
+
+.product-wrap
+	margin-right: -15px
+
+.product-item
+	float: left
+	position: relative
+	width: 250px
+	height: 381px
+	margin: 0 10px 13px 0
+	overflow: hidden
+	border-radius: 10px
+	border: 1px solid #8e8e8e
+	background: #fff
+	transition: all .15s ease
+	&__wrap
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		padding: 10px 18px 14px
+		border: 1px solid transparent
+		transition: all .15s ease
+	&:hover
+		border: 1px solid transparent
+		overflow: visible
+		z-index: 10
+		.product-item__wrap
+			left: -10px
+			width: 108%
+			border-radius: 10px
+			border: 1px solid #8e8e8e
+			box-shadow: 0 0 18px rgba(0, 0, 0, 0.24)
+			background: #fff
+		.product-item__pict
+			height: 250px
+			transition: height .15s
+			img
+				width: 108%
+	&__pict
+		position: relative
+		height: 220px
+		text-align: center
+		overflow: hidden
+		img
+			display: block
+			@include vcenter
+	&__descr
+		margin-top: 14px
+		text-align: center
+	&__brend
+		display: block
+		margin-bottom: 4px
+		@include text-overflow
+		font-size: 21px
+		font-weight: 500
+		color: #2b2b2b
+		&:hover
+			text-decoration: underline
+	&__dir
+		display: block
+		height: 40px
+		overflow: hidden
+		font-size: 17px
+		font-weight: 300
+		color: #2b2b2b
+		text-transform: uppercase
+		&:hover
+			text-decoration: underline
+	&__price
+		margin-top: 5px
+		font-size: 28px
+		font-weight: 500
+		color: #460ba0
+	&__sale
+		margin: 4px 0 12px
+		font-size: 16px
+		color: #404040
+		span
+			color: #818181
+			text-decoration: line-through
+		&--hide
+			opacity: 0
+	&__size
+		margin-top: 8px
+		font-size: 11px
+		font-weight: 300
+		color: #9d9d9d
+		span
+		display: block
+
+.btn
+	&--size
+		width: 190px
+		height: 38px
+		margin: 0 auto
+		color: #fff
+		line-height: 35px
+	&--cart
+		width: 190px
+		height: 38px
+		margin: 0 auto 6px
+		color: #60123f
+		line-height: 35px
+	&--var3
+		box-shadow: inset 0 -4px 0 rgba(175, 0, 78, 0.66)
+		background-image: linear-gradient(to top, #e28c13 0%, #f0ca2d 100%)
+		&:hover
+			background-image: linear-gradient(to bottom, #e28c13 0%, #f0ca2d 100%)
+	&--product
+		width: 515px
+		height: 42px
+		margin: 9px auto 0
+		color: #fff
+		line-height: 40px
+	&--var4
+		box-shadow: inset 0.1px -4px 0 rgba(0, 0, 0, 0.19)
+		background-image: linear-gradient(48deg, #bd0e8d 0%, #8f0f8d 100%)
+		&:hover
+			background-image: linear-gradient(-48deg, #bd0e8d 0%, #8f0f8d 100%)
+
+.advantage
+	margin-top: 134px
+	padding: 39px 95px 54px
+	border-radius: 20px
+	background: rgba(197,202,233, .57)
+
+.block-title--advantage
+	margin-bottom: 29px
+
+.adv-item
+	display: inline-block
+	width: 310px
+	margin: 0 180px 26px 0
+	&:nth-child(even)
+		margin-right: 0
+	&__pict
+		display: inline-block
+		position: relative
+		width: 65px
+		height: 65px
+		vertical-align: middle
+		border-radius: 50%
+		box-shadow: inset 0 -6px 0 rgba(0, 0, 0, 0.15)
+		background-image: linear-gradient(to top, #900633 0%, #c63463 100%)
+		img
+			display: block
+			max-width: 43px
+			max-height: 39px
+			@include vcenter
+	&__descr
+		display: inline-block
+		width: 75%
+		padding-left: 9px
+		vertical-align: middle
+		font-size: 19px
+		color: #1b1b1b
+
+.adv-text
+	position: relative
+	max-width: 460px
+	margin-top: 24px
+	font-size: 24px
+	font-weight: 700
+	color: #1b1b1b
+	p
+		display: table
+		background: linear-gradient(90deg, #bd0e8d 0%, #8f0f8d 100%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+
+.feedback
+	margin-top: 84px
+
+.block-title--feedback
+	margin-bottom: 20px
+
+.feedback-wrap
+	margin-right: -10px
+
+.feedback-item
+	float: left
+	width: 249px
+	height: 263px
+	margin-right: 10px
+	padding: 18px 17px 0
+	border: 3px solid #bdbdbd
+	border-radius: 20px
+	background: rgba(238,238,238, .57)
+	&__title
+		margin-bottom: 10px
+		font-size: 17px
+		font-weight: 500
+		color: #1b1b1b
+	&__text
+		height: 194px
+		overflow: hidden
+		font-size: 11px
+		color: #1b1b1b
+
+.btn--feedback
+	width: 263px
+	height: 47px
+	margin: 25px auto 0
+	color: #fff
+	line-height: 45px
+
+.about
+	margin-top: 64px
+
+.block-title--about
+	margin-bottom: 20px
+
+.about__text
+		font-size: 18px
+		color: #1b1b1b
+
+.footer
+	padding: 63px 0 57px
+	background: url(../img/footer-bg.png) center top no-repeat
+	background-size: cover
+	&-block
+		display: inline-block
+		vertical-align: top
+		&__title
+			margin-bottom: 9px
+			font-size: 20px
+			font-weight: 500
+			color: #fc0
+
+.footer-block--nav
+	float: left
+	margin-right: 122px
+
+.footer-menu
+	width: 230px
+	li
+		display: inline-block
+		margin: 0 12px 5px 0
+		a
+			display: block
+			font-size: 18px
+			font-weight: 500
+			color: #fff
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+
+.footer-block--contact
+	margin-right: 195px
+
+.contact
+	&--footer
+		margin: 0
+	&-phone
+		&--footer
+			&:before
+				@include sprite($phone-white)
+		&__link
+			&--footer
+				color: #fff
+				span
+					color: #fff
+	&-work
+		&--footer
+			color: #fff
+			&:before
+				@include sprite($work-white)
+
+.social
+	&__link
+		display: inline-block
+		margin-right: 5px
+		vertical-align: top
+		font-size: 0
+		&--fb
+			i
+				display: block
+				@include sprite($fb)
+		&--vk
+			i
+				display: block
+				@include sprite($vk)
+		&--inst
+			i
+				display: block
+				@include sprite($inst)
+		&--ok
+			i
+				display: block
+				@include sprite($ok)
+
+.footer-block--help
+	float: right
+
+.help
+	display: inline-block
+	&__link
+		display: block
+		margin-bottom: 6px
+		font-size: 18px
+		font-weight: 500
+		color: #fff
+		text-decoration: underline
+
+.footer-bottom
+	position: relative
+	margin-top: 43px
+
+.footer-logo
+	display: inline-block
+	width: 183px
+	vertical-align: middle
+	img
+		width: 100%
+
+.copyright
+	display: inline-block
+	margin-left: 170px
+	vertical-align: middle
+	font-size: 16px
+	font-weight: 500
+	color: #fff
+
+.pay
+	float: right
+	margin-top: 15px
+
+.callback-form
+	position: relative
+	width: 555px
+	max-width: 100%
+	margin: 0 auto
+	padding-bottom: 30px
+	text-align: center
+	overflow: hidden
+	border-radius: 10px
+	background: #ffebee
+	&__title
+		margin-bottom: 30px
+		padding: 22px 0
+		font-size: 28px
+		font-weight: 500
+		color: #fff
+		background: #63055c
+	form
+		width: 358px
+		margin: 0 auto
+	input
+		display: block
+		width: 100%
+		height: 38px
+		margin-bottom: 15px
+		font-size: 16px
+		text-align: center
+		border: 1px solid #898989
+		border-radius: 5px
+		background: #fff
+		&::-webkit-input-placeholder
+			color: #000
+			font-weight: 300
+			font-style: italic
+		&:-moz-placeholder
+			color: #000
+			font-weight: 300
+			font-style: italic
+		&::-moz-placeholder
+			color: #000
+			font-weight: 300
+			font-style: italic
+		&:-ms-input-placeholder
+			color: #000
+			font-weight: 300
+			font-style: italic
+	.mfp-close-btn-in
+		.mfp-close
+			color: #fffdfd
+			opacity: .45
+	.mfp-close
+		right: 5px
+		top: 5px
+		font-size: 32px
+		&:active
+			top: 5px
+
+.mfp-bg
+	background: #63055c !important
+
+.btn--callback
+	width: 100%
+	height: 40px
+	font-size: 19px
+	color: #fff
+	line-height: 38px
+	border: none
+
+
+.fast-order
+	position: relative
+	max-width: 1053px
+	margin: 0 auto
+	padding: 25px 20px 48px
+	border: 1px solid #585858
+	background: #fff
+	&__title
+		margin-bottom: 18px
+		font-size: 23px
+		font-weight: 700
+		color: #3f003d
+	&__comment
+		margin-bottom: 41px
+		font-size: 16px
+		color: #000
+	form
+		width: 480px
+	label
+		display: block
+		width: 100%
+		height: 40px
+		margin-bottom: 10px
+		font-size: 17px
+		color: #000
+		line-height: 38px
+	input
+		float: right
+		width: 387px
+		height: 40px
+		padding-left: 15px
+		outline: none
+		border: 1px solid #263238
+		border-radius: 10px
+
+.block-table--modal
+	max-width: 1005px
+
+.btn--order
+	width: 159px
+	height: 40px
+	padding-bottom: 4px
+	font-size: 19px
+	color: #fff
+	line-height: 1
+	border: none
+
+
+
+/*-------Плавное появление magnific popup------------*/
+.mfp-zoom-in
+	.mfp-with-anim
+		opacity: 0
+		transition: all 0.2s ease-in-out
+		transform: scale(0.8)
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.3s ease-out
+	&.mfp-ready
+		.mfp-with-anim
+			opacity: 1
+			transform: scale(1)
+		&.mfp-bg
+			opacity: 0.64
+	&.mfp-removing
+		.mfp-with-anim
+			transform: scale(0.8)
+			opacity: 0
+		&.mfp-bg
+			opacity: 0
+/*-------------end-----------------------*/
+
+
+@import "catalog.sass"
+@import "tovar.sass"
+@import "cart.sass"

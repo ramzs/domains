@@ -1,0 +1,166 @@
+/*-----------------Cart page--------------------*/
+.section-cart
+	position: relative
+
+.cart-main
+	.tb
+		position: relative
+		display: table
+		width: 100%
+		&-row
+			display: table-row
+			background: #fff
+			&_body
+				&:nth-child(n+3)
+					.tb-cell_pict
+						border-top: none
+		&-cell
+			position: relative
+			display: table-cell
+			vertical-align: middle
+			&_head
+				padding: 13px 0 13px 10px
+				font-size: 16px
+				border: none
+				&:nth-child(2)
+					padding-left: 35px
+			&_body
+				padding: 30px 10px
+				font-size: 15px
+				border-bottom: 1px solid #eee
+				background: #fbfbfb
+			&_pict
+				width: 11.3%
+				text-align: center
+				border: 1px solid #eee
+				background: #fff
+				img
+					max-width: 100%
+					max-height: 60px
+			&_name
+				width: 40.5%
+				padding: 15px 10px 15px 35px
+				a
+					display: block
+					font-size: 15px
+					&:hover
+						color: $blue
+					&:focus
+						text-decoration: none
+			&_price
+				width: 16.4%
+			&_count
+				width: 16%
+				padding: 15px 5px
+			&_total
+				min-width: 115px
+				font-weight: 700
+		.del-link
+			display: block
+			margin-top: 5px
+			color: #db1560
+			&:hover
+				color: #db1560
+				text-decoration: underline
+			&:focus
+				text-decoration: none
+	.jq-number
+		display: block
+		width: 140px
+		height: 34px
+		left: -33px
+		margin: 0 auto
+		padding-right: 0
+		text-align: center
+		&__field
+			width: 63px
+			height: 34px
+			margin: 0 auto
+			border: 1px solid #c8c9c9
+			border-radius: 0
+			box-shadow: none
+			input
+				padding: 7px 0
+				font: 700 15px "pfdintextpro"
+				color: #000
+				text-align: center
+		&__spin
+			width: 34px
+			height: 34px
+			border: none
+			border-radius: 0
+			box-shadow: none
+			background: none
+			&:hover
+				background: none
+			&:active
+				box-shadow: none
+			&.minus
+				left: 0
+				&:after
+					top: 15px
+					left: 12px
+					width: 6px
+					height: 3px
+					border: none
+					background: #1f4ebe
+			&.plus
+				&:after
+					top: 15px
+					left: 14px
+					width: 11px
+					height: 3px
+					border: none
+					background: #1f4ebe
+				&:before
+					content: ' '
+					position: absolute
+					top: 11px
+					left: 18px
+					height: 11px
+					width: 3px
+					background: #1f4ebe
+	&-bottom
+		padding: 35px 0 10px
+		+clearfix
+	&__promo
+		display: inline-block
+		width: 242px
+		input
+			display: block
+			width: 100%
+			height: 53px
+			padding-left: 20px
+			font-size: 16px
+			outline: none
+			border: 1px solid #c3c3c3
+			border-radius: 6px
+	&__total
+		float: right
+		font-size: 22px
+		font-weight: 700
+		span
+			color: #ff5a00
+	&-fin
+		padding: 0 0 0
+		+clearfix
+	&__backlink
+		display: inline-block
+		margin-top: 25px
+		font-size: 16px
+		&:hover, &:focus
+			color: $blue
+			text-decoration: none
+	&__order
+		float: right
+		width: 128px
+		height: 45px
+		font-size: 14px
+		font-weight: 700
+		outline: none
+		border: none
+		border-radius: 45px
+		background: #fae005
+		&:hover
+			background: #e7fc3c
+/*--------------------end-----------------------*/

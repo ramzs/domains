@@ -1,0 +1,255 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+@import "header"
+
+@keyframes s-anim
+	0%
+		transform: translateY(0)
+	100%
+		transform: translateY(5px)
+
+.section
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: -40px
+		left: 0
+		right: 0
+		width: 87px
+		height: 72px
+		margin: 0 auto
+		animation: s-anim infinite .5s alternate-reverse ease-in-out
+		animation-delay: 5s
+		z-index: 2
+		background: url(../img/triangle.png) 0 0 no-repeat
+
+.section-main
+	padding: 282px 0 270px
+	background: url(../img/bg-1.jpg) center top no-repeat
+	background-size: cover
+
+.main-block
+	position: relative
+	max-width: 558px
+	margin: 0 auto
+	padding: 76px 80px 0
+	z-index: 4
+	text-align: center
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		width: 558px
+		height: 602px
+		margin: 0 auto
+		z-index: -1
+		background: url(../img/border.png) center top no-repeat
+		background-size: 100% 100%
+
+	&__title1
+		font: 25px $secfont
+	&__title2
+		position: relative
+		left: -176px
+		font: 700 191px/170px $secfont
+		letter-spacing: -5px
+		text-transform: uppercase
+	&__text
+		position: relative
+		margin-top: 103px
+		font-size: 20px
+		line-height: 25px
+		font-style: italic
+		&:before
+			content: ''
+			position: absolute
+			top: -50px
+			left: -63px
+			width: 522px
+			height: 14px
+			background: url(../img/line.png) 0 0 no-repeat
+
+.section-one
+	padding: 150px 0 145px
+	background: url(../img/bg-2.jpg) center top no-repeat
+	background-size: cover
+
+.block-title
+	position: relative
+	z-index: 2
+	&_1
+		float: right
+		text-align: right
+	&_3
+		float: right
+		text-align: right
+	&__main
+		font: 700 160px/130px $secfont
+		&_3
+			letter-spacing: -3px
+	&__sec
+		font: 200 100px $secfont
+		color: #ff5a00
+		&_1
+			margin-top: 32px
+		&_2
+			margin: 0 0 -40px 255px
+
+.block-text
+	position: relative
+	width: 738px
+	height: 384px
+	padding: 55px 50px 0 74px
+	font-size: 20px
+	line-height: 25px
+	font-style: italic
+	clear: both
+	background: url(../img/border-2.png) center top no-repeat
+	background-size: 100% 100%
+	&_1
+		top: -85px
+		padding: 55px 50px 0 74px
+	&_2
+		top: -15px
+		padding: 125px 50px 0 74px
+	&_3
+		top: -107px
+		padding: 100px 50px 0 74px
+	&_right
+		float: right
+	span
+		font-size: 22px
+		font-weight: 700
+		font-style: normal
+	p
+		margin-bottom: 23px
+
+.section-two
+	padding: 175px 0 185px
+	background: url(../img/bg-3.jpg) center top no-repeat
+	background-size: cover
+
+.section-three
+	padding: 150px 0 114px
+	background: url(../img/bg-4.jpg) center top no-repeat
+	background-size: cover
+
+.form-title
+	float: left
+	&__main
+		font: 700 95px/96px $secfont
+	&__sec
+		position: relative
+		margin-top: 85px
+		font: 200 50px $secfont
+		color: #ff5a00
+		&:before
+			content: ''
+			position: absolute
+			top: -40px
+			left: 0
+			width: 522px
+			height: 14px
+			background: url(../img/line.png) 0 0 no-repeat
+
+.form
+	position: relative
+	float: left
+	margin-left: 98px
+	padding: 47px 40px 58px
+	border: 30px solid rgba(#fff, .25)
+	input
+		display: block
+		width: 100%
+		margin-bottom: 37px
+		font-size: 20px
+		font-style: italic
+		outline: none
+		border: none
+		border-bottom: 1px solid #fff
+		background: none
+
+.btn-form
+	margin: 52px auto 0
+
+.section-four
+	padding: 140px 0 142px
+	background: url(../img/bg-5.jpg) center top no-repeat
+	background-size: cover
+
+.section-title
+	position: relative
+	font: 700 95px/96px $secfont
+	text-align: center
+	&:before
+		content: ''
+		position: absolute
+		top: 106px
+		left: 0
+		right: 0
+		width: 522px
+		height: 14px
+		margin: 0 auto
+		background: url(../img/line.png) 0 0 no-repeat
+
+.adv
+	padding-top: 90px
+	text-align: center
+	&-item
+		position: relative
+		display: inline-block
+		width: 33%
+		vertical-align: top
+		margin-bottom: 75px
+		padding: 0 35px
+		text-align: left
+		&:nth-child(n+4)
+			&:before
+				content: ''
+				position: absolute
+				top: -40px
+				left: 50%
+				width: 339px
+				height: 7px
+				margin: 0 auto
+				transform: translate(-50%,0)
+				background: url(../img/line2.png) 0 0 no-repeat
+		&__icon
+			height: 49px
+		&__text
+			margin-top: 5px
+			font-size: 18px
+			font-style: italic
+			line-height: 25px
+
+.section-five
+	padding: 264px 0 172px
+	background: url(../img/bg-6.jpg) center top no-repeat
+	background-size: cover
+
+.pict
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	overflow: hidden
+
+.hand
+	position: absolute
+	bottom: 0
+	right: -300px
+	width: 602px
+	height: 585px
+	background: url(../img/hand.png) 0 0 no-repeat
+
+
+
+@import "footer"

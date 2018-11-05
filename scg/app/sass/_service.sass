@@ -1,0 +1,170 @@
+@import "vars"
+
+/*--------------Service page-------------*/
+.service
+	padding-bottom: 100px
+
+.page__title
+	&.page__title-service
+		margin-bottom: 0
+
+.service__sidebar
+	float: left
+	width: 255px
+	padding-top: 40px
+
+.menu__title
+	&.menu__title-service
+		margin-left: 0
+		font-size: 18px
+		text-transform: uppercase
+
+.menu__block
+	&.menu__block-service
+		position: relative
+		float: none
+		width: 100%
+		margin-bottom: 10px
+		z-index: 5
+
+.menu__list
+	&.menu__list-service
+		.list__item
+			a
+				padding: 10px 0 10px 40px
+				font-size: 14px
+				&:before
+					top: 5px
+					left: 0
+			&.list__item-1
+				a
+					&:before
+						@include sprite($menu-icon-small-1)
+			&.list__item-2
+				a
+					&:before
+						@include sprite($menu-icon-small-3)
+			&.list__item-3
+				a
+					&:before
+						top: 2px
+						@include sprite($menu-icon-small-5)
+			&.list__item-4
+				a
+					&:before
+						top: 2px
+						@include sprite($menu-icon-small-6)
+			&.list__item-5
+				a
+					&:before
+						top: 12px
+						@include sprite($menu-icon-small-7)
+			&.list__item-6
+				a
+					&:before
+						top: 6px
+						@include sprite($menu-icon-small-9)
+			&.list__item-7
+				a
+					&:before
+						@include sprite($menu-icon-small-2)
+			&.list__item-8
+				a
+					&:before
+						@include sprite($menu-icon-small-4)
+			&.list__item-9
+				a
+					&:before
+						@include sprite($menu-icon-small-2)
+			&.list__item-10
+				a
+					&:before
+						@include sprite($menu-icon-small-4)
+			&.list__item-11
+				a
+					&:before
+						@include sprite($menu-icon-small-8)
+			&.list__item-12
+				a
+					&:before
+						@include sprite($menu-icon-small-9)
+
+.service__content
+	float: left
+	width: 855px
+	padding: 5px 0 0 35px
+	background: #fff
+
+.service__carousel
+	margin-left: 20px
+	&.owl-carousel
+		width: 515px !important
+		height: 250px
+		z-index: 15
+		.owl-stage-outer
+			width: 515px
+			height: 250px
+			padding-top: 50px
+		.owl-item
+			position: relative
+			&:before
+				content: ' '
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				z-index: 1
+				background: rgba(0,0,0, .5)
+			&.active
+				width: 200px !important
+			&.center
+				.carousel__item
+					position: absolute
+					width: 250px
+					top: -20px
+					left: -69px
+					z-index: 10
+					img
+						width: 100%
+				+ div
+					margin-left: -88px
+	.owl-nav
+		position: absolute
+		top: 48%
+		left: 0
+		width: 100%
+		font-size: 0
+		z-index: 15
+		.owl-prev
+			position: absolute
+			left: 15px
+			@include sprite($arrow-prev-green)
+		.owl-next
+			position: absolute
+			right: 15px
+			@include sprite($arrow-next-green)
+	.owl-dots
+		position: absolute
+		bottom: -8px
+		left: 0
+		right: 0
+		text-align: center
+		.owl-dot
+			display: inline-block
+			margin: 0 8px
+			&.active
+				span
+					background: $r-color1
+			span
+				display: block
+				width: 6px
+				height: 6px
+				border-radius: 50%
+				background: $g-color
+
+
+.service__descr
+	p
+		font-size: 14px
+/*------------------end-------------------*/

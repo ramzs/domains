@@ -1,0 +1,89 @@
+/*--------------Compare page--------------------*/
+.main
+	float: right
+
+.compare-cl
+	.slick-list
+		padding: 25px 0
+	.cl-item
+		outline: none
+	.product-item
+		float: none
+		width: 100%
+		padding: 0 105px 0 10px
+	.slick-arrow
+		position: absolute
+		top: 50%
+		width: 36px
+		height: 36px
+		margin-top: -18px
+		padding: 0
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: $blue
+		&:hover
+			opacity: 1
+		&:before
+			content: ''
+			+vcenter
+		&.slick-prev
+			left: -50px
+			&:before
+				@include sprite($arrow-left)
+		&.slick-next
+			right: 0
+			&:before
+				@include sprite($arrow-right)
+
+.delete-link
+	position: absolute
+	top: -25px
+	right: 23%
+	font-size: 0
+	@include sprite($delete)
+
+.compare-info
+	margin: 13px 0 105px
+	.tb
+		display: table
+		width: 96.5%
+		//border-collapse: collapse
+		&-row
+			display: table-row
+			background: #fff
+			&:hover
+				background: $blue
+				span
+					color: #fff
+					border: 1px solid transparent
+		&-cell
+			display: table-cell
+			vertical-align: middle
+			span
+				display: block
+				padding: 12px 0 13px
+				border: 1px solid #cdcdcd
+			&_head
+				width: 26.35%
+				span
+					padding-left: 10px
+			&_title
+				padding: 12px 0 12px 10px
+				font: 700 25px $second-font
+				color: #fff
+				background: $blue
+			&_1
+				width: 24.55%
+				span
+					padding-left: 25px
+					margin-left: 30px
+			&_2, &_3
+				width: 24.55%
+				span
+					padding-left: 25px
+					margin-left: 20px
+/*-------------------end-------------------------*/

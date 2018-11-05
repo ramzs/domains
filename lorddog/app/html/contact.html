@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="wrapper">
+
+		<div class="page-top">
+			<div class="container">
+				<div class="breadcrumb">
+					<ul class="breadcrumb-list">
+						<li><a href="#">Главная</a></li>
+						<li>Контакты</li>
+					</ul>
+				</div>
+
+				<div class="page-title">Контакты</div>
+
+			</div>
+
+		</div>
+
+		<div class="page-inner">
+
+			<div class="map-wrap">
+				<div class="map">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A47313e2aad619816bd03bcb44792763f10325f2b59d4fe7d993303799a789a0a&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+				</div>
+				<div class="loc-wrap container">
+					<div class="loc-block">
+						<div class="loc-block__title">Адрес</div>
+						<div class="loc-block__descr">г.Москва, М. Бабушкинская,<br>ул. Осташковская Д7К1</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="contact-item">
+								<div class="contact-item__title">Контакты</div>
+								<div class="contact-item__descr">
+									<p>Свои пожелания, предложения и отзывы Вы можете направлять по адресу: lorddog@gmail.com<br>или по телефону: 8-800-00000000 (Звонок бесплатный).</p>
+								</div>
+							</div>
+
+							<div class="contact-item">
+								<div class="contact-item__title">Наши реквизиты</div>
+								<div class="contact-item__descr">
+									<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Единственное то речью рот дорогу, вопроса реторический, пунктуация коварных он.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6">
+							<div class="contact-form">
+								<div class="contact-form__title">Написать письмо или отзыв</div>
+								<form action="#">
+									<label for="c-name">Ваше имя<input type="text" name="name" id="c-name"></label>
+									<label for="c-phone">Телефон<input type="text" name="phone" id="c-phone"></label>
+									<label for="message">Сообщение<textarea name="message" id="message" cols="30" rows="10"></textarea></label>
+									<button class="btn btn_color1 btn_contact">Отправить</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

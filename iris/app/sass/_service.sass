@@ -1,0 +1,100 @@
+@import "vars"
+
+/*------------------Service page----------------*/
+.service-page
+	padding: 39px 0 38px
+
+.change-block
+	&:last-of-type
+		margin-bottom: 0
+		.change-item
+			border-bottom: none
+	&--service
+		margin-bottom: 50px
+	&__title
+		font-size: 34px
+		font-weight: 500
+		color: #623086
+		&--service
+			margin-bottom: 33px
+
+.change-tab
+	margin-bottom: 10px
+	&__item
+		display: inline-block
+		margin: 0 18px 12px 0
+		font-size: 22px
+		color: #202020
+		cursor: pointer
+		text-transform: uppercase
+		border-bottom: 1px dashed #202020
+		&:last-child
+			margin-right: 0
+		&:hover
+			border-bottom: none
+		&.active
+			font-weight: 600
+			color: #623086
+			cursor: default
+			border-bottom: none
+
+.change-main--service
+	padding-bottom: 45px
+	border-bottom: 1px solid #949494
+	&:before,
+	&:after
+		content: " "
+		display: table
+	&:after
+		clear: both
+
+.change-item
+	display: none
+	&.open
+		display: block
+	&:before,
+	&:after
+		content: " "
+		display: table
+	&:after
+		clear: both
+
+.service-list
+	display: table
+	width: 100%
+	border-collapse: collapse
+	&__row
+		display: table-row
+		height: 66px
+		font-size: 22px
+		color: #232323
+		border-bottom: 12px solid #fff
+		&--head
+			height: 60px
+	&__title
+		display: table-cell
+		padding-left: 29px
+		vertical-align: middle
+		border-right: 12px solid #fff
+		background: #eceff1
+		&--head
+			font-weight: 600
+			color: #623086
+			text-transform: uppercase
+			background: #d1c4e9
+	&__price
+		display: table-cell
+		width: 37.5%
+		padding-left: 29px
+		vertical-align: middle
+		background: #cfd8dc
+		&--head
+			font-weight: 600
+			color: #623086
+			text-transform: uppercase
+			background: #d1c4e9
+
+.btn--service
+	float: right
+	margin-top: 17px
+/*----------------------end---------------------*/

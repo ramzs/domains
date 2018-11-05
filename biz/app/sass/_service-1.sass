@@ -1,0 +1,251 @@
+
+/*----------------Service-1 page-----------------*/
+.page-top
+	padding: 23px 0 68px
+	&--var1
+		background: url(../img/top-bg.jpg) top center no-repeat
+		background-size: cover
+	&--var2
+		background: url(../img/top-bg2.jpg) top center no-repeat
+		background-size: cover
+	&--var3
+		background: url(../img/top-bg3.jpg) top center no-repeat
+		background-size: cover
+	&--var4
+		background: url(../img/top-bg4.jpg) top center no-repeat
+		background-size: cover
+	&--var5
+		background: url(../img/top-bg5.jpg) top center no-repeat
+		background-size: cover
+	&--var6
+		background: url(../img/top-bg6.jpg) top center no-repeat
+		background-size: cover
+
+.breadcrumb
+	margin-bottom: 24px
+	text-align: left
+	&-list
+		li
+			position: relative
+			display: inline-block
+			height: 15px
+			margin-right: 18px
+			font-size: 13px
+			color: #737373
+			font-weight: 300
+			&:first-child
+				a
+					position: relative
+					top: -12px
+					font-size: 0
+					@include sprite($home)
+			&:last-child
+				margin-right: 0
+			&:not(:last-child):after
+				content: '|'
+				position: absolute
+				top: 0
+				right: -12px
+				font-size: 14px
+				color: #bdbdbd
+				transform: rotate(-25deg)
+			a
+				display: inline-block
+				font-size: 13px
+				color: $second
+				font-weight: 300
+				&:hover
+					text-decoration: underline
+
+.page-title
+	display: block
+	font: 700 32px "ptserif"
+	color: $second
+	&--center
+		text-align: center
+
+.content
+	position: relative
+	padding: 75px 0 80px
+	+clearfix
+
+.sidebar
+	float: left
+	width: 27%
+	padding-right: 20px
+	&--right
+		float: right
+		padding: 0 0 0 20px
+	&--var2
+		padding-top: 63px
+
+.second-menu
+	display: inline-block
+	margin-bottom: 73px
+	> li
+		margin-bottom: 17px
+		a
+			position: relative
+			display: block
+			font-size: 16px
+			font-weight: 500
+			line-height: 16px
+		> a
+			padding-left: 22px
+			color: $second
+			&:before
+				content: ''
+				position: absolute
+				top: 2px
+				left: 0
+				@include sprite($arrow-right-menu)
+		ul
+			display: none
+			margin: 15px 0 0 45px
+			li
+				margin-bottom: 15px
+				a
+					color: #4184ca
+					&:before
+						content: ''
+						position: absolute
+						top: 8px
+						left: -20px
+						width: 15px
+						height: 2px
+						background: #fd3f05
+				ul
+					margin-left: 20px
+					li
+						a
+							color: #7ec0f4
+
+.banner
+	max-width: 270px
+	padding: 49px 32px 35px
+	border: 1px solid #e6e6e6
+	border-radius: 10px
+	background: #f9f9f9
+	&--mob
+		display: none
+	&--right
+		float: right
+	&__title
+		margin-bottom: 16px
+		padding-bottom: 32px
+		font: 700 28px/34px "ptserif"
+		color: $second
+		border-bottom: 1px solid #e6e6e6
+	&-content
+		margin-bottom: 36px
+		font-size: 14px
+		font-weight: 300
+		line-height: 21px
+		&__phone
+			position: relative
+			display: inline-block
+			margin: 9px 0 7px
+			padding-left: 30px
+			font-size: 17px
+			font-weight: 500
+			color: #000
+			&:before
+				content: ''
+				position: absolute
+				top: 3px
+				left: 0
+				@include sprite($phone2)
+
+.main
+	float: left
+	width: 73%
+	+clearfix
+	&--center
+		float: none
+		max-width: 770px
+		margin: 0 auto
+	&--full
+		float: none
+		width: auto
+	&-title
+		position: relative
+		display: block
+		margin-bottom: 27px
+		font: 700 28px/36px "ptserif"
+		&--color
+			color: $second
+		&--bd
+			padding-left: 30px
+			&:before
+				content: ''
+				position: absolute
+				top: 6px
+				left: 0
+				width: 3px
+				height: 80%
+				background: #ff3d00
+	> p
+		margin-bottom: 23px
+		font-size: 14px
+		font-weight: 300
+
+.howto
+	margin-top: 55px
+	&-item
+		max-width: 770px
+		margin-bottom: 18px
+		padding: 0 32px 0
+		border: 1px solid #e6e6e6
+		border-radius: 10px
+		&:hover
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08)
+		&__title
+			position: relative
+			display: table
+			width: 100%
+			height: 82px
+			padding-right: 30px
+			font-size: 17px
+			font-weight: 500
+			color: $second
+			cursor: pointer
+			span
+				display: table-cell
+				vertical-align: middle
+			&:after
+				content: ''
+				position: absolute
+				top: 36px
+				right: 0
+				@include sprite($arrow-down)
+			&.active
+				&:after
+					@include sprite($arrow-up)
+	&-body
+		display: none
+		padding: 58px 0 32px
+		border-top: 1px solid #e6e6e6
+		p
+			margin-bottom: 23px
+			font-size: 14px
+			font-weight: 300
+
+.text-list
+	margin: 27px 0 50px
+	li
+		position: relative
+		display: block
+		padding-left: 24px
+		font-size: 14px
+		font-weight: 300
+		line-height: 21px
+		&:before
+			content: ''
+			position: absolute
+			top: 9px
+			left: 0
+			width: 5px
+			height: 5px
+			border-radius: 50%
+			background: #6eaeea
+/*---------------------end-----------------------*/

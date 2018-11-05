@@ -1,0 +1,114 @@
+.header
+	padding: 35px 0 0
+
+.logo
+	img
+		display: block
+		max-width: 100%
+
+.count-block
+	max-width: 396px
+	margin-top: 19px
+	text-align: center
+	border: 1px dashed #303136
+	border-radius: 5px
+
+.count
+	&__title
+		display: inline-block
+		vertical-align: middle
+		font-size: 18px
+		text-transform: uppercase
+	&-wrap
+		display: inline-block
+		vertical-align: middle
+		margin: 0 12px
+		padding: 15px 0
+		text-align: center
+		span
+			display: inline-block
+			width: 31px
+			height: 47px
+			vertical-align: middle
+			font-size: 24px
+			color: #fff
+			font-weight: 500
+			line-height: 45px
+			text-align: center
+			background-color: #3a97c0
+			background-image: linear-gradient(to top, black 0%, #b1b0b0 100%)
+			border-radius: 5px
+	&__link
+		display: inline-block
+		vertical-align: middle
+		font-size: 18px
+		color: $lightblue
+		text-transform: uppercase
+		text-decoration: underline
+		&:hover
+			color: $lightblue
+			text-decoration: none
+
+.callback-block
+	float: right
+	text-align: right
+
+.phone
+	display: table
+	font-size: 50px
+	color: $blue
+	span
+		color: #c9c9c9
+		font-weight: 300
+	&:focus
+		text-decoration: none
+
+.callback
+	display: inline-block
+	font-size: 18px
+	text-decoration: underline
+	outline: none
+	&:hover
+		color: #000
+		text-decoration: none
+	&:focus
+		color: #000
+		outline: none
+
+.navbar
+	height: 54px
+	margin: 18px 0 0
+	overflow: hidden
+	border: none
+	border-top: 2px solid #386ae0
+	background-image: linear-gradient(to top, #073091 0%, #0d44c6 100%)
+	border-radius: 5px
+
+.navbar-collapse
+	padding: 0
+
+.nav
+	display: table
+	width: 100%
+	height: 50px
+	> li
+		display: table-cell
+		vertical-align: middle
+		height: 49px
+		border-right: 1px solid #0d3799
+		border-left: 1px solid #2458d1
+		&:first-child
+			border-left: none
+			a
+				padding-left: 20px
+		&:last-child
+			border-left: none
+		&:hover, &.active
+			background-image: linear-gradient(to top, #093cb3 0%, #032269 100%)
+		> a
+			padding: 0 10px
+			font-size: 13px
+			font-weight: 500
+			color: #fff
+			&:focus, &:hover
+				background: none

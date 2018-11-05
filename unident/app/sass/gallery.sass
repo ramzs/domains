@@ -1,0 +1,54 @@
+@import "vars"
+@import "sprite"
+
+/*-------------Gallery page----------------*/
+.gallery-block
+	margin: 32px 0 22px
+
+.gallery-row
+	padding: 60px 0 45px
+	border-bottom: 1px solid #ccc
+	&:last-of-type
+		border-bottom: none
+
+.gallery-item
+	display: inline-block
+	min-height: 195px
+	margin: 0 20px
+
+.service-item--gallery
+	max-width: 185px
+	margin: 0 25px 0
+
+.gallery-carousel
+	display: inline-block !important
+	width: 525px
+	max-width: 100%
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -23px
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&:hover
+			opacity: 1
+	.slick-prev
+		left: -20px
+		@include sprite($pag-left)
+	.slick-next
+		right: -20px
+		@include sprite($pag-right)
+
+.gallery-wrap
+	padding: 0 15px
+	text-align: center
+	img
+		display: inline-block
+		width: 100%
+
+/*-----------------end---------------------*/

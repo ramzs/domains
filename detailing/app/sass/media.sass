@@ -1,0 +1,585 @@
+@import "bourbon"
+@import "vars"
+@import "sprite"
+@import "mixins"
+
+@media only screen and (max-width : 1200px)
+	.header-menu
+		li
+			margin-right: 20px
+			a
+				font-size: 16px
+
+	.main-block
+		&__title
+			left: -50px
+
+	.adv
+		&-title
+			font-size: 75px
+		&-subtitle
+			font-size: 40px
+		&-item
+			&_1
+				left: 28.3%
+			&_2
+				left: 68.8%
+			&_5
+				left: 56.5%
+			&_6
+				left: 27.3%
+			&_7
+				left: 10.8%
+
+	.section-about
+		padding: 90px 0 40px
+
+	.about-item
+		margin-bottom: 50px
+		&__pict
+			float: none
+		&__text
+			display: block
+			padding: 20px 0 0 0
+
+	.port-title
+		font-size: 60px
+
+	.form-block
+		padding: 119px 60px 130px
+		&__text
+			width: 24.4%
+			font-size: 20px
+		&__wrap
+			width: 75.4%
+
+	.section-info
+		&__title
+			font-size: 75px
+		&__subtitle
+			font-size: 40px
+
+	.service
+		&-item
+			padding: 40px 20px 20px
+			&__title
+				font-size: 22px
+			&__price
+				left: 20px
+	/**/
+
+
+@media only screen and (max-width : 992px)
+	.logo
+		max-width: 100px
+
+	.header-nav
+		padding-top: 10px
+
+	.header-menu
+		li
+			margin-right: 5px
+			a
+				font-size: 15px
+
+	.section-main
+		padding: 90px 0 35px
+
+	.prlx
+		display: none
+
+	.main-block
+		max-width: 345px
+		padding: 125px 50px 55px
+		&__title
+			top: 20px
+			left: 0
+			font-size: 90px
+		&__subtitle
+			font-size: 20px
+		&__sale
+			margin: 5px 0 19px
+			font-size: 16px
+			span
+				font-size: 38px
+
+	.main-service
+		padding-left: 75px
+
+	.service-list
+		&__item
+			margin-bottom: 18px
+			font-size: 18px
+
+	.adv
+		padding: 200px 0 250px
+		&-title
+			font-size: 67px
+		&-subtitle
+			font-size: 30px
+			span
+				padding: 5px 28px 12px 12px
+		&-item
+			font-size: 16px
+			&_1
+				top: 7%
+				left: 12%
+			&_2
+				top: 7%
+				left: 58.8%
+			&_3
+				top: 23%
+				left: 75%
+			&_4
+				top: 42%
+				left: 75%
+			&_5
+				left: 75%
+				bottom: 20%
+			&_6
+				left: 35%
+				bottom: 10%
+			&_7
+				left: 4%
+				bottom: 25%
+
+	.section-about
+		padding: 45px 0 10px
+
+	.about-item
+		margin-bottom: 50px
+		&__text
+			padding: 15px 0 0 0
+			font-size: 16px
+
+	.section-port
+		padding: 20px 0
+
+	.port
+		&-title
+			font-size: 50px
+		&-count
+			max-width: 400px
+		&-wrap
+			&__pict
+				width: 160px
+			&__text
+				font-size: 16px
+
+	.section-ceramic
+		padding: 20px 0
+		&__title
+			margin-bottom: 5px
+			img
+				max-width: 80%
+		&__text
+			font-size: 16px
+
+	.ceramic
+		margin-top: 40px
+		&-item
+			&__pict
+				height: auto
+			&__num
+				font-size: 18px
+				span
+					font-size: 38px
+			&__title
+				margin-top: 12px
+				font-size: 16px
+
+	.section-form
+		padding: 30px 0
+
+	.form-block
+		display: block
+		padding: 50px 50px 60px
+		&__text
+			display: block
+			width: 100%
+			margin-bottom: 10px
+			font-size: 20px
+		&__wrap
+			display: block
+			width: 100%
+		&__title
+			margin-bottom: 15px
+		input
+			width: 218px
+
+	.section-info
+		padding: 20px 0
+		&__title
+			font-size: 67px
+		&__subtitle
+			font-size: 30px
+
+	.info
+		padding-top: 15px
+		&-item
+			&__text
+				margin-top: 12px
+				font-size: 16px
+
+	.section-service
+		padding: 20px 0
+		&__title
+			margin-bottom: 12px
+
+	.service
+		&-item
+			width: 50%
+
+	.btn-download
+		margin-top: 20px
+
+	.contact
+		max-width: 350px
+		padding-top: 20px
+		&-title
+			margin-bottom: 10px
+		&-loc
+			margin-bottom: 65px
+			font-size: 16px
+			&:after
+				bottom: -58px
+		&-phone
+			margin-right: 15%
+			font-size: 16px
+		&-work
+			font-size: 16px
+		&-social
+			margin: 20px 0
+
+	.map
+		height: 380px
+	/**/
+
+
+@media only screen and (max-width : 768px)
+	.menu-mob
+		display: block
+
+	.header-nav
+		position: absolute
+		top: -8px
+		left: -120%
+		width: 255px
+		padding: 40px 15px 40px 30px
+		transition: all .35s ease
+		z-index: 900
+		box-shadow: 0 0 15px rgba(#000, .9)
+		background: rgba(#000, 1)
+		&:before, &:after
+			display: none
+		&.open
+			left: 0
+
+	.header-menu
+		li
+			display: block
+			margin: 0 0 10px
+			a
+				display: inline-block
+				font-size: 18px
+				&:before
+					display: none
+				&:hover
+					color: $green
+
+	.section-main
+		padding: 90px 0 15px
+
+	.main-block
+		padding: 100px 50px 45px
+		&__title
+			top: 20px
+			left: 50%
+			transform: translate(-50%,0)
+			font-size: 67px
+		&__subtitle
+			font-size: 16px
+		&__sale
+			margin-bottom: 12px
+			font-size: 14px
+			span
+				font-size: 38px
+
+	.main-service
+		max-width: 245px
+		margin-top: 20px
+		padding-left: 0
+
+	.service-list
+		&__item
+			margin-bottom: 18px
+			font-size: 16px
+
+	.adv
+		padding: 20px 0 20px
+		&-title
+			margin-bottom: 5px
+			font-size: 50px
+		&-subtitle
+			margin-bottom: 12px
+			font-size: 25px
+			span
+				padding: 5px 28px 12px 12px
+		&-item
+			position: relative
+			left: 0 !important
+			top: 0 !important
+			bottom: 0 !important
+			max-width: 480px
+			margin: 0 0 20px 10px
+			padding-left: 40px
+			i
+				top: 5px
+				left: 0
+
+	.section-about
+		padding: 45px 0 10px
+
+	.about-item
+		margin-bottom: 40px
+		&__text
+			padding: 15px 0 0 0
+			font-size: 16px
+
+	.port
+		&-title
+			display: block
+			margin-bottom: 5px
+			text-align: center
+		&-count
+			float: none
+			margin: 0 auto
+		&-wrap
+			&__pict
+				width: 160px
+			&__text
+				font-size: 16px
+
+	.gallery
+		margin-top: 15px
+		&-item
+			width: 50%
+
+	.ceramic
+		&-item
+			float: none
+			display: inline-block
+			width: 49%
+			vertical-align: top
+			margin-bottom: 30px
+			text-align: left
+
+	.form-block
+		padding: 45px 30px 55px
+		&__text
+			display: block
+			width: 100%
+			margin-bottom: 5px
+			font-size: 18px
+		&__wrap
+			display: block
+			width: 100%
+		&__title
+			margin-bottom: 10px
+			font-size: 14px
+		form
+			text-align: center
+		input
+			display: inline-block
+			width: 49%
+			padding-left: 10px
+			font-size: 14px
+
+	.btn-form
+		margin-top: 10px
+
+	.section-info
+		&__title
+			font-size: 50px
+		&__subtitle
+			padding: 3px 5px 5px
+			font-size: 25px
+
+	.info
+		padding-top: 15px
+		&-item
+			&__text
+				margin-top: 12px
+				font-size: 16px
+
+	.service
+		&-item
+			height: 235px
+			padding: 20px 10px
+			&__title
+				height: 52px
+				margin-bottom: 12px
+				font-size: 18px
+			&__text
+				height: 97px
+				margin-bottom: 10px
+				font-size: 16px
+			&__price
+				left: 10px
+				font-size: 16px
+				span
+					font-size: 28px
+
+	.contact
+		position: relative
+		max-width: 100%
+		padding: 20px 15px
+		background: none
+		&.active
+			display: block
+		&-title
+			margin-bottom: 5px
+			font-size: 38px
+		&-loc
+			margin-bottom: 65px
+			font-size: 16px
+			&:after
+				bottom: -58px
+		&-phone
+			margin-right: 15%
+			font-size: 16px
+		&-work
+			font-size: 16px
+		&-social
+			margin: 20px 0
+
+	.map
+		position: relative
+		height: 300px
+
+	.footer
+		padding: 20px 0
+		&-logo
+			margin-bottom: 15px
+
+	.copyright
+		font-size: 14px
+	/**/
+
+
+@media only screen and (max-width : 480px)
+	.section-main
+		padding: 90px 0 15px
+
+	.main-block
+		padding: 85px 50px 45px
+		&__title
+			top: 30px
+			font-size: 42px
+
+	.main-service
+		padding-left: 28px
+
+	.adv
+		padding: 20px 0 20px
+		&-title
+			font-size: 38px
+			line-height: 1.1
+		&-subtitle
+			font-size: 18px
+			span
+				padding: 5px 20px 7px 10px
+		&-item
+			font-size: 14px
+
+	.about-item
+		text-align: center
+		&__pict
+			width: 290px
+			margin: 0 auto
+		&__text
+			padding: 15px 0 0 0
+			font-size: 16px
+
+	.port
+		&-title
+			font-size: 38px
+		&-wrap
+			&__pict
+				width: 100px
+			&__text
+				font-size: 14px
+
+	.section-ceramic
+		&__title
+			img
+				max-width: 100%
+		&__text
+			font-size: 14px
+
+	.ceramic
+		margin-top: 35px
+		text-align: center
+		&-item
+			&__num
+				font-size: 16px
+				span
+					font-size: 36px
+			&__title
+				margin-top: 5px
+				font-size: 14px
+
+	.form-block
+		padding: 0
+		background: none
+		&__text
+			font-size: 16px
+		&__title
+		input
+			display: inline-block
+			width: 100%
+			margin-bottom: 5px
+			padding-left: 10px
+			font-size: 14px
+
+	.section-info
+		&__title
+			font-size: 38px
+		&__subtitle
+			font-size: 18px
+
+	.info
+		padding-top: 10px
+		&-item
+			&__icon
+				width: 80px
+				img
+					max-width: 100%
+
+	.section-service
+		&__title
+			font-size: 38px
+
+	.service
+		&-item
+			float: none
+			width: 100%
+			height: auto
+			padding: 20px 15px
+			background-size: cover !important
+			&:hover
+				background-size: cover !important
+			&__title
+				height: auto
+				font-size: 16px
+			&__text
+				height: auto
+				font-size: 14px
+			&__price
+				position: relative
+				bottom: 0
+				left: 0
+				font-size: 14px
+				span
+					font-size: 22px
+	/**/

@@ -1,0 +1,81 @@
+.breadcrumb-block
+	padding: 14px 0
+
+.breadcrumb
+	margin-bottom: 0
+	padding: 0
+	border-radius: 0
+	background: none
+	> li
+		margin-right: 11px
+		font-size: 13px
+		&:first-child
+			a
+				text-decoration: underline
+		&:last-child
+			margin-right: 0
+		a
+			font-size: 13px
+			color: #189245
+			&:hover
+				text-decoration: none
+		+ li
+			&:before
+				display: none
+	> .active
+		color: #000
+
+/*-------------Service page----------------*/
+.content-inner
+	padding: 11px 0 25px
+
+.sidebar-inner
+	display: block
+	padding-top: 40px
+	&_notitle
+		padding-top: 101px
+
+.page-title
+	display: block
+	margin-bottom: 29px
+	font-size: 40px
+	font-weight: 700
+	color: $second
+	&_withline
+		padding-bottom: 25px
+		border-bottom: 3px solid $accent
+
+.service-item
+	display: inline-block
+	vertical-align: top
+	max-width: 360px
+	width: 100%
+	margin-bottom: 57px
+	&:nth-child(even)
+		float: right
+	&__header
+		padding-bottom: 10px
+		border-bottom: 3px solid $accent
+	&__title
+		display: inline-block
+		font-size: 25px
+		font-weight: 700
+		text-decoration: underline
+		&:hover
+			color: $accent
+
+.service-menu
+	margin: 25px 0 29px
+	li
+		margin-bottom: 6px
+		a
+			display: inline-block
+			font-size: 18px
+			font-weight: 300
+			text-decoration: underline
+			&:hover
+				color: $accent
+
+.btn-service
+	width: 195px
+/*----------------end----------------------*/

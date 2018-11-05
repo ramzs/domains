@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="content clearfix">
+		<div class="container">
+			<div class="sidebar">
+				<div class="sidebar-catalog">
+					<div class="sidebar-catalog__title">Каталог товаров<i></i></div>
+					<div class="sidebar-nav">
+						<div class="sidebar-nav__title sidebar-nav__title--one">Виды дверей<i></i></div>
+						<ul class="sidebar-menu">
+							<li><a href="#">В квартиру<i></i></a></li>
+							<li class="active"><a href="#">В коттедж<i></i></a></li>
+							<li><a href="#">Нестандартные<i></i></a></li>
+							<li><a href="#">Парадные<i></i></a></li>
+							<li><a href="#">Арочные<i></i></a></li>
+							<li><a href="#">Тамбурные<i></i></a></li>
+							<li><a href="#">Технические<i></i></a></li>
+							<li><a href="#">Решетчатые<i></i></a></li>
+							<li><a href="#">С зеркалом<i></i></a></li>
+							<li><a href="#">С терморазрывом<i></i></a></li>
+						</ul>
+						<div class="sidebar-nav__title sidebar-nav__title--two">Типы дверей<i></i></div>
+						<ul class="sidebar-menu">
+							<li><a href="#">С отделкой МДФ<i></i></a></li>
+							<li><a href="#">С отделкой ламинатом<i></i></a></li>
+							<li><a href="#">С отделкой винилискожей<i></i></a></li>
+							<li><a href="#">Со стеклом и ковкой<i></i></a></li>
+							<li><a href="#">С отделкой массивом дуба<i></i></a></li>
+							<li><a href="#">Со скидкой<i></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar-banner">
+					<div class="sidebar-banner__pict">
+						<img src="img/delivery-pict.png" alt="">
+					</div>
+					<div class="sidebar-banner__title">Бесплатно<span>доставка и установка</span></div>
+					<div class="sidebar-banner__text">
+						<p>Доставка бесплатно<br>при заказе от 10000 рублей</p>
+						<p>Установка бесплатно<br>при заказе от 17000 рублей</p>
+					</div>
+				</div>
+
+				<div class="news-block">
+					<div class="news-block__title">Последние новости</div>
+					<div class="news-item">
+						<div class="news-item__date">27.12.17</div>
+						<div class="news-item__descr">
+							<a href="#" class="news-item__title">Новая модель Бульдорс-33!</a>
+							<div class="news-item__text">
+								<p>Казанский завод стальных дверей рад сообщить о выпуске новой модели Бульдорс-33!</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="news-item">
+						<div class="news-item__date">27.12.17</div>
+						<div class="news-item__descr">
+							<a href="#" class="news-item__title">Новая модель Бульдорс-33!</a>
+							<div class="news-item__text">
+								<p>Казанский завод стальных дверей рад сообщить о выпуске новой модели Бульдорс-33!</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="news-item">
+						<div class="news-item__date">27.12.17</div>
+						<div class="news-item__descr">
+							<a href="#" class="news-item__title">Новая модель Бульдорс-33!</a>
+							<div class="news-item__text">
+								<p>Казанский завод стальных дверей рад сообщить о выпуске новой модели Бульдорс-33!</p>
+							</div>
+						</div>
+					</div>
+
+					<a href="#" class="news-item__link">Все новости</a>
+
+				</div>
+
+			</div>
+
+			<div class="main">
+				<div class="main-top">
+					<form action="#" class="search">
+						<div class="search__in"><input type="search" name="search" placeholder="Поиск"></div>
+						<button class="search-btn">Поиск</button>
+					</form>
+					<div class="main-info">
+						<a href="#" class="main-info__pay">Оплата и доставка</a>
+						<a href="#" class="main-info__service">Услуги и сервис</a>
+					</div>
+				</div>
+
+				<div class="filter">
+					<div class="filter__title">Фильтр по подбору двери</div>
+					<div class="slider-wrap">
+						<form method='post'>
+							<label for='price' class="slider-wrap__from">
+								Розничная цена
+								<input type="text" name="price" id="price-min" maxlength="10">
+							</label>
+							<label for='price2' class="slider-wrap__to">
+								<input type="text" name="price" id="price-max" maxlength="10">
+							</label>
+						</form>
+						<div id="slider-price"></div>
+					</div>
+
+					<div class="filter-list">
+						<div class="filter-container">
+							<span class="filter-container__title">Внешняя отделка</span>
+							<div class="filter-container__block">
+								<label for="in-1"><input type="checkbox" name="" id="in-1">вандалоустойчивое, атмосферостойкое покрытие</label>
+								<label for="in-2"><input type="checkbox" name="" id="in-2">вандалоустойчивое, атмосферостойкое покрытие</label>
+							</div>
+						</div>
+
+						<div class="filter-container">
+							<span class="filter-container__title">Цвет внешней отделки</span>
+							<div class="filter-container__block">
+								<label for="in-3"><input type="checkbox" name="" id="in-3">вандалоустойчивое, атмосферостойкое покрытие</label>
+								<label for="in-4"><input type="checkbox" name="" id="in-4">вандалоустойчивое, атмосферостойкое покрытие</label>
+								<label for="in-5"><input type="checkbox" name="" id="in-5">вандалоустойчивое, атмосферостойкое покрытие</label>
+								<label for="in-6"><input type="checkbox" name="" id="in-6">вандалоустойчивое, атмосферостойкое покрытие</label>
+							</div>
+						</div>
+
+						<div class="filter-container">
+							<span class="filter-container__title">Внутренняя отделка</span>
+							<div class="filter-container__block">
+								<label for="in-7"><input type="checkbox" name="" id="in-7">вандалоустойчивое, атмосферостойкое покрытие</label>
+								<label for="in-8"><input type="checkbox" name="" id="in-8">вандалоустойчивое, атмосферостойкое покрытие</label>
+								<label for="in-9"><input type="checkbox" name="" id="in-9">вандалоустойчивое, атмосферостойкое покрытие</label>
+								<label for="in-10"><input type="checkbox" name="" id="in-10">вандалоустойчивое, атмосферостойкое покрытие</label>
+							</div>
+						</div>
+
+						<div class="filter-container">
+							<span class="filter-container__title">Цвет внешней отделки</span>
+							<div class="filter-container__block">
+								<label for="in-11"><input type="checkbox" name="" id="in-11">вандалоустойчивое, атмосферостойкое покрытие</label>
+								<label for="in-12"><input type="checkbox" name="" id="in-12">вандалоустойчивое, атмосферостойкое покрытие</label>
+							</div>
+						</div>
+
+						<div class="filter-container">
+							<span class="filter-container__title">Толщина полотна</span>
+							<div class="filter-container__block">
+								<label for="in-13"><input type="checkbox" name="" id="in-13">вандалоустойчивое, атмосферостойкое покрытие</label>
+								<label for="in-14"><input type="checkbox" name="" id="in-14">вандалоустойчивое, атмосферостойкое покрытие</label>
+							</div>
+						</div>
+
+						<div class="filter-container">
+							<span class="filter-container__title">Толщина стали</span>
+							<div class="filter-container__block">
+								<label for="in-15"><input type="checkbox" name="" id="in-15">вандалоустойчивое, атмосферостойкое покрытие</label>
+								<label for="in-16"><input type="checkbox" name="" id="in-16">вандалоустойчивое, атмосферостойкое покрытие</label>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="filter-btn">
+						<a href="#" class="filter-btn__look">Показать</a>
+						<a href="#" class="filter-btn__reset">Сбросить</a>
+					</div>
+				</div>
+
+				<div class="catalog clearfix">
+					<div class="catalog__title">Двери для квартиры</div>
+					<div class="catalog-descr">
+						<div class="catalog-descr__pict"><span>Для квартир</span></div>
+						<div class="catalog-descr__text">
+							<p>Наши двери идеально подойдут для любой квартиры и любого интерьера. Их качетсво находится на самом высшем уровне. А эстетичный вид принесет вам большое удовольствие от вашего выбора</p>
+						</div>
+						<a href="#" class="catalog-descr__link">Подробнее</a>
+					</div>
+
+					<div class="catalog-item">
+						<div class="catalog-item__wrap">
+							<div class="catalog-item__type">Вид: арочные</div>
+							<div class="catalog-item__pict">
+								<img src="img/catalog-1.jpg" alt="">
+								<img src="img/catalog-1.jpg" alt="">
+							</div>
+							<div class="catalog-item__title">Входная дверь Сударь</div>
+							<div class="catalog-item__price">12800 руб.</div>
+							<div class="catalog-item__price catalog-item__price--mob">Цена: от 5.000 руб.</div>
+							<div class="catalog-item__count">
+								<input type="number" value="1" min="0">
+							</div>
+							<a href="#" class="catalog-item__btn">Купить</a>
+							<a href="#" class="btn btn--catalog"><span>Купить</span></a>
+							<a href="#" class="catalog-info__btn">i</a>
+							<div class="catalog-item__info">
+								<p><span>Внешняя отделка</span> металл с полимерно-порошковым покрытием</p>
+								<p><span>Цвет внешней отделки</span> медный антик</p>
+								<p><span>Внутренняя отделка</span> панель МДФ 7мм (ламинат, гладкая)</p>
+								<p><span>Цвет внутренней отделки</span> орех итальянский</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog-item">
+						<div class="catalog-item__wrap">
+							<div class="catalog-item__type">Вид: арочные</div>
+							<div class="catalog-item__pict">
+								<img src="img/catalog-2.jpg" alt="">
+								<img src="img/catalog-2.jpg" alt="">
+							</div>
+							<div class="catalog-item__title">Входная дверь Сударь</div>
+							<div class="catalog-item__price">12800 руб.</div>
+							<div class="catalog-item__price catalog-item__price--mob">Цена: от 5.000 руб.</div>
+							<div class="catalog-item__count">
+								<input type="number" value="1" min="0">
+							</div>
+							<a href="#" class="catalog-item__btn">Купить</a>
+							<a href="#" class="btn btn--catalog"><span>Купить</span></a>
+							<a href="#" class="catalog-info__btn">i</a>
+							<div class="catalog-item__info">
+								<p><span>Внешняя отделка</span> металл с полимерно-порошковым покрытием</p>
+								<p><span>Цвет внешней отделки</span> медный антик</p>
+								<p><span>Внутренняя отделка</span> панель МДФ 7мм (ламинат, гладкая)</p>
+								<p><span>Цвет внутренней отделки</span> орех итальянский</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog-item">
+						<div class="catalog-item__wrap">
+							<div class="catalog-item__type">Вид: арочные</div>
+							<div class="catalog-item__pict">
+								<img src="img/catalog-3.jpg" alt="">
+								<img src="img/catalog-3.jpg" alt="">
+							</div>
+							<div class="catalog-item__title">Входная дверь Сударь</div>
+							<div class="catalog-item__price">12800 руб.</div>
+							<div class="catalog-item__price catalog-item__price--mob">Цена: от 5.000 руб.</div>
+							<div class="catalog-item__count">
+								<input type="number" value="1" min="0">
+							</div>
+							<a href="#" class="catalog-item__btn">Купить</a>
+							<a href="#" class="btn btn--catalog"><span>Купить</span></a>
+							<a href="#" class="catalog-info__btn">i</a>
+							<div class="catalog-item__info">
+								<p><span>Внешняя отделка</span> металл с полимерно-порошковым покрытием</p>
+								<p><span>Цвет внешней отделки</span> медный антик</p>
+								<p><span>Внутренняя отделка</span> панель МДФ 7мм (ламинат, гладкая)</p>
+								<p><span>Цвет внутренней отделки</span> орех итальянский</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog-item">
+						<div class="catalog-item__wrap">
+							<div class="catalog-item__type">Вид: арочные</div>
+							<div class="catalog-item__pict">
+								<img src="img/catalog-4.jpg" alt="">
+								<img src="img/catalog-4.jpg" alt="">
+							</div>
+							<div class="catalog-item__title">Входная дверь Сударь</div>
+							<div class="catalog-item__price">12800 руб.</div>
+							<div class="catalog-item__price catalog-item__price--mob">Цена: от 5.000 руб.</div>
+							<div class="catalog-item__count">
+								<input type="number" value="1" min="0">
+							</div>
+							<a href="#" class="catalog-item__btn">Купить</a>
+							<a href="#" class="btn btn--catalog"><span>Купить</span></a>
+							<a href="#" class="catalog-info__btn">i</a>
+							<div class="catalog-item__info">
+								<p><span>Внешняя отделка</span> металл с полимерно-порошковым покрытием</p>
+								<p><span>Цвет внешней отделки</span> медный антик</p>
+								<p><span>Внутренняя отделка</span> панель МДФ 7мм (ламинат, гладкая)</p>
+								<p><span>Цвет внутренней отделки</span> орех итальянский</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog-item">
+						<div class="catalog-item__wrap">
+							<div class="catalog-item__type">Вид: арочные</div>
+							<div class="catalog-item__pict">
+								<img src="img/catalog-5.jpg" alt="">
+								<img src="img/catalog-5.jpg" alt="">
+							</div>
+							<div class="catalog-item__title">Входная дверь Сударь</div>
+							<div class="catalog-item__price">12800 руб.</div>
+							<div class="catalog-item__price catalog-item__price--mob">Цена: от 5.000 руб.</div>
+							<div class="catalog-item__count">
+								<input type="number" value="1" min="0">
+							</div>
+							<a href="#" class="catalog-item__btn">Купить</a>
+							<a href="#" class="btn btn--catalog"><span>Купить</span></a>
+							<a href="#" class="catalog-info__btn">i</a>
+							<div class="catalog-item__info">
+								<p><span>Внешняя отделка</span> металл с полимерно-порошковым покрытием</p>
+								<p><span>Цвет внешней отделки</span> медный антик</p>
+								<p><span>Внутренняя отделка</span> панель МДФ 7мм (ламинат, гладкая)</p>
+								<p><span>Цвет внутренней отделки</span> орех итальянский</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog-item">
+						<div class="catalog-item__wrap">
+							<div class="catalog-item__type">Вид: арочные</div>
+							<div class="catalog-item__pict">
+								<img src="img/catalog-6.jpg" alt="">
+								<img src="img/catalog-6.jpg" alt="">
+							</div>
+							<div class="catalog-item__title">Входная дверь Сударь</div>
+							<div class="catalog-item__price">12800 руб.</div>
+							<div class="catalog-item__price catalog-item__price--mob">Цена: от 5.000 руб.</div>
+							<div class="catalog-item__count">
+								<input type="number" value="1" min="0">
+							</div>
+							<a href="#" class="catalog-item__btn">Купить</a>
+							<a href="#" class="btn btn--catalog"><span>Купить</span></a>
+							<a href="#" class="catalog-info__btn">i</a>
+							<div class="catalog-item__info">
+								<p><span>Внешняя отделка</span> металл с полимерно-порошковым покрытием</p>
+								<p><span>Цвет внешней отделки</span> медный антик</p>
+								<p><span>Внутренняя отделка</span> панель МДФ 7мм (ламинат, гладкая)</p>
+								<p><span>Цвет внутренней отделки</span> орех итальянский</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog-item">
+						<div class="catalog-item__wrap">
+							<div class="catalog-item__type">Вид: арочные</div>
+							<div class="catalog-item__pict">
+								<img src="img/catalog-7.jpg" alt="">
+								<img src="img/catalog-7.jpg" alt="">
+							</div>
+							<div class="catalog-item__title">Входная дверь Сударь</div>
+							<div class="catalog-item__price">12800 руб.</div>
+							<div class="catalog-item__price catalog-item__price--mob">Цена: от 5.000 руб.</div>
+							<div class="catalog-item__count">
+								<input type="number" value="1" min="0">
+							</div>
+							<a href="#" class="catalog-item__btn">Купить</a>
+							<a href="#" class="btn btn--catalog"><span>Купить</span></a>
+							<a href="#" class="catalog-info__btn">i</a>
+							<div class="catalog-item__info">
+								<p><span>Внешняя отделка</span> металл с полимерно-порошковым покрытием</p>
+								<p><span>Цвет внешней отделки</span> медный антик</p>
+								<p><span>Внутренняя отделка</span> панель МДФ 7мм (ламинат, гладкая)</p>
+								<p><span>Цвет внутренней отделки</span> орех итальянский</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog-item">
+						<div class="catalog-item__wrap">
+							<div class="catalog-item__type">Вид: арочные</div>
+							<div class="catalog-item__pict">
+								<img src="img/catalog-1.jpg" alt="">
+								<img src="img/catalog-1.jpg" alt="">
+							</div>
+							<div class="catalog-item__title">Входная дверь Сударь</div>
+							<div class="catalog-item__price">12800 руб.</div>
+							<div class="catalog-item__price catalog-item__price--mob">Цена: от 5.000 руб.</div>
+							<div class="catalog-item__count">
+								<input type="number" value="1" min="0">
+							</div>
+							<a href="#" class="catalog-item__btn">Купить</a>
+							<a href="#" class="btn btn--catalog"><span>Купить</span></a>
+							<a href="#" class="catalog-info__btn">i</a>
+							<div class="catalog-item__info">
+								<p><span>Внешняя отделка</span> металл с полимерно-порошковым покрытием</p>
+								<p><span>Цвет внешней отделки</span> медный антик</p>
+								<p><span>Внутренняя отделка</span> панель МДФ 7мм (ламинат, гладкая)</p>
+								<p><span>Цвет внутренней отделки</span> орех итальянский</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog-item">
+						<div class="catalog-item__wrap">
+							<div class="catalog-item__type">Вид: арочные</div>
+							<div class="catalog-item__pict">
+								<img src="img/catalog-1.jpg" alt="">
+								<img src="img/catalog-1.jpg" alt="">
+							</div>
+							<div class="catalog-item__title">Входная дверь Сударь</div>
+							<div class="catalog-item__price">12800 руб.</div>
+							<div class="catalog-item__price catalog-item__price--mob">Цена: от 5.000 руб.</div>
+							<div class="catalog-item__count">
+								<input type="number" value="1" min="0">
+							</div>
+							<a href="#" class="catalog-item__btn">Купить</a>
+							<a href="#" class="btn btn--catalog"><span>Купить</span></a>
+							<a href="#" class="catalog-info__btn">i</a>
+							<div class="catalog-item__info">
+								<p><span>Внешняя отделка</span> металл с полимерно-порошковым покрытием</p>
+								<p><span>Цвет внешней отделки</span> медный антик</p>
+								<p><span>Внутренняя отделка</span> панель МДФ 7мм (ламинат, гладкая)</p>
+								<p><span>Цвет внутренней отделки</span> орех итальянский</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog-item">
+						<div class="catalog-item__wrap">
+							<div class="catalog-item__type">Вид: арочные</div>
+							<div class="catalog-item__pict">
+								<img src="img/catalog-1.jpg" alt="">
+								<img src="img/catalog-1.jpg" alt="">
+							</div>
+							<div class="catalog-item__title">Входная дверь Сударь</div>
+							<div class="catalog-item__price">12800 руб.</div>
+							<div class="catalog-item__price catalog-item__price--mob">Цена: от 5.000 руб.</div>
+							<div class="catalog-item__count">
+								<input type="number" value="1" min="0">
+							</div>
+							<a href="#" class="catalog-item__btn">Купить</a>
+							<a href="#" class="btn btn--catalog"><span>Купить</span></a>
+							<a href="#" class="catalog-info__btn">i</a>
+							<div class="catalog-item__info">
+								<p><span>Внешняя отделка</span> металл с полимерно-порошковым покрытием</p>
+								<p><span>Цвет внешней отделки</span> медный антик</p>
+								<p><span>Внутренняя отделка</span> панель МДФ 7мм (ламинат, гладкая)</p>
+								<p><span>Цвет внутренней отделки</span> орех итальянский</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog-item">
+						<div class="catalog-item__wrap">
+							<div class="catalog-item__type">Вид: арочные</div>
+							<div class="catalog-item__pict">
+								<img src="img/catalog-1.jpg" alt="">
+								<img src="img/catalog-1.jpg" alt="">
+							</div>
+							<div class="catalog-item__title">Входная дверь Сударь</div>
+							<div class="catalog-item__price">12800 руб.</div>
+							<div class="catalog-item__price catalog-item__price--mob">Цена: от 5.000 руб.</div>
+							<div class="catalog-item__count">
+								<input type="number" value="1" min="0">
+							</div>
+							<a href="#" class="catalog-item__btn">Купить</a>
+							<a href="#" class="btn btn--catalog"><span>Купить</span></a>
+							<a href="#" class="catalog-info__btn">i</a>
+							<div class="catalog-item__info">
+								<p><span>Внешняя отделка</span> металл с полимерно-порошковым покрытием</p>
+								<p><span>Цвет внешней отделки</span> медный антик</p>
+								<p><span>Внутренняя отделка</span> панель МДФ 7мм (ламинат, гладкая)</p>
+								<p><span>Цвет внутренней отделки</span> орех итальянский</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="catalog-item">
+						<div class="catalog-item__wrap">
+							<div class="catalog-item__type">Вид: арочные</div>
+							<div class="catalog-item__pict">
+								<img src="img/catalog-1.jpg" alt="">
+								<img src="img/catalog-1.jpg" alt="">
+							</div>
+							<div class="catalog-item__title">Входная дверь Сударь</div>
+							<div class="catalog-item__price">12800 руб.</div>
+							<div class="catalog-item__price catalog-item__price--mob">Цена: от 5.000 руб.</div>
+							<div class="catalog-item__count">
+								<input type="number" value="1" min="0">
+							</div>
+							<a href="#" class="catalog-item__btn">Купить</a>
+							<a href="#" class="btn btn--catalog"><span>Купить</span></a>
+							<a href="#" class="catalog-info__btn">i</a>
+							<div class="catalog-item__info">
+								<p><span>Внешняя отделка</span> металл с полимерно-порошковым покрытием</p>
+								<p><span>Цвет внешней отделки</span> медный антик</p>
+								<p><span>Внутренняя отделка</span> панель МДФ 7мм (ламинат, гладкая)</p>
+								<p><span>Цвет внутренней отделки</span> орех итальянский</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="pagination">
+					<div class="pagination__title">Страницы:</div>
+					<ul class="pagination-list">
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+					</ul>
+					<a href="#" class="pagination__next">&nbsp;</a>
+					<a href="#" class="pagination__all">Все</a>
+					<div class="pagination-total">1 - 15 из 20</div>
+				</div>
+
+				<div class="advantage">
+					<div class="advantage__title">Преимущества Дверей «Сударь»:</div>
+					<ul class="advantage-list">
+						<li>Стальные входные двери "Сударь" производятся из высококлассной прочной стали. Для обеспечения дополнительной защиты на дверных конструкциях используются противосъемные штыри.</li>
+						<li>Для дверей данной ТМ подбираются уникальные замки, оснащенные защитой от подбора отмычек, выбивания, высверливания.</li>
+						<li>На все двери марки "Сударь" предоставляется официальная гарантия производителя сроком на 10 лет.</li>
+						<li>На замки, установленные в дверях "Сударь" дается гарантия от 1 года. Двери надежно защищены от шума, проникновения в квартиру холода, посторонних запахов с улицы/подъезда. Двери в два контура обматываются уплотнителем, имеют защиту в виде фольгированного "Изолона".</li>
+						<li>В конструкциях используется дополнительные полуторамиллиметровый лист металла (помимо основных).</li>
+						<li>В качестве отделочного материала производитель предлагает более 50-ти различных вариантов для входных дверей. Используется отделка из МДФ, натурального шпона, древесного массива, металла.</li>
+						<li>Допускается изготовление дверей по индивидуальным замерам.</li>
+						<li>Компания-производитель предоставляет на свою продукцию сертификаты соответствия ГОСТ Р. Кроме того, все модели дверей "Сударь" сопровождаются санитарно-эпидемиологическими заключениями и противопожарными сертификатами.</li>
+					</ul>
+					<div class="advantage__title">В ассортименте представлены:</div>
+					<p>Двери "Сударь" серии CISA - максимально защищенные от взлома дверные конструкции. В данной серии дверей ТМ использованы уникальные запорные механизмы итальянского производства. Все замки оснащены дополнительными системами безопасности.Двери "Сударь" серии "Меттем", выпущенные в 2015 году. В данной серии применяются запорные механизмы отечественного производства "Меттем". Двери оснащаются минимум двумя замками. Заказать двери "Сударь" вы можете уже сегодня. Звоните!</p>
+				</div>
+
+				<div class="news-block news-block--mob clearfix">
+					<div class="news-block__title">Последние новости</div>
+					<div class="news-item">
+						<div class="news-item__date">27.12.17</div>
+						<div class="news-item__descr">
+							<a href="#" class="news-item__title">Новая модель Бульдорс-33!</a>
+							<div class="news-item__text">
+								<p>Казанский завод стальных дверей рад сообщить о выпуске новой модели Бульдорс-33!</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="news-item">
+						<div class="news-item__date">27.12.17</div>
+						<div class="news-item__descr">
+							<a href="#" class="news-item__title">Новая модель Бульдорс-33!</a>
+							<div class="news-item__text">
+								<p>Казанский завод стальных дверей рад сообщить о выпуске новой модели Бульдорс-33!</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="news-item">
+						<div class="news-item__date">27.12.17</div>
+						<div class="news-item__descr">
+							<a href="#" class="news-item__title">Новая модель Бульдорс-33!</a>
+							<div class="news-item__text">
+								<p>Казанский завод стальных дверей рад сообщить о выпуске новой модели Бульдорс-33!</p>
+							</div>
+						</div>
+					</div>
+
+					<a href="#" class="news-item__link">Все новости</a>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

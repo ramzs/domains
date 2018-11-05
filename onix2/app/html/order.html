@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="content content_catalog">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-4 col-md-4 sidebar">
+
+					<div class="s-menu">
+						<ul class="s-tab">
+							<li class="s-tab__name"><a href="#category-list" role="tab" data-toggle="tab">Категории</a></li>
+							<li class="s-tab__name"><a href="#brends-list" role="tab" data-toggle="tab">Бренды</a></li>
+						</ul>
+						<div class="s-content">
+
+							<div id="category-list" class="s-content-item fade in active">
+								<a href="#c-menu-1" class="s-content-item__title" data-toggle="collapse">Авторемонт</a>
+								<ul id="c-menu-1" class="s-content__list collapse in">
+									<li><a href="#">Абразивные материалы</a></li>
+									<li><a href="#">Автохимия</a></li>
+									<li><a href="#">Автоэмали</a></li>
+									<li class="active"><a href="#">Антигравий</a></li>
+									<li><a href="#">Антикоррозийные покрытия</a></li>
+									<li><a href="#">Армирующие материалы</a></li>
+									<li><a href="#">Аэрозольные продукты</a></li>
+									<li><a href="#">Герметики</a></li>
+									<li><a href="#">Грунты</a></li>
+									<li><a href="#">Добавки</a></li>
+									<li><a href="#">Инструменты</a></li>
+									<li><a href="#">Карандаши/кисточки</a></li>
+									<li><a href="#">Клеящие ленты</a></li>
+									<li><a href="#">Краскопульты и Аэрографы</a></li>
+									<li><a href="#">Крепеж автомобильный</a></li>
+									<li><a href="#">Лаки</a></li>
+									<li><a href="#">Малярный инструмент</a></li>
+									<li><a href="#">Маскировочные материалы</a></li>
+									<li><a href="#">Материалы для вклейки стекол</a></li>
+									<li><a href="#">Обезжириватели</a></li>
+									<li><a href="#">Оборудование сварочное</a></li>
+									<li><a href="#">Оборудование шлифовальное</a></li>
+									<li><a href="#">Отвердители</a></li>
+									<li><a href="#">Полировальные материалы</a></li>
+									<li><a href="#">Полупродукт</a></li>
+									<li><a href="#">Протирочные материалы</a></li>
+									<li><a href="#">Проявочные покрытия</a></li>
+									<li><a href="#">Разбавители</a></li>
+									<li><a href="#">Растворители</a></li>
+									<li><a href="#">Средства индивидуальной защиты</a></li>
+									<li><a href="#">Шпатлевки</a></li>
+									<li><a href="#">Очистители</a></li>
+								</ul>
+
+								<a href="#c-menu-2" class="s-content-item__title" data-toggle="collapse">Промышленность</a>
+								<ul id="c-menu-2" class="s-content__list collapse">
+									<li><a href="#">Абразивные материалы</a></li>
+									<li><a href="#">Автохимия</a></li>
+									<li><a href="#">Автоэмали</a></li>
+									<li><a href="#">Антигравий</a></li>
+								</ul>
+
+							</div>
+
+							<div id="brends-list" class="s-content-item fade">
+
+								<div class="s-content-item__title s-content-item__title_brend">Бренды</div>
+
+								<ul class="s-content__list">
+									<li><a href="#">Абразивные материалы</a></li>
+									<li><a href="#">Автохимия</a></li>
+									<li><a href="#">Автоэмали</a></li>
+									<li><a href="#">Антигравий</a></li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-xs-12 col-sm-8 col-md-8 main">
+
+					<div class="breadcrumb-block">
+						<ol class="breadcrumb">
+							<li><a href="#">Главная</a></li>
+							<li class="active">Корзина</li>
+						</ol>
+					</div>
+
+					<h1 class="page-title">Оформление покупки</h1>
+
+					<section class="section-cart">
+
+						<div class="social">
+							<a href="#" class="social__link social__link_vk">vkontakte</a>
+							<a href="#" class="social__link social__link_fb">facebook</a>
+							<a href="#" class="social__link social__link_tw">twitter</a>
+							<a href="#" class="social__link social__link_g">google+</a>
+						</div>
+
+						<div class="order">
+
+							<ul class="order-step">
+
+								<li class="active"><a href="#step-1" role="tab" data-toggle="tab"><span>Шаг 1.</span> Способ оплаты<i></i></a></li>
+
+								<li><a href="#step-2" role="tab" data-toggle="tab"><span>Шаг 2.</span> Способ доставки<i></i></a></li>
+
+								<li><a href="#step-3" role="tab" data-toggle="tab"><span>Шаг 3. </span>Подтверждение<i></i></a></li>
+
+							</ul>
+
+							<div class="order-content">
+
+								<div id="step-1" class="order-body fade in active">
+
+									<div class="order-body__title">Пожалуйста, введите удобный для вас способ оплаты товара</div>
+
+									<div class="order-change">
+										<label data-target="#pay-1" for="fiz" role="tab" data-toggle="tab"><input type="radio" name="pay" id="fiz" checked>Физическое лицо</label>
+										<label data-target="#pay-2" for="ur" role="tab" data-toggle="tab"><input type="radio" name="pay" id="ur">Юридическое лицо</label>
+									</div>
+
+									<div id="pay-1" class="order-pay fade in active">
+										<div class="order-item">
+											<div class="order-item__title">Наличными курьеру</div>
+											<img src="img/pay-1.png" alt="">
+										</div>
+
+										<div class="order-item">
+											<div class="order-item__title">Банковской картой</div>
+											<img src="img/pay-2.png" alt="">
+											<div class="order-item-in">
+												<div class="order-item-in__title">Введите номер карты</div>
+												<input type="text" placeholder="xxxx - xxxx - xxxx - xxxx">
+											</div>
+										</div>
+
+										<div class="order-item">
+											<div class="order-item__title">Квитанцией сбербанка</div>
+											<img src="img/pay-3.png" alt="">
+										</div>
+									</div>
+
+									<div id="pay-2" class="order-pay fade">
+										<div class="order-item active">
+											<div class="order-item__title">Счет</div>
+											<img src="img/pay-4.png" alt="">
+										</div>
+										<div class="order-item-form">
+											<fieldset class="fieldset-top">
+												<input type="text" placeholder="Название компании">
+												<input type="text" placeholder="ИНН">
+												<input type="text" placeholder="КПП">
+											</fieldset>
+											<fieldset class="fieldset-left">
+												<input class="fieldset-left__long" type="text" placeholder="Юр. адрес">
+												<input type="text" placeholder="Адрес">
+												<input type="text" placeholder="Телефон">
+											</fieldset>
+											<fieldset class="fieldset-right">
+												<input type="text" placeholder="Контактное лицо">
+												<input type="text" placeholder="E-mail">
+											</fieldset>
+											<textarea cols="30" rows="10" placeholder="Комментарий к заказу"></textarea>
+										</div>
+									</div>
+
+									<div class="order-body__bottom">
+										<button class="order-body-nav order-body-nav_next">К шагу 2</button>
+									</div>
+
+								</div>
+
+								<div id="step-2" class="order-body fade">
+
+									<div class="order-body__title">Пожалуйста, выберите удобный для вас способ доставки товара</div>
+
+									<div class="order-delivery">
+
+										<div class="order-delivery-item">
+											<p>Если вы используете Самовывоз, то адрес, по котоому вы смжете забрать свой товар приведен ниже:</p>
+											<p style="color: #616162;">г.Москва, ул.Московская 767, вход со двора. 5-ый этаж, кабинет 267.
+											Рабочие дни пнд - пт, с 9-00 до 19-00</p>
+										</div>
+
+										<div class="order-item order-item_bt">
+											<div class="order-item__title">Самовывоз</div>
+											<img src="img/del-2.png" alt="">
+										</div>
+
+										<div id="del-1"  class="order-item">
+											<div class="order-item__title">Курьерская доставка</div>
+											<img src="img/del-1.png" alt="">
+										</div>
+
+										<div class="order-delivery-form">
+											<div class="order-delivery-form__title">Укажите адрес доставки</div>
+											<input type="text" placeholder="Название области">
+											<input type="text" placeholder="Город">
+											<input type="text" placeholder="Моб. телефон">
+											<input type="text" placeholder="Имя и Фамилия">
+											<input type="text" placeholder="E-mail">
+											<input type="text" placeholder="Ваш адрес">
+										</div>
+
+									</div>
+
+									<div class="order-body__bottom">
+										<button class="order-body-nav order-body-nav_prev">К шагу 1</button>
+										<button class="order-body-nav order-body-nav_next">К шагу 3</button>
+									</div>
+
+								</div>
+
+								<div id="step-3" class="order-body fade">
+
+									<div class="order-body__title order-body__title_fin">Подтверждение заказа</div>
+
+									<div class="order-fin">
+										<p>Благодарим Вас за заказ!<br>В течении 3-х дней, ваш товар будет доставлен по указаному адресу:</p>
+										<p><strong>Московская область, г.Москва, ул. Карандашная 33/2, 5-ый этаж нашим курьером.</strong></p>
+										<p>Сумма к оплате составляет <strong>20 000 руб.</strong>, а также <strong>500 руб.</strong>, за доставку.<br><strong>Итого, полная сумма к оплате составляет 20 500 руб.</strong></p>
+										<p>Желаем вас успешных покупок!</p>
+									</div>
+
+									<div class="order-body__bottom">
+										<button class="order-body-nav order-body-nav_prev">К шагу 2</button>
+										<button class="order-body-nav order-body-nav_fin">Оформить!</button>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</section>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

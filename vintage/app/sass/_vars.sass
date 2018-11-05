@@ -1,0 +1,13 @@
+@import "bourbon"
+@import "sprite.sass"
+
+$default-font: "ptsans", sans-serif
+$main-color: #000
+$gray-text: #7d7d7d
+$orange-text: #ff4800
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)

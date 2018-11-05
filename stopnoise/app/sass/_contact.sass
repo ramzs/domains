@@ -1,0 +1,89 @@
+@import "vars"
+/*---------------Contact page------------------*/
+.content
+	&.content__inner-contact
+		padding-bottom: 68px
+
+.contact__tab
+	margin-bottom: 37px
+
+.contact__city
+	display: inline-block
+	width: 45%
+	padding-left: 42px
+	a
+		position: relative
+		display: inline-block
+		font: 700 18px "lato"
+		color: #000
+	&.active
+		a
+			i
+				display: block
+			&:after
+				content: ' '
+				position: absolute
+				bottom: -2px
+				left: 0
+				width: 100%
+				height: 3px
+				background: #0081bc
+		i
+			display: none
+			position: absolute
+			top: 0
+			left: -40px
+			@include sprite($flag-ico)
+
+.contact__body
+	display: none
+	overflow: hidden
+	&.open
+		display: block
+
+.contact__item
+	float: left
+	width: 50%
+	min-height: 105px
+	padding-left: 25px
+	.item__title
+		position: relative
+		margin-bottom: 5px
+		font: 600 18px "lato"
+		color: #8c8c8c
+		&:before
+			content: ' '
+			position: absolute
+			top: 0
+			left: -25px
+		&.item__title-phone
+			&:before
+				@include sprite($phone-contact)
+		&.item__title-map
+			&:before
+				@include sprite($map-ico)
+		&.item__title-mail
+			&:before
+				@include sprite($mail-contact)
+		&.item__title-work
+			&:before
+				@include sprite($work-ico)
+	.item__main
+		display: block
+		margin-bottom: 5px
+		font: 600 18px "lato"
+		color: #000
+	.item__descr
+		font: 600 18px "lato"
+		color: #8c8c8c
+
+.contact__text
+	margin-top: 30px
+	font: 600 18px "lato"
+	color: #8c8c8c
+	p
+		margin-bottom: 25px
+
+.contact__map
+	margin-top: 44px
+/*-------------------end------------------------*/

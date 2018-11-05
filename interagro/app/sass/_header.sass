@@ -1,0 +1,137 @@
+.header
+	padding: 17px 0 20px
+	box-shadow: 0.1px 2px 6px rgba(0, 0, 0, 0.14)
+	&.fixed
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 1000
+		animation: top .35s ease
+		background: #fff
+
+@keyframes top
+	from
+		top: -100%
+	to
+		top: 0
+
+.logo
+	display: inline-block
+	vertical-align: middle
+	max-width: 321px
+	img
+		display: block
+		width: 100%
+
+.navbar
+	display: inline-block
+	vertical-align: middle
+	min-height: auto
+	margin: 0 0 0 65px
+	padding: 12px 0
+	border-radius: 0
+	border: none
+	+clearfix
+
+.navbar-toggle
+	float: left
+	margin: 0
+	padding: 0
+	border-radius: 0
+	border: none
+	.icon-bar
+		position: relative
+		width: 30px
+		height: 4px
+		border-radius: 0
+		transition: all .25s ease
+		background: $accent
+		&_top
+			top: 8px
+			transform: rotate(45deg)
+		&_center
+			opacity: 0
+		&_bottom
+			bottom: 8px
+			transform: rotate(-45deg)
+	&:hover
+		.icon-bar
+			background: $accent
+	&.collapsed
+		.icon-bar
+			background: #000
+			&_top
+				top: 0
+				transform: none
+			&_center
+				opacity: 1
+			&_bottom
+				bottom: 0
+				transform: none
+		&:hover
+			.icon-bar
+				background: $accent
+
+.navbar-collapse
+	padding: 0
+	border: none
+
+.nav
+	> li
+		display: inline-block
+		margin-right: 21px
+		&:last-child
+			margin-right: 0
+		> a
+			padding: 5px 0
+			font-size: 18px
+			font-weight: 300
+			color: #000
+			i
+				position: relative
+				display: inline-block
+				top: -3px
+				margin-left: 2px
+				@include sprite($arrow-down)
+			&:focus, &:hover
+				background-color: transparent
+			&:hover
+				text-shadow: 0 0 1px $accent
+				color: $accent
+	.open>a, .open>a:focus, .open>a:hover
+		color: $accent
+		text-shadow: 0 0 1px $accent
+		background: none
+		border: none
+
+.dropdown-menu
+	> li
+		> a
+			font-size: 16px
+			&:hover
+				background: $accent
+
+.btn
+	display: block
+	padding: 9px 0
+	font-size: 16px
+	font-weight: 700
+	border-radius: 5px
+	background: $accent
+	&:hover
+		background: #e4ff37
+	&-callback
+		float: right
+		width: 195px
+		margin-top: 8px
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus
+	outline: none
+	outline-offset: 0
+
+.btn.active, .btn:active
+	box-shadow: none
+
+.btn.focus, .btn:focus, .btn:hover
+	color: #000

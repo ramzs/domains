@@ -1,0 +1,1189 @@
+@charset "UTF-8";
+/*-------Base styles----------*/
+*::-webkit-input-placeholder {
+  color: #30302e;
+  font-weight: 200;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #30302e;
+  font-weight: 200;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #30302e;
+  font-weight: 200;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #30302e;
+  font-weight: 200;
+  opacity: 1;
+}
+
+html.js .loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+html.js .loader .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green;
+}
+
+body {
+  font-family: "Palatino", sans-serif;
+  color: #30302e;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1040px) {
+  body {
+    display: table;
+    width: 100%;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: #30302e;
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
+/*----------end---------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+.curtain-bg {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 785px;
+  max-width: 100%;
+}
+
+.curtain-bg img {
+  display: block;
+  width: 100%;
+}
+
+.curtain-bg--left {
+  left: 0;
+}
+
+.curtain-bg--right {
+  right: 0;
+}
+
+@media only screen and (max-width: 2470px) {
+  .curtain-bg {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 2100px) {
+  .curtain-bg {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .curtain-bg {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .curtain-bg {
+    display: none;
+  }
+}
+
+/*--------------Header---------------------*/
+.header {
+  background: url(../img/header-full.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.header-top {
+  position: relative;
+  height: 523px;
+  padding: 25px 0 0;
+}
+
+.banner-sel {
+  display: inline-block;
+  width: 250px;
+  height: 160px;
+  margin-left: -9px;
+  padding: 29px 35px;
+  text-align: center;
+  background: url(../img/figure-dark.png) center top no-repeat;
+}
+
+.banner-sel__title {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.banner-sel__descr {
+  margin-top: 5px;
+  font: 100 16px "MuseoSans";
+  color: #fff;
+}
+
+.banner-sel__descr p {
+  margin: 0;
+}
+
+.banner-sel__descr span {
+  font-weight: 700;
+}
+
+.logo {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  right: 0;
+  width: 349px;
+  margin: 0 auto;
+}
+
+.banner-contact {
+  float: right;
+  width: 238px;
+  height: 138px;
+  margin: 17px -7px 0 0;
+  padding: 33px 35px;
+  text-align: center;
+  background: url(../img/figure-white.png) center top no-repeat;
+}
+
+.banner-contact__phone {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.banner-contact__link {
+  display: block;
+  font: 100 18px "MuseoSans";
+  outline: none;
+}
+
+.banner-contact__link:hover {
+  color: #973c23;
+}
+
+.header-nav {
+  margin-top: 12px;
+}
+
+.nav-menu {
+  margin: 0 -10px;
+  line-height: 0;
+  font-size: 0;
+  text-align: justify;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+}
+
+.nav-menu:after {
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  height: 0px;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.nav-menu--bottom {
+  margin-top: -11px;
+  text-align: left;
+}
+
+.nav-menu--bottom .nav-menu__item {
+  margin-right: 46px;
+}
+
+.nav-menu--bottom .nav-menu__item:nth-child(2) {
+  margin-right: 164px;
+}
+
+.nav-menu--bottom .nav-menu__item:nth-child(3) {
+  margin-right: 103px;
+}
+
+.nav-menu__item {
+  position: relative;
+  display: inline-block;
+  padding: 14px 10px 0;
+  vertical-align: top;
+  -webkit-border-radius: 5px 0 0 0;
+          border-radius: 5px 0 0 0;
+  background: rgba(255, 255, 255, 0);
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.nav-menu__item.active {
+  z-index: 5;
+  background: white;
+}
+
+.nav-menu__item--submenu {
+  margin-bottom: 16px;
+}
+
+.nav-menu__item a {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-menu__item a:hover, .nav-menu__item a.active {
+  color: #973c23;
+}
+
+.nav-menu__link {
+  margin-bottom: 16px;
+}
+
+.nav-submenu {
+  display: none;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  padding: 6px 0;
+  z-index: 5;
+  background: #fff;
+  -webkit-border-radius: 0 0 5px 5px;
+          border-radius: 0 0 5px 5px;
+  -webkit-box-shadow: 2.5px 4.3px 5px rgba(175, 170, 169, 0.12);
+          box-shadow: 2.5px 4.3px 5px rgba(175, 170, 169, 0.12);
+}
+
+.nav-submenu .nav-menu__item {
+  display: block;
+  padding: 0 20px 0 10px;
+  margin-right: 0 !important;
+  white-space: nowrap;
+}
+
+.main-banner {
+  position: relative;
+  width: 1005px;
+  height: 610px;
+  margin-top: -15px;
+  padding: 220px 110px 0;
+  text-align: center;
+  background: url(../img/figure-big-white.png) center top no-repeat;
+}
+
+.main-banner:before {
+  content: ' ';
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  width: 335px;
+  height: 76px;
+  margin: 0 auto;
+  z-index: 4;
+  background: url(../img/ornament-1.png) center top no-repeat;
+}
+
+.main-banner__title {
+  display: block;
+  margin: 0;
+  font-size: 65px;
+  color: #973c23;
+  text-transform: uppercase;
+}
+
+.main-banner__title span {
+  display: block;
+  margin-top: 12px;
+  font-size: 38px;
+  font-weight: 700;
+  color: #30302e;
+}
+
+.main-banner__country {
+  margin-top: 23px;
+  font: 100 22px "MuseoSans";
+  text-transform: uppercase;
+}
+
+.header-main {
+  position: relative;
+  padding: 395px 0 134px;
+}
+
+.main-caption {
+  text-align: center;
+}
+
+.main-caption__tags {
+  display: block;
+  margin: 0;
+  font: 24px "MuseoSans";
+  text-transform: uppercase;
+}
+
+.main-caption__title {
+  display: block;
+  margin: 20px 0 32px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.main-caption__title span {
+  color: #973c23;
+}
+
+.main-caption__text {
+  display: block;
+  margin: 0;
+  font: 22px "museoSans";
+}
+
+/*----------end header--------------------*/
+.section-one {
+  position: relative;
+  padding: 190px 0 72px;
+}
+
+.section-one:before {
+  content: ' ';
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  width: 335px;
+  height: 76px;
+  margin: 0 auto;
+  z-index: 4;
+  background: url(../img/ornament-1.png) center top no-repeat;
+}
+
+.catalog-item {
+  position: relative;
+  float: left;
+  width: 25%;
+  margin-bottom: 20px;
+  padding: 0 5px;
+  vertical-align: top;
+  text-align: center;
+  overflow: hidden;
+  outline: none;
+}
+
+.catalog-item__pict {
+  position: relative;
+}
+
+.catalog-item__pict img {
+  display: block;
+  width: 100%;
+  height: 178px;
+}
+
+.catalog-item__pict:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/border.png) center top no-repeat;
+  background-size: 100% 100%;
+}
+
+.catalog-item__title {
+  display: block;
+  margin: 14px 0 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.catalog-item:hover .catalog-item__title {
+  color: #973c23;
+}
+
+.section-text {
+  margin-top: 55px;
+  text-align: center;
+}
+
+.section-text p {
+  margin: 0;
+  font: 100 22px "MuseoSans";
+}
+
+.section-text p b {
+  font-weight: 800;
+}
+
+.section-text__title {
+  display: block;
+  margin: 14px 0 28px;
+  font: 700 40px "Palatino";
+  text-transform: uppercase;
+}
+
+.section-text__title span {
+  color: #973c23;
+}
+
+.bx-wrapper img {
+  height: 585px;
+}
+
+.bx-wrapper .bx-viewport {
+  height: 606px !important;
+  width: 100% !important;
+  -webkit-border-top-left-radius: 100% 5%;
+          border-top-left-radius: 100% 5%;
+  -webkit-border-top-right-radius: 100% 5%;
+          border-top-right-radius: 100% 5%;
+  -webkit-border-bottom-left-radius: 100% 5%;
+          border-bottom-left-radius: 100% 5%;
+  -webkit-border-bottom-right-radius: 100% 5%;
+          border-bottom-right-radius: 100% 5%;
+}
+
+.bx-wrapper .bx-caption {
+  height: 200px;
+  text-align: center;
+}
+
+.slider-text {
+  text-align: center;
+}
+
+.slider-text__title {
+  display: block;
+  margin: 0 0 45px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.slider-text__title span {
+  color: #973c23;
+}
+
+.slider-text__descr {
+  display: block;
+  margin: 0;
+  font: 100 22px "MuseoSans";
+}
+
+.section-three {
+  padding: 60px 0 72px;
+}
+
+.block-change {
+  text-align: center;
+}
+
+.btn-change {
+  display: inline-block;
+  width: 243px;
+  height: 139px;
+  margin: 0 26px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 115px;
+  text-transform: uppercase;
+  text-align: center;
+  background: url(../img/btn-bg.png) 7px top no-repeat;
+}
+
+.btn-change.active {
+  background: url(../img/btn-bg-active.png) 7px top no-repeat;
+}
+
+.work-block {
+  display: inline-block;
+  margin-top: 26px;
+  text-align: center;
+}
+
+.work-block__title {
+  display: block;
+  margin: 0 0 50px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.work-item {
+  float: left;
+  width: 166px;
+}
+
+.work-item__descr {
+  margin-top: 14px;
+  font: 100 18px "museoSans";
+}
+
+.work-item__descr p {
+  margin: 0;
+}
+
+.section-four .bx-wrapper .bx-pager {
+  bottom: 17.5%;
+}
+
+.section-four .bx-wrapper .bx-pager.bx-default-pager a:hover, .section-four .bx-wrapper .bx-pager.bx-default-pager a.active {
+  border: 1px solid #fff;
+  background: #fff;
+}
+
+.sale-item {
+  height: 606px;
+}
+
+.sale-item img {
+  height: 606px;
+}
+
+.sale-item .bx-caption {
+  height: 548px;
+}
+
+.sale-banner {
+  position: relative;
+  display: table-cell;
+  top: -16px;
+  width: 997px;
+  height: 548px;
+  vertical-align: middle;
+  text-align: center;
+  background: url(../img/figure-big-dark.png) center top no-repeat;
+  background-size: cover;
+}
+
+.sale-banner__title {
+  margin: -12px 0 4px;
+  font-size: 72px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.sale-banner__accent {
+  display: block;
+  margin-bottom: 38px;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.sale-banner__descr {
+  display: block;
+  margin: 0;
+  font: 700 28px "MuseSans";
+  color: #fff;
+}
+
+.section-form {
+  height: 482px;
+}
+
+.form-call {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 610px;
+  margin-top: -60px;
+  padding-top: 117px;
+  text-align: center;
+  background: url(../img/figure-big-white.png) center top no-repeat;
+  background-size: 100% 610px;
+}
+
+.form-call__title {
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 700;
+  color: #973c23;
+  text-transform: uppercase;
+}
+
+.form-call__accent {
+  display: block;
+  font: 100 24px "MUseoSans";
+  text-transform: uppercase;
+}
+
+.form-call form {
+  margin-top: 52px;
+}
+
+.form-call input {
+  display: inline-block;
+  width: 149px;
+  height: 65px;
+  margin: 0 8px;
+  padding: 12px 10px;
+  font: 100 18px "MuseoSans";
+  text-align: center;
+  border: none;
+  outline: none;
+  background: url(../img/input-bg.png) center top no-repeat;
+}
+
+.form-call .btn-form {
+  display: block;
+  width: 203px;
+  height: 121px;
+  margin: 45px auto 0;
+  padding-bottom: 22px;
+  font: 800 18px "MuseoSans";
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: url(../img/btn-form-bg.png) 8px top no-repeat;
+}
+
+footer {
+  padding: 83px 0 31px;
+  background: #393939;
+}
+
+.footer-menu {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 62px;
+  line-height: 0;
+  font-size: 0;
+  text-align: justify;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+}
+
+.footer-menu:after {
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  height: 0px;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.footer-menu__item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-menu__item a {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-menu__item a:hover {
+  color: #973c23;
+}
+
+.footer-menu__link {
+  margin-bottom: 213px;
+}
+
+.footer-submenu {
+  margin-top: 30px;
+  height: 183px;
+}
+
+.footer-submenu li {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.footer-submenu li a {
+  display: inline-block;
+  font: 100 14px "MuseoSans";
+  color: #787878;
+  text-transform: none;
+}
+
+.footer-submenu li a:hover {
+  color: #fff;
+}
+
+.copyright {
+  display: inline-block;
+  margin-right: 120px;
+  font: 100 18px "MuseoSans";
+  color: #fff;
+}
+
+.developer {
+  display: inline-block;
+  font: 100 18px "MuseoSans";
+  color: #fff;
+}
+
+.developer a {
+  color: #ffcfad;
+  text-decoration: underline;
+}
+
+.developer a:hover {
+  text-decoration: none;
+}
+
+.banner-contact--footer {
+  float: right;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  background: none;
+}
+
+.banner-contact__phone--footer {
+  color: #fff;
+}
+
+.banner-contact__link--footer {
+  margin-top: -6px;
+  color: #973c23;
+}
+
+.banner-contact__link--footer:hover {
+  color: #fff;
+}
+
+/*-----------Форма обратного звонка----------*/
+.form-call--cb {
+  position: relative;
+  display: block;
+  width: 1005px;
+  height: 556px;
+  margin: auto;
+  padding-top: 128px;
+  background: url(../img/form-modal-bg.png) center top no-repeat;
+}
+
+.form-call--cb form {
+  margin-top: 57px;
+}
+
+.form-call--cb input {
+  position: relative;
+  top: -2px;
+  margin-left: 28px;
+}
+
+.form-call--cb .btn-form--cb {
+  display: inline-block;
+  margin: 1px 0 0 -16px;
+}
+
+.form-call--cb .mfp-close {
+  display: none;
+}
+
+.form-call__title--cb {
+  margin-bottom: 25px;
+}
+
+/*------------------конец---------------------*/
+.form-call--alert {
+  padding-top: 229px;
+}
+
+.form-call--alert .mfp-close {
+  display: block;
+  top: 84px;
+  left: 0;
+  margin: 0 auto;
+  font-size: 0;
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 20px;
+  height: 20px;
+}
+
+.form-call--alert .mfp-close:active {
+  top: 84px;
+}
+
+/*-------Плавное появление magnific popup------------*/
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0;
+}
+
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.mfp-wrap {
+  top: auto !important;
+  position: fixed !important;
+  height: 100% !important;
+}
+
+/*-------------end-----------------------*/
+/*-------------Gost-1 page--------------*/
+.header--inner {
+  background: url(../img/header-inner-full.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.header-top--inner {
+  height: 265px;
+}
+
+.header-nav--inner {
+  margin-top: 20px;
+}
+
+.nav-menu__item--inner a {
+  font-size: 12px;
+}
+
+.nav-submenu--inner li {
+  margin-bottom: 12px;
+}
+
+.header-main--inner {
+  padding: 163px 0 105px;
+}
+
+.header-main--inner:before {
+  content: ' ';
+  position: absolute;
+  top: 94px;
+  left: 0;
+  right: 0;
+  width: 335px;
+  height: 76px;
+  margin: 0 auto;
+  background: url(../img/ornament-1.png) center top no-repeat;
+}
+
+.main-caption__title--inner {
+  font-size: 65px;
+  color: #973c23;
+}
+
+.breadcrumb {
+  padding: 37px 0 30px;
+}
+
+.breadcrumb-list li {
+  position: relative;
+  display: inline-block;
+  margin-right: 42px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #973c23;
+  text-transform: uppercase;
+}
+
+.breadcrumb-list li:not(:last-child):after {
+  content: ' ';
+  position: absolute;
+  top: 5px;
+  right: -25px;
+  background-image: url(../img/sprite.png);
+  background-position: -20px 0px;
+  width: 5px;
+  height: 7px;
+}
+
+.breadcrumb-list li a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #30302e;
+}
+
+.breadcrumb-list li a:hover {
+  color: #973c23;
+}
+
+.section-one--inner {
+  padding: 30px 0 81px;
+}
+
+.section-one--inner:before {
+  display: none;
+}
+
+.catalog--gost {
+  text-align: center;
+}
+
+.catalog:before, .catalog:after {
+  content: " ";
+  display: table;
+}
+
+.catalog:after {
+  clear: both;
+}
+
+/*----------------end--------------------*/
+/*-------------Gost-2 page--------------*/
+.section-two--inner {
+  margin-bottom: -25px;
+}
+
+.section-gos {
+  padding: 40px 0 62px;
+}
+
+.gos-article {
+  text-align: center;
+}
+
+.gos-article__pict {
+  position: relative;
+  width: 565px;
+  height: 410px;
+  margin: 0 auto;
+  padding: 2px;
+}
+
+.gos-article__pict img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gos-article__pict:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/border.png) center top no-repeat;
+  background-size: 100% 100%;
+}
+
+.gos-article__title {
+  display: block;
+  margin: 37px 0 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #973c23;
+  text-transform: uppercase;
+}
+
+.gos-article__descr {
+  margin-top: 28px;
+  font: 100 22px "MuseSans";
+  color: #443c39;
+  text-align: left;
+}
+
+.gos-article__descr p {
+  margin: 0;
+}
+
+/*-----------------end-------------------*/
+/*-------------Zone page--------------*/
+.section-one--zone {
+  padding-bottom: 75px;
+}
+
+.catalog-item--zone {
+  width: 33.33%;
+}
+
+.catalog-item--zone img {
+  height: 240px;
+}
+
+/*-----------------end-----------------*/
+/*-------------Curtain page--------------*/
+.section-one--curtain {
+  padding-bottom: 108px;
+}
+
+/*-----------------end-------------------*/
+/*-------------Photo page--------------*/
+.header--photo {
+  background: url(../img/header-photo-bg.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.header-top--photo {
+  height: 365px;
+}
+
+.header-main--photo {
+  padding: 100px 0 160px;
+}
+
+.header-main--photo:before {
+  top: 42px;
+  background: url(../img/ornament-3.png) center top no-repeat;
+}
+
+.section-one--photo {
+  padding-top: 104px;
+}
+
+.section-one--photo:before {
+  top: -10px;
+}
+
+.catalog-item--photo {
+  margin-bottom: 16px;
+}
+
+.section-text--photo {
+  margin-top: 90px;
+}
+
+/*-----------------end-------------------*/

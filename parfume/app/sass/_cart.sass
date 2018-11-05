@@ -1,0 +1,230 @@
+@import "vars"
+
+/*--------------Cart page-------------*/
+.section-cart
+	padding: 16px 0 64px
+	.container
+		padding: 0 15px 0 40px
+
+.cart-block
+	display: table
+	width: 100%
+	margin-top: 19px
+	border-collapse: collapse
+
+.cart-row
+	display: table-row
+	&--body
+		border: 1px solid #cecece
+
+
+.cart-cell
+	display: table-cell
+	font-size: 12px
+	font-weight: 700
+	color: #000
+	vertical-align: middle
+	&--head
+		padding: 10px 0
+		color: $title
+		&:first-child
+			padding-left: 104px
+	&--body
+		padding: 7px 0
+
+.cell-title
+	display: none
+	font-size: 15px
+	font-weight: 700
+	color: $title
+
+.cart-pict
+	position: relative
+	display: inline-block
+	width: 80px
+	height: 80px
+	vertical-align: middle
+	img
+		display: block
+		max-width: 45px
+		@include vcenter
+
+.cart-cell--main
+	width: 36.5%
+	padding-left: 10px
+
+.cart-name
+	display: inline-block
+	vertical-align: middle
+	padding-left: 8px
+	a
+		font: 15px "anahit"
+		&:hover
+			color: $title
+
+.cart-cell--price
+	width: 12.5%
+
+.cart-cell--count
+	width: 15.9%
+	input
+		width: 80px
+		height: 47px
+		margin-right: 4px
+		padding-left: 20px
+		border: 1px solid #5b4f4b
+		&::-webkit-input-placeholder
+			color: #000
+			font-weight: 700
+		&:-moz-placeholder
+			color: #000
+			font-weight: 700
+		&::-moz-placeholder
+			color: #000
+			font-weight: 700
+		&:-ms-input-placeholder
+			color: #000
+			font-weight: 700
+
+.cart-cell--sale
+	width: 10%
+
+.cart-cell--total
+	width: 17%
+
+.cart-cell--remove
+	.remove-link
+		color: #d53200
+		&:hover
+			text-decoration: underline
+
+.divider
+	height: 10px
+
+.total-cart
+	float: right
+	width: 36%
+	margin-top: 23px
+	&__row
+		margin-bottom: 2px
+		font: 20px "anahit"
+		color: #000
+		span
+			font-size: 15px
+
+.section-order
+	.container
+		padding: 0 40px
+
+.order-block
+	margin-top: 38px
+	padding: 49px 0 62px
+	background: #000
+
+.order-form
+	float: left
+	margin-right: 65px
+	text-align: right
+	&__title
+		margin-bottom: 20px
+		font-size: 15px
+		color: $title
+		text-align: left
+	label
+		input
+			width: 254px
+			height: 47px
+			padding-left: 15px
+			border: 1px solid #58504c
+			background: #363636
+		span
+			margin-right: 20px
+
+label
+	display: block
+	margin-bottom: 10px
+	font-size: 12px
+	color: #95908d
+	&.comment
+		span
+			margin-top: 10px
+	span
+		display: inline-block
+		vertical-align: middle
+	input
+		vertical-align: middle
+		outline: none
+		&::-webkit-input-placeholder
+			color: #fff
+		&:-moz-placeholder
+			color: #fff
+		&::-moz-placeholder
+			color: #fff
+		&:-ms-input-placeholder
+			color: #fff
+	textarea
+		width: 254px
+		height: 102px
+		padding: 10px 15px
+		vertical-align: top
+		border: 1px solid #58504c
+		background: #363636
+		&::-webkit-input-placeholder
+			color: #fff
+		&:-moz-placeholder
+			color: #fff
+		&::-moz-placeholder
+			color: #fff
+		&:-ms-input-placeholder
+			color: #fff
+
+.delivery-block
+	display: table
+	label
+		margin-bottom: 24px
+		input
+			width: 18px
+			height: 18px
+			background-color: #95908d
+			border: 1px solid #cecece
+		span
+			margin-left: 5px
+
+.pay-block
+	display: table
+	label
+		margin-bottom: 24px
+		input
+			width: 18px
+			height: 18px
+			background-color: #95908d
+			border: 1px solid #cecece
+		span
+			margin-left: 5px
+
+.btn--order
+	position: relative
+	display: block
+	margin: 53px 0 0 326px
+	color: $title
+	clear: both
+	border-color: $title
+	background: none
+	&:before
+		content: ' '
+		position: absolute
+		top: -38px
+		left: -155px
+		width: 461px
+		height: 1px
+		background: $title
+	&:hover
+		color: $main-color
+		border-color: $main-color
+
+.order-accent
+	width: 300px
+	margin: 22px 0 0 253px
+	color: #95908d
+	text-align: center
+/*-----------------end----------------*/

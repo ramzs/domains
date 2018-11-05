@@ -1,0 +1,91 @@
+/*------------News page-------------*/
+.news
+	padding: 39px 0 0
+	margin-bottom: -14px
+	&-item
+		margin-bottom: 30px
+		overflow: hidden
+		border-radius: 14px
+		background: #f6f6f9
+		&__pict
+			height: 240px
+			overflow: hidden
+			img
+				display: block
+				width: auto
+				height: 100%
+		&__descr
+			height: 107px
+			padding: 20px 20px 0
+			text-align: center
+			border: 2px solid #f0f0f6
+			border-top: none
+			border-radius: 0 0 14px 14px
+		&__title
+			display: block
+			margin-bottom: 10px
+			font-size: 16px
+			font-weight: 700
+			line-height: 18px
+			&:hover
+				text-decoration: underline
+		&__text
+			height: 33px
+			overflow: hidden
+			font-size: 14px
+			line-height: 16px
+
+.pagination
+	display: block
+	> li
+		display: inline-block
+		vertical-align: middle
+		> a
+			padding: 5px 15px
+			font-size: 16px
+			font-weight: 700
+			color: $main-color
+			border: none
+			border-radius: 2px
+			&:focus, &:hover
+				color: $main-color
+				background-color: $accent
+		> span
+			padding: 5px 15px
+			font-size: 16px
+			font-weight: 700
+			color: $main-color
+			border: none
+			&:focus, &:hover
+				color: $main-color
+				background: none
+		&:first-child, &:last-child
+			> a
+				background: none
+		&:first-child
+			> a
+				margin-right: 4px
+		&:last-child
+			> a
+				margin-left: 4px
+	> .active
+		> a
+			color: $main-color
+			background-color: $accent
+			&:focus, &:hover
+				color: $main-color
+				background-color: $accent
+
+	&__arrow
+		i
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+		&_left
+			i
+				@include sprite($arrow-left3)
+		&_right
+			i
+				@include sprite($arrow-right3)
+/*---------------end-------------------*/

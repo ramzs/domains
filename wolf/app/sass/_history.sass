@@ -1,0 +1,122 @@
+@import "vars.sass"
+@import "sprite.sass"
+/*-------------History page---------------*/
+.header__inner
+	&.header__inner-history
+		height: auto
+		padding-bottom: 150px
+		background: url(../img/speak-bg-1.jpg) center top no-repeat
+		background-size: cover
+
+.header__main
+	&.header__main-history
+		margin-top: 50px
+		.container
+			width: 1540px
+
+.history__slider
+	&.slick-slider
+		.slick-arrow
+			position: absolute
+			top: 38%
+			right: 0
+			font-size: 0
+			background: none
+			border: none
+			outline: none
+			cursor: pointer
+		.slick-next
+			right: -100px
+			@include sprite($history-arrow-right)
+			&:hover
+				@include sprite($history-arrow-right-hover)
+		.slick-prev
+			left: -100px
+			@include sprite($history-arrow-left)
+			&:hover
+				@include sprite($history-arrow-left-hover)
+
+.slick-dots
+	margin-top: 28px
+	li
+		display: inline-block
+		button
+			display: block
+			width: 14px
+			height: 14px
+			margin: 0 6px
+			font-size: 0
+			background: #fff
+			border: none
+			border-radius: 50%
+			outline: none
+			cursor: pointer
+			transition: all .15s ease
+			&:hover
+				background: #f7b319
+		&.slick-active
+			button
+				background: #f7b319
+
+.history__block
+	display: inline-block
+	width: 750px
+	height: 646px
+	padding: 20px 105px
+	overflow: hidden
+	background: rgba(26,23,50, .89)
+	.item__pict
+		float: left
+		position: relative
+		width: 210px
+		height: 210px
+		margin-bottom: 50px
+		overflow: hidden
+		border-radius: 50%
+		img
+			position: relative
+			top: 0
+			left: -135px
+	.item__title
+		display: table
+		padding-left: 50px
+		font: 40px "kelson"
+		text-align: left
+		span
+			display: block
+			margin-top: 7px
+			font: 18px "ptsans"
+	.item__list
+		display: none
+		margin-top: 20px
+		text-align: left
+		li
+			display: block
+			position: relative
+			margin-bottom: 15px
+			padding-left: 26px
+			font-size: 18px
+			&:last-child
+				margin-bottom: 0
+			&:before
+				content: ' '
+				position: absolute
+				top: 3px
+				left: 0
+				@include sprite($speak-icon-1)
+	.item__descr
+		position: relative
+		font-size: 18px
+		text-align: left
+		clear: both
+		&:before
+			content: '\201C'
+			position: absolute
+			top: -50px
+			left: -110px
+			font-size: 237px
+			color: #fff
+
+.history__mob
+	display: none
+/*-----------------end--------------------*/

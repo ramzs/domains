@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="wrapper">
+
+		<div class="page-top">
+			<div class="container">
+				<div class="breadcrumb">
+					<ul class="breadcrumb-list">
+						<li><a href="#">Главная</a></li>
+						<li>Фотогалерея</li>
+					</ul>
+				</div>
+
+				<div class="page-title">Фотогалерея</div>
+
+			</div>
+
+		</div>
+
+		<div class="page-inner">
+
+			<div class="gallery">
+				<div class="container">
+
+					<div class="gallery-wrap zoom-gallery">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="gallery-item">
+									<div class="work-item"><a href="img/work-1.jpg"><img src="img/work-1.jpg" alt=""></a></div>
+								</div>
+
+								<div class="gallery-item">
+									<div class="work-item"><a href="img/work-2.jpg"><img src="img/work-2.jpg" alt=""></a></div>
+								</div>
+
+								<div class="gallery-item">
+									<div class="work-item"><a href="img/work-3.jpg"><img src="img/work-3.jpg" alt=""></a></div>
+								</div>
+
+								<div class="gallery-item">
+									<div class="work-item"><a href="img/work-4.jpg"><img src="img/work-4.jpg" alt=""></a></div>
+								</div>
+
+								<div class="gallery-item">
+									<div class="work-item"><a href="img/work-1.jpg"><img src="img/work-1.jpg" alt=""></a></div>
+								</div>
+
+								<div class="gallery-item">
+									<div class="work-item"><a href="img/work-2.jpg"><img src="img/work-2.jpg" alt=""></a></div>
+								</div>
+
+								<div class="gallery-item">
+									<div class="work-item"><a href="img/work-3.jpg"><img src="img/work-3.jpg" alt=""></a></div>
+								</div>
+
+								<div class="gallery-item">
+									<div class="work-item"><a href="img/work-4.jpg"><img src="img/work-4.jpg" alt=""></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="pagination">
+								<li class="pagination__arrow pagination__arrow_left disabled">
+									<a href="#" aria-label="Previous">
+										<i aria-hidden="true"></i>
+									</a>
+								</li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><span>...</span></li>
+								<li><a href="#">12</a></li>
+								<li class="pagination__arrow pagination__arrow_right">
+									<a href="#" aria-label="Next">
+										<i aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div class="subscribe">
+			<div class="container">
+				<div class="subscribe-form">
+					<div class="subscribe-form__title">Запишитесь к нам</div>
+					<form action="#">
+						<label for="name">Имя<input type="text" id="name"></label>
+						<label for="phone">Телефон<input type="text" id="phone"></label>
+						<button class="btn btn_color3 btn_form">Записаться</button>
+					</form>
+				</div>
+
+				<div class="social">
+					<div class="social__title">Мы в социальных сетях:</div>
+					<a href="#" class="social-link social-link_ic1">instagram</a>
+					<a href="#" class="social-link social-link_ic2">vkontakte</a>
+					<a href="#" class="social-link social-link_ic3">facebook</a>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

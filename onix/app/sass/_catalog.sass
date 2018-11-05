@@ -1,0 +1,93 @@
+/*----------------Catalog page------------------*/
+.catalog-title
+	display: block
+	margin: 15px 0
+	font-size: 22px
+	font-weight: 600
+	text-transform: uppercase
+	line-height: 32px
+	text-align: center
+
+// .catalog-menu
+// 	text-align: center
+// 	> li
+// 		display: inline-block
+// 		margin: 0 15px
+// 		> a
+// 			display: block
+// 			font-size: 22px
+// 			text-decoration: underline
+// 			&:hover, &:focus, &.active
+// 				color: $blue
+// 				text-decoration: none
+
+.catalog-item
+	margin-bottom: 30px
+	padding: 10px 20px 55px
+	border-radius: 5px
+	border: 1px solid #e8e8e8
+	transition: all .15s ease
+	&:hover
+		box-shadow: 0 0 15px rgba(#000, .5)
+	&__pict
+		display: table
+		width: 100%
+		padding: 0 20px 5px
+		a
+			display: table-cell
+			vertical-align: middle
+			height: 200px
+		img
+			display: block
+			max-width: 100%
+			max-height: 100%
+			margin: 0 auto
+	&__title
+		display: block
+		height: 48px
+		margin-bottom: 5px
+		font-size: 16px
+		font-weight: 500
+		overflow: hidden
+		&:hover
+			color: $blue
+			text-decoration: underline
+	&__price
+		float: left
+		margin-top: 5px
+		font-size: 16px
+		color: #ff6b20
+		font-weight: 500
+	&__btn
+		float: right
+		padding: 5px 20px 7px
+		font-size: 16px
+		font-weight: 500
+		color: #fff
+		border-radius: 5px
+		background-image: linear-gradient(to top, #073091 0%, #0d44c6 100%)
+		&:hover
+			color: #fff
+			background-image: linear-gradient(to top, #093cb3 0%, #032269 100%)
+
+.pagination
+	float: right
+	margin-bottom: 48px
+	> li
+		> a
+			margin-left: 0
+			color: #000
+			border: none
+			&:hover
+				color: #bababa
+				background: none
+	> .disabled, > .active
+			a
+				color: #bababa
+				border: none
+				background: none
+				&:hover, &:focus
+					color: #bababa
+					border: none
+					background: none
+/*--------------------end------------------------*/

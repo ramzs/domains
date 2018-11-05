@@ -1,0 +1,148 @@
+/*----------------Blog-2 page-----------------*/
+.text-pict
+	display: inline-block
+	margin: 5px 0 49px
+	overflow: hidden
+	border-radius: 10px
+	img
+		display: block
+		width: 100%
+
+.social
+	margin: 42px 0 0
+	&__title
+		display: inline-block
+		vertical-align: middle
+		margin-right: 17px
+		font-size: 14px
+		font-weight: 300
+		color: #737373
+	&__link
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		width: 38px
+		height: 38px
+		margin-right: 7px
+		font-size: 0
+		border: 2px solid #e6e6e6
+		border-radius: 50%
+		&:before
+			content: ''
+			+vcenter
+		&:hover
+			border: 2px solid #6cadde
+			background: #6cadde
+		&--vk
+			&:before
+				@include sprite($vk)
+			&:hover
+				&:before
+					@include sprite($vk-h)
+		&--fb
+			&:before
+				@include sprite($fb)
+			&:hover
+				&:before
+					@include sprite($fb-h)
+		&--tw
+			&:before
+				@include sprite($tw)
+			&:hover
+				&:before
+					@include sprite($tw-h)
+
+.comment
+	margin-top: 60px
+	padding: 51px 0 54px
+	background: #f9f9f9
+	+clearfix
+	&-cont
+		max-width: 770px
+		margin: 0 auto
+	&__title
+		margin-bottom: 32px
+		font: 700 28px "ptserif"
+		span
+			display: inline-block
+			position: relative
+			top: -10px
+			margin-left: 12px
+			font-size: 14px
+			color: #ff3d00
+	&-item
+		padding: 32px 0
+		border-top: 1px solid #e6e6e6
+		&:last-of-type
+			margin-bottom: 30px
+			border-bottom: 1px solid #e6e6e6
+		&__date
+			float: right
+			font-size: 14px
+			font-weight: 300
+			color: #737373
+		&__name
+			display: inline-block
+			margin-bottom: 15px
+			font-size: 17px
+			font-weight: 500
+		&__text
+			font-size: 14px
+			font-weight: 300
+			line-height: 21px
+	&-form
+		margin-top: 50px
+		&__title
+			margin-bottom: 32px
+			font: 700 28px "ptserif"
+		input
+			display: block
+			width: 100%
+			height: 48px
+			margin-bottom: 15px
+			padding-left: 25px
+			font-size: 14px
+			font-weight: 300
+			outline: none
+			border: 1px solid #e6e6e6
+			border-radius: 10px
+			background: #fff
+			&::-webkit-input-placeholder
+				color: $main-color
+			&:-moz-placeholder
+				color: $main-color
+			&::-moz-placeholder
+				color: $main-color
+			&:-ms-input-placeholder
+				color: $main-color
+			&:focus
+				box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08)
+		textarea
+			display: block
+			width: 100%
+			height: 147px
+			margin-bottom: 32px
+			padding: 14px 0 0 25px
+			font-size: 14px
+			font-weight: 300
+			resize: none
+			outline: none
+			border: 1px solid #e6e6e6
+			border-radius: 10px
+			background: #fff
+			&::-webkit-input-placeholder
+				color: $main-color
+			&:-moz-placeholder
+				color: $main-color
+			&::-moz-placeholder
+				color: $main-color
+			&:-ms-input-placeholder
+				color: $main-color
+			&:focus
+				box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08)
+		&__message
+			margin-top: 35px
+			font-size: 14px
+			font-weight: 300
+			line-height: 21px
+/*--------------------end----------------------*/

@@ -1,0 +1,360 @@
+@import "bourbon"
+@import "vars"
+@import "sprite"
+
+@media only screen and (max-width : 1200px)
+	.layer-1
+		background-position: right top
+
+	.service-item
+		width: 297px
+		height: 290px
+		&__title
+			padding: 0 50px 0 15px
+			font-size: 20px
+			i
+				top: 4px
+				right: 15px
+			&--last
+				padding: 0
+				i
+					top: 30px
+					right: 0
+
+	.work-item
+		width: 430px
+
+	/*------------Service page---------------*/
+	.main
+		width: 605px
+	/*------------------end-------------------*/
+
+
+@media only screen and (max-width : 992px)
+	.header
+		padding-bottom: 130px
+
+	.nav-menu
+		margin-left: -15px
+		white-space: nowrap
+		&__item
+			margin: 0 4px
+		&__link
+			padding: 0 11px
+			font-size: 12px
+
+	.header-caption
+		margin-top: 100px
+
+	.service-item
+		width: 340px
+		height: 331px
+		&__title
+			&--last
+				padding: 0 50px
+
+	.work-item
+		width: 335px
+		&__title
+			padding-left: 110px
+			font-size: 16px
+
+	/*-------------------Service page--------------------*/
+	.sidebar
+		width: 240px
+		padding: 33px 15px 15px 25px
+
+	.second-menu
+		&__item
+			margin-bottom: 10px
+			a
+				font-size: 14px
+				i
+					left: -15px
+
+	.second-dropmenu
+		margin: 8px 0 0 5px
+		&__item
+			margin-bottom: 7px
+			a
+				font-size: 12px
+
+	.main
+		width: 510px
+
+	.service-block
+		margin-top: 25px
+		.service-item
+			height: 240px
+	/*-----------------------end--------------------------*/
+
+	/*---------------------Service-in page----------------*/
+
+	/*--------------------------end------------------------*/
+
+	/*-------------------Contact page----------------------*/
+
+	/*-----------------------end----------------------------*/
+
+
+@media only screen and (max-width : 768px)
+	.container
+		padding: 0
+
+	.row
+		margin: 0
+
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+		padding: 0
+
+	.header
+		padding: 0 0 48px
+		overflow: visible
+		background-size: auto 300%
+		.container
+			padding: 0 10px
+
+	.layer-1
+		background-position: 32% 84%
+
+	.phone--header
+		margin-top: 16px
+
+	.phone__link
+		font-size: 22px
+
+	.logo
+		position: absolute
+		top: 49px
+		left: 0
+		right: 0
+		margin: 0 auto
+		&__link
+			width: 205px
+
+	.callback
+		margin-top: 8px
+		&-btn
+			width: auto
+			height: auto
+			font-size: 12px
+			text-decoration: underline
+			background: none
+
+	.nav
+		&-btn
+			display: inline-block
+		&--header
+			margin-top: 107px
+		&-menu
+			margin-left: 0
+			white-space: normal
+			&--header
+				display: none
+				position: absolute
+				top: 30px
+				left: -10px
+				right: -10px
+				padding: 10px 0
+				z-index: 99
+				box-shadow: 0 10px 20px -10px rgba(0,0,0, .6)
+				background: #fff
+			&__item
+				&:hover
+					background: none
+					a
+						color: $main-bg
+			&__link
+				font-size: 14px
+				line-height: 24px
+
+	.section-service
+		padding: 30px 0 16px
+		text-align: center
+		.container
+			padding: 0 10px
+		&__title
+			margin-bottom: 42px
+			font-size: 30px
+
+	.service-item
+		display: inline-block
+		float: none
+		width: 100%
+		max-width: 320px
+		height: 174px
+		margin: 0 5px 5px 0
+		text-align: left
+		img
+			width: 100%
+			height: auto
+		&__title
+			padding: 0 50px 0 9px
+			font-size: 24px
+			i
+				top: 7px
+				right: 25px
+			&--last
+				margin-top: 0
+				i
+					position: absolute
+
+	.section-work
+		padding: 31px 0 32px
+		background: url(../img/home-bg-2-mob.jpg) 45% top no-repeat
+		.container
+			padding: 0 10px
+		&__title
+			margin-bottom: 50px
+			font-size: 36px
+			line-height: 36px
+			span
+				margin-bottom: 36px
+				font-size: 24px
+
+	.work-block
+		display: block
+		&--two
+			float: none
+
+	.work-item
+		width: 100%
+		max-width: 350px
+		margin: 0 auto 22px
+		transform: skew(-17deg)
+		&__title
+			padding-left: 100px
+			font-size: 14px
+			line-height: 18px
+			transform: skew(17deg)
+			i
+				left: 23px
+				margin-right: 15px
+			&--two
+				i
+					left: 25px
+			&--three
+				i
+					left: 7px
+			&--four
+				i
+					left: 10px
+
+	.section-about
+		padding: 16px 0 165px
+		text-align: left
+		.container
+			padding: 0 20px
+		&__title
+			font-size: 24px
+			line-height: 36px
+
+	.footer
+		text-align: center
+		background-position: 51% 106%
+		background-size: auto 60%
+
+	.social
+		&-link
+			margin: 0 5px
+
+	.nav--footer
+		display: inline-block
+		max-width: 320px
+		.nav-menu__item
+			margin: 0 15px
+
+
+	/*--------------------Contact page--------------------*/
+	.header--inner
+		height: auto
+
+	.section-contact
+		margin: 0 0 -555px
+		padding: 0 15px 50px
+		z-index: 6
+
+	.contact-map
+		margin: 24px -15px 30px
+
+	.footer--inner
+	    background-position: 52% bottom
+	    background-size: auto 70%
+	/*------------------------end--------------------------*/
+
+	/*-------------------Service page--------------------*/
+	.content
+		margin-top: 0
+		z-index: 6
+
+	.sidebar
+		display: none
+
+	.main
+		width: 100%
+
+	.inner-page
+		padding: 0 12px
+
+	.breadcrumb
+		margin-top: 18px
+
+	.page-title
+		font-size: 23px
+		&--inner
+			display: block
+			margin-bottom: 44px
+			font-size: 30px
+			font-weight: 300
+			font-style: normal
+			color: #fff
+
+	.second-menu
+		display: none
+		margin: 25px -12px 0
+		padding: 34px 12px 0 33px
+		overflow: hidden
+		background: url(../img/home-bg-1.jpg) center top no-repeat
+		background-size: cover
+		&--mob
+			display: block
+		&__item
+			margin-bottom: 30px
+			a
+				font-size: 16px
+				i
+					left: -22px
+
+	.second-dropmenu
+		margin: 17px 0 0 16px
+		&__item
+			margin-bottom: 10px
+			a
+				font-size: 14px
+
+	.service-block
+		margin: 23px -12px 0
+		padding: 30px 10px 15px
+		text-align: center
+		background: url(../img/home-bg-1.jpg) center top no-repeat
+		background-size: cover
+		.service-item
+			display: inline-block
+			float: none
+			width: 100%
+			max-width: 320px
+			height: 174px
+			margin: 0 5px 5px 0
+			padding: 0
+			text-align: left
+	/*-----------------------end--------------------------*/
+
+	/*---------------------Service-in page----------------*/
+
+	/*--------------------------end-----------------------*/
+
+
+@media only screen and (max-width : 320px)
+	.service-item
+		margin-right: 0
+	/**/

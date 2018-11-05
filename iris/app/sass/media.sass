@@ -1,0 +1,724 @@
+@import "bourbon"
+@import "grid"
+@import "vars"
+@import "sprite"
+
+@media only screen and (max-width : 1200px)
+	.header-top
+		&__block
+			font-size: 14px
+			&--phone
+				margin-right: 20px
+			&--work
+				margin-right: 20px
+
+	.section-salon
+		&__pict
+			width: 450px
+		&__descr
+			padding: 15px 0 30px 30px
+			&--two
+				padding: 15px 30px 30px 0
+
+	.footer-logo
+		margin-right: 15px
+
+	.footer-contact
+		width: 230px
+		margin-right: 30px
+
+	.contact-item
+		&__address
+			&:before
+				top: -1px
+		&__link
+			display: block
+			margin: 0
+
+	.footer-menu
+		margin-right: 15px
+
+	/*-------------Vacancy page--------------*/
+	.vacancy-wrap
+		padding: 27px 20px 11px
+
+	.upload-wrap
+		width: 220px
+	/*----------------end---------------------*/
+
+	/*-------------Answer page----------------*/
+	.qa-form
+		&__text
+			font-size: 32px
+		textarea
+			width: 460px
+	/*----------------end----------------------*/
+
+	/*-------------Contact page----------------*/
+	.contact-map
+		width: 420px
+	/*-----------------end--------------------*/
+
+	/*--------------Gallery page-------------*/
+	.gallery-box
+		&__pict
+			width: 25%
+			max-height: 221px
+	/*-----------------end------------------*/
+
+	/*-------------Salons page----------------*/
+	.salon-pict
+		width: 420px
+		height: auto
+	/*----------------end---------------------*/
+
+
+@media only screen and (max-width : 992px)
+	.header-top
+		height: auto
+		padding: 4px 0 0
+		text-align: center
+		line-height: 1.2
+		&__block
+			display: block
+			margin-bottom: 3px
+			&--phone
+				margin-right: 0
+			&--work
+				margin-right: 0
+
+	.btn--callback
+		float: none
+		bottom: -15px
+		margin: 0 auto
+		z-index: 9
+
+	.header-banner
+		height: 127px
+
+	.logo
+		width: 210px
+		top: -22px
+
+	.navbar
+		height: 50px
+
+	.nav
+		margin-top: 0
+		&__link
+			font-size: 16px
+
+	.nav-submenu
+		&__link
+			font-size: 16px
+
+	.slider-nav
+		.slick-arrow
+			&.slick-prev
+				left: 0
+			&.slick-next
+				right: 0
+
+	.slider-caption
+		padding-left: 60px
+		&__title
+			font-size: 48px
+
+	.about
+		padding: 40px 0 45px
+
+	.section-title
+		font-size: 36px
+		margin-bottom: 30px
+
+	.about__text
+		font-size: 16px
+
+	.section-salon
+		display: block
+		margin-bottom: 0
+		padding-bottom: 30px
+		background: none
+		&__title
+			display: none
+			&--mob
+				display: block
+				margin-bottom: 23px
+				padding: 0 20px
+				font-size: 26px
+		&__pict
+			display: block
+			width: 100%
+			img
+				width: 100%
+				height: auto
+			&--two
+				display: none
+			&--mob
+				display: block
+		&__descr
+			display: block
+			padding: 15px 0 0
+
+	.section-adv
+		padding: 35px 0 10px
+
+	.adv-item
+		float: none
+		display: inline-block
+		width: 49%
+		margin-bottom: 45px
+		vertical-align: top
+		&__descr
+			padding: 0 40px
+
+	.footer-logo
+		width: 120px
+
+	.footer-contact
+		margin-right: 40px
+
+	.footer-menu
+		display: block
+		margin-right: 0
+		li
+			margin-bottom: 10px
+
+	/*---------------Brend page------------*/
+	.brend-page
+		padding: 0
+
+	.brend-item
+		&__pict
+			width: 200px
+		&__descr
+			padding-left: 15px
+	/*------------------end-----------------*/
+
+	/*-------------Vacancy page--------------*/
+	.vacancy-page
+		padding-bottom: 40px
+
+	.vacancy-item
+		width: 100%
+		&:nth-child(even)
+			float: none
+
+	.vacancy-wrap
+		padding: 27px 28px 11px
+
+	.upload-wrap
+		float: left
+		width: 287px
+
+	.btn--send
+		float: right
+		margin-top: 19px
+	/*----------------end---------------------*/
+
+	/*-------------Answer page----------------*/
+	.qa-page
+		padding: 45px 0 30px
+
+	.qa-form
+		margin-bottom: 48px
+		&__text
+			padding-right: 10px
+			font-size: 26px
+		textarea
+			width: 380px
+
+	.qa-item
+		margin-bottom: 35px
+		&__name
+			font-size: 26px
+	/*----------------end----------------------*/
+
+	/*-------------Contact page----------------*/
+	.contact-page
+		padding-bottom: 50px
+
+	.contact-box
+		&__title
+			display: none
+			&--mob
+				display: block
+
+	.contact-map
+		width: 100%
+		height: 300px
+
+	.contact-descr
+		margin-top: 26px
+		padding-left: 0
+	/*-----------------end--------------------*/
+
+	/*------------Service page---------------*/
+	.service-page
+		padding: 41px 0 20px
+
+	.change-block__title
+		font-size: 28px
+
+	.change-tab
+		margin-bottom: 13px
+		&__item
+			font-size: 18px
+
+	.service-list
+		&__row
+			font-size: 14px
+		&__title
+			border-right-width: 5px
+		&__price
+			width: 30%
+	/*----------------end--------------------*/
+
+	/*------------Gallery page---------------*/
+	.gallery-page
+		padding: 23px 0 58px
+
+	.change-block
+		&__title
+			&--gallery
+				margin-bottom: 23px
+
+	.change-tab
+		margin-bottom: 16px
+		&__item
+			margin: 0 20px 18px 0
+
+	.gallery-video
+		margin-top: 21px
+		&__title
+			margin-bottom: 19px
+			font-size: 28px
+
+	.video-item__title
+		margin-top: 11px
+		font-size: 16px
+	/*----------------end--------------------*/
+
+	/*-------------Salons page----------------*/
+	.salon-pict
+		width: 100%
+	/*----------------end---------------------*/
+
+
+@media only screen and (max-width : 768px)
+	.header-top
+		text-align: left
+		&__block
+			i
+				margin-right: 9px
+			&--phone
+				letter-spacing: -0.1px
+
+	.navbar
+		height: auto
+		border-top: none
+
+	.btn--menu
+		display: block
+		.btn__title
+			display: block
+			&--open
+				display: none
+		&.active
+			.btn__title
+				display: none
+				&--open
+					display: block
+
+	.nav
+		display: none
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		padding: 34px 0 16px
+		text-align: center
+		text-align-last: auto
+		z-index: 200
+		background: #dcdcdc
+		&__item
+			display: block
+			margin-bottom: 12px
+		&__link
+			padding: 0
+			font-size: 22px
+
+	.nav-submenu
+		position: relative
+		top: 8px
+		left: 0
+		padding: 0
+		background: none
+		box-shadow: none
+		&__link
+			font-size: 22px
+		&:before, &:after
+			display: none
+
+	.slider-wrap
+		border-top: none
+		&:after
+			display: none
+
+	.slider-nav
+		.slick-arrow
+			&.slick-prev
+				left: 20px
+			&.slick-next
+				right: 20px
+
+	.slider
+		max-width: 360px
+		.slick-slide
+			width: 360px
+			height: 210px
+			img
+				display: none
+
+	.slider-caption
+		padding: 0 45px
+		text-align: center
+		&__title
+			margin: 42px 0 30px
+			font-size: 25px
+
+	.btn--slider
+		width: 205px
+		height: 31px
+		margin: 0 auto
+		line-height: 25px
+
+	.about
+		padding: 22px 0
+
+	.section-title
+		margin-bottom: 22px
+		font-size: 26px
+
+	.about__text
+		font-size: 14px
+
+	.section-salon
+		padding: 17px 0 34px
+		background: none
+		.container
+			padding: 0
+		&__pict
+			float: none
+		&__descr
+			padding: 23px 20px 0
+
+	.btn--more
+		margin-top: 24px
+
+	.section-adv
+		padding: 6px 0 15px
+
+	.section-title
+		&--adv
+			margin-bottom: 33px
+			text-align: left
+
+	.adv-item
+		width: 100%
+		margin-bottom: 25px
+		&__icon
+			margin-bottom: 14px
+		&__title
+			margin-bottom: 6px
+			font-size: 20px
+		&__descr
+			padding: 0 10px
+			font-size: 14px
+
+	footer
+		padding: 22px 0 37px
+
+	.footer-logo
+		float: none
+		display: block
+		width: 110px
+		margin: 0 auto
+
+	.footer-title
+		margin-bottom: 9px
+
+	.footer-contact
+		float: none
+		display: block
+		width: 100%
+		margin-top: 22px
+
+	.contact-item
+		margin-bottom: 25px
+		&__address
+			margin-bottom: 14px
+			font-size: 15px
+			line-height: 18px
+			.contact-item
+			&:before
+				top: 0
+		&__link
+			margin: 0
+
+	.footer-nav
+		display: none
+
+	.footer-social
+		float: none
+		margin-top: 40px
+
+	.social
+		width: 60px
+		height: 60px
+		top: -4px
+		margin-right: 34px
+
+	.form-callback
+		form
+			padding: 0 25px
+		.jq-selectbox__dropdown
+			font-size: 14px
+		.datepicker-here
+			width: 49%
+		.time-in
+			width: 49%
+
+	/*---------------Brend page------------*/
+	.page-title
+		padding: 35px 0
+
+	.brend-page
+		padding: 0 0 28px
+
+	.brend-item
+		display: block
+		padding: 33px 0 40px
+		&__pict
+			display: block
+			width: 265px
+			margin-bottom: 15px
+			text-align: left
+		&__descr
+			display: block
+			padding-left: 0
+			font-size: 14px
+	/*------------------end-----------------*/
+
+	/*-------------Vacancy page--------------*/
+	.vacancy-page
+		padding: 23px 0 55px
+		.container
+			padding: 0
+
+	.vacancy-item
+		margin-bottom: 39px
+		&__title
+			margin-bottom: 8px
+			font-size: 17px
+
+	.vacancy-block
+		margin-bottom: 14px
+		&:last-of-type
+			margin-bottom: 0
+		&__title
+			font-size: 12px
+		&__descr
+			font-size: 12px
+
+	.vacancy-wrap
+		margin-bottom: 4px
+		padding: 15px 20px 7px
+
+	.upload-wrap
+		float: none
+		display: block
+		width: 172px
+		margin-left: 20px
+		.upload-in
+			font-size: 12px
+
+	.btn--upload
+		height: 27px
+		font-size: 14px
+		line-height: 27px
+
+	.btn--send
+		float: none
+		display: block
+		width: 172px
+		height: 27px
+		margin: 6px 0 0 20px
+		font-size: 14px
+		line-height: 25px
+	/*----------------end---------------------*/
+
+	/*-------------Answer page----------------*/
+	.qa-page
+		padding: 39px 0 55px
+		.container
+			padding: 0
+
+	.qa-form
+		display: block
+		margin-bottom: 48px
+		padding: 0 20px
+		&__text
+			display: block
+			padding-right: 60px
+		form
+			display: block
+		textarea
+			width: 100%
+
+	.qa-item
+		margin-bottom: 38px
+		&__name
+			padding: 0 20px
+		&__answer
+			font-size: 14px
+			padding: 20px 20px 24px
+		&__question
+			font-size: 14px
+			padding: 20px 20px 24px
+	/*----------------end----------------------*/
+
+	/*-------------Contact page----------------*/
+	.contact-page
+		padding: 29px 0 16px
+		.container
+			padding: 0
+
+	.contact-box
+		margin-bottom: 45px
+		padding: 0
+		border-bottom: none
+		&__title
+			&--mob
+				margin-bottom: 15px
+				padding: 0 20px
+				font-size: 28px
+
+	.contact-map
+		height: 240px
+
+	.contact-descr
+		margin-top: 29px
+		padding: 0 20px
+
+	.contact-list
+		margin-bottom: 23px
+		li
+			margin-bottom: 18px
+			font-size: 16px
+	/*-----------------end--------------------*/
+
+	/*------------Service page---------------*/
+	.service-page
+		padding: 41px 0 53px
+		.container
+			padding: 0
+
+	.change-block
+		&--service
+			margin-bottom: 29px
+		&__title
+			&--service
+				padding: 0 20px
+
+	.change-tab
+		&--service
+			padding: 0 20px
+
+	.change-item--service
+		padding-bottom: 0
+		border-bottom: none
+
+	.service-list
+		&__title
+			padding-left: 20px
+		&__price
+			width: 110px
+			padding-left: 10px
+
+	.btn--service
+		display: none
+	/*-----------end-----------------------*/
+
+	/*------------Gallery page--------------*/
+	.gallery-box
+		margin: 0 -4px
+		&__pict
+			width: 50%
+			max-height: 333px
+			margin-bottom: 8px
+			padding: 0 4px
+
+	.video-item
+		width: 100%
+
+	.mfp-gallery
+		.mfp-container
+			padding: 0
+		.mfp-image-holder
+			.mfp-close
+				top: -48px
+				right: 20px
+		img.mfp-img
+			width: 100%
+			padding: 0
+		.mfp-arrow
+			top: auto
+			bottom: -112px
+			margin-top: 0
+		.mfp-arrow-left
+			left: 20px
+		.mfp-arrow-right
+			right: 20px
+		.mfp-bottom-bar
+			margin-top: 0
+		figcaption
+			top: 13px
+		.mfp-title
+			padding: 0 65px 0 20px
+		.mfp-img-mobile
+			.mfp-counter
+				right: 20px
+	/*---------------end--------------------*/
+
+	/*-------------Salons page----------------*/
+	.salon-page
+		padding: 22px 0 32px
+		.container
+			padding: 0
+
+	.contact-box--salon
+		margin-bottom: 42px
+
+	.btn--salon
+		display: block
+		margin-bottom: 18px
+
+	.salon-text
+		margin-top: 33px
+		padding: 0 20px
+		font-size: 14px
+
+	.salon-gallery
+		margin-top: 16px
+		padding: 0 20px
+		&__title
+			font-size: 28px
+	/*----------------end---------------------*/
+
+	/*-------------Salon-one page------------*/
+	.change-block--salon
+		margin-top: 13px
+		.change-block__title
+			margin-bottom: 20px
+	/*----------------end-------------------*/

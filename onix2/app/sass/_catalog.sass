@@ -1,0 +1,288 @@
+.breadcrumb
+	padding: 0 0 17px
+	margin-bottom: 0
+	border-radius: 0
+	background: none
+	li
+		position: relative
+		margin-right: 18px
+		font-size: 13px
+		color: #505050
+		&:last-child
+			margin-right: 0
+		a
+			font-size: 13px
+			color: #505050
+			&:hover
+				text-decoration: underline
+	> .active
+		font-weight: 500
+		color: #083191
+	> li + li:before
+		content: ''
+		position: absolute
+		top: 9px
+		left: -18px
+		width: 12px
+		height: 1px
+		transform: rotate(70deg)
+		background: #505050
+
+.page-title
+	display: block
+	margin-bottom: 20px
+	font-size: 30px
+	font-weight: 700
+	color: #505050
+
+/*------------Catalog page--------------*/
+.content_catalog
+	padding-bottom: 100px
+
+.section-change
+	padding: 33px 35px 40px
+	background: #fbfbfb
+
+.change-check
+	margin-bottom: 22px
+	&__title
+		float: left
+		font-size: 16px
+		font-weight: 500
+	&-list
+		display: table
+		padding: 4px 0 0 24px
+		li
+			display: inline-block
+			vertical-align: top
+			margin-right: 35px
+	label
+		display: block
+		margin-bottom: 18px
+		font-size: 14px
+		font-weight: normal
+	.jq-checkbox
+		top: -2px
+		width: 17px
+		height: 17px
+		margin-right: 9px
+		border: 1px solid #c2c4c3
+		background: #fff
+		&.focused
+			border: 1px solid #c2c4c3
+		&.checked
+			.jq-checkbox__div
+				margin: 3px 0 0 3px
+				background: none
+				box-shadow: none
+				@include sprite($check)
+
+.change-sel
+	.jq-selectbox
+		min-width: 175px
+		margin-right: 17px
+		&__select
+			border: 1px solid #b8bab9
+			border-radius: 0
+			box-shadow: none
+			background: #fff
+			&:hover
+				background: #fff
+		.placeholder
+			width: 100%
+			color: #000
+		&.focused
+			.jq-selectbox__select
+				border: 1px solid #b8bab9
+		&__trigger
+			border-left: none
+			&-arrow
+				right: 8px
+				border-top: 4px solid #000
+				border-right: 3px solid transparent
+				border-left: 3px solid transparent
+
+.catalog-header
+	padding: 38px 0 50px
+
+.filter
+	display: inline-block
+
+.filter-sel
+	display: inline-block
+	margin-left: 20px
+	vertical-align: middle
+	label
+		margin-bottom: 0
+		span
+			position: relative
+			top: 3px
+			margin-right: 3px
+			font-size: 18px
+			font-weight: normal
+			color: #010101
+	.jq-selectbox
+		min-width: 175px
+		margin-right: 27px
+		&__select
+			border: 1px solid #b8bab9
+			border-radius: 0
+			box-shadow: none
+			background: #fff
+			&:hover
+				background: #fff
+		&.focused
+			.jq-selectbox__select
+				border: 1px solid #b8bab9
+		&__trigger
+			border-left: none
+			&-arrow
+				right: 8px
+				border-top: 4px solid #000
+				border-right: 3px solid transparent
+				border-left: 3px solid transparent
+
+.filter-count
+	display: inline-block
+	vertical-align: middle
+	font-size: 16px
+	span
+		font-weight: 700
+
+.pagination
+	float: right
+	margin: 0 0 0 10px
+	> li
+		&:first-child
+			a
+				padding-right: 15px
+		&:last-child
+			a
+				padding-left: 15px
+		> a
+			margin-left: 0
+			padding: 6px 5px
+			color: #010101
+			border: none
+			background: none
+			&:hover
+				color: #b5b5b6
+				background: none
+		span
+			padding: 6px 5px
+			color: #010101
+			border: none
+			background: none
+			&:hover
+				color: #010101
+				background: none
+	> .active
+		> a
+			color: #b5b5b6
+			background: none
+			&:hover
+				color: #b5b5b6
+				background: none
+
+.catalog
+	margin: 0 -14px
+	.tovar-item
+		position: relative
+		float: left
+		width: 25%
+		max-width: 199px
+		margin-bottom: 28px
+		padding: 0
+		border: none
+		background: #fff
+		&__wrap
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			padding: 20px
+			height: 100%
+			z-index: 9
+			border-radius: 6px
+			border: 1px solid #f8f6f6
+			background: #fff
+		&__vol
+			display: none
+			position: absolute
+			top: 16px
+			left: 20px
+			font-size: 13px
+			font-weight: 700
+			z-index: 9
+		&__pict
+			height: 100px
+			margin-bottom: 7px
+		&__count
+			display: none
+			margin: 18px 0 25px
+			.jq-number
+				display: block
+				width: 140px
+				height: 34px
+				margin: 0 auto
+				padding-right: 0
+				text-align: center
+				&__field
+					width: 63px
+					height: 34px
+					margin: 0 auto
+					border: 1px solid #c8c9c9
+					border-radius: 0
+					box-shadow: none
+					input
+						padding: 7px 0
+						font: 700 15px "pfdintextpro"
+						color: #000
+						text-align: center
+				&__spin
+					width: 34px
+					height: 34px
+					border: none
+					border-radius: 0
+					box-shadow: none
+					background: none
+					&.minus
+						left: 0
+						&:after
+							top: 15px
+							left: 12px
+							width: 6px
+							height: 3px
+							border: none
+							background: #000
+					&.plus
+						&:after
+							top: 15px
+							left: 14px
+							width: 11px
+							height: 3px
+							border: none
+							background: #000
+						&:before
+							content: ' '
+							position: absolute
+							top: 11px
+							left: 18px
+							height: 11px
+							width: 3px
+							background: #000
+		&__price
+			color: #ff5a00
+		&:hover
+			.tovar-item__wrap
+				height: 310px
+				z-index: 99
+				box-shadow: 0 2px 18px rgba(0, 3, 1, 0.2)
+			.tovar-item__vol
+				display: block
+			.tovar-item__name
+				height: auto
+			.tovar-item__count
+				display: block
+/*----------------end------------------*/

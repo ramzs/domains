@@ -1,0 +1,617 @@
+@import "bourbon/bourbon"
+@import "vars.sass"
+@import "base.sass"
+
+header
+	background: url(../img/header-bg-1.jpg) center top no-repeat
+	background-size: cover
+
+.header__top
+	position: relative
+	height: 120px
+	padding-top: 18px
+
+.free__count
+	display: inline-block
+	margin-right: 10px
+	font-size: 42px
+	font-weight: 700
+	color: $btn-text
+	vertical-align: middle
+
+.free__descr
+	display: inline-block
+	margin-right: 40px
+	font-size: 15px
+	font-weight: 700
+	color: $accent-text
+	vertical-align: middle
+
+.btn__link
+	display: inline-block
+	width: 105px
+	height: 40px
+	font-size: 14px
+	font-weight: 700
+	line-height: 40px
+	text-align: center
+	color: $main-color
+	background: #c9af6d
+	vertical-align: middle
+	transition: all .15s ease
+	&:hover
+		color: $main-color
+		background: #d8bf81
+
+.header__callback
+	text-align: right
+
+.callback__phone
+	display: inline-block
+	margin-right: 20px
+	font-size: 20px
+	font-weight: 700
+	color: #fff
+	vertical-align: middle
+	outline: none
+	&:hover, &:focus
+		color: #fff
+
+.callback__link
+	display: inline-block
+	width: 160px
+	height: 40px
+	font-size: 14px
+	color: $btn-text !important
+	line-height: 36px
+	text-align: center
+	border: 1px solid $btn-text
+	transition: all .15s ease
+	vertical-align: middle
+	outline: none
+	&:hover
+		color: $main-color !important
+		background: $btn-text
+	&:focus
+		text-decoration: none
+	&.callback__link-see
+		display: none
+		width: 204px
+		height: 45px
+		margin: 0 auto
+		color: #fff
+		line-height: 42px
+
+.menu__list
+	display: inline-block
+	margin-top: 20px
+	&.menu__list-left
+		float: left
+	&.menu__list-right
+		float: right
+	.menu__item
+		display: inline-block
+		position: relative
+		text-align: center
+		&:first-child
+			&:before
+				content: ' '
+				position: absolute
+				top: 9px
+				left: -3px
+				width: 4px
+				height: 4px
+				border-radius: 50%
+				background: $btn-text
+		&:after
+			content: ' '
+			position: absolute
+			top: 9px
+			right: -4px
+			width: 4px
+			height: 4px
+			border-radius: 50%
+			background: $btn-text
+		&:hover, &.active
+			a
+				border-bottom: 1px solid $btn-text
+				&:after
+					opacity: 1
+		a
+			display: inline-block
+			margin: 0 25px
+			padding-bottom: 12px
+			font-weight: 700
+			color: #fff
+			border-bottom: 1px solid transparent
+			transition: all .15s ease
+			&:after
+				content: ' '
+				position: absolute
+				bottom: -4px
+				left: 0
+				right: 0
+				width: 9px
+				height: 9px
+				margin: 0 auto
+				opacity: 0
+				background: url(../img/square_icon.png) 0 0 no-repeat
+				transition: opacity .15s
+
+.logo__block
+	display: block
+	position: relative
+	width: 265px
+	margin: 0 auto
+	text-align: center
+	&.logo__block-header
+		position: absolute
+		bottom: -1px
+		left: 0
+		right: 0
+	&:before
+		content: ' '
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 68px
+		height: 117px
+		background: url(../img/logo_left.png) 0 0 no-repeat
+	&:after
+		content: ' '
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 68px
+		height: 117px
+		background: url(../img/logo_right.png) 0 0 no-repeat
+	h1
+		display: block
+		margin-bottom: 4px
+		font: 700 43px "Bitter"
+		color: $btn-text
+	span
+		display: inline-block
+		padding: 2px 10px 4px
+		font-size: 12px
+		font-weight: 700
+		color: #fff
+		letter-spacing: 2px
+		text-transform: uppercase
+		border-top: 1px solid #fff
+
+.btn__mob
+	display: none
+	margin-top: 10px
+	padding-bottom: 12px
+	text-align: center
+	border-bottom: 1px solid #6594af
+	span
+		display: inline-block
+		position: relative
+		padding-left: 40px
+		font-size: 14px
+		font-weight: 700
+		color: $btn-text
+		cursor: pointer
+		text-transform: uppercase
+		&:before
+			content: ' '
+			position: absolute
+			top: 2px
+			left: 0
+			width: 22px
+			height: 12px
+			background: url(../img/menu_toggle.png) 0 0 no-repeat
+
+.menu__mob
+	display: none
+	position: absolute
+	left: 0
+	width: 100%
+	padding: 16px 0 20px
+	z-index: 998
+	background: #062533
+
+.header__main
+	height: auto
+	padding: 68px 0 93px
+	background: url(../img/header_bg_2.png) center top no-repeat
+	background-size: cover
+
+.callback__mob
+	display: none
+	margin-bottom: 15px
+	text-align: center
+	span
+		display: block
+		margin-bottom: 10px
+		font-size: 14px
+		font-weight: 700
+		color: #fff
+
+.btn__link
+	&.btn__link-mob
+		width: 157px
+		height: 38px
+		margin: 0 auto
+		line-height: 38px
+
+.slider
+	&.slider-for
+		box-shadow: 0 100px 50px -100px #000
+
+.slide__item
+	position: relative
+	width: 100%
+	height: 232px !important
+	padding: 25px
+	background: #fff
+	.item__pict
+		float: left
+		position: relative
+		width: 240px
+		z-index: 2
+		img
+			width: 100%
+	.item__descr
+		display: table
+		padding-left: 35px
+		z-index: 2
+	&:before
+		content: ' '
+		position: absolute
+		top: 0
+		left: 0
+		width: 204px
+		height: 204px
+		z-index: 1
+		background: url(../img/slide_corner_left.png) 0 0 no-repeat
+	.more__link
+		position: absolute
+		bottom: -62px
+		right: -62px
+		width: 204px
+		height: 204px
+		font-size: 0
+		background: url(../img/slide_corner_right.png) 0 0 no-repeat
+
+.slide__top
+	display: table
+	position: relative
+	margin-bottom: 20px
+	z-index: 2
+	.top__pict
+		display: table-cell
+		position: relative
+		width: 45px
+		height: 45px
+		vertical-align: bottom
+
+.slide__service
+	display: block
+	margin: 0 0 7px
+	font-size: 12px
+	font-weight: 700
+	text-transform: uppercase
+
+.slide__title
+	display: table-cell
+	position: relative
+	padding-left: 10px
+	margin-left: 10px
+	vertical-align: bottom
+	.title__main
+		display: block
+		font-size: 24px
+		font-weight: 700
+		color: $title-text
+
+.slide__text
+	position: relative
+	padding-right: 130px
+	font-size: 16px
+	font-weight: 300
+	line-height: 22px
+	z-index: 2
+
+.slick-arrow
+	position: absolute
+	top: -155px
+	width: 50px
+	height: 80px
+	font-size: 0
+	background: #062533
+	border: none
+	outline: none
+	&:before
+		content: ' '
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		width: 12px
+		height: 19px
+		margin: auto
+	&.slick-prev
+		left: -50px
+		&:before
+			background: url(../img/slide_prev.png) 0 0 no-repeat
+	&.slick-next
+		right: -50px
+		&:before
+			background: url(../img/slide_next.png) 0 0 no-repeat
+
+.slider
+	&.slider-nav
+		margin-top: 24px
+		.slick-track
+			&.animoff
+				width: 1140px !important
+				transform: none !important
+		.slick-slide
+			&.animoff
+				float: none !important
+				display: inline-block !important
+				width: 14% !important
+
+.nav__item
+	position: relative
+	margin: 6px 30px 10px 0
+	vertical-align: top
+	cursor: pointer
+	outline: none
+	border-top: 1px solid transparent
+	.nav__icon
+		position: relative
+		height: 45px
+		img
+			position: absolute
+			bottom: 0
+			left: 0
+	span
+		display: block
+		margin-top: 5px
+		font-size: 14px
+		color: #fff
+	&.slick-current
+		transition: all .25s ease
+		border-top: 1px solid $btn-text
+		&:before
+			content: ' '
+			position: absolute
+			top: -7px
+			left: 0
+			right: 0
+			margin: 0 auto
+			width: 14px
+			height: 7px
+			background: url(../img/triangle.png) 0 0 no-repeat
+
+.home__adv
+	padding: 73px 0 0
+
+.adv__item
+	display: table
+	margin: 0 0 20px 25px
+	min-height: 130px
+	.item__img
+		display: table-cell
+		vertical-align: top
+	.item__descr
+		display: table-cell
+		padding: 0 57px 0
+		font-weight: 300
+		line-height: 22px
+		vertical-align: top
+
+.home__welc
+	position: relative
+	padding: 56px 0 0
+	background: #ededed
+	.container
+		position: relative
+
+.welc__title
+	display: block
+	margin-bottom: 6px
+	font-size: 28px
+	font-weight: 700
+	line-height: 44px
+
+.welc__pict
+	margin-top: 10px
+
+.welc__descr
+	p
+		margin-bottom: 15px
+		font-weight: 300
+		line-height: 21px
+
+.welc__banner
+	position: absolute
+	bottom: -115px
+	width: 100%
+	height: 252px
+	background: #fff
+	border: 3px solid #e9e9e9
+	box-shadow: 0 5px 13px rgba(0, 0, 0, 0.15)
+
+.banner__title
+	margin: 30px 0 0 45px
+	font-size: 14px
+	font-weight: 700
+
+.banner__text
+	position: relative
+	margin-top: 35px
+	padding: 0 265px
+	font-size: 24px
+	font-weight: 300
+	text-align: center
+	&:after
+		content: ''
+		position: absolute
+		top: -20px
+		left: 0
+		right: 0
+		width: 161px
+		height: 117px
+		margin: 0 auto
+		background: url(../img/com.png) center top no-repeat
+
+.banner__author
+	position: absolute
+	bottom: 35px
+	right: 45px
+	font-size: 18px
+	font-weight: 300
+
+.home__order
+	padding: 175px 0 75px
+	text-align: center
+	background: url(../img/home_form_bg.png) center top no-repeat
+
+.order__title
+	display: block
+	margin-bottom: 55px
+	font-size: 28px
+	font-weight: 700
+
+.order__form
+	input
+		width: 250px
+		height: 50px
+		margin: 0 12px
+		padding-left: 20px
+		color: $btn-text
+		border: none
+		background: #0b364a
+
+.form__btn
+	display: block
+	width: 165px
+	height: 50px
+	margin: 45px auto 0
+	font-size: 18px
+	font-weight: 700
+	border: none
+	background: #c9af6d
+	&:hover
+		background: #d8bf81
+
+footer
+	padding: 60px 0 75px
+	text-align: center
+	background: #0b151a
+
+.menu__list
+	&.menu__list-footer
+		margin-top: 62px
+		.menu__item
+			&:hover
+				a
+					color: #fff
+					border-bottom: none
+					&:after
+						opacity: 0
+			a
+				border-bottom: none
+				color: $link-color
+
+.footer__copyright
+	margin-top: 45px
+	font-size: 14px
+	color: #7F8080
+
+/*------------Callback form--------------*/
+.callback__form
+	position: relative
+	max-width: 545px
+	margin: 0 auto
+	padding: 52px 70px 48px
+	text-align: center
+	background: #fff
+	.form__title
+		margin-bottom: 54px
+		font-size: 28px
+		font-weight: 700
+	input
+		display: block
+		width: 100%
+		height: 48px
+		margin-bottom: 32px
+		font-size: 18px
+		text-align: center
+		border: 1px solid #d9dedb
+		&::-webkit-input-placeholder
+			color: #363636
+		&:-moz-placeholder
+			color: #363636
+		&::-moz-placeholder
+			color: #363636
+		&:-ms-input-placeholder
+			color: #363636
+
+.mfp-fade
+	&.mfp-bg
+		background: rgba(11,21,26, .8) !important
+
+.mfp-close-btn-in
+	.mfp-close
+		top: 17px
+		right: 8px
+		font-size: 46px
+		color: #333638
+		opacity: 1
+		&:active
+			top: 17px
+
+.form__btn
+	display: block
+	width: 163px
+	height: 48px
+	font-size: 18px
+	font-weight: 700
+	background-color: #c9af6d
+
+.mfp-fade
+	&.mfp-bg
+	    opacity: 0
+	    background: #000
+	    transition: all .3s
+
+.mfp-fade
+	&.mfp-bg
+		&.mfp-ready
+			opacity: .9
+
+.mfp-fade
+	&.mfp-bg
+		&.mfp-removing
+			opacity: 0
+
+.mfp-fade
+	&.mfp-wrap
+		.mfp-content
+		    opacity: 0
+		    transition: all .3s
+
+.mfp-fade
+	&.mfp-wrap
+		&.mfp-ready
+			.mfp-content
+				opacity: 1
+
+.mfp-fade
+	&.mfp-wrap
+		&.mfp-removing
+			.mfp-content
+				opacity: 0
+/*---------------end--------------------*/
+
+@import "contact.sass"
+@import "about.sass"
+@import "service.sass"
+@import "category.sass"

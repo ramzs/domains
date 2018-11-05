@@ -1,0 +1,91 @@
+/*-------------Contact page----------------*/
+.contact
+	+clearfix
+	&-wrap
+		position: relative
+		.container
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+	.map
+		height: 612px
+		iframe
+			height: 100%
+	&-block
+		position: relative
+		float: right
+		width: 442px
+		margin-top: 29px
+		padding: 129px 65px 98px
+		z-index: 20
+		background: url(../img/contact-bg.png) center no-repeat
+		background-size: 100% 100%
+		&__item
+			position: relative
+			display: block
+			margin-bottom: 34px
+			padding-left: 43px
+			font-size: 20px
+			line-height: 22px
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+			&_phone
+				font-size: 25px
+				font-weight: 700
+				&:before
+					left: -7px
+					@include sprite($phone)
+			&_mail
+				&:before
+					top: 7px
+					@include sprite($mail2)
+			&_loc
+				&:before
+					top: -5px
+					@include sprite($location)
+			&_work
+				span
+					font-size: 16px
+				&:before
+					top: 3px
+					@include sprite($clock)
+		.social
+			margin-top: 45px
+			&__link
+				margin-right: 8px
+
+.contact-form
+	margin-bottom: -16px
+	padding: 34px 0 85px
+	background: #fcf7d3
+	.modal-form
+		position: relative
+		width: 100%
+		max-width: 100%
+		margin: 0
+		padding: 0
+		text-align: left
+		box-shadow: none
+		background: none
+		&__title
+			margin-bottom: 24px
+		form
+			.in-wrap
+				max-width: 336px
+			input
+				max-width: 336px
+			textarea
+				width: 683px
+				height: 118px
+			.btn
+				display: inline-block
+				margin-top: 22px
+		&__info
+			display: inline-block
+			margin-left: 12px
+			color: #aaa685
+/*-----------------end----------------------*/

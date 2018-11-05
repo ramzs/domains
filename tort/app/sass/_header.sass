@@ -1,0 +1,321 @@
+.header
+	position: relative
+	background: url(../img/header-bg.jpg) top center no-repeat
+	background-size: cover
+	&:after
+		content: ''
+		position: absolute
+		bottom: 44px
+		left: 0
+		right: 0
+		width: 197px
+		height: 148px
+		margin: 0 auto
+		background: url(../img/cake.png) center no-repeat
+	&-top
+		height: 73px
+		background: url(../img/wave-header.png) top center repeat-x
+		+clearfix
+		.container
+			position: relative
+
+.logo
+	float: left
+	width: 185px
+	img
+		display: block
+		width: 100%
+
+.location
+	display: inline-block
+	vertical-align: middle
+	margin: 16px 0 0 20px
+	font-size: 15px
+	color: $purple-main
+
+.mail
+	display: inline-block
+	vertical-align: middle
+	margin: 16px 0 0 18px
+	font-size: 15px
+	color: $purple-main
+	a
+		font-size: 15px
+		color: $link
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+.search
+	display: inline-block
+	position: relative
+	max-width: 223px
+	width: 100%
+	height: 36px
+	margin: 12px 0 0 15px
+	vertical-align: top
+	overflow: hidden
+	&_mob
+		display: none
+	input
+		display: block
+		width: 100%
+		height: 100%
+		padding: 0 36px 0 10px
+		border: 1px solid #dfdfdf
+		outline: none
+		border-radius: 5px
+		background: #fff
+	&__button
+		position: absolute
+		top: 0
+		right: 0
+		width: 36px
+		height: 100%
+		padding: 0
+		border: none
+		cursor: pointer
+		outline: none
+		border-radius: 0 5px 5px 0
+		background: #ffcf3c
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			@include sprite($search)
+
+.phone
+	display: inline-block
+	vertical-align: middle
+	margin: 12px 0 0 12px
+	font-size: 22px
+	font-weight: 700
+
+.login
+	float: right
+	margin-top: 20px
+	&__link
+		position: relative
+		font-size: 15px
+		color: $link
+		z-index: 99
+		&:before
+			content: ''
+			position: absolute
+			top: 5px
+			left: -23px
+			@include sprite($login)
+	&-form
+		display: none
+		position: absolute
+		top: 0
+		right: 0
+		width: 255px
+		padding: 68px 20px 30px
+		z-index: 98
+		box-shadow: 0 0 38px rgba(0, 0, 0, 0.34)
+		background: #fcf7d3
+		input
+			width: 216px
+			height: 56px
+			margin-bottom: 5px
+			padding-left: 20px
+			font-size: 15px
+			outline: none
+			border: 1px solid #c9c49e
+			border-radius: 5px
+			background: #fff
+	.btn
+		margin-top: 10px
+	&__reglink
+		display: block
+		margin-top: 24px
+		font-size: 15px
+		color: $link
+		text-decoration: underline
+
+.btn_var6
+	width: 106px
+	height: 44px
+	padding: 0
+	font-size: 19px
+	line-height: 42px
+	border: none
+
+.navbar
+	height: 73px
+	padding: 8px 0 0
+	+clearfix
+
+.overlay
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 980
+	background: rgba(126, 78, 108, .5)
+
+.btn-menu
+	display: none
+	width: 40px
+	b
+		display: block
+		width: 100%
+		height: 6px
+		margin-bottom: 6px
+		cursor: pointer
+		background: #fff
+		&:last-child
+			margin-bottom: 0
+.nav
+	position: relative
+	float: left
+	margin-left: 20px
+	> li
+		float: left
+		margin-right: 25px
+		padding-bottom: 15px
+		&:last-child
+			margin-right: 0
+		&.active
+			> a
+				&:before
+					content: ''
+					position: absolute
+					bottom: 0
+					left: 0
+					right: 0
+					width: 100%
+					height: 6px
+					opacity: 1
+					background: url(../img/wave-menu.png) center repeat-x
+		> a
+			position: relative
+			display: block
+			font: 35px "summer"
+			color: #fff
+			&:before
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+				width: 100%
+				height: 6px
+				opacity: 0
+				background: url(../img/wave-menu.png) center repeat-x
+			&:hover
+				&:before
+					opacity: 1
+					transition: opacity .25s ease
+			.caret
+				position: relative
+				display: inline-block
+				top: -5px
+				margin-left: 7px
+				@include sprite($arrow-down)
+	&-submenu
+		display: none
+		position: absolute
+		top: 53px
+		max-width: 100%
+		padding: 10px 28px 15px
+		z-index: 990
+		border-radius: 5px
+		background: #7e4e6c
+		&__col
+			float: left
+			margin-right: 30px
+			&.last
+				margin-right: 0
+		li
+			margin: 5px 0
+			a
+				display: block
+				font: 700 28px "summer"
+				color: #fff
+				&:hover
+					color: #fcabdb
+
+.navbar-cart
+	float: right
+	position: relative
+	margin-top: 18px
+	padding-left: 48px
+	font-size: 15px
+	color: #fff
+	&:before
+		content: ''
+		position: absolute
+		top: -9px
+		left: 0
+		@include sprite($cart)
+	&__count
+		position: relative
+		display: inline-block
+		margin-right: 12px
+		&:after
+			content: '/'
+			position: absolute
+			top: 0
+			right: -10px
+			font-size: 15px
+			color: #fff
+	&__total
+		display: inline-block
+
+.header-main
+	padding: 44px 0 260px
+	&__title
+		display: block
+		margin-bottom: 85px
+		font: bold 90px/72px "summer"
+		color: #fff
+		text-align: center
+		letter-spacing: 4px
+		clear: both
+
+.btn
+	position: relative
+	display: block
+	font-size: 19px
+	font-weight: 700
+	color: $btn-color
+	line-height: 2em
+	text-align: center
+	outline: none
+	border-radius: 7px
+	box-shadow: inset 0 10px 10px -9px #fff, inset 0 -10px 11px -14px #000
+	background: url(../img/btn-bg4.png) -10px center repeat-x
+	background-size: contain
+	&:hover
+		background: url(../img/btn-bg4h.png) -10px center repeat-x
+		background-size: contain
+	&_var1
+		width: 265px
+		height: 52px
+		margin: 0 auto
+		line-height: 52px
+	&_line
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			left: -82px
+			width: 63px
+			height: 6px
+			margin-top: -3px
+			background: url(../img/line-btn.png) center no-repeat
+		&:after
+			content: ''
+			position: absolute
+			top: 50%
+			right: -82px
+			width: 63px
+			height: 6px
+			margin-top: -3px
+			background: url(../img/line-btn.png) center no-repeat

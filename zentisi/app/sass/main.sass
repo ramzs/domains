@@ -1,0 +1,349 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+@import "header"
+
+.section-one
+	padding: 119px 0 0
+	background: url(../img/bg-1.jpg) center top no-repeat
+	background-size: cover
+
+.row-top
+	margin-bottom: 695px
+	padding-left: 40px
+	text-align: center
+
+.block-color
+	display: inline-block
+	vertical-align: middle
+	&__item
+		display: inline-block
+		vertical-align: middle
+		&_blue
+			font: 172px/1 $countfont
+			color: $blue
+			text-align: right
+			span
+				display: block
+				margin-top: -30px
+				font: 72px/1 $titlefont
+		&_red
+			position: relative
+			padding: 0 12px 0 25px
+			font: 106px/1 $titlefont
+			color: $red
+			letter-spacing: 3.2px
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				right: 0
+				width: 1px
+				height: 100%
+				background: url(../img/border.png) 0 0 no-repeat
+				background-size: 100% 100%
+			span
+				display: block
+				&:first-child
+					margin-bottom: 10px
+					font-size: 48px
+					letter-spacing: 5.8px
+				&:last-child
+					margin-top: 3px
+					font-size: 54px
+					letter-spacing: -0.3px
+
+.block-text
+	display: inline-block
+	vertical-align: middle
+	width: 280px
+	margin-left: 12px
+	font-size: 15px
+	line-height: 1
+	text-align: left
+
+.block-descr
+	+clearfix
+	&__title
+		font: 170px/1 $titlefont
+		color: $red
+	&__pict
+		float: left
+		margin-left: -55px
+		img
+			max-width: 100%
+	&__text
+		position: relative
+		float: left
+		width: 380px
+		padding: 0 15px 0
+		font-size: 15px
+		line-height: 18px
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			width: 1px
+			height: 100%
+			background: url(../img/border.png) 0 0 no-repeat
+			background-size: 100% 100%
+
+.section-portfolio
+	margin-top: -135px
+	padding-bottom: 167px
+
+.tab
+	margin-bottom: 54px
+	text-align: center
+	li
+		display: inline-block
+		margin: 0 33px
+		a
+			position: relative
+			display: block
+			font: 120px/1 $titlefont
+			color: #e1e1e1
+			&:after
+				content: ''
+				position: absolute
+				bottom: -14px
+				left: 0
+				width: 100%
+				height: 6px
+				background: #e1e1e1
+			&.active
+				color: $blue
+				&:after
+					display: none
+
+.tab-content
+	width: 1170px
+	margin: 0 auto
+
+.tab-body
+	position: relative
+	display: block
+	height: 0
+	overflow: hidden
+	&.open
+		height: auto
+		overflow: visible
+
+.port-cl
+	position: relative
+	width: 100%
+	height: 420px
+	margin: 0 auto
+	clear: both
+	overflow: hidden
+	img
+		visibility: hidden
+		cursor: pointer
+
+.arrow
+	position: absolute
+	top: 50%
+	margin-top: -36px
+	font-size: 0
+	z-index: 10
+	&-prev
+		left: -56px
+		@include sprite($arrow-left)
+	&-next
+		right: -56px
+		@include sprite($arrow-right)
+
+.section-two
+	padding-bottom: 40px
+	background: $blue
+
+.block-left
+	float: left
+	width: 54%
+	margin-top: -135px
+	&__title
+		font: 200px/1 $titlefont
+		color: $red
+		letter-spacing: 16px
+		span
+			position: relative
+			display: block
+			top: 46px
+			left: 80px
+			font: 106px/1 $titlefont
+			color: $blue
+			letter-spacing: 9px
+	&__text
+		position: relative
+		float: right
+		width: 290px
+		margin: -10px 17px 0 0
+		font-size: 16px
+		color: #fff
+		line-height: 19px
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			right: -5px
+			width: 1px
+			height: 100%
+			background: url(../img/border.png) 0 0 no-repeat
+			background-size: 100% 100%
+
+.block-right
+	position: relative
+	float: right
+	width: 38%
+	padding-top: 220px
+	&__text
+		position: relative
+		width: 250px
+		margin: 0 auto
+		font-size: 18px
+		font-weight: 700
+		color: #fff
+		text-align: center
+		&:after
+			content: ''
+			position: absolute
+			bottom: -125px
+			left: -157px
+			width: 542px
+			height: 672px
+			background: url(../img/headphone.png) 0 0 no-repeat
+
+.section-qst
+	padding: 153px 0 100px
+	background: #f5f5f5;
+	background: -moz-linear-gradient(left, #f5f5f5 0%, #ffffff 30%, #ffffff 70%, #f5f5f5 100%)
+	background: -webkit-linear-gradient(left, #f5f5f5 0%,#ffffff 30%,#ffffff 70%,#f5f5f5 100%)
+	background: linear-gradient(to right, #f5f5f5 0%,#ffffff 30%,#ffffff 70%,#f5f5f5 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5',GradientType=1 )
+
+.qst
+	position: relative
+	text-align: center
+	&:after, &:before
+		content: ''
+		position: absolute
+	&:before
+		top: -85px
+		left: -70px
+		width: 267px
+		height: 482px
+		background: url(../img/pict-left.png) 0 0 no-repeat
+	&:after
+		top: -22px
+		right: -45px
+		width: 201px
+		height: 452px
+		background: url(../img/pict-right.png) 0 0 no-repeat
+	&__title
+		margin-bottom: 12px
+		font: 120px/1 $titlefont
+		color: $red
+
+.qst-form
+	position: relative
+	&__title
+		margin-bottom: 32px
+		font: 48px/1 $titlefont
+		color: #cecece
+	input
+		display: inline-block
+		width: 277px
+		height: 54px
+		margin: 0 20px
+		padding-left: 15px
+		font-size: 16px
+		outline: none
+		border: 2px solid #e1e1e1
+
+.btn-form
+	margin: 25px auto 0
+	cursor: pointer
+	background: none
+
+.section-three
+	padding: 103px 0 0
+
+.title-color
+	&__top
+		position: relative
+		display: inline-block
+		margin-bottom: 10px
+		font: 106px/1 $titlefont
+		color: $blue
+		&:after
+			content: ''
+			position: absolute
+			top: 51px
+			right: -717px
+			width: 697px
+			height: 1px
+			background: url(../img/border-title.png) 0 0 no-repeat
+			background-size: 100% 100%
+	&__bottom
+		+clearfix
+		span
+			float: left
+			&:first-child
+				width: 28.5%
+				font: 106px/126px $titlefont
+				color: $blue
+			&:last-child
+				width: 71.5%
+				font: 200px/0.8 $titlefont
+				color: $red
+
+.rule
+	width: 1100px
+	margin: 93px auto 0
+	&-item
+		position: relative
+		display: inline-block
+		vertical-align: top
+		width: 49.7%
+		margin-bottom: 67px
+		padding-left: 62px
+		&__pict
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translate(0,-50%)
+		&__text
+			padding-right: 50px
+			font-size: 15px
+			line-height: 18px
+
+.section-contact
+	padding: 15px 0 0
+
+.contact-title
+	margin-bottom: 40px
+	font: 150px/1 $titlefont
+	color: $red
+	text-align: center
+
+.map
+	position: relative
+	float: left
+	width: 787px
+	height: 530px
+	&-wrap
+		position: absolute
+		top: 0
+		right: 0
+		width: 1000px
+
+.contact-footer
+	float: right
+	width: 355px
+	margin-top: 95px
+
+@import "footer"

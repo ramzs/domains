@@ -1,0 +1,500 @@
+@import "bourbon"
+@import "vars"
+@import "sprite"
+
+@media only screen and (max-width : 1200px)
+	.slider-nav
+		&__link
+			padding-left: 0
+			text-align: center
+
+	.slider-caption
+		left: 180px
+
+	.slider-wrap
+		.slider-nav__link
+			padding-left: 0
+
+	.event-item
+		margin-left: 50px
+
+	.catalog-descr
+		padding: 0 20px
+
+	/*-------------------Service page--------------------*/
+	.content--inner
+		padding-bottom: 1000px
+
+	.service-block
+		text-align: center
+
+	.service-item
+		float: none
+		display: inline-block
+		margin: 0 10px 15px
+	/*-----------------------end--------------------------*/
+
+	/*---------------------Service-in page----------------*/
+	.sidebar
+		width: 230px
+		padding: 20px 0 2px 30px
+
+	.second-menu
+		&__item
+			&:before
+				left: -20px
+			a
+				font-size: 14px
+
+	.main
+		width: 680px
+
+	.price-box
+		&__in
+			font-size: 24px
+			span
+				font-size: 16px
+	/*--------------------------end------------------------*/
+
+	/*-------------------Contact page----------------------*/
+	.gallery-item
+		margin-right: 15px
+	/*-----------------------end----------------------------*/
+
+
+@media only screen and (max-width : 992px)
+	.nav-menu
+		margin-left: -15px
+		white-space: nowrap
+		&__item
+			margin: 0 4px
+		&__link
+			padding: 0 11px
+			font-size: 12px
+
+	.section-title
+		padding: 10px 0
+
+	.section-slider
+		padding-top: 70px
+
+	.slider-caption
+		left: 270px
+
+	.slider-wrap
+		.slider-nav__link
+			font-size: 14px
+
+	.event-block
+		margin-top: 30px
+
+	.event-item
+		display: block
+		width: 100%
+		margin: 0 auto
+
+	.event-block
+		.event-list
+			float: none
+			width: 100%
+			margin: 30px auto 0
+			padding-right: 0
+		.day-event
+			padding: 0 10px
+			img
+				width: 100%
+				max-height: 100%
+			&__title
+				padding-left: 0
+			&__date
+				padding-left: 0
+			&__text
+				padding-left: 0
+
+	.section-catalog
+		padding-bottom: 30px
+
+	.catalog-item
+		height: 320px
+
+	.catalog-descr
+		padding: 0 10px
+		&__title
+			margin: -35px 0 10px
+			font-size: 20px
+
+	.btn-wrap
+		width: 150px
+		height: 35px
+
+	.more-btn
+		&--catalog
+			height: 35px
+			font-size: 14px
+			line-height: 35px
+
+	/*-------------------Service page--------------------*/
+	.inner-page
+		padding: 0 10px 25px
+
+	.page-title--inner
+		font-size: 28px
+
+	.service-block
+		text-align: center
+
+	.service-item
+		float: none
+		display: inline-block
+		margin: 0 15px 15px
+		&:last-child
+			margin-right: 15px
+	/*-----------------------end--------------------------*/
+
+	/*---------------------Service-in page----------------*/
+	.sidebar
+		width: 190px
+		padding: 20px 0 2px 25px
+
+	.second-menu
+		&__item
+			a
+				font-size: 12px
+
+	.main
+		width: 500px
+
+	.price-descr
+		display: block
+		width: 100%
+
+	.price-box
+		float: none
+		margin: 28px 0 8px
+		text-align: center
+	/*--------------------------end------------------------*/
+
+	/*-------------------Contact page----------------------*/
+	.gallery-block
+		margin: 55px -10px 0
+		padding-left: 10px
+
+	.gallery-item
+		margin-right: 10px
+	/*-----------------------end----------------------------*/
+
+
+@media only screen and (max-width : 768px)
+	.bg-top
+		height: 62%
+
+	.content
+		padding: 20px 0 307px
+
+	.container
+		padding: 0
+
+	.row
+		margin: 0
+
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+		padding: 0
+
+	.header
+		padding: 2px 10px 59px
+
+	.logo
+		position: absolute
+		top: 45px
+		left: 0
+		right: 0
+		&__link
+			width: 78.4%
+			max-width: 367px
+
+	.phone
+		&__link
+			font-size: 22px
+
+	.callback
+		margin-top: 0
+		&-btn
+			width: auto
+			height: auto
+			font-size: 12px
+			text-decoration: underline
+			background: none
+
+	.nav
+		&-btn
+			display: inline-block
+		&--header
+			margin-top: 62px
+		&-menu
+			margin-left: 0
+			white-space: normal
+			&--header
+				display: none
+				position: absolute
+				top: 30px
+				left: -10px
+				right: -10px
+				padding: 10px 0
+				z-index: 99
+				box-shadow: 0 10px 20px -10px rgba(0,0,0, .6)
+				background: #fff
+			&__item
+				&:hover
+					background: none
+					a
+						color: $main-bg
+			&__link
+				font-size: 14px
+				line-height: 24px
+
+
+	.page-title
+		display: none
+		&--mob
+			display: block
+
+	.section-slider
+		padding: 32px 0 43px
+
+	.slider-main
+		.slick-dots
+			bottom: -21px
+		.nav-menu
+			display: block
+
+	.slider-caption
+		display: none
+
+	.slick
+		&-prev
+			left: 0
+		&-next
+			right: 0
+
+	.slider-nav
+		display: none !important
+
+	.event-wrap
+		padding: 40px 0 32px
+
+	.title-block
+		padding: 0 50px
+		font-size: 24px
+
+	.event-item
+		height: 340px
+
+	.event-block
+		margin-top: 56px
+		.btn-arrow
+			top: 20px
+			&.btn-prev
+				left: 0
+				background: url(../img/stick-left-mob.png) 0 0 no-repeat
+			&.btn-next
+				top: 20px
+				right: 0
+				background: url(../img/stick-right-mob.png) 0 0 no-repeat
+		.event-list
+			margin-top: 12px
+		.day-event
+			&__title
+				margin-top: 20px
+				font-size: 20px
+			&__date
+				margin-top: 3px
+				font-size: 16px
+			&__text
+				margin-top: 4px
+				font-size: 14px
+
+	.section-catalog
+		padding: 0 0 0
+		background: #fff
+
+	.catalog-item
+		height: auto
+		margin-bottom: 45px
+
+	.catalog-pict
+		&:after
+			height: 100px
+			background-size: 100% 100%
+
+	.catalog-descr
+		padding-bottom: 52px
+		&__title
+			margin-bottom: 27px
+			font-size: 28px
+
+	.btn-wrap
+		width: 193px
+		height: 39px
+
+	.more-btn
+		&--catalog
+			height: 39px
+			font-size: 18px
+			line-height: 39px
+
+	.section-service
+		padding: 0
+
+	.service
+		padding: 55px 10px 8px
+		&-title
+			font-size: 24px
+		&-list
+			margin-top: 16px
+			&__item
+				margin-bottom: 16px
+				padding-left: 40px
+
+	.footer
+		height: 305px
+		text-align: center
+
+	.social
+		&-link
+			margin: 0 5px
+
+	.nav--footer
+		display: inline-block
+		max-width: 320px
+		.nav-menu__item
+			margin: 0 15px
+	/*-------------------Service page--------------------*/
+	.content--inner
+		padding-bottom: 315px
+
+	.inner-page
+		padding: 0 12px 35px
+
+	.page-title--inner
+		display: block
+
+	.service-block
+		margin-top: 45px
+
+	.service-item
+		width: 100%
+		margin: 0 0 45px
+		&:last-child
+			margin: 0 0 37px
+		&__pict
+			max-width: 100%
+			height: auto
+
+	/*-----------------------end--------------------------*/
+
+	/*---------------------Service-in page----------------*/
+	.content--service
+		padding-bottom: 315px
+
+	.sidebar
+		display: none
+
+	.main
+		float: none
+		width: 100%
+
+	.page-title--service
+		font-size: 24px
+
+	.wrap-menu
+		display: block
+		margin-top: 29px
+		padding: 24px 0 14px
+
+	.second-menu
+		display: inline-block
+		text-align: left
+		&__item
+			&:before
+				left: -25px
+			a
+				font-size: 16px
+
+	.slider-content
+		height: 340px
+		margin: 0 -12px 20px
+		.slick-slide
+			height: 340px
+			img
+				width: auto
+				height: 340px
+
+	.service-text__accent
+		margin-bottom: 12px
+		text-align: left
+
+	.service-price
+		margin-top: 30px
+		&__title
+			margin-bottom: 25px
+
+	.service-about
+		margin-top: 26px
+		&__video
+			margin: 29px 0 32px
+		&__accent
+			margin-top: 18px
+	/*--------------------------end-----------------------*/
+
+	/*--------------------Contact page--------------------*/
+	.page-title--contact
+		margin-bottom: 0
+		font-size: 24px
+
+	.wrap-menu--contact
+		margin-bottom: 40px
+
+	.contact-map
+		width: auto
+		max-width: none
+		height: 450px
+		margin: 24px -12px 30px
+
+	.contact-info
+		&__title
+			display: none
+		&__text
+			&--last
+				margin-top: 23px
+	/*------------------------end--------------------------*/
+
+	/*-------------------Contact page----------------------*/
+	.inner-page--contact
+		padding-bottom: 0
+
+	.gallery-block
+		margin: 29px -12px 0
+		padding-left: 0
+		text-align: center
+
+	.gallery-item
+		float: none
+		display: inline-block
+		width: 141px
+		margin: 0 7px 40px
+	/*-----------------------end----------------------------*/
+
+
+@media only screen and (max-width : 540px)
+	.slider-main
+		width: auto
+		.slick-slide
+			width: auto
+			img
+				width: auto
+				max-height: 243px
+	/**/
+
+
+@media only screen and (max-width : 320px)
+	/**/

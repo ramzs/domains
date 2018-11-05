@@ -1,0 +1,363 @@
+// SASS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home
+//   width: $icon-home-width
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites
+$arrow-down-name: 'arrow-down'
+$arrow-down-x: 95px
+$arrow-down-y: 104px
+$arrow-down-offset-x: -95px
+$arrow-down-offset-y: -104px
+$arrow-down-width: 20px
+$arrow-down-height: 12px
+$arrow-down-total-width: 220px
+$arrow-down-total-height: 199px
+$arrow-down-image: '../img/sprite.png'
+$arrow-down: (95px, 104px, -95px, -104px, 20px, 12px, 220px, 199px, '../img/sprite.png', 'arrow-down', )
+$arrow-left-mob-name: 'arrow-left-mob'
+$arrow-left-mob-x: 95px
+$arrow-left-mob-y: 0px
+$arrow-left-mob-offset-x: -95px
+$arrow-left-mob-offset-y: 0px
+$arrow-left-mob-width: 29px
+$arrow-left-mob-height: 104px
+$arrow-left-mob-total-width: 220px
+$arrow-left-mob-total-height: 199px
+$arrow-left-mob-image: '../img/sprite.png'
+$arrow-left-mob: (95px, 0px, -95px, 0px, 29px, 104px, 220px, 199px, '../img/sprite.png', 'arrow-left-mob', )
+$arrow-left-num-name: 'arrow-left-num'
+$arrow-left-num-x: 10px
+$arrow-left-num-y: 180px
+$arrow-left-num-offset-x: -10px
+$arrow-left-num-offset-y: -180px
+$arrow-left-num-width: 10px
+$arrow-left-num-height: 19px
+$arrow-left-num-total-width: 220px
+$arrow-left-num-total-height: 199px
+$arrow-left-num-image: '../img/sprite.png'
+$arrow-left-num: (10px, 180px, -10px, -180px, 10px, 19px, 220px, 199px, '../img/sprite.png', 'arrow-left-num', )
+$arrow-left-small-name: 'arrow-left-small'
+$arrow-left-small-x: 124px
+$arrow-left-small-y: 0px
+$arrow-left-small-offset-x: -124px
+$arrow-left-small-offset-y: 0px
+$arrow-left-small-width: 29px
+$arrow-left-small-height: 87px
+$arrow-left-small-total-width: 220px
+$arrow-left-small-total-height: 199px
+$arrow-left-small-image: '../img/sprite.png'
+$arrow-left-small: (124px, 0px, -124px, 0px, 29px, 87px, 220px, 199px, '../img/sprite.png', 'arrow-left-small', )
+$arrow-left-name: 'arrow-left'
+$arrow-left-x: 33px
+$arrow-left-y: 0px
+$arrow-left-offset-x: -33px
+$arrow-left-offset-y: 0px
+$arrow-left-width: 33px
+$arrow-left-height: 116px
+$arrow-left-total-width: 220px
+$arrow-left-total-height: 199px
+$arrow-left-image: '../img/sprite.png'
+$arrow-left: (33px, 0px, -33px, 0px, 33px, 116px, 220px, 199px, '../img/sprite.png', 'arrow-left', )
+$arrow-right-mob-name: 'arrow-right-mob'
+$arrow-right-mob-x: 66px
+$arrow-right-mob-y: 0px
+$arrow-right-mob-offset-x: -66px
+$arrow-right-mob-offset-y: 0px
+$arrow-right-mob-width: 29px
+$arrow-right-mob-height: 104px
+$arrow-right-mob-total-width: 220px
+$arrow-right-mob-total-height: 199px
+$arrow-right-mob-image: '../img/sprite.png'
+$arrow-right-mob: (66px, 0px, -66px, 0px, 29px, 104px, 220px, 199px, '../img/sprite.png', 'arrow-right-mob', )
+$arrow-right-num-name: 'arrow-right-num'
+$arrow-right-num-x: 0px
+$arrow-right-num-y: 180px
+$arrow-right-num-offset-x: 0px
+$arrow-right-num-offset-y: -180px
+$arrow-right-num-width: 10px
+$arrow-right-num-height: 19px
+$arrow-right-num-total-width: 220px
+$arrow-right-num-total-height: 199px
+$arrow-right-num-image: '../img/sprite.png'
+$arrow-right-num: (0px, 180px, 0px, -180px, 10px, 19px, 220px, 199px, '../img/sprite.png', 'arrow-right-num', )
+$arrow-right-small-name: 'arrow-right-small'
+$arrow-right-small-x: 153px
+$arrow-right-small-y: 0px
+$arrow-right-small-offset-x: -153px
+$arrow-right-small-offset-y: 0px
+$arrow-right-small-width: 29px
+$arrow-right-small-height: 87px
+$arrow-right-small-total-width: 220px
+$arrow-right-small-total-height: 199px
+$arrow-right-small-image: '../img/sprite.png'
+$arrow-right-small: (153px, 0px, -153px, 0px, 29px, 87px, 220px, 199px, '../img/sprite.png', 'arrow-right-small', )
+$arrow-right-name: 'arrow-right'
+$arrow-right-x: 0px
+$arrow-right-y: 0px
+$arrow-right-offset-x: 0px
+$arrow-right-offset-y: 0px
+$arrow-right-width: 33px
+$arrow-right-height: 116px
+$arrow-right-total-width: 220px
+$arrow-right-total-height: 199px
+$arrow-right-image: '../img/sprite.png'
+$arrow-right: (0px, 0px, 0px, 0px, 33px, 116px, 220px, 199px, '../img/sprite.png', 'arrow-right', )
+$arrow-up-name: 'arrow-up'
+$arrow-up-x: 182px
+$arrow-up-y: 140px
+$arrow-up-offset-x: -182px
+$arrow-up-offset-y: -140px
+$arrow-up-width: 20px
+$arrow-up-height: 12px
+$arrow-up-total-width: 220px
+$arrow-up-total-height: 199px
+$arrow-up-image: '../img/sprite.png'
+$arrow-up: (182px, 140px, -182px, -140px, 20px, 12px, 220px, 199px, '../img/sprite.png', 'arrow-up', )
+$cart-mob-name: 'cart-mob'
+$cart-mob-x: 153px
+$cart-mob-y: 87px
+$cart-mob-offset-x: -153px
+$cart-mob-offset-y: -87px
+$cart-mob-width: 29px
+$cart-mob-height: 26px
+$cart-mob-total-width: 220px
+$cart-mob-total-height: 199px
+$cart-mob-image: '../img/sprite.png'
+$cart-mob: (153px, 87px, -153px, -87px, 29px, 26px, 220px, 199px, '../img/sprite.png', 'cart-mob', )
+$cart-name: 'cart'
+$cart-x: 182px
+$cart-y: 39px
+$cart-offset-x: -182px
+$cart-offset-y: -39px
+$cart-width: 38px
+$cart-height: 36px
+$cart-total-width: 220px
+$cart-total-height: 199px
+$cart-image: '../img/sprite.png'
+$cart: (182px, 39px, -182px, -39px, 38px, 36px, 220px, 199px, '../img/sprite.png', 'cart', )
+$fb-mob-name: 'fb-mob'
+$fb-mob-x: 182px
+$fb-mob-y: 0px
+$fb-mob-offset-x: -182px
+$fb-mob-offset-y: 0px
+$fb-mob-width: 38px
+$fb-mob-height: 39px
+$fb-mob-total-width: 220px
+$fb-mob-total-height: 199px
+$fb-mob-image: '../img/sprite.png'
+$fb-mob: (182px, 0px, -182px, 0px, 38px, 39px, 220px, 199px, '../img/sprite.png', 'fb-mob', )
+$fb-name: 'fb'
+$fb-x: 149px
+$fb-y: 116px
+$fb-offset-x: -149px
+$fb-offset-y: -116px
+$fb-width: 30px
+$fb-height: 32px
+$fb-total-width: 220px
+$fb-total-height: 199px
+$fb-image: '../img/sprite.png'
+$fb: (149px, 116px, -149px, -116px, 30px, 32px, 220px, 199px, '../img/sprite.png', 'fb', )
+$inst-mob-name: 'inst-mob'
+$inst-mob-x: 0px
+$inst-mob-y: 116px
+$inst-mob-offset-x: 0px
+$inst-mob-offset-y: -116px
+$inst-mob-width: 39px
+$inst-mob-height: 39px
+$inst-mob-total-width: 220px
+$inst-mob-total-height: 199px
+$inst-mob-image: '../img/sprite.png'
+$inst-mob: (0px, 116px, 0px, -116px, 39px, 39px, 220px, 199px, '../img/sprite.png', 'inst-mob', )
+$inst-name: 'inst'
+$inst-x: 117px
+$inst-y: 116px
+$inst-offset-x: -117px
+$inst-offset-y: -116px
+$inst-width: 32px
+$inst-height: 32px
+$inst-total-width: 220px
+$inst-total-height: 199px
+$inst-image: '../img/sprite.png'
+$inst: (117px, 116px, -117px, -116px, 32px, 32px, 220px, 199px, '../img/sprite.png', 'inst', )
+$mail-name: 'mail'
+$mail-x: 98px
+$mail-y: 155px
+$mail-offset-x: -98px
+$mail-offset-y: -155px
+$mail-width: 21px
+$mail-height: 17px
+$mail-total-width: 220px
+$mail-total-height: 199px
+$mail-image: '../img/sprite.png'
+$mail: (98px, 155px, -98px, -155px, 21px, 17px, 220px, 199px, '../img/sprite.png', 'mail', )
+$ok-mob-name: 'ok-mob'
+$ok-mob-x: 78px
+$ok-mob-y: 116px
+$ok-mob-offset-x: -78px
+$ok-mob-offset-y: -116px
+$ok-mob-width: 39px
+$ok-mob-height: 38px
+$ok-mob-total-width: 220px
+$ok-mob-total-height: 199px
+$ok-mob-image: '../img/sprite.png'
+$ok-mob: (78px, 116px, -78px, -116px, 39px, 38px, 220px, 199px, '../img/sprite.png', 'ok-mob', )
+$ok-name: 'ok'
+$ok-x: 182px
+$ok-y: 75px
+$ok-offset-x: -182px
+$ok-offset-y: -75px
+$ok-width: 32px
+$ok-height: 33px
+$ok-total-width: 220px
+$ok-total-height: 199px
+$ok-image: '../img/sprite.png'
+$ok: (182px, 75px, -182px, -75px, 32px, 33px, 220px, 199px, '../img/sprite.png', 'ok', )
+$phone-white-name: 'phone-white'
+$phone-white-x: 25px
+$phone-white-y: 155px
+$phone-white-offset-x: -25px
+$phone-white-offset-y: -155px
+$phone-white-width: 27px
+$phone-white-height: 23px
+$phone-white-total-width: 220px
+$phone-white-total-height: 199px
+$phone-white-image: '../img/sprite.png'
+$phone-white: (25px, 155px, -25px, -155px, 27px, 23px, 220px, 199px, '../img/sprite.png', 'phone-white', )
+$phone-name: 'phone'
+$phone-x: 52px
+$phone-y: 155px
+$phone-offset-x: -52px
+$phone-offset-y: -155px
+$phone-width: 27px
+$phone-height: 23px
+$phone-total-width: 220px
+$phone-total-height: 199px
+$phone-image: '../img/sprite.png'
+$phone: (52px, 155px, -52px, -155px, 27px, 23px, 220px, 199px, '../img/sprite.png', 'phone', )
+$reset-name: 'reset'
+$reset-x: 119px
+$reset-y: 155px
+$reset-offset-x: -119px
+$reset-offset-y: -155px
+$reset-width: 18px
+$reset-height: 17px
+$reset-total-width: 220px
+$reset-total-height: 199px
+$reset-image: '../img/sprite.png'
+$reset: (119px, 155px, -119px, -155px, 18px, 17px, 220px, 199px, '../img/sprite.png', 'reset', )
+$search-name: 'search'
+$search-x: 79px
+$search-y: 155px
+$search-offset-x: -79px
+$search-offset-y: -155px
+$search-width: 19px
+$search-height: 20px
+$search-total-width: 220px
+$search-total-height: 199px
+$search-image: '../img/sprite.png'
+$search: (79px, 155px, -79px, -155px, 19px, 20px, 220px, 199px, '../img/sprite.png', 'search', )
+$vk-mob-name: 'vk-mob'
+$vk-mob-x: 39px
+$vk-mob-y: 116px
+$vk-mob-offset-x: -39px
+$vk-mob-offset-y: -116px
+$vk-mob-width: 39px
+$vk-mob-height: 39px
+$vk-mob-total-width: 220px
+$vk-mob-total-height: 199px
+$vk-mob-image: '../img/sprite.png'
+$vk-mob: (39px, 116px, -39px, -116px, 39px, 39px, 220px, 199px, '../img/sprite.png', 'vk-mob', )
+$vk-name: 'vk'
+$vk-x: 182px
+$vk-y: 108px
+$vk-offset-x: -182px
+$vk-offset-y: -108px
+$vk-width: 32px
+$vk-height: 32px
+$vk-total-width: 220px
+$vk-total-height: 199px
+$vk-image: '../img/sprite.png'
+$vk: (182px, 108px, -182px, -108px, 32px, 32px, 220px, 199px, '../img/sprite.png', 'vk', )
+$work-white-name: 'work-white'
+$work-white-x: 124px
+$work-white-y: 87px
+$work-white-offset-x: -124px
+$work-white-offset-y: -87px
+$work-white-width: 25px
+$work-white-height: 25px
+$work-white-total-width: 220px
+$work-white-total-height: 199px
+$work-white-image: '../img/sprite.png'
+$work-white: (124px, 87px, -124px, -87px, 25px, 25px, 220px, 199px, '../img/sprite.png', 'work-white', )
+$work-name: 'work'
+$work-x: 0px
+$work-y: 155px
+$work-offset-x: 0px
+$work-offset-y: -155px
+$work-width: 25px
+$work-height: 25px
+$work-total-width: 220px
+$work-total-height: 199px
+$work-image: '../img/sprite.png'
+$work: (0px, 155px, 0px, -155px, 25px, 25px, 220px, 199px, '../img/sprite.png', 'work', )
+$spritesheet-width: 220px
+$spritesheet-height: 199px
+$spritesheet-image: '../img/sprite.png'
+$spritesheet-sprites: ($arrow-down, $arrow-left-mob, $arrow-left-num, $arrow-left-small, $arrow-left, $arrow-right-mob, $arrow-right-num, $arrow-right-small, $arrow-right, $arrow-up, $cart-mob, $cart, $fb-mob, $fb, $inst-mob, $inst, $mail, $ok-mob, $ok, $phone-white, $phone, $reset, $search, $vk-mob, $vk, $work-white, $work, )
+$spritesheet: (220px, 199px, '../img/sprite.png', $spritesheet-sprites, )
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home
+//   @include sprite-width($icon-home)
+//
+// .icon-email
+//   @include sprite($icon-email)
+//
+// Example usage in HTML:
+//   `display: block` sprite:
+//   <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//   // CSS
+//   .icon {
+//     display: inline-block;
+//   }
+//
+//   // HTML
+//   <i class="icon icon-home"></i>
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SASS
+//
+// @include sprites($spritesheet-sprites)
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)

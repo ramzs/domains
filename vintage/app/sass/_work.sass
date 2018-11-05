@@ -1,0 +1,43 @@
+@import "vars.sass"
+/*-----------------Work page---------------*/
+.content__page
+	&.content__page-work
+		padding-bottom: 50px
+		background: url(../img/work-bg.jpg) center top no-repeat
+
+.work__tabs
+	margin: 32px 0 40px
+
+.tab__link
+	display: inline-block
+	width: 224px
+	height: 44px
+	margin-right: 16px
+	font-size: 18px
+	font-weight: 700
+	color: #ff4800
+	line-height: 42px
+	text-align: center
+	border: 2px dashed #ff4800
+	transition: all .15s ease
+	&:hover, &.active
+		color: #fff
+		background: #ff4800
+
+.work__block
+	display: none
+	&.open
+		display: block
+	a
+		float: left
+		width: 23%
+		height: auto
+		margin: 0 25px 25px 0
+		transition: all .15s ease
+		&:hover
+			box-shadow: 0 0 25px -5px #000
+		&:nth-child(4n)
+			margin-right: 0
+		img
+			width: 100%
+/*-------------------end-------------------*/

@@ -1,0 +1,176 @@
+@import "vars.sass"
+/*--------------Loft page---------------*/
+.header__banner
+	&.header__banner-loft
+		background: url(../img/banner-loft.jpg) center top no-repeat
+		background-size: cover
+		&:before
+			content: ' '
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			width: 437px
+			height: 654px
+			margin: 0 auto
+			z-index: 6
+			background: url(../img/banner-loft-pict.png) center top no-repeat
+
+.block__like
+	&.block__like-loft
+		width: 1320px
+		left: -30px
+		padding-left: 75px
+		background: url(../img/loft-bg.jpg) 0 0 no-repeat
+		background-size: cover
+		&:before
+			left: -24.3%
+			background: url(../img/loft-bg-2.jpg) 0 0 no-repeat
+		&:after
+			left: -170px
+
+.like__title
+	&.like__title-loft
+		top: 6px
+		color: $main-color
+
+.more__link
+	&.more__link-loft
+		margin-left: 325px
+		color: $main-color
+		border: 5px solid $color-2
+		&:hover
+			color: #fff
+			background: $color-2
+
+.about__block
+	&.about__block-loft
+		margin-top: 0
+		padding: 83px 40px 0 0
+		border-right: 2px solid #e5e5e5
+
+.section__loft
+	position: relative
+	margin: -37px 0 -118px
+	padding-bottom: 95px
+	z-index: 10
+	overflow: hidden
+	.container
+		position: relative
+
+.section__title
+	&.section__title-loft
+		margin-bottom: 55px
+		span
+			padding-right: 60px
+		&:after
+			content: ' '
+			position: absolute
+			bottom: -57px
+			left: -1px
+			width: 100%
+			height: 246px
+			background: url(../img/loft-title-line.png) 0 0 no-repeat
+			background-size: 100% 100%
+
+.descr__style
+	position: relative
+	float: left
+	width: 50%
+	padding-left: 65px
+	font: 300 16px/28px "helvetica"
+	color: $color-1
+	z-index: 12
+	ul
+		margin-top: 27px
+		li
+			position: relative
+			margin-bottom: 15px
+			font-weight: 500
+			color: $main-color
+			&:before
+				content: '-'
+				position: absolute
+				top: 0
+				left: -10px
+				color: $main-color
+
+.loft__descr
+	position: relative
+	float: right
+	width: 558px
+	margin-top: 25px
+	padding: 65px 50px 35px
+	border-radius: 0 50px 50px 50px
+	z-index: 11
+	background: $color-3
+	&:before
+		content: ' '
+		position: absolute
+		top: -82px
+		left: 0
+		width: 85px
+		height: 83px
+		background: url(../img/triangle-loft.png) 0 0 no-repeat
+	&:after
+		content: ' '
+		position: absolute
+		top: 65px
+		left: -225px
+		width: 225px
+		height: 340px
+		z-index: 10
+		background: url(../img/loft-bra.png) 0 0 no-repeat
+	ul
+		li
+			position: relative
+			margin-bottom: 34px
+			padding-left: 10px
+			font-size: 18px
+			color: #fff
+			&:before
+				content: '-'
+				position: absolute
+				top: 0
+				left: 0
+				color: #fff
+
+.bottom__line
+	position: absolute
+	bottom: -61px
+	left: 0
+	width: 3000px
+	height: 85px
+	z-index: 9
+	background: #fff
+	border-radius: 0 0 0 50px
+	&:after
+		content: ' '
+		position: absolute
+		bottom: -35px
+		left: 41%
+		width: 71px
+		height: 36px
+		z-index: 9
+		background: url(../img/triangle-loft-white.png) 0 0 no-repeat
+
+.section__price
+	&.section__price-loft
+		padding-top: 92px
+
+.section__seo
+	&.section__seo-loft
+		background: $color-11
+
+.section__title
+	&.section__title-style
+		padding-top: 32px
+		h2
+			color: $main-color
+			&:after
+				width: 204px
+				height: 4px
+				background-color: $color-4
+			&.mob__title
+				display: none
+/*------------------end------------------*/

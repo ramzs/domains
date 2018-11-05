@@ -1,0 +1,180 @@
+@import "vars"
+
+/*--------------Tovar page-------------*/
+.main--tovar
+	width: 1050px
+	padding: 0 50px 37px 40px
+
+.page-top--tovar
+	margin-bottom: 45px
+
+.page-title--tovar
+	display: block
+	padding-left: 0
+
+.card-descr--tovar
+	display: block
+	padding-left: 0
+
+.tovar
+	float: left
+	width: 486px
+	margin-bottom: 36px
+	&-pict
+		position: relative
+		height: 324px
+		border: 1px solid #cecece
+		img
+			display: block
+			max-width: 230px
+			@include vcenter
+	&-thumb
+		margin-top: 2px
+		overflow: hidden
+		&__pict
+			position: relative
+			float: left
+			width: 33%
+			height: 107px
+			margin-right: 2px
+			overflow: hidden
+			border: 1px solid #cecece
+			img
+				display: block
+				width: 100%
+			&:last-child
+				margin-right: 0
+
+.tovar-descr
+	float: left
+	margin-left: 36px
+	vertical-align: top
+
+.tovar-banner
+	float: left
+	position: relative
+	width: 158px
+	height: 55px
+	margin: 0 3px 97px 0
+	font-size: 12px
+	font-weight: 700
+	line-height: 55px
+	text-align: center
+	border: 1px solid #58504c
+	&:hover
+		box-shadow: 0 0 15px #58504c
+	i
+		position: relative
+		display: inline-block
+		width: 34px
+		height: 22px
+		top: 6px
+		margin-right: 12px
+	&--1
+		i
+			background: url(../img/delivery-icon.png) center 0 no-repeat
+	&--2
+		width: 113px
+		i
+			margin-right: 5px
+			background: url(../img/sale-icon.png) center 0 no-repeat
+	&--3
+		width: 129px
+		i
+			margin-right: 5px
+			background: url(../img/quality-icon.png) center 0 no-repeat
+
+.tovar-descr__line
+	margin-bottom: 40px
+	font-size: 12px
+	span
+		color: #8e8e8e
+
+.tovar-change
+	display: table
+	width: 96.5%
+	margin-bottom: 20px
+	&__main
+		position: relative
+		display: table-cell
+		width: 490px
+		font-size: 18px
+		font-weight: 700
+		color: #232120
+		span
+			position: relative
+			z-index: 2
+			background: #fff
+		&:after
+			content: ' '
+			position: absolute
+			top: 30px
+			left: 0
+			width: 100%
+			height: 1px
+			z-index: 1
+			background: #000001
+	&__name
+		padding-right: 10px
+		letter-spacing: 0
+	&__price
+		float: right
+		padding-left: 10px
+	&__count
+		display: table-cell
+		padding-left: 38px
+		font-weight: 700
+		input
+			width: 80px
+			height: 47px
+			margin-right: 6px
+			font-weight: 700
+			padding-left: 20px
+			border: 1px solid #58504c
+			&::-webkit-input-placeholder
+				color: #000
+				font-weight: 700
+
+			&:-moz-placeholder
+				color: #000
+				font-weight: 700
+
+			&::-moz-placeholder
+				color: #000
+				font-weight: 700
+
+			&:-ms-input-placeholder
+				color: #000
+				font-weight: 700
+
+.btn--add
+	display: table-cell
+	width: 213px
+	i
+		position: relative
+		display: inline-block
+		top: 5px
+		margin-right: 10px
+		@include sprite($cart-btn)
+
+.block-info
+	display: none
+
+.quote
+	margin-top: 44px
+	padding-right: 33px
+	blockquote
+		margin: 0
+		font: 30px "mcorsiva"
+		color: #aa9a7e
+	&__author
+		display: block
+		font: 12px "firassans"
+		font-weight: 300
+		text-align: right
+
+.sidebar
+	&.sidebar--tovar
+		width: 340px
+		padding: 0 15px 0 40px
+/*-----------------end------------------*/

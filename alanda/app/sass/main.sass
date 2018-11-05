@@ -1,0 +1,585 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+.curtain-bg
+	position: absolute
+	display: block
+	top: 0
+	width: 785px
+	max-width: 100%
+	img
+		display: block
+		width: 100%
+	&--left
+		left: 0
+	&--right
+		right: 0
+
+@media only screen and (max-width : 2470px)
+	.curtain-bg
+		width: 600px
+
+@media only screen and (max-width : 2100px)
+	.curtain-bg
+		width: 400px
+
+@media only screen and (max-width : 1700px)
+	.curtain-bg
+		width: 200px
+
+@media only screen and (max-width : 1300px)
+	.curtain-bg
+		display: none
+
+/*--------------Header---------------------*/
+.header
+	background: url(../img/header-full.jpg) center top no-repeat
+	background-size: cover
+
+.header-top
+	position: relative
+	height: 523px
+	padding: 25px 0 0
+
+.banner-sel
+	display: inline-block
+	width: 250px
+	height: 160px
+	margin-left: -9px
+	padding: 29px 35px
+	text-align: center
+	background: url(../img/figure-dark.png) center top no-repeat
+	&__title
+		display: block
+		font-size: 24px
+		font-weight: 700
+		color: #fff
+	&__descr
+		margin-top: 5px
+		font: 100 16px "MuseoSans"
+		color: #fff
+		p
+			margin: 0
+		span
+			font-weight: 700
+
+.logo
+	position: absolute
+	top: 18px
+	left: 0
+	right: 0
+	width: 349px
+	margin: 0 auto
+
+.banner-contact
+	float: right
+	width: 238px
+	height: 138px
+	margin: 17px -7px 0 0
+	padding: 33px 35px
+	text-align: center
+	background: url(../img/figure-white.png) center top no-repeat
+	&__phone
+		display: block
+		font-size: 24px
+		font-weight: 700
+	&__link
+		display: block
+		font: 100 18px "MuseoSans"
+		outline: none
+		&:hover
+			color: $hover-link
+
+.header-nav
+	margin-top: 12px
+
+.nav-menu
+	margin: 0 -10px
+	@include justify
+	&--bottom
+		margin-top: -11px
+		text-align: left
+		.nav-menu__item
+			margin-right: 46px
+			&:nth-child(2)
+				margin-right: 164px
+			&:nth-child(3)
+				margin-right: 103px
+	&__item
+		position: relative
+		display: inline-block
+		padding: 14px 10px 0
+		vertical-align: top
+		border-radius: 5px 0 0 0
+		background: rgba(255,255,255, 0)
+		transition: all .25s ease
+		&.active
+			z-index: 5
+			background: rgba(255,255,255, 1)
+		&--submenu
+			margin-bottom: 16px
+		a
+			position: relative
+			display: block
+			font-size: 17px
+			line-height: 18px
+			font-weight: 700
+			text-transform: uppercase
+			&:hover, &.active
+				color: $hover-link
+	&__link
+		margin-bottom: 16px
+
+.nav-submenu
+	display: none
+	position: absolute
+	top: 48px
+	left: 0
+	padding: 6px 0
+	z-index: 5
+	background: #fff
+	border-radius: 0 0 5px 5px
+	box-shadow: 2.5px 4.3px 5px rgba(175, 170, 169, 0.12)
+	.nav-menu__item
+		display: block
+		padding: 0 20px 0 10px
+		margin-right: 0 !important
+		white-space: nowrap
+
+.main-banner
+	position: relative
+	width: 1005px
+	height: 610px
+	margin-top: -15px
+	padding: 220px 110px 0
+	text-align: center
+	background: url(../img/figure-big-white.png) center top no-repeat
+	&:before
+		content: ' '
+		position: absolute
+		top: 125px
+		left: 0
+		right: 0
+		width: 335px
+		height: 76px
+		margin: 0 auto
+		z-index: 4
+		background: url(../img/ornament-1.png) center top no-repeat
+	&__title
+		display: block
+		margin: 0
+		font-size: 65px
+		color: $accent
+		text-transform: uppercase
+		span
+			display: block
+			margin-top: 12px
+			font-size: 38px
+			font-weight: 700
+			color: $main-color
+	&__country
+		margin-top: 23px
+		font: 100 22px "MuseoSans"
+		text-transform: uppercase
+
+.header-main
+	position: relative
+	padding: 395px 0 134px
+
+.main-caption
+	text-align: center
+	&__tags
+		display: block
+		margin: 0
+		font: 24px "MuseoSans"
+		text-transform: uppercase
+	&__title
+		display: block
+		margin: 20px 0 32px
+		font-size: 40px
+		text-transform: uppercase
+		span
+			color: $accent
+	&__text
+		display: block
+		margin: 0
+		font: 22px "museoSans"
+
+/*----------end header--------------------*/
+
+.section-one
+	position: relative
+	padding: 190px 0 72px
+	&:before
+		content: ' '
+		position: absolute
+		top: 80px
+		left: 0
+		right: 0
+		width: 335px
+		height: 76px
+		margin: 0 auto
+		z-index: 4
+		background: url(../img/ornament-1.png) center top no-repeat
+
+.catalog-item
+	position: relative
+	float: left
+	width: 25%
+	margin-bottom: 20px
+	padding: 0 5px
+	vertical-align: top
+	text-align: center
+	overflow: hidden
+	outline: none
+	&__pict
+		position: relative
+		img
+			display: block
+			width: 100%
+			height: 178px
+		&:before
+			content: ' '
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: url(../img/border.png) center top no-repeat
+			background-size: 100% 100%
+	&__title
+		display: block
+		margin: 14px 0 0
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
+	&:hover
+		.catalog-item
+			&__title
+				color: $hover-link
+
+.section-text
+	margin-top: 55px
+	text-align: center
+	p
+		margin: 0
+		font: 100 22px "MuseoSans"
+		b
+			font-weight: 800
+	&__title
+		display: block
+		margin: 14px 0 28px
+		font: 700 40px "Palatino"
+		text-transform: uppercase
+		span
+			color: $accent
+
+.bx-wrapper
+	img
+		height: 585px
+	.bx-viewport
+		height: 606px !important
+		width: 100% !important
+		border-top-left-radius: 100% 5%
+		border-top-right-radius: 100% 5%
+		border-bottom-left-radius: 100% 5%
+		border-bottom-right-radius: 100% 5%
+	.bx-caption
+		height: 200px
+		text-align: center
+
+.slider-text
+	text-align: center
+	&__title
+		display: block
+		margin: 0 0 45px
+		font-size: 40px
+		text-transform: uppercase
+		span
+			color: $accent
+	&__descr
+		display: block
+		margin: 0
+		font: 100 22px "MuseoSans"
+
+.section-three
+	padding: 60px 0 72px
+
+.block-change
+	text-align: center
+
+.btn-change
+	display: inline-block
+	width: 243px
+	height: 139px
+	margin: 0 26px
+	font-size: 16px
+	font-weight: 700
+	line-height: 115px
+	text-transform: uppercase
+	text-align: center
+	background: url(../img/btn-bg.png) 7px top no-repeat
+	&.active
+		background: url(../img/btn-bg-active.png) 7px top no-repeat
+
+.work-block
+	display: inline-block
+	margin-top: 26px
+	text-align: center
+	&__title
+		display: block
+		margin: 0 0 50px
+		font-size: 40px
+		text-transform: uppercase
+
+.work-item
+	float: left
+	width: 166px
+	&__descr
+		margin-top: 14px
+		font: 100 18px "museoSans"
+		p
+			margin: 0
+
+.section-four
+	.bx-wrapper
+		.bx-pager
+			bottom: 17.5%
+			&.bx-default-pager
+				a
+					&:hover, &.active
+						border: 1px solid #fff
+						background: #fff
+.sale-item
+	height: 606px
+	img
+		height: 606px
+	.bx-caption
+		height: 548px
+
+.sale-banner
+	position: relative
+	display: table-cell
+	top: -16px
+	width: 997px
+	height: 548px
+	vertical-align: middle
+	text-align: center
+	background: url(../img/figure-big-dark.png) center top no-repeat
+	background-size: cover
+	&__title
+		margin: -12px 0 4px
+		font-size: 72px
+		font-weight: 700
+		color: #fff
+	&__accent
+		display: block
+		margin-bottom: 38px
+		font-size: 30px
+		color: #fff
+		text-transform: uppercase
+	&__descr
+		display: block
+		margin: 0
+		font: 700 28px "MuseSans"
+		color: #fff
+
+.section-form
+	height: 482px
+
+.form-call
+	position: relative
+	display: inline-block
+	width: 100%
+	height: 610px
+	margin-top: -60px
+	padding-top: 117px
+	text-align: center
+	background: url(../img/figure-big-white.png) center top no-repeat
+	background-size: 100% 610px
+	&__title
+		margin-bottom: 20px
+		font-size: 40px
+		line-height: 47px
+		font-weight: 700
+		color: $accent
+		text-transform: uppercase
+	&__accent
+		display: block
+		font: 100 24px "MUseoSans"
+		text-transform: uppercase
+	form
+		margin-top: 52px
+	input
+		display: inline-block
+		width: 149px
+		height: 65px
+		margin: 0 8px
+		padding: 12px 10px
+		font: 100 18px "MuseoSans"
+		text-align: center
+		border: none
+		outline: none
+		background: url(../img/input-bg.png) center top no-repeat
+	.btn-form
+		display: block
+		width: 203px
+		height: 121px
+		margin: 45px auto 0
+		padding-bottom: 22px
+		font: 800 18px "MuseoSans"
+		color: #fff
+		outline: none
+		cursor: pointer
+		border: none
+		background: url(../img/btn-form-bg.png) 8px top no-repeat
+
+footer
+	padding: 83px 0 31px
+	background: #393939
+
+.footer-menu
+	display: inline-block
+	width: 100%
+	margin-bottom: 62px
+	@include justify
+	&__item
+		display: inline-block
+		vertical-align: top
+		a
+			display: block
+			font-size: 12px
+			font-weight: 700
+			line-height: 18px
+			color: #fff
+			text-transform: uppercase
+			&:hover
+				color: $hover-link
+	&__link
+		margin-bottom: 213px
+
+.footer-submenu
+	margin-top: 30px
+	height: 183px
+	li
+		display: block
+		margin-bottom: 9px
+		a
+			display: inline-block
+			font: 100 14px "MuseoSans"
+			color: #787878
+			text-transform: none
+			&:hover
+				color: #fff
+
+.copyright
+	display: inline-block
+	margin-right: 120px
+	font: 100 18px "MuseoSans"
+	color: #fff
+
+.developer
+	display: inline-block
+	font: 100 18px "MuseoSans"
+	color: #fff
+	a
+		color: #ffcfad
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+.banner-contact
+	&--footer
+		float: right
+		width: auto
+		height: auto
+		margin: 0
+		padding: 0
+		text-align: right
+		background: none
+	&__phone
+		&--footer
+			color: #fff
+	&__link
+		&--footer
+			margin-top: -6px
+			color: $accent
+			&:hover
+				color: #fff
+
+/*-----------Форма обратного звонка----------*/
+.form-call
+	&--cb
+		position: relative
+		display: block
+		width: 1005px
+		height: 556px
+		margin: auto
+		padding-top: 128px
+		background: url(../img/form-modal-bg.png) center top no-repeat
+		form
+			margin-top: 57px
+		input
+			position: relative
+			top: -2px
+			margin-left: 28px
+		.btn-form
+			&--cb
+				display: inline-block
+				margin: 1px 0 0 -16px
+		.mfp-close
+			display: none
+	&__title
+		&--cb
+			margin-bottom: 25px
+/*------------------конец---------------------*/
+
+.form-call
+	&--alert
+		padding-top: 229px
+		.mfp-close
+			display: block
+			top: 84px
+			left: 0
+			margin: 0 auto
+			font-size: 0
+			@include sprite($close-icon)
+			&:active
+				top: 84px
+
+/*-------Плавное появление magnific popup------------*/
+.mfp-zoom-in
+	.mfp-with-anim
+		opacity: 0
+		transition: all 0.2s ease-in-out
+		transform: scale(0.8)
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.3s ease-out
+	&.mfp-ready
+		.mfp-with-anim
+			opacity: 1
+			transform: scale(1)
+		&.mfp-bg
+			opacity: 0.8
+	&.mfp-removing
+		.mfp-with-anim
+			transform: scale(0.8)
+			opacity: 0
+		&.mfp-bg
+			opacity: 0
+
+.mfp-wrap
+	top: auto !important
+	position: fixed !important
+	height: 100% !important
+/*-------------end-----------------------*/
+
+@import "gost-1.sass"
+@import "gost-2.sass"
+@import "zone.sass"
+@import "curtain.sass"
+@import "photo.sass"

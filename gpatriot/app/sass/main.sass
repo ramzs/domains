@@ -1,0 +1,435 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+.wrapper
+	position: relative
+	min-height: 100%
+	width: 100%
+	overflow: hidden
+
+.bg
+	position: absolute
+	left: 0
+	width: 100%
+	&-top
+		top: 0
+		height: 100%
+		z-index: 0
+		background: url(../img/header-inner-bg.jpg) center top no-repeat
+		background-size: cover
+	&-bottom
+		bottom: 0
+		height: 1754px
+		z-index: 0
+		background: url(../img/footer-inner-bg.png) center top no-repeat
+		background-size: cover
+
+.header
+	position: relative
+	padding: 8px 0 276px
+	z-index: 8
+	overflow: hidden
+	background: url(../img/header-bg.jpg) center top no-repeat
+	background-size: cover
+
+.layer-1
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: url(../img/bg-prx.png) right top no-repeat
+
+.phone
+	display: inline-block
+	&--header
+		margin-top: 26px
+	&__link
+		display: block
+		font-size: 25px
+		font-weight: 300
+
+.logo
+	text-align: center
+	&__link
+		display: inline-block
+		font-size: 0
+		img
+			display: block
+			width: 100%
+			max-width: 367px
+
+.callback
+	margin-top: 26px
+	text-align: right
+	&-btn
+		display: inline-block
+		width: 174px
+		height: 43px
+		font-size: 13px
+		font-weight: 800
+		line-height: 43px
+		text-align: center
+		text-transform: uppercase
+		background-color: $main-bg
+		&:hover
+			color: $main-color
+
+.nav
+	position: relative
+	text-align: center
+	&--header
+		margin-top: 11px
+	&-btn
+		display: none
+		font-size: 14px
+		font-weight: 800
+		text-transform: uppercase
+		cursor: pointer
+		transition: all .15s ease
+		&:hover, &.active
+			color: $main-bg
+			i
+				transform: rotate(-180deg)
+		i
+			position: relative
+			display: inline-block
+			width: 9px
+			height: 6px
+			top: -3px
+			margin-left: 12px
+			transition: all .15s ease
+			background: url(../img/arrow-down.png) 0 0 no-repeat
+	&-menu
+		display: inline-block
+		&__item
+			display: inline-block
+			margin: 0 6px
+			transform: skew(-25deg)
+			&:hover
+				transition: background .25s
+				background: $main-bg
+				a
+					color: $main-color
+		&__link
+			display: block
+			padding: 0 11.5px 0
+			font-size: 14px
+			font-weight: 800
+			line-height: 29px
+			text-transform: uppercase
+			transform: skew(25deg)
+
+.header-caption
+	margin-top: 201px
+	text-align: center
+	&__title
+		font-size: 60px
+		font-weight: 800
+		line-height: 65px
+		color: #fff
+		text-transform: uppercase
+	&__subtitle
+		margin-bottom: 16px
+		font-size: 36px
+		font-weight: 800
+		color: #fff
+		text-transform: uppercase
+
+.btn-order
+	display: block
+	width: 196px
+	height: 42px
+	margin: 0 auto
+	font-size: 14px
+	font-weight: 800
+	text-transform: uppercase
+	text-align: center
+	line-height: 42px
+	background: $main-bg
+	&:hover
+		color: $main-color
+
+.section-service
+	padding: 78px 0 102px
+	background: url(../img/home-bg-1.jpg) center top no-repeat
+	background-size: cover
+	.container
+		padding: 0 10px 0 30px
+	&__title
+		margin-bottom: 58px
+		font-size: 48px
+		font-weight: 300
+		color: #fff
+		text-align: center
+
+.service-item
+	position: relative
+	float: left
+	width: 363px
+	height: 353px
+	margin: 0 10px 10px 0
+	overflow: hidden
+	&:after
+		content: ' '
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 4
+		transition: all .7s ease-out
+		background: url(../img/blick.png) no-repeat
+		background-position: 140%
+	img
+		height: 100%
+	&__title
+		position: absolute
+		top: 36px
+		left: 0
+		width: 100%
+		padding: 0 60px 0 30px
+		font-size: 24px
+		font-weight: 800
+		color: #fff
+		i
+			position: absolute
+			top: 7px
+			right: 25px
+			@include sprite($arrow-right)
+	&:hover
+		&:after
+			background-position: 400px
+		.service-item__title
+			color: $main-bg
+			i
+				transform: translate(10px, 0)
+				transition: all .15s ease
+	&--last
+		text-align: center
+		background: #191919
+	&__title--last
+		margin-top: 50px
+		padding: 0
+		i
+			position: relative
+			display: block
+			top: 60px
+			right: 0
+			margin: 0 auto
+
+.section-work
+	padding: 200px 0 182px
+	overflow: hidden
+	background: url(../img/home-bg-2.jpg) center top no-repeat
+	background-size: cover
+	&__title
+		margin-bottom: 102px
+		font-size: 60px
+		font-weight: 800
+		font-style: italic
+		line-height: 64px
+		color: #fff
+		text-align: center
+		text-transform: uppercase
+		span
+			display: block
+			font-size: 36px
+			text-align: left
+			letter-spacing: 4.5px
+
+.work-block
+	display: inline-block
+	&--two
+		float: right
+
+.work-item
+	display: table
+	width: 451px
+	height: 71px
+	margin-bottom: 23px
+	transform: skew(-24deg)
+	background-color: #151515
+	&__title
+		display: table-cell
+		vertical-align: middle
+		padding-left: 96px
+		font-size: 20px
+		font-weight: 800
+		font-style: italic
+		color: #fff
+		transform: skew(24deg)
+		i
+			position: absolute
+			top: -9px
+			left: 18px
+			width: 62px
+			height: 62px
+		&--one
+			i
+				background: url(../img/mechanic.png) center top no-repeat
+		&--two
+			i
+				background: url(../img/graphic-design.png) center top no-repeat
+		&--three
+			i
+				left: 10px
+				background: url(../img/handshake.png) center top no-repeat
+		&--four
+			i
+				top: -13px
+				left: 10px
+				background: url(../img/trophy.png) center top no-repeat
+
+.section-about
+	position: relative
+	padding: 48px 0 39px
+	z-index: 4
+	&__title
+		margin-bottom: 23px
+		font-size: 36px
+		font-weight: 800
+		line-height: 36px
+	&__text
+		font: 14px/22px "opensans"
+		p
+			margin-bottom: 14px
+		a
+			text-decoration: underline
+			&:hover
+				color: $main-bg
+				text-decoration: none
+
+.footer
+	position: relative
+	padding: 14px 0 35px
+	z-index: 5
+	background: url(../img/footer-bg.jpg) center top no-repeat
+	background-size: cover
+
+.social
+	text-align: center
+	&-link
+		position: relative
+		display: inline-block
+		margin: 0 15px
+		vertical-align: middle
+		font-size: 0
+		i
+			position: absolute
+			left: 25px
+		&--vk
+			width: 88px
+			height: 56px
+			background: url(../img/social-bg-1.png) no-repeat
+			i
+				top: 22px
+				@include sprite($vk)
+		&--fb
+			width: 71px
+			height: 98px
+			background: url(../img/social-bg-2.png) no-repeat
+			i
+				top: 38px
+				@include sprite($fb)
+		&--inst
+			width: 99px
+			height: 73px
+			background: url(../img/social-bg-3.png) no-repeat
+			i
+				top: 25px
+				left: 42px
+				@include sprite($inst)
+
+.nav
+	&--footer
+		margin-top: 5px
+		overflow: hidden
+
+.copyright
+	margin-top: 17px
+	font: 14px "opensans"
+	text-align: center
+
+/*-------------Callback form---------------*/
+.callback-form
+	position: relative
+	width: 540px
+	max-width: 100%
+	height: 467px
+	margin: 0 auto
+	padding: 55px 15px 0
+	text-align: center
+	background: #fff
+	.mfp-close
+		right: 15px
+		top: 15px
+		font-weight: bold
+		color: #000
+		opacity: 1
+		&:active
+			top: 15px
+	&__title
+		margin-bottom: 14px
+		font-size: 13px
+		font-weight: 800
+		text-transform: uppercase
+	form
+		width: 350px
+		max-width: 100%
+		margin: 0 auto
+		text-align: left
+	label
+		font-size: 14px
+		font-weight: bold
+	input
+		display: block
+		width: 100%
+		height: 50px
+		margin: 6px 0 15px
+		font-size: 14px
+		text-align: center
+
+.btn-form
+	display: block
+	width: 174px
+	height: 43px
+	margin: 30px auto 0
+	font-size: 13px
+	font-weight: 800
+	line-height: 43px
+	text-transform: uppercase
+	text-align: center
+	border: none
+	background: #eee70f
+/*-----------end---------------------------*/
+
+/*-------Плавное появление magnific popup------------*/
+.mfp-zoom-in
+	.mfp-with-anim
+		opacity: 0
+		transition: all 0.2s ease-in-out
+		transform: scale(0.8)
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.3s ease-out
+	&.mfp-ready
+		.mfp-with-anim
+			opacity: 1
+			transform: scale(1)
+		&.mfp-bg
+			opacity: 0.8
+	&.mfp-removing
+		.mfp-with-anim
+			transform: scale(0.8)
+			opacity: 0
+		&.mfp-bg
+			opacity: 0
+/*-------------end-----------------------*/
+
+@import "service.sass"
+@import "service-in.sass"
+@import "contact.sass"

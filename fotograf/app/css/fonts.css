@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "summer";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Summer/SummerFontLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Summer/SummerFontLight.woff") format("woff"), url("../fonts/Summer/SummerFontLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "futura";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/FuturaBold/FuturaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBold/FuturaBold.woff") format("woff"), url("../fonts/FuturaBold/FuturaBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "futura";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/FuturaBookCRegular/FuturaBookC.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBookCRegular/FuturaBookC.woff") format("woff"), url("../fonts/FuturaBookCRegular/FuturaBookC.ttf") format("truetype");
+}

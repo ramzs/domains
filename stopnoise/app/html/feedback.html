@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+
+	@@include('./template/header-tmp.html')
+
+	<div class="content content__inner clearfix">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="#">Главная</a></li>
+				<li>Отзывы</li>
+			</ul>
+			<div class="sidebar__left">
+				<div class="menu__service">
+					<h3 class="sidebar__title">Услуги</h3>
+					<ul class="service__list">
+						<li><a href="#">Консультация</a></li>
+						<li><a href="#">Проведение<br>аккустических замеров</a></li>
+						<li><a href="#">Шефмонтаж</a></li>
+						<li><a href="#">Монтаж звукоизоляции</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="main__center main__center-feedback">
+				<div class="page__title page__title-feedback">
+					<h2>Отзывы</h2>
+				</div>
+
+				<div class="feedback__item">
+					<div class="feedback__descr">
+						<div class="feedback__name">Воронина Анна Алексеевна</div>
+						<div class="feedback__date">18.10.2016</div>
+						<div class="feedback__title">Шум вентиляционной установки</div>
+						<div class="feedback__text">
+							<p>В связи с высоким звуком вентиляционной установки часто приходилось слушать жалобы от соседей, проживающих сверху. Для их спокойствия решили провести работы для снижения шума. После возведения специализированной установки шум заметно был снижен.</p>
+						</div>
+					</div>
+					<div class="feedback__pict">
+						<a href="img/feedback-1-big.jpg" class="image-popup"><img src="img/feedback-1.jpg" alt=""></a>
+					</div>
+				</div>
+
+				<div class="feedback__item">
+					<div class="feedback__descr">
+						<div class="feedback__name">Конюхов Дмитрий Павлович</div>
+						<div class="feedback__date">5.10.2016</div>
+						<div class="feedback__title">Защита от шума серверной комнаты</div>
+						<div class="feedback__text">
+							<p>Для снижения уровня шума, исходящего из серверной, издаваемого оборудованием, решили установить тяжелую противопожарную дверь. Результат значительно отличался от желаемого: через имеющиеся после установки щели проникал значительный шум. Благодаря переустановке двери компанией «Стопшум» с применением звукоизоляционных материалов удалось значительно снизить уровень звука. По ощущениям более, чем в 4 раза.</p>
+						</div>
+					</div>
+					<div class="feedback__pict">
+						<a href="img/feedback-2-big.jpg" class="image-popup"><img src="img/feedback-2.jpg" alt=""></a>
+					</div>
+				</div>
+
+				<div class="feedback__item">
+					<div class="feedback__descr">
+						<div class="feedback__name">Владимировна Людмила Михайловна</div>
+						<div class="feedback__date">29.09.2016</div>
+						<div class="feedback__title">Тонкие стены</div>
+						<div class="feedback__text">
+							<p>Живу в соц. жилье, имеющем очень тонкие стены. Слышала все, что происходило у соседей. Обратилась в компанию СтопШум, через четыре дня начались работы, которые заняли 5 дней. Сейчас я могу не слышать и не думать, что происходит у соседей.</p>
+						</div>
+					</div>
+					<div class="feedback__pict">
+						<a href="img/feedback-3-big.jpg" class="image-popup"><img src="img/feedback-3.jpg" alt=""></a>
+					</div>
+				</div>
+
+				<a href="#" class="link__form">Оставить отзыв</a>
+
+				<div class="form__box">
+					<form action="#">
+						<input type="text" placeholder="Ваше имя:">
+						<input type="text" placeholder="Ваш номер телефона">
+						<textarea cols="30" rows="10" placeholder="Напишите отзыв"></textarea>
+						<input type="file" data-browse="Добавить файл">
+						<button class="btn__send">Отправить</button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+@import "vars"
+
+/*-------------Gost-1 page--------------*/
+.header
+	&--inner
+		background: url(../img/header-inner-full.jpg) center top no-repeat
+		background-size: cover
+
+.header-top
+	&--inner
+		height: 265px
+
+.header-nav
+	&--inner
+		margin-top: 20px
+
+.nav-menu
+	&__item
+		&--inner
+			a
+				font-size: 12px
+
+.nav-submenu
+	&--inner
+		li
+			margin-bottom: 12px
+
+.header-main
+	&--inner
+		padding: 163px 0 105px
+		&:before
+			content: ' '
+			position: absolute
+			top: 94px
+			left: 0
+			right: 0
+			width: 335px
+			height: 76px
+			margin: 0 auto
+			background: url(../img/ornament-1.png) center top no-repeat
+
+.main-caption
+	&__title
+		&--inner
+			font-size: 65px
+			color: $accent
+
+.breadcrumb
+	padding: 37px 0 30px
+	&-list
+		li
+			position: relative
+			display: inline-block
+			margin-right: 42px
+			font-size: 12px
+			font-weight: 700
+			color: $accent
+			text-transform: uppercase
+			&:not(:last-child):after
+				content: ' '
+				position: absolute
+				top: 5px
+				right: -25px
+				@include sprite($arrow-right)
+			a
+				font-size: 12px
+				font-weight: 700
+				color: $main-color
+				&:hover
+					color: $hover-link
+
+.section-one
+	&--inner
+		padding: 30px 0 81px
+		&:before
+			display: none
+
+.catalog
+	&--gost
+		text-align: center
+	&:before,
+	&:after
+		content: " "
+		display: table
+	&:after
+		clear: both
+
+/*----------------end--------------------*/

@@ -1,0 +1,746 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+.header-top
+	height: 46px
+	background: #3d6b01
+	@include clearfix
+
+.sale-link
+	position: relative
+	float: left
+	margin-right: 31px
+	padding: 8px 33px 12px 65px
+	font-size: 20px
+	color: $accent
+	font-weight: 500
+	background-color: #6b9f01
+	box-shadow: 0 3px 0 #094900
+	&:before
+		content: ' '
+		position: absolute
+		top: 9px
+		left: 29px
+		@include sprite($percentage)
+
+.menu-top
+	@include justify
+	&__item
+		display: inline-block
+		a
+			position: relative
+			display: block
+			padding: 23px 0
+			font-size: 17px
+			font-weight: 300
+			color: #fff
+			&:hover
+				text-shadow: 0 0 1px #fff
+
+.header-main
+	padding: 29px 0 13px
+	@include clearfix
+	background: #fff
+
+.logo
+	display: inline-block
+	width: 252px
+	height: 60px
+	vertical-align: top
+	img
+		display: block
+		width: 100%
+
+.cart
+	position: relative
+	display: inline-block
+	margin-left: 100px
+	vertical-align: top
+	font-size: 16px
+	color: #2e2e2e
+	&__link
+		font-size: 16px
+		font-weight: 500
+		text-decoration: underline
+	&:before
+		content: ' '
+		position: absolute
+		top: 0
+		left: -42px
+		@include sprite($cart)
+
+.work
+	position: relative
+	display: inline-block
+	margin-left: 78px
+	font-size: 16px
+	vertical-align: top
+	&:before
+		content: ' '
+		position: absolute
+		top: 0
+		left: -34px
+		@include sprite($clock)
+
+.location
+	position: relative
+	font-size: 16px
+	&--header
+		display: inline-block
+		max-width: 120px
+		margin-left: 81px
+		vertical-align: top
+		color: #2e2e2e
+		word-break: break-word
+		&:before
+			content: ' '
+			position: absolute
+			top: 0
+			left: -30px
+			@include sprite($map)
+		span
+			display: block
+			font-size: 18px
+			font-weight: 500
+	&__link
+		display: inline-block
+		font-size: 14px
+		color: $link
+		border-bottom: 1px dashed $link
+		&:hover
+			border-bottom: 1px dashed transparent
+
+.contact
+	position: relative
+	&--header
+		float: right
+		max-width: 240px
+		text-align: right
+	&-wrap
+		position: relative
+		display: inline-block
+		text-align: left
+		&:before
+			content: ' '
+			position: absolute
+			top: 0
+			left: -36px
+			@include sprite($phone)
+	&__phone
+		&--header
+			display: block
+			font-size: 18px
+			font-weight: 500
+			color: #141414
+			line-height: 22px
+	&__callback
+		display: inline-block
+		font-size: 14px
+		color: $link
+		border-bottom: 1px dashed $link
+		&:hover
+			border-bottom: 1px dashed transparent
+	&__mail
+		display: block
+		margin-top: 5px
+		font-size: 16px
+		color: #141414
+
+.header-bottom
+	height: 46px
+	background: #fff
+	&--inner
+		background: #3d6b01
+		li
+			a
+				color: #fff
+		.menu-dropmain
+			li
+				a
+					color: $title
+
+.menu-main
+	@include justify
+	&__item
+		position: relative
+		display: inline-block
+		&:not(:last-child):after
+			content: ' '
+			position: absolute
+			top: 17px
+			right: -40px
+			width: 1px
+			height: 14px
+			opacity: .44
+			background: #051529
+		a
+			position: relative
+			display: block
+			font-size: 20px
+			color: $title
+			line-height: 46px
+			&:hover, &.active
+				text-shadow: 0 0 1px $title
+		.caret
+			position: absolute
+			top: 22px
+			right: -16px
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 6px 3.5px 0 3.5px
+			border-color: #45710b transparent transparent transparent
+		&--inner
+			a
+				color: #fff
+				&:hover, &.active
+					text-shadow: 0 0 1px #fff
+
+.menu-dropmain
+	display: none
+	position: absolute
+	top: 46px
+	left: -21px
+	z-index: 99
+	box-shadow: 0 5px 10px #2e2e2e
+	background: rgba(255,255,255, .95)
+	li
+		a
+			padding: 10px 25px
+			font-size: 16px
+			color: #title
+			line-height: 20px
+			text-align: left
+			text-align-last: auto
+			&:hover
+				color: #fff
+				text-shadow: 0 0 1px #fff
+				background: $title
+
+.slider-wrap
+	position: relative
+
+.slider-nav
+	position: absolute
+	left: 0
+	right: 0
+	top: 50%
+	margin-top: -20px
+	.slick-arrow
+		position: absolute
+		top: 50%
+		width: 67px
+		height: 66px
+		margin-top: -20px
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: rgba(255,255,255, .45)
+		&:hover
+			opacity: 1
+		&.slick-prev
+			left: 0
+			&:before
+				content: ' '
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+				@include sprite($arrow-left)
+		&.slick-next
+			right: 0
+			&:before
+				content: ' '
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+				@include sprite($arrow-right)
+
+.home-slider
+	max-width: 1617px
+	margin: 0 auto
+	height: 230px
+	background: #009f00
+	.slider-item
+		height: 230px
+		img
+			height: 100%
+
+.advantages
+	padding: 25px 0 18px
+	background: url(../img/adv-bg.png) center top no-repeat
+	background-size: cover
+
+.adv-block
+	position: relative
+	padding-bottom: 20px
+	text-align: center
+	border-left: 3px solid rgba(90,90,90, .34)
+	border-right: 3px solid rgba(90,90,90, .34)
+	border-bottom: 3px solid rgba(90,90,90, .34)
+	&:before
+		content: ''
+		position: absolute
+		top: -3px
+		left: -3px
+		width: 32.4%
+		height: 3px
+		background: rgba(90,90,90, .34)
+	&:after
+		content: ''
+		position: absolute
+		top: -3px
+		right: -3px
+		width: 32.4%
+		height: 3px
+		background: rgba(90,90,90, .34)
+	&__title
+		position: relative
+		top: -21px
+		margin-bottom: 40px
+		font: 700 32px "houschka"
+		color: $title
+		text-transform: uppercase
+	&__item
+		position: relative
+		display: inline-block
+		width: 230px
+		margin: 0 18px
+		vertical-align: top
+		font: 16px/16px "robotocnd"
+		text-align: center
+		&:before
+			content: ''
+			position: absolute
+			top: -55px
+			left: 0
+			right: 0
+			margin: 0 auto
+		&--1
+			&:before
+				@include sprite($av-1)
+			&:hover
+				&:before
+					@include sprite($av-1-hover)
+		&--2
+			&:before
+				@include sprite($av-2)
+			&:hover
+				&:before
+					@include sprite($av-2-hover)
+		&--3
+			&:before
+				top: -45px
+				@include sprite($av-3)
+			&:hover
+				&:before
+					@include sprite($av-3-hover)
+		&--4
+			&:before
+				@include sprite($av-4)
+			&:hover
+				&:before
+					@include sprite($av-4-hover)
+		a
+			display: block
+			margin-bottom: 5px
+			font: 700 21px "houschka"
+			color: #353535
+			text-transform: uppercase
+		&:hover
+			a
+				color: $title
+
+.content
+	padding: 31px 0 105px
+	+clearfix
+
+.sidebar
+	float: left
+	width: 22.9%
+	&__title
+		margin-bottom: 21px
+		font: 700 32px "houschka"
+		color: $title
+		text-transform: uppercase
+	&-nav
+		> li
+			width: 100%
+			margin-bottom: 7px
+			> a
+				position: relative
+				display: block
+				padding: 12px 35px 13px 22px
+				font: 700 20px "robotocnd"
+				color: #fff
+				word-wrap: break-word
+				text-transform: uppercase
+				border-radius: 3px
+				box-shadow: 0 3px 0 #606d28
+				background: #96c824
+		&__link
+			&:after
+				content: ''
+				position: absolute
+				top: 50%
+				right: 14px
+				margin-top: -4px
+			&--var1
+				&:after
+					@include sprite($arrow-down-w)
+				&.active
+					&:after
+						display: none
+			&--var2
+				&:after
+					@include sprite($arrow-down)
+				&.active
+					&:after
+						@include sprite($arrow-up)
+		&__dropmenu
+			display: none
+			margin: 7px 0 22px
+			> li
+				margin-bottom: 7px
+				a
+					position: relative
+					display: block
+					padding: 0 10px 0 22px
+					font: 20px "robotocnd"
+					color: #051529
+					word-wrap: break-word
+					text-transform: uppercase
+				> a
+					padding: 12px 35px 12px 22px
+					word-wrap: break-word
+					border-radius: 3px
+					box-shadow: 0 3px 0 #949db5
+					background: #e8e8e8
+		&__submenu
+			display: none
+			margin: 19px 0 20px
+			li
+				margin-bottom: 30px
+				&:last-child
+					margin-bottom: 0
+				a
+					word-wrap: break-word
+					text-decoration: underline
+
+.main
+	float: left
+	width: 77.1%
+	padding-left: 30px
+	&__title
+		margin-bottom: 21px
+		font: 700 32px "houschka"
+		color: $title
+		text-transform: uppercase
+
+.tovar-block
+	+clearfix
+
+.tovar-item
+	float: left
+	width: 261px
+	margin: 0 32px 32px 0
+	padding: 35px 18px 23px
+	border: 1px solid #607d8b
+	&:nth-child(3n)
+		margin-right: 0
+	&__pict
+		height: 224px
+		margin-bottom: 25px
+		text-align: center
+		overflow: hidden
+		img
+			display: inline-block
+			max-width: 100%
+			height: 100%
+	&__title
+		font: 22px/26px "robotocnd"
+	&__price
+		margin: 2px 0 20px
+		font-size: 28px
+		font-weight: 500
+		color: #383838
+		span
+			display: inline-block
+			font-family: "ptroublesans"
+	&__link
+		display: block
+		width: 100%
+		height: 37px
+		font: 500 24px "proximanovaexcn"
+		color: #fff
+		line-height: 37px
+		text-align: center
+		text-transform: uppercase
+		border-radius: 3px
+		box-shadow: 0 3px 0 #1d3400
+		background: #96c824
+
+// .pagination
+// 	margin: 14px 0 20px
+// 	&-nav
+// 		display: inline-block
+// 		vertical-align: middle
+// 		&__item
+// 			display: inline-block
+// 			width: 38px
+// 			height: 38px
+// 			margin-right: 5px
+// 			text-align: center
+// 			line-height: 38px
+// 			a
+// 				display: inline-block
+// 				font: 18px "proximanova"
+// 				color: #222
+// 				border-bottom: 1px solid #c4c4c4
+// 			&.active
+// 				background: #c4c4c4
+// 				a
+// 					border-bottom: 1px solid transparent
+// 	&__next
+// 		position: relative
+// 		display: inline-block
+// 		width: 38px
+// 		height: 38px
+// 		margin-left: 2px
+// 		vertical-align: middle
+// 		font-size: 0
+// 		background: #96c824
+// 		&:before
+// 			content: ''
+// 			position: absolute
+// 			top: 50%
+// 			left: 50%
+// 			transform: translate(-50%,-50%)
+// 			@include sprite($arrow-right-small)
+
+.news
+	margin-top: 44px
+	&__title
+		margin-bottom: 17px
+		font: 700 32px "houschka"
+		color: $title
+		text-transform: uppercase
+
+.news-block
+	+clearfix
+
+.news-item
+	position: relative
+	float: left
+	width: 412px
+	height: 205px
+	margin-right: 22px
+	padding: 17px 19px 18px
+	border-radius: 3px
+	box-shadow: 0 3px 0 #949db5
+	background: #e8e8e8
+	&:nth-child(even)
+		margin-right: 0
+	&__date
+		margin-bottom: 8px
+		font-size: 14px
+		color: #585858
+	&__title
+		display: block
+		margin-bottom: 11px
+		font-size: 16px
+		font-weight: 700
+		color: #051529
+	&__text
+		height: 62px
+		overflow: hidden
+		font-size: 12px
+		color: #000
+	&__link
+		position: absolute
+		display: inline-block
+		bottom: 18px
+		left: 19px
+		font-size: 14px
+		color: #000
+		text-decoration: underline
+
+.news-link
+	display: inline-block
+	margin-top: 39px
+	font: 18px "robotocnd"
+	color: #282828
+	text-decoration: underline
+
+.about
+	position: relative
+	background: rgba(150,200,36, .91)
+	+clearfix
+	&-descr
+		position: relative
+		padding: 24px 437px 12px 0
+		&__title
+			margin-bottom: 12px
+			font: 700 32px "houschka"
+			color: #fff
+			text-transform: uppercase
+		&__text
+			font-size: 15px
+			color: #fff
+			line-height: 20px
+			text-align: justify
+			overflow: hidden
+			p
+				margin-bottom: 19px
+	&__pict
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 377px
+		height: 383px
+		overflow: hidden
+		img
+			display: block
+			width: 100%
+
+.footer
+	padding: 35px 0 14px
+	background: #3d6b01
+
+.footer-block
+	display: inline-block
+	margin-right: 80px
+	vertical-align: top
+	&__logo
+		display: block
+		width: 211px
+		margin-bottom: 21px
+		img
+			display: block
+			width: 100%
+	&__location
+		margin-bottom: 9px
+		font-size: 16px
+		color: #fff
+	&__link
+		display: inline-block
+		margin-bottom: 17px
+		font-size: 14px
+		color: #fff
+		border-bottom: 1px dashed #fff
+		&:hover
+			border-bottom-color: transparent
+	&__phone
+		margin-bottom: 19px
+		color: #fff
+	&__tel
+		display: inline-block
+		font-size: 16px
+		color: #fff
+	&__mail
+		display: inline-block
+		margin-bottom: 24px
+		font-size: 16px
+		color: #fff
+
+.social-block
+	margin-bottom: 34px
+	span
+		display: inline-block
+		margin-right: 12px
+		font-size: 16px
+		color: #fff
+	&__link
+		display: inline-block
+		position: relative
+		margin-right: 2px
+		vertical-align: middle
+		font-size: 0
+		&--inst
+			@include sprite($inst)
+		&--fb
+			@include sprite($fb)
+		&--vk
+			@include sprite($vk)
+
+.link__letter
+	display: block
+	width: 261px
+	height: 39px
+	font-size: 18px
+	color: #fff
+	line-height: 37px
+	text-align: center
+	border: 1px solid white
+	border-radius: 3px
+	&:hover
+		color: $title
+		background: #fff
+
+.footer-menu
+	display: inline-block
+	width: 16%
+	padding-right: 20px
+	vertical-align: top
+	&__title
+		margin-bottom: 6px
+		font: 700 19px "robotocnd"
+		color: #fff
+		text-transform: uppercase
+		&--low
+			text-transform: none
+		&--up
+			font-size: 22px
+	// &--about
+	// 	margin-right: 52px
+	// &--catalog
+	// 	margin-right: 42px
+	// &--order
+	// 	margin-right: 73px
+
+.footer-nav
+	li
+		display: block
+		margin-bottom: 8px
+		a
+			display: block
+			font-size: 12px
+			color: #fff
+			word-break: break-word
+			text-transform: uppercase
+			&:hover
+				text-decoration: underline
+
+.add-cart
+	position: relative
+	width: 555px
+	height: 111px
+	margin: 0 auto
+	padding: 33px
+	text-align: center
+	background: #fff
+	.mfp-close
+		display: none
+	&:before
+		content: ''
+		position: absolute
+		top: -14px
+		left: 0
+		right: 0
+		margin: 0 auto
+		@include sprite($check-2)
+	&__title
+		font: 500 40px "proximanovaexcn"
+		color: #304600
+
+@import "catalog.sass"
+@import "tovar.sass"
+@import "cart.sass"
+@import "gallery.sass"

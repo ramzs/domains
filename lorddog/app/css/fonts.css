@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "robotoslab";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoSlabRegular/RobotoSlabRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlabRegular/RobotoSlabRegular.woff") format("woff"), url("../fonts/RobotoSlabRegular/RobotoSlabRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "robotoslab";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlabBold/RobotoSlabBold.woff") format("woff"), url("../fonts/RobotoSlabBold/RobotoSlabBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "opensans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"), url("../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "yesevaone";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/YesevaOneRegular/YesevaOneRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/YesevaOneRegular/YesevaOneRegular.woff") format("woff"), url("../fonts/YesevaOneRegular/YesevaOneRegular.ttf") format("truetype");
+}

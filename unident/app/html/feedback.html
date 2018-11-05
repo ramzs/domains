@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-inner-tmp.html')
+
+	<div class="wrapper clearfix">
+		<div class="container">
+			<div class="content content--full clearfix">
+
+				<div class="breadcrumb breadcrumb--inner">
+					<ul class="breadcrumb-list">
+						<li><a href="#">Главная</a></li>
+						<li>Отзывы</li>
+					</ul>
+				</div>
+				<h2 class="section-title section-title--feedback">Отзывы наших пациентов</h2>
+				<div class="feedback clearfix">
+
+					<div class="feedback-item feedback-item--inner wow fadeIn" data-wow-delay="0.5s">
+						<div class="feedback-item__text">
+							<p>28.11.2015 пришла с мамой Тихоновой Марией Семеновной на лечение, а потом и на протезирование зубов.<br>Мама 27.11.1938 г.р., ходить ей было очень не легко, но благодаря отличному отношению персонала переносила все тяготы с улыбкой.<br>Все очень добрые отзывчивые и терпеливые особенно это касается пожилых людей. Очень хочется отметить Диану.<br>Всегда тепло встретит, улыбается, поговорит и успокоит.<br>Наилучших пожеланий в вашей работе.</p>
+						</div>
+						<div class="feedback-item__name">Грибкова Татьяна Ивановна г.Днепр</div>
+					</div>
+
+					<div class="feedback-item feedback-item--inner wow fadeIn" data-wow-delay="0.6s">
+						<div class="feedback-item__text">
+							<p>Долгое время не могла решиться заняться центральными зубами, боялась что это будет сильно отличаться от своих и т.д.<br>Сегодня хочу сказать спасибо доктору Бабаяну Давиду Вячеславовичу - Вы поняли что я хотела, с пониманием отнеслись к моим капризам, и подарили мне именно ту улыбку, какую я хотела. А главное, спасибо за вашу доброту и тактичность.</p>
+						</div>
+						<div class="feedback-item__name">Пахмутова Тамила г.Саратов</div>
+					</div>
+
+					<div class="feedback-item feedback-item--inner wow fadeIn" data-wow-delay="0.7s">
+						<div class="feedback-item__text">
+							<p>Обратилась в центр с вылетевшей пломбой и отколовшимся зубом, очень переживала, удастся ли сохранить зуб.<br>Доктор Новачевский Александр Владимирович провел процедуру быстро, безболезненно (чего очень боялась), зуб сохранил и восстановил!<br>Все обошлось в 4 000 рублей. Спасибо большое, Александр Владимирович!</p>
+						</div>
+						<div class="feedback-item__name">Вавилин Борис г.Иванова</div>
+					</div>
+
+					<div class="feedback-item feedback-item--inner wow fadeIn" data-wow-delay="0.8s">
+						<div class="feedback-item__text">
+							<p>Хочу еще раз поблагодарить от всей души Александра Михайловича! Прекрасный врач. Спас мой зуб) Очень аккуратно и безболезненно работает! Золотые руки! Я долго выбирала стоматологию, ни капли не жалею, что обратилась именно к вам!<br>Со спокойной душой могу доверить свои зубы Александру Михайловичу! Советую всем, кто очень требовательно относится к стоматологам, останетесь довольны. Буквально вчера я окончила лечение, теперь мой зуб как новенький!)</p>
+						</div>
+						<div class="feedback-item__name">Вавилин Борис г.Иванова</div>
+					</div>
+
+					<div class="feedback-item feedback-item--inner wow fadeIn" data-wow-delay="0.9s">
+						<div class="feedback-item__text">
+							<p>Долго искала клинику в сети. Выбрала Дантист на братиславской и не жалею. Находятся близко к метро,цены не кусаются, предложили много разных вариантов лечения, я выбрала самый подходящий для меня. Сделали все без боли, мои коронки из циркония не отличить от натуральных зубов. спасибо всему персоналу клиники за бережное отношение.</p>
+						</div>
+						<div class="feedback-item__name">Висконцев Игорь г.Сератоним</div>
+					</div>
+
+				</div>
+
+				<div class="pagination">
+					<a href="#" class="pagination-nav pagination-nav--left">&nbsp;</a>
+					<ul class="pagination-list">
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+					</ul>
+					<a href="#" class="pagination-nav pagination-nav--right">&nbsp;</a>
+				</div>
+			</div>
+
+			<div class="feedback-form">
+				<div class="feedback-form__title">Оставить отзыв</div>
+				<form action="#">
+					<fieldset class="feedback-form__in">
+						<input type="text" placeholder="Имя" class="wow fadeInUp" data-wow-delay="0.5s">
+						<input type="text" placeholder="Телефон" class="wow fadeInUp" data-wow-delay="0.8s">
+					</fieldset>
+					<textarea cols="30" rows="10" placeholder="Текст" class="wow fadeIn" data-wow-delay="1s"></textarea>
+					<button class="btn btn--feed wow fadeIn" data-wow-delay="1.2s">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

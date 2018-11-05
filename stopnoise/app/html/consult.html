@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+
+	@@include('./template/header-tmp.html')
+
+	<div class="content content__inner clearfix">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="#">Главная</a></li>
+				<li>Консультация</li>
+			</ul>
+			<div class="sidebar__left">
+				<div class="menu__service">
+					<h3 class="sidebar__title">Услуги</h3>
+					<ul class="service__list">
+						<li><a href="#">Консультация</a></li>
+						<li><a href="#">Проведение<br>аккустических замеров</a></li>
+						<li><a href="#">Шефмонтаж</a></li>
+						<li><a href="#">Монтаж звукоизоляции</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="main__center main__center-consult">
+				<div class="page__title page__title-consult">
+					<h2>Консультация</h2>
+				</div>
+
+				<div class="consult">
+					<p>Бесплатная консультация</p>
+					<p>Наши квалифицированные специалисты всегда готовы предоставить профессиональную консультацию по вопросам, связанным с акустикой помещений, звукоизоляцией и виброизоляцией.</p>
+					<p style="color: #d00000;">Для получения консультации звоните или оставьте онлайн-заявку.</p>
+					<p>В процессе консультации может потребоваться:</p>
+					<p>- Краткая информация о проблеме, с которой вы столкнулись<br>- Информация об объекте и его особенностях<br>- Размеры помещения (длина/ширина/высота)</p>
+					<p>- Краткая информация о проблеме, с которой вы столкнулись<br>- Информация об объекте и его особенностях<br>- Размеры помещения (длина/ширина/высота)</p>
+					<p>Для типичных проблем, связанных с шумоизоляцией, могут быть применены готовые решения, основанные на результатах лабораторных испытаний и опыте установки подобных систем, либо специалисты компании могут разработать индивидуальное решение по звукоизоляции и составить смету на используемые материалы. В отдельных случаях требуются специальные исследования и составление индивидуального проектного решения. Опыт и знания специалистов компании позволяют решать задачи любой сложности.</p>
+				</div>
+
+				<a href="#" class="link__form link__form-consult">Заявка на консультацию</a>
+
+				<div class="form__box form__box-consult">
+					<form action="#">
+						<input type="text" placeholder="Ваше имя:">
+						<input type="text" placeholder="Ваш номер телефона">
+						<textarea cols="30" rows="10" placeholder="Опишите вашу проблему"></textarea>
+						<button class="btn__send">Отправить</button>
+					</form>
+				</div>
+
+			</div>
+
+			<div class="sidebar__right">
+				<div class="sidebar__banner sidebar__banner-var2">
+					<div class="banner__title"><h4>Доставим товар в любую точку России в течение 3-5 дней*</h4></div>
+					<div class="banner__pict">
+						<img src="img/banner-pict.png" alt="">
+					</div>
+					<span class="banner__accent">
+						<p>*Сроки доставки зависят от того, в каком регионе вы находитесь</p>
+					</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

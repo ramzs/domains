@@ -1,0 +1,268 @@
+@import "vars"
+
+/*----------------Tovar page------------------*/
+.tovar
+	+clearfix
+	&-pict
+		float: left
+		width: 336px
+		height: 660px
+		padding: 34px 27px 34px
+		text-align: center
+		overflow: hidden
+		border: 1px solid #455a64
+		img
+			display: inline-block
+			max-width: 100%
+			height: 100%
+	&-features
+		position: relative
+		display: table
+		min-height: 660px
+		padding-left: 38px
+	&-available
+		position: relative
+		margin-bottom: 14px
+		padding-left: 26px
+		font: 500 16px "proximanovaexcn"
+		color: #000
+		text-transform: uppercase
+		&:before
+			content: ''
+			position: absolute
+			top: -1px
+			left: 0
+			@include sprite($check)
+	&-price
+		&__item
+			display: inline-block
+		&__title
+			margin-bottom: 6px
+			font: 14px "proximanovaexcn"
+			color: #000
+		&__in
+			position: relative
+			width: 145px
+			height: 40px
+			font: 700 20px "houschka"
+			color: #232323
+			line-height: 32px
+			text-align: center
+			cursor: pointer
+			border: 1px solid #b0bec5
+			border-radius: 5px
+			span
+				display: inline-block
+				margin-left: 5px
+				font-family: "ptroublesans"
+				font-weight: normal
+			&.active
+				border: 1px solid #96c824
+
+.btn
+	display: block
+	width: 166px
+	height: 36px
+	font: 500 24px/40px "proximanovaexcn"
+	color: #fff
+	text-align: center
+	text-transform: uppercase
+	outline: none
+	border-radius: 3px
+	box-shadow: 0 3px 0 #376100
+	background: #96c824
+	&--cart
+		float: right
+		margin-top: 23px
+
+.tooltip-complect
+	position: absolute
+	top: -10px
+	right: -8px
+	@include sprite($qst)
+	&:hover
+		&:after
+			content: ''
+			position: absolute
+			bottom: -40px
+			left: 0
+			right: 0
+			width: 30px
+			height: 50px
+
+.tooltip
+	display: none
+	position: absolute
+	top: 30px
+	right: -174px
+	width: 363px
+	padding: 8px 0 4px
+	cursor: default
+	z-index: 99
+	border: 1px solid #b0bec5
+	border-radius: 5px
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.35)
+	background: #fff
+	&:before
+		content: ''
+		position: absolute
+		top: -12px
+		left: 0
+		right: 0
+		margin: 0 auto
+		width: 19px
+		height: 12px
+		background: url(../img/arrow-tooltip.png) 0 0 no-repeat
+	&-list
+		li
+			display: block
+			padding: 4px 14px
+			line-height: 14px
+			text-align: left
+			span
+				display: inline-block
+				vertical-align: top
+				margin-left: 0
+				font: 14px "robotocnd"
+				color: #000
+		&__count
+			width: 42px
+		&__name
+			width: 205px
+	&-btn
+		margin-top: 3px
+		text-align: center
+		+clearfix
+
+.btn-change
+	display: inline-block
+	width: 113px
+	height: 24px
+	font: 14px/22px "robotocnd"
+	text-align: center
+	border: 1px solid #b0bec5
+	border-radius: 5px
+	&--fin
+		width: 110px
+	&:hover, &.active
+		border: 1px solid #96c824
+
+.change-size
+	margin: 24px 0 31px
+	+clearfix
+	&__title
+		margin-bottom: 11px
+		font: 500 20px "proximanovaexcn"
+		color: #000
+		text-transform: uppercase
+	&__item
+		float: left
+		width: 76px
+		height: 45px
+		margin-right: 3px
+		font: 15px/45px "robotocnd"
+		color: #000
+		text-align: center
+		text-transform: uppercase
+		border: 1px solid #c4c4c4
+		&:hover, &.active
+			background: #96c824
+		&:last-of-type
+			margin-right: 0
+
+.change-block
+	&--tovar
+		margin: 27px 0 0
+		&--var2
+			margin-bottom: 80px
+		.change-block__item
+			width: 83px
+			height: 48px
+			&:nth-of-type(5n)
+				margin-right: 0
+
+.tab-block
+	position: absolute
+	bottom: 0
+	left: 38px
+	right: 0
+	&__item
+		position: relative
+		display: inline-block
+		width: 222px
+		height: 54px
+		font: 700 20px/50px "robotocnd"
+		text-transform: uppercase
+		text-align: center
+		border: 1px solid #96c824
+		border-radius: 5px
+		&:last-child
+			float: right
+		&:hover, &.active
+			color: #fff
+			background-color: #96c824
+		&.active
+			&:after
+				content: ''
+				position: absolute
+				bottom: -12px
+				left: 0
+				right: 0
+				margin: 0 auto
+				+arr(20, 12, #96c824, b)
+
+.tab-content
+	display: none
+	margin-top: 50px
+	+clearfix
+
+.descr-list
+	li
+		padding: 11px 0
+		font: 20px "robotocnd"
+		color: #000
+		text-transform: uppercase
+		&:nth-child(odd)
+			background: #eceff1
+		span
+			display: inline-block
+			vertical-align: top
+	&__name
+		width: 34.2%
+		padding-left: 22px
+	&__main
+		width: 65.2%
+		color: #505050
+
+.complect-item
+	float: left
+	width: 160px
+	height: 220px
+	margin-right: 12px
+	text-align: center
+	border: 1px solid #37474f
+	&:nth-child(5n)
+		margin-right: 0
+	&__pict
+		height: 134px
+		padding: 28px 0 20px
+		img
+			display: inline-block
+			width: 100%
+	&__title
+		display: block
+		margin-bottom: 8px
+		padding: 0 15px
+		font: 16px "robotocnd"
+		color: #000
+		text-decoration: underline
+	&__price
+		padding: 0 15px
+		font: 700 16px "robotocnd"
+		color: #000
+
+.tovar-descr
+	margin: 51px 0 46px
+	font: 20px "robotocnd"
+	color: #000
+/*-------------------end----------------------*/

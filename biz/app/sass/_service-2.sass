@@ -1,0 +1,72 @@
+
+/*----------------Service-2 page-----------------*/
+.service-banner
+	float: left
+	width: 48%
+	margin: 0 30px 55px 0
+	padding: 28px 32px 22px
+	vertical-align: top
+	border: 1px solid #e6e6e6
+	border-radius: 10px
+	&:nth-of-type(even)
+		margin-right: 0
+	&:hover
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08)
+	&__title
+		margin-bottom: 25px
+		min-height: 48px
+		font-size: 17px
+		font-weight: 500
+		color: $second
+		line-height: 24px
+	&__price
+		position: relative
+		margin-bottom: 19px
+		padding: 0 0 13px 35px
+		font-size: 14px
+		font-weight: 300
+		border-bottom: 1px solid #e6e6e6
+		&:before
+			content: ''
+			position: absolute
+			top: -2px
+			left: 0
+			@include sprite($price)
+
+.second-title
+	display: block
+	margin: 48px 0 32px
+	font-size: 17px
+	font-weight: 500
+
+.accent
+	position: relative
+	margin-top: 55px
+	padding: 31px 68px 30px
+	overflow: hidden
+	border-radius: 10px
+	background: #eff0ed
+	+clearfix
+	&:before
+		content: ''
+		position: absolute
+		top: -15px
+		left: -15px
+		z-index: 0
+		@include sprite($quotes)
+	&__text
+		position: relative
+		display: block
+		font-size: 17px
+		font-weight: 500
+		line-height: 24px
+		color: $second
+		z-index: 1
+	&__name
+		float: right
+		margin-top: 20px
+		font-size: 14px
+		font-weight: 300
+		line-height: 21px
+		text-align: right
+/*--------------------end------------------------*/

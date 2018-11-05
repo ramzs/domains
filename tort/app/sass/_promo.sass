@@ -1,0 +1,118 @@
+/*-------------Promo page----------------*/
+.header_inner
+	&:after
+		display: none
+	.logo
+		background: #fff
+
+.page-top
+	padding: 7px 0 32px
+	.container
+		+clearfix
+
+.breadcrumb
+	float: left
+	margin: 0 0 30px 65px
+	text-align: left
+	&-list
+		li
+			position: relative
+			display: inline-block
+			margin-right: 8px
+			font-size: 12px
+			color: #9f9f9f
+			&:last-child
+				margin-right: 0
+			&:not(:last-child):after
+				content: '/'
+				position: absolute
+				top: 0
+				right: -9px
+				font-size: 12px
+				color: #7a576c
+			a
+				display: block
+				font-size: 12px
+				color: #7a576c
+
+.page-title
+	float: left
+	clear: both
+	font: 700 53px/48px "summer"
+	&_size
+		width: 80%
+	&_center
+		float: none
+		display: block
+		text-align: center
+
+.content
+	position: relative
+	margin-bottom: -16px
+	padding: 60px 0 0
+	background: #fcf7d3
+	.container
+		+clearfix
+	&:after
+		content: ''
+		position: absolute
+		bottom: -16px
+		left: 0
+		right: 0
+		width: 100%
+		height: 16px
+		background: url(../img/wave-why.png) repeat-x
+
+.card-ws
+	float: left
+	width: 50%
+	margin-bottom: 122px
+	padding: 0 100px
+	text-align: center
+	.pict-stick
+		&__count
+			top: 28px
+	&__title
+		display: block
+		margin: 18px 0 23px
+		font: 700 48px/33px "summer"
+		color: $title-card
+	&__text
+		max-height: 66px
+		margin-bottom: 18px
+		overflow: hidden
+		font-size: 15px
+		color: $gray
+		line-height: 22px
+	&__price
+		font-size: 20px
+		font-weight: 900
+		&_del
+			margin-bottom: 2px
+			font-size: 17px
+			color: #f09
+			text-decoration: line-through
+	.btn
+		margin-top: 33px
+
+.btn_line3
+	&:before
+		background: url(../img/line-btn3.png) 0 0 no-repeat
+	&:after
+		background: url(../img/line-btn3.png) 0 0 no-repeat
+
+.page-about
+	text-align: center
+	&_p1
+		padding: 73px 0 82px
+	&__title
+		display: block
+		margin-bottom: 20px
+		font: 700 53px "summer"
+	&__text
+		width: 88%
+		margin: 0 auto
+		font-size: 15px
+		line-height: 26px
+		color: $gray
+/*-----------------end--------------------*/

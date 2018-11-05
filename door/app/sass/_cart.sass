@@ -1,0 +1,215 @@
+@import "vars"
+
+/*----------------Cart page------------------*/
+.content--cart
+	padding-bottom: 72px
+
+.block-table
+	display: table
+	width: 100%
+	margin-top: 27px
+	border-collapse: separate
+	border-spacing: 0 7px
+	&__row
+		display: table-row
+	&__cell
+		display: table-cell
+		vertical-align: top
+		&--head
+			padding: 3px 0
+			font: 16px "proximanovacnd"
+			color: #000
+			text-transform: uppercase
+			&:first-child
+				padding-left: 28px
+		&--body
+			padding: 10px 0
+			border-top: 1px solid #607d8b
+			border-bottom: 1px solid #607d8b
+			&:first-child
+				border-left: 1px solid #607d8b
+			&:last-child
+				border-right: 1px solid #607d8b
+		&--pict
+			width: 16.8%
+			padding-left: 22px
+		&--title
+			width: 42%
+			padding-top: 19px
+		&--count
+			width: 11%
+			padding-top: 16px
+		&--price
+			width: 11%
+			padding-top: 22px
+		&--total
+			padding-top: 22px
+
+.cart-pict
+	width: 114px
+	height: 114px
+	img
+		display: block
+		width: 100%
+
+.cart-title
+	display: block
+	font: 18px "proximanovacnd"
+	color: #0057b1
+
+.cart-list
+	margin-top: 15px
+	li
+		display: block
+		font: 16px "proximanovacnd"
+		color: #000
+		span
+			margin-right: 3px
+
+.cart-name
+	font: 18px "proximanovacnd"
+	color: #000
+
+.cart-price
+	font: 500 18px "proximanovacnd"
+	color: #000
+
+.cart-count
+	&.noactive
+		.jq-number__spin
+			&.minus
+				background: #dedede
+	.jq-number
+		display: block
+		width: 88px
+		height: 37px
+		padding-right: 0
+		text-align: center
+		&__field
+			width: 50px
+			height: 37px
+			margin: 0 auto
+			border: 1px solid #c4c4c4
+			border-radius: 0
+			box-shadow: none
+			input
+				padding: 6px 0
+				font: 18px "proximanovacnd"
+				color: #000
+				text-align: center
+		&__spin
+			width: 17px
+			height: 37px
+			border: none
+			border-radius: 0
+			box-shadow: none
+			background: #3d6b01
+			&:active, &:hover
+				box-shadow: none
+				background: #dedede
+			&.minus
+				left: 0
+				&:after
+					top: 13px
+					left: 6px
+					+arr(5,8,#fff,l)
+				&:hover
+					border-color: #000
+					&:after
+						border-top-color: transparent
+			&.plus
+				&:after
+					top: 13px
+					left: 6px
+					+arr(5,8,#fff,r)
+				&:hover
+					border-color: #000
+					&:after
+						border-bottom-color: transparent
+.cart-total
+	display: inline-block
+	margin-right: 34px
+	vertical-align: middle
+	font: 500 18px "proximanovacnd"
+	color: #000
+
+.update-link
+	display: inline-block
+	vertical-align: middle
+	font-size: 0
+	@include sprite($refresh)
+
+.remove-link
+	display: inline-block
+	font-size: 0
+	vertical-align: middle
+	@include sprite($close)
+
+.total-block
+	float: right
+	margin: 20px 0 17px
+	clear: both
+	+clearfix
+	&__sum
+		padding: 9px 0
+		font: 22px "robotocnd"
+		color: #252525
+		border-top: 1px solid rgba(12,12,12, .13)
+		span
+			display: inline-block
+			width: 70px
+
+.form-order
+	padding: 42px 0 0
+	clear: both
+	border-top: 1px solid #a0a0a0
+	&__title
+		margin-bottom: 38px
+		font: 700 32px "houschka"
+		color: #000
+		text-transform: uppercase
+	fieldset
+		float: left
+		margin: 0
+		padding: 0
+		border: none
+		&:first-child
+			margin-right: 40px
+	label
+		display: block
+		width: 550px
+		margin-bottom: 20px
+		span
+			display: block
+			margin-bottom: 8px
+			font: 20px "proximanovacnd"
+			color: #000
+			text-transform: uppercase
+			i
+				display: inline-block
+				margin-right: 3px
+				font-style: normal
+				color: red
+	input
+		width: 100%
+		height: 49px
+		padding-left: 10px
+		outline: none
+		border: 1px solid #c4c4c4
+		border-radius: 5px
+	textarea
+		display: block
+		width: 552px
+		height: 119px
+		padding: 10px 0 0 10px
+		resize: none
+		outline: none
+		border: 1px solid #c4c4c4
+		border-radius: 5px
+
+.btn--order
+	width: 200px
+	margin-top: 25px
+	border: none
+	cursor: pointer
+/*-------------------end----------------------*/

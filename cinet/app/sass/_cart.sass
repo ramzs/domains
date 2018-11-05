@@ -1,0 +1,267 @@
+/*--------------Cart page--------------------*/
+.cart-page
+	padding: 5px 0 105px
+
+.cart-main
+	margin-bottom: 50px
+	.tb
+		position: relative
+		display: table
+		width: 100%
+		//border-collapse: collapse
+		border-collapse: separate
+		border-spacing: 0 7px
+		&-row
+			display: table-row
+			background: #fff
+			&_head
+				background: none
+		&-cell
+			position: relative
+			display: table-cell
+			vertical-align: middle
+			border: 1px solid #cdcdcd
+			&:not(:last-child)
+				border-right: none
+			&:not(:first-child)
+				border-left: none
+			&_head
+				font-size: 13px
+				color: $gray
+				border: none
+				&:first-child
+					padding-left: 28px
+			&_body
+				padding: 35px 0
+				font-size: 17px
+			&_pict
+				width: 13%
+				text-align: center
+				img
+					max-width: 72px
+			&_name
+				width: 38%
+				padding-right: 25px
+				color: #555555
+				a
+					display: block
+					margin-bottom: 12px
+					font-size: 17px
+					color: $blue
+					text-decoration: underline
+					&:hover
+						text-decoration: none
+			&_price
+				width: 14.5%
+			&_count
+				width: 16%
+			&_total
+				span
+					display: none
+		.del-link
+			position: absolute
+			top: 10px
+			right: 10px
+			font-size: 0
+			@include sprite($delete)
+		.jq-number
+			display: inline-block
+			width: 102px
+			height: 40px
+			margin-right: 14px
+			padding-right: 0
+			vertical-align: middle
+			&__field
+				width: 48px
+				height: 40px
+				margin: 0 auto
+				border: none
+				border-radius: 0
+				box-shadow: none
+				border: 1px solid #989898
+				input
+					height: 100%
+					padding: 0 0 0 10px
+					font: 700 20px $default-font
+					color: #000
+					text-align: left
+			&__spin
+				width: 25px
+				height: 40px
+				border-radius: 0
+				border: 1px solid #007eff
+				background: #fff
+				&.minus
+					left: 0
+					top: 0
+					&:after
+						content: '-'
+						top: 50%
+						left: 50%
+						width: auto
+						height: auto
+						font-size: 20px
+						font-weight: 700
+						transform: translate(-50%,-50%)
+						border: none
+				&.plus
+					&:after
+						content: '+'
+						top: 50%
+						left: 50%
+						width: auto
+						height: auto
+						font-size: 20px
+						font-weight: 700
+						transform: translate(-50%,-50%)
+						border: none
+
+.order
+	&__title
+		margin-bottom: 19px
+		font-size: 25px
+	&-block
+		padding: 28px 0 54px 25px
+		border: 1px solid #c9c9c9
+		background: #ececec
+		&__title
+				display: inline-block
+				margin-right: 32px
+				font-size: 17px
+				font-weight: 700
+	&-checkbox
+		margin-bottom: 36px
+		label
+			margin-right: 35px
+			font-size: 17px
+		.jq-radio
+			width: 19px
+			height: 19px
+			margin-right: 6px
+			border: 1px solid $blue
+			box-shadow: none
+			background: #fff
+			&.checked
+				.jq-radio__div
+					width: 7px
+					height: 7px
+					margin: 5px 0 0 5px
+					background: #000
+
+.order-block
+	.jq-selectbox
+		margin-right: 17px
+		&__select
+			height: 40px
+			padding: 0 45px 0 17px
+			font: 17px $default-font
+			border: 1px solid $blue
+			border-radius: 0
+			box-shadow: none
+			background: #fff
+			&:hover
+				background: #fff
+			&-text
+				padding: 7px 0
+		&.focused
+			.jq-selectbox__select
+				border: 1px solid $blue
+		&__trigger
+			border-left: none
+			&-arrow
+				top: 16px
+				border: none
+				@include sprite($arrow-down)
+		&:hover
+			.jq-selectbox__trigger-arrow
+		&__dropdown
+			font: 17px $default-font
+			border-radius: 0
+			border: none
+		ul
+		li
+			&:hover
+				background: $blue
+			&.selected
+				background: $blue
+
+.order-date
+	margin-bottom: 18px
+	.order-block__title
+		display: block
+		margin-bottom: 5px
+	span
+		margin-right: 5px
+		font-size: 17px
+	&__day
+		max-width: 302px
+		width: 100%
+	&__time
+		max-width: 102px
+		width: 100%
+
+.order-location
+	margin-bottom: 22px
+	+clearfix
+	.order-block__title
+		display: block
+		margin-bottom: 12px
+	span
+		display: block
+		margin-bottom: 5px
+		font-size: 17px
+	label
+		display: inline-block
+		margin-right: 10px
+		width: 100%
+	.jq-selectbox
+		width: 100%
+	&__city
+		max-width: 302px
+		margin-bottom: 17px
+	&__street
+		max-width: 302px
+	&__house
+		max-width: 146px
+	&__1, &__2, &__3, &__4, &__5
+		max-width: 145px
+		width: 100%
+
+.order-contact
+	max-width: 625px
+	width: 100%
+	+clearfix
+	.order-block__title
+		display: block
+		margin-bottom: 12px
+	form
+		width: 100%
+	label
+		float: left
+		width: 50%
+		margin-bottom: 14px
+		padding-right: 10px
+		font-size: 17px
+	input
+		display: block
+		width: 100%
+		height: 40px
+		margin-top: 5px
+		padding-left: 18px
+		font-size: 17px
+		outline: none
+		border: 1px solid $blue
+	label.order-contact__message
+		width: 100%
+		margin-bottom: 34px
+	textarea
+		width: 100%
+		margin-top: 5px
+		padding: 15px 0 0 18px
+		font-size: 17px
+		outline: none
+		border: 1px solid $blue
+
+.btn_order
+	width: 160px
+/*------------------end------------------------*/

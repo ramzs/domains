@@ -1,0 +1,88 @@
+.footer
+	padding: 32px 0 0
+	background: $darkblue
+	.container
+		+clearfix
+	&-nav
+		display: inline-block
+		margin: 9px 0 0 55px
+		li
+			display: inline-block
+			margin-right: 10px
+			&:last-child
+				margin-right: 0
+		a
+			display: block
+			font-size: 15px
+			color: #fff
+			&:hover
+				color: $accent
+	&-contact
+		float: right
+		margin-right: 70px
+		&__top
+			margin-bottom: 14px
+			.phone
+				color: #fff
+			.mail
+				margin-right: 0
+				color: #fff
+		&__bottom
+			padding-left: 27px
+			.location
+				color: $lightblue
+			.work
+				color: $lightblue
+	&-bottom
+		margin-top: 26px
+		text-align: center
+		background: #000
+
+.copyright
+	display: inline-block
+	font-size: 13px
+	line-height: 36px
+	color: $lightgray
+
+
+/*---------Обратный звонок-------------*/
+.mfp-bg
+	background-color: transparent !important
+
+.mfp-container
+	padding: 0 !important
+
+.callback-form
+	position: relative
+	padding: 82px 0 54px
+	box-shadow: 0 5px 16px rgba(0, 0, 0, 0.35)
+	background: #fff
+	.form-wrap
+		width: 227px
+		margin: 0 auto
+	&__title
+		display: block
+		margin-bottom: 24px
+		font: 800 25px $second-font
+	input
+		display: block
+		width: 227px
+		height: 54px
+		margin-bottom: 9px
+		padding-left: 18px
+		font-size: 17px
+		outline: none
+		border: 1px solid #007eff
+	.btn_modform
+		width: 160px
+		margin-top: 25px
+	&__accent
+		margin-top: 24px
+		font-size: 15px
+		color: #a2a1a1
+	.mfp-close
+		top: 25px
+		right: 25px
+		font-size: 0
+		@include sprite($close)
+/*---------------конец-------------------*/

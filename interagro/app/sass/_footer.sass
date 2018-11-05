@@ -1,0 +1,134 @@
+.footer
+	padding: 42px 0 21px
+	border-top: 1px solid #fff
+	background: #062f12
+
+.scroll-top
+	position: absolute
+	top: -81px
+	right: 130px
+	width: 130px
+	height: 39px
+	font-size: 16px
+	font-weight: 700
+	line-height: 39px
+	text-align: center
+	cursor: pointer
+	border-radius: 5px 5px 0px 0px
+	background: $accent
+	i
+		position: relative
+		display: inline-block
+		top: -2px
+		margin-right: 7px
+		@include sprite($arrow-down)
+		transform: rotate(180deg)
+
+.form-block
+	float: left
+	width: 62%
+	+clearfix
+	&__title
+		margin-bottom: 18px
+		font-size: 18px
+		font-weight: 700
+		color: #fff
+	fieldset
+		float: left
+		width: 338px
+		margin: 0 7px 0 0
+		padding: 0
+		border: none
+	input
+		display: block
+		width: 100%
+		height: 47px
+		margin-bottom: 7px
+		padding-left: 25px
+		font-size: 16px
+		outline: none
+		border: 1px solid #f7eed2
+		border-radius: 2px
+		background: #fffaeb
+		&:last-child
+			margin-bottom: 0
+	textarea
+		float: left
+		max-width: 350px
+		width: 100%
+		height: 101px
+		padding: 10px 0 0 25px
+		font-size: 16px
+		outline: none
+		border: 1px solid #f7eed2
+		border-radius: 2px
+		background: #fffaeb
+
+.btn-form
+	float: left
+	width: 142px
+	margin-top: 20px
+	clear: both
+
+.form-message
+	display: inline-block
+	vertical-align: middle
+	margin: 20px 0 0 10px
+	font-size: 15px
+	font-weight: 300
+	color: #5d7968
+
+.footer-right
+	float: left
+	width: 38%
+	padding-left: 35px
+	+clearfix
+
+.footer-menu
+	display: inline-block
+	li
+		display: block
+		margin-bottom: 11px
+		a
+			display: block
+			padding: 5px 0
+			font-size: 16px
+			font-weight: 300
+			color: #fff
+			&:hover
+				color: $accent
+				text-decoration: underline
+
+.footer-contact
+	float: right
+	&__phone
+		display: block
+		margin-bottom: 13px
+		font-size: 30px
+		color: #fff
+		&:hover
+			color: #fff
+	&__location
+		margin-bottom: 35px
+		font-size: 16px
+		color: #fff
+	&__mail
+		display: block
+		font-size: 16px
+		color: #fff
+		i
+			display: inline-block
+			margin-right: 5px
+			@include sprite($mail)
+		&:hover
+			color: #fff
+
+.copyright
+	float: right
+	width: 38%
+	margin-top: 34px
+	padding-left: 35px
+	clear: both
+	font-size: 15px
+	font-weight: 300
+	color: #5d7968

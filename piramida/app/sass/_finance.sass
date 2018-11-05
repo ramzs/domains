@@ -1,0 +1,106 @@
+@import "vars"
+
+/*------------------Finance page---------------*/
+.finance
+	margin-bottom: 3px
+	padding: 28px 38px 26px
+	border-radius: 5px
+	background: #f4f4f4
+	+clearfix
+	&__title
+		margin-bottom: 15px
+		font: 700 25px "ptsansnarrow"
+	&-block
+		display: inline-block
+		&--balance
+			margin-right: 54px
+		&--total
+			margin-right: 78px
+		&__title
+			margin-bottom: 2px
+			font: 700 20px "ptsansnarrow"
+			color: #0154b4
+		&__count
+			font-size: 29px
+			&--balance
+				font-weight: 700
+				color: #c41b8c
+
+.btn--finance
+	float: right
+	width: 246px
+	height: 53px
+	margin-top: 9px
+	padding-left: 54px
+	font-size: 20px
+	line-height: 50px
+	text-shadow: 0 1px 1px rgba(19, 49, 0, 0.39)
+	border-radius: 50px
+	&:before
+		content: ''
+		position: absolute
+		top: 10px
+		left: 38px
+		@include sprite($rub)
+
+.finance-history
+	margin-bottom: 3px
+	padding: 30px 0 37px
+	border-radius: 5px
+	background: #f4f4f4
+	&__title
+		margin-bottom: 20px
+		padding: 0 38px
+		font: 700 20px "ptsansnarrow"
+		color: #0154b4
+
+.finance-table
+	display: table
+	width: 100%
+	border-collapse: collapse
+
+.finance-row
+	display: table-row
+	&--head
+		border-bottom: 1px solid #232323
+	&--body
+		height: 57px
+		border-bottom: 1px solid #232323
+
+.finance-cell
+	display: table-cell
+	vertical-align: middle
+	&:first-child
+		padding-left: 38px
+	&:last-child
+			padding-right: 38px
+	&--head
+		padding-bottom: 3px
+		font-size: 15px
+		color: #6e6e6e
+	&--body
+		font-size: 15px
+		font-weight: 700
+		span
+			display: none
+	&--date
+		width: 26%
+	&--total
+		width: 22%
+	&--event
+		width: 21.5%
+		color: #38ab00
+
+.finance-bottom
+	margin-bottom: 20px
+	padding: 37px 38px 35px
+	text-align: center
+	border-radius: 5px
+	background: #f4f4f4
+	&__title
+		display: inline-block
+		margin-right: 25px
+		vertical-align: middle
+		font: 700 20px "ptsansnarrow"
+		color: #0154b4
+/*----------------------end---------------------*/

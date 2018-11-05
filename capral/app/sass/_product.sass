@@ -1,0 +1,161 @@
+@import "vars"
+
+/*------------Product page-----------------*/
+.product
+	margin-top: 11px
+	&__title
+		margin-bottom: 26px
+		font-size: 24px
+		font-weight: 700
+
+.product-pict
+	float: left
+	width: 282px
+	&__main
+		position: relative
+		height: 294px
+		padding: 15px
+		border: 1px solid #c8caca
+		a
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			img
+				display: block
+				width: 100%
+
+.product-thumb
+	margin-top: 16px
+	&__item
+		position: relative
+		float: left
+		width: 22%
+		height: 61px
+		margin-right: 11px
+		padding: 5px
+		text-align: center
+		cursor: pointer
+		border: 1px solid #c8caca
+		&:nth-child(4n)
+			margin-right: 0
+		img
+			display: inline-block
+			height: 100%
+
+.product-descr
+	display: table
+	padding-left: 25px
+	&__price
+		display: inline-block
+		width: 148px
+		height: 40px
+		font-size: 24px
+		font-weight: 700
+		color: #d01a1d
+		text-align: center
+		line-height: 40px
+		background: #f9f6b3
+	&__text
+		margin-top: 30px
+		font-size: 14px
+		line-height: 24px
+
+.product-list
+	margin-top: 32px
+	li
+		display: table
+		width: 100%
+		height: 25px
+		font-size: 18px
+	&__title
+		display: table-cell
+		width: 205px
+		max-width: 100%
+		vertical-align: middle
+		color: #000
+		border-bottom: 2px dotted $sec-color
+	&__descr
+		position: relative
+		display: table-cell
+		left: 5px
+		margin-left: 5px
+		vertical-align: middle
+		color: $sec-color
+		border-bottom: 2px dotted $sec-color
+
+.btn-onclick
+	position: relative
+	display: inline-block
+	width: 203px
+	height: 46px
+	margin-top: 32px
+	font: 700 14px "OpenSans"
+	color: #fff
+	line-height: 46px
+	text-align: center
+	text-shadow: 0.5px 0.9px 0 rgba(162, 73, 6, 0.75)
+	background-color: #ff8e13
+	border-radius: 5px
+	span
+		position: relative
+		display: inline-block
+		width: 24px
+		height: 24px
+		margin-right: 25px
+		font-size: 18px
+		font-weight: 700
+		color: #ff8e13
+		line-height: 23px
+		text-align: center
+		z-index: 2
+		border-radius: 50%
+		background: #fff
+	&:before, &:after
+		content: ' '
+		position: absolute
+		top: 10px
+		width: 24px
+		height: 24px
+		border-radius: 50%
+	&:before
+		left: 25px
+		z-index: 1
+		background: #ff8e13
+	&:after
+		left: 33px
+		z-index: 0
+		background: #fff
+
+.complect
+	margin-top: 54px
+	&__title
+		margin-bottom: 29px
+		font: 700 20px "OpenSans"
+	&-item
+		display: table
+		width: 100%
+		margin-bottom: 22px
+		padding: 17px 13px 35px
+		border: 1px solid #b1b4b4
+		&--info
+			padding: 17px 24px 35px
+			font: 14px "OpenSans"
+			span
+				display: block
+				margin-top: 33px
+		&__pict
+			display: table-cell
+			width: 125px
+			vertical-align: middle
+			overflow: hidden
+			text-align: center
+			img
+				display: inline-block
+				height: 100%
+		&__descr
+			display: table-cell
+			padding-left: 14px
+			vertical-align: middle
+			font: 12px/22px "OpenSans"
+/*----------------end----------------------*/

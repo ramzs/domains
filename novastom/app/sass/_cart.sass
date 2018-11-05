@@ -1,0 +1,293 @@
+@import "vars"
+
+/*----------------Cart page-------------*/
+.content--cart
+	padding-bottom: 51px
+
+.tb-cart
+	border-collapse: collapse
+	.tb-row
+		height: 98px
+		border-bottom: 1px solid #e8e1db
+		&--head
+			height: 50px
+			border-bottom: none
+			background: #f9f6f4
+	.tb-cell
+		vertical-align: middle
+		color: $br-color
+		&--head
+			font-weight: 800
+		&--pict
+			width: 112px
+			padding-left: 5px
+			img
+				width: 100px
+				height: 80px
+		&--name
+			font-weight: 800
+			span
+				display: block
+				margin-top: 3px
+				font-weight: normal
+				color: #a3a19f
+		&--price
+			padding-left: 20px
+		&--number
+			padding-left: 40px
+		&--total
+			padding-left: 20px
+		&--delete
+			padding-right: 18px
+	.jq-number
+		padding-right: 0
+		&__field
+			width: 36px
+			height: 30px
+			border: 1px solid #b3b3b3
+			border-radius: 3px 0 0 3px
+			input
+				padding: 4px 0
+				font: 300 18px "ubuntu"
+				text-align: center
+		&__spin
+			width: 15px
+			height: 15px
+			right: -14px
+			border: none
+			box-shadow: none
+			background: #9edbdf
+			&:hover
+				background: #6edbdf
+			&:after
+				width: auto
+				height: auto
+				border: none
+				background: #fff
+			&:before
+				content: ''
+				position: absolute
+			&.minus
+				border-radius: 0 0 3px 0
+				&:after
+					content: ''
+					top: 6px
+					left: 3px
+					width: 8px
+					height: 2px
+					border: none
+				&:before
+					top: 0
+					left: 2px
+					width: 11px
+					border-bottom: 1px dotted #fff
+			&.plus
+				border-radius: 0 3px 0 0
+				&:after
+					content: ''
+					top: 7px
+					left: 3px
+					width: 8px
+					height: 2px
+					border: none
+				&:before
+					top: 4px
+					left: 6px
+					width: 2px
+					height: 8px
+					background: #fff
+
+.cart-total
+	float: right
+	margin: 35px 109px 0 0
+	font-size: 24px
+	font-weight: 800
+	color: $br-color
+	span
+		display: inline-block
+		width: 240px
+		margin-right: 37px
+		font-weight: 300
+		text-align: right
+
+.order
+	&__title
+		margin-bottom: 27px
+		font-size: 30px
+		font-weight: 800
+		color: $br-color
+	&-form
+		float: left
+		&__title
+			margin-bottom: 9px
+			font-size: 24px
+			font-weight: 800
+			color: #7c726a
+		form
+			width: 500px
+		input
+			display: block
+			width: 100%
+			height: 50px
+			margin-bottom: 10px
+			padding-left: 20px
+			font-size: 18px
+			font-weight: 800
+			color: #a3a19f
+			border: 1px solid #ccc8c3
+			&::-webkit-input-placeholder
+				color: #a3a19f
+				font-weight: 800
+
+			&:-moz-placeholder
+				color: #a3a19f
+				font-weight: 800
+
+			&::-moz-placeholder
+				color: #a3a19f
+				font-weight: 800
+
+			&:-ms-input-placeholder
+				color: #a3a19f
+				font-weight: 800
+		textarea
+			display: block
+			width: 100%
+			height: 130px
+			padding: 10px 0 0 20px
+			font-size: 18px
+			font-weight: 800
+			color: #a3a19f
+			border: 1px solid #ccc8c3
+			&::-webkit-input-placeholder
+				color: #a3a19f
+				font-weight: 800
+
+			&:-moz-placeholder
+				color: #a3a19f
+				font-weight: 800
+
+			&::-moz-placeholder
+				color: #a3a19f
+				font-weight: 800
+
+			&:-ms-input-placeholder
+				color: #a3a19f
+				font-weight: 800
+
+.option-order
+	float: right
+	width: 600px
+	.jq-radio
+		width: 14px
+		height: 14px
+		margin: 0
+		outline: none
+		border: 1px solid #ccc8c3
+		background: none
+		box-shadow: none
+		&.focused
+			border: 1px solid #ccc8c3
+		&.checked
+			.jq-radio__div
+				width: 8px
+				height: 8px
+				margin: 2px 0 0 2px
+				background: #b3b3b3
+				box-shadow: none
+
+.delivery
+	&-form
+		margin-bottom: 24px
+		padding-bottom: 12px
+		border-bottom: 1px solid #e8e1db
+		&__title
+			margin-bottom: 9px
+			padding-bottom: 8px
+			font-size: 24px
+			font-weight: 800
+			color: #7c726a
+			border-bottom: 1px solid #e8e1db
+		.dv
+			position: relative
+			display: inline-block
+			vertical-align: top
+			text-align: center
+			&-ic
+				display: inline-block
+				vertical-align: middle
+				height: 55px
+				margin-left: 5px
+			span
+				display: block
+				font-size: 16px
+				color: $br-color
+			&.dv-1
+				margin: 0 55px 0 10px
+			&.dv-2
+				margin-right: 63px
+	&-descr
+		float: right
+		margin-right: 15px
+		&__title
+			margin-bottom: 12px
+			font-size: 18px
+			font-weight: 800
+			color: $br-color
+		&__text
+			font-size: 16px
+			color: $br-color
+			letter-spacing: -1px
+
+.pay-form
+	padding-bottom: 9px
+	border-bottom: 1px solid #e8e1db
+	&__title
+		margin-bottom: 9px
+		padding-bottom: 6px
+		font-size: 24px
+		font-weight: 800
+		color: #7c726a
+		text-align: left
+		border-bottom: 1px solid #e8e1db
+	.jq-radio
+		position: absolute !important
+		top: 40px
+		left: -7px
+	.pay
+		position: relative
+		display: inline-block
+		vertical-align: top
+		&-ic
+			display: inline-block
+			width: 130px
+			vertical-align: middle
+			text-align: center
+			svg
+				position: relative
+				height: 55px
+		span
+			display: block
+			font-size: 16px
+			color: $br-color
+		&.pay-1
+			margin-left: 45px
+		&.pay-2
+			margin-left: 70px
+			.jq-radio
+				left: -28px
+			svg
+				top: 8px
+		&.pay-3
+			margin-left: 65px
+			.jq-radio
+				left: -16px
+			svg
+				top: 8px
+
+.btn--order
+	width: 250px
+	margin: 30px auto 0
+	text-transform: none
+	border-radius: 4px
+/*-------------------end-----------------*/

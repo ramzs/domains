@@ -1,0 +1,79 @@
+@import "vars"
+
+/*-------------Partner page-----------------*/
+.page--partner
+	padding-bottom: 60px
+	.page__title
+		padding: 0 105px
+
+.tb-wrap
+	display: inline-block
+	margin: 11px 0 22px 87px
+	&:last-of-type
+		margin-bottom: 0
+	&__title
+		margin-bottom: 27px
+		font-size: 20px
+		text-align: center
+.tb
+	display: table
+	width: 1012px
+	border-collapse: separate
+	border-spacing: 0 7px
+	&-row
+		display: table-row
+		&--body
+			height: 51px
+	&-cell
+		display: table-cell
+		vertical-align: middle
+		font-size: 15px
+		&:first-child
+			padding-left: 22px
+		&--head
+			padding-bottom: 7px
+			color: #828282
+		&--body
+			background: #fff
+			&:first-child
+				border-radius: 5px 0 0 5px
+			&:last-child
+				padding-right: 22px
+				border-radius: 0 5px 5px 0
+		&--c
+			width: 24.6%
+		&--c2
+			padding-top: 17px
+			vertical-align: top
+		&--p
+			width: 19.3%
+		&--p2
+			padding: 11px 0
+			.tb-cell__partner
+				padding: 8px 0
+		&--l
+			width: 24.3%
+		&__city
+			position: relative
+			padding-left: 19px
+			&:before
+				content: ''
+				position: absolute
+				top: 2px
+				left: 0
+				@include sprite($location2)
+		&__partner
+			display: block
+			font-size: 15px
+			font-weight: 800
+			color: #1078af
+		&__link
+			display: inline-block
+			font-size: 15px
+			color: #1078af
+			text-decoration: underline
+		&__phone
+			p
+				display: inline-block
+				margin-right: 7px
+/*-----------------end-----------------------*/

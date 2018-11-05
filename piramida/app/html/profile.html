@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="wrapper">
+		<div class="content">
+			<div class="container">
+
+				<div class="sidebar">
+					<div class="profile-name">Здравствуйте,<span>Николай Семенович</span></div>
+					<div class="profile-nav">
+						<ul class="profile-list">
+							<li class="profile-list__item"><a href="#" class="profile-list__link active">Профиль</a></li>
+							<li class="profile-list__item"><a href="#" class="profile-list__link">Моя команда</a></li>
+							<li class="profile-list__item"><a href="#" class="profile-list__link">Финансы</a></li>
+							<li class="profile-list__item"><a href="#" class="profile-list__link">FAQ</a></li>
+						</ul>
+						<a href="#" class="profile-exit">Выйти</a>
+					</div>
+				</div>
+
+				<div class="main-content">
+					<div class="profile">
+						<div class="profile-title">Ваш профиль</div>
+
+						<div class="profile-block profile-block--contact">
+							<div class="profile-block__title">Ваши контактные данные</div>
+							<div class="profile-contact"><span>Имя:</span>Комаров Николай Семенович</div>
+							<div class="profile-contact"><span>Тел:</span>+7 (495) 234-56-78</div>
+							<div class="profile-contact"><span>E-mail:</span>komar@gmail.com</div>
+							<div class="profile-contact"><span>Ваш город:</span>г.Москва</div>
+						</div>
+
+						<div class="profile-block profile-block--ref">
+							<div class="profile-block__title">Ваша реферальная ссылка</div>
+							<a href="#" class="profile-reflink">https://www.behance.net/search/komarov/nikolay</a>
+						</div>
+
+						<div class="profile-block profile-block--status">
+							<div class="profile-block__title">Пару слов о себе (статус)</div>
+							<div class="profile-status">Постоянно играю в игры и не работаю</div>
+						</div>
+
+						<a href="#" class="edit-link">Редактировать блок</a>
+					</div>
+
+					<div class="profile profile--outer">
+
+						<div class="profile-block profile-block--outer">
+							<div class="profile-block__title">Профиль пригласившего вас друга</div>
+							<div class="profile-contact"><span>Имя:</span>Николаенко Сергей</div>
+							<div class="profile-contact"><span>E-mail:</span>serg@gmail.com</div>
+							<div class="profile-contact"><span>Город:</span>г.Санкт-Петербург</div>
+						</div>
+
+						<div class="profile-block profile-block--ref">
+							<div class="profile-block__title">Реферальная ссылка</div>
+							<a href="#" class="profile-reflink">https://www.behance.net/search/komarov/nikolay</a>
+						</div>
+
+						<div class="profile-block profile-block--status">
+							<div class="profile-block__title">Статус</div>
+							<div class="profile-status">Хочу квартиру и машину!</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="news-wrap">
+				<div class="container">
+					<div class="news-block">
+						<div class="news-block__title">Новости</div>
+
+						<div class="news-carousel">
+
+							<div class="carousel-item">
+								<div class="news-item news-item--carousel">
+									<div class="news-item__pict">
+										<img src="img/news-pict.jpg" alt="">
+										<div class="news-item__accent">Мы подсоединили Web Money!</div>
+									</div>
+									<div class="news-item__descr">
+										<div class="news-item__text">
+											<p>Если он в течение 1 месяца он пригласил хотя бы одного человека, то он к сроку месяц после регистрации оплачивает</p>
+										</div>
+										<a href="#" class="news-item__link">Читать далее</a>
+										<div class="news-item__date">20 апреля, 2017</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="news-item news-item--carousel">
+									<div class="news-item__pict">
+										<img src="img/news-pict.jpg" alt="">
+										<div class="news-item__accent">Мы подсоединили Web Money!</div>
+									</div>
+									<div class="news-item__descr">
+										<div class="news-item__text">
+											<p>Если он в течение 1 месяца он пригласил хотя бы одного человека, то он к сроку месяц после регистрации оплачивает</p>
+										</div>
+										<a href="#" class="news-item__link">Читать далее</a>
+										<div class="news-item__date">20 апреля, 2017</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="news-item news-item--carousel">
+									<div class="news-item__pict">
+										<img src="img/news-pict.jpg" alt="">
+										<div class="news-item__accent">Мы подсоединили Web Money!</div>
+									</div>
+									<div class="news-item__descr">
+										<div class="news-item__text">
+											<p>Если он в течение 1 месяца он пригласил хотя бы одного человека, то он к сроку месяц после регистрации оплачивает</p>
+										</div>
+										<a href="#" class="news-item__link">Читать далее</a>
+										<div class="news-item__date">20 апреля, 2017</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<a href="#" class="btn btn--carousel">Смотреть все новости</a>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

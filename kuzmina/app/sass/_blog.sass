@@ -1,0 +1,156 @@
+@import "vars.sass"
+@import "sprite.sass"
+
+/*-------------Blog page---------------*/
+.header
+	&.header_inner
+		border-bottom: 1px solid #E5E1DE
+
+.section
+	&.section__blog
+		padding-bottom: 75px
+.section__title
+	display: block
+	font: 36px "merriweather"
+	text-align: center
+
+.content
+	margin-top: 25px
+
+.sidebar
+	margin-right: -23px
+
+.sidebar__menu
+	margin-bottom: 45px
+
+.menu__title
+	height: 46px
+	padding-left: 20px
+	font: 18px "merriweather"
+	color: #fff
+	line-height: 46px
+	background: #e2837c
+
+.sidebar__list
+	margin-top: 10px
+	.list__item
+		transition: all .15s ease
+		&:hover
+			background: #edebeb
+		.item__link
+			display: block
+			padding: 10px 0 10px 20px
+			font: 15px "merriweather"
+			color: $main-color
+			.item__count
+				margin-left: 2px
+				color: #ce7f76
+
+.menu__tags
+	margin-top: 25px
+	padding-left: 20px
+	a
+		display: inline-block
+		margin: 0 15px 14px 0
+		font: italic 14px "merriweather"
+		color: $main-color
+		transition: all .15s ease
+		&:hover
+			color: #ce7f76
+
+.main__content
+	margin-left: -7px
+
+.blog__item
+	margin-bottom: 40px
+	padding-bottom: 15px
+	border-bottom: 1px solid #E5E1DE
+	img
+		float: left
+		width: 350px
+		margin-right: 28px
+
+.blog__descr
+	.item__title
+		display: block
+		margin-bottom: 7px
+		color: $main-color
+		transition: all .15s ease
+		h2
+			margin: 0
+			font: 20px "merriweather"
+		&:hover
+			color: #ce7f76
+	.item__data
+		display: block
+		margin-bottom: 25px
+		font: italic 300 15px "merriweather"
+	img
+		display: none
+	.item__text
+		margin-bottom: 12px
+		font-size: 16px
+		line-height: 24px
+		p
+			margin: 0
+
+.link__more
+	display: inline-block
+	font: 15px "merriweather"
+	color: #ce7f76
+	&:hover
+		color: #ce7f76
+		text-decoration: underline
+
+.page__count
+	display: inline-block
+	font: 18px "merriweather"
+
+.pagination__list
+	position: relative
+	float: right
+	top: -5px
+	margin-right: 22px
+	li
+		display: inline-block
+		&:not(.active)
+			a
+				&:hover
+					color: #ce7f76
+		&.active
+			a
+				background: #edebeb
+				cursor: default
+		a
+			display: block
+			width: 33px
+			height: 33px
+			font: 700 18px "merriweather"
+			color: $main-color
+			line-height: 33px
+			text-align: center
+			transition: all .15s ease
+
+.link__up
+	display: none
+	position: relative
+	width: 34px
+	height: 34px
+	margin: 25px auto 0
+	font-size: 0
+	opacity: .6
+	background-color: #eeeded
+	border: 2px solid #d2d2d2
+	&:hover
+		opacity: 1
+		transition: opacity .25s
+	&:before
+		content: ' '
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		margin: auto
+		@include sprite($arrow)
+/*---------------end-------------------*/

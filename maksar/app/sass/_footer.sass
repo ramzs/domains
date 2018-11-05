@@ -1,0 +1,176 @@
+.footer
+	position: relative
+	overflow: hidden
+	.container
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 2
+
+.map
+	position: relative
+	height: 690px
+	z-index: 1
+	iframe
+		height: 100%
+
+.contact
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	padding: 46px 77px 54px 54px
+	background: #000
+	&-item
+		display: inline-block
+		width: 49%
+		margin-bottom: 15px
+		padding-right: 15px
+		&__title
+			font-size: 18px
+			color: #71787c
+			&_dib
+				display: inline-block
+				vertical-align: middle
+		&__phone
+			display: inline-block
+			font-size: 30px
+			font-weight: 600
+			color: #fff
+			&:hover,&:focus
+				color: #fff
+				text-decoration: none
+		&__mail
+			display: inline-block
+			font-size: 30px
+			font-weight: 600
+			color: #fff
+			&:hover,&:focus
+				color: #fff
+				text-decoration: none
+		&__loc
+			font-size: 30px
+			font-weight: 600
+			color: #fff
+		.social
+			display: inline-block
+			margin-left: 30px
+			vertical-align: middle
+			padding-top: 0
+
+.btn.btn-footer
+	position: absolute
+	top: 0
+	right: 0
+	width: 77px
+	height: 100%
+	margin-top: 0
+	line-height: 47px
+	border-radius: 0
+	span
+		position: relative
+		display: block
+		width: 100%
+		height: 100%
+		transform: rotate(-90deg)
+		b
+			+vcenter
+
+
+/*----------Callback-form------------------*/
+.mfp-zoom-in.mfp-ready.mfp-bg
+	opacity: .97 !important
+
+.callback-form
+	position: relative
+	max-width: 570px
+	margin: 0 auto
+	padding: 50px 0
+	background: none
+	&__title
+		margin-bottom: 5px
+		font-size: 30px
+		font-weight: 600
+		color: $red
+	&__subtitle
+		margin-bottom: 11px
+		font-size: 30px
+		font-weight: 600
+		color: $red
+	&__text
+		margin-bottom: 33px
+		font-size: 18px
+		color: #71787c
+	input
+		display: inline-block
+		width: 100%
+		max-width: 271px
+		height: 49px
+		margin-right: 8px
+		padding-left: 22px
+		font-size: 18px
+		color: #8b8b8b
+		outline: none
+		transition: all .25s ease
+		border: 2px solid transparent
+		border-radius: 3px
+		background: #fff
+		&:focus
+			border: 2px solid $red-h
+
+.mfp-close
+	top: 65px !important
+	right: 65px !important
+	font-size: 0 !important
+	background: url(../img/close.png) 0 0 no-repeat !important
+
+.success
+	display: none
+	position: absolute
+	width: 320px
+	height: 100px
+	top: 50%
+	left: 50%
+	font-size: 16px
+	font-weight: 700
+	color: #fff
+	z-index: 800
+	border-radius: 20px
+	text-transform: uppercase
+	transform: translate(-50%, -50%)
+	background: rgba($orange, 0.8)
+	span
+		position: absolute
+		top: 50%
+		left: 50%
+		white-space: nowrap
+		transform: translate(-50%, -50%)
+
+.btn
+	display: block
+	width: 271px
+	height: 49px
+	margin-top: 25px
+	padding: 0
+	font-size: 18px
+	font-weight: 300
+	color: #fff
+	outline: none
+	cursor: pointer
+	transition: all .3s ease
+	border: none
+	border-radius: 3px
+	background-color: $red
+	&:focus
+		color: #fff
+		text-decoration: none
+		outline: none
+		background: $red
+		&:hover
+			background: $red
+	&:hover
+		color: #fff
+		text-decoration: none
+		background: $red-h
+/*--------------end-----------------------*/

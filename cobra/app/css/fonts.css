@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Eurofurence";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/EurofurenceRegular/EurofurenceRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/EurofurenceRegular/EurofurenceRegular.woff") format("woff"), url("../fonts/EurofurenceRegular/EurofurenceRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Eurofurence";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/EurofurenceLight/EurofurenceLight.eot?#iefix") format("embedded-opentype"), url("../fonts/EurofurenceLight/EurofurenceLight.woff") format("woff"), url("../fonts/EurofurenceLight/EurofurenceLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GangofThree";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GangofThree/GangofThree.eot?#iefix") format("embedded-opentype"), url("../fonts/GangofThree/GangofThree.woff") format("woff"), url("../fonts/GangofThree/GangofThree.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "pfbeausans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/pfbeausansproregular/pfbeausansproregular.eot?#iefix") format("embedded-opentype"), url("../fonts/pfbeausansproregular/pfbeausansproregular.woff") format("woff"), url("../fonts/pfbeausansproregular/pfbeausansproregular.ttf") format("truetype");
+}

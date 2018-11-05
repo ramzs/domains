@@ -1,0 +1,1189 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+.header
+	padding: 15px 0 0
+	&.header--fixed
+		padding-top: 88px
+
+.logo
+	display: inline-block
+	max-width: 210px
+	vertical-align: middle
+	font-size: 0
+	&__pict
+		img
+			display: block
+			width: 100%
+
+.lang
+	position: relative
+	display: inline-block
+	width: 76px
+	height: 42px
+	top: 4px
+	margin-left: 45px
+	vertical-align: top
+	background: url(../img/lang.png) 0 0 no-repeat
+	&__link
+		position: absolute
+		width: 25px
+		height: 20px
+		top: 8px
+		&--one
+			left: 9px
+		&--two
+			right: 13px
+
+.location
+	position: relative
+	display: inline-block
+	top: 5px
+	margin-left: 62px
+	vertical-align: top
+	font-size: 12px
+	color: #1b1b1b
+	span
+		font-weight: 700
+	&:before
+		content: ' '
+		position: absolute
+		top: 1px
+		left: -18px
+		width: 12px
+		height: 17px
+		background: url(../img/map-marker.svg) center no-repeat
+
+.callback
+	position: relative
+	display: inline-block
+	top: 5px
+	margin-left: 83px
+	vertical-align: top
+	text-align: right
+	z-index: 5
+	outline: none
+	&:before
+		content: ' '
+		position: absolute
+		top: 2px
+		left: -26px
+		width: 17px
+		height: 17px
+		background: url(../img/phone.svg) 0 0 no-repeat
+	&__phone
+		font-size: 18px
+		font-weight: 300
+		line-height: 20px
+		color: #1b1b1b
+		span
+			font-weight: 800
+			color: #009fda
+	&__link
+		display: block
+		outline: none
+		font-size: 12px
+		color: #ce726d
+		&:hover
+			color: #ce726d
+			text-decoration: underline
+		&:focus
+			color: #ce726d
+			outline: none
+
+.personal
+	position: relative
+	float: right
+	top: -2px
+	&--mob
+		display: none
+	&-link
+		font-size: 12px
+		font-weight: 300
+		&:hover
+			text-decoration: underline
+		&--signin
+			color: #ce726d
+			&:hover
+				color: #ce726d
+		&--login
+			margin-left: 10px
+			color: #009fda
+			&:hover
+				color: #009fda
+
+.phone
+	position: relative
+	float: right
+	margin-top: -38px
+	&-wrap
+		display: inline-block
+		vertical-align: bottom
+		text-align: right
+	&-item
+		margin-bottom: 2px
+		&--first
+			display: inline-block
+			margin-right: 18px
+	&__country
+		display: inline-block
+		margin-right: 40px
+		font-size: 12px
+	&__link
+		position: relative
+		display: inline-block
+		margin-bottom: 3px
+		font-size: 14px
+		font-weight: 800
+		color: #1b1b1b
+		span
+			font-weight: 300
+		&:hover
+			color: #1b1b1b
+		&:before
+			content: ' '
+			position: absolute
+			top: -9px
+			left: -42px
+			width: 46px
+			height: 41px
+			background: url(../img/lang-3.png) 0 0 no-repeat
+
+.navbar
+	margin: 5px 0 0
+	padding: 25px 0 0
+	border: none
+	z-index: 999
+	border-radius: 0
+	background: #fff
+	&-header
+		&__title
+			display: none
+	&.nav--fixed
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		margin: 0 auto
+		box-shadow: 0 3px 0 rgba(35,158,215, .6)
+	.nav
+		li
+			position: relative
+			a
+				position: relative
+				display: block
+				text-transform: uppercase
+		> li
+			float: left
+			margin-right: 2.6%
+			> a
+				padding: 0 0 20px 55px
+				font-size: 12px
+				font-weight: 700
+				&:hover, &:focus
+					background: none
+				&:hover
+					color: $hover-link
+			&.active
+				> a
+					color: $hover-link
+		&__item
+			&:last-child
+				margin-right: 0
+			&:first-child
+				a
+					padding-left: 0
+			&:not(:first-child)
+				a:before
+					content: ' '
+					position: absolute
+			&--2
+				a:before
+					top: -8px
+					left: 7px
+					@include sprite($menu-icon-1)
+				&:hover
+					a:before
+						@include sprite($menu-icon-1h)
+			&--3
+				a:before
+					top: -8px
+					left: 10px
+					@include sprite($menu-icon-2)
+				&:hover
+					a:before
+						@include sprite($menu-icon-2h)
+			&--4
+				a:before
+					top: -8px
+					left: 15px
+					@include sprite($menu-icon-3)
+				&:hover
+					a:before
+						@include sprite($menu-icon-3h)
+			&--5
+				a:before
+					top: -8px
+					left: -7px
+					@include sprite($menu-icon-4)
+				&:hover
+					a:before
+						@include sprite($menu-icon-4h)
+			&--6
+				a:before
+					top: -8px
+					left: 10px
+					@include sprite($menu-icon-5)
+				&:hover
+					a:before
+						@include sprite($menu-icon-5h)
+		&-submenu
+			display: none
+			position: absolute
+			top: 40px
+			left: -31px
+			width: 272px
+			padding: 10px 14px 48px
+			z-index: 800
+			background: url(../img/menu-level2-bg.png) center no-repeat
+			background-size: 100% 100%
+			li
+				display: table
+				width: 100%
+				a
+					display: table-cell
+					height: 56px
+					padding: 0 29px 0 25px
+					vertical-align: middle
+					font-size: 12px
+					color: #1398d8
+					&:before
+						display: none
+					&:hover
+						background: #bbd7ef
+				&.active
+					> a
+						background: #bbd7ef
+			&--l2
+				display: none
+				top: 0
+				left: 94%
+				padding: 0 14px 45px
+				z-index: 9
+				background: url(../img/menu-level2-bg.png) center no-repeat
+				background-size: 100% 100%
+				li
+					a
+						font-weight: 700
+						white-space: normal
+						text-transform: none
+						&:hover
+							background: #deecf8
+					&.active
+						> a
+							background: #deecf8
+
+	&-collapse
+		padding: 0
+	&-nav
+		float: none
+		margin: 0
+
+.slider-block
+	height: 400px
+	overflow: hidden
+	.container
+		padding: 0 83px
+
+.h-slider
+	top: -12px
+	.slider-item
+		position: relative
+		outline: none
+		height: 412px
+		> img
+			display: block
+			height: 100%
+		&--1
+			background: url(../img/slider-bg.jpg) center top no-repeat
+			background-size: cover
+		&--2
+			background: url(../img/slider-bg2.jpg) center top no-repeat
+			background-size: cover
+		&--3
+			background: url(../img/slider-bg3.jpg) center top no-repeat
+			background-size: cover
+		&--4
+			background: url(../img/slider-bg4.jpg) center top no-repeat
+			background-size: cover
+
+.slide-mob
+	display: none
+
+.caption
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	width: 100%
+	height: 100%
+	max-width: 1005px
+	img
+		position: relative
+		left: -147px
+		height: 457px
+		margin: 0 auto
+	&-slide
+		position: absolute
+		top: 80px
+		right: 45px
+		z-index: 5
+		text-align: center
+		&__title
+			font: 100px/100px "PioneerCyr"
+			color: #009fda
+		&__subtitle
+			font-size: 36px
+			font-weight: 300
+			color: #b8706c
+		&__text
+			margin-top: 5px
+			font-size: 18px
+			font-weight: 300
+
+.btn-main
+	display: block
+	width: 175px
+	height: 44px
+	font-size: 16px
+	font-weight: 800
+	color: #fff
+	line-height: 45px
+	text-align: center
+	outline: none
+	&:hover
+		color: #fff
+	&:focus
+		color: #fff
+		text-decoration: none
+	&--more
+		margin: 19px auto 0
+		background: url(../img/btn-bg.png) 0 0 no-repeat
+		background-size: 100% 100%
+		&:hover
+			background: url(../img/btn-bg-hover.png) 0 0 no-repeat
+			background-size: 100% 100%
+
+.slick-dots
+	position: absolute
+	bottom: 75px
+	left: 190px
+	right: 0
+	max-width: 1005px
+	margin: 0 auto
+	li
+		position: relative
+		display: inline-block
+		margin: 0 4px
+		width: 11px
+		height: 11px
+		button
+			position: absolute
+			display: block
+			width: 9px
+			height: 9px
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			padding: 0
+			font-size: 0
+			outline: none
+			opacity: 1
+			border: none
+			border-radius: 50%
+			background: #009fda
+		&.slick-active
+			button
+				width: 15px
+				height: 15px
+				opacity: 1
+				border: 4px solid #ce726d
+
+.wrapper
+	padding: 0 0 45px
+	overflow: hidden
+	background-color: #cee6f3
+	background-image: linear-gradient(to top, #ce726d 0%, #c9e4fd 66%, #c9e4fd 100%)
+
+.content
+	padding: 9px 0 0
+
+.sidebar
+	position: relative
+	left: -8px
+	width: 268px
+	margin-top: 2px
+	background: url(../img/bg-sidebar.png) center top no-repeat
+	background-size: 100% 100%
+	&-nav
+		padding: 41px 17px 70px
+		&__title
+			margin: 0 0 21px 23px
+			font-size: 24px
+			font-weight: 700
+			color: #fff
+			text-transform: uppercase
+	&-menu
+		&__item
+			position: relative
+			display: block
+			&:hover
+				> a
+					background: #fff
+			> a
+				position: relative
+				display: block
+				padding: 11px 0 11px 94px
+				font-size: 12px
+				line-height: 24px
+				font-weight: 700
+				color: #fff
+				text-transform: uppercase
+				&:before
+					content: ' '
+					position: absolute
+			&--2
+				a:before
+					top: 7px
+					left: 25px
+					@include sprite($sidebar-icon-1)
+				&:hover
+					> a
+						color: $hover-link
+						&:before
+							@include sprite($menu-icon-1h)
+			&--3
+				a:before
+					top: 7px
+					left: 25px
+					@include sprite($sidebar-icon-2)
+				&:hover
+					> a
+						color: $hover-link
+						&:before
+							@include sprite($menu-icon-2h)
+			&--4
+				a:before
+					top: 7px
+					left: 25px
+					@include sprite($sidebar-icon-3)
+				&:hover
+					> a
+						color: $hover-link
+						&:before
+							@include sprite($menu-icon-3h)
+			&--5
+				a:before
+					top: 7px
+					left: 25px
+					@include sprite($sidebar-icon-4)
+				&:hover
+					> a
+						color: $hover-link
+						&:before
+							@include sprite($menu-icon-4h)
+			&--6
+				a:before
+					top: 7px
+					left: 25px
+					@include sprite($sidebar-icon-5)
+				&:hover
+					> a
+						color: $hover-link
+						&:before
+							@include sprite($menu-icon-5h)
+			&.active
+				background: #fff
+				a
+					color: $hover-link
+		&__submenu
+			display: none
+			position: absolute
+			top: 0
+			left: 92.6%
+			width: 272px
+			padding: 0 14px 35px
+			z-index: 800
+			background: url(../img/menu-level2-bg.png) center no-repeat
+			background-size: 100% 100%
+			// &.open
+			// 	visibility: visible
+			// 	opacity: 1
+			// 	transition: opacity .25s ease
+				// animation: menu1 .5s ease-in-out
+			li
+				position: relative
+				display: table
+				width: 100%
+				a
+					display: table-cell
+					height: 46px
+					padding: 0 29px 0 25px
+					vertical-align: middle
+					font-size: 12px
+					color: #1398d8
+					&:before
+						display: none
+					&:hover
+						background: #bbd7ef
+				&.active
+					> a
+						background: #bbd7ef
+			&--l2
+				display: none
+				top: 0
+				left: 93.5%
+				padding: 0 14px 45px
+				z-index: 9
+				background: url(../img/menu-level2-bg.png) center no-repeat
+				background-size: 100% 100%
+				// &.open
+				// 	visibility: visible
+				// 	opacity: 1
+				// 	transition: opacity .25s ease
+					// animation: menu2 .5s ease-in-out
+				li
+					a
+						font-weight: 700
+						white-space: normal
+						text-transform: none
+						&:hover
+							background: #deecf8
+					&.active
+						> a
+							background: #deecf8
+
+// @keyframes menu1
+// 	from
+// 		transform: translateX(-92.6%)
+// 		opacity: 0
+// 	to
+// 		transform: translateX(0%)
+// 		opacity: 1
+
+// @keyframes menu2
+// 	from
+// 		transform: translateX(-93.5%)
+// 		opacity: 0
+// 	to
+// 		transform: translateX(0%)
+// 		opacity: 1
+
+.main
+	padding: 11px 0 0 30px
+	margin-right: -20px
+
+.catalog-item
+	position: relative
+	display: inline-block
+	width: 234px
+	margin: 0 5px 10px 0
+	padding-bottom: 56px
+	vertical-align: top
+	text-align: center
+	background: url(../img/bg-catalog.png) 0 0 no-repeat
+	background-size: 100% 100%
+	&--inner
+		height: 322px
+		.catalog-item__pict
+			height: 185px
+		.catalog-item__title
+			padding: 0 20px
+			font-size: 14px
+	&__pict
+		position: relative
+		width: 195px
+		height: 211px
+		margin: 17px 0 0 20px
+		overflow: hidden
+		img
+			position: absolute
+			display: block
+			height: 100%
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+		&:before
+			content: ' '
+			position: absolute
+			top: -15px
+			left: -15px
+			width: 27px
+			height: 27px
+			z-index: 3
+			transform: rotate(-45deg)
+			background: #fff
+		&:after
+			content: ' '
+			position: absolute
+			bottom: -15px
+			right: -15px
+			width: 27px
+			height: 27px
+			z-index: 3
+			transform: rotate(45deg)
+			background: url(../img/pict-over.png) 0 0 no-repeat
+	&__title
+		display: inline-block
+		margin-top: 11px
+		padding: 0 10px
+		font: 700 18px "RobotoSlab"
+		color: $title
+		text-transform: uppercase
+		text-decoration: underline
+		&:hover
+			color: $title
+			text-decoration: none
+	&__link
+		position: absolute
+		display: block
+		bottom: 30px
+		left: 0
+		right: 0
+		padding: 0 10px
+		font-size: 14px
+		color: #ce726d
+		&:hover
+			color: #ce726d
+			text-decoration: underline
+
+.about-block
+	position: relative
+	max-width: 1013px
+	height: 213px
+	margin: 12px auto
+	background: url(../img/bg-text.png) center top no-repeat
+	background-size: cover
+	&.container
+		padding: 0
+	&__text
+		position: absolute
+		top: 50%
+		padding: 0 35px
+		transform: translate(0, -50%)
+		font-size: 16px
+		font-weight: 700
+		color: #1b1b1b
+
+.preview-block
+	position: relative
+	max-width: 1132px
+	height: 457px
+	right: -10px
+	margin: -43px auto -53px
+	background: url(../img/bg-carousel.svg) center top no-repeat
+	background-size: cover
+
+.carousel-block
+	position: absolute
+	width: 815px
+	top: 65px
+	left: -10px
+	right: 0
+	margin: 0 auto
+	&__title
+		margin: 5px 0 10px
+		font: 700 22px "RobotoSlab"
+		color: $title
+		text-transform: uppercase
+
+.h-carousel
+	.slick-arrow
+		position: absolute
+		top: 50%
+		font-size: 0
+		transform: translate(0, -50%)
+		border: none
+		background: none
+		z-index: 10
+		outline: none
+		&:before
+			content: ' '
+			position: absolute
+			width: 12px
+			height: 22px
+			top: 6px
+		&.slick-prev
+			left: -54px
+			width: 42px
+			height: 42px
+			background: url(../img/btn-car-left.svg) 0 0 no-repeat
+			&:before
+				left: 12px
+				@include sprite($arrow-left)
+		&.slick-next
+			right: -54px
+			width: 42px
+			height: 42px
+			background: url(../img/btn-car-left.svg) 0 0 no-repeat
+			&:before
+				right: 17px
+				@include sprite($arrow-right)
+
+.carousel-item
+	margin: 0 6px
+	text-align: center
+	outline: none
+	&__pict
+		position: relative
+		display: inline-block
+		max-width: 195px
+		height: 208px
+		padding: 18px 16px
+		overflow: hidden
+		background: url(../img/bg-car-item.svg) 0 0 no-repeat
+		background-size: cover
+		img
+			height: 100%
+			width: 100%
+		&:before
+			content: ' '
+			position: absolute
+			top: 8px
+			left: 12px
+			width: 15px
+			height: 30px
+			transform: rotate(45deg)
+			background: #fff
+		&:after
+			content: ' '
+			position: absolute
+			bottom: 8px
+			right: 12px
+			width: 15px
+			height: 30px
+			transform: rotate(45deg)
+			background: #fff
+	&__title
+		display: block
+		margin-top: 6px
+		font: 700 14px "RobotoSlab"
+		color: #7b2c2e
+		text-transform: uppercase
+		text-decoration: underline
+		&:hover
+			color: #7b2c2e
+			text-decoration: none
+
+.tour-preview
+	width: 750px
+	height: 204px
+	margin-bottom: 14px
+	background: url(../img/bg-article.svg) center top no-repeat
+	background-size: cover
+	&__pict
+		position: relative
+		float: left
+		width: 142px
+		height: 155px
+		margin: 20px 0 0 25px
+		overflow: hidden
+		img
+			display: block
+			width: 100%
+			height: 100%
+		&:before
+			content: ' '
+			position: absolute
+			top: -15px
+			left: -15px
+			width: 27px
+			height: 27px
+			transform: rotate(45deg)
+			background: url(../img/tour-pict-ovtop.png) 0 0 no-repeat
+		&:after
+			content: ' '
+			position: absolute
+			bottom: -15px
+			right: -15px
+			width: 27px
+			height: 27px
+			transform: rotate(45deg)
+			background: url(../img/pict-over.png) 0 0 no-repeat
+	&__descr
+		display: table
+		padding: 18px 0 0 28px
+	&__title
+		margin-bottom: 12px
+		font: 700 22px "RobotoSlab"
+		color: $title
+		text-transform: uppercase
+	&__text
+		height: 38px
+		padding-right: 35px
+		overflow: hidden
+		font-size: 16px
+		font-weight: 300
+		color: #1b1b1b
+
+.btn-main
+	&--read
+		margin-top: 28px
+		line-height: 42px
+		background: url(../img/btn-bg.png) 0 0 no-repeat
+		background-size: 100% 100%
+		&:hover
+			background: url(../img/btn-bg-hover.png) 0 0 no-repeat
+			background-size: 100% 100%
+	&--tour
+		margin-top: 22px
+		line-height: 40px
+		background: url(../img/btn-border.png) center top no-repeat
+		background-size: 100% 100%
+		&:hover
+			background: url(../img/btn-border-hover.png) center top no-repeat
+			background-size: 100% 100%
+
+.sidebar-news
+	position: relative
+	width: 232px
+	min-height: 650px
+	padding: 22px 0 0
+	background: url(../img/bg-news.svg) center top no-repeat
+	background-size: cover
+	&__title
+		margin: 0 0 20px 33px
+		font: 700 22px "RobotoSlab"
+		color: #fff
+		text-transform: uppercase
+
+.news-preview
+	width: 165px
+	margin: 0 auto 26px
+	padding-bottom: 18px
+	border-bottom: 1px solid #eef
+	&__data
+		font-size: 12px
+		font-weight: 300
+	&__title
+		font: 700 16px "RobotoSlab"
+	&__text
+		height: 38px
+		font-size: 16px
+		font-weight: 300
+		overflow: hidden
+
+.btn-main
+	&--news
+		width: 128px
+		height: 32px
+		margin: 10px 0 0
+		line-height: 32px
+		background: url(../img/btn-bg3.png) center top no-repeat
+		background-size: 100% 100%
+		&:hover
+			background: url(../img/btn-bg3-hover.png) center top no-repeat
+			background-size: 100% 100%
+	&--all
+		width: 165px
+		margin: 35px auto 0
+		line-height: 40px
+		background: url(../img/btn-border.png) center top no-repeat
+		background-size: 100% 100%
+		&:hover
+			background: url(../img/btn-border-hover.png) center top no-repeat
+			background-size: 100% 100%
+
+.footer
+	margin-top: -23px
+
+.footer-main
+	position: relative
+	right: -9px
+	max-width: 1130px
+	height: 450px
+	margin: 0 auto
+	padding-top: 100px
+	background: url(../img/footer-bg.svg) center top no-repeat
+	background-size: cover
+	.container
+		position: relative
+		left: -29px
+
+.scroll-top
+	position: absolute
+	display: block
+	top: -114px
+	right: 77px
+	width: 44px
+	height: 44px
+	background: url(../img/scroll-top.svg) center top no-repeat
+	background-size: cover
+	&:before
+		content: ' '
+		position: absolute
+		top: 12px
+		left: 12px
+		@include sprite($arrow-top)
+
+.footer-nav
+	display: inline-block
+	width: 20%
+	vertical-align: top
+	&__title
+		display: block
+		margin-bottom: 17px
+		font: 700 22px "RobotoSlab"
+		color: #fff
+		text-transform: uppercase
+		text-decoration: underline
+		&:hover
+			color: #fff
+			text-decoration: none
+	&--one
+		margin-left: 100px
+	&--two
+		margin-left: 20px
+	&--four
+		margin-left: 47px
+
+.footer-menu
+	display: inline-block
+	li
+		display: block
+		a
+			display: block
+			font-size: 16px
+			font-weight: 300
+			color: #fff
+			&:hover
+				color: #fff
+				text-decoration: underline
+
+.footer-logo
+	margin: 45px 0 0 93px
+
+.social
+	margin-top: 60px
+	&__link
+		position: relative
+		display: inline-block
+		width: 44px
+		height: 44px
+		background: url(../img/social-bg.svg) 0 0 no-repeat
+		background-size: cover
+		&:before
+			content: ' '
+			position: absolute
+		&--vk
+			&:before
+				top: 11px
+				left: 8px
+				@include sprite($vk)
+		&--inst
+			&:before
+				top: 10px
+				left: 11px
+				@include sprite($inst)
+		&--yt
+			&:before
+				top: 7px
+				left: 9px
+				@include sprite($yt)
+
+.developer
+	margin: 65px 57px 0 0
+	text-align: right
+	span
+		display: block
+		font-size: 16px
+		font-weight: 300
+		color: #fff
+	a
+		display: block
+		font-size: 16px
+		font-weight: 700
+		color: #fff
+		&:hover
+			color: #fff
+			text-decoration: underline
+
+.footer-bottom
+	margin-top: -54px
+
+.copyright
+	margin-right: 24px
+	font-size: 16px
+	font-weight: 300
+	color: #fff
+	text-align: right
+
+.cf-link
+	margin-left: 24px
+	font-size: 16px
+	font-weight: 300
+	color: #fff
+	text-align: left
+	text-decoration: underline
+	&:hover
+		color: #fff
+		text-decoration: none
+
+.form-wrap
+	margin: 46px 0 57px
+	padding: 65px 0
+	background-image: linear-gradient(to top, #ce726d 0%, #c9e4fd 66%, #c9e4fd 100%)
+
+.link-callphone
+	display: none
+	position: fixed
+	bottom: 5px
+	left: 0
+	right: 0
+	width: 80%
+	height: 70px
+	margin: 0 auto
+	font-size: 32px
+	font-weight: 700
+	line-height: 70px
+	letter-spacing: 2px
+	color: #fff
+	text-transform: uppercase
+	text-align: center
+	opacity: .8
+	border-radius: 7px
+	box-shadow: 0 0 5px #000
+	background: #06ba01
+	&:hover, &:focus
+		color: #fff
+		text-decoration: none
+	&:active
+		opacity: 1
+		box-shadow: 0 0 15px #000
+
+.callback-form
+	position: relative
+	max-width: 880px
+	min-height: 378px
+	margin: 0 auto
+	padding: 82px 71px 120px
+	text-align: center
+	background: url(../img/bg-callback.png) 0 0 no-repeat
+	background-size: 100% 100%
+	&--st
+		max-width: 880px
+		min-height: auto
+		right: -60px
+		padding: 0
+		background: none
+		&:before
+			content: ''
+			position: absolute
+			bottom: -65px
+			left: -175px
+			width: 274px
+			height: 333px
+			background: url(../img/callback-pict.png) 0 0 no-repeat
+			background-size: 100%
+		.callback-form__title
+			color: #000
+		.callback-form__accent
+			color: #000
+	.success
+		display: none
+		position: absolute
+		top: 45%
+		left: 50%
+		font-size: 16px
+		font-weight: 700
+		color: #fff
+		text-transform: uppercase
+		transform: translate(-50%,-50%)
+		& ~ *
+			transition: all .5s ease
+		&.active
+			display: block
+			& ~ *
+				opacity: .5
+				filter: blur(10px)
+	&__title
+		margin-bottom: 34px
+		padding: 0 70px
+		font: 700 30px "RobotoSlab"
+		color: #fff
+		text-transform: uppercase
+		&_small
+			font-size: 25px
+	input
+		display: inline-block
+		width: 175px
+		height: 44px
+		margin: 0 15px
+		vertical-align: middle
+		font-weight: 300
+		color: #1b1b1b
+		text-align: center
+		outline: none
+		border: none
+		background: url(../img/bg-input.png) 0 0 no-repeat
+		background-size: 100% 100%
+	&__accent
+		margin-top: 30px
+		font-size: 16px
+		font-weight: 300
+		color: #fff
+	.mfp-close
+		right: 48px
+		top: 28px
+		width: 46px
+		height: 46px
+		opacity: 1
+		color: #fff
+		background: url(../img/bg-close.png) center 5px no-repeat
+		background-size: cover
+
+.btn-main--order
+	display: inline-block
+	margin: 0 15px
+	vertical-align: middle
+	line-height: 40px
+	border: none
+	outline: none
+	background: url(../img/btn-bg.png) center top no-repeat
+	background-size: 100% 100%
+	&:hover
+		background: url(../img/btn-bg-hover.png) center top no-repeat
+		background-size: 100% 100%
+
+/*-------Плавное появление magnific popup------------*/
+.mfp-zoom-in
+	.mfp-with-anim
+		opacity: 0
+		transition: all 0.2s ease-in-out
+		transform: scale(0.8)
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.3s ease-out
+	&.mfp-ready
+		.mfp-with-anim
+			opacity: 1
+			transform: scale(1)
+		&.mfp-bg
+			opacity: 0.8
+	&.mfp-removing
+		.mfp-with-anim
+			transform: scale(0.8)
+			opacity: 0
+		&.mfp-bg
+			opacity: 0
+/*-------------end-----------------------*/
+
+
+@import "tour.sass"
+@import "polet.sass"
+@import "contact.sass"
+@import "textpage.sass"
+@import "thank.sass"

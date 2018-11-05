@@ -1,0 +1,135 @@
+.header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	margin: 0 auto
+	padding: 58px 0 15px
+	z-index: 3
+
+.logo
+	float: left
+	img
+		max-width: 100%
+
+.menu-mob
+	display: none
+	position: relative
+	width: 40px
+	height: 30px
+	margin-top: 10px
+	cursor: pointer
+	z-index: 900
+	transition: all .25s ease
+	span
+		position: absolute
+		display: block
+		left: 0
+		width: 100%
+		height: 4px
+		transition: all .3s ease
+		background: $red
+		&:nth-child(1)
+			top: 0
+		&:nth-child(2)
+			top: 10px
+		&:nth-child(3)
+			top: 20px
+	&:hover, &.active
+		span
+			background: $red-h
+	&.active
+		span
+			&:nth-child(1)
+				top: 12px
+				transform: rotate(45deg)
+			&:nth-child(2)
+				opacity: 0
+				// left: -1500px
+				// transition: left .8s ease
+			&:nth-child(3)
+				top: 12px
+				transform: rotate(-45deg)
+
+.header-nav
+	padding-top: 16px
+
+.header-phone
+	display: inline-block
+	margin: 11px 0 0 38px
+	font-size: 25px
+	color: #fff
+	&:hover, &:focus
+		color: #fff
+		text-decoration: none
+
+.header-menu
+	display: inline-block
+	li
+		display: inline-block
+		margin-right: 15px
+		&:last-child
+			margin-right: 0
+		a
+			display: block
+			font-size: 16px
+			color: #7b8083
+			&:hover
+				color: $red-h
+
+.link-callback
+	position: relative
+	display: inline-block
+	margin-left: 45px
+	font-size: 16px
+	color: $orange
+	&_mob
+		display: none
+		margin-left: 0
+		&:before
+			display: none
+	&:before
+		content: '/'
+		position: absolute
+		top: 0
+		left: -25px
+		font-size: 16px
+		color: #4e575c
+	&:hover
+		color: $red-h
+	&:focus
+		color: $orange
+		outline: none
+		text-decoration: none
+		&:hover
+			color: $red-h
+
+.social
+	display: inline-block
+	margin-left: 38px
+	padding-top: 11px
+	&-link
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		width: 26px
+		height: 26px
+		margin: 0 1px
+		font-size: 0
+		transition: all .25s ease
+		&_wa
+			background: url(../img/Forma-1.png) 0 0 no-repeat
+			&:hover
+				background: url(../img/Forma-1h.png) 0 0 no-repeat
+		&_tw
+			background: url(../img/Forma-11.png) 0 0 no-repeat
+			&:hover
+				background: url(../img/Forma-11h.png) 0 0 no-repeat
+		&_gl
+			background: url(../img/Forma-12.png) 0 0 no-repeat
+			&:hover
+				background: url(../img/Forma-12h.png) 0 0 no-repeat
+		&_fb
+			background: url(../img/Forma-13.png) 0 0 no-repeat
+			&:hover
+				background: url(../img/Forma-13h.png) 0 0 no-repeat

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "robotomono";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoMonoRegular/RobotoMonoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMonoRegular/RobotoMonoRegular.woff") format("woff"), url("../fonts/RobotoMonoRegular/RobotoMonoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "proximanova";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ProximaNovaExtraBold/ProximaNovaExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExtraBold/ProximaNovaExtraBold.woff") format("woff"), url("../fonts/ProximaNovaExtraBold/ProximaNovaExtraBold.ttf") format("truetype");
+}

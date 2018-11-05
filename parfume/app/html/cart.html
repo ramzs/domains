@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp-inner.html')
+
+	<div class="section-cart">
+		<div class="container">
+			<div class="breadcrumb">
+			<ul class="breadcrumb-list">
+				<li class="breadcrumb-list__item"><a href="#">Главная</a></li>
+				<li class="breadcrumb-list__item">Ваша корзина</li>
+			</ul>
+		</div>
+			<h1 class="page-title">Ваша корзина</h1>
+
+			<div class="cart-block">
+				<div class="cart-row cart-row--head">
+					<div class="cart-cell cart-cell--head">Название:</div>
+					<div class="cart-cell cart-cell--head">Цена:</div>
+					<div class="cart-cell cart-cell--head">Кол-во:</div>
+					<div class="cart-cell cart-cell--head">Скидка:</div>
+					<div class="cart-cell cart-cell--head">Сумма:</div>
+				</div>
+
+				<div class="cart-row cart-row--body">
+					<div class="cart-cell cart-cell--body cart-cell--main">
+						<div class="cart-pict">
+							<img src="img/tovar-1.jpg" alt="">
+						</div>
+						<div class="cart-name"><a href="#">Roberto Verino - Gold Diamond<br>туалетные духи 30 мл.</a></div>
+					</div>
+					<div class="cart-cell cart-cell--body cart-cell--price"><span class="cell-title">Цена:</span>3800<span>&nbsp;руб.</span></div>
+					<div class="cart-cell cart-cell--body cart-cell--count"><span class="cell-title">Количество:</span><input type="text" placeholder="0">&nbsp;шт.</div>
+					<div class="cart-cell cart-cell--body cart-cell--sale"><span class="cell-title">Скидка:</span>0<span>&nbsp;%</span></div>
+					<div class="cart-cell cart-cell--body cart-cell--total"><span class="cell-title">Сумма:</span>7600<span>&nbsp;руб.</span></div>
+					<div class="cart-cell cart-cell--body cart-cell--remove">
+						<a href="#" class="remove-link">Удалить</a>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+
+				<div class="cart-row cart-row--body">
+					<div class="cart-cell cart-cell--body cart-cell--main">
+						<div class="cart-pict">
+							<img src="img/tovar-1.jpg" alt="">
+						</div>
+						<div class="cart-name"><a href="#">Roberto Verino - Gold Diamond<br>туалетные духи 30 мл.</a></div>
+					</div>
+					<div class="cart-cell cart-cell--body cart-cell--price"><span class="cell-title">Цена:</span>3800<span>&nbsp;руб.</span></div>
+					<div class="cart-cell cart-cell--body cart-cell--count"><span class="cell-title">Количество:</span><input type="text" placeholder="0">&nbsp;шт.</div>
+					<div class="cart-cell cart-cell--body cart-cell--sale"><span class="cell-title">Скидка:</span>0<span>&nbsp;%</span></div>
+					<div class="cart-cell cart-cell--body cart-cell--total"><span class="cell-title">Сумма:</span>7600<span>&nbsp;руб.</span></div>
+					<div class="cart-cell cart-cell--body cart-cell--remove">
+						<a href="#" class="remove-link">Удалить</a>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+
+				<div class="cart-row cart-row--body">
+					<div class="cart-cell cart-cell--body cart-cell--main">
+						<div class="cart-pict">
+							<img src="img/tovar-1.jpg" alt="">
+						</div>
+						<div class="cart-name"><a href="#">Roberto Verino - Gold Diamond<br>туалетные духи 30 мл.</a></div>
+					</div>
+					<div class="cart-cell cart-cell--body cart-cell--price"><span class="cell-title">Цена:</span>3800<span>&nbsp;руб.</span></div>
+					<div class="cart-cell cart-cell--body cart-cell--count"><span class="cell-title">Количество:</span><input type="text" placeholder="0">&nbsp;шт.</div>
+					<div class="cart-cell cart-cell--body cart-cell--sale"><span class="cell-title">Скидка:</span>0<span>&nbsp;%</span></div>
+					<div class="cart-cell cart-cell--body cart-cell--total"><span class="cell-title">Сумма:</span>7600<span>&nbsp;руб.</span></div>
+					<div class="cart-cell cart-cell--body cart-cell--remove">
+						<a href="#" class="remove-link">Удалить</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="total-cart">
+				<div class="total-cart__row total-cart__row--price"><span>Сумма заказа:</span>35760<span>&nbsp;руб.</span></div>
+				<div class="total-cart__row total-cart__row--sale"><span>Со скидкой:</span>30345<span>&nbsp;руб.</span></div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="section-order">
+		<div class="container">
+			<h1 class="page-title">Оформление заказа:</h1>
+		</div>
+
+		<div class="order-block">
+			<div class="container">
+				<form action="#">
+					<div class="order-form">
+						<div class="order-form__title order-form__title--first">Контактная информация:</div>
+						<label for="name-in"><span>ФИО:</span><input id="name-in" type="text" placeholder="Ваше имя"></label>
+						<label for="name-in"><span>Ваш e-mail:</span><input id="name-in" type="text" placeholder="Ваша эл. почта"></label>
+						<label for="name-in"><span>Ваш номер телефона:</span><input id="name-in" type="text" placeholder="Ваш телефон"></label>
+						<label for="name-in" class="comment"><span>Комментарий к заказу:</span><textarea id="name-in" placeholder="Ваш комментарий"></textarea></label>
+					</div>
+
+					<div class="delivery-block">
+						<div class="order-form__title">Доставка:</div>
+						<label for="dv-1"><input type="radio" name="delivery" id="dv-1" checked><span>- По Москве (бесплатно)</span></label>
+						<label for="dv-2"><input type="radio" name="delivery" id="dv-2"><span>- Бутово, Мытищи, Люберцы, Реутов, Новокосино - 200 руб.</span></label>
+						<label for="dv-3"><input type="radio" name="delivery" id="dv-3"><span>- за пределами МКАД до 15км - 300 руб.</span></label>
+						<label for="dv-4"><input type="radio" name="delivery" id="dv-4"><span>- отправка в другие регионы уточняется у оператора.</span></label>
+					</div>
+
+					<div class="pay-block">
+						<div class="order-form__title">Оплата:</div>
+						<label for="pay-1"><input type="radio" name="pay" id="pay-1" checked><span>- Наложенный платеж (оплата после проверки товара)</span></label>
+						<label for="pay-2"><input type="radio" name="pay" id="pay-2"><span>- На карту банка</span></label>
+					</div>
+
+					<button class="btn btn--order">Заказать</button>
+				</form>
+				<div class="order-accent">
+					<p>С Вами обязательно свяжется оператор для уточнения деталей (наличия товара на складе и его стоимости) и подтверждения заказа.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp-inner.html')
+
+</body>
+</html>

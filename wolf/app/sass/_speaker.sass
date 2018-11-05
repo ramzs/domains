@@ -1,0 +1,88 @@
+@import "vars.sass"
+@import "sprite.sass"
+/*-------------Speaker page---------------*/
+.header__inner
+	&.header__inner-speaker
+		height: auto
+		padding-bottom: 105px
+		background: url(../img/speak-bg-1.jpg) center top no-repeat
+		background-size: cover
+
+.header__main
+	&.header__main-speaker
+		margin-top: 45px
+		.container
+			max-width: 1725px
+
+.speaker__slider
+	.slider__item
+		margin: 0 10px
+
+.history__block
+	&.history__block-speaker
+		max-width: 845px
+		width: 100%
+		height: 617px
+		padding: 34px 44px 0
+		border: 3px solid transparent
+		.item__pict
+			width: 395px
+			height: auto
+			margin: 0 30px 20px 0
+			border-radius: 0
+			img
+				position: static
+				width: 100%
+		.item__title
+			padding: 0 70px 0 0
+			font-size: 36px
+		.item__list
+			display: table
+		.item__descr
+			&:before
+				display: none
+
+.slider-nav
+	margin-top: 40px
+	padding: 0 10px
+
+.nav__item
+	max-width: 220px
+	margin-right: 85px
+	text-align: left
+	cursor: pointer
+	&.slick-current
+		.nav__pict
+			border: 3px solid #FAC43B
+		span
+			color: #fff
+			text-decoration: none
+	&:hover
+		.nav__pict
+			border: 3px solid #FAC43B
+		span
+			text-decoration: none
+	.nav__pict
+		position: relative
+		float: left
+		width: 85px
+		height: 85px
+		overflow: hidden
+		border: 3px solid transparent
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+	span
+		display: table
+		padding-left: 17px
+		font-size: 24px
+		color: #000
+		text-decoration: underline
+
+.section
+	&.section__free
+		&._speaker
+			display: none
+/*-----------------end--------------------*/

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="wrapper">
+		<div class="content">
+			<div class="container">
+
+				<div class="sidebar">
+					<div class="profile-name">Здравствуйте,<span>Николай Семенович</span></div>
+					<div class="profile-nav">
+						<ul class="profile-list">
+							<li class="profile-list__item"><a href="#" class="profile-list__link active">Профиль</a></li>
+							<li class="profile-list__item"><a href="#" class="profile-list__link">Моя команда</a></li>
+							<li class="profile-list__item"><a href="#" class="profile-list__link">Финансы</a></li>
+							<li class="profile-list__item"><a href="#" class="profile-list__link">FAQ</a></li>
+						</ul>
+						<a href="#" class="profile-exit">Выйти</a>
+					</div>
+				</div>
+
+				<div class="main-content">
+
+					<div class="edit">
+						<div class="profile-title">Редактирование профиля</div>
+						<div class="edit-block edit-block--contact">
+							<div class="edit-block__title">Ваши контактные данные</div>
+							<form action="#">
+								<label for="name">
+									Ваше имя:
+									<input type="text" id="name" placeholder="Витя">
+								</label>
+								<label for="phone">
+									Ваш номер телефона:
+									<input type="text" id="phone" placeholder="+7 (495) 234-65-66">
+								</label>
+								<label for="mail">
+									Электронная почта:
+									<input type="text" id="mail" placeholder="komar@mail.ru">
+								</label>
+								<label for="city">
+									Ваш город:
+									<select name="city" id="city">
+										<option>Москва</option>
+										<option>Санкт-Петербург</option>
+									</select>
+								</label>
+							</form>
+						</div>
+
+						<div class="edit-block edit-block--password">
+							<div class="edit-block__title">Изменение пароля:</div>
+							<form action="#">
+								<label for="pass">
+									Новый пароль:
+									<input type="text" id="pass" placeholder="********************">
+								</label>
+								<label for="pass-repeat">
+									Повторить новый пароль:
+									<input type="text" id="pass-repeat" placeholder="********************">
+								</label>
+							</form>
+						</div>
+
+						<div class="edit-block edit-block--about">
+							<div class="edit-block__title">Пару слов о себе (статус)</div>
+							<form action="#">
+								<label for="about">
+									Напишите о себе:
+									<textarea class="about-in" name="about" id="about" cols="30" rows="10" placeholder="https://www.behance.net/search/komarov/nikolay"></textarea>
+								</label>
+							</form>
+							<div class="edit-block__title edit-block__title--ref">Ваша реферальная ссылка</div>
+							<form action="#">
+								<label for="ref">
+									Вставьте ссылку:
+									<textarea class="ref-in" name="ref" id="ref" cols="30" rows="10" placeholder="https://www.behance.net/search/komarov/nikolay https://www.behance.net/search/komarov/nikolay"></textarea>
+								</label>
+							</form>
+						</div>
+
+						<a href="#" class="save-link">Сохранить изменения</a>
+
+					</div>
+
+					<div class="profile profile--outer">
+
+						<div class="profile-block profile-block--outer">
+							<div class="profile-block__title">Профиль пригласившего вас друга</div>
+							<div class="profile-contact"><span>Имя:</span>Николаенко Сергей</div>
+							<div class="profile-contact"><span>E-mail:</span>serg@gmail.com</div>
+							<div class="profile-contact"><span>Город:</span>г.Санкт-Петербург</div>
+						</div>
+
+						<div class="profile-block profile-block--ref">
+							<div class="profile-block__title">Реферальная ссылка</div>
+							<a href="#" class="profile-reflink">https://www.behance.net/search/komarov/nikolay</a>
+						</div>
+
+						<div class="profile-block profile-block--status">
+							<div class="profile-block__title">Статус</div>
+							<div class="profile-status">Хочу квартиру и машину!</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="news-wrap">
+				<div class="container">
+					<div class="news-block">
+						<div class="news-block__title">Новости</div>
+
+						<div class="news-carousel">
+
+							<div class="carousel-item">
+								<div class="news-item news-item--carousel">
+									<div class="news-item__pict">
+										<img src="img/news-pict.jpg" alt="">
+										<div class="news-item__accent">Мы подсоединили Web Money!</div>
+									</div>
+									<div class="news-item__descr">
+										<div class="news-item__text">
+											<p>Если он в течение 1 месяца он пригласил хотя бы одного человека, то он к сроку месяц после регистрации оплачивает</p>
+										</div>
+										<a href="#" class="news-item__link">Читать далее</a>
+										<div class="news-item__date">20 апреля, 2017</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="news-item news-item--carousel">
+									<div class="news-item__pict">
+										<img src="img/news-pict.jpg" alt="">
+										<div class="news-item__accent">Мы подсоединили Web Money!</div>
+									</div>
+									<div class="news-item__descr">
+										<div class="news-item__text">
+											<p>Если он в течение 1 месяца он пригласил хотя бы одного человека, то он к сроку месяц после регистрации оплачивает</p>
+										</div>
+										<a href="#" class="news-item__link">Читать далее</a>
+										<div class="news-item__date">20 апреля, 2017</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="news-item news-item--carousel">
+									<div class="news-item__pict">
+										<img src="img/news-pict.jpg" alt="">
+										<div class="news-item__accent">Мы подсоединили Web Money!</div>
+									</div>
+									<div class="news-item__descr">
+										<div class="news-item__text">
+											<p>Если он в течение 1 месяца он пригласил хотя бы одного человека, то он к сроку месяц после регистрации оплачивает</p>
+										</div>
+										<a href="#" class="news-item__link">Читать далее</a>
+										<div class="news-item__date">20 апреля, 2017</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<a href="#" class="btn btn--carousel">Смотреть все новости</a>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

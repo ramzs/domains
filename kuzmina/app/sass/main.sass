@@ -1,0 +1,156 @@
+@import "bourbon/bourbon"
+@import "vars.sass"
+@import "base.sass"
+@import "sprite.sass"
+
+.header
+	padding: 24px 0 40px
+
+.logo
+	margin-left: -50px
+	text-align: center
+	img
+		max-width: 370px
+
+.mob__btn
+	display: none
+	position: absolute
+	top: 10px
+	right: 10px
+	cursor: pointer
+	z-index: 999
+	b
+		display: block
+		width: 21px
+		height: 3px
+		margin-bottom: 3px
+		background: #ef9c93
+
+.header__menu
+	margin: 18px 0 0 -62px
+
+.menu__list
+	display: table
+	margin: 0 auto
+	.list__item
+		display: table-cell
+		position: relative
+		padding: 0 20px
+		&:not(:last-child):after
+			content: ' '
+			position: absolute
+			width: 1px
+			height: 22px
+			top: 0
+			right: 0
+			background: $main-color
+		&.active
+			.link__item
+				color: $rose-text
+	.link__item
+		display: inline-block
+		font: 700 16px "merriweather"
+		color: $main-color
+		transition: all .15s ease
+		&:hover
+			color: $rose-text
+
+.section
+	padding: 3px 0 32px
+
+.grid
+	max-width: 1650px
+	margin: 0 auto
+
+.grid__item
+	float: left
+	width: 20%
+	padding: 0 7px
+	margin-bottom: 10px
+	&:before
+		content: ' '
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+		z-index: 997
+		background: rgba(255,255,255, 0)
+		transition: all .25s ease
+	&:hover
+		.zoom__link
+			display: block
+		&:before
+			background: rgba(255,255,255, .7)
+	img
+		display: block
+		width: 100%
+
+.zoom__link
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 46px
+	height: 46px
+	margin: auto
+	font-size: 0
+	border-radius: 50%
+	background: #fff
+	z-index: 998
+	box-shadow: 0 0 21px rgba(0, 0, 0, 0.3)
+	i
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		margin: auto
+		@include sprite($zoom-in)
+
+.main__about
+	margin-top: 100px
+	text-align: left
+
+.about__title
+	font: 30px "merriweather"
+	text-align: center
+
+.about__text
+	margin-top: 40px
+
+footer
+	padding: 48px 0 30px
+	border-top: 1px solid #DFDAD6
+
+.copyright
+	font-size: 12px
+	color: #A4A2A2
+	text-align: center
+
+.mfp-bg
+	display: none
+
+.mfp-close
+	display: none !important
+
+img
+	&.mfp-img
+		padding: 0 !important
+		box-shadow: 0 0 90px 50px rgba(255,255,255, .6)
+
+.mfp-counter
+	display: none !important
+
+
+
+@import "blog.sass"
+@import "article.sass"
+@import "portfolio.sass"
+@import "portfolio-one.sass"
+@import "contact.sass"
+@import "price.sass"

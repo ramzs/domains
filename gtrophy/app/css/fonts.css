@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "opensans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "panton";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/Panton-BlackCaps/Panton-BlackCaps.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton-BlackCaps/Panton-BlackCaps.woff") format("woff"), url("../fonts/Panton-BlackCaps/Panton-BlackCaps.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "panton";
+  font-style: 800;
+  font-weight: italic;
+  src: url("../fonts/Panton-BlackitalicCaps/Panton-BlackitalicCaps.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton-BlackitalicCaps/Panton-BlackitalicCaps.woff") format("woff"), url("../fonts/Panton-BlackitalicCaps/Panton-BlackitalicCaps.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "panton";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Panton-LightCaps/Panton-LightCaps.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton-LightCaps/Panton-LightCaps.woff") format("woff"), url("../fonts/Panton-LightCaps/Panton-LightCaps.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "panton";
+  font-style: 300;
+  font-weight: italic;
+  src: url("../fonts/Panton-LightitalicCaps/Panton-LightitalicCaps.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton-LightitalicCaps/Panton-LightitalicCaps.woff") format("woff"), url("../fonts/Panton-LightitalicCaps/Panton-LightitalicCaps.ttf") format("truetype");
+}

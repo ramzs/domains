@@ -1,0 +1,847 @@
+@import "bourbon"
+@import "grid"
+@import "vars"
+@import "sprite"
+
+@media only screen and (max-width : 1336px)
+	.main-link
+		margin-left: 20px
+
+	.counter
+		margin-left: 20px
+
+	.account__total
+		margin-left: 90px
+
+	.promo-wrap
+		&:before
+			max-width: 1080px
+
+	.reg
+		padding-top: 25px
+		text-align: center
+		&-comment
+			width: 100%
+			margin-top: 12px
+			padding-left: 0
+			&:before
+				display: none
+
+	.main-wrap
+		padding: 57px 40px 65px
+
+	.about
+		&-wrap
+			padding: 60px 145px 47px
+
+	/*------------Profile page----------------*/
+	.news-block
+		width: 82.7%
+
+	.news-carousel
+		margin: 0 -14px 36px
+		padding: 0
+		.slick-arrow
+			top: 28%
+			&.slick-prev
+				left: 0
+			&.slick-next
+				right: 0
+	/*----------------end--------------------*/
+
+	/*-------------Edit page----------------*/
+	.edit
+		&-block
+			&--contact
+				margin-right: 15px
+			&--password
+				margin-right: 15px
+			input
+				width: 240px
+			.jq-selectbox
+				width: 240px
+			textarea
+				width: 335px
+	/*----------------end-------------------*/
+
+
+@media only screen and (max-width : 1200px)
+	.account__total
+		margin-left: 10px
+		&:before
+			display: none
+
+	.promo-wrap
+		&:before
+			max-width: 850px
+
+	.main-wrap
+		padding: 57px 15px 65px
+
+	.about
+		&-wrap
+			padding: 60px 30px 47px
+
+	.copyright
+		top: 0
+		margin: 0 0 10px
+
+	/*------------Profile page----------------*/
+	.sidebar
+		width: 19.1%
+		min-width: 170px
+
+	.main-content
+		width: 80.8%
+
+	.profile-block--status
+		margin-top: 10px
+
+	.news-block
+		width: 79.6%
+
+	.news-carousel
+		margin: 0 -10px 36px
+		padding: 0
+		.slick-arrow
+			&.slick-prev
+				left: -10px
+			&.slick-next
+				right: -10px
+
+	.carousel-item
+		padding: 0 10px
+	/*----------------end--------------------*/
+
+	/*--------------Team page-----------------*/
+	.team
+		text-align: center
+		&__count
+			float: none
+	/*-----------------end---------------------*/
+
+	/*-------------Edit page----------------*/
+	.edit
+		&-block
+			width: 48.5%
+			&--contact
+				margin-right: 15px
+			&--password
+				margin-right: 0
+			&--about
+				width: 100%
+				margin-top: 10px
+			input
+				width: 100%
+			.jq-selectbox
+				width: 100%
+			textarea
+				width: 100%
+	/*----------------end-------------------*/
+
+	/*--------------Faq page----------------*/
+	.faq-item
+		padding-right: 38px
+	/*----------------end--------------------*/
+
+	/*------------News page------------------*/
+	.news-page
+		padding: 24px 20px 0
+
+	.news-item--page
+		width: 47%
+		margin: 0 12px 66px
+	/*--------------end-----------------------*/
+
+	/*---------------Finance page----------------*/
+	.btn--finance
+		float: none
+		display: block
+		margin: 25px auto 0
+	/*-------------------end----------------------*/
+
+@media only screen and (max-width : 992px)
+	.header
+		height: 370px
+		padding: 0
+
+	.logo
+		margin-top: 29px
+		vertical-align: middle
+		font-size: 50px
+
+	.main-link
+		vertical-align: middle
+		margin: 37px 0 0 30px
+		font-size: 30px
+		color: #044393
+		text-decoration: none
+
+	.counter
+		position: absolute
+		top: 144px
+		left: 0
+		right: 0
+		margin-left: 0
+		text-align: center
+		&__title
+			position: relative
+			top: 3px
+			font-size: 30px
+		&__total
+			font-size: 70px
+		&__num
+			font-size: 30px
+			span
+				height: 92px
+				padding: 0 20px
+				font-size: 70px
+				line-height: 86px
+
+	.btn--signin
+		width: 347px
+		height: 68px
+		margin-top: 29px
+		padding-left: 58px
+		font-size: 30px
+		line-height: 62px
+		border-radius: 18px
+		&:before
+			top: 20px
+			left: 24px
+			@include sprite($key-mob)
+
+	.account
+		&__total
+			float: none
+			position: absolute
+			display: block
+			bottom: 52px
+			left: 0
+			right: 0
+			margin-left: 0
+			font-size: 40px
+			text-align: center
+
+	.main-title
+		display: none
+
+	.reg
+		height: auto
+		margin-top: 0
+		padding: 40px 0 63px
+		border-radius: 5px
+		background: #f4f4f4
+		&-form
+			display: block
+		label
+			display: block
+			margin: 0 0 25px
+			font-size: 50px
+		input
+			display: block
+			width: 641px
+			height: 103px
+			margin: 48px auto 0
+			padding-left: 54px
+			font-size: 30px
+			border-radius: 52px
+
+	.btn--form
+		width: 641px
+		height: 111px
+		font-size: 40px
+		border-radius: 52px
+
+	.reg-comment
+		margin-top: 32px
+		padding: 0 50px
+		font-size: 25px
+
+	.promo
+		margin-top: 33px
+		.container
+			width: 100%
+			padding: 0
+		&__title
+			display: block
+			margin-bottom: 40px
+			font-size: 50px
+			font-weight: 700
+			color: #fff
+			text-align: center
+		&-wrap
+			&:before
+				display: none
+		&-video
+			height: 745px
+			&__preview
+				top: 50%
+				left: 70%
+				transform: translate(-50%,-50%)
+			&__title
+				display: none
+			&__play
+				@include sprite($play-mob)
+
+	.main
+		background: #f4f4f4
+		.container
+			width: 100%
+			padding: 0
+		&-wrap
+			padding: 32px 0 65px
+		&-work
+			float: none
+			width: 800px
+			margin: 0 auto
+			padding: 0 43px
+			&__title
+				margin-bottom: 47px
+				font-size: 50px
+
+		.btn--allnews
+			display: none
+
+	.work-nav
+		margin: 0 -10px 40px
+		&__item
+			min-width: 167px
+			max-width: 167px
+			height: 81px
+			margin: 0 7px
+			font-size: 40px
+			line-height: 81px
+			border-radius: 50px
+
+	.work-item
+		&__title
+			font-size: 40px
+		&__text
+			font-size: 30px
+			line-height: 1.2
+
+	.main-news
+		float: none
+		width: 100%
+		margin-top: 30px
+		&__title
+			display: block
+			font-size: 50px
+			text-align: center
+
+	.news-item
+		&__pict
+			height: 351px
+			img
+				width: 100%
+				height: 100%
+		&__accent
+			font-size: 40px
+			line-height: 351px
+		&__descr
+			width: 800px
+			margin: 0 auto
+			padding: 0 47px
+		&__text
+			margin: 33px 0 42px
+			font-size: 30px
+		&__link
+			display: none
+		&__date
+			float: none
+			margin-bottom: 50px
+			padding-left: 40px
+			font-size: 20px
+			&:before
+				left: 0
+				@include sprite($date-mob)
+		.btn--allnews
+			display: block
+			float: none
+			width: 529px
+			height: 81px
+			margin: 0 auto
+			font-size: 40px
+			line-height: 76px
+			border-radius: 50px
+
+	.about
+		.container
+			width: 100%
+			padding: 0
+		&-wrap
+			padding: 37px 0 78px
+		&__title
+			margin-bottom: 26px
+			font-size: 50px
+		&__text
+			width: 800px
+			margin: 0 auto
+			padding: 0 70px
+			font-size: 30px
+			line-height: 1.2
+			p
+				margin-bottom: 36px
+
+	.footer
+		padding: 0
+		text-align: center
+		background: rgba(0,0,0, .74)
+
+	.logo--footer
+		display: block
+		margin-top: 60px
+
+	.main-link--footer
+		display: block
+		margin: 42px 0 0
+
+	.account-link
+		position: relative
+		display: block
+		width: 347px
+		height: 68px
+		margin: 55px auto 0
+		padding-left: 58px
+		font-size: 30px
+		color: #fff
+		line-height: 62px
+		text-align: center
+		text-decoration: none
+		border-radius: 18px
+		background: #c41b8c
+		&:before
+			content: ''
+			position: absolute
+			top: 20px
+			left: 24px
+			@include sprite($key-mob)
+		&:hover
+			background: #83085b
+
+	.mail-link
+		float: none
+		display: inline-block
+		margin-top: 120px
+		padding-left: 72px
+		font-size: 30px
+		&:before
+			left: 0
+			@include sprite($mail-mob)
+
+	.copyright
+		margin: 54px 0 30px
+		font-size: 20px
+
+	/*-----------Faq-form---------------*/
+	.form-modal
+		padding: 45px 0 125px
+		&__wrap
+			padding: 166px 0 32px
+			border: none
+			box-shadow: none
+		&__title
+			margin-bottom: 102px
+			font-size: 50px
+		form
+			width: 623px
+		label
+			margin-bottom: 39px
+			font-size: 30px
+		input
+			height: 130px
+			margin-top: 9px
+			padding-left: 36px
+			font-size: 40px
+			border-radius: 65px
+		textarea
+			height: 783px
+			margin-top: 9px
+			padding: 30px 40px
+			font-size: 40px
+			border-radius: 27px
+		&__message
+			font-size: 30px
+		.mfp-close
+			top: 34px
+			right: 34px
+			@include sprite($close-mob)
+		&--2
+			.form-modal__title
+				margin-bottom: 52px
+				span
+					margin-bottom: 97px
+			label
+				margin-bottom: 16px
+		&--3
+			.form-modal__title
+				margin-bottom: 63px
+			label
+				width: 348px
+				margin-bottom: 125px
+
+	.btn--modal
+		width: 529px
+		height: 81px
+		margin-top: 57px
+		font-size: 40px
+		border-radius: 50px
+	/*-------------end------------------*/
+
+	/*------------Profile page----------------*/
+	.sidebar
+		float: none
+		width: 100%
+		margin-bottom: 10px
+
+	.profile-name
+		margin-bottom: 60px
+		font-size: 50px
+		text-align: center
+
+	.profile-nav
+		padding: 48px 25px 62px
+		text-align: center
+
+	.profile-list
+		&__item
+			margin-bottom: 40px
+		&__link
+			font-size: 50px
+
+	.profile-exit
+		margin-top: 27px
+		font-size: 50px
+
+	.main-content
+		float: none
+		width: 100%
+		padding-left: 0
+
+	.profile
+		margin-bottom: 8px
+		padding: 48px 70px 70px
+		&--outer
+			padding-bottom: 30px
+			text-align: center
+		&-title
+			margin-bottom: 28px
+			font-size: 50px
+			text-align: center
+		&-block
+			margin-bottom: 32px
+			&__title
+				margin-bottom: 7px
+				font-size: 40px
+			&--contact
+				margin-right: 0
+			&--ref
+				margin-right: 0
+			&--status
+				margin-top: 19px
+		&-contact
+			font-size: 40px
+		&-reflink
+			width: 100%
+			font-size: 40px
+		&-status
+			font-size: 40px
+
+	.edit-link
+		position: relative
+		display: inline-block
+		bottom: 0
+		right: 0
+		margin-top: 65px
+		padding-left: 57px
+		font-size: 30px
+		&:before
+			left: 0
+			@include sprite($edit-mob)
+
+	.news-wrap
+		margin-top: 35px
+		.container
+			width: 100%
+			padding: 0
+
+	.news-block
+		width: 100%
+		margin-bottom: 0
+		padding: 40px 0 72px
+		border-radius: 0
+		&__title
+			font-size: 50px
+			color: #000
+			text-align: center
+
+	.news-carousel
+		margin: 0
+
+	.carousel-item
+		padding: 0
+
+	.btn--carousel
+		width: 529px
+		height: 81px
+		font-size: 40px
+		line-height: 79px
+		border-radius: 50px
+	/*----------------end---------------------*/
+
+	/*--------------Team page-----------------*/
+	.team
+		margin-bottom: 8px
+		padding: 46px 0 55px
+		&__title
+			margin-bottom: 28px
+			font-size: 50px
+			span
+				display: block
+		&__count
+			font-size: 40px
+
+	.profile--team
+		&:last-of-type
+			margin-bottom: 30px
+	/*-----------------end---------------------*/
+
+	/*-------------Edit page----------------*/
+	.edit
+		padding: 48px 60px 93px
+		text-align: center
+		&-block
+			width: 100%
+			margin-bottom: 24px
+			text-align: left
+			&--contact
+				margin-right: 0
+			&__title
+				margin-bottom: 22px
+				font-size: 40px
+				&--about
+					margin-top: -10px
+			label
+				margin-bottom: 45px
+				font-size: 30px
+			input
+				height: 130px
+				margin-top: 9px
+				padding-left: 85px
+				font-size: 40px
+				border-radius: 65px
+			.jq-selectbox
+				margin-top: 9px
+				&__select
+					height: 130px
+					padding: 0 110px 0 85px
+					font-size: 40px
+					line-height: 125px
+					border-radius: 65px
+				&__trigger
+					&-arrow
+						top: 58px
+						right: 75px
+						@include sprite($arrow-select-mob)
+				li
+					padding: 15px 88px
+					font-size: 30px
+			textarea
+				margin-top: 9px
+				font-size: 40px
+				border-radius: 27px
+				&.about-in
+					height: 783px
+				&.ref-in
+					height: 434px
+
+	.save-link
+		display: inline-block
+		position: relative
+		bottom: 0
+		right: 0
+		margin-top: 17px
+		font-size: 30px
+		&:before
+			left: -55px
+			@include sprite($edit-mob)
+	/*----------------end-------------------*/
+
+	/*--------------Faq page----------------*/
+	.faq-topline
+		margin-bottom: 8px
+		padding: 46px 20px 70px
+		text-align: center
+		&__title
+			margin-bottom: 34px
+			font-size: 50px
+
+	.btn--faq
+		float: none
+		display: block
+		width: 529px
+		height: 81px
+		margin: 0 auto
+		font-size: 40px
+		line-height: 78px
+		border-radius: 50px
+
+	.faq-item
+		margin-bottom: 8px
+		padding: 24px 38px 57px
+		text-align: center
+		&:last-of-type
+			margin-bottom: 44px
+		&__title
+			margin-bottom: 18px
+			font-size: 40px
+		&__text
+			font-size: 30px
+			line-height: 1.2
+	/*----------------end--------------------*/
+
+	/*------------------News page---------------*/
+	.news-container
+		margin: -30px 0 0
+		.container
+			width: 100%
+			padding: 0
+
+	.news-page
+		padding: 48px 0 67px
+		border-radius: 0
+		&__title
+			margin-bottom: 26px
+			font-size: 50px
+			text-align: center
+
+	.news-item--page
+		width: 100%
+		margin: 0 0 42px
+	/*--------------------end---------------------*/
+
+	/*------------------News-in page---------------*/
+	.news-in
+		padding: 48px 0 105px
+		border-radius: 0
+		&__title
+			margin-bottom: 26px
+			font-size: 50px
+			text-align: center
+		&__pict
+			margin-bottom: 22px
+		&__text
+			padding: 0 47px
+			font-size: 30px
+			line-height: 1.2
+		&__date
+			margin: 37px 0 0 47px
+			font-size: 20px
+			&:before
+				top: 0
+	/*----------------------end---------------------*/
+
+	/*---------------Finance page----------------*/
+	.finance
+		margin-bottom: 8px
+		padding: 44px 38px 104px
+		text-align: center
+		&__title
+			margin-bottom: 25px
+			font-size: 50px
+		&-block
+			display: block
+			margin-bottom: 32px
+			&--balance
+				margin-right: 0
+			&--total
+				margin-right: 0
+			&__title
+				margin-bottom: 0
+				font-size: 40px
+			&__count
+				font-size: 50px
+
+	.btn--finance
+		width: 602px
+		height: 130px
+		margin: 70px auto 0
+		padding-left: 138px
+		font-size: 50px
+		line-height: 128px
+		&:before
+			top: 24px
+			left: 96px
+			@include sprite($rub-mob)
+
+	.finance-history
+		padding: 0
+		background: none
+		&__title
+			margin-bottom: 8px
+			padding: 38px 0 43px
+			font-size: 40px
+			text-align: center
+			border-radius: 5px
+			background: #f4f4f4
+
+	.finance-table
+		display: block
+
+	.finance-row
+		display: block
+		text-align: center
+		border-radius: 5px
+		border-bottom: none
+		background: #f4f4f4
+		+clearfix
+		&--body
+			height: auto
+			margin-bottom: 8px
+			padding: 72px 60px 22px
+		&--head
+			display: none
+
+	.finance-cell
+		display: block
+		margin-bottom: 45px
+		font-size: 30px
+		+clearfix
+		&:first-child
+			padding-left: 0
+		&:last-child
+			padding-right: 0
+		span
+			display: block
+			float: left
+			width: 34.5%
+			font-weight: normal
+			color: #6e6e6e
+			text-align: right
+		p
+			float: left
+			width: 65.5%
+			padding-left: 54px
+			text-align: left
+		&--date
+			width: 100%
+		&--total
+			width: 100%
+		&--event
+			width: 100%
+
+	.finance-bottom
+		padding: 40px 38px 72px
+		text-align: center
+		&__title
+			margin: 0 0 55px
+			font-size: 40px
+
+	.btn--ext
+		width: 529px
+		height: 81px
+		font-size: 40px
+		line-height: 76px
+		border-radius: 50px
+	/*-------------------end----------------------*/

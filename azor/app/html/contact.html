@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="breadcrumb">
+		<div class="container">
+			<ul class="breadcrumb-list">
+				<li><a href="#">Главная</a></li>
+				<li>Контакты</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="page page--contact page--var1">
+		<div class="container">
+			<h2 class="page__title page__title--contact">Контактная информация</h2>
+			<h2 class="title-contact">Контакты</h2>
+
+			<div class="contact-item contact-item--s1">
+				<div class="contact-item__title">Время работы:</div>
+				<div class="contact-item__main">понедельник-пятница с 10:00 до 18:00</div>
+			</div>
+
+			<div class="contact-item contact-item--s1">
+				<div class="contact-item__title">Адрес для корреспонденции и посылок:</div>
+				<div class="contact-item__main">125480, г.Москва, а/я 54, ООО "АЗОР"</div>
+			</div>
+
+			<div class="contact-item contact-item--s2">
+				<div class="contact-item__title">Адрес электронной почты:</div>
+				<a href="mailto:azor@azormed.ru" class="contact-item__main">azor@azormed.ru</a>
+			</div>
+
+			<div class="contact-item contact-item--s1">
+				<div class="contact-item__title">Фактический адрес:</div>
+				<div class="contact-item__main">г.Москва ул. Вилиса Лациса д.7 корп.4 м.Планерная, 1-й ваг. из Центра, на улице налево, далее …по схеме</div>
+			</div>
+
+			<div class="contact-item contact-item--s1">
+				<div class="contact-item__title">Телефоны:</div>
+				<div class="contact-item__main">(495) 494-31-22; (495) 494-31-15</div>
+				<div class="contact-item__title">Факс:</div>
+				<div class="contact-item__main">(495) 494-95-49</div>
+			</div>
+
+			<div class="map">
+				<div class="map__title">Карта:</div>
+				<div class="map-wrap">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=8vr-y7tBE-D9BFUyMtbJ-RmRYUGGMqFN&amp;height=460&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
+				</div>
+				<div class="map-info">
+					<div class="map-info__title">Для владельцев GPS навигаторов:</div>
+					<div class="map-info__main">N 55,86216<br>E 37,43002</div>
+				</div>
+			</div>
+
+			<div class="map-scheme zoom-gallery">
+				<div class="map-scheme__title">Схема проезда на авто:</div>
+				<a href="img/map.jpg" class="map-scheme__pict"><img src="img/map.jpg" alt=""></a>
+			</div>
+
+		</div>
+
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

@@ -1,0 +1,616 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+.wrapper
+	position: relative
+	min-height: 100%
+	width: 100%
+
+.bg
+	position: absolute
+	left: 0
+	width: 100%
+	&-top
+		top: 0
+		height: 100%
+		z-index: 0
+		background: url(../img/header-bg.jpg) center top no-repeat
+		background-size: cover
+		&--inner
+			height: 1090px
+			background: url(../img/header-inner-bg.png) center top no-repeat
+			background-size: cover
+	&-bottom
+		bottom: 0
+		height: 1754px
+		z-index: 0
+		background: url(../img/footer-bg.png) center top no-repeat
+		background-size: cover
+		&--inner
+			height: 836px
+			background: url(../img/footer-inner-bg.png) center top no-repeat
+			background-size: cover
+
+.header
+	position: relative
+	padding: 25px 0
+	z-index: 5
+
+.phone
+	display: inline-block
+	&--header
+		margin-top: 7px
+	&__link
+		display: block
+		font-size: 25px
+		font-weight: 300
+
+.logo
+	text-align: center
+	&__link
+		display: inline-block
+		font-size: 0
+		img
+			display: block
+			max-width: 100%
+			width: 367px
+
+.callback
+	margin-top: 10px
+	text-align: right
+	&-btn
+		display: inline-block
+		width: 174px
+		height: 43px
+		font-size: 13px
+		font-weight: 800
+		line-height: 43px
+		text-align: center
+		text-transform: uppercase
+		background-color: $main-bg
+		&:hover
+			color: $main-color
+
+.nav
+	position: relative
+	text-align: center
+	&--header
+		margin-top: 32px
+	&-btn
+		display: none
+		font-size: 14px
+		font-weight: 800
+		text-transform: uppercase
+		cursor: pointer
+		transition: all .15s ease
+		&:hover, &.active
+			color: $main-bg
+			i
+				transform: rotate(-180deg)
+		i
+			position: relative
+			display: inline-block
+			width: 9px
+			height: 6px
+			top: -3px
+			margin-left: 12px
+			transition: all .15s ease
+			background: url(../img/arrow-down.png) 0 0 no-repeat
+	&-menu
+		display: inline-block
+		&__item
+			display: inline-block
+			margin: 0 6px
+			transform: skew(-25deg)
+			&:hover
+				transition: background .25s
+				background: $main-bg
+				a
+					color: $main-color
+		&__link
+			display: block
+			padding: 0 11.5px 0
+			font-size: 14px
+			font-weight: 800
+			line-height: 29px
+			text-transform: uppercase
+			transform: skew(25deg)
+
+.content
+	position: relative
+	height: 100%
+	padding: 30px 0 216px
+	z-index: 3
+
+.section-title
+	padding: 3px 0 32px
+	text-align: center
+
+.page-title
+	display: inline-block
+	max-width: 100%
+	&--mob
+		display: none
+		font-size: 30px
+		font-weight: 800
+		text-transform: uppercase
+
+.section-slider
+	padding: 122px 0 64px
+
+.slider-wrap
+	position: relative
+
+.slick-dots
+	position: absolute
+	left: 0
+	right: 0
+	text-align: center
+	li
+		display: inline-block
+		margin: 0 8px
+		button
+			display: inline-block
+			padding: 0
+			font-size: 0
+			outline: none
+			box-shadow: none
+			border-radius: 50%
+
+.slider-main
+	.slick-dots
+		bottom: -25px
+		li
+			button
+				width: 9px
+				height: 9px
+				border: none
+				background: #000
+			&.slick-active
+				button
+					background: #ec943d
+	.slick-slide
+		width: 1110px
+		max-width: 100%
+		outline: none
+		img
+			width: 100%
+
+.slider-item
+	position: relative
+
+.slider-caption
+	position: absolute
+	bottom: 100px
+	left: 42px
+	max-width: 365px
+	width: 100%
+	padding: 10px 25px 44px
+	background: rgba(0,0,0, .9)
+	&__title
+		font-size: 30px
+		font-weight: 800
+		font-style: italic
+		color: #fff
+		text-transform: uppercase
+	&__text
+		font: 15px/25px "opensans"
+		color: #fff
+
+.more-btn
+	position: relative
+	display: block
+	width: 133px
+	height: 35px
+	font-size: 15px
+	font-weight: 800
+	font-style: italic
+	line-height: 35px
+	text-align: center
+	text-transform: uppercase
+	background: $main-bg
+	&:hover
+		color: $main-color
+	&--slider
+		position: absolute
+		bottom: 0
+		right: 0
+
+.slick
+	&-arrow
+		position: absolute
+		top: 50%
+		left: 0
+		width: 46px
+		height: 46px
+		font-size: 0
+		border: none
+		outline: none
+		transform: translate(0, -50%)
+		border-radius: 50%
+		background: #000
+		box-shadow: 0 5px 14px rgba(0, 0, 0, 0.5)
+		z-index: 10
+		&:before
+			content: ' '
+			position: absolute
+			top: 18px
+			left: 16px
+	&-prev
+		left: -23px
+		&:before
+			@include sprite($arrow-left)
+	&-next
+		left: auto
+		right: -23px
+		&:before
+			@include sprite($arrow-right)
+
+.slider-wrap
+	.slider-nav
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		width: 100%
+		height: 63px
+		background: rgba(0,0,0, .8)
+		&__link
+			float: left
+			width: 25%
+			height: 63px
+			padding-left: 25px
+			font-size: 18px
+			font-weight: 800
+			line-height: 63px
+			font-style: italic
+			color: #fff
+			cursor: pointer
+			outline: none
+			text-transform: uppercase
+			&:hover, &.slick-current
+				color: $main-color
+				background: $main-bg
+
+.event-wrap
+	padding: 26px 0 60px
+	background: #fff
+
+.title-block
+	font-size: 48px
+	font-weight: 800
+	font-style: italic
+	text-align: center
+	text-transform: uppercase
+
+.event-item
+	display: inline-block
+	width: 350px
+	height: 372px
+	margin-left: 120px
+	background: #121211
+
+.event-block
+	margin-top: 68px
+	.calendar
+		header
+			padding-top: 34px
+		h2
+			font-size: 16px
+			font-weight: 800
+			font-style: italic
+			color: #fff
+			letter-spacing: 12px
+		td
+			position: relative
+			width: 40px
+			height: 40px
+			padding: 0
+			font-size: 16px
+			font-weight: 300
+			font-style: italic
+			color: #fff
+			line-height: 40px
+			border: 1px solid transparent
+		tbody
+			display: inline-block
+			margin-top: 54px
+			td
+				&:hover, &.active
+					border: 1px solid $main-bg
+		.current-day
+			color: #121211
+			background: $main-bg
+	.event-days
+		display: inline-block
+		display: none
+		td
+			padding-left: 5px
+			font-size: 14px
+	.event
+		&:after
+			width: 4px
+			height: 4px
+			bottom: 4px
+			margin: -2px 0 0 -2px
+			background: $main-bg
+	.btn-arrow
+		position: absolute
+		top: 13px
+		width: 44px
+		height: 53px
+		margin: 0
+		font-size: 0
+		line-height: 1.4
+		outline: none
+		cursor: pointer
+		border: none
+		border-radius: 0
+		&.btn-prev
+			left: -13px
+			background: url(../img/stick-left.png) 0 0 no-repeat
+		&.btn-next
+			top: 22px
+			right: -14px
+			background: url(../img/stick-right.png) 0 0 no-repeat
+
+.event-block
+	.event-list
+		float: right
+		width: 50.4%
+	.day-event
+		margin: 0
+		padding: 0 50px 0 0
+		background: none
+		&.open
+			display: block
+		img
+			max-height: 230px
+		&__title
+			margin-top: 25px
+			padding-left: 32px
+			font-size: 30px
+			font-weight: 800
+			font-style: italic
+			text-transform: uppercase
+		&__date
+			margin-top: -3px
+			padding-left: 31px
+			font-size: 20px
+			font-weight: 800
+			font-style: italic
+			color: $accent
+		&__text
+			margin-top: 13px
+			padding-left: 32px
+			font: 15px/24px "opensans"
+			p
+				padding: 0
+
+.section-catalog
+	padding: 52px 0 100px
+
+.catalog-item
+	position: relative
+	width: 100%
+	height: 434px
+	box-shadow: 0 0 27px rgba(0, 0, 0, 0.25)
+	background: #fff
+
+.catalog-pict
+	position: relative
+	img
+		width: 100%
+	&:after
+		content: ' '
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		width: 100%
+		height: 76px
+		background: url(../img/overlay.png) no-repeat
+
+.catalog-descr
+	padding: 0 38px
+	text-align: center
+	&__title
+		position: relative
+		margin: -32px 0 28px
+		font-size: 28px
+		font-weight: 800
+		font-style: italic
+		line-height: 22px
+		text-transform: uppercase
+		z-index: 2
+	&__text
+		font: 14px/22px "opensans"
+
+.btn-wrap
+	position: absolute
+	bottom: -19px
+	left: 0
+	right: 0
+	width: 193px
+	height: 39px
+	margin: 0 auto
+	transform: skew(-15deg)
+	background: $main-bg
+
+.more-btn
+	&--catalog
+		width: 100%
+		height: 39px
+		font-size: 18px
+		line-height: 39px
+		transform: skew(15deg)
+		background: none
+	i
+		display: inline-block
+		position: relative
+		left: 14px
+		@include sprite($arrow-btn)
+
+.section-service
+	padding: 52px 0 20px
+
+.service
+	padding: 19px 10px 15px 26px
+	background: #fff
+	&-title
+		font-size: 30px
+		font-weight: 800
+		font-style: italic
+		text-transform: uppercase
+	&-list
+		margin-top: 39px
+		&__item
+			position: relative
+			display: block
+			margin-bottom: 24px
+			padding-left: 36px
+			font: 15px/24px "opensans"
+			&:before
+				content: ' '
+				position: absolute
+				top: 5px
+				left: 0
+				@include sprite($arrow-service)
+
+.footer
+	position: absolute
+	left: 0
+	bottom: 0
+	width: 100%
+	height: 216px
+	padding: 14px 0 35px
+	z-index: 5
+
+.social
+	text-align: center
+	&-link
+		position: relative
+		display: inline-block
+		margin: 0 15px
+		vertical-align: middle
+		font-size: 0
+		i
+			position: absolute
+			left: 25px
+		&--vk
+			width: 88px
+			height: 56px
+			background: url(../img/social-bg-1.png) no-repeat
+			i
+				top: 22px
+				@include sprite($vk)
+		&--fb
+			width: 71px
+			height: 98px
+			background: url(../img/social-bg-2.png) no-repeat
+			i
+				top: 38px
+				@include sprite($fb)
+		&--inst
+			width: 99px
+			height: 73px
+			background: url(../img/social-bg-3.png) no-repeat
+			i
+				top: 25px
+				left: 42px
+				@include sprite($inst)
+
+.nav
+	&--footer
+		margin-top: 5px
+		overflow: hidden
+
+.copyright
+	margin-top: 17px
+	font: 14px "opensans"
+	text-align: center
+
+/*-------------Callback form---------------*/
+.callback-form
+	position: relative
+	width: 540px
+	max-width: 100%
+	height: 467px
+	margin: 0 auto
+	padding: 55px 15px 0
+	text-align: center
+	background: #fff
+	.mfp-close
+		right: 15px
+		top: 15px
+		font-weight: bold
+		color: #000
+		opacity: 1
+		&:active
+			top: 15px
+	&__title
+		margin-bottom: 14px
+		font-size: 13px
+		font-weight: 800
+		text-transform: uppercase
+	form
+		width: 350px
+		max-width: 100%
+		margin: 0 auto
+		text-align: left
+	label
+		font-size: 14px
+		font-weight: bold
+	input
+		display: block
+		width: 100%
+		height: 50px
+		margin: 6px 0 15px
+		font-size: 14px
+		text-align: center
+
+.btn-form
+	display: block
+	width: 174px
+	height: 43px
+	margin: 30px auto 0
+	font-size: 13px
+	font-weight: 800
+	line-height: 43px
+	text-transform: uppercase
+	text-align: center
+	border: none
+	background: #eee70f
+/*-----------end---------------------------*/
+
+
+/*-------Плавное появление magnific popup------------*/
+.mfp-zoom-in
+	.mfp-with-anim
+		opacity: 0
+		transition: all 0.2s ease-in-out
+		transform: scale(0.8)
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.3s ease-out
+	&.mfp-ready
+		.mfp-with-anim
+			opacity: 1
+			transform: scale(1)
+		&.mfp-bg
+			opacity: 0.8
+	&.mfp-removing
+		.mfp-with-anim
+			transform: scale(0.8)
+			opacity: 0
+		&.mfp-bg
+			opacity: 0
+/*-------------end-----------------------*/
+
+@import "service.sass"
+@import "service-in.sass"
+@import "contact.sass"
+@import "gallery.sass"

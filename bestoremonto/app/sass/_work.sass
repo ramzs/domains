@@ -1,0 +1,69 @@
+@import "vars.sass"
+/*--------------Work page---------------*/
+.section__title
+	&.section__title-service
+		&:after
+			background: url(../img/title-line-1.png) 0 0 no-repeat
+			background-size: 100%
+.about__box
+	&.about__box-service
+		margin-top: 60px
+		b
+			font-weight: 600
+		h5
+			font: 500 18px "helvetica"
+			color: $color-1
+			text-transform: uppercase
+		ul
+			li
+				&:before
+					content: ' '
+					width: 5px
+					height: 5px
+					top: 12px
+					border-radius: 50%
+					background: $main-color
+
+.download__price
+	position: relative
+	display: inline-block
+	width: 529px
+	margin-top: 18px
+	padding: 23px 122px 20px 187px
+	font: 700 23px "helvetica"
+	color: #ff0000
+	text-transform: uppercase
+	border: 5px solid #ff0000
+	transition: all .15s ease
+	&:before
+		content: ' '
+		position: absolute
+		top: 25px
+		left: 115px
+		width: 50px
+		height: 73px
+		background: url(../img/pdf-download.png) 0 0 no-repeat
+	&:after
+		content: ' '
+		position: absolute
+		top: 50px
+		right: 124px
+		width: 94px
+		height: 45px
+		background: url(../img/pdf-triangle.png) 0 0 no-repeat
+	&:hover
+		box-shadow: 0 0 12px $main-color
+
+.section__seo
+	&.section__seo-service
+		padding-top: 24px
+		background: #fff
+
+.section__title
+	&.section__title-seo
+		&.section__title-service
+			margin-bottom: 30px
+			h2
+				&.mob__title
+					display: none
+/*------------------end---------------------*/

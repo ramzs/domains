@@ -1,0 +1,257 @@
+@import "vars"
+
+/*---------------Tovar page------------------*/
+.block-title--tovar
+	margin-top: 2px
+
+.tovar
+	margin-top: 38px
+	&-preview
+		float: left
+		width: 45%
+		overflow: hidden
+	&-slider
+		width: 100%
+		overflow: hidden
+		z-index: 9
+		border-radius: 10px
+		border: 1px solid #C7D0D5
+		background: #fff
+	&-item
+		&__pict
+			position: relative
+			display: block
+			height: 461px
+			img
+				position: absolute
+				top: 50%
+				left: 50%
+				height: 100%
+				transform: translate(-50%,-50%)
+	&-nav
+		margin: 14px -3px 0 0
+		&__item
+			outline: none
+		&__pict
+			width: 87px
+			height: 87px
+			overflow: hidden
+			cursor: pointer
+			border-radius: 10px
+			border: 1px solid #C7D0D5
+			img
+				width: 100%
+		.slick-arrow
+			position: absolute
+			top: 0
+			margin-top: 0
+			font-size: 0
+			z-index: 9
+			outline: none
+			cursor: pointer
+			opacity: .8
+			border: none
+			background: none
+			&:hover
+				opacity: 1
+			&.slick-prev
+				left: 0
+				@include sprite($arrow-left-small)
+			&.slick-next
+				right: 5px
+				@include sprite($arrow-right-small)
+			&.slick-disabled
+				opacity: 0
+	&-feat
+		float: left
+		width: 55%
+		padding-left: 28px
+	&-price
+		font-size: 30px
+		color: #363636
+		span
+			color: #24065a
+			font-weight: 700
+	&-available
+		margin-top: 13px
+		font-size: 20px
+		font-weight: 500
+		color: #025c00
+	&-order
+		margin-top: 24px
+		.jq-number
+			display: inline-block
+			width: 98px
+			height: 40px
+			margin-right: 30px
+			padding-right: 0
+			text-align: center
+			&__field
+				width: 40px
+				height: 40px
+				margin: 0 auto
+				border: 1px solid #263238
+				border-radius: 10px
+				&.focused
+					.jq-number__field
+						border: 1px solid #263238
+				&:hover
+					border: 1px solid #263238
+				input
+					font-size: 18px
+					color: #000
+					text-align: center
+					outline: none
+			&__spin
+				width: 26px
+				height: 40px
+				border: 1px solid #3f1746
+				border-radius: 10px
+				box-shadow: none
+				background: #3f1746
+				&:hover
+					background: #3f1746
+				&:active
+					box-shadow: none
+				&.minus
+					left: 0
+					&:after
+						display: none
+					&:before
+						content: ' '
+						position: absolute
+						top: 9px
+						left: 6px
+						@include sprite($arrow-left-num)
+				&.plus
+					&:after
+						display: none
+					&:before
+						content: ' '
+						position: absolute
+						top: 9px
+						right: 6px
+						@include sprite($arrow-right-num)
+
+.btn--tovar
+	display: inline-block
+	width: 126px
+	height: 40px
+	margin-right: 3px
+	font-size: 16px
+	color: #60123f
+	line-height: 38px
+
+.btn--tovclick
+	display: inline-block
+	width: 154px
+	height: 40px
+	font-size: 16px
+	color: #fff
+	line-height: 38px
+
+.tovar-color
+	margin-top: 40px
+	&__title
+		display: inline-block
+		margin-right: 30px
+		vertical-align: middle
+		font-size: 16px
+		color: #000
+	.jq-selectbox
+		width: 201px
+		background: #fff
+		&.focused
+			.jq-selectbox__select
+				border: 1px solid #455a64
+		&__select
+			height: 36px
+			padding: 0 25px 0 10px
+			font: 14px/36px "BloggerSans"
+			color: #000
+			border: 1px solid #455a64
+			border-radius: 10px
+			box-shadow: none
+			background: none
+			&:hover
+				background: none
+		&__trigger
+			border-left: none
+			&-arrow
+				top: 14px
+				right: 9px
+				border-top: 7px solid #455a64
+				border-right: 5px solid transparent
+				border-left: 5px solid transparent
+		&__dropdown
+			margin-top: 0
+
+.tovar-height
+	margin-top: 36px
+	&__title
+		display: inline-block
+		margin-right: 30px
+		vertical-align: top
+		font-size: 16px
+		color: #000
+	&__list
+		display: inline-block
+		width: 55%
+		li
+			float: left
+			width: 40px
+			height: 40px
+			margin: 0 7px 7px 0
+			font-size: 19px
+			color: #a8a8a8
+			line-height: 40px
+			text-align: center
+			border: 1px solid #bfbfbf
+			border-radius: 10px
+			a
+				display: block
+				font-size: 19px
+				color: #000
+				line-height: 40px
+				text-align: center
+			&.active
+				box-shadow: 0 0 0 2px #3f1746
+				a
+					color: #3f1746
+					cursor: default
+					text-shadow: 0 0 1px #3f1746
+
+.tovar-code
+	margin-top: 27px
+	font-size: 20px
+	color: #000
+
+.tovar-descr
+	margin: 122px 0 72px
+	padding: 40px 0 30px
+	border-top: 1px solid #3f1746
+	border-bottom: 1px solid #3f1746
+	&__tab
+		margin-bottom: 28px
+	&__link
+		display: inline-block
+		margin-right: 50px
+		font-size: 24px
+		color: #212121
+		cursor: pointer
+		border-bottom: 1px dashed #212121
+		&:hover
+			border-bottom: 1px dashed transparent
+		&.active
+			color: #52054c
+			text-shadow: 0 0 1px #52054c
+			border-bottom: 1px dashed transparent
+	&__body
+		display: none
+		font-size: 18px
+		color: #000
+		p
+			margin: 26px 0
+		&.open
+			display: block
+/*------------------end-----------------------*/

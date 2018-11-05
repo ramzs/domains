@@ -1,0 +1,336 @@
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+$add-icon-name: 'add-icon'
+$add-icon-x: 203px
+$add-icon-y: 130px
+$add-icon-offset-x: -203px
+$add-icon-offset-y: -130px
+$add-icon-width: 20px
+$add-icon-height: 23px
+$add-icon-total-width: 244px
+$add-icon-total-height: 198px
+$add-icon-image: '../img/sprite.png'
+$add-icon: (203px, 130px, -203px, -130px, 20px, 23px, 244px, 198px, '../img/sprite.png', 'add-icon', )
+$arrow-left-name: 'arrow-left'
+$arrow-left-x: 203px
+$arrow-left-y: 113px
+$arrow-left-offset-x: -203px
+$arrow-left-offset-y: -113px
+$arrow-left-width: 28px
+$arrow-left-height: 17px
+$arrow-left-total-width: 244px
+$arrow-left-total-height: 198px
+$arrow-left-image: '../img/sprite.png'
+$arrow-left: (203px, 113px, -203px, -113px, 28px, 17px, 244px, 198px, '../img/sprite.png', 'arrow-left', )
+$arrow-right-name: 'arrow-right'
+$arrow-right-x: 203px
+$arrow-right-y: 96px
+$arrow-right-offset-x: -203px
+$arrow-right-offset-y: -96px
+$arrow-right-width: 29px
+$arrow-right-height: 17px
+$arrow-right-total-width: 244px
+$arrow-right-total-height: 198px
+$arrow-right-image: '../img/sprite.png'
+$arrow-right: (203px, 96px, -203px, -96px, 29px, 17px, 244px, 198px, '../img/sprite.png', 'arrow-right', )
+$arrow-name: 'arrow'
+$arrow-x: 232px
+$arrow-y: 103px
+$arrow-offset-x: -232px
+$arrow-offset-y: -103px
+$arrow-width: 5px
+$arrow-height: 7px
+$arrow-total-width: 244px
+$arrow-total-height: 198px
+$arrow-image: '../img/sprite.png'
+$arrow: (232px, 103px, -232px, -103px, 5px, 7px, 244px, 198px, '../img/sprite.png', 'arrow', )
+$benefit-1-name: 'benefit-1'
+$benefit-1-x: 0px
+$benefit-1-y: 98px
+$benefit-1-offset-x: 0px
+$benefit-1-offset-y: -98px
+$benefit-1-width: 47px
+$benefit-1-height: 48px
+$benefit-1-total-width: 244px
+$benefit-1-total-height: 198px
+$benefit-1-image: '../img/sprite.png'
+$benefit-1: (0px, 98px, 0px, -98px, 47px, 48px, 244px, 198px, '../img/sprite.png', 'benefit-1', )
+$benefit-1-1-name: 'benefit-1_1'
+$benefit-1-1-x: 47px
+$benefit-1-1-y: 98px
+$benefit-1-1-offset-x: -47px
+$benefit-1-1-offset-y: -98px
+$benefit-1-1-width: 47px
+$benefit-1-1-height: 47px
+$benefit-1-1-total-width: 244px
+$benefit-1-1-total-height: 198px
+$benefit-1-1-image: '../img/sprite.png'
+$benefit-1-1: (47px, 98px, -47px, -98px, 47px, 47px, 244px, 198px, '../img/sprite.png', 'benefit-1_1', )
+$benefit-2-name: 'benefit-2'
+$benefit-2-x: 0px
+$benefit-2-y: 56px
+$benefit-2-offset-x: 0px
+$benefit-2-offset-y: -56px
+$benefit-2-width: 58px
+$benefit-2-height: 42px
+$benefit-2-total-width: 244px
+$benefit-2-total-height: 198px
+$benefit-2-image: '../img/sprite.png'
+$benefit-2: (0px, 56px, 0px, -56px, 58px, 42px, 244px, 198px, '../img/sprite.png', 'benefit-2', )
+$benefit-2-2-name: 'benefit-2_2'
+$benefit-2-2-x: 58px
+$benefit-2-2-y: 56px
+$benefit-2-2-offset-x: -58px
+$benefit-2-2-offset-y: -56px
+$benefit-2-2-width: 58px
+$benefit-2-2-height: 42px
+$benefit-2-2-total-width: 244px
+$benefit-2-2-total-height: 198px
+$benefit-2-2-image: '../img/sprite.png'
+$benefit-2-2: (58px, 56px, -58px, -56px, 58px, 42px, 244px, 198px, '../img/sprite.png', 'benefit-2_2', )
+$benefit-3-name: 'benefit-3'
+$benefit-3-x: 94px
+$benefit-3-y: 98px
+$benefit-3-offset-x: -94px
+$benefit-3-offset-y: -98px
+$benefit-3-width: 47px
+$benefit-3-height: 46px
+$benefit-3-total-width: 244px
+$benefit-3-total-height: 198px
+$benefit-3-image: '../img/sprite.png'
+$benefit-3: (94px, 98px, -94px, -98px, 47px, 46px, 244px, 198px, '../img/sprite.png', 'benefit-3', )
+$benefit-3-3-name: 'benefit-3_3'
+$benefit-3-3-x: 156px
+$benefit-3-3-y: 0px
+$benefit-3-3-offset-x: -156px
+$benefit-3-3-offset-y: 0px
+$benefit-3-3-width: 47px
+$benefit-3-3-height: 46px
+$benefit-3-3-total-width: 244px
+$benefit-3-3-total-height: 198px
+$benefit-3-3-image: '../img/sprite.png'
+$benefit-3-3: (156px, 0px, -156px, 0px, 47px, 46px, 244px, 198px, '../img/sprite.png', 'benefit-3_3', )
+$benefit-4-name: 'benefit-4'
+$benefit-4-x: 41px
+$benefit-4-y: 146px
+$benefit-4-offset-x: -41px
+$benefit-4-offset-y: -146px
+$benefit-4-width: 47px
+$benefit-4-height: 43px
+$benefit-4-total-width: 244px
+$benefit-4-total-height: 198px
+$benefit-4-image: '../img/sprite.png'
+$benefit-4: (41px, 146px, -41px, -146px, 47px, 43px, 244px, 198px, '../img/sprite.png', 'benefit-4', )
+$benefit-4-4-name: 'benefit-4_4'
+$benefit-4-4-x: 156px
+$benefit-4-4-y: 98px
+$benefit-4-4-offset-x: -156px
+$benefit-4-4-offset-y: -98px
+$benefit-4-4-width: 47px
+$benefit-4-4-height: 43px
+$benefit-4-4-total-width: 244px
+$benefit-4-4-total-height: 198px
+$benefit-4-4-image: '../img/sprite.png'
+$benefit-4-4: (156px, 98px, -156px, -98px, 47px, 43px, 244px, 198px, '../img/sprite.png', 'benefit-4_4', )
+$benefit-5-name: 'benefit-5'
+$benefit-5-x: 156px
+$benefit-5-y: 46px
+$benefit-5-offset-x: -156px
+$benefit-5-offset-y: -46px
+$benefit-5-width: 41px
+$benefit-5-height: 52px
+$benefit-5-total-width: 244px
+$benefit-5-total-height: 198px
+$benefit-5-image: '../img/sprite.png'
+$benefit-5: (156px, 46px, -156px, -46px, 41px, 52px, 244px, 198px, '../img/sprite.png', 'benefit-5', )
+$benefit-5-5-name: 'benefit-5_5'
+$benefit-5-5-x: 0px
+$benefit-5-5-y: 146px
+$benefit-5-5-offset-x: 0px
+$benefit-5-5-offset-y: -146px
+$benefit-5-5-width: 41px
+$benefit-5-5-height: 52px
+$benefit-5-5-total-width: 244px
+$benefit-5-5-total-height: 198px
+$benefit-5-5-image: '../img/sprite.png'
+$benefit-5-5: (0px, 146px, 0px, -146px, 41px, 52px, 244px, 198px, '../img/sprite.png', 'benefit-5_5', )
+$benefit-6-name: 'benefit-6'
+$benefit-6-x: 106px
+$benefit-6-y: 0px
+$benefit-6-offset-x: -106px
+$benefit-6-offset-y: 0px
+$benefit-6-width: 50px
+$benefit-6-height: 51px
+$benefit-6-total-width: 244px
+$benefit-6-total-height: 198px
+$benefit-6-image: '../img/sprite.png'
+$benefit-6: (106px, 0px, -106px, 0px, 50px, 51px, 244px, 198px, '../img/sprite.png', 'benefit-6', )
+$benefit-6-6-name: 'benefit-6_6'
+$benefit-6-6-x: 56px
+$benefit-6-6-y: 0px
+$benefit-6-6-offset-x: -56px
+$benefit-6-6-offset-y: 0px
+$benefit-6-6-width: 50px
+$benefit-6-6-height: 51px
+$benefit-6-6-total-width: 244px
+$benefit-6-6-total-height: 198px
+$benefit-6-6-image: '../img/sprite.png'
+$benefit-6-6: (56px, 0px, -56px, 0px, 50px, 51px, 244px, 198px, '../img/sprite.png', 'benefit-6_6', )
+$benefit-7-name: 'benefit-7'
+$benefit-7-x: 203px
+$benefit-7-y: 48px
+$benefit-7-offset-x: -203px
+$benefit-7-offset-y: -48px
+$benefit-7-width: 41px
+$benefit-7-height: 48px
+$benefit-7-total-width: 244px
+$benefit-7-total-height: 198px
+$benefit-7-image: '../img/sprite.png'
+$benefit-7: (203px, 48px, -203px, -48px, 41px, 48px, 244px, 198px, '../img/sprite.png', 'benefit-7', )
+$benefit-7-7-name: 'benefit-7_7'
+$benefit-7-7-x: 203px
+$benefit-7-7-y: 0px
+$benefit-7-7-offset-x: -203px
+$benefit-7-7-offset-y: 0px
+$benefit-7-7-width: 41px
+$benefit-7-7-height: 48px
+$benefit-7-7-total-width: 244px
+$benefit-7-7-total-height: 198px
+$benefit-7-7-image: '../img/sprite.png'
+$benefit-7-7: (203px, 0px, -203px, 0px, 41px, 48px, 244px, 198px, '../img/sprite.png', 'benefit-7_7', )
+$check-icon-name: 'check-icon'
+$check-icon-x: 232px
+$check-icon-y: 96px
+$check-icon-offset-x: -232px
+$check-icon-offset-y: -96px
+$check-icon-width: 8px
+$check-icon-height: 7px
+$check-icon-total-width: 244px
+$check-icon-total-height: 198px
+$check-icon-image: '../img/sprite.png'
+$check-icon: (232px, 96px, -232px, -96px, 8px, 7px, 244px, 198px, '../img/sprite.png', 'check-icon', )
+$close-name: 'close'
+$close-x: 223px
+$close-y: 130px
+$close-offset-x: -223px
+$close-offset-y: -130px
+$close-width: 21px
+$close-height: 21px
+$close-total-width: 244px
+$close-total-height: 198px
+$close-image: '../img/sprite.png'
+$close: (223px, 130px, -223px, -130px, 21px, 21px, 244px, 198px, '../img/sprite.png', 'close', )
+$price-icon-name: 'price-icon'
+$price-icon-x: 203px
+$price-icon-y: 174px
+$price-icon-offset-x: -203px
+$price-icon-offset-y: -174px
+$price-icon-width: 17px
+$price-icon-height: 17px
+$price-icon-total-width: 244px
+$price-icon-total-height: 198px
+$price-icon-image: '../img/sprite.png'
+$price-icon: (203px, 174px, -203px, -174px, 17px, 17px, 244px, 198px, '../img/sprite.png', 'price-icon', )
+$search-icon-name: 'search_icon'
+$search-icon-x: 203px
+$search-icon-y: 153px
+$search-icon-offset-x: -203px
+$search-icon-offset-y: -153px
+$search-icon-width: 20px
+$search-icon-height: 21px
+$search-icon-total-width: 244px
+$search-icon-total-height: 198px
+$search-icon-image: '../img/sprite.png'
+$search-icon: (203px, 153px, -203px, -153px, 20px, 21px, 244px, 198px, '../img/sprite.png', 'search_icon', )
+$search-icon-white-name: 'search_icon_white'
+$search-icon-white-x: 223px
+$search-icon-white-y: 153px
+$search-icon-white-offset-x: -223px
+$search-icon-white-offset-y: -153px
+$search-icon-white-width: 20px
+$search-icon-white-height: 21px
+$search-icon-white-total-width: 244px
+$search-icon-white-total-height: 198px
+$search-icon-white-image: '../img/sprite.png'
+$search-icon-white: (223px, 153px, -223px, -153px, 20px, 21px, 244px, 198px, '../img/sprite.png', 'search_icon_white', )
+$zoom-icon-name: 'zoom-icon'
+$zoom-icon-x: 0px
+$zoom-icon-y: 0px
+$zoom-icon-offset-x: 0px
+$zoom-icon-offset-y: 0px
+$zoom-icon-width: 56px
+$zoom-icon-height: 56px
+$zoom-icon-total-width: 244px
+$zoom-icon-total-height: 198px
+$zoom-icon-image: '../img/sprite.png'
+$zoom-icon: (0px, 0px, 0px, 0px, 56px, 56px, 244px, 198px, '../img/sprite.png', 'zoom-icon', )
+$spritesheet-width: 244px
+$spritesheet-height: 198px
+$spritesheet-image: '../img/sprite.png'
+$spritesheet-sprites: ($add-icon, $arrow-left, $arrow-right, $arrow, $benefit-1, $benefit-1-1, $benefit-2, $benefit-2-2, $benefit-3, $benefit-3-3, $benefit-4, $benefit-4-4, $benefit-5, $benefit-5-5, $benefit-6, $benefit-6-6, $benefit-7, $benefit-7-7, $check-icon, $close, $price-icon, $search-icon, $search-icon-white, $zoom-icon, )
+$spritesheet: (244px, 198px, '../img/sprite.png', $spritesheet-sprites, )
+
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+    // CSS
+    .icon {
+      display: inline-block;
+    }
+
+    // HTML
+    <i class="icon icon-home"></i>
+  */
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)

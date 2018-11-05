@@ -1,0 +1,37 @@
+/*--------------Garant page--------------------*/
+.breadcrumb
+	&-list
+		li
+			position: relative
+			display: inline-block
+			margin-right: 8px
+			font-size: 13px
+			color: $gray
+			&:last-child
+				margin-right: 0
+			&:not(:last-child):after
+				content: '/'
+				position: absolute
+				top: 0
+				right: -8px
+				font-size: 13px
+				color: $gray
+			a
+				display: block
+				font-size: 13px
+				color: $blue
+				text-decoration: underline
+
+.page-title
+	display: block
+	margin-top: 13px
+	font: 800 43px $second-font
+
+.garant
+	padding: 12px 0 68px
+	font-size: 24px
+	line-height: 36px
+	p
+		margin-bottom: 23px
+
+/*-----------------end--------------------*/

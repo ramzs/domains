@@ -1,0 +1,556 @@
+@import "bourbon"
+@import "vars"
+@import "sprite"
+@import "mixins"
+
+@media only screen and (max-width : 1400px)
+	.header-top
+		margin-right: 0
+
+	.phone
+		margin-left: 20px
+
+	.location
+		margin-left: 20px
+
+	.navbar-collapse
+		margin-left: -5px
+
+	.nav
+		li
+			padding: 0 3px
+			&.break
+				max-width: 132px
+			a
+				padding: 10px 6px
+				span
+					&:before
+						left: -3px
+					&:after
+						right: -3px
+
+	.footer-menu
+		padding-left: 0
+		.nav
+			text-align: left
+			text-align-last: auto
+			li
+				margin-right: 0
+
+
+@media only screen and (max-width : 1200px)
+	.logo-block
+		width: 50%
+
+	.header-top
+		margin-bottom: 10px
+		padding-top: 20px
+
+	.mail
+		display: block
+		margin-bottom: 15px
+
+	.phone
+		display: block
+		margin: 0 0 15px
+
+	.location
+		display: block
+		margin-left: 0
+
+	.navbar
+		float: none
+		clear: both
+
+	.nav
+		+justify
+		li
+			&.break
+				max-width: 150px
+			a
+				text-align-last: auto
+
+	.s-welcome-wrap
+		display: table
+		width: 100%
+
+	.s-welcome-caption
+		height: 550px
+		padding-left: 0
+
+	.about
+		min-height: 850px
+
+	.couch
+		min-height: 920px
+
+	.couch-block__pict
+		max-width: 350px
+
+	.way
+		padding: 20px 0 80px
+
+	.way-block
+		&:before
+			bottom: -135px
+		&:after
+			bottom: -15px
+
+	.tab-in
+		width: 24.6%
+
+	.found
+		min-height: 950px
+
+	.partner-item
+		&__logo
+			height: 150px
+		&__name
+			font-size: 18px
+
+	.contact-block
+		.mail
+			display: inline-block
+			margin: 0
+
+		.phone
+			display: inline-block
+			margin: 0 0 0 20px
+
+		.location
+			display: inline-block
+			margin-left: 20px
+
+		.social
+			display: block
+			margin: 25px 0 0
+
+	.logo-block
+		&_footer
+			width: auto
+			.logo
+				display: block
+				img
+					float: none
+					display: block
+					margin: 0 auto
+
+
+@media only screen and (max-width : 992px)
+	.nav
+		li
+			&.break
+				max-width: 122px
+			a
+				font-size: 18px
+
+	.section-title
+		font-size: 60px
+
+	.place-images
+		margin-bottom: 45px
+		&__item
+			height: 160px
+			img
+				width: 100%
+
+	.form-sb
+		label
+			width: 205px
+		.btn-form
+			width: 235px
+
+	.info
+		min-height: 620px
+		padding-top: 45px
+
+	.partner-item
+		&__logo
+			height: 120px
+			img
+				max-height: none
+				width: 100%
+
+	.contact-block
+		padding-top: 15px
+		&__title
+			font-size: 60px
+		.mail
+			margin-bottom: 15px
+			font-size: 14px
+		.phone
+			margin: 0 0 10px 5px
+			font-size: 20px
+		.location
+			margin: 0 0 10px 5px
+			text-align: left
+		.social
+			margin-top: 10px
+
+	.footer
+		padding: 15px 0 22px
+
+	.scroll-top
+		top: 5px
+		width: 35px
+		height: 35px
+		background-size: 100%
+
+	.logo-block
+		&_footer
+			width: auto
+			.logo
+				display: block
+				img
+					float: left
+					display: block
+
+	.footer-menu
+		margin-top: 15px
+		.nav
+			text-align: justify
+			text-align-last: justify
+
+	.footer-contact
+		margin: 15px 0
+		text-align: center
+		&:before
+			display: none
+		.mail
+			display: inline-block
+			margin-bottom: 15px
+			font-size: 14px
+		.phone
+			display: inline-block
+			margin: 0 0 10px 5px
+			font-size: 20px
+		.location
+			display: inline-block
+			margin: 0 0 10px 5px
+			text-align: left
+
+@media only screen and (max-width : 768px)
+	.header
+		.col-md-12
+			position: static
+
+	.logo-block
+		width: auto
+		padding: 10px 0 0
+
+	.logo
+		img
+			float: none
+			max-width: 110px
+			margin: 0 auto
+		&-descr
+			font-size: 13px
+			line-height: 18px
+			span
+				font-size: 34px
+				line-height: 25px
+
+	.header-top
+		padding-top: 30px
+
+	.navbar
+		position: static
+
+	.navbar-collapse
+		position: absolute
+		top: 0
+		left: -100%
+		width: 300px
+		min-height: 342px !important
+		padding: 20px 0
+		z-index: 998
+		transition: all .55s ease
+		box-shadow: 0 5px 5px rgba(#000, .6)
+		background: #fff
+		&.in
+			transition: left .15s ease
+			left: 0
+
+	.nav
+		text-align: center
+		text-align-last: auto
+		li
+			display: block
+			padding: 0
+			margin-bottom: 5px
+			&.break
+				max-width: 100%
+			a
+				padding: 10px
+				font-size: 22px
+				&:hover, &:focus
+					&:after, &:before
+						display: none
+					span
+						&:after, &:before
+							display: none
+
+	.s-welcome-caption
+		height: 400px
+		&__center
+			font-size: 90px
+		&__bottom
+			font-size: 130px
+
+	.about
+		min-height: 620px
+		padding: 20px 0
+
+	.section-title
+		font-size: 36px
+		line-height: 1.2
+
+	.about-block
+		margin-top: 15px
+		&__text
+			p
+				margin-bottom: 30px
+				&:not(:last-child):after
+					bottom: -17px
+
+	.couch
+		min-height: 670px
+		padding: 20px 0 40px
+
+	.couch-block
+		margin-top: 20px
+		&__pict
+			max-width: 290px
+			margin-bottom: 20px
+		&__name
+			margin-bottom: 10px
+		&__loc
+			margin-bottom: 10px
+		&__text
+			p
+				margin-bottom: 10px
+
+	.way
+		padding: 0 0 30px
+
+	.way-block
+		&:before
+			bottom: -85px
+			left: -105px
+		&:after
+			right: 60px
+		&__title
+			font-size: 24px
+
+	.tabs
+		margin-top: 20px
+		&__item
+			display: block
+			margin: 0 0 15px
+			a
+				margin: 0 auto
+
+	.tabs-content
+		padding-top: 10px
+
+	.tabs-wrap
+		text-align: center
+
+	.tab-in
+		float: none
+		display: inline-block
+		vertical-align: top
+		width: 40%
+		margin: 0 1px 15px
+
+	.tab-body
+		padding-top: 15px
+
+	.found
+		min-height: 660px
+		padding: 20px 0
+
+	.found-block
+		padding-top: 25px
+
+	.found-item
+		&__icon
+			width: 120px
+			height: 120px
+			img
+				width: 80px
+		&__descr
+			padding-left: 20px
+
+	.place
+		padding: 20px 0 50px
+
+	.place-images
+		margin: 40px 0 20px
+		&__item
+			float: none
+			display: block
+			max-width: 400px
+			width: 100%
+			height: auto
+			margin: 0 auto 10px
+
+	.form-block
+		&__title
+			margin-bottom: 25px
+			font-size: 36px
+		label
+			display: block
+			max-width: 260px
+			width: 100%
+			margin: 0 auto 15px
+		.btn-form
+			display: block
+			max-width: 260px
+			width: 100%
+			margin: 0 auto
+
+	.info
+		padding: 20px 0 40px
+
+	.partner-block
+		padding: 10px 0
+
+	.partner-item
+		width: 32%
+		&__logo
+			height: 170px
+			img
+				width: auto
+				max-width: 100%
+				max-height: 100%
+
+	.contact-block
+		&__title
+			font-size: 36px
+			line-height: 1.2
+
+	.map-block
+		height: 300px
+
+	.footer
+		padding-top: 40px
+
+	.scroll-top
+		width: 30px
+		height: 30px
+
+	.logo-block_footer
+		width: 100%
+		text-align: center
+		.logo
+			display: inline-block
+
+	.footer-menu
+		.nav
+			li
+				margin-bottom: 5px
+
+@media only screen and (max-width : 480px)
+	.header
+		text-align: center
+
+	.logo-block
+		float: none
+		width: 100%
+		text-align: center
+
+	.logo
+		display: inline-block
+		img
+			float: left
+			max-width: 130px
+		&-descr
+			font-size: 16px
+			line-height: 30px
+			span
+				font-size: 48px
+				line-height: 30px
+
+	.header-top
+		float: none
+		display: inline-block
+		padding-top: 12px
+		text-align: left
+
+	.mail
+		margin-bottom: 10px
+		font-size: 16px
+
+	.phone
+		margin-bottom: 10px
+		padding-left: 30px
+		font-size: 23px
+		&:before
+			left: 6px
+
+	.location
+		padding-left: 30px
+		font-size: 14px
+		&:before
+			left: 4px
+
+	.navbar-collapse
+		width: 270px
+
+	.s-welcome-caption
+		height: 285px
+		&__top
+			font-size: 50px
+			line-height: 1.2
+		&__center
+			font-size: 60px
+			line-height: 1.2
+		&__bottom
+			font-size: 85px
+			line-height: 1.2
+
+	.section-title
+		font-size: 24px
+		font-weight: 600
+
+	.tab-in
+		margin-bottom: 10px
+		&__pict
+			height: 140px
+			img
+				height: 100%
+		&__title
+			margin-top: 7px
+			font-size: 14px
+		&__descr
+			margin-top: 5px
+			font-size: 14px
+
+	.tab-body
+		margin-bottom: 10px
+
+	.body-content
+		p
+			margin-bottom: 10px
+
+	.found-item
+		margin-bottom: 20px
+		text-align: center
+		&__icon
+			display: block
+			margin: 0 auto
+		&__descr
+			display: block
+			margin-top: 15px
+			padding-left: 0
+
+	.partner-item
+		width: 49%
+		&__logo
+			height: 120px
+
+	.contact-block
+		&__title
+			font-size: 24px
+			font-weight: 600

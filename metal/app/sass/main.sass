@@ -1,0 +1,199 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+@import "header"
+
+.section-first
+	position: relative
+	min-height: 776px
+	background: url(../img/main-banner-bg.jpg) top center no-repeat
+	background-size: auto 100%
+
+.banner-caption
+	position: absolute
+	top: 50%
+	left: 0
+	right: 0
+	margin: 0 auto
+	transform: translate(0,-50%)
+	&__title
+		display: none
+		font: 700 99px/98px $second-font
+		color: #fff
+		text-transform: uppercase
+	&__imgtitle
+		margin-bottom: 50px
+		img
+			display: block
+			max-width: 100%
+	&__text
+		max-width: 74%
+		margin-top: 36px
+		font-size: 24px
+		color: #fff
+
+.btn
+	width: 261px
+	height: 66px
+	padding: 0
+	font-size: 24px
+	font-weight: 700
+	line-height: 62px
+	border: none
+	border-radius: 0
+	background: url(../img/btn-bg.png) 0 0 no-repeat
+	background-size: 100% 100%
+	&:active
+		background: url(../img/btn-bg.png) 0 0 no-repeat
+		background-size: 100% 100%
+	&:hover
+		color: #000
+	&_more
+		margin-top: 42px
+
+.section-service
+	padding: 88px 0 90px
+
+.section-title
+	display: block
+	margin-bottom: 52px
+	font: 700 72px/75px $second-font
+	color: $brown
+	text-transform: uppercase
+	&_color
+		color: $accent
+	&_color2
+		color: #fff
+
+.service-item
+	position: relative
+	margin-bottom: 30px
+	img
+		display: block
+		max-width: 100%
+	&__caption
+		position: absolute
+		bottom: 20px
+		left: 20px
+		right: 20px
+		font-size: 20px
+		line-height: 23px
+		font-weight: 700
+		color: #fff
+
+.section-about
+	max-width: 1920px
+	margin: 0 auto
+	padding: 0 0 118px
+	overflow: hidden
+
+.about-text
+	font-size: 24px
+	line-height: 28px
+
+.about-pict
+	height: 540px
+	margin-top: -175px
+	img
+		height: 100%
+
+.section-adv
+	max-width: 1920px
+	margin: 0 auto
+	padding: 110px 0 75px
+	background: url(../img/adv-bg.jpg) top center no-repeat
+	background-size: cover
+
+.adv-text
+	margin-bottom: 90px
+	font-size: 24px
+	color: #fff
+
+.adv-item
+	margin-bottom: 50px
+	&__pict
+		position: relative
+		float: left
+		width: 164px
+		height: 164px
+		background: url(../img/adv-item-bg.png) top center no-repeat
+		background-size: 100% 100%
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			max-width: 58px
+			transform: translate(-50%,-50%)
+	&__descr
+		display: table
+		padding-left: 28px
+	&__title
+		display: block
+		margin-bottom: 14px
+		font: 700 31px/29px $second-font
+		color: $accent
+	&__text
+		font-size: 20px
+		color: #fff
+
+.section-price
+	padding: 97px 0 90px
+
+.price-text
+	margin-bottom: 54px
+	font-size: 24px
+
+.price-item
+	position: relative
+	max-width: 358px
+	height: 164px
+	margin-bottom: 32px
+	background: url(../img/price-item-bg.png) top center no-repeat
+	background-size: 100% 100%
+	&__descr
+		+vcenter
+	&__count
+		margin-bottom: 0
+		font: 37px $second-font
+		color: $brown
+		text-transform: uppercase
+		span
+			font-size: 72px
+			font-weight: 700
+	&__title
+		font: 31px $second-font
+		color: #4e4e4e
+		text-transform: uppercase
+
+.section-work
+	max-width: 1920px
+	margin: 0 auto
+	padding: 80px 0 130px
+	background: url(../img/work-bg.jpg) top center no-repeat
+	background-size: cover
+
+.work-text
+	margin-top: 0
+	font-size: 24px
+	color: #fff
+	ul
+		margin: 26px 0 0 25px
+		list-style-type: disc
+		li
+			margin-bottom: 27px
+
+.section-map
+	position: relative
+
+.map-wrap
+	height: 465px
+
+
+@import "footer"
+@import "service-in"
+@import "service"
+@import "price"
+@import "contact"

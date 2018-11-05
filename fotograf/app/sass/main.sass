@@ -1,0 +1,806 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+
+.header
+	position: relative
+	max-width: 1920px
+	height: 476px
+	margin: 0 auto
+	z-index: 1
+	background: url(../img/header-bg-2.png) center top no-repeat
+
+.header-logo
+	float: left
+	width: 20.5%
+
+.menu-mob
+	display: none
+	width: 50px
+	cursor: pointer
+	z-index: 900
+	transition: all .25s ease
+	span
+		display: block
+		width: 100%
+		height: 6px
+		margin: 8px 0
+		background: #e6dafa
+	&:hover
+		span
+			background: #c8adf4
+
+.logo
+	position: relative
+	display: inline-block
+	width: 110px
+	margin: 10px 0 0 44px
+
+.header-main
+	float: left
+	width: 79.5%
+	padding-left: 21px
+
+.header-top
+	+clearfix
+
+.header-nav
+	display: inline-block
+	margin-top: 32px
+
+.header-menu
+	li
+		display: inline-block
+		a
+			display: block
+			padding: 7px 12px
+			font-size: 20px
+			color: #fff
+			&:hover
+				color: $violet
+				border-radius: 21px
+				background: #e6dafa
+
+.phone
+	float: right
+	margin: 26px 40px 0 0
+	font-size: 20px
+	color: #fff
+	&:hover
+		color: #fff
+
+.header-bottom
+	+clearfix
+
+.header-contact
+	float: right
+	margin-top: -5px
+	padding-right: 28px
+
+.btn
+	padding: 0
+	font-size: 20px
+	color: $violet
+	outline: none
+	border: none
+	background: #e6dafa
+	&:focus
+		outline: none
+	&:hover
+		color: #fff
+		background: #c8adf4
+	&_size1
+		width: 181px
+		height: 41px
+		line-height: 39px
+		border-radius: 21px
+	&_size2
+		width: 219px
+		height: 57px
+		line-height: 55px
+		border-radius: 29px
+
+.social
+	display: inline-block
+	margin-right: 22px
+	&__link
+		display: inline-block
+		vertical-align: middle
+		margin: 0 1px
+		font-size: 0
+		&_ic1
+			@include sprite($vk)
+			&:hover
+				@include sprite($vk-h)
+		&_ic2
+			@include sprite($inst)
+			&:hover
+				@include sprite($inst-h)
+		&_ic3
+			@include sprite($fb)
+			&:hover
+				@include sprite($fb-h)
+		&_ic4
+			@include sprite($yt)
+			&:hover
+				@include sprite($yt-h)
+
+.header-caption
+	padding: 20px 0 0 135px
+	&__title
+		font: 87px/75px $sec-font
+	&__price
+		font: 55px $sec-font
+		span
+			font-size: 87px
+			line-height: 81px
+			color: #f4e1b9
+
+.btn-title
+	margin-top: 20px
+
+section
+	max-width: 1920px
+	margin: 0 auto
+
+.section-why
+	position: relative
+	height: 795px
+	margin-top: -90px
+	padding-top: 153px
+	z-index: 0
+	background: url(../img/bg-1.png) center top no-repeat
+	&__title
+		display: block
+		font: 86px/48px $sec-font
+
+.why-item
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		margin: 0 auto
+	&__title
+		display: table
+		margin-bottom: 7px
+		font-size: 20px
+		line-height: 8px
+		color: #fefefe
+		span
+			display: table
+			padding: 5px 5px 7px
+			background: #000
+	&__text
+		font-size: 20px
+		line-height: 21px
+	&_1
+		margin-top: 245px
+		&:before
+			top: -423px
+			width: 216px
+			height: 436px
+			background: url(../img/why-1.png) 0 0 no-repeat
+	&_2
+		margin-top: 170px
+		&:before
+			top: -349px
+			width: 219px
+			height: 352px
+			background: url(../img/why-2.png) 0 0 no-repeat
+	&_3
+		margin-top: 279px
+		&:before
+			top: -457px
+			width: 215px
+			height: 461px
+			background: url(../img/why-3.png) 0 0 no-repeat
+	&_4
+		margin-top: 213px
+		&:before
+			top: -390px
+			width: 219px
+			height: 398px
+			background: url(../img/why-4.png) 0 0 no-repeat
+
+.section-info
+	position: relative
+	height: 850px
+	margin-top: -240px
+	padding-top: 352px
+	z-index: 0
+	background: url(../img/bg-2.png) center top no-repeat
+
+.info-item
+	&__title
+		display: table
+		margin-bottom: 38px
+		font: 50px $sec-font
+		line-height: 35px
+		color: #fff
+		span
+			display: table
+			margin-top: -22px
+			padding: 5px 5px 15px
+			background: #000
+	&__text
+		font-size: 20px
+		line-height: 20px
+
+.btn-info
+	margin-top: 25px
+
+.section-price
+	position: relative
+	height: 1093px
+	margin-top: -118px
+	padding-top: 96px
+	text-align: center
+	z-index: 0
+	background: url(../img/bg-3.png) center top no-repeat
+	&__title
+		display: block
+		margin-bottom: 20px
+		font: 50px $sec-font
+		line-height: 75px
+		text-align: center
+
+.price-item
+	display: inline-block
+	max-width: 344px
+	width: 100%
+	padding: 10px
+	border-radius: 3px
+	background: rgba(#597bc3, .85)
+	&__wrap
+		padding: 27px 35px 38px
+		border-radius: 3px
+		border: 1px dashed #fff
+	&__title
+		display: inline-block
+		margin-bottom: 34px
+		padding: 10px 7px 11px
+		font-size: 30px
+		line-height: 20px
+		text-align: left
+		background: #000
+	&__descr
+		font-size: 20px
+		font-weight: 700
+		line-height: 20px
+		text-align: left
+		p
+			margin-bottom: 20px
+		span
+			padding: 3px 7px
+			color: #000
+			background: $accent
+
+.btn-tarif
+	display: block
+	margin: 39px auto 0
+
+.section-price__text
+	margin-top: 40px
+	font-size: 25px
+	color: $accent
+	p
+		margin-bottom: 30px
+	span
+		display: table
+		margin: 0 auto -3px
+		padding: 0 7px
+		background: #000
+
+.section-portfolio
+	position: relative
+	height: 1044px
+	margin-top: -200px
+	padding-top: 90px
+	text-align: center
+	z-index: 0
+	background: url(../img/bg-4.png) center top no-repeat
+	&__title
+		display: block
+		margin-bottom: 20px
+		font: 50px $sec-font
+		line-height: 75px
+		text-align: center
+
+.sl-portfolio
+	width: 742px
+	margin: 0 auto
+	.sl-item
+		position: relative
+		outline: none
+
+.sl-video
+	height: 400px
+	text-align: center
+	img
+		display: inline-block !important
+		max-width: 100%
+	iframe
+		width: 100% !important
+		height: 100% !important
+
+.sl-caption
+	position: absolute
+	display: block
+	top: 0
+	left: 0
+	padding: 10px 7px 11px
+	font-size: 30px
+	line-height: 20px
+	background: #000
+
+.sl-portfolio-nav
+	width: 640px
+	margin: 0 auto
+	.sl-item
+		position: relative
+		padding: 4px 2px
+		cursor: pointer
+		outline: none
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -16px
+		padding: 0
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&:hover
+			opacity: 1
+		&.slick-prev
+			left: -50px
+			@include sprite($arrow-left)
+		&.slick-next
+			right: -50px
+			@include sprite($arrow-right)
+	.slick-current
+		.video-preview
+			&:before
+				background: rgba(#e6dafa, .57)
+
+.video-preview
+	position: relative
+	width: 156px
+	overflow: hidden
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 1
+		background: rgba(#000, .57)
+	&:after
+		content: ''
+		+vcenter
+		width: 23px
+		height: 31px
+		z-index: 10
+		background: url(../img/play.png) 0 0 no-repeat
+		background-size: 100%
+	&:hover
+		&:before
+			background: rgba(#e6dafa, .57)
+	img
+		display: block
+		width: 100%
+	iframe
+		width: 100%
+		height: 100%
+
+.section-work
+	position: relative
+	height: 672px
+	margin-top: -50px
+	padding-top: 105px
+	text-align: center
+	overflow: hidden
+	z-index: 0
+	background: url(../img/bg-6.png) center top no-repeat
+	&__title
+		display: block
+		font: 50px $sec-font
+		line-height: 75px
+		text-align: center
+
+.work-item
+	position: relative
+	float: left
+	width: 214px
+	text-align: center
+	&:last-child
+		margin-right: 0
+		&:after
+			display: none
+	&:before
+		content: ''
+		position: absolute
+		width: 322px
+		height: 321px
+		top: -216px
+		left: -19px
+	&:after
+		content: ''
+		position: absolute
+	&_1
+		margin: 320px 40px 0 0
+		&:before
+			background: url(../img/work-1.png) 0 0 no-repeat
+		&:after
+			top: -175px
+			right: -43px
+			width: 54px
+			height: 29px
+			@include sprite($arrow-up)
+	&_2
+		margin: 227px 7px 0 0
+		&:before
+			background: url(../img/work-2.png) 0 0 no-repeat
+		&:after
+			top: -70px
+			right: -23px
+			width: 54px
+			height: 29px
+			@include sprite($arrow-down)
+	&_3
+		margin: 374px 5px 0 0
+		&:before
+			background: url(../img/work-3.png) 0 0 no-repeat
+		&:after
+			top: -215px
+			right: -30px
+			width: 54px
+			height: 29px
+			transform: rotate(-10deg)
+			@include sprite($arrow-up)
+	&_4
+		margin: 203px 18px 0 0
+		&:before
+			background: url(../img/work-4.png) 0 0 no-repeat
+		&:after
+			top: -80px
+			right: -25px
+			width: 54px
+			height: 29px
+			transform: rotate(-10deg)
+			@include sprite($arrow-down)
+	&_5
+		margin-top: 320px
+		&:before
+			background: url(../img/work-5.png) 0 0 no-repeat
+	&__title
+		display: inline-block
+		font-size: 20px
+		color: #fefefe
+		line-height: 21px
+		text-align: left
+		span
+			display: table
+			padding: 2px 5px 3px
+			background: #000
+
+.section-feedback
+	position: relative
+	height: 852px
+	margin-top: 50px
+	padding-top: 0
+	z-index: 0
+	background: url(../img/bg-5.png) center top no-repeat
+	&__title
+		display: block
+		margin: -45px 0 46px
+		font: 50px $sec-font
+		line-height: 75px
+		text-align: center
+		color: #000
+
+.cl-feedback
+	width: 1040px
+	margin: 0 auto
+	.cl-item
+		padding: 0 50px
+		text-align: center
+		outline: none
+	.slick-arrow
+		position: absolute
+		top: 18%
+		margin-top: -16px
+		padding: 0
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&:hover
+			opacity: 1
+		&.slick-prev
+			left: -49px
+			@include sprite($arrow-left2)
+		&.slick-next
+			right: -49px
+			@include sprite($arrow-right2)
+
+.feed-item
+	display: inline-block
+	text-align: left
+	&__pict
+		position: relative
+		width: 187px
+		height: 187px
+		margin-bottom: 14px
+		overflow: hidden
+		border-radius: 50%
+		img
+			display: block
+			max-width: 100%
+			+vcenter
+	&__date
+		margin-bottom: 6px
+		font-size: 15px
+		color: #47acac
+	&__title
+		display: inline-block
+		margin-bottom: 27px
+		padding: 7px 5px
+		font-size: 24px
+		line-height: 28px
+		background: #000
+	&__text
+		position: relative
+		font-size: 20px
+		line-height: 20px
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: -48px
+			width: 93px
+			height: 64px
+			background: url(../img/feed-text.png) 0 0 no-repeat
+		p
+			margin-bottom: 21px
+
+.section-form
+	position: relative
+	height: 417px
+	margin-top: -67px
+	padding-top: 60px
+	z-index: 0
+	text-align: center
+	background: url(../img/bg-7.png) center top no-repeat
+	&__title
+		display: table
+		margin-bottom: 45px
+		padding: 3px 5px 5px
+		font: 50px $sec-font
+		line-height: 40px
+		color: #fff
+		text-align: left
+		background: #000
+
+.form-block
+	display: inline-block
+	position: relative
+	fieldset
+		display: inline-block
+		vertical-align: top
+		width: 290px
+		padding: 0
+		margin: 0
+		border: none
+	input
+		display: block
+		width: 100%
+		height: 48px
+		margin-bottom: 3px
+		padding-left: 15px
+		font-size: 20px
+		color: #5d5669
+		border: none
+		border-radius: 3px
+		background: #fff
+	textarea
+		display: inline-block
+		width: 414px
+		height: 99px
+		padding: 12px 0 0 15px
+		font-size: 20px
+		color: #5d5669
+		border: none
+		border-radius: 3px
+		background: #fff
+
+.btn-form
+	display: block
+	margin-top: 14px
+
+.section-news
+	padding-top: 72px
+	text-align: center
+
+.news-item
+	display: inline-block
+	width: 390px
+	text-align: left
+	&__title
+		margin-bottom: 49px
+		font: 50px/35px $sec-font
+		span
+			display: table
+			margin-bottom: -12px
+			padding: 5px 5px 7px
+			background: #000
+	&__text
+		font-size: 20px
+		color: #5d5669
+		line-height: 20px
+		color: #000
+		p
+			margin-bottom: 24px
+
+.slogan
+	width: 640px
+	height: 119px
+	margin: 17px auto 0
+	font-size: 0
+	background: url(../img/slogan.png) 0 0 no-repeat
+
+.section-contact
+	position: relative
+	height: 734px
+	margin-top: -50px
+	padding-top: 245px
+	z-index: 0
+	text-align: center
+	background: url(../img/bg-8.png) center top no-repeat
+
+.contact
+	&__title
+		display: inline-block
+		margin-bottom: 25px
+		padding: 5px 5px 8px
+		font: 50px/35px $sec-font
+		background: #000
+	&-phone
+		display: table
+		margin: 0 auto 10px
+		padding: 5px 5px 8px
+		font-size: 30px
+		color: #fff
+		line-height: 25px
+		background: #000
+		&:hover
+			color: #fff
+	&-mail
+		display: table
+		margin: 0 auto 20px
+		padding: 5px 5px 8px
+		font-size: 30px
+		color: #fff
+		line-height: 25px
+		background: #000
+		&:hover
+			color: #fff
+
+.footer
+	margin-top: -59px
+	padding-bottom: 40px
+
+.social-footer
+	float: right
+	margin-right: 292px
+
+.social__link_bl
+	opacity: .6
+	&.social__link_ic1
+		@include sprite($vk-bl)
+		&:hover
+			opacity: 1
+			@include sprite($vk-h)
+	&.social__link_ic2
+		@include sprite($inst-bl)
+		&:hover
+			opacity: 1
+			@include sprite($inst-h)
+	&.social__link_ic3
+		@include sprite($fb-bl)
+		&:hover
+			opacity: 1
+			@include sprite($fb-h)
+	&.social__link_ic4
+		@include sprite($yt-bl)
+		&:hover
+			opacity: 1
+			@include sprite($yt-h)
+
+
+/*----------Callback-form------------------*/
+.mfp-bg
+	background: rgba(#00253d, .7) !important
+
+.callback-form
+	positon: relative
+	max-width: 433px
+	width: 100%
+	margin: 0 auto
+	padding: 15px 40px 40px
+	border-radius: 5px
+	background: #fff
+	&__title
+		font: 70px $sec-font
+		color: #000
+		text-align: center
+	&__tarif
+		margin-bottom: 18px
+		font: 35px/1 $sec-font
+		color: #000
+		text-align: center
+	.mfp-close
+		top: 15px
+		right: 15px
+		// @include sprite($close)
+	input
+		display: block
+		width: 100%
+		height: 48px
+		margin-bottom: 5px
+		padding-left: 15px
+		font-size: 20px
+		color: #5d5669
+		border: 1px solid #5d5669
+		border-radius: 3px
+		background: #fff
+	textarea
+		display: block
+		width: 100%
+		height: 99px
+		padding: 12px 0 0 15px
+		font-size: 20px
+		color: #5d5669
+		border: 1px solid #5d5669
+		border-radius: 3px
+		background: #fff
+
+.btn-modal
+	display: block
+	margin: 15px auto 0
+
+.success
+	display: none
+	position: absolute
+	max-width: 400px
+	top: 45%
+	left: 50%
+	font-size: 18px
+	color: #fff
+	width: 80%
+	height: 100px
+	z-index: 99
+	border-radius: 15px
+	transform: translate(-50%,-50%)
+	background: rgba(#000, .7)
+	span
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 100%
+		text-align: center
+		transform: translate(-50%,-50%)
+	&.active
+		display: block
+/*--------------end-----------------------*/

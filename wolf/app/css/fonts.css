@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "ptsans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"), url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ptsans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PTSansBold/PTSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansBold/PTSansBold.woff") format("woff"), url("../fonts/PTSansBold/PTSansBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ptsans";
+  font-style: normal;
+  font-weight: italic;
+  src: url("../fonts/PTSansItalic/PTSansItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansItalic/PTSansItalic.woff") format("woff"), url("../fonts/PTSansItalic/PTSansItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "segoe";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "segoe";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"), url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "kelson";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/KelsonSansRegular/KelsonSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/KelsonSansRegular/KelsonSansRegular.woff") format("woff"), url("../fonts/KelsonSansRegular/KelsonSansRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "kelson";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/KelsonSansLight/KelsonSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/KelsonSansLight/KelsonSansLight.woff") format("woff"), url("../fonts/KelsonSansLight/KelsonSansLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "kelson";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/KelsonSansBold/KelsonSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/KelsonSansBold/KelsonSansBold.woff") format("woff"), url("../fonts/KelsonSansBold/KelsonSansBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "alsrubl";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/AlsRubl/AlsRubl.eot?#iefix") format("embedded-opentype"), url("../fonts/AlsRubl/AlsRubl.woff") format("woff"), url("../fonts/AlsRubl/AlsRubl.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "proxima";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/ProximaNovaExCn-SemiboldItalic/ProximaNovaExCnSbi.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-SemiboldItalic/ProximaNovaExCnSbi.woff") format("woff"), url("../fonts/ProximaNovaExCn-SemiboldItalic/ProximaNovaExCnSbi.ttf") format("truetype");
+}

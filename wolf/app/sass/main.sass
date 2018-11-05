@@ -1,0 +1,869 @@
+@import "bourbon/bourbon"
+@import "vars.sass"
+@import "base.sass"
+@import "sprite.sass"
+
+.wrapper
+	position: relative
+	height: 100%
+	max-width: 1780px
+	margin: 0 auto
+	padding: 0 10px
+
+/*-------------mobile menu-----------*/
+.menu__btn
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	width: 60px
+	height: 60px
+	padding: 15px 10px
+	cursor: pointer
+	z-index: 100
+	background: #4130b4
+	transition: background .15s
+	&.active
+		background: #fbab12
+		b
+			background: #efefef
+	b
+		display: block
+		width: 40px
+		height: 5px
+		margin-bottom: 7px
+		background: #fff
+
+.menu__mob
+	position: absolute
+	width: 50%
+	height: auto
+	top: 0
+	left: -100%
+	padding: 15px 0 60px
+	z-index: 99
+	background: rgba(51,48,72, .89)
+	box-shadow: 0 0 51px rgba(172, 172, 172, 0.34)
+	transition: left 0.2s ease-out
+	&.show
+		left: 0
+/*----------------end----------------*/
+
+/*------------mobile phone------------*/
+.phone__btn
+	display: none
+	position: absolute
+	top: 0
+	right: 0
+	width: 60px
+	height: 60px
+	padding: 15px 0
+	text-align: center
+	cursor: pointer
+	z-index: 100
+	background: #4130b4
+	transition: background .15s
+	&.active
+		background: #fbab12
+	img
+		width: 30px
+
+.phone__menu
+	position: absolute
+	width: 380px
+	height: 75px
+	top: 0
+	right: -100%
+	padding: 15px 0 25px
+	z-index: 99
+	background: rgba(51,48,72, .89)
+	box-shadow: 0 0 51px rgba(172, 172, 172, 0.34)
+	transition: right 0.2s ease-out
+	&.show
+		right: 0
+/*--------------end-------------------*/
+
+.header
+	position: relative
+	height: 1079px
+	background: url(../img/header-bg.jpg) center top no-repeat
+	background-size: cover
+	overflow: hidden
+
+.header__top
+	padding-top: 32px
+
+.header__social
+	display: inline-block
+	vertical-align: middle
+	a
+		display: inline-block
+		position: relative
+		vertical-align: bottom
+		font-size: 0
+
+.social__link
+	&.social__link-vk
+		@include sprite($vk-icon)
+
+.social__link
+	&.social__link-fb
+		margin-left: 25px
+		@include sprite($fb-icon)
+
+.header__menu
+	display: inline-block
+	margin-left: 35px
+	vertical-align: middle
+	li
+		display: inline-block
+		&:last-child
+			margin-right: 0
+		a
+			display: block
+			padding: 5px 14px
+			font-size: 20px
+			color: #fff
+			text-decoration: underline
+			transition: all .15s ease
+			&:hover
+				color: #000
+				text-decoration: none
+				background: #f7b319
+				border-radius: 10px
+	&.header__menu-center
+		display: block
+		width: 450px
+		margin: 30px auto 0
+		text-align: center
+
+.header__logo
+	width: 450px
+	margin: -30px auto 0
+	text-align: center
+	a
+		display: block
+
+.logo__title
+	display: block
+	margin: 0
+	font: 40px "kelson"
+
+.logo__text
+	display: block
+	font-size: 27px
+
+.header__phone
+	position: absolute
+	top: 42px
+	right: 10px
+	text-align: right
+	a
+		display: block
+
+.phone__link
+	margin-bottom: 5px
+	font: 700 36px "kelson"
+	color: #fff
+
+.callback__link
+	font-size: 20px
+	color: #fff
+	text-decoration: underline
+	outline: none
+	&:hover
+		text-decoration: none
+
+.main__block
+	width: 610px
+	height: 410px
+	margin: 98px auto 0
+	padding-top: 35px
+	text-align: center
+	background: rgba(26,23,50, .89)
+
+.block__date
+	margin-bottom: 12px
+	font-size: 30px
+	color: $accent-text
+	span
+		font-weight: 700
+
+.block__title
+	display: block
+	font: 51px/53px "kelson"
+
+.block__limit
+	display: block
+	margin: 38px 0 20px
+	font-size: 27px
+
+.btn__link
+	display: block
+	width: 308px
+	height: 57px
+	margin: 0 auto
+	font-size: 20px
+	font-weight: 700
+	color: #000
+	line-height: 55px
+	text-align: center
+	background: $accent-text
+	border-radius: 3px
+	&.btn__link-mob
+		display: none
+
+.section
+	height: 1080px
+
+.section__title
+	font: 700 102px "kelson"
+	color: #000
+
+.section__fabric
+	padding-top: 100px
+	background: url(../img/home-bg-1.jpg) center top no-repeat
+	background-size: cover
+
+.fabric__accent
+	display: block
+	margin: 0 0 23px 50px
+	font: 700 36px "kelson"
+	color: #000
+
+.section__title
+	&.section__title-fabric
+		margin: 0 0 57px -50px
+		font: 700 82px "kelson"
+		color: #000
+		white-space: nowrap
+	&.fabric__title-mob
+		display: none
+
+.fabric__item
+	float: left
+	width: 30%
+	margin-right: 45px
+	text-align: left
+	&:nth-child(4)
+		margin-right: 0
+	&.fabric__item-big
+		width: 100%
+		margin: 100px 0 0
+	.item__img
+		display: block
+		position: relative
+		margin-bottom: 15px
+		&.item__img-1
+			@include sprite($biz-icon-1)
+		&.item__img-2
+			@include sprite($biz-icon-2)
+		&.item__img-3
+			@include sprite($biz-icon-3)
+		&.item__img-4
+			float: left
+			margin: 0 14px 0 0
+			font-size: 48px
+			@include sprite($biz-icon-4)
+	.item__descr
+		font-size: 30px
+		color: #000
+		line-height: 40px
+		span
+			font-weight: 700
+		&.item__descr-big
+			font-size: 48px
+			line-height: 58px
+			span
+				font-size: 54px
+
+.section__program
+	padding-top: 64px
+	background: url(../img/home-bg-2.jpg) center top no-repeat
+	background-size: cover
+
+.section__title
+	&.section__title-program
+		text-align: center
+
+.program__video
+	margin-top: 40px
+
+.video__descr
+	display: none
+	margin-top: 3px
+	font-size: 16px
+	color: #000
+
+.program__trust
+	margin-top: 50px
+	text-align: justify
+	line-height: 0
+	&:after
+		display: inline-block
+		content: ' '
+		width: 100%
+		height: 0
+		visibility: hidden
+		overflow: hidden
+
+.trust__title
+	margin-bottom: 30px
+	font: 700 60px "kelson"
+	color: #000
+	text-align: center
+
+.trust__item
+	display: inline-block
+	vertical-align: middle
+	font-size: 0
+	i
+		display: block
+	&.trust__item-1
+		i
+			@include sprite($logo-rostehnologii)
+	&.trust__item-2
+		i
+			@include sprite($logo-rosatom)
+	&.trust__item-3
+		i
+			@include sprite($rosneft_logo)
+	&.trust__item-4
+		i
+			@include sprite($roscosmos-logo)
+	&.trust__item-5
+		i
+			@include sprite($gazprom-logo)
+
+.section__free
+	display: none
+	height: 310px
+	padding-top: 17px
+	text-align: center
+	background: #333048
+
+.section__title
+	&.section__title-free
+		margin-bottom: 14px
+		color: #fff
+
+.section__text
+	display: block
+	margin-bottom: 37px
+	font-size: 18px
+
+.btn__link
+	&.btn__link-free
+		display: block
+		width: 270px
+
+.section__help
+	background: url(../img/home-bg-3.jpg) center top no-repeat
+	background-size: cover
+
+.section__title
+	&.section__title-help
+		padding-top: 80px
+		text-align: left
+		color: #fff
+		text-transform: uppercase
+	span
+		display: block
+		font-size: 48px
+		text-transform: none
+
+.help__item
+	position: absolute
+	&.help__item-1
+		bottom: 160px
+		left: 210px
+	&.help__item-2
+		bottom: 390px
+		left: 580px
+	&.help__item-3
+		top: 290px
+		left: 905px
+	&.help__item-4
+		top: 60px
+		left: 1220px
+
+.help__num
+	float: left
+	font: 700 100px "segoe"
+	color: $accent-text
+
+.help__descr
+	display: inline-block
+	padding: 25px 0 0 10px
+	font: 30px "segoe"
+
+.help__form
+	float: right
+	margin: 230px -255px 0 0
+	width: 586px
+	height: 484px
+	padding: 20px 50px 0
+	text-align: center
+	background: rgba(0, 0, 0, 0.44)
+	border: 3px solid white
+	input
+		display: block
+		width: 308px
+		height: 47px
+		margin: 0 auto 10px
+		padding-left: 20px
+		font-size: 18px
+		border: none
+
+.form__title
+	font: 48px/48px "kelson"
+
+.form__descr
+	display: block
+	margin: 17px 0 30px
+	font-size: 26px
+
+.form__btn
+	display: block
+	width: 308px
+	height: 57px
+	margin: 30px auto 0
+	padding-bottom: 5px
+	font: 700 20px "segoe"
+	color: #000
+	text-align: center
+	cursor: pointer
+	border: none
+	background: #fcb413
+	border-radius: 4px
+
+.section__trening
+	padding-top: 102px
+	background: url(../img/home-bg-4.jpg) right top no-repeat
+	background-size: cover
+
+.section__title
+	&.section__title-trening
+		margin-bottom: 42px
+		s
+.trening__item
+	position: relative
+	width: 580px
+	margin-bottom: 40px
+	&:before
+		content: ' '
+		position: absolute
+		left: -118px
+		top: 14px
+	&.trening__item-1
+		&:before
+			@include sprite($prog-icon-1)
+	&.trening__item-2
+		&:before
+			@include sprite($prog-icon-2)
+	&.trening__item-3
+		&:before
+			@include sprite($prog-icon-3)
+
+.trening__descr
+	font: 30px "segoe"
+	color: #000
+	span
+		font: 700 34px "segoe"
+
+.section__advant
+	padding-top: 105px
+	background: url(../img/home-bg-1.jpg) center top no-repeat
+	background-size: cover
+
+.section__title
+	&.section__title-advant
+		margin-bottom: 76px
+
+.advant__project
+	display: inline-block
+	margin-right: 135px
+	> span
+		display: block
+		font: 24px "segoe"
+		color: #000
+
+.project__total
+	font: 52px "segoe"
+	color: #000
+	span
+		font: 700 72px "segoe"
+		color: #000
+
+.advant__total
+	display: inline-block
+	> span
+		display: block
+		font: 24px "segoe"
+		color: #000
+
+.total__price
+	font: 700 72px "segoe"
+	color: #000
+	span
+		font: 62px "alsrubl"
+
+.advant__items
+	margin-top: 120px
+.advant__item
+	float: left
+	position: relative
+	width: 45%
+	margin: 0 45px 112px 0
+	text-align: left
+	&:nth-child(n+2n)
+		margin-right: 0
+	&:before
+		content: ' '
+		position: absolute
+		top: -20px
+		left: 0
+	&.advant__item-1
+		&:before
+			@include sprite($adv-icon-1)
+	&.advant__item-2
+		&:before
+			@include sprite($adv-icon-2)
+	&.advant__item-3
+		&:before
+			@include sprite($adv-icon-3)
+	&.advant__item-4
+		&:before
+			@include sprite($adv-icon-4)
+	.item__descr
+		padding-left: 162px
+		font: 24px "segoe"
+		color: #000
+		span
+			font-weight: 700
+
+.section__can
+	padding-top: 88px
+	background: url(../img/home-bg-5.jpg) center top no-repeat
+	background-size: cover
+
+.section__title
+	&.section__title-can
+		span
+			display: block
+			font: 700 102px/97px "kelson"
+			text-align: right
+
+.help__form
+	&.help__form-can
+		float: left
+		margin: 68px 60px 0 -70px
+		width: 487px
+		height: 471px
+		padding-top: 37px
+		background: rgba(255,255,255, .77)
+		border: none
+		input
+			border: 1px solid #dbdbdb
+
+.form__title
+	&.form__title-can
+		margin-bottom: 40px
+		color: #000
+
+.can__text
+	float: right
+	width: 49%
+	margin-top: 52px
+	p
+		margin-bottom: 46px
+		font: 40px/48px "segoe"
+		color: #000
+		span
+			display: block
+			margin-top: 50px
+			font: 40px/48px "segoe"
+			color: #000
+
+.section__mcity
+	padding-top: 100px
+	text-align: center
+	background: url(../img/home-bg-6.jpg) center top no-repeat
+	background-size: cover
+
+.section__title
+	&.section__title-mcity
+		display: inline-block
+		text-align: right
+		line-height: 64px
+		span
+			display: block
+			font-size: 30px
+		a
+			color: #000
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+.section__date
+	height: 808px
+	padding-top: 88px
+	text-align: center
+	background: url(../img/home-bg-7.jpg) center top no-repeat
+	background-size: cover
+
+.date__tren
+	margin-bottom: 12px
+	font-size: 51px
+	color: #000
+	span
+		font-weight: 700
+.section__title
+	&.section__title-date
+		line-height: 100px
+		font-weight: normal
+
+.date__seats
+	margin: 47px 0 50px
+	font-size: 46px
+	color: #000
+
+.btn__link
+	&.btn__link-date
+		width: 391px
+		height: 72px
+		font-size: 30px
+		color: #fff
+		line-height: 65px
+		background: #000
+		border-radius: 5px
+
+.btn__link
+	&.btn__link-free
+		display: none
+
+.footer
+	height: 250px
+	padding-top: 60px
+	text-align: center
+
+.footer__left
+	float: left
+
+.footer__social
+	margin: 5px 50px 0 0
+	a
+		display: inline-block
+		position: relative
+		vertical-align: bottom
+		font-size: 0
+	.social__link
+		&.social__link-vk
+			@include sprite($vk-black)
+		&.social__link-fb
+			@include sprite($fb-black)
+
+.footer__logo
+	display: inline-block
+	position: relative
+	top: -15px
+	margin-left: 75px
+	text-align: center
+	a
+		display: block
+	.logo__title
+		margin-top: 10px
+		font-size: 24px
+		color: #000
+	.logo__text
+		margin-top: 5px
+		font-size: 18px
+		color: #000
+
+.footer__right
+	float: right
+	text-align: right
+
+.footer__phone
+	display: block
+	margin-bottom: 8px
+	font: 700 24px "kelson"
+	color: #000
+
+.footer__menu
+	width: 300px
+	li
+		display: inline-block
+		margin: 0 0 7px 17px
+		a
+			display: block
+			font-size: 18px
+			color: #000
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+
+/*-------------modal бесплатная консультация-----------*/
+.free__form
+	position: relative
+	display: block
+	width: 320px
+	height: 446px
+	margin: 0 auto
+	padding: 25px 15px 0
+	text-align: center
+	background: #333048
+	input
+		width: 100%
+		height: 47px
+		margin-bottom: 10px
+		padding-left: 20px
+		border: none
+		outline: none
+	.mfp-close
+		top: -2px
+		&:active
+			top: -2px
+
+.mfp-close-btn-in
+	.mfp-close
+		color: #fff !important
+
+.free__title
+	margin-bottom: 15px
+	font: 36px/40px "kelson"
+
+.free__accent
+	display: block
+	margin-bottom: 25px
+	font-size: 18px
+
+.form__btn
+	&.form__btn-free
+		width: 270px
+/*-----------------------end---------------------------*/
+
+/*-------------------Form city---------------------*/
+.form__city
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 320px
+	height: 498px
+	margin: auto
+	padding: 12px 15px
+	background: #e9e9ed
+	.mfp-close
+		display: none
+
+.city__change
+	height: 470px
+	overflow: hidden
+
+.change__list
+	height: 100%
+	overflow: auto
+	li
+		position: relative
+		display: block
+		width: 225px
+		height: 32px
+		margin-bottom: 12px
+		padding: 4px 0 4px 15px
+		cursor: pointer
+		transition: all .15s ease
+		&:hover, &.active
+			background: #ffc000
+			&:after
+				content: ' '
+				position: absolute
+				bottom: -20px
+				left: 0
+				width: 225px
+				height: 20px
+			.form__phone
+				visibility: visible
+				opacity: 1
+		> span
+			display: block
+			font: 16px "segoe"
+			color: #000
+
+.form__phone
+	visibility: hidden
+	position: absolute
+	top: 40px
+	left: 0
+	width: 290px
+	height: 175px
+	padding-top: 25px
+	opacity: 0
+	text-align: center
+	z-index: 5
+	cursor: default
+	background: #fff
+	box-shadow: 0 3px 21px rgba(0, 0, 0, 0.08)
+	transition: opacity .3s
+	span
+		display: block
+		margin-bottom: 20px
+		font-size: 30px
+		font-weight: 700
+		color: #000
+	.consalt__link
+		display: block
+		width: 254px
+		height: 57px
+		margin: 0 auto
+		font: 700 16px "segoe"
+		line-height: 57px
+		color: #000
+		background-color: #fcb413
+		border-radius: 4px
+/*-----------------------end--------------------------*/
+
+/*----------magnific popup------------*/
+.mfp-fade
+	&.mfp-bg
+	    opacity: 0
+	    background: #000
+	    transition: all .3s
+
+.mfp-fade
+	&.mfp-bg
+		&.mfp-ready
+			opacity: .9
+
+.mfp-fade
+	&.mfp-bg
+		&.mfp-removing
+			opacity: 0
+
+.mfp-fade
+	&.mfp-wrap
+		.mfp-content
+		    opacity: 0
+		    transition: all .3s
+
+.mfp-fade
+	&.mfp-wrap
+		&.mfp-ready
+			.mfp-content
+				opacity: 1
+
+.mfp-fade
+	&.mfp-wrap
+		&.mfp-removing
+			.mfp-content
+				opacity: 0
+/*--------------end-------------------*/
+
+@import "start.sass"
+@import "power.sass"
+@import "couch.sass"
+@import "steel.sass"
+@import "trening.sass"
+@import "contact.sass"
+@import "history.sass"
+@import "speaker.sass"

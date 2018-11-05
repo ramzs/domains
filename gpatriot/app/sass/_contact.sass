@@ -1,0 +1,88 @@
+@import "vars"
+
+/*----------------Contact page-------------------*/
+.header--inner
+	height: 799px
+	padding-bottom: 0
+	background: url(../img/header-inner-bg.jpg) center top no-repeat
+	background-size: cover
+
+.breadcrumb
+	margin: 25px 0 10px
+	&-list
+		&__item
+			position: relative
+			display: inline-block
+			margin-right: 15px
+			font: 14px "opensans"
+			text-transform: uppercase
+			&:last-child
+				margin-right: 0
+			&:not(:last-child):after
+				content: '>'
+				position: absolute
+				top: 0
+				right: -13px
+				font-size: 14px
+				color: $main-color
+			a
+				display: block
+				font: 14px "opensans"
+				text-transform: none
+				&:hover
+					color: $main-color
+					text-decoration: underline
+
+.section-contact
+	position: relative
+	margin: -583px 0 -545px
+	padding: 0 44px 50px
+	z-index: 8
+	background: #fff
+
+.page-title
+	&--contact
+		margin-bottom: 33px
+
+.contact-item
+	margin-bottom: 15px
+	&__title
+		margin-bottom: 14px
+		font-size: 14px
+		font-weight: 800
+		font-style: italic
+	&__descr
+		font: 14px/22px "opensans"
+		p
+			margin-bottom: 11px
+		span
+			font: 800 italic 14px "panton"
+
+.contact-map
+	max-width: 604px
+	max-height: 456px
+	margin: 29px 0 38px
+
+.contact-info
+	&__title
+		margin-bottom: 19px
+		font-size: 20px
+		font-weight: 800
+		font-style: italic
+	&__text
+		font: 14px/22px "opensans"
+		&--last
+			margin-top: 43px
+	&__subtitle
+		font: 800 italic 14px/22px "panton"
+	&__phone
+		margin-top: 22px
+		font: 14px/22px "opensans"
+
+.contact-accent
+	margin-top: 22px
+	font: 14px/22px "opensans"
+
+.footer--inner
+	padding: 585px 0 35px
+/*--------------------end-------------------------*/

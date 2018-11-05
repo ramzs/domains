@@ -1,0 +1,1225 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+.header__topline
+	height: 57px
+	text-align: center
+	border-bottom: 1px solid #f1f1f1
+	background: #f5f5f5
+
+.menu__btn
+	position: relative
+	display: none
+	margin: 5px 0 0 6px
+	padding: 8.5px 8px
+	cursor: pointer
+	border-radius: 5px
+	&.active
+		z-index: 999
+		background: #f1f1f1
+		box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.35)
+	b
+		display: block
+		width: 26px
+		height: 5px
+		margin-bottom: 5px
+		background: #353535
+		&:last-child
+			margin-bottom: 0
+
+.cart__mob
+	display: none
+	margin: 0 18px 0 20px
+	font-size: 0
+	outline: none
+	@include sprite($cart-ico-mob)
+
+.topline__city
+	float: left
+	padding: 20px 0
+	.city__change
+		display: block
+		margin-left: 136px
+		font: 15px "aghelvetica"
+		color: $main-light
+
+.topline__phone
+	display: inline-block
+	margin-left: 112px
+	padding: 20px 0
+	vertical-align: middle
+	.phone__link
+		position: relative
+		display: inline-block
+		margin-right: 37px
+		padding-left: 32px
+		font: 700 17px "lato"
+		color: $main-color
+		&:before
+			content: ' '
+			position: absolute
+			display: block
+			top: -3px
+			left: 0
+			@include sprite($phone-ico)
+
+.topline__email
+	display: inline-block
+	padding: 20px 0
+	.email__link
+		position: relative
+		display: block
+		padding-left: 32px
+		font: 14px "roboto"
+		color: $main-light
+		&:before
+			content: ' '
+			position: absolute
+			top: -2px
+			left: 0
+			@include sprite($email-ico)
+
+.topline__right
+	float: right
+	text-align: right
+
+.topline__search
+	position: relative
+	display: inline-block
+	margin: 15px 17px 0 0
+	vertical-align: top
+	&:after
+		content: ' '
+		position: absolute
+		bottom: -30px
+		left: 0
+		width: 30px
+		height: 30px
+	.search__link
+		position: relative
+		display: block
+		font-size: 0
+		@include sprite($search-ico)
+	.search__in
+		display: none
+		position: absolute
+		bottom: -30px
+		right: -80px
+		width: 230px
+		height: 27px
+		z-index: 9
+		background-color: white
+		border: 1px solid rgba(17, 17, 17, 0.35)
+
+.topline__cart
+	position: relative
+	display: inline-block
+	min-width: 168px
+	min-height: 57px
+	vertical-align: middle
+	background: $price
+	&:before
+		content: ' '
+		position: absolute
+		top: 13px
+		left: 12px
+		@include sprite($cart-ico)
+	.cart__main
+		position: relative
+		height: 57px
+		padding: 17px 15px 17px 0
+		&:after
+			content: ' '
+			position: absolute
+			bottom: 8px
+			left: 0
+			right: 0
+			margin: 0 auto
+			@include sprite($cart-arrow)
+	&:hover
+		.cart__list
+			display: block
+		.cart__main
+			&:after
+				@include sprite($cart-arrow-up)
+	.cart__price
+		display: inline-block
+		padding-left: 45px
+		font-size: 14px
+		color: #fff
+	.cart__count
+		display: inline-block
+		font-size: 14px
+		color: #fff
+
+.cart__list
+	display: none
+	position: absolute
+	top: 56px
+	left: 0
+	width: 100%
+	height: auto
+	padding: 8px 0 0 5px
+	text-align: left
+	z-index: 99
+	background: $price
+	.cart__item
+		display: block
+		margin-bottom: 8px
+		font-size: 10px
+		color: #fff
+		&:hover
+			color: $hover
+			text-decoration: underline
+	.order__link
+		display: block
+		margin-top: 10px
+		padding: 8px 0
+		font-size: 14px
+		color: #fff
+		text-align: center
+		&:hover
+			color: #2980b9
+
+.header__main
+	text-align: center
+
+.header__logo
+	float: left
+	margin-top: 5px
+	img
+		width: 100%
+	&.header__logo-mob
+		display: none
+
+.header__nav
+	display: inline-block
+	margin-top: 40px
+	&.header__nav-mob
+		display: none
+
+.header__menu
+	display: inline-block
+	.menu__item
+		position: relative
+		display: inline-block
+		margin: 0 25px
+		.menu__link
+			display: block
+			font: 17px "aghelvetica"
+			color: #000
+			.link__caret
+				float: right
+				position: relative
+				top: 6px
+				margin-left: 9px
+				@include sprite($menu-arrow-down)
+			&:hover
+				color: $hover-3
+				text-decoration: underline
+				.link__caret
+					top: 8px
+					@include sprite($menu-arrow-up)
+		&.active
+			.menu__link
+				color: $hover-3
+				text-decoration: underline
+				.link__caret
+					top: 8px
+					@include sprite($menu-arrow-up)
+
+.menu__drop
+	position: absolute
+	display: none
+	max-width: 237px
+	left: 0
+	padding: 10px 15px 12px
+	text-align: left
+	z-index: 99
+	background: $btn
+	.drop__item
+		display: block
+		margin-bottom: 15px
+		white-space: nowrap
+		&:last-child
+			margin-bottom: 0
+		.drop__link
+			display: block
+			font: 15px "aghelvetica"
+			color: #fff
+			&:hover
+				color: $hover-2
+
+.btn
+	display: block
+	position: relative
+	width: 168px
+	height: 37px
+	font-size: 14px
+	color: #fff
+	line-height: 35px
+	text-align: center
+	border-radius: 2px
+	background: $btn
+	i
+		position: relative
+		display: inline-block
+		top: 1px
+		margin-right: 5px
+		@include sprite($phone-btn-ico)
+	&.btn__callback
+		position: relative
+		float: right
+		margin-top: 30px
+
+.slider__item
+	position: relative
+
+.slider__caption
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	margin: 0 auto
+	.container
+		position: relative
+		max-width: 1366px
+		width: 100%
+
+.slider__accent
+	position: relative
+	display: inline-block
+	width: 75%
+	margin: 100px 0 0 -20px
+	padding: 7px 70px 12px
+	text-align: left
+	background: rgba(22,22,22, .85)
+	.accent__title
+		display: block
+		font: 700 43px "lato"
+		color: #fff
+		text-transform: uppercase
+	.accent__text
+		position: relative
+		margin-top: 15px
+		padding-left: 35px
+		font-size: 18px
+		color: #fff
+		p
+			position: relative
+			&:before
+				content: ' '
+				position: absolute
+				top: -5px
+				left: -35px
+				@include sprite($slider-ico)
+	&.slider__accent-outer
+		display: table
+		padding: 0 55px
+		height: 195px
+		background: rgba(28,28,28, .55)
+		.accent__text
+			display: table-cell
+			vertical-align: middle
+			padding-left: 45px
+			font-size: 30px
+			font-weight: 700
+			p
+				display: inline-block
+				text-align: center
+				&:before
+					top: 5px
+					left: -45px
+
+.stick
+	position: absolute
+	top: 30px
+	right: 30px
+	width: 412px
+	height: 343px
+	padding: 10px
+	text-align: center
+	overflow: hidden
+	border-radius: 2px
+	background: url(../img/stick-bg.jpg) 0 0 repeat-x
+	&:before
+		content: ' '
+		position: absolute
+		top: 11px
+		left: 0
+		right: 0
+		margin: 0 auto
+		@include sprite($slider-ico-2)
+	.stick__wrap
+		width: 100%
+		height: 100%
+		padding: 120px 12px 0
+		border: 1px dashed #000
+		border-radius: 2px
+		.stick__title
+			display: block
+			font: bold italic 27px "antiqua"
+			color: #373121
+		.stick__text
+			margin: 25px 0 35px
+			font-size: 18px
+			color: #373121
+			letter-spacing: -0.5px
+
+.btn
+	&.btn__stick
+		display: block
+		width: 211px
+		height: 48px
+		margin: 0 auto
+		font-size: 16px
+		color: #fff
+		line-height: 45px
+		text-align: center
+		border-radius: 2px
+		background: $btn
+
+.slider__dots
+	position: absolute
+	bottom: 40px
+	left: 0
+	right: 0
+	width: 100%
+	text-align: center
+	li
+		display: inline-block
+		margin: 5px
+		vertical-align: middle
+		button
+			width: 11px
+			height: 11px
+			font-size: 0
+			cursor: pointer
+			border: none
+			border-radius: 50%
+			outline: none
+			background: #fff
+		&.slick-active
+			button
+				background: $price
+
+.header__carousel
+	padding: 20px 0 25px
+	background: url(../img/carousel-bg.jpg) center top no-repeat
+	.container
+		max-width: 1366px
+		width: 100%
+
+.slick-arrow
+	position: absolute
+	top: 50%
+	font-size: 0
+	outline: none
+	z-index: 9
+	cursor: pointer
+	border: none
+	background: 0
+
+.slick-prev
+	left: 0
+
+.slick-next
+	right: 16px
+
+.carousel__block
+	.slick-arrow
+		margin-top: -34px
+		&:before
+			content: ' '
+			position: absolute
+			top: 0
+			left: 0
+		&.slick-prev
+			&:before
+				@include sprite($arrow-left)
+			&:hover
+				&:before
+					@include sprite($arrow-left-hover)
+		&.slick-next
+			&:before
+				@include sprite($arrow-right)
+			&:hover
+				&:before
+					@include sprite($arrow-right-hover)
+
+.carousel__item
+	padding: 0 20px
+	text-align: center
+	outline: none
+	.item__pict
+		position: relative
+		height: 160px
+		img
+			@include vcenter
+	.item__descr
+		display: block
+		margin-top: 6px
+		font-size: 18px
+		color: #000
+	&:hover
+		.item__descr
+			color: $hover
+			text-decoration: underline
+
+.content
+	padding: 60px 0 20px
+
+.sidebar__left
+	float: left
+	width: 15.2%
+
+.sidebar__title
+	display: block
+	font: 800 25px "lato"
+	color: $title
+
+.service__list
+	margin-top: 32px
+	li
+		margin-bottom: 20px
+		a
+			font-size: 18px
+			color: #4d4d4d
+			&:hover
+				color: $hover-3
+				text-decoration: underline
+
+.block__team
+	margin-top: 130px
+
+.team__list
+	margin-top: 34px
+	li
+		position: relative
+		display: block
+		margin-bottom: 18px
+		padding-left: 74px
+		font-size: 18px
+		color: #4d4d4d
+		img
+			@include vcenter
+			left: 38px
+		span
+			display: table
+
+.main__center
+	float: left
+	width: 61.2%
+	padding: 0 105px 0 110px
+
+.page__title
+	position: relative
+	margin-bottom: 54px
+	h2
+		position: relative
+		display: inline-block
+		padding-right: 20px
+		font: 800 30px "lato"
+		color: #000
+		z-index: 2
+		background: #fff
+	&:after
+		content: ' '
+		position: absolute
+		top: 50%
+		right: 0
+		width: 90%
+		height: 3px
+		margin-top: 2px
+		z-index: 1
+		background: $btn
+
+.product
+	position: relative
+	margin-bottom: 68px
+	overflow: hidden
+	&:hover
+		.btn
+			&.btn__cart
+				opacity: 1
+				visibility: visible
+	&:last-child
+		padding-bottom: 0
+		border-bottom: none
+
+.product__pict
+	float: left
+	width: 205px
+	img
+		width: 100%
+
+.product__descr
+	display: table
+	padding-left: 50px
+
+.product__title
+	display: block
+	margin-bottom: 10px
+	font-size: 18px
+	color: #000
+	&:hover
+		color: $hover
+		text-decoration: underline
+
+.product__cat
+	display: inline-block
+	margin-bottom: 12px
+	font-size: 15px
+	color: $main-light
+
+.product__text
+	margin-bottom: 30px
+	font-size: 18px
+
+.product__price
+	position: relative
+	float: left
+	margin-top: 9px
+	font-size: 25px
+	color: $price
+	&:after
+		content: ' '
+		position: absolute
+		bottom: 6px
+		right: -41px
+		@include sprite($m2-ico)
+
+.btn
+	&.btn__cart
+		float: right
+		width: 153px
+		height: 45px
+		line-height: 45px
+		opacity: 0
+		visibility: hidden
+		i
+			margin-right: 10px
+			@include sprite($cart-ico-small)
+
+.sidebar__right
+	float: left
+	width: 23.6%
+	text-align: center
+
+.sidebar__banner
+	position: relative
+	display: inline-block
+	width: 283px
+	max-width: 100%
+	height: 371px
+	margin-bottom: 42px
+	padding: 28px 20px 0
+	text-align: center
+	border: 3px solid $btn
+	border-radius: 2px
+
+.banner__title
+	margin-top: 10px
+	font-size: 20px
+	color: $title
+
+.banner__descr
+	margin: 30px 0
+	font-size: 15px
+	color: #000
+
+.btn
+	&.btn__banner
+		width: 168px
+		height: 37px
+		margin: 0 auto
+		font-size: 14px
+		line-height: 35px
+
+.sidebar__slider
+	width: 283px
+	max-width: 100%
+	margin: 0 auto
+	box-shadow: 0 6px 14px rgba(32, 52, 0, 0.27)
+	.slick-arrow
+		width: 43px
+		height: 61px
+		margin-top: -25px
+		background: $btn
+		border-radius: 2px
+		&:before
+			content: ' '
+			@include vcenter
+		&.slick-prev
+			left: -43px
+			&:before
+				@include sprite($arrow-left-small)
+		&.slick-next
+			right: -43px
+			&:before
+				@include sprite($arrow-right-small)
+.stick
+	&.stick__banner
+		position: relative
+		top: 0
+		right: 0
+		width: 100%
+		height: auto
+		box-shadow: 0 3px 8px rgba(32, 52, 0, 0.27)
+		&:before
+			top: auto
+			bottom: 10px
+			@include sprite($banner-ico)
+		.stick__wrap
+			padding: 32px 0 109px
+			.stick__text
+				margin: 12px 0 0
+				padding: 0 5px
+				font-size: 16px
+
+.news__section
+	padding: 33px 0 65px
+	.container
+		max-width: 1366px
+		width: 100%
+		padding: 0 70px
+
+.section__top
+	margin-bottom: 40px
+	padding-bottom: 10px
+	overflow: hidden
+	border-bottom: 3px solid #d9d9d9
+
+.section__title
+	display: inline-block
+	font: 800 30px "lato"
+	color: $title
+
+.news__date
+	position: relative
+	float: right
+	margin-top: 18px
+	font: 15px "lato"
+	color: #cdcdcd
+	&:before
+		content: ' '
+		position: absolute
+		top: -4px
+		left: -30px
+		@include sprite($calend-ico)
+
+.news__pict
+	position: relative
+	float: left
+	max-width: 580px
+	width: 100%
+	height: 296px
+	overflow: hidden
+	img
+		position: absolute
+		top: 50%
+		left: 0
+		width: 100%
+		transform: translate(0, -50%)
+
+.news__descr
+	position: relative
+	display: table
+	padding-left: 25px
+
+.news__title
+	display: block
+	margin-bottom: 20px
+	font: 700 25px "lato"
+	color: #000
+	letter-spacing: -0.8px
+	&:hover
+		color: $hover
+		text-decoration: underline
+
+.news__text
+	height: 215px
+	overflow: hidden
+	font-size: 18px
+	line-height: 24px
+	p
+		margin-bottom: 22px
+
+.more__link
+	display: inline-block
+	margin-top: 15px
+	font-size: 14px
+	color: $btn
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+
+.about__section
+	padding: 40px 0 63px
+	background: #f2f0ed
+	.container
+		max-width: 1366px
+		width: 100%
+		padding: 0 70px
+
+.about__pict
+	float: right
+
+.about__descr
+	display: table
+	padding-right: 45px
+
+.about__title
+	display: block
+	margin-bottom: 22px
+	font-size: 25px
+	color: #000
+
+.about__text
+	font-size: 18px
+	p
+		margin-bottom: 25px
+
+footer
+	position: relative
+	padding: 45px 0 27px
+	background: url(../img/footer-bg.jpg) center top no-repeat
+	&:before
+		content: ' '
+		@include coverdiv
+		background: rgba(0, 129, 188, .76)
+	.container
+		max-width: 1366px
+		width: 100%
+
+.btn
+	&.btn__top
+		position: absolute
+		top: -38px
+		left: 0
+		right: 0
+		width: 130px
+		height: 39px
+		margin: 0 auto
+		border-radius: 2px 2px 0 0
+		i
+			top: -1px
+			left: -5px
+			@include sprite($arrow-up-small)
+
+.footer__left
+	position: relative
+	float: left
+	width: 55.5%
+	padding-left: 50px
+	z-index: 5
+
+.form__title
+	display: block
+	margin-bottom: 17px
+	font: 18px "lato"
+	color: #fff
+
+.form
+	&.form__footer
+		fieldset
+			float: left
+			margin: 0
+			padding: 0
+			border: none
+		input
+			display: block
+			width: 338px
+			height: 47px
+			margin-bottom: 7px
+			padding-left: 24px
+			font-size: 20px
+			background: #fffaeb
+			border: 1px solid #f7eed2
+			border-radius: 2px
+		textarea
+			width: 338px
+			height: 101px
+			margin-left: 7px
+			padding: 7px 0 0 24px
+			font-size: 20px
+			background: #fffaeb
+			border: 1px solid #f7eed2
+			border-radius: 2px
+	.form__btn
+		float: left
+		width: 130px
+		height: 45px
+		margin-top: 23px
+		font-size: 14px
+		color: #fff
+		clear: both
+		border: 2px solid #00b9f0
+		border-radius: 2px
+		background: none
+		transition: all .15s ease
+		&:hover
+			background: #00b9f0
+
+.form__accent
+	float: left
+	margin: 30px 0 0 33px
+	font-size: 14px
+	color: #00c7ff
+
+.footer__main
+	position: relative
+	float: left
+	width: 44.5%
+	padding:  20px 0 0 75px
+	z-index: 5
+
+.footer__menu
+	display: inline-block
+	vertical-align: top
+	li
+		display: block
+		margin-bottom: 12px
+		a
+			display: block
+			font-size: 17px
+			color: #fff
+			&:hover
+				color: $hover-3
+				text-decoration: underline
+
+.footer__contact
+	display: inline-block
+	margin-left: 84px
+	vertical-align: top
+	a
+		display: block
+
+.contact__phone
+	margin-bottom: 6px
+	font: 700 20px "lato"
+	color: #fff
+
+.contact__mail
+	position: relative
+	margin-top: 12px
+	padding-left: 30px
+	font-size: 14px
+	color: #fff
+	&:before
+		content: ' '
+		position: absolute
+		top: -4px
+		left: 0
+		@include sprite($email-ico-white)
+
+.footer__social
+	float: right
+	margin-top: 58px
+	span
+		display: inline-block
+		margin-right: 15px
+		vertical-align: middle
+		font-size: 14px
+		color: $hover-3
+	.social
+		display: inline-block
+		margin-right: 5px
+		vertical-align: middle
+		font-size: 0
+		&:hover
+			box-shadow: 0 0 25px #00c7ff
+		&.social__vk
+			@include sprite($vk-ico)
+		&.social__fb
+			@include sprite($fb-ico)
+		&.social__yt
+			@include sprite($yt-ico)
+		&.social__inst
+			@include sprite($inst-ico)
+
+.copyright
+	margin-top: 85px
+	font-size: 14px
+	color: $hover-3
+
+/*------------Cart------------------------*/
+.mfp-bg
+	display: none
+
+.cart__modal
+	position: relative
+	width: 1007px
+	max-width: 100%
+	margin: 0 auto
+	padding: 37px 45px 20px 37px
+	z-index: 999
+	overflow: hidden
+	border: 3px solid #2980b9
+	box-shadow: 0 24px 58.3px 3.7px rgba(0, 0, 0, 0.47)
+	background: #fff
+	.mfp-close
+		display: none
+
+.cart__title
+	margin-bottom: 35px
+	font: 700 30px "lato"
+	color: #000
+
+.table
+	display: table
+	width: 100%
+
+.table__row
+	display: table-row
+
+.table__cell
+	display: table-cell
+	padding: 25px 0
+	vertical-align: top
+	&.table__cell-pict
+		width: 23.8%
+	&.table__cell-count
+		padding-right: 35px
+		text-align: right
+	&.table__cell-total
+		text-align: right
+
+.cart__img
+	width: 140px
+
+.name__link
+	display: block
+	margin-bottom: 20px
+	font-size: 18px
+	color: #000
+
+.name__price
+	font-size: 20px
+	color: $price
+	span
+		margin-left: 49px
+		color: #686868
+
+.count__total
+	display: inline-block
+	.jq-number
+		margin-top: 27px
+		padding: 0 47px
+	.jq-number__field
+		width: 26px
+		max-width: 100%
+		height: 26px
+		border-radius: 0
+		border: 1px solid #9d9d9d
+		input
+			width: 100%
+			padding: 2px 0
+			font: 15px "roboto"
+			color: #686868
+			text-align: center
+	.jq-number__spin
+		left: 0
+		height: 26px
+		background: none
+		border: none
+		box-shadow: none
+		&:hover
+			background: none
+		&:active
+			box-shadow: none
+		&:before
+			content: ' '
+			position: absolute
+			top: 12px
+			left: 10px
+			width: 12px
+			height: 3px
+			background: #686868
+		&:after
+			border: none
+		&.minus
+			&:after
+				border: none
+		&.plus
+			right: 0
+			left: auto
+			&:before
+				width: 15px
+			&:after
+				content: ' '
+				position: absolute
+				top: 6px
+				left: 16px
+				width: 3px
+				height: 15px
+				background: #686868
+
+.total__block
+	display: inline-block
+	text-align: left
+	.block__title
+		display: block
+		margin-bottom: 10px
+		font-size: 14px
+		color: #686868
+	.block__price
+		display: inline-block
+		min-width: 110px
+		height: 31px
+		padding: 0 5px
+		font-size: 20px
+		color: $price
+		line-height: 31px
+		text-align: center
+		border-radius: 5px
+		box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.17)
+
+.total__order
+	float: right
+	margin-right: 70px
+	.order__title
+		display: block
+		margin-bottom: 12px
+		font-size: 25px
+		color: #686868
+	.order__price
+		width: 144px
+		max-width: 100%
+		height: 41px
+		margin-bottom: 15px
+		font-size: 25px
+		color: #ff4e00
+		line-height: 41px
+		text-align: center
+		border-radius: 5px
+		box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.17)
+
+.cart__link
+	display: inline-block
+	width: 249px
+	height: 71px
+	font-size: 20px
+	line-height: 71px
+	text-align: center
+	border-radius: 5px
+	box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.17)
+	&.cart__link-pay
+		margin-top: 97px
+		color: $main-color
+		&:hover
+			color: $hover
+			text-decoration: underline
+	&.cart__link-order
+		color: #fff
+		background: #5eb500
+		&:hover
+			background: #71d703
+/*-------------end------------------------*/
+
+/*--------------Callback form--------------------*/
+.mfp-container
+	padding: 0 !important
+
+.callback__form
+	position: relative
+	height: 497px
+	max-height: 100%
+	margin-top: 57px
+	padding-top: 110px
+	background: url(../img/callback-bg.jpg) center top no-repeat
+	background-size: cover
+	&:before
+		content: ' '
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(72,128,175, .85)
+	.mfp-close
+		display: none
+	form
+		position: relative
+		width: 226px
+		margin: 0 auto
+		z-index: 5
+		input
+			display: block
+			width: 100%
+			height: 43px
+			margin-bottom: 5px
+			padding-left: 15px
+			font: 600 14px "lato"
+			background: #fff
+			border: 1px solid #6d9222
+			border-radius: 2px
+		.form__btn
+			display: block
+			width: 179px
+			height: 39px
+			margin: 32px auto 0
+			font: 600 14px "lato"
+			color: #000
+			text-align: center
+			line-height: 39px
+			cursor: pointer
+			background: #e3dc34
+			border-radius: 2px
+/*-------------------end-------------------------*/
+
+/*-------Плавное появление magnific popup------------*/
+.mfp-zoom-in
+	height: 100% !important
+	.mfp-with-anim
+		opacity: 0
+		transition: all 0.2s ease-in-out
+		transform: scale(0.8)
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.3s ease-out
+	&.mfp-ready
+		.mfp-with-anim
+			opacity: 1
+			transform: scale(1)
+		&.mfp-bg
+			opacity: 0.8
+	&.mfp-removing
+		.mfp-with-anim
+			transform: scale(0.8)
+			opacity: 0
+		&.mfp-bg
+			opacity: 0
+
+.mfp-auto-cursor
+	.mfp-content
+		height: 100%
+/*-------------end-----------------------*/
+
+.mfp-no-margins
+	img
+		&.mfp-img
+			padding: 0
+
+.mfp-no-margins
+	.mfp-figure
+		&:after
+			top: 0
+			bottom: 0
+
+.mfp-no-margins
+	.mfp-container
+		padding: 0
+
+@import "material.sass"
+@import "build.sass"
+@import "tovar.sass"
+@import "news.sass"
+@import "news-one.sass"
+@import "feedback.sass"
+@import "consult.sass"
+@import "pay.sass"
+@import "contact.sass"

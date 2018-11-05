@@ -1,0 +1,610 @@
+@import "bourbon"
+@import "vars"
+@import "sprite"
+
+@media only screen and (max-width : 1200px)
+	.container
+		padding: 0 15px
+
+	.slider-block
+		height: 360px
+		.container
+			padding: 0 15px
+
+	.slider-item
+		img
+			height: 415px
+
+	.caption
+		img
+			position: relative
+			top: -20px
+			left: -82px
+			height: 457px
+			margin: 0 auto
+
+	.caption-slide
+		top: 40px
+		right: 70px
+
+	.preview-block
+		right: -8px
+
+	.footer-main
+		.container
+			left: -9px
+
+	.scroll-top
+		right: 12px
+
+	.callback-form
+		&--st
+			&:before
+				left: -100px
+	/**/
+
+@media (max-width: 1040px) and (min-width: 768px)
+	.hidden-sm
+		display: none !important
+
+@media only screen and (max-width : 1040px)
+	.logo
+		max-width: 170px
+
+	.lang
+		width: 50px
+		height: 30px
+		margin-left: 5px
+		background-size: cover
+		&__link
+			width: 17px
+			height: 15px
+			top: 6px
+			z-index: 5
+			&--one
+				left: 7px
+			&--two
+				right: 6px
+
+	.location
+		margin-left: 20px
+
+	.callback
+		margin-left: 30px
+		&__phone
+			font-size: 16px
+		&:before
+			top: 4px
+			left: -20px
+
+	.personal
+		top: 5px
+
+	.phone
+		margin-top: 0
+
+	.navbar
+		.nav
+			> li
+				margin-right: 34.4px
+				> a
+					padding-left: 0
+				&.active
+					> a
+						color: $hover-link
+			&__item
+				&--2
+					a:before
+						top: 0
+						left: -22px
+						@include sprite($menu-icon-1_1)
+					&:hover
+						a:before
+							@include sprite($menu-icon-1_1h)
+				&--3
+					a:before
+						top: 0
+						left: -22px
+						@include sprite($menu-icon-2_1)
+					&:hover
+						a:before
+							@include sprite($menu-icon-2_1h)
+				&--4
+					a:before
+						top: -4px
+						left: -25px
+						@include sprite($menu-icon-3_1)
+					&:hover
+						a:before
+							@include sprite($menu-icon-3_1h)
+				&--5
+					a:before
+						top: 0
+						left: -27px
+						@include sprite($menu-icon-4_1)
+					&:hover
+						a:before
+							@include sprite($menu-icon-4_1h)
+				&--6
+					a:before
+						top: 0
+						left: -22px
+						@include sprite($menu-icon-5_1)
+					&:hover
+						a:before
+							@include sprite($menu-icon-5_1h)
+			&-submenu
+				width: 230px
+				padding: 10px 12px 30px
+				> li
+					> a
+						padding: 0 10px
+				&--l2
+					padding-top: 0
+
+	.slider-block
+		height: auto
+		.container
+			width: 100%
+
+	.h-slider
+		height: 300px
+		top: 0
+		.slider-item
+			height: 300px
+
+	.caption
+		max-width: 100%
+		padding: 0
+		background: rgba(0,0,0, .7)
+		img
+			display: none !important
+		&-slide
+			top: 10px
+			left: 0
+			right: 0
+			&__text
+				color: #fff
+
+	.slick-dots
+		bottom: 10px
+		left: 0
+		right: 0
+		text-align: center
+
+	.sidebar
+		width: 243px
+		height: auto
+		padding-bottom: 60px
+		background-size: 100% 100%
+		&-nav
+			padding: 30px 17px 0 13px
+		&-menu
+			&__item
+				> a
+					padding: 11px 0 11px 64px
+				&--2
+					a:before
+						top: 12px
+						left: 25px
+						@include sprite($sidebar-icon-1_1)
+					&:hover
+						> a
+							color: $hover-link
+							&:before
+								@include sprite($menu-icon-1_1h)
+				&--3
+					a:before
+						top: 12px
+						left: 25px
+						@include sprite($sidebar-icon-2_1)
+					&:hover
+						> a
+							color: $hover-link
+							&:before
+								@include sprite($menu-icon-2_1h)
+				&--4
+					a:before
+						top: 12px
+						left: 25px
+						@include sprite($sidebar-icon-3_1)
+					&:hover
+						> a
+							color: $hover-link
+							&:before
+								@include sprite($menu-icon-3_1h)
+				&--5
+					a:before
+						top: 12px
+						left: 25px
+						@include sprite($sidebar-icon-4_1)
+					&:hover
+						> a
+							color: $hover-link
+							&:before
+								@include sprite($menu-icon-4_1h)
+				&--6
+					a:before
+						top: 12px
+						left: 25px
+						@include sprite($sidebar-icon-5_1)
+					&:hover
+						> a
+							color: $hover-link
+							&:before
+								@include sprite($menu-icon-5_1h)
+			&__submenu
+				left: 93%
+				padding-right: 14px
+
+	.main
+		padding-left: 0
+
+	.about-block
+		max-width: 100%
+		background-size: 100% 100%
+
+	.preview-block
+		height: auto
+		right: 0
+		margin: 0 auto 40px
+		padding: 0 15px
+		background: none
+
+	.carousel-block
+		position: relative
+		max-width: 100%
+		top: 0
+		left: 0
+
+	.h-carousel
+		.slick-arrow
+			opacity: .7
+			&.slick-next
+				right: -4px
+			&.slick-prev
+				left: 0
+			&:hover
+				opacity: 1
+
+	.tour-preview
+		width: 100%
+		background: url(../img/bg-article.png) no-repeat
+		background-size: 100% 204px
+
+	.footer-main
+		max-width: 820px
+		background: url(../img/footer-bg.png) center top no-repeat
+		background-size: 100% 450px
+
+	.footer-nav
+		width: 22%
+		&__title
+			font-size: 18px
+		&--one
+			margin-left: 50px
+		&--two
+			margin-left: 0
+		&--four
+			margin-left: 20px
+
+	.footer-logo
+		margin: 50px 0 0 45px
+
+	.logo
+		img
+			width: 100%
+
+	.social
+		text-align: center
+
+	.copyright
+		margin-right: 0
+
+	.cf-link
+		margin-left: 0
+
+	.callback-form
+		input
+			margin: 0 10px
+		&--st
+			max-width: 856px
+			margin-bottom: -45px
+			&:before
+				width: 237px
+
+	/*--------------Tour page--------------*/
+	.preview-block--inner
+		margin-top: 30px
+
+	.btn-main--comment
+		margin: 33px auto 0
+	/*-----------------end-----------------*/
+
+	/*-------------Avia page----------------*/
+	.main-card__descr
+		padding: 40px 0 0 30px
+
+	.price-item
+		margin-right: 10px
+	/*----------------end-------------------*/
+
+	/*--------Contact page-------------------*/
+	.contact-descr
+		max-width: 825px
+		&__main
+			float: none
+		&__text
+			display: block
+			margin-top: 30px
+			padding-left: 0
+	/*-------------end----------------------*/
+
+	/*------------Thank page-----------------*/
+	.thank-block
+		&__title
+			margin-bottom: 20px
+			font-size: 36px
+			line-height: 42px
+		&__text
+			margin-bottom: 20px
+	/*--------------end---------------------*/
+
+
+@media only screen and (max-width : 767px)
+	.container
+		width: 640px
+
+	.header
+		padding-bottom: 0
+
+	.lang
+		width: 65px
+		height: 35px
+		margin-left: 15px
+
+	.location
+		margin: 5px 0 0 30px
+
+	.callback
+		float: right
+		margin: 6px 0 0
+		&__phone
+			font-size: 18px
+		&__link
+			font-size: 20px
+
+	.personal
+		display: none
+		&--mob
+			display: block
+			margin-top: 12px
+		&-link
+			font-size: 16px
+
+	.phone
+		margin-top: 15px
+		&-item
+			&--first
+		&__link
+			font-size: 12px
+
+	.navbar
+		height: auto
+		margin-top: 0
+		padding: 0
+		.container
+			width: 100%
+			padding: 0
+			.navbar-header
+				width: 640px
+				margin: 0 auto
+				padding: 0 15px
+				&__title
+					display: inline-block
+					vertical-align: middle
+					font-size: 20px
+					font-weight: 700
+					color: $title
+					text-transform: uppercase
+		&-toggle
+			float: none
+			display: inline-block
+			margin-right: 5px
+			vertical-align: middle
+			border-color: #1b1b1b
+			box-shadow: 0 0 10px $title
+			&.collapsed
+				box-shadow: none
+			.icon-bar
+				background: $title
+		.navbar-collapse
+			position: absolute
+			top: 49px
+			left: 0
+			width: 100%
+			min-width: 640px
+			margin: 0
+			border: none
+			background: #fff
+		.nav
+			padding: 30px 0 60px
+			text-align: center
+			text-align-last: auto
+			&:after
+				display: none
+			> li
+				float: none
+				display: block
+				margin: 5px 0
+				> a
+					padding: 5px
+					font-size: 18px
+					&:before
+						display: none
+			&-submenu
+				position: relative
+				width: 100%
+				top: 0
+				left: 0
+				padding: 10px 0
+				text-align: center
+				background: none
+				li
+					display: block
+					a
+						display: block
+						height: auto
+						padding: 10px 0
+						font-size: 16px
+						&:hover
+							background: none
+					&.active
+						a
+							background: none
+				&--l2
+					position: relative
+					top: 0
+					left: 0
+					background: none
+
+	.slider-block
+		min-width: 640px
+
+	.wrapper
+		min-width: 640px
+
+	.main
+		text-align: center
+
+	.sidebar-news
+		width: 100%
+		padding-top: 35px
+		background: none
+		&__title
+			margin-left: 0
+
+	.news-preview
+		width: 100%
+
+	.about-block
+		background-size: 96% 100%
+
+	.preview-block
+		padding: 0 14px
+
+	.scroll-top
+		right: 15px
+		top: -75px
+	.footer-main
+		right: 0
+		height: auto
+		background: none
+		.container
+			left: 0
+
+	.footer-nav
+		width: 24%
+		&__title
+			margin-bottom: 10px
+			font-size: 16px
+		&--one
+			margin-left: 0
+		&--four
+			margin-left: 0
+			padding-left: 25px
+		li
+			margin-bottom: 10px
+			a
+				font-size: 14px
+
+	.footer-logo
+		margin: 20px 0 0
+
+	.social
+		margin-top: 25px
+
+	.developer
+		margin: 25px 0 0
+
+	.footer-bottom
+		margin-top: 30px
+
+	.copyright
+		font-size: 14px
+		text-align: left
+
+	.cf-link
+		display: block
+		font-size: 14px
+		text-align: right
+
+	.link-callphone
+		display: block
+
+	.callback-form
+		max-width: 600px
+		margin-bottom: 0
+		padding: 100px 71px 150px
+		&--st
+			right: 0
+			padding: 40px 71px 10px
+			background: none
+			&:before
+				left: -35px
+				bottom: -110px
+		&__title
+			margin-bottom: 30px
+			font-size: 26px
+		input
+			display: block
+			width: 250px
+			margin: 0 auto 20px
+		.mfp-close
+			right: 28px
+			top: 48px
+
+	.btn-main--order
+		width: 250px
+		margin: 0 auto
+
+	/*-------------Avia page----------------*/
+	.main-card
+		min-height: 500px
+		&__pict
+			width: 210px
+			height: 220px
+		&__descr
+			padding: 10px 0 0 10px
+
+	.price-item
+		max-width: 200px
+		margin-right: 5px
+		&__title
+			height: 60px
+			padding-top: 5px
+			font-size: 18px
+			span
+				font-size: 12px
+
+	.price-in
+		height: 200px
+		padding: 12px 12px 10px
+		&.open
+			min-height: 630px
+
+	.price-total
+		&__title
+			font-size: 12px
+	/*----------------end-------------------*/
+
+	/*------------Thank page-----------------*/
+	.thank-block
+		&__title
+			margin-bottom: 15px
+			font-size: 28px
+			line-height: 32px
+		&__text
+			margin-bottom: 15px
+			font-size: 14px
+	/*--------------end---------------------*/

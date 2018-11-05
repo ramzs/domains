@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="breadcrumb-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="#">Главная</a></li>
+						<li class="active">Техника для дома</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="page-welcome">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-welcome__wrap">
+						<h1 class="page-title">Техника для дома</h1>
+						<div class="page-descr">
+							<p>Купить технику для дома в Москве в интернет-магазине TechnoDream по доступной цене «проще простого». Необходимо войти на страничку товара, ознакомившись с характеристиками, описанием и отзывами – и оформить покупку. Продажа техники для дома осуществляется на всей территории России. Доставка по России.</p>
+						</div>
+					</div>
+					<div class="page-pict"><img src="img/menu-pict-1.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="content">
+		<div class="filter">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="filter-wrap">
+							<div class="filter-btn">Фильтры</div>
+							<div class="filter-price">
+								<span class="filter__title">Сортировать:</span>
+								<select>
+									<option>От дорогих к дешевым</option>
+									<option>От дешевых к дорогим</option>
+								</select>
+							</div>
+							<div class="filter-count">
+								<span class="filter__title">На странице:</span>
+								<select>
+									<option>20</option>
+									<option>40</option>
+								</select>
+							</div>
+							<div class="filter-view">
+								<a href="#" class="filter-view__item filter-view__item_grid">grid</a>
+								<a href="#" class="filter-view__item filter-view__item_table">table</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<sidebar class="sidebar">
+
+						<div class="search-option">
+
+							<div class="search-option__title">Поиск по параметрам:</div>
+
+							<div class="option-change">
+								<label for="option_1" class="option-change__item"><input type="checkbox" name="" id="option_1">Пылесосы</label>
+								<label for="option_2" class="option-change__item"><input type="checkbox" name="" id="option_2">Утюги</label>
+								<label for="option_3" class="option-change__item"><input type="checkbox" name="" id="option_3">Утюги с парогенератором</label>
+								<label for="option_4" class="option-change__item"><input type="checkbox" name="" id="option_4">Очистители воздуха</label>
+							</div>
+
+							<div class="search-option__title">Цена</div>
+
+							<div class="option-change option-change__range">
+								<div class="range-in">
+									<div class="price-min">
+										<input type="text" id="price-min">
+									</div>
+									<div class="price-max">
+										<input type="text" id="price-max">
+									</div>
+									<button>Ок</button>
+								</div>
+								<div id="slider-price" class="slider-range"></div>
+							</div>
+
+							<div class="search-option__title">Производитель</div>
+
+							<div id="opt-1" class="option-change option-change_large">
+								<label for="option_5" class="option-change__item"><input type="checkbox" name="" id="option_5">Samsung</label>
+								<label for="option_6" class="option-change__item"><input type="checkbox" name="" id="option_6">LG</label>
+								<label for="option_7" class="option-change__item"><input type="checkbox" name="" id="option_7">Ecovacs</label>
+								<label for="option_8" class="option-change__item"><input type="checkbox" name="" id="option_8">Philips</label>
+								<label for="option_9" class="option-change__item"><input type="checkbox" name="" id="option_9">Bosch</label>
+								<label for="option_10" class="option-change__item"><input type="checkbox" name="" id="option_10">Siemens</label>
+								<label for="option_11" class="option-change__item"><input type="checkbox" name="" id="option_11">Tefal</label>
+								<label for="option_12" class="option-change__item"><input type="checkbox" name="" id="option_12">Electrolux</label>
+								<label for="option_13" class="option-change__item"><input type="checkbox" name="" id="option_13">Siemens</label>
+								<label for="option_14" class="option-change__item"><input type="checkbox" name="" id="option_14">Tefal</label>
+								<label for="option_15" class="option-change__item"><input type="checkbox" name="" id="option_15">Electrolux</label>
+							</div>
+
+							<a href="#opt-1" class="more-link"><i></i>Еще<span>Меньше</span></a>
+
+							<div class="search-option__title">Показать</div>
+
+							<div class="option-change">
+								<label for="option_16" class="option-change__item"><input type="checkbox" name="" id="option_16">Скидки</label>
+								<label for="option_17" class="option-change__item"><input type="checkbox" name="" id="option_17">Новые</label>
+								<label for="option_18" class="option-change__item"><input type="checkbox" name="" id="option_18">Акции</label>
+							</div>
+
+						</div>
+
+					</sidebar>
+
+					<main class="main">
+						<div class="catalog-wrap">
+							<div class="tovar-item tovar-item_sale tovar-item_not">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">нет в наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-7.jpg" alt=""></a>
+								<a href="#" class="tovar-item__title">Sony DSC-H300</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">38 469 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+							<div class="tovar-item tovar-item_sale">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">В наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-8.jpg" alt=""></a>
+								<a href="#" class="tovar-item__title">Samsung 65" QLED 4K<br>Flat Smart TV Q7F</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">87 989 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+							<div class="tovar-item tovar-item_sale tovar-item_not">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">нет в наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-9.jpg" alt=""></a>
+								<a href="#" class="tovar-item__title">Asus ROG G752</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">189 900 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+							<div class="tovar-item tovar-item_hot tovar-item_not">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">нет в наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-10.jpg" alt=""></a>
+								<a href="#" class="tovar-item__title">Sony DSC-H300</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">38 469 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+							<div class="tovar-item tovar-item_sale tovar-item_not">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">нет в наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-7.jpg" alt=""></a>
+								<a href="#" class="tovar-item__title">Sony DSC-H300</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">38 469 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+							<div class="tovar-item tovar-item_sale">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">В наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-8.jpg" alt=""></a>
+								<a href="#" class="tovar-item__title">Samsung 65" QLED 4K<br>Flat Smart TV Q7F</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">87 989 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+							<div class="tovar-item tovar-item_sale tovar-item_not">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">нет в наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-9.jpg" alt=""></a>
+								<a href="#" class="tovar-item__title">Asus ROG G752</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">189 900 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+							<div class="tovar-item tovar-item_hot tovar-item_not">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">нет в наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-10.jpg" alt=""></a>
+								<a href="#" class="tovar-item__title">Sony DSC-H300</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">38 469 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+							<div class="tovar-item tovar-item_sale tovar-item_not">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">нет в наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-7.jpg" alt=""></a>
+								<a href="#" class="tovar-item__title">Sony DSC-H300</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">38 469 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+							<div class="tovar-item tovar-item_sale">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">В наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-8.jpg" alt=""></a>
+								<a href="#" class="tovar-item__title">Samsung 65" QLED 4K<br>Flat Smart TV Q7F</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">87 989 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+							<div class="tovar-item tovar-item_sale tovar-item_not">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">нет в наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-9.jpg" alt=""></a>
+								<a href="#" class="tovar-item__title">Asus ROG G752</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">189 900 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+							<div class="tovar-item tovar-item_hot tovar-item_not">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">нет в наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-10.jpg" alt=""></a>
+								<a href="#" class="tovar-item__title">Sony DSC-H300</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">38 469 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="pagination-wrap">
+
+							<div class="pagination-wrap__text">Показано товаров с 1 по 20 из 253 (всего 6 страниц)</div>
+
+							<ul class="pagination">
+								<li><a href="#">|&lt;</a></li>
+								<li><a href="#">&lt;</a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li><a href="#">&gt;</a></li>
+								<li><a href="#">&gt;|</a></li>
+							</ul>
+
+						</div>
+
+					</main>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="section section-tovar">
+		<div class="section-title"><span>Товары, которые вы смотрели</span></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="cl-tovar">
+						<div class="cl-item">
+							<div class="tovar-item tovar-item_hot tovar-item_not">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">нет в наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-1.png" alt=""></a>
+								<a href="#" class="tovar-item__title">Sony DSC-H300</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">38 469 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+						</div>
+						<div class="cl-item">
+							<div class="tovar-item tovar-item_hot">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">В наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-2.png" alt=""></a>
+								<a href="#" class="tovar-item__title">Samsung 65" QLED 4K<br>Flat Smart TV Q7F</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">87 989 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+						</div>
+						<div class="cl-item">
+							<div class="tovar-item tovar-item_hot tovar-item_not">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">нет в наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-3.png" alt=""></a>
+								<a href="#" class="tovar-item__title">Asus ROG G752</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">189 900 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+						</div>
+						<div class="cl-item">
+							<div class="tovar-item tovar-item_hot">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">В наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-4.png" alt=""></a>
+								<a href="#" class="tovar-item__title">Philips HP8230/00</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">5 599 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+						</div>
+						<div class="cl-item">
+							<div class="tovar-item tovar-item_hot tovar-item_not">
+								<div class="tovar-item__stick">sale</div>
+								<div class="tovar-item__avbl">нет в наличии</div>
+								<a href="#" class="tovar-item__pict"><img src="img/tovar-5.png" alt=""></a>
+								<a href="#" class="tovar-item__title">MSI GT73VR-7RE Titan SLI 4K</a>
+								<div class="tovar-item__sale"><span>38 469 руб</span>3 000 руб</div>
+								<div class="tovar-item__price tovar-item__price_red">7 400 руб</div>
+								<div class="tovar-item__footer">
+									<a href="#" class="tovar-item__icon tovar-item__icon_favorite">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_compare">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_cart">&nbsp;</a>
+									<a href="#" class="tovar-item__icon tovar-item__icon_quick">&nbsp;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-about">
+		<div class="section-title"><span>О магазине</span></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="cl-about">
+						<div class="cl-item">
+							<div class="about-item about-item_1"><i></i><span>Мы 16 лет на рынке</span></div>
+						</div>
+						<div class="cl-item">
+							<div class="about-item about-item_2"><i></i><span>Наши курьеры<br>профессионалы со стажем</span></div>
+						</div>
+						<div class="cl-item">
+							<div class="about-item about-item_3"><i></i><span>Быстрая доставка</span></div>
+						</div>
+						<div class="cl-item">
+							<div class="about-item about-item_4"><i></i><span>Лучшая гарантия</span></div>
+						</div>
+						<div class="cl-item">
+							<div class="about-item about-item_5"><i></i><span>Доставка товаров<br>по всей России</span></div>
+						</div>
+						<div class="cl-item">
+							<div class="about-item about-item_6"><i></i><span>Проведение<br>постоянных акций</span></div>
+						</div>
+						<div class="cl-item">
+							<div class="about-item about-item_7"><i></i><span>Лучшая цена</span></div>
+						</div>
+						<div class="cl-item">
+							<div class="about-item about-item_8"><i></i><span>Покупать в нашем магазине -<br>одно удовольствие</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

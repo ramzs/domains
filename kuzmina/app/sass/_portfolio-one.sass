@@ -1,0 +1,50 @@
+@import "vars.sass"
+@import "sprite.sass"
+
+/*-------------Portfolio-one page---------------*/
+.section
+	&.section__portfolio-one
+		padding: 8px 0 75px
+
+.article__title
+	&.article__title-portfolio
+		margin-bottom: 0
+
+.article__data
+	&.article__data-portfolio
+		margin-bottom: 15px
+
+.article__text
+	&.article__text-portfolio
+		img
+			width: 100%
+			margin: 4px 0
+
+.block__pict
+	width: 100%
+	font-size: 0
+	line-height: 0
+	text-align: justify
+	text-align-last: justify
+	&:after
+		content: ' '
+		display: inline-block
+		width: 100%
+		height: 0
+		overflow: hidden
+		visibility: hidden
+	img
+		display: inline-block
+		width: 48.5%
+		vertical-align: top
+	&-full
+		img
+			width: 100%
+
+.share
+	&.share__portfolio
+		margin-top: 37px
+		text-align: center
+		.share__title
+			margin-bottom: 20px
+/*-------------------end------------------------*/

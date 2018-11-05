@@ -1,0 +1,560 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+@import "header"
+
+.section
+	position: relative
+	padding: 82px 0 90px
+	+clearfix
+	&_color1
+		background: #fcf7d3
+	&_why
+		&:before
+			content: ''
+			position: absolute
+			top: -12px
+			left: 0
+			right: 0
+			max-width: 1050px
+			height: 12px
+			margin: 0 auto
+			background: url(../img/section-top.png) center no-repeat
+		&:after
+			content: ''
+			position: absolute
+			bottom: -16px
+			left: 0
+			width: 100%
+			height: 16px
+			background: url(../img/wave-why.png) center repeat-x
+	&-title
+		display: block
+		width: 545px
+		height: 99px
+		margin: 0 auto
+		font: bold 53px "summer"
+		line-height: 85px
+		text-align: center
+		background: url(../img/title-bg.png) center no-repeat
+		&_var1
+			position: absolute
+			top: -51px
+			left: 0
+			right: 0
+		&_var2
+			position: absolute
+			top: -45px
+			left: 0
+			right: 0
+
+.tabs
+	text-align: center
+
+.pict
+	position: relative
+	display: inline-block
+	&__wrap
+		width: 234px
+		height: 234px
+		border-radius: 50%
+		overflow: hidden
+		img
+			display: block
+			width: 100%
+	&-stick
+		position: absolute
+		top: 40px
+		right: -165px
+		width: 157px
+		height: 75px
+		background: url(../img/stick.png) center no-repeat
+		&__count
+			position: relative
+			display: block
+			top: 22px
+			left: -6px
+			font-size: 13px
+			font-weight: 900
+			color: #fff
+			transform: rotate(-10deg)
+			b
+				font-size: 23px
+			span
+				display: inline-block
+				transform: rotate(-8deg)
+
+.tabs-body
+	display: none
+	&.open
+		display: block
+	&__title
+		margin: 14px 0 24px
+		font: bold 70px "summer"
+		span
+			display: inline-block
+			width: 86px
+			height: 86px
+			color: #fff
+			text-align: center
+			line-height: 84px
+			border-radius: 50%
+			background: #fcabdb
+	&__text
+		max-width: 755px
+		margin: 0 auto 29px
+		font-size: 15px
+		color: $accent
+		line-height: 24px
+
+.tabs-links
+	margin-top: 40px
+	&__item
+		display: inline-block
+		position: relative
+		margin: 0 46px
+		vertical-align: middle
+		font-size: 13px
+		color: #c0b4a2
+		text-align: center
+		i
+			display: block
+			margin: 0 auto 7px
+			opacity: .5
+		&_1
+			i
+				width: 42px
+				height: 43px
+				background: url(../img/tab-icon1.png) center no-repeat
+		&_2
+			i
+				width: 69px
+				height: 79px
+				background: url(../img/tab-icon2.png) center no-repeat
+		&_3
+			i
+				width: 30px
+				height: 43px
+				background: url(../img/tab-icon3.png) center no-repeat
+		&:hover, &.active
+			color: #694454
+			i
+				opacity: 1
+				transition: opacity .15s ease
+
+.card-wrap
+	margin-top: 19px
+	padding-left: 64px
+	+clearfix
+
+.card
+	float: left
+	position: relative
+	max-width: 365px
+	height: 587px
+	margin: 0 3px 6px
+	padding: 53px
+	z-index: 2
+	transition: background .15s ease
+	background: transparent url(../img/card-bg.png) center no-repeat
+	background-size: cover
+	&:hover
+		z-index: 3
+		background: url(../img/card-bg-h.png) center no-repeat
+		background-size: cover
+	&__pict
+		width: 100%
+		height: 216px
+		margin-bottom: 33px
+		overflow: hidden
+	&__title
+		display: block
+		margin-bottom: 18px
+		font: bold 40px/33px "summer"
+		color: $title-card
+	&__text
+		max-height: 132px
+		overflow: hidden
+		font-size: 15px
+		line-height: 22px
+		color: $gray
+	&__bottom
+		position: absolute
+		bottom: 54px
+		left: 0
+		right: 0
+		width: 71%
+		margin: 0 auto
+		padding-top: 10px
+		background: #fff
+	&__price
+		float: right
+		margin-top: 8px
+		font-size: 17px
+		font-weight: 900
+		color: $price
+
+.btn_var2
+	float: left
+	width: 108px
+	height: 42px
+	font-size: 15px
+	line-height: 40px
+
+.text-block
+	max-width: 940px
+	margin: 37px auto 40px
+	&__title
+		margin-bottom: 30px
+		font: bold 53px "summer"
+		text-align: center
+	&__pict
+		float: left
+		width: 350px
+		overflow: hidden
+		img
+			display: block
+			width: 100%
+	&__descr
+		display: table
+		padding-left: 26px
+	&__subtitle
+		margin-bottom: 9px
+		font: bold 32px "summer"
+	&__text
+		margin-bottom: 32px
+		font-size: 15px
+		line-height: 24px
+		color: $gray
+		p
+			margin-bottom: 24px
+
+.btn_var3
+	width: 176px
+	height: 42px
+	font-size: 15px
+	line-height: 40px
+
+.section_adv
+	position: relative
+	min-height: 674px
+	background: url(../img/why-bg.png) center no-repeat
+	background-size: cover
+
+.adv-wrap
+	padding: 52px 0 0
+	text-align: center
+
+.adv-item
+	display: inline-block
+	width: 18%
+	vertical-align: top
+	&__pict
+		position: relative
+		max-width: 80px
+		height: 74px
+		margin: 0 auto
+		img
+			position: absolute
+			display: block
+			top: 50%
+			left: 50%
+			max-width: 100%
+			max-height: 100%
+			margin: 0 auto
+			transform: translate(-50%,-50%)
+	&__title
+		margin-top: 20px
+		font: 700 32px/30px "summer"
+		color: $rose
+
+.adv-accent
+	position: absolute
+	bottom: 0
+	left: -2px
+	right: 0
+	height: 296px
+	margin: 0 auto
+	padding: 32px 0 0
+	text-align: center
+	background: url(../img/bg-triangle.png) top center no-repeat
+	&__text
+		margin-bottom: 25px
+		font: 700 32px/48px "summer"
+		color: $accent
+
+.btn_var4
+	width: 200px
+	height: 42px
+	margin: 0 auto
+
+.btn_line2
+	&:before
+		background: url(../img/line-btn2.png) center no-repeat
+	&:after
+		background: url(../img/line-btn2.png) center no-repeat
+
+.section_pg
+	padding: 52px 0 40px
+
+.cl-block
+	position: relative
+	max-width: 1110px
+	margin: 43px auto 40px
+	.slick-list
+		z-index: 10
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -35px
+		padding: 0
+		font-size: 0
+		z-index: 1
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&:hover
+			opacity: 1
+		&.slick-prev
+			left: -47px
+			@include sprite($arrow-left)
+		&.slick-next
+			right: -47px
+			@include sprite($arrow-right)
+	.cl-item
+		outline: none
+	.slick-dots
+		position: absolute
+		bottom: -40px
+		left: 0
+		right: 0
+		text-align: center
+		li
+			display: inline-block
+			margin: 0 5px
+			button
+				display: block
+				width: 13px
+				height: 13px
+				padding: 0
+				font-size: 0
+				outline: none
+				cursor: pointer
+				border: none
+				border-radius: 50%
+				background: #d6c4ce
+			&.slick-active
+				button
+					background: #6d425c
+
+.feedback
+	padding: 54px 0 27px
+	+clearfix
+
+.block-title
+	display: block
+	font: 700 53px "summer"
+	text-align: center
+	&_left
+		text-align: left
+
+.f-slider
+	float: left
+	position: relative
+	width: 940px
+	margin: 42px 0 0
+	padding-left: 57px
+	.slider-item
+		outline: none
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -35px
+		padding: 0
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&:hover
+			opacity: 1
+		&.slick-prev
+			left: 0
+			@include sprite($feed-left)
+		&.slick-next
+			right: -50px
+			@include sprite($feed-right)
+
+.f-item
+	&__main
+		float: left
+		width: 241px
+		text-align: center
+	&__pict
+		width: 241px
+		height: 241px
+		overflow: hidden
+		border-radius: 50%
+		img
+			display: block
+			width: 100%
+	&__name
+		margin-top: 5px
+		font: 700 32px "summer"
+	&__comment
+		font-size: 12px
+		line-height: 22px
+		color: $gray
+	&__descr
+		position: relative
+		display: table
+		width: 639px
+		height: 268px
+		padding: 30px 30px 30px 247px
+		background: url(../img/feed-bg.png) center no-repeat
+	&__text
+		position: absolute
+		top: 50%
+		left: 38%
+		padding-right: 60px
+		transform: translate(0, -50%)
+		font-size: 15px
+		font-weight: 500
+		line-height: 23px
+		&:before
+			content: "\275D"
+			position: absolute
+			top: 54px
+			left: -115px
+			height: 70px
+			font-size: 200px
+			color: #d6c4ce
+	&__date
+		margin-top: 10px
+		font-size: 12px
+		color: $gray
+
+.vk-block
+	float: right
+	width: 254px
+	height: 290px
+	margin-top: 32px
+	img
+		display: block
+		max-width: 100%
+
+.s-text
+	text-align: center
+	&__descr
+		max-width: 875px
+		margin: 12px auto 0
+		font-size: 15px
+		color: $gray
+		line-height: 24px
+		p
+			margin-bottom: 17px
+		&_hide
+			display: none
+	&__link
+		font-size: 12px
+		color: $link
+		&:hover
+			text-decoration: underline
+		.hide-title
+			display: none
+		&.active
+			span
+				display: none
+			.hide-title
+				display: block
+				font-size: 12px
+
+
+
+@import "footer"
+
+.modal-form
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	max-width: 1297px
+	margin: 0 auto
+	padding: 20px 15px 50px
+	text-align: center
+	box-shadow: 0 0 38px rgba(0, 0, 0, 0.34)
+	background: #fcf7d3
+	&__title
+		margin-bottom: 15px
+		font: 700 53px "summer"
+	form
+		.in-wrap
+			display: inline-block
+			padding: 0
+			margin: 0 10px 0 0
+			max-width: 290px
+			width: 100%
+			vertical-align: top
+			border: none
+		input
+			display: block
+			max-width: 290px
+			width: 100%
+			height: 56px
+			margin: 0 auto 5px
+			padding-left: 20px
+			outline: none
+			border: 1px solid #c9c49e
+			border-radius: 5px
+			background: #fff
+		textarea
+			display: inline-block
+			width: 442px
+			max-width: 100%
+			height: 117px
+			padding: 15px 0 0 20px
+			outline: none
+			border: 1px solid #c9c49e
+			border-radius: 5px
+			background: #fff
+	.btn
+		margin-top: 25px
+	&__info
+		font-size: 15px
+		margin: 17px 0 5px
+	.mfp-close
+		top: 35px
+		right: 35px
+		font-size: 0
+		@include sprite($close)
+
+.btn_var7
+	width: 252px
+	height: 52px
+	margin: 0 auto
+	padding: 0
+	border: none
+
+.mfp-bg
+	display: none
+
+
+@import "promo"
+@import "blog"
+@import "fill"
+@import "tort"
+@import "c-tort"
+@import "c-fill"
+@import "contact"
+@import "about"
+@import "blog-in"
+@import "info"
+@import "cart"
+@import "login"

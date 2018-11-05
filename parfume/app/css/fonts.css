@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "anahit";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Anahit-Regular/Anahit-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Anahit-Regular/Anahit-Regular.woff") format("woff"), url("../fonts/Anahit-Regular/Anahit-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "firasans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/FiraSans-Bold/FiraSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSans-Bold/FiraSans-Bold.woff") format("woff"), url("../fonts/FiraSans-Bold/FiraSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "firasans";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/FiraSans-ExtraLight/FiraSans-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSans-ExtraLight/FiraSans-ExtraLight.woff") format("woff"), url("../fonts/FiraSans-ExtraLight/FiraSans-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "firasans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/FiraSans-Light/FiraSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSans-Light/FiraSans-Light.woff") format("woff"), url("../fonts/FiraSans-Light/FiraSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "firasans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/FiraSans-Medium/FiraSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSans-Medium/FiraSans-Medium.woff") format("woff"), url("../fonts/FiraSans-Medium/FiraSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "firasans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/FiraSans-Regular/FiraSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSans-Regular/FiraSans-Regular.woff") format("woff"), url("../fonts/FiraSans-Regular/FiraSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "mcorsiva";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Monotype Corsiva/Monotype Corsiva.eot?#iefix") format("embedded-opentype"), url("../fonts/Monotype Corsiva/Monotype Corsiva.woff") format("woff"), url("../fonts/Monotype Corsiva/Monotype Corsiva.ttf") format("truetype");
+}

@@ -1,0 +1,92 @@
+@import "vars.sass"
+/*--------------About page---------------*/
+.content__work
+	&.content__work-team
+		padding-bottom: 20px
+
+.section__title
+	&.section__title-company
+		&:after
+			background: url(../img/about-title-line.png) 0 0 no-repeat
+			background-size: 100%
+
+.about__box
+	position: relative
+	margin-top: 55px
+	padding: 35px 60px
+	font: 500 16px/28px "helvetica"
+	z-index: 5
+	border-radius: 0 70px 70px
+	background: #fafafa
+	&:after
+		content: ' '
+		position: absolute
+		bottom: -35px
+		left: 293px
+		width: 71px
+		height: 36px
+		background: url(../img/triangle-team-about.png) 0 0 no-repeat
+	h4
+		font-size: 23px
+		font-weight: 500
+		text-transform: uppercase
+	span
+		font-size: 20px
+		font-weight: 600
+
+.section__team
+	padding-bottom: 120px
+
+.section__title
+	&.section__title-team
+		margin-bottom: 65px
+
+.team__item
+	float: left
+	width: 33.33%
+	border-right: 2px solid $color-9
+	border-bottom: 2px solid $color-9
+	.team__wrap
+		display: inline-block
+		max-width: 352px
+		width: 100%
+		padding-bottom: 36px
+		text-align: left
+	&.team__item-2, &.team__item-5
+		text-align: center
+	&.team__item-3, &.team__item-6
+		text-align: right
+		border-right: none
+	&.team__item-4, &.team__item-5, &.team__item-6
+		border-bottom: none
+		.team__wrap
+			padding: 36px 0 0
+
+.team__pict
+	margin-bottom: 45px
+	overflow: hidden
+	img
+		display: block
+	&.team__pict-1
+		border-radius: 60px 60px 0 60px
+	&.team__pict-2
+		border-radius: 60px 60px 0 0
+	&.team__pict-3
+		border-radius: 60px 60px 60px 0
+	&.team__pict-4
+		border-radius: 60px 0 60px 60px
+	&.team__pict-5
+		border-radius: 0 0 60px 60px
+	&.team__pict-6
+		border-radius: 0 60px 60px 60px
+
+.team__name
+	display: inline-block
+	font: 500 19px "helvetica"
+	text-transform: uppercase
+
+.team__pos
+	float: right
+	font: 500 16px "helvetica"
+	color: $color-2
+/*-----------------end-------------------*/

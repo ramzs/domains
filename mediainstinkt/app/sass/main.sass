@@ -1,0 +1,163 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+@import "header"
+
+section
+	position: relative
+	max-width: 1920px
+	margin: 0 auto
+
+.section-1
+	height: 1047px
+	margin-top: -170px
+	padding-top: 305px
+	z-index: 10
+	background: url(../img/bg-1.png) center top no-repeat
+	background-size: cover
+
+.block-1
+	float: left
+	clear: both
+	&-text
+		max-width: 510px
+		margin-top: 33px
+		font-size: 18px
+		p
+			margin-bottom: 18px
+
+.section-2
+	height: 1437px
+	margin-top: -308px
+	padding-top: 328px
+	z-index: 9
+	background: url(../img/bg-2.jpg) center top no-repeat
+	background-size: cover
+
+.block-2
+	max-width: 810px
+	margin-left: 82px
+	p
+		margin-bottom: 14px
+	img
+		margin-bottom: 36px
+
+.form-block
+	display: inline-block
+	margin-top: 28px
+	input
+		display: inline-block
+		vertical-align: middle
+		width: 282px
+		height: 62px
+		margin-right: 7px
+		padding-left: 22px
+		outline: none
+		font-size: 16px
+		color: #868686
+		border: 1px solid #c3c3c3
+
+.btn-form
+	display: inline-block
+	vertical-align: middle
+
+.section-3
+	height: 1047px
+	margin-top: -620px
+	padding-top: 235px
+	z-index: 9
+	background: url(../img/bg-3.png) center top no-repeat
+	background-size: cover
+
+.block-3
+	float: right
+	max-width: 500px
+	&-title
+		margin-bottom: 20px
+	> p
+		margin-bottom: 25px
+
+.section-4
+	height: 1633px
+	margin-top: -315px
+	padding-top: 235px
+	z-index: 8
+	background: url(../img/bg-4.jpg) center top no-repeat
+	background-size: cover
+
+.block-4
+	float: right
+	margin: 20px 190px 0 0
+	img
+		float: left
+	&__text
+		display: table
+		max-width: 490px
+		padding-left: 32px
+
+.block-4_2
+	float: left
+	max-width: 475px
+	margin-top: 155px
+	img
+		margin-bottom: 14px
+
+.section-5
+	margin-top: -85px
+	text-align: center
+	z-index: 9
+
+.block-5
+	position: relative
+	display: inline-block
+	&:before
+		content: ''
+		position: absolute
+		top: -310px
+		left: -135px
+		width: 358px
+		height: 540px
+		background: url(../img/elephant.png) 0 0 no-repeat
+
+.section-6
+	height: 1320px
+	margin-top: -85px
+	padding-top: 235px
+	z-index: 8
+	background: url(../img/bg-5.jpg) center top no-repeat
+	background-size: cover
+
+.block-6
+	float: right
+	max-width: 495px
+	margin-top: 450px
+	p
+		margin-bottom: 18px
+
+.section-7
+	margin-top: -163px
+	z-index: 9
+
+.map
+	float: left
+	margin-left: -378px
+
+.block-7
+	float: left
+	padding: 80px 0 0 40px
+	&__title
+		margin-bottom: 55px
+		font: 700 80px $secfont
+		color: #df4754
+		text-transform: uppercase
+	.contact-item
+		display: block
+		margin-left: 33px
+	.btn-callback
+		float: none
+		display: block
+
+@import "footer"

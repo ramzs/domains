@@ -44,7 +44,7 @@ dcard/
 modx-test/
 wp-ramzs/
 wp-test/
-app/
+dist/
 
 .bowerrc
 gulpfile.js

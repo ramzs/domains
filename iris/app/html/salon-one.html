@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="page-title">Наши салоны</div>
+
+	<div class="salon-page clearfix">
+		<div class="container">
+
+			<div class="contact-box contact-box--salon clearfix">
+				<a href="#" class="contact-box__title contact-box__title--mob">Салон номер один</a>
+				<div class="salon-pict">
+					<img src="img/salon-1.jpg" alt="">
+				</div>
+
+				<div class="contact-descr">
+					<a href="#" class="contact-box__title">Салон номер один</a>
+					<ul class="contact-list">
+						<li><span>Телефон:</span><a href="tel:+74991252295">+7(499)125-22-95</a></li>
+						<li><span>Часы работы:</span>с 10-00 до 22-00</li>
+						<li><span>Адрес:</span>г. Москва, ул. Дмитрия Ульянова, д.12/1</li>
+						<li><span>Е-майл:</span><a href="mailto:akademicheskaya@sunwellness.ru">akademicheskaya@sunwellness.ru</a></li>
+					</ul>
+					<a href="#" class="btn btn--salon">Услуги салона</a>
+					<a href="#callback-form" class="btn btn--contact popup" data-effect="mfp-zoom-in">Записаться</a>
+				</div>
+				<div class="salon-text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				</div>
+				<div class="salon-gallery clearfix">
+					<div class="salon-gallery__title">Галерея салона</div>
+					<div class="gallery-box zoom-gallery">
+						<a href="img/gal-pict-big.jpg" class="gallery-box__pict" title="Подпись фотографии салона" data-effect="mfp-zoom-in"><img src="img/gal-pict-small.jpg" alt=""></a>
+						<a href="img/gal-pict-big.jpg" class="gallery-box__pict" title="Подпись фотографии салона" data-effect="mfp-zoom-in"><img src="img/gal-pict-small.jpg" alt=""></a>
+						<a href="img/gal-pict-big.jpg" class="gallery-box__pict" title="Подпись фотографии салона" data-effect="mfp-zoom-in"><img src="img/gal-pict-small.jpg" alt=""></a>
+						<a href="img/gal-pict-big.jpg" class="gallery-box__pict" title="Подпись фотографии салона" data-effect="mfp-zoom-in"><img src="img/gal-pict-small.jpg" alt=""></a>
+						<a href="img/gal-pict-big.jpg" class="gallery-box__pict" title="Подпись фотографии салона" data-effect="mfp-zoom-in"><img src="img/gal-pict-small.jpg" alt=""></a>
+						<a href="img/gal-pict-big.jpg" class="gallery-box__pict" title="Подпись фотографии салона" data-effect="mfp-zoom-in"><img src="img/gal-pict-small.jpg" alt=""></a>
+						<a href="img/gal-pict-big.jpg" class="gallery-box__pict" title="Подпись фотографии салона" data-effect="mfp-zoom-in"><img src="img/gal-pict-small.jpg" alt=""></a>
+						<a href="img/gal-pict-big.jpg" class="gallery-box__pict" title="Подпись фотографии салона" data-effect="mfp-zoom-in"><img src="img/gal-pict-small.jpg" alt=""></a>
+						<a href="img/gal-pict-big.jpg" class="gallery-box__pict" title="Подпись фотографии салона" data-effect="mfp-zoom-in"><img src="img/gal-pict-small.jpg" alt=""></a>
+						<a href="img/gal-pict-big.jpg" class="gallery-box__pict" title="Подпись фотографии салона" data-effect="mfp-zoom-in"><img src="img/gal-pict-small.jpg" alt=""></a>
+						<a href="img/gal-pict-big.jpg" class="gallery-box__pict" title="Подпись фотографии салона" data-effect="mfp-zoom-in"><img src="img/gal-pict-small.jpg" alt=""></a>
+						<a href="img/gal-pict-big.jpg" class="gallery-box__pict" title="Подпись фотографии салона" data-effect="mfp-zoom-in"><img src="img/gal-pict-small.jpg" alt=""></a>
+					</div>
+				</div>
+
+				<div class="change-block change-block--salon">
+					<div class="change-block__title change-block__title--service">Услуги салона</div>
+					<div class="change-tab change-tab--service clearfix">
+						<div class="change-tab__item change-tab__item--service active" data-target="#service-c-1">Парикмахерский зал</div>
+						<div class="change-tab__item change-tab__item--service" data-target="#service-c-2">Ногтевой сервис</div>
+						<div class="change-tab__item change-tab__item--service" data-target="#service-c-3">Косметология</div>
+						<div class="change-tab__item change-tab__item--service" data-target="#service-c-4">Массаж</div>
+						<div class="change-tab__item change-tab__item--service" data-target="#service-c-5">Депиляция</div>
+						<div class="change-tab__item change-tab__item--service" data-target="#service-c-6">Солярий</div>
+					</div>
+					<div class="change-main change-main--salon">
+						<div id="service-c-1" class="change-item change-item--service open">
+							<ul class="service-list">
+								<li class="service-list__row service-list__row--head">
+									<div class="service-list__title service-list__title--head">Услуга</div>
+									<div class="service-list__price service-list__price--head">Стоимость</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+							</ul>
+						</div>
+
+						<div id="service-c-2" class="change-item change-item--service">
+							<ul class="service-list">
+								<li class="service-list__row service-list__row--head">
+									<div class="service-list__title service-list__title--head">Услуга</div>
+									<div class="service-list__price service-list__price--head">Стоимость</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+							</ul>
+						</div>
+
+						<div id="service-c-3" class="change-item change-item--service">
+							<ul class="service-list">
+								<li class="service-list__row service-list__row--head">
+									<div class="service-list__title service-list__title--head">Услуга</div>
+									<div class="service-list__price service-list__price--head">Стоимость</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+							</ul>
+						</div>
+
+						<div id="service-c-4" class="change-item change-item--service">
+							<ul class="service-list">
+								<li class="service-list__row service-list__row--head">
+									<div class="service-list__title service-list__title--head">Услуга</div>
+									<div class="service-list__price service-list__price--head">Стоимость</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+							</ul>
+						</div>
+
+						<div id="service-c-5" class="change-item change-item--service">
+							<ul class="service-list">
+								<li class="service-list__row service-list__row--head">
+									<div class="service-list__title service-list__title--head">Услуга</div>
+									<div class="service-list__price service-list__price--head">Стоимость</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+							</ul>
+						</div>
+
+						<div id="service-c-6" class="change-item change-item--service">
+							<ul class="service-list">
+								<li class="service-list__row service-list__row--head">
+									<div class="service-list__title service-list__title--head">Услуга</div>
+									<div class="service-list__price service-list__price--head">Стоимость</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+								<li class="service-list__row">
+									<div class="service-list__title">Женская стрижка и укладка</div>
+									<div class="service-list__price">от 500 руб.</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

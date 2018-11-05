@@ -1,0 +1,173 @@
+.footer
+	padding: 34px 0 0
+	text-align: center
+
+.logo-footer
+	margin-top: 0
+
+.nav-footer
+	display: inline-block
+	margin-top: 4px
+
+.scroll-top
+	position: relative
+	float: right
+	top: -10px
+	width: 54px
+	height: 54px
+	font-size: 0
+	border-radius: 50%
+	border: 2px dashed $bg-green
+	&:before
+		content: ''
+		+vcenter
+		width: 46px
+		height: 46px
+		border-radius: 50%
+		border: 2px solid $bg-green
+	&:after
+		content: ''
+		+vcenter
+		width: 26px
+		height: 15px
+		background: url(../img/arrow-top.png) 0 0 no-repeat
+
+.copyright
+	margin-top: 17px
+	padding: 13px 0
+	font-size: 13px
+	font-weight: 600
+	color: #e1e1e1
+	text-align: center
+	background: url(../img/footer-bg.jpg) center repeat-x
+
+
+/*--------------Order form------------------*/
+.mfp-bg
+	opacity: .9
+	background: $second-color !important
+
+.modal-form
+	&.callback-form
+		max-width: 400px
+		padding: 40px 40px
+
+.modal-form
+	position: relative
+	max-width: 800px
+	margin: 0 auto
+	padding: 40px 20px
+	text-align: center
+	border-radius: 15px
+	box-shadow: 0 3px 7px #989898
+	background: #fbfbfb
+	&__title
+		margin-bottom: 19px
+		font-size: 30px
+		line-height: 22px
+		font-weight: 700
+		color: $second-color
+		text-transform: uppercase
+	&__text
+		max-width: 640px
+		margin: 0 auto
+		font-size: 13px
+		font-weight: 300
+		color: #7a858f
+	form
+		max-width: 720px
+		margin: 28px auto 0
+		+clearfix
+	fieldset
+		display: inline-block
+		width: 50%
+		max-width: 275px
+		margin: 0 35px 0 0
+		padding: 0
+		vertical-align: top
+		border: none
+	input
+		display: block
+		width: 100%
+		height: 41px
+		margin-bottom: 8px
+		padding-left: 12px
+		font-size: 15px
+		font-weight: 300
+		color: #7a858f
+		outline: none
+		border: 1px solid #d0d5d9
+	textarea
+		display: inline-block
+		max-width: 405px
+		width: 100%
+		height: 237px
+		padding: 10px 0 0 12px
+		vertical-align: top
+		font-size: 15px
+		font-weight: 300
+		color: #7a858f
+		outline: none
+		border: 1px solid #d0d5d9
+	.mfp-close
+		top: 3px
+		font-size: 0
+		@include sprite($close)
+
+.upload-wrap
+	position: relative
+
+.file-upload
+	position: relative
+	width: 180px
+	height: 42px
+	text-align: right
+	overflow: hidden
+	&:before
+		content: ' '
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		@include sprite($download)
+	input[type="file"]
+		display: none
+	label
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		cursor: pointer
+	span
+		position: relative
+		left: -6px
+		font-size: 15px
+		font-weight: 300
+		color: $second-color
+		line-height: 35px
+		border-bottom: 1px solid $second-color
+	&:hover
+		span
+			border-bottom: none
+
+.upload-wrap
+	.upload-in
+		position: absolute
+		bottom: -20px
+		left: 0
+		width: 100%
+		height: auto
+		margin-bottom: 0
+		padding-left: 0
+		font-size: 13px
+		color: $second-color
+		text-align: left
+		border: none
+		background: #fff
+
+.button-order
+	margin-top: 35px
+	clear: both
+/*------------------end----------------------*/

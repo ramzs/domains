@@ -1,0 +1,142 @@
+.footer
+	padding: 116px 0 0
+	overflow: hidden
+	background: url(../img/bg-7.jpg) center top no-repeat
+	background-size: cover
+
+.contact
+	float: left
+	width: 43%
+	&-title
+		position: relative
+		margin-bottom: 79px
+		font: 700 95px/96px $secfont
+		&:before
+			content: ''
+			position: absolute
+			bottom: -50px
+			left: 0
+			width: 522px
+			height: 14px
+			background: url(../img/line.png) 0 0 no-repeat
+	.contact-item
+		margin: 0 0 29px
+
+.btn-contact
+	position: relative
+	margin-top: 93px
+	&:before
+		content: ''
+		position: absolute
+		top: -55px
+		left: 0
+		width: 522px
+		height: 14px
+		background: url(../img/line.png) 0 0 no-repeat
+
+.map
+	float: left
+	width: 57%
+	padding-top: 20px
+	&-wrap
+		width: 765px
+		height: 505px
+		padding: 30px
+		background: url(../img/border-2.png) center top no-repeat
+		background-size: 100% 100%
+		iframe
+			height: 100%
+
+.footer-bottom
+	position: relative
+	padding: 418px 0 25px
+	+clearfix
+	&__copyright
+		float: left
+		font-size: 15px
+		color: #bcbcbc
+		span
+			font-weight: 700
+	&__logo
+		position: absolute
+		bottom: 15px
+		left: 0
+		right: 0
+		max-width: 448px
+		margin: 0 auto
+	&__developer
+		position: relative
+		float: right
+		padding-left: 42px
+		font-size: 15px
+		color: #bcbcbc
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+		&:before
+			content: ''
+			position: absolute
+			top: -2px
+			left: 0
+			width: 31px
+			height: 31px
+			background: url(../img/reklamoterapy-logo.png) 0 0 no-repeat
+
+@media only screen and (max-width : 1400px)
+	.map
+		&-wrap
+			max-width: 100%
+			padding: 27px
+
+/*----------Callback-form------------------*/
+.mfp-bg
+	background: rgba(#00253d, .7) !important
+
+.callback-form
+	position: relative
+	max-width: 433px
+	width: 100%
+	margin: 0 auto
+	padding: 30px 40px 40px
+	background: #fff
+	&__title
+		margin-bottom: 45px
+		font: 45px/1 $secfont
+		color: #000
+		text-align: center
+	input
+		display: block
+		width: 100%
+		margin-bottom: 37px
+		font-size: 20px
+		font-style: italic
+		outline: none
+		border: none
+		border-bottom: 1px solid #ff5a00
+		background: none
+	.mfp-close
+		top: 0
+		right: 0
+
+.success
+	display: none
+	position: absolute
+	width: 320px
+	height: 100px
+	top: 50%
+	left: 50%
+	font-size: 16px
+	font-weight: 700
+	color: #fff
+	z-index: 800
+	border-radius: 20px
+	text-transform: uppercase
+	transform: translate(-50%, -50%)
+	background: rgba(#ff5a00, 0.9)
+	span
+		position: absolute
+		top: 50%
+		left: 50%
+		white-space: nowrap
+		transform: translate(-50%, -50%)
+/*--------------end-----------------------*/

@@ -1,0 +1,53 @@
+@import "vars"
+
+/*-------------Price page----------------*/
+.price-wrap
+	margin: 18px -28px 45px
+	padding-right: 38px
+
+.price-table
+	display: table
+	width: 100%
+	border-collapse: collapse
+	&:last-of-type
+		.price-row--main
+			&:last-child
+				border-bottom: 1px solid #ccc
+
+.price-row
+	display: table-row
+	height: 62px
+	&--category
+		font-size: 24px
+		font-weight: 700
+		font-style: italic
+		color: $accent
+		text-transform: uppercase
+		background: #c6fbff
+	&--col
+		font-size: 18px
+		font-weight: 700
+		color: #fff
+		text-transform: uppercase
+		background: $sec-color
+	&--subcategory
+		font-size: 16px
+		font-weight: 700
+		text-align: center
+		text-transform: uppercase
+		background: $accent
+	&--main
+		border-bottom: 1px solid #ccc
+		&:last-child
+			border-bottom: none
+
+.price-cell
+	display: table-cell
+	padding: 0 25px
+	font-size: 18px
+	vertical-align: middle
+	&--price
+		min-width: 100px
+		padding-left: 0
+		text-align: right
+/*---------------end---------------------*/

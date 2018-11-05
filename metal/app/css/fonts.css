@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PlayBold/PlayBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayBold/PlayBold.woff") format("woff"), url("../fonts/PlayBold/PlayBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ptsans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"), url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ptsans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PTSansBold/PTSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansBold/PTSansBold.woff") format("woff"), url("../fonts/PTSansBold/PTSansBold.ttf") format("truetype");
+}

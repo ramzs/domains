@@ -1,0 +1,96 @@
+@import "vars"
+
+/*------------------Service page----------------*/
+.gallery-page
+	padding: 39px 0 58px
+
+.change-block__title
+	&--gallery
+		margin-bottom: 45px
+
+.gallery-box
+	margin: 0 -6px
+	&__pict
+		float: left
+		width: 16.65%
+		max-height: 182px
+		padding: 0 6px
+		margin: 0 0 12px
+		overflow: hidden
+		outline: none
+		img
+			display: block
+			width: 100%
+
+.video-wrap
+	margin: 0 -5px
+
+.gallery-video
+	margin-top: 17px
+	&__title
+		margin-bottom: 32px
+		font-size: 34px
+		font-weight: 500
+		color: #623086
+
+
+
+.video-item
+	display: inline-block
+	width: 49.5%
+	margin-bottom: 20px
+	padding: 0 5px
+	&__box
+		position: relative
+		width: 100%
+		max-width: 100%
+		padding: 50% 0 35px
+		overflow: hidden
+		iframe
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+	&__title
+		margin-top: 15px
+		font-size: 22px
+		color: #202020
+		line-height: 1.2
+		text-align-last: auto
+
+.mfp-s-loading .mfp-arrow
+   display: none
+
+.mfp-image-holder
+	.mfp-close
+		width: auto
+
+.mfp-gallery
+	.mfp-arrow, .mfp-arrow-right, .mfp-arrow-left
+		&:before
+			display: none
+		&:after
+			display: none
+	.mfp-arrow
+		margin-top: -36px
+		&:active
+			margin-top: -36px
+	.mfp-arrow-right
+		right: -72px
+		@include sprite($arrow-gal-right)
+	.mfp-arrow-left
+		left: -72px
+		@include sprite($arrow-gal-left)
+	.mfp-image-holder
+		.mfp-close
+			width: 33px
+			top: 6px
+			right: -35px
+			font-size: 0
+			@include sprite($close-gal)
+	figcaption
+		position: relative
+		top: 11px
+		font-size: 18px
+/*---------------------end----------------------*/

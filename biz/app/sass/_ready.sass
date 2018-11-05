@@ -1,0 +1,111 @@
+/*----------------Ready page-----------------*/
+.content--var4
+	padding-bottom: 50px
+
+.sort
+	margin: 0 15px 60px
+	border-bottom: 1px solid #e6e6e6
+	+clearfix
+	&__title
+		margin-bottom: 20px
+		font-size: 17px
+		font-weight: 500
+	&-form
+		+justify
+		+clearfix
+		label
+			display: inline-block
+			margin-bottom: 20px
+			&:last-of-type
+				margin-right: 0
+			span
+				display: block
+				margin-bottom: 5px
+				font-size: 14px
+				font-weight: 300
+				line-height: 1.4
+				text-align-last: auto
+		.jq-selectbox
+			&.focused
+				.jq-selectbox__select
+					border: 1px solid #dadada
+			&__select
+				height: 36px
+				padding: 0 42px 0 18px
+				font: 300 14px/32px "ubuntu"
+				color: $main-color
+				border: 1px solid #dadada
+				border-radius: 18px
+				box-shadow: none
+				background: none
+				&:hover
+					background: none
+				&:active
+					box-shadow: none
+					background: none
+			&__trigger
+				border-left: none
+				&-arrow
+					right: 14px
+					border-top: 6px solid $main-color
+			&__dropdown
+				margin-top: 4px
+				padding: 5px 2px
+				overflow: hidden
+				border: 1px solid #dadada
+				border-radius: 18px
+				box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08)
+				li
+					padding: 3px 18px
+					&.selected
+						background: #4384c2
+					&:hover
+						background: #4384c2
+
+.list-item
+	float: left
+	width: 46.4%
+	margin: 0 15px 30px
+	padding: 0 35px 20px
+	border: 1px solid #e6e6e6
+	border-radius: 10px
+	background-color: #f9f9f9
+	+clearfix
+	&:hover
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08)
+	&__title
+		margin-bottom: 36px
+		padding: 17px 0 17px
+		font: 700 24px "ptserif"
+		color: #4384c2
+		border-bottom: 1px solid #e6e6e6
+	dl
+		display: block
+		margin-bottom: 20px
+		font-size: 13px
+		font-weight: 300
+		overflow: hidden
+		clear: both
+		dt
+			float: left
+			width: 60.5%
+			margin-bottom: 8px
+		dd
+			float: left
+			width: 39.5%
+			padding: 0
+			margin: 0 0 8px
+	&__price
+		margin-bottom: 21px
+		padding-bottom: 27px
+		font-size: 15px
+		font-weight: 500
+		color: $main-color
+		line-height: 32px
+		overflow: hidden
+		border-bottom: 1px solid #e6e6e6
+		span
+			float: right
+			font: 700 24px "ptserif"
+			color: #ff3d00
+/*--------------------end---------------------*/

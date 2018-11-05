@@ -1,0 +1,115 @@
+@import "vars"
+
+/*---------------Cart page------------------*/
+.content--cart
+	padding-bottom: 30px
+
+.block-table
+	display: table
+	width: 100%
+	margin-bottom: 20px
+	border-collapse: separate
+	border-spacing: 0 12px
+	&__row
+		display: table-row
+	&__cell
+		display: table-cell
+		vertical-align: middle
+		&--head
+			padding: 18px 0
+			font-size: 16px
+			font-weight: 300
+			color: #000
+		&--body
+			padding: 14px 0
+			border-top: 1px solid #90a4ae
+			border-bottom: 1px solid #90a4ae
+			&:first-child
+				padding-left: 14px
+				border-radius: 15px 0 0 15px
+				border-left: 1px solid #90a4ae
+			&:last-child
+				padding-right: 14px
+				border-radius: 0 15px 15px 0
+				border-right: 1px solid #90a4ae
+		&--pict
+			width: 128px
+			max-width: 100%
+		&--descr
+			width: 550px
+			max-width: 100%
+		&--price
+			width: 180px
+			max-width: 100%
+		&--count
+			width: 200px
+			max-width: 100%
+	&__pict
+		width: 91px
+		height: 91px
+		border-radius: 10px
+		overflow: hidden
+		border: 1px solid #90a4ae
+		img
+			display: block
+			width: 100%
+	&__title
+		font-size: 20px
+		color: #52054c
+	&__comment
+		margin-top: 4px
+		font-size: 16px
+		color: #000
+		line-height: 24px
+	&__price, &__total
+		display: inline-block
+		vertical-align: middle
+		font-size: 22px
+		font-weight: 500
+		color: #000
+
+.tovar-order--table
+	margin-top: 0
+
+.reset-link
+	display: inline-block
+	margin-left: 45%
+	font-size: 0
+	vertical-align: middle
+	@include sprite($reset)
+
+.total-cart
+	margin-bottom: 35px
+	&__row
+		margin-bottom: 15px
+		font-size: 21px
+		font-weight: 500
+		color: #52054c
+		span
+			font-weight: 700
+
+.btn
+	&--back
+		display: inline-block
+		width: 227px
+		height: 40px
+		margin-right: 5px
+		font-size: 19px
+		line-height: 38px
+		color: #fff
+	&--var5
+		background-image: linear-gradient(to top, #a0a0a0 0%, #d7d7d7 100%)
+		box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.22)
+	&--remove
+		display: inline-block
+		width: 227px
+		height: 40px
+		font-size: 19px
+		line-height: 38px
+	&--fin
+		width: 323px
+		height: 40px
+		margin-top: 35px
+		line-height: 38px
+		color: #fff
+/*------------------end-----------------------*/

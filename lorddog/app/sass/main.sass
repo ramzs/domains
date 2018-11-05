@@ -1,0 +1,483 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+@import "header"
+
+.wrapper
+	max-width: 1840px
+	width: 100%
+	margin: 0 auto
+
+/*--------------Slider-home-------------------*/
+.slider-wrap
+	position: relative
+	margin-top: -42px
+	overflow: hidden
+	border-radius: 45px 45px 0 0
+	background: #e4e4ec
+
+.slider-title
+	position: absolute
+	top: 110px
+	left: 0
+	right: 0
+	text-align: center
+	z-index: 99
+	&__top
+		font: 42px/56px $accent-font
+	&__brend
+		display: block
+		font: 64px/56px $accent-font
+
+.slider-home
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -16px
+		padding: 0
+		font-size: 0
+		z-index: 101
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&:hover
+			opacity: 1
+		&.slick-prev
+			left: 55px
+			@include sprite($arrow-left)
+		&.slick-next
+			right: 55px
+			@include sprite($arrow-right)
+	.slider-item
+		outline: none
+		img
+			width: 100%
+
+.btn
+	position: relative
+	display: block
+	padding: 0
+	font-size: 14px
+	font-weight: 700
+	line-height: 40px
+	letter-spacing: 3px
+	text-transform: uppercase
+	text-align: center
+	white-space: normal
+	z-index: 100
+	outline: none
+	transition: all .35s ease
+	border: none
+	border-radius: 3px
+	&:hover, &:focus
+		color: $main-color
+		border-radius: 57px
+	&:focus
+		outline: none
+		outline-offset: 0
+	&:active
+		box-shadow: none
+		&:focus
+			outline: none
+			outline-offset: 0
+	&_color1
+		background: $accent
+	&_color2
+		background: #fefefe
+	&_color3
+		background: #83759f
+	&_slider
+		position: absolute
+		bottom: 55px
+		left: 0
+		right: 0
+		width: 208px
+		height: 57px
+		margin: 0 auto
+		font: 500 15px/57px $sec-font
+		box-shadow: 0 20px 27px rgba(46, 42, 55, 0.55)
+
+.slider-nav
+	position: absolute
+	display: block
+	bottom: 48px
+	left: 0
+	right: 0
+	z-index: 99
+	.slider-navbutton
+		float: right
+		width: 256px
+		&__item
+			float: none
+			width: 256px !important
+			margin-bottom: 5px
+			button
+				display: table
+				position: relative
+				width: 256px
+				height: 76px
+				padding: 0
+				font-size: 14px
+				line-height: 24px
+				font-weight: 700
+				text-transform: uppercase
+				color: #fff
+				text-align: left
+				cursor: pointer
+				outline: none
+				transition: all .25s ease
+				border-radius: 76px
+				border: 2px solid #83759f
+				background: #83759f
+				&:before
+					content: ''
+					position: absolute
+					top: 15px
+					left: 16px
+					width: 48px
+					height: 48px
+				span
+					display: table-cell
+					vertical-align: middle
+					padding: 0 30px 0 87px
+			&.slick-current
+				button
+					color: $main-color
+					border: 2px solid #f2f2f5
+					background: none
+			&_icon1
+				button
+					&:before
+						transform: rotate(25deg)
+						background: url(../img/nav-ic-1.svg) no-repeat
+			&_icon2
+				button
+					&:before
+						left: 17px
+						background: url(../img/nav-ic-2.svg) no-repeat
+			&_icon3
+				button
+					&:before
+						left: 22px
+						background: url(../img/nav-ic-3.svg) no-repeat
+			&_icon4
+				button
+					&:before
+						top: 19px
+						left: 18px
+						background: url(../img/nav-ic-4.svg) no-repeat
+			&_icon5
+				button
+					&:before
+						left: 24px
+						background: url(../img/nav-ic-5.png) no-repeat
+/*---------------end slider-home-------------*/
+
+.adv
+	padding: 60px 0
+	&-item
+		&__pict
+			position: relative
+			max-width: 187px
+			height: 156px
+			margin: 0 auto
+			img
+				position: absolute
+				display: block
+				bottom: 0
+				left: 0
+				right: 0
+				margin: 0 auto
+		&__descr
+			margin-top: 14px
+			font-size: 18px
+			font-weight: 700
+			line-height: 22px
+			text-align: center
+
+.welcome
+	padding: 95px 0 363px
+	text-align: center
+	&__title
+		margin-bottom: 52px
+		padding: 0 50px
+		font: 36px/36px $accent-font
+	&__text
+		font-size: 16px
+		line-height: 30px
+
+.work-block
+	padding-bottom: 55px
+	background: #f1efeb
+	&__top
+		position: relative
+		margin-bottom: 10px
+		padding: 50px 0 40px
+		background: $accent url(../img/work-bg.png) 31% 60% no-repeat
+		&:before
+			content: ''
+			position: absolute
+			top: -299px
+			left: 0
+			right: 0
+			max-width: 686px
+			height: 300px
+			margin: 0 auto
+			z-index: -1
+			background: url(../img/work-pict.jpg) 0 0 no-repeat
+			background-size: cover
+	&__title
+		display: inline-block
+		font: 48px $accent-font
+
+.btn_work
+	float: right
+	width: 189px
+	height: 49px
+	line-height: 49px
+
+.work-cl
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -24px
+		padding: 0
+		font-size: 0
+		z-index: 9
+		outline: none
+		cursor: pointer
+		opacity: .8
+		border: none
+		background: none
+		&:hover
+			opacity: 1
+		&.slick-prev
+			left: 10px
+			@include sprite($arrow-left-2)
+		&.slick-next
+			right: 10px
+			@include sprite($arrow-right-2)
+	.slick-dots
+		position: absolute
+		bottom: -12px
+		left: 0
+		right: 0
+		text-align: center
+		li
+			display: inline-block
+			margin: 0 5px
+			button
+				display: block
+				width: 12px
+				height: 12px
+				padding: 0
+				font-size: 0
+				cursor: pointer
+				outline: none
+				border: none
+				border-radius: 50%
+				background: #d2d1cb
+			&.slick-active
+				button
+					background: $accent
+	&__item
+		margin: 0 -24px
+		padding: 32px 10px
+		text-align: center
+		outline: none
+	.work-item
+		display: inline-block
+		position: relative
+		width: 260px
+		height: 326px
+		text-align: center
+		box-shadow: 0 10px 18px rgba(0, 0, 0, 0.17)
+		background: #f6f6f6
+		img
+			position: absolute
+			display: block
+			top: 50%
+			left: 50%
+			max-width: 100%
+			transform: translate(-50%,-50%)
+
+.regular
+	padding: 120px 0 18px
+	background: url(../img/regular-bg.jpg) center top no-repeat
+	background-size: cover
+	&-descr
+		padding-top: 109px
+		&__title
+			margin-bottom: 15px
+			font: 48px/36px $accent-font
+		&__subtitle
+			font-size: 24px
+			font-weight: 700
+			line-height: 36px
+		&__text
+			margin-top: 45px
+			font-size: 16px
+			line-height: 28px
+	&__pict
+		img
+			width: 100%
+
+.subscribe
+	height: 312px
+	margin-top: 290px
+	border-radius: 0 0 45px 45px
+	background: #24221c url(../img/pawprint.png) center no-repeat
+	background-size: 95%
+	&.active
+		filter: blur(10px)
+	&-form
+		position: relative
+		margin-top: -118px
+		padding: 53px 0 65px
+		text-align: center
+		background: $accent
+		&:before
+			content: ''
+			position: absolute
+			top: -169px
+			right: 48px
+			width: 465px
+			height: 170px
+			background: url(../img/form-pict.png) no-repeat
+			background-size: cover
+		&__title
+			margin-bottom: 20px
+			font: 42px $accent-font
+		label
+			display: inline-block
+			max-width: 332px
+			width: 100%
+			margin-right: 26px
+			font-size: 13px
+			font-weight: 700
+			line-height: 25px
+			letter-spacing: 3px
+			text-align: left
+			text-transform: uppercase
+		input
+			display: block
+			width: 100%
+			height: 46px
+			margin-top: 5px
+			padding-left: 12px
+			font-size: 16px
+			outline: none
+			border: 2px solid #e2c043
+			background: #fff
+
+.success
+	display: none
+	position: absolute
+	width: 320px
+	height: 100px
+	top: 50%
+	left: 50%
+	font-size: 16px
+	font-weight: 700
+	color: #fff
+	z-index: 800
+	border-radius: 20px
+	text-transform: uppercase
+	transform: translate(-50%,-50%)
+	background: rgba(#75688e, .7)
+	span
+		position: absolute
+		top: 50%
+		left: 50%
+		white-space: nowrap
+		transform: translate(-50%,-50%)
+
+.wpcf7-form-control-wrap
+	display: block
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip
+	top: auto
+	bottom: -52px
+	left: 0
+	height: 58px
+	width: 100%
+	padding: 0
+	border: none
+	background: none
+
+span.wpcf7-not-valid-tip
+	font-size: 12px
+	text-transform: none
+
+.btn_form
+	position: relative
+	display: inline-block
+	width: 187px
+	height: 47px
+	top: -2px
+	margin-left: 5px
+	color: #fff
+	border: none
+	&:hover, &:focus
+		color: #fff
+
+.social
+	margin-top: 60px
+	text-align: center
+	&__title
+		display: inline-block
+		vertical-align: middle
+		margin-right: 17px
+		font: 30px $accent-font
+		color: #a19f98
+	&-link
+		display: inline-block
+		vertical-align: middle
+		margin: 0 17px
+		font-size: 0
+		transform: perspective(1px) translateZ(0)
+		&:hover
+			animation: s-anim .5s ease-in-out
+		&_ic1
+			@include sprite($inst)
+		&_ic2
+			@include sprite($vk)
+		&_ic3
+			@include sprite($fb)
+
+@keyframes s-anim
+	10%
+		transform: translateX(3px) rotate(2deg)
+	20%
+		transform: translateX(-3px) rotate(-2deg)
+	30%
+		transform: translateX(3px) rotate(2deg)
+	40%
+		transform: translateX(-3px) rotate(-2deg)
+	50%
+		transform: translateX(2px) rotate(1deg)
+	60%
+		transform: translateX(-2px) rotate(-1deg)
+	70%
+		transform: translateX(2px) rotate(1deg)
+	80%
+		transform: translateX(-2px) rotate(-1deg)
+	90%
+		transform: translateX(1px) rotate(0)
+	100%
+		transform: translateX(-1px) rotate(0)
+
+@import "footer"
+
+@import "contact"
+@import "news"
+@import "news-in"
+@import "about"
+@import "service"
+@import "service-in"
+@import "gallery"

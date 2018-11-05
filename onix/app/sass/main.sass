@@ -1,0 +1,243 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+@import "header"
+
+.banner-home
+	margin-top: 12px
+	img
+		display: block
+		width: 100%
+
+.content
+	padding: 60px 0 205px
+
+.section
+	&-one
+		padding-bottom: 56px
+	&-title
+		display: inline-block
+		margin-bottom: 30px
+		font-size: 35px
+		font-weight: 500
+		text-transform: uppercase
+	&-text
+		margin-bottom: 20px
+
+.btn-c
+	position: relative
+	display: inline-block
+	width: 205px
+	height: 63px
+	margin-top: 9px
+	font-size: 16px
+	line-height: 61px
+	text-align: center
+	background-image: linear-gradient(to top, #d5b003 0%, #f4d60d 100%)
+	border-radius: 5px
+	&:hover
+		color: #000
+		background-image: linear-gradient(to bottom, #d5b003 0%, #f4d60d 100%)
+	&:before, &:after
+		position: absolute
+		content: ""
+		bottom: 16px
+		left: 10px
+		width: 50%
+		height: 40px
+		max-width: 75px
+		transform: rotate(-4deg)
+		z-index: -1
+		box-shadow: 0 15px 10px rgba(#000, .6)
+	&:after
+		right: 10px
+		left: auto
+		transform: rotate(4deg)
+
+.change-color
+	float: right
+	&__pict
+		display: inline-block
+		max-width: 105px
+		vertical-align: middle
+		img
+			display: block
+			width: 100%
+	&__link
+		display: inline-block
+		margin-left: 40px
+		font-size: 16px
+		color: $lightblue
+		text-decoration: underline
+		&:hover
+			color: $lightblue
+			text-decoration: none
+
+.section-two
+	padding-bottom: 50px
+
+.map-pict
+	position: relative
+	width: 100%
+	overflow: hidden
+	img
+		display: block
+		height: 100%
+
+.pict-caption
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	font-weight: 500
+	color: #fff
+	&:hover, &:focus
+		color: #fff
+	&__wrap
+		position: absolute
+		top: 45%
+		left: 0
+		padding: 0 38px
+		transform: translate(0, -50%)
+	&__title
+		display: block
+		font-size: 35px
+	&__descr
+		display: block
+		font-size: 22px
+
+.link-go
+	float: right
+	margin-top: 23px
+	font-size: 14px
+	color: $lightblue
+	&:hover
+		color: $lightblue
+		text-decoration: underline
+
+.tab-links
+	margin: 6px 0 44px
+	padding: 35px 28px 25px 18px
+	border: 1px solid #e8e8e8
+	border-radius: 5px
+	+clearfix
+	&__item
+		display: table
+		margin-bottom: 19px
+		font-size: 16px
+		font-weight: 500
+		&.active, ,&:focus, &:hover
+			color: $lightblue
+			text-decoration: none
+
+.tab-body
+	display: none
+	&.open
+		display: block
+	&__title
+		display: block
+		margin-bottom: 18px
+		font-size: 24px
+		font-weight: 500
+		text-transform: uppercase
+	p
+		margin-bottom: 15px
+	ul
+		margin-left: 15px
+		list-style-type: disc
+		li
+			margin-bottom: 15px
+
+.btn-color
+	display: block
+	width: 100%
+	max-width: 764px
+	height: 86px
+	margin-top: 83px
+	font-size: 22px
+	line-height: 84px
+	text-align: center
+	text-transform: uppercase
+	border-radius: 5px
+	box-shadow: 0 3px 5px rgba(0, 3, 1, 0.75)
+	background-image: linear-gradient(to top, #b8c4e0 0%, #fafbff 61%, #ebf1ff 100%)
+	&:hover
+		color: #000
+		background-image: linear-gradient(to bottom, #b8c4e0 0%, #fafbff 61%, #ebf1ff 100%)
+	&:focus
+		color: #000
+		text-decoration: none
+
+.feedback
+	margin-bottom: 95px
+	&__title
+		margin: 0 0 12px 20px
+		font-size: 22px
+		font-weight: 500
+		color: $blue
+		text-transform: uppercase
+
+.feedback-item
+	&__text
+		position: relative
+		padding: 28px 32px
+		background-color: #e7eefa
+		border-radius: 5px
+		&:after
+			content: ''
+			position: absolute
+			bottom: -24px
+			+arr(15,25, #e7eefa, b)
+			border-width: 25px 0 0 15px
+	&__name
+		margin: 19px 0 0 70px
+		font-size: 18px
+		font-weight: 500
+
+.news-block
+	&__title
+		margin-bottom: 13px
+		font-size: 22px
+		color: $blue
+		text-transform: uppercase
+
+.news-item
+	margin-bottom: 32px
+	&__date
+		font-size: 14px
+	&__title
+		display: block
+		margin-bottom: 18px
+		font-size: 18px
+		line-height: 1
+		font-weight: 500
+		color: $red
+		text-transform: uppercase
+		text-decoration: underline
+		&:hover, &:focus
+			color: $red
+			text-decoration: none
+	&__text
+		color: #787878
+
+.banner-block
+	margin-top: 45px
+	padding-left: 10px
+	img
+		display: block
+		max-width: 100%
+
+
+@import "footer"
+@import "type"
+@import "contact"
+@import "work"
+@import "opt"
+@import "color"
+@import "cart"
+@import "catalog"
+@import "tovar"

@@ -1,0 +1,873 @@
+@import "bourbon"
+@import "grid"
+@import "vars"
+@import "sprite"
+
+@media only screen and (max-width : 1370px)
+	.header-top
+		.container
+			width: 1005px
+			max-width: 100%
+
+	.cart
+		margin-left: 30px
+
+	.contact--header
+		margin-left: 40px
+
+	.nav
+		.container
+			width: 860px
+			max-width: 100%
+
+	.nav-list
+		li
+			&:not(:last-child):after
+				right: -28px
+
+	.main-slider
+		max-width: 722px
+		.slick-arrow
+			&.slick-prev
+				left: 0
+			&.slick-next
+				right: 0
+		.slider-item
+			padding: 0 50px
+
+	.content
+		padding-bottom: 98px
+
+	.sidebar
+		width: 22.6%
+
+	.main
+		width: 77.4%
+
+	.catalog-item
+		width: 265px
+		height: 205px
+
+	.product-block
+		margin: 26px 0 65px
+
+	.product-item
+		width: 198px
+		height: 304px
+		margin: 0 19px 19px 0
+		&:hover
+			.product-item__wrap
+				width: 110.5%
+			.product-item__pict
+				height: 195px
+				img
+					width: auto
+			.product-item__sale
+				height: auto
+		&__wrap
+			padding: 7px 7px 10px
+		&__pict
+			height: 172px
+			img
+				height: 100%
+		&__descr
+			margin-top: 8px
+		&__brend
+			font-size: 17px
+		&__dir
+			height: 30px
+			font-size: 13px
+		&__price
+			margin-top: 2px
+		&__sale
+			margin: 0 0 7px
+			height: 35px
+			&--hide
+				margin: 0
+
+	.btn--product
+		width: 309px
+		margin-top: 0
+
+	.advantage
+		margin-top: 0
+		padding: 39px 60px 54px
+
+	.adv-item
+		margin-right: 108px
+
+	.adv-text
+		left: -21px
+
+	.feedback
+		margin-top: 109px
+
+	.block-title--feedback
+		margin-bottom: 25px
+
+	.feedback-wrap
+		margin-right: -20px
+
+	.feedback-item
+		width: 204px
+		margin-right: 15px
+
+	.btn--feedback
+		margin-top: 21px
+
+	.about
+		margin-top: 44px
+
+	.footer
+		.container
+			width: 1005px
+			max-width: 100%
+		&-block
+			&--nav
+				margin-right: 0
+			&--contact
+				margin-right: 50px
+
+	.copyright
+		margin-left: 32px
+
+	/*-----------Catalog page-----------------*/
+	.select
+		margin: 0 0 15px
+		&--category
+			width: 48%
+		&--brend
+			float: right
+			width: 48%
+		&--male
+			width: 48%
+		&--age
+			float: right
+			width: 48%
+	/*----------------end----------------------*/
+
+	/*--------------Tovar page-----------------*/
+	.tovar-item
+		&__pict
+			height: 370px
+
+	.tovar-nav__pict
+		width: 92px
+
+	.tovar-height__list
+		width: 65%
+	/*-----------------end----------------------*/
+
+
+@media only screen and (max-width : 1200px)
+	.header-top
+		.container
+			width: 940px
+
+	.logo
+		width: 180px
+
+	.cart
+		width: 250px
+		margin-left: 25px
+
+	.contact--header
+		margin-left: 25px
+
+	.nav
+		.container
+			width: 940px
+
+	.main-slider
+		max-width: 860px
+
+	.sidebar
+		width: 25%
+
+	.catalog-list
+		> li
+			> a
+				width: 100%
+				font-size: 18px
+		&__dropdown
+			li
+				a
+					font-size: 16px
+
+	.brend-pict
+		width: 100%
+
+	.news-item
+		width: 100%
+
+	.btn--news
+		width: 100%
+
+	.banner
+		width: 100%
+		&__text
+			font-size: 18px
+		&-form
+			input
+				width: 100%
+				font-size: 18px
+
+	.btn--form
+		width: 100%
+
+	.article-preview
+		width: 100%
+
+	.main
+		width: 75%
+		padding-left: 25px
+
+	.catalog-item
+		width: 314px
+		height: 240px
+
+	.product-wrap
+		margin-right: -20px
+
+	.product-item
+		width: 205px
+		margin-right: 20px
+
+	.advantage
+		padding: 25px
+
+	.adv-item
+		width: 265px
+		margin-right: 60px
+		&__descr
+			width: 72%
+			font-size: 16px
+
+	.adv-text
+		left: 0
+
+	.feedback-wrap
+		margin-right: -15px
+
+	.feedback-item
+		width: 157px
+		height: auto
+		margin-right: 10px
+		padding: 10px
+
+	.about__text
+		font-size: 16px
+
+	.footer
+		.container
+			width: 940px
+
+	/*-----------Catalog page-----------------*/
+	.select
+		&--category
+			width: 100%
+		&--brend
+			float: none
+			width: 100%
+		&--male
+			width: 100%
+		&--age
+			float: none
+			width: 100%
+	/*----------------end----------------------*/
+
+	/*--------------Tovar page-----------------*/
+	.tovar-preview
+		width: 55%
+
+	.tovar-item
+		&__pict
+			height: 350px
+
+	.tovar-nav__pict
+		width: 87px
+
+	.tovar-feat
+		width: 45%
+		padding-left: 15px
+
+	.tovar-order
+		.jq-number
+			display: block
+			margin-bottom: 10px
+
+	.btn--tovar
+		display: block
+		margin-bottom: 10px
+
+	.tovar-color
+		margin-top: 20px
+		&__title
+			display: block
+			margin-bottom: 10px
+
+	.tovar-height
+		margin-top: 20px
+		&__title
+			display: block
+			margin-bottom: 10px
+		&__list
+			width: 100%
+	/*-----------------end----------------------*/
+
+
+@media only screen and (max-width : 992px)
+	.header-top
+		.container
+			width: 740px
+
+	.logo
+		width: 194px
+
+	.cart
+		margin-left: 45px
+
+	.contact--header
+		display: none
+
+	.nav
+		.container
+			width: 740px
+
+	.nav-list
+		li:not(:last-child):after
+			display: none
+
+	.main-slider
+		max-width: 740px
+
+	.content
+		padding-bottom: 40px
+
+	.sidebar
+		width: 31.7%
+
+	.block-title--catalog
+		margin-bottom: 33px
+
+	.main
+		width: 68.3%
+		padding-left: 15px
+
+	.search-btn
+		width: 125px
+
+	.catalog
+		margin-right: -15px
+
+	.catalog-item
+		width: 47%
+		max-width: 100%
+		height: 190px
+		margin: 0 10px 10px 0
+		&__title
+			height: 60px
+			font-size: 22px
+
+	.product-block
+		margin: 23px 0 34px
+
+	.block-title--product
+		margin-bottom: 20px
+
+	.product-wrap
+		margin-right: -10px
+
+	.product-item
+		width: 47.5%
+		margin: 0 10px 10px 0
+		&:hover
+			.product-item__wrap
+				left: -12px
+
+	.advantage
+		padding: 15px 10px 20px
+
+	.block-title--advantage
+		margin-bottom: 20px
+
+	.adv-item
+		width: 100%
+		margin: 0 0 10px
+		&__descr
+			width: 83%
+
+	.adv-text
+		margin-top: 15px
+
+	.feedback
+		margin-top: 35px
+
+	.block-title--feedback
+		margin-bottom: 20px
+
+	.feedback-item
+		width: 47.5%
+		margin-bottom: 10px
+
+	.about
+		margin-top: 35px
+
+	.footer
+		.container
+			width: 740px
+
+	.footer-block
+		width: 49%
+		margin-bottom: 23px
+		&--contact
+			margin-right: 0
+		&--help
+			float: none
+		&--nav
+			float: none
+
+	.contact-phone__link--footer
+		font-size: 17px
+
+	.footer-bottom
+		margin-top: 20px
+
+	.copyright
+		position: absolute
+		bottom: -50px
+		left: 0
+		right: 0
+		margin: 0 auto
+		text-align: center
+
+	/*--------------Tovar page-----------------*/
+	.block-title--tovar
+		font-size: 22px
+
+	.tovar-preview
+		width: 100%
+
+	.tovar-feat
+		width: 100%
+
+	.tovar-order
+		.jq-number
+			display: inline-block
+			margin-bottom: 0
+
+	.btn--tovar
+		display: inline-block
+		margin-bottom: 0
+
+	.tovar-color
+		margin-top: 20px
+		&__title
+			display: inline-block
+			margin-bottom: 0
+
+	.tovar-height
+		margin-top: 20px
+		&__title
+			display: block
+			margin-bottom: 10px
+		&__list
+			width: 100%
+
+	.tovar-descr
+		margin: 50px 0 50px
+		&__link
+			margin-right: 15px
+			font-size: 22px
+	/*-----------------end---------------------*/
+
+
+@media only screen and (max-width : 767px)
+	.container
+		padding: 0 20px
+
+	.header
+		padding-top: 110px
+
+	.header-top
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		padding-bottom: 10px
+		z-index: 900
+		.container
+			width: 360px
+
+	.header-wrap
+		margin-bottom: 0
+
+	.logo
+		width: 137px
+		margin-top: 20px
+
+	.cart
+		float: right
+		width: 176px
+		height: 44px
+		margin: 12px 0 10px
+		padding: 7px 0 0 42px
+		&:before
+			top: 8px
+			left: 7px
+			@include sprite($cart-mob)
+		&__row
+			font-size: 12px
+		&__link
+			display: none
+
+	.callback
+		display: none
+
+	.nav
+		display: none
+		height: auto
+		margin-bottom: 23px
+		background: none
+		&-list
+			padding: 11px 0 12px
+			text-align: center
+			text-align-last: auto
+			li
+				display: block
+				margin-bottom: 10px
+				a
+					font-size: 26px
+					font-weight: 500
+					color: #63055c
+					line-height: 1
+
+	.callback__link--mob
+		display: block
+		width: 100%
+
+	.btn-menu
+		display: block
+		&.active
+			margin-bottom: 12px
+			.btn-menu__title
+				display: none
+				&--open
+					display: block
+
+	.header-main
+		margin-top: 0
+		padding: 18px 0 66px
+		background-position: left top
+
+	.main-slider
+		.slick-arrow
+			&.slick-prev
+				@include sprite($arrow-left-mob)
+			&.slick-next
+				@include sprite($arrow-right-mob)
+		.slider-item
+			padding: 0 38px
+
+	.slider-caption
+		&__title
+			font-size: 22px
+		&__accent
+			margin-bottom: 14px
+			font-size: 22px
+		&__pict
+			display: none
+
+	.btn--slider
+		width: 189px
+		height: 36px
+		line-height: 33px
+		border-radius: 7px
+
+	.content
+		padding-bottom: 65px
+
+	.search
+		display: none
+		&--mob
+			display: block
+		&-btn
+			width: 146px
+		&-in
+			padding-left: 11px
+			font-size: 16px
+
+	.sidebar
+		float: none
+		width: 100%
+
+	.block-title--catalog
+		display: none
+
+	.sidebar-nav
+		margin-top: 20px
+
+	.catalog-list
+		> li
+			> a
+				font-size: 22px
+		&__dropdown
+			li
+				a
+					font-size: 18px
+
+	.brend-block
+		display: none
+
+	.news-block
+		display: none
+
+	.banner
+		display: none
+
+	.article-block
+		display: none
+
+	.main
+		width: 100%
+		padding-left: 0
+
+	.catalog
+		display: none
+
+	.block-title--product
+		margin-bottom: 12px
+
+	.product-wrap
+		margin-right: -35px
+
+	.product-item
+		width: 146px
+		height: 235px
+		margin: 0 30px 18px 0
+		&__pict
+			height: 129px
+		&__descr
+			margin-top: 6px
+		&__brend
+			margin-bottom: 7px
+			font-size: 14px
+		&__dir
+			font-size: 11px
+		&__price
+			margin-top: 5px
+			font-size: 19px
+		&__sale
+			opacity: 0
+		&:hover
+			.product-item__wrap
+				left: -9px
+			.product-item__sale
+				opacity: 1
+				&--hide
+					opacity: 0
+
+	.btn--cart
+		width: 100%
+		font-size: 14px
+
+	.btn--oneclick
+		width: 100%
+		font-size: 14px
+
+	.btn--product
+		width: 100%
+		margin-top: 5px
+
+	.advantage
+		display: none
+
+	.brend-block--mob
+		display: block
+		margin: 44px 0 16px
+
+	.block-title--brend
+		margin-bottom: 18px
+
+	.news-block-mob
+		display: block
+
+	.news-item
+		padding: 15px 17px 12px
+		&__text
+			font-size: 22px
+			span
+				font-size: 22px
+		&__link
+			margin-top: 4px
+			font-size: 22px
+
+	.btn--news
+		width: 100%
+
+	.article-block--mob
+		display: block
+		margin-top: 34px
+
+	.article-preview
+		padding: 13px 24px 20px
+		&__title
+			margin-bottom: 18px
+			font-size: 22px
+		&__link
+			margin-top: 17px
+			font-size: 22px
+
+	.btn--article
+		width: 100%
+		height: 47px
+		margin-top: 9px
+		line-height: 45px
+		color: #fff
+
+	.banner--mob
+		display: block
+		padding: 78px 17px 17px
+
+	.banner__text
+		margin-bottom: 24px
+		font-size: 23px
+
+	.feedback
+		margin-top: 45px
+		&--mob
+			.feedback-item
+				&:nth-child(n+2)
+					display: none
+		&-wrap
+			margin-right: 0
+		&-item
+			width: 100%
+			margin-right: 0
+			&__title
+				margin-bottom: 14px
+			&__text
+				height: 143px
+
+	.btn--feedback
+		width: 100%
+		margin-top: 2px
+
+	.block-title--about
+		margin-bottom: 22px
+
+	.footer
+		padding: 91px 0 28px
+		.container
+			width: 360px
+
+	.footer-block
+		margin-bottom: 9px
+		&__title
+			font-size: 16px
+
+	.contact-phone__link--footer
+		font-size: 15px
+		span
+			font-size: 18px
+
+	.footer-block--contact
+		float: left
+		width: 180px
+
+	.contact-work
+		margin-top: 21px
+
+	.footer-block--social
+		display: table
+		width: auto
+		padding-left: 12px
+
+	.social__link
+		float: left
+		width: 46%
+		margin-bottom: 18px
+		&--fb
+			i
+				@include sprite($fb-mob)
+		&--vk
+			i
+				@include sprite($vk-mob)
+		&--inst
+			i
+				@include sprite($inst-mob)
+		&--ok
+			i
+				@include sprite($ok-mob)
+
+	.footer-block--help
+		width: 100%
+		margin-bottom: 26px
+
+	.footer-bottom
+		margin-top: 17px
+
+	.copyright
+		display: none
+
+	.pay
+		float: none
+		margin-top: 35px
+		img
+			width: 18%
+
+	.callback-form
+		&__title
+			padding: 15px 30px
+			font-size: 28px
+		form
+			width: 300px
+
+	/*-----------Catalog page-----------------*/
+	.sort
+		float: none
+		margin: 30px 0
+
+	.pagination-list
+		vertical-align: middle
+
+	.btn--pag
+		vertical-align: middle
+		width: 130px
+		font-size: 0
+		span
+			display: inline-block
+			font-size: 18px
+	/*----------------end----------------------*/
+
+	/*--------------Tovar page-----------------*/
+	.block-title--tovar
+		margin-top: 15px
+
+	.tovar
+		margin-top: 25px
+
+	.tovar-item__pict
+		height: 320px
+
+	.tovar-nav__pict
+		width: 75px
+
+	.tovar-feat
+		margin-top: 15px
+
+	.tovar-order
+		.jq-number
+			margin-right: 70px
+
+	.btn--tovclick
+		margin: 10px 0 0 145px
+
+	.tovar-color__title
+		display: block
+		margin-bottom: 10px
+
+	.tovar-descr
+		&__link
+			margin: 0 45px 10px 0
+	/*------------------end--------------------*/

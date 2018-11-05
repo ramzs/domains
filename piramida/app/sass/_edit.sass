@@ -1,0 +1,99 @@
+@import "vars"
+
+/*------------------Edit page---------------*/
+.edit
+	position: relative
+	margin-bottom: 3px
+	padding: 28px 34px 88px
+	border-radius: 5px
+	background: #f4f4f4
+	+clearfix
+	&-block
+		display: inline-block
+		vertical-align: top
+		&--contact
+			margin-right: 30px
+		&--password
+			margin-right: 30px
+		&__title
+			margin-bottom: 22px
+			font: 700 20px "ptsansnarrow"
+			color: #0154b4
+			&--ref
+				margin-top: 21px
+		label
+			display: block
+			margin-bottom: 16px
+			font-size: 15px
+		input
+			display: block
+			width: 254px
+			height: 53px
+			margin-top: 3px
+			outline: none
+			font-size: 15px
+			padding-left: 30px
+			border: 1px solid #8c8c8c
+			border-radius: 27px
+			background: #fff
+		.jq-selectbox
+			display: block !important
+			width: 254px
+			margin-top: 3px
+			&.focused
+				.jq-selectbox__select
+					border: 1px solid #8c8c8c
+			&__select
+				height: 53px
+				padding: 0 45px 0 30px
+				font: 15px/50px "ptsans"
+				color: #aaa
+				text-shadow: none
+				border: 1px solid #8c8c8c
+				border-radius: 27px
+				box-shadow: none
+				background: #fff
+				&:hover
+					background: #fff
+				&:active
+					box-shadow: none
+			&__trigger
+				border-left: none
+				&-arrow
+					top: 21px
+					right: 30px
+					border: none
+					@include sprite($arrow-select)
+		textarea
+			display: block
+			width: 396px
+			margin-top: 3px
+			padding: 15px 30px
+			resize: none
+			outline: none
+			border: 1px solid #8c8c8c
+			border-radius: 27px
+			background: #fff
+			&.about-in
+				height: 143px
+			&.ref-in
+				height: 93px
+
+.save-link
+	position: absolute
+	bottom: 48px
+	right: 43px
+	font-size: 15px
+	color: #c41b8c
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: -25px
+		@include sprite($edit)
+		transition: all .8s ease-in-out
+	&:hover
+		text-decoration: underline
+		&:before
+			transform: rotate(360deg)
+/*--------------------end-------------------*/

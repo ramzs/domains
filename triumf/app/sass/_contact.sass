@@ -1,0 +1,71 @@
+@import "vars.sass"
+/*--------------Contact page---------------*/
+header
+	&.header__inner
+		background: none
+
+.header__top
+	&.header__top-inner
+		height: 175px
+		background: url(../img/heade-top-inner-bg.jpg) center top no-repeat
+		background-size: cover
+
+.breadcrumb
+	height: 200px
+	padding-top: 50px
+	background: url(../img/breadcrumb-bg.jpg) center top no-repeat
+	background-size: cover
+
+.breadcrumb__list
+	margin-bottom: 14px
+	li
+		display: inline-block
+		position: relative
+		margin-right: 20px
+		font-size: 12px
+		color: $accent-text
+		text-transform: uppercase
+		&:not(:first-child):before
+			content: '\00BB'
+			position: absolute
+			top: 0
+			left: -15px
+			font-size: 12px
+			color: $accent-text
+		a
+			color: $btn-text
+			transition: all .15s ease
+			&:hover
+				color: #fff
+
+.page__title
+	display: block
+	font-size: 36px
+	font-weight: 700
+	color: #fff
+
+.contact
+	padding: 60px 0 85px
+
+.contact__pict
+	img
+		width: 100%
+
+.contact__block
+	display: inline-block
+
+.contact__name
+	margin-bottom: 30px
+
+.contact__item
+	margin-bottom: 30px
+	font-size: 14px
+	span
+		display: block
+		margin-bottom: 5px
+		font-weight: 700
+	a
+		display: block
+		margin-bottom: 5px
+		color: $main-color
+/*-----------------end---------------------*/

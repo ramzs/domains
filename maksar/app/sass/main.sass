@@ -1,0 +1,605 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "mixins"
+@import "sprite"
+
+@import "header"
+
+.section-main
+	position: relative
+	padding: 300px 0 215px
+	background: url(../img/main-bg.jpg) top center no-repeat
+	background-size: cover
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 1
+		background: rgba(#0b0d0f,.97)
+	.container
+		position: relative
+		z-index: 2
+
+.main
+	position: relative
+	z-index: 2
+	&:before
+		content: ''
+		position: absolute
+		top: 3%
+		left: -131%
+		width: 807px
+		height: 541px
+		z-index: -1
+		background: url(../img/pict-1.png) 0 0 no-repeat
+	&-title
+		display: block
+		font-size: 50px
+		font-weight: 700
+		color: #fff
+		span
+			color: $orange
+	&-text
+		margin-top: 38px
+		font-size: 30px
+		font-weight: 300
+		color: #fff
+	&-form
+		position: relative
+		margin-top: 98px
+		&__title
+			margin-bottom: 11px
+			font-size: 30px
+			font-weight: 600
+			color: $red
+		&__text
+			margin-bottom: 33px
+			font-size: 18px
+			color: #71787c
+		input
+			display: inline-block
+			width: 100%
+			max-width: 271px
+			height: 49px
+			margin-right: 8px
+			padding-left: 22px
+			font-size: 18px
+			color: #8b8b8b
+			outline: none
+			transition: all .25s ease
+			border: 2px solid transparent
+			border-radius: 3px
+			background: #fff
+			&:focus
+				border: 2px solid $red-h
+
+.section-about
+	position: relative
+	padding: 67px 0 0
+	.container
+		position: relative
+		z-index: 2
+		&:after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 44.5%
+			width: 484px
+			height: 344px
+			z-index: -1
+			background: url(../img/man.png) 0 0 no-repeat
+
+.section-title
+	display: block
+	font-size: 50px
+	font-weight: 700
+
+.about
+	position: relative
+	padding-bottom: 138px
+	&-toptitle
+		margin-bottom: 30px
+		font-size: 18px
+		font-weight: 600
+		color: $red
+	&-title
+		margin-bottom: 33px
+	&-text
+		font-size: 18px
+		font-weight: 300
+		p
+			margin-bottom: 30px
+	&-citace
+		position: relative
+		width: 62%
+		margin-top: 120px
+		padding: 0 0 0 35px
+		font-size: 18px
+		font-style: italic
+		color: #a3a3a3
+		&:before
+			content: ''
+			position: absolute
+			top: 4px
+			left: 0
+			width: 22px
+			height: 18px
+			background: url(../img/kavichki.png) 0 0 no-repeat
+		&:after
+			content: ''
+			position: absolute
+			top: -56px
+			left: 0
+			width: 647px
+			height: 41px
+			background: url(../img/line.png) 0 0 no-repeat
+
+.sidebar
+	padding: 5px 20px 50px 70px
+	&-list
+		li
+			position: relative
+			display: block
+			margin-bottom: 71px
+			padding: 23px 0 0 30px
+			font-size: 18px
+			font-weight: 300
+			line-height: 24px
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				left: 30px
+				width: 170px
+				height: 2px
+				background-color: $orange
+			&:before
+				content: ''
+				position: absolute
+				top: 28px
+				left: 0
+				width: 10px
+				height: 10px
+				border-radius: 50%
+				background: $orange
+
+.section-adv
+	position: relative
+	padding: 74px 0 0
+	overflow: hidden
+	z-index: 2
+	background: #0c0e10
+	&:after
+		content: ''
+		position: absolute
+		top: 50%
+		right: -305px
+		width: 580px
+		height: 618px
+		z-index: -1
+		transform: translate(0,-50%)
+		background: url(../img/pict-2.png) 0 0 no-repeat
+	.container
+		z-index: 2
+
+.adv
+	&-title
+		margin-bottom: 28px
+		color: #fff
+	&-text
+		font-size: 30px
+		font-weight: 300
+		color: #566473
+		p
+			margin-bottom: 30px
+	&-block
+		padding-top: 41px
+	&-item
+		position: relative
+		display: inline-block
+		vertical-align: top
+		width: 32%
+		margin-bottom: 68px
+		padding-right: 45px
+		&__text
+			position: relative
+			padding-top: 22px
+			font-size: 18px
+			font-weight: 300
+			line-height: 24px
+			color: #fff
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 170px
+				height: 2px
+				background: $orange
+
+.section-form
+	padding: 84px 0 85px
+	background: #eee
+	&__title
+		margin-bottom: 85px
+		font-size: 30px
+		font-weight: 500
+
+.form-step
+	padding-bottom: 24px
+	&__item
+		position: relative
+		display: inline-block
+		vertical-align: top
+		width: 271px
+		margin-right: 10px
+		padding-right: 25px
+		font-size: 18px
+		font-weight: 700
+		line-height: 1.3
+		&:after
+			content: ''
+			position: absolute
+			top: -38px
+		&_1,&_2,&_3
+			i
+				position: absolute
+				top: -24px
+				right: 0
+				font-size: 18px
+				font-weight: 700
+				font-style: normal
+				color: #fff
+				z-index: 2
+				&:before
+					content: ''
+					position: absolute
+					width: 42px
+					height: 42px
+					top: 50%
+					left: 50%
+					z-index: -1
+					transform: translate(-50%,-50%)
+					border-radius: 50%
+					background: $red
+		&_1
+			&:after
+				width: 157px
+				height: 26px
+				right: -128px
+				background: url(../img/arrow-1.png) 0 0 no-repeat
+			i
+				right: 65px
+		&_2
+			&:after
+				width: 260px
+				height: 26px
+				right: -218px
+				background: url(../img/arrow-2.png) 0 0 no-repeat
+			i
+				right: 105px
+		&_3
+			i
+				right: -5px
+
+.form-block
+	form
+		position: relative
+	fieldset
+		margin: 0 0 25px
+		padding: 0
+		border: none
+	input
+		display: inline-block
+		width: 271px
+		height: 49px
+		margin-right: 10px
+		padding-left: 20px
+		font-size: 18px
+		font-weight: 300
+		color: #8b8b8b
+		outline: none
+		border: 1px solid #d4d4d4
+		border-radius: 3px
+		background: #fff
+		&:last-of-type
+			margin-right: 0
+		&:focus
+			border: 2px solid $red-h
+	&__text
+		display: inline-block
+		vertical-align: middle
+		margin-left: 30px
+		font-size: 15px
+		font-weight: 300
+		color: #9ca1a6
+
+.btn.btn-form
+	display: inline-block
+	vertical-align: middle
+	margin-top: 0
+
+.section-type
+	padding: 83px 0 25px
+	&__title
+		margin-bottom: 68px
+
+.type
+	&-item
+		display: table
+		width: 100%
+		padding: 60px 0
+		border-bottom: 2px solid #0c0e10
+		&:first-child
+			padding-top: 0
+		&:last-child
+			border-bottom: none
+		&__left
+			display: table-cell
+			vertical-align: top
+		&__pict
+			width: 271px
+			overflow: hidden
+			img
+				width: 100%
+		&__main
+			display: table-cell
+			vertical-align: top
+			padding-left: 29px
+		&__title
+			font-size: 30px
+			font-weight: 700
+			line-height: 1
+		&__price
+			margin-bottom: 22px
+			font-size: 25px
+			font-weight: 600
+			color: $red
+		&__list
+			li
+				position: relative
+				display: block
+				margin-bottom: 20px
+				padding-left: 26px
+				font-size: 18px
+				font-weight: 300
+				line-height: 20px
+				color: #4d4d4d
+				&:last-child
+					margin-bottom: 0
+				&:before
+					content: ''
+					position: absolute
+					top: 50%
+					left: 0
+					width: 10px
+					height: 10px
+					transform: translate(0,-50%)
+					border-radius: 50%
+					background: $orange
+
+.btn
+	&.btn-type
+		margin-top: 18px
+		line-height: 47px
+		&_mob
+			display: none
+
+.sidebar-title
+	margin-bottom: 55px
+	font-size: 30px
+	font-weight: 700
+	line-height: 1.2
+
+.sidebar-form
+	padding-top: 73px
+	border-top: 2px solid #0c0e10
+	&__title
+		margin-bottom: 21px
+		font-size: 30px
+		font-weight: 600
+		line-height: 1.2
+	&__text
+		font-size: 18px
+		color: #71787c
+	form
+		position: relative
+		margin-top: 53px
+	input
+		display: inline-block
+		width: 271px
+		height: 49px
+		margin-bottom: 20px
+		padding-left: 20px
+		font-size: 18px
+		font-weight: 300
+		color: #8b8b8b
+		outline: none
+		border: 1px solid #d4d4d4
+		border-radius: 3px
+		background: #fff
+		&:focus
+			border: 2px solid $red-h
+
+.btn.btn-sidebar
+	margin-top: 5px
+
+.section-faq
+	padding: 82px 0 65px
+	background: #000
+	&__title
+		margin-bottom: 47px
+		color: #fff
+
+.faq
+	&-item
+		position: relative
+		margin-bottom: 20px
+		padding: 15px 0
+		border-bottom: 1px solid #21262b
+		&__title
+			position: relative
+			display: block
+			padding-right: 40px
+			font-size: 25px
+			font-weight: 600
+			color: #fff
+			line-height: 1.2
+			&:after
+				content: ''
+				position: absolute
+				top: 50%
+				right: 0
+				width: 20px
+				height: 11px
+				transform: translate(0,-50%)
+				background: url(../img/arrow-up.png) 0 0 no-repeat
+			&.collapsed
+				&:after
+					background: url(../img/arrow-down.png) 0 0 no-repeat
+				color: #566473
+				&:focus
+					color: #566473
+				&:active
+					color: #fff
+			&:hover,&:focus
+				color: #fff
+				text-decoration: none
+		&__text
+			padding-top: 18px
+			font-size: 18px
+			font-weight: 300
+			color: #fff
+
+.section-qs
+	padding: 79px 0
+	background: #eee
+
+.qs-form
+	position: relative
+	width: 100%
+	max-width: 554px
+	margin: 0 auto
+	text-align: center
+	&__title
+		margin-bottom: 10px
+		font-size: 30px
+		font-weight: 600
+	&__text
+		margin-bottom: 29px
+		padding: 0 20px
+		font-size: 18px
+		color: #71787c
+	form
+		position: relative
+	input
+		display: inline-block
+		width: 271px
+		height: 49px
+		margin-right: 7px
+		padding-left: 20px
+		font-size: 18px
+		font-weight: 300
+		color: #8b8b8b
+		outline: none
+		border: 1px solid #d4d4d4
+		border-radius: 3px
+		background: #fff
+		&:last-of-type
+			margin-right: 0
+		&:focus
+			border: 2px solid $red-h
+	&__mes
+		margin-top: 30px
+		font-size: 15px
+		font-weight: 300
+		color: #9ca1a6
+
+.btn.btn-qs
+	width: 100%
+
+.section-gallery
+	padding: 82px 0 75px
+	&__title
+		margin-bottom: 65px
+
+.gallery-gl
+	.gl-item
+		outline: none
+	.slick-dots
+		position: absolute
+		bottom: -40px
+		left: 0
+		right: 0
+		margin: 0 auto
+		text-align: center
+		li
+			display: inline-block
+			margin: 0 2px
+			button
+				display: block
+				width: 13px
+				height: 13px
+				padding: 0
+				font-size: 0
+				cursor: pointer
+				outline: none
+				border: none
+				border-radius: 50%
+				background: #a8a8a8
+			&.slick-active
+				button
+					background: $red
+
+.gallery-item
+	position: relative
+	img
+		display: block
+		width: 100%
+	&:before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		z-index: 0
+		opacity: 0
+		transition: opacity .25s ease
+		background: rgba(#000, .68)
+	&:hover
+		&:before
+			opacity: 1
+	&__title
+		position: absolute
+		bottom: 30px
+		right: 0
+		padding: 4px 20px
+		font-size: 18px
+		color: #fff
+		z-index: 1
+		background: $red
+
+.grid
+	max-width: 1950px
+	width: 100%
+	margin: 0 auto
+	+clearfix
+	&-sizer
+		width: 20%
+	&-item
+		float: left
+		width: 20%
+		max-height: 300px
+		padding: 0 15px
+		margin-bottom: 30px
+		overflow: hidden
+		outline: none
+		&_w2
+			width: 40%
+		&_h2
+			max-height: 630px
+
+@import "footer"

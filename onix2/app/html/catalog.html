@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/head-tmp.html')
+
+<body>
+	@@include('./template/header-tmp.html')
+
+	<div class="content content_catalog">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-4 col-md-4 sidebar">
+
+					<div class="s-menu">
+						<ul class="s-tab">
+							<li class="s-tab__name"><a href="#category-list" role="tab" data-toggle="tab">Категории</a></li>
+							<li class="s-tab__name"><a href="#brends-list" role="tab" data-toggle="tab">Бренды</a></li>
+						</ul>
+						<div class="s-content">
+
+							<div id="category-list" class="s-content-item fade in active">
+								<a href="#c-menu-1" class="s-content-item__title" data-toggle="collapse">Авторемонт</a>
+								<ul id="c-menu-1" class="s-content__list collapse in">
+									<li><a href="#">Абразивные материалы</a></li>
+									<li><a href="#">Автохимия</a></li>
+									<li><a href="#">Автоэмали</a></li>
+									<li class="active"><a href="#">Антигравий</a></li>
+									<li><a href="#">Антикоррозийные покрытия</a></li>
+									<li><a href="#">Армирующие материалы</a></li>
+									<li><a href="#">Аэрозольные продукты</a></li>
+									<li><a href="#">Герметики</a></li>
+									<li><a href="#">Грунты</a></li>
+									<li><a href="#">Добавки</a></li>
+									<li><a href="#">Инструменты</a></li>
+									<li><a href="#">Карандаши/кисточки</a></li>
+									<li><a href="#">Клеящие ленты</a></li>
+									<li><a href="#">Краскопульты и Аэрографы</a></li>
+									<li><a href="#">Крепеж автомобильный</a></li>
+									<li><a href="#">Лаки</a></li>
+									<li><a href="#">Малярный инструмент</a></li>
+									<li><a href="#">Маскировочные материалы</a></li>
+									<li><a href="#">Материалы для вклейки стекол</a></li>
+									<li><a href="#">Обезжириватели</a></li>
+									<li><a href="#">Оборудование сварочное</a></li>
+									<li><a href="#">Оборудование шлифовальное</a></li>
+									<li><a href="#">Отвердители</a></li>
+									<li><a href="#">Полировальные материалы</a></li>
+									<li><a href="#">Полупродукт</a></li>
+									<li><a href="#">Протирочные материалы</a></li>
+									<li><a href="#">Проявочные покрытия</a></li>
+									<li><a href="#">Разбавители</a></li>
+									<li><a href="#">Растворители</a></li>
+									<li><a href="#">Средства индивидуальной защиты</a></li>
+									<li><a href="#">Шпатлевки</a></li>
+									<li><a href="#">Очистители</a></li>
+								</ul>
+
+								<a href="#c-menu-2" class="s-content-item__title" data-toggle="collapse">Промышленность</a>
+								<ul id="c-menu-2" class="s-content__list collapse">
+									<li><a href="#">Абразивные материалы</a></li>
+									<li><a href="#">Автохимия</a></li>
+									<li><a href="#">Автоэмали</a></li>
+									<li><a href="#">Антигравий</a></li>
+								</ul>
+
+							</div>
+
+							<div id="brends-list" class="s-content-item fade">
+
+								<div class="s-content-item__title s-content-item__title_brend">Бренды</div>
+
+								<ul class="s-content__list">
+									<li><a href="#">Абразивные материалы</a></li>
+									<li><a href="#">Автохимия</a></li>
+									<li><a href="#">Автоэмали</a></li>
+									<li><a href="#">Антигравий</a></li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-xs-12 col-sm-8 col-md-8 main">
+
+					<div class="breadcrumb-block">
+						<ol class="breadcrumb">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Авторемонт</a></li>
+							<li class="active">Автохимия</li>
+						</ol>
+					</div>
+
+					<h1 class="page-title">Автохимия</h1>
+
+					<section class="section-change">
+						<div class="change-check">
+							<div class="change-check__title">Бренд:</div>
+							<ul class="change-check-list">
+								<li>
+									<label><input type="checkbox">3M</label>
+									<label><input type="checkbox">Adolf Bucher</label>
+								</li>
+								<li>
+									<label><input type="checkbox">MasterWax</label>
+									<label><input type="checkbox">MasterWax</label>
+								</li>
+								<li>
+									<label><input type="checkbox">Sprint ICR</label>
+									<label><input type="checkbox">Texon</label>
+								</li>
+								<li>
+									<label><input type="checkbox">WD</label>
+									<label><input type="checkbox">ПолиКомПласт</label>
+								</li>
+								<li>
+									<label><input type="checkbox">Химик</label>
+								</li>
+							</ul>
+						</div>
+						<div class="change-sel">
+							<select data-placeholder="Вид инструмента/Материал">
+								<option value="Вид инструмента/Материал"></option>
+								<option>Один вид</option>
+								<option>Второй вид</option>
+							</select>
+							<select data-placeholder="Назначение">
+								<option value="Назначение"></option>
+								<option>Один вид</option>
+								<option>Второй вид</option>
+							</select>
+							<select data-placeholder="Размер/Диаметр/Объем">
+								<option value="Размер/Диаметр/Объем"></option>
+								<option>Один вид</option>
+								<option>Второй вид</option>
+							</select>
+						</div>
+					</section>
+
+					<section class="section-catalog">
+
+						<div class="catalog-header">
+
+							<div class="filter">
+
+								<div class="filter-sel">
+									<label for="f-1">
+										<span>Отображать по:</span>
+										<select id="f-1">
+											<option>Цене</option>
+											<option>Объему</option>
+										</select>
+									</label>
+								</div>
+
+								<div class="filter-count">Товаров на странице: <span>28</span></div>
+
+							</div>
+
+							<ul class="pagination">
+								<li><a href="#">&larr;</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li class="active"><a href="#">3</a></li>
+								<li><span>...</span></li>
+								<li><a href="#">15</a></li>
+								<li><a href="#">&rarr;</a></li>
+							</ul>
+
+						</div>
+
+						<div class="catalog">
+
+							<div class="tovar-item">
+								<div class="tovar-item__wrap">
+									<div class="tovar-item__vol">2,0 литра</div>
+									<div class="tovar-item__pict"><img src="img/tovar-1.jpg" alt=""></div>
+									<a href="#" class="tovar-item__name">100510. Автомобильная краска. Алкидная, Синяя Класная, еще больше описания, что купили</a>
+									<div class="tovar-item__count">
+										<input type="number" min="1" value="2">
+									</div>
+									<div class="tovar-item__price">20 000 руб.</div>
+									<a href="#" class="tovar-item__cart">В корзину</a>
+								</div>
+							</div>
+
+							<div class="tovar-item">
+								<div class="tovar-item__wrap">
+									<div class="tovar-item__vol">3,0 литра</div>
+									<div class="tovar-item__pict"><img src="img/tovar-2.jpg" alt=""></div>
+									<a href="#" class="tovar-item__name">100510. Автомобильная краска. Алкидная</a>
+									<div class="tovar-item__count">
+										<input type="number" min="1" value="2">
+									</div>
+									<div class="tovar-item__price">2 000 руб.</div>
+									<a href="#" class="tovar-item__cart">В корзину</a>
+								</div>
+							</div>
+
+							<div class="tovar-item">
+								<div class="tovar-item__wrap">
+									<div class="tovar-item__vol">5,0 литра</div>
+									<div class="tovar-item__pict"><img src="img/tovar-3.jpg" alt=""></div>
+									<a href="#" class="tovar-item__name">100510. Автомобильная краска. Алкидная, Синяя Класная</a>
+									<div class="tovar-item__count">
+										<input type="number" min="1" value="2">
+									</div>
+									<div class="tovar-item__price">200 000 руб.</div>
+									<a href="#" class="tovar-item__cart">В корзину</a>
+								</div>
+							</div>
+
+							<div class="tovar-item">
+								<div class="tovar-item__wrap">
+									<div class="tovar-item__vol">20 литров</div>
+									<div class="tovar-item__pict"><img src="img/tovar-4.jpg" alt=""></div>
+									<a href="#" class="tovar-item__name">100510. Автомобильная краска. Алкидная, Синяя Класная, еще больше описания, что купили</a>
+									<div class="tovar-item__count">
+										<input type="number" min="1" value="2">
+									</div>
+									<div class="tovar-item__price">500 руб.</div>
+									<a href="#" class="tovar-item__cart">В корзину</a>
+								</div>
+							</div>
+
+							<div class="tovar-item">
+								<div class="tovar-item__wrap">
+									<div class="tovar-item__vol">2,0 литра</div>
+									<div class="tovar-item__pict"><img src="img/tovar-1.jpg" alt=""></div>
+									<a href="#" class="tovar-item__name">100510. Автомобильная краска. Алкидная, Синяя Класная, еще больше описания, что купили</a>
+									<div class="tovar-item__count">
+										<input type="number" min="1" value="2">
+									</div>
+									<div class="tovar-item__price">20 000 руб.</div>
+									<a href="#" class="tovar-item__cart">В корзину</a>
+								</div>
+							</div>
+
+							<div class="tovar-item">
+								<div class="tovar-item__wrap">
+									<div class="tovar-item__vol">3,0 литра</div>
+									<div class="tovar-item__pict"><img src="img/tovar-2.jpg" alt=""></div>
+									<a href="#" class="tovar-item__name">100510. Автомобильная краска. Алкидная</a>
+									<div class="tovar-item__count">
+										<input type="number" min="1" value="2">
+									</div>
+									<div class="tovar-item__price">2 000 руб.</div>
+									<a href="#" class="tovar-item__cart">В корзину</a>
+								</div>
+							</div>
+
+							<div class="tovar-item">
+								<div class="tovar-item__wrap">
+									<div class="tovar-item__vol">5,0 литра</div>
+									<div class="tovar-item__pict"><img src="img/tovar-3.jpg" alt=""></div>
+									<a href="#" class="tovar-item__name">100510. Автомобильная краска. Алкидная, Синяя Класная</a>
+									<div class="tovar-item__count">
+										<input type="number" min="1" value="2">
+									</div>
+									<div class="tovar-item__price">200 000 руб.</div>
+									<a href="#" class="tovar-item__cart">В корзину</a>
+								</div>
+							</div>
+
+							<div class="tovar-item">
+								<div class="tovar-item__wrap">
+									<div class="tovar-item__vol">20 литров</div>
+									<div class="tovar-item__pict"><img src="img/tovar-4.jpg" alt=""></div>
+									<a href="#" class="tovar-item__name">100510. Автомобильная краска. Алкидная, Синяя Класная, еще больше описания, что купили</a>
+									<div class="tovar-item__count">
+										<input type="number" min="1" value="2">
+									</div>
+									<div class="tovar-item__price">500 руб.</div>
+									<a href="#" class="tovar-item__cart">В корзину</a>
+								</div>
+							</div>
+
+							<div class="tovar-item">
+								<div class="tovar-item__wrap">
+									<div class="tovar-item__vol">2,0 литра</div>
+									<div class="tovar-item__pict"><img src="img/tovar-1.jpg" alt=""></div>
+									<a href="#" class="tovar-item__name">100510. Автомобильная краска. Алкидная, Синяя Класная, еще больше описания, что купили</a>
+									<div class="tovar-item__count">
+										<input type="number" min="1" value="2">
+									</div>
+									<div class="tovar-item__price">20 000 руб.</div>
+									<a href="#" class="tovar-item__cart">В корзину</a>
+								</div>
+							</div>
+
+							<div class="tovar-item">
+								<div class="tovar-item__wrap">
+									<div class="tovar-item__vol">3,0 литра</div>
+									<div class="tovar-item__pict"><img src="img/tovar-2.jpg" alt=""></div>
+									<a href="#" class="tovar-item__name">100510. Автомобильная краска. Алкидная</a>
+									<div class="tovar-item__count">
+										<input type="number" min="1" value="2">
+									</div>
+									<div class="tovar-item__price">2 000 руб.</div>
+									<a href="#" class="tovar-item__cart">В корзину</a>
+								</div>
+							</div>
+
+							<div class="tovar-item">
+								<div class="tovar-item__wrap">
+									<div class="tovar-item__vol">5,0 литра</div>
+									<div class="tovar-item__pict"><img src="img/tovar-3.jpg" alt=""></div>
+									<a href="#" class="tovar-item__name">100510. Автомобильная краска. Алкидная, Синяя Класная</a>
+									<div class="tovar-item__count">
+										<input type="number" min="1" value="2">
+									</div>
+									<div class="tovar-item__price">200 000 руб.</div>
+									<a href="#" class="tovar-item__cart">В корзину</a>
+								</div>
+							</div>
+
+							<div class="tovar-item">
+								<div class="tovar-item__wrap">
+									<div class="tovar-item__vol">20 литров</div>
+									<div class="tovar-item__pict"><img src="img/tovar-4.jpg" alt=""></div>
+									<a href="#" class="tovar-item__name">100510. Автомобильная краска. Алкидная, Синяя Класная, еще больше описания, что купили</a>
+									<div class="tovar-item__count">
+										<input type="number" min="1" value="2">
+									</div>
+									<div class="tovar-item__price">500 руб.</div>
+									<a href="#" class="tovar-item__cart">В корзину</a>
+								</div>
+							</div>
+
+
+						</div>
+
+						<ul class="pagination">
+							<li><a href="#">&lt;</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li class="active"><a href="#">3</a></li>
+							<li><a href="#">...</a></li>
+							<li><a href="#">15</a></li>
+							<li><a href="#">&gt;</a></li>
+						</ul>
+
+					</section>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	@@include('./template/footer-tmp.html')
+
+</body>
+</html>

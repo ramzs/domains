@@ -1,0 +1,137 @@
+/*----------------Cart page---------------------*/
+.cart-block
+	padding: 28px 0 70px
+
+.tb-cart
+	position: relative
+	display: table
+	width: 100%
+	border-bottom: 1px solid $blue
+	.tb-row
+		display: table-row
+		&:not(:last-child):not(:first-child)
+			.tb-cell
+				border-bottom: 1px solid #ececec
+	.tb-cell
+		position: relative
+		display: table-cell
+		vertical-align: middle
+		&_head
+			padding: 10px 0
+			font-size: 20px
+			font-weight: 500
+			border-bottom: 2px solid $blue
+			&:first-child
+				padding-left: 50px
+		&_body
+			padding: 46px 0
+			font-size: 16px
+			font-weight: 500
+			&:first-child
+				padding-left: 50px
+		&_color
+			width: 17%
+		&_name
+			width: 36%
+			padding-right: 15px
+		&_count
+			width: 17%
+		&_price
+			width: 17%
+		&_total
+			width: 13%
+			.total-title
+				display: none
+
+.cart-color
+	width: 76px
+	height: 67px
+	border-radius: 1px
+
+.count-change
+	position: relative
+	width: 83px
+	margin-left: 17px
+	&__arrow
+		position: absolute
+		top: 50%
+		width: 5px
+		height: 9px
+		margin-top: -5px
+		font-size: 0
+		&_left
+			left: -15px
+			background: url(../img/arrow-left.png) center no-repeat
+		&_right
+			right: -15px
+			background: url(../img/arrow-right.png) center no-repeat
+	&__in
+		width: 100%
+		height: 43px
+		font-size: 16px
+		text-align: center
+		outline: none
+		border: 1px solid #ededed
+		border-radius: 5px
+		background: #fff
+
+.del-link
+	position: absolute
+	display: block
+	top: 105px
+	left: 0
+	padding-left: 18px
+	font-size: 12px
+	font-weight: 300
+	color: #303030
+	&:before
+		content: ''
+		position: absolute
+		top: 5px
+		left: 0
+		width: 10px
+		height: 10px
+		background: url(../img/del.png) center no-repeat
+
+.cart-total
+	float: right
+	margin-top: 60px
+	text-align: left
+	&__vin
+		display: block
+		width: 210px
+		height: 60px
+		margin-bottom: 40px
+		padding-left: 25px
+		font-size: 14px
+		font-weight: 500
+		color: #0c0c0c
+		outline: none
+		border: 1px solid #ededed
+		background: #fefefe
+		&::-webkit-input-placeholder
+			color: #0c0c0c
+			font-weight: 500
+		&:-moz-placeholder
+			color: #0c0c0c
+			font-weight: 500
+		&::-moz-placeholder
+			color: #0c0c0c
+			font-weight: 500
+		&:-ms-input-placeholder
+			color: #0c0c0c
+			font-weight: 500
+	&__sale
+		margin-bottom: 25px
+		font-size: 24px
+		font-weight: 700
+		color: #303030
+		span
+			color: $blue
+	&__price
+		font-size: 24px
+		font-weight: 700
+		color: #303030
+		span
+			color: $blue
+/*------------------end------------------------*/

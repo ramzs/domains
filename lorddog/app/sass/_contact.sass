@@ -1,0 +1,127 @@
+/*------------Contact page-------------*/
+.page-top
+	margin-top: -45px
+	padding: 49px 0 60px
+	overflow: hidden
+	border-radius: 45px 45px 0 0
+	background: #f0f0f6
+	&_size
+		padding-bottom: 173px
+	&_color2
+		background: #f8f8f9
+
+.breadcrumb
+	padding: 0
+	margin: 0
+	border-radius: 0
+	background: none
+	text-align: center
+	&-list
+		display: inline-block
+		li
+			position: relative
+			display: inline-block
+			margin-right: 3px
+			font-size: 13px
+			&:last-child
+				margin-right: 0
+			&:not(:last-child):after
+				content: '/'
+				position: absolute
+				top: 7px
+				right: -6px
+				font-size: 13px
+				color: $main-color
+			a
+				display: block
+				font-size: 13px
+				line-height: 28px
+				color: $main-color
+				&:hover
+					text-decoration: underline
+
+.page-title
+	font: 60px/56px "yesevaone"
+	text-align: center
+
+.map-wrap
+	position: relative
+
+.map
+	height: 425px
+	iframe
+		width: 100%
+		height: 100%
+
+.loc-wrap
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+
+.loc-block
+	width: 350px
+	height: 309px
+	margin-top: 60px
+	padding: 65px 42px 45px
+	opacity: 0.9
+	background: #1d1d1d
+	&__title
+		margin-bottom: 20px
+		font-size: 24px
+		font-weight: 700
+		color: #fff
+	&__descr
+		font: 14px/25px $sec-font
+		color: #d3d3d3
+
+.contact
+	padding: 60px 0 90px
+	&-item
+		margin-bottom: 35px
+		&__title
+			margin-bottom: 12px
+			font-size: 24px
+			font-weight: 700
+		&__descr
+			font: 15px $sec-font
+			line-height: 25px
+	&-form
+		&__title
+			margin-bottom: 20px
+			font-size: 24px
+			font-weight: 700
+		label
+			display: block
+			margin-bottom: 18px
+			font-size: 15px
+			font-weight: 700
+			line-height: 25px
+			text-transform: uppercase
+		input
+			display: block
+			max-width: 288px
+			width: 100%
+			height: 49px
+			margin-top: 9px
+			padding-left: 12px
+			outline: none
+			border: 2px solid #ebeaea
+			background: #f5f5f5
+		textarea
+			display: block
+			max-width: 537px
+			width: 100%
+			height: 132px
+			margin-top: 9px
+			padding: 10px 0 0 12px
+			outline: none
+			border: 2px solid #ebeaea
+			background: #f5f5f5
+
+	.btn_contact
+		width: 186px
+		height: 45px
+		margin-top: 21px
+		line-height: 36px
+/*-----------end contact page----------*/

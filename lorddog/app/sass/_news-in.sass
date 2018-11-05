@@ -1,0 +1,40 @@
+/*------------------News-in page-----------------*/
+.news-article
+	margin-top: -170px
+	&__pict
+		position: relative
+		height: 350px
+		margin-bottom: 0
+		overflow: hidden
+		border-radius: 14px
+		img
+			position: absolute
+			display: block
+			width: 100%
+			top: 50%
+			left: 0
+			transform: translate(0,-50%)
+	&__text
+		margin: 53px 0 65px
+		text-align: center
+		font-size: 18px
+		line-height: 28px
+
+.link-back
+	display: inline-block
+	width: 325px
+	height: 45px
+	font-size: 16px
+	line-height: 42px
+	text-align: center
+	border: 1px solid $accent
+	border-radius: 3px
+	i
+		position: relative
+		display: inline-block
+		top: 2px
+		margin-right: 14px
+		@include sprite($arrow-left3)
+	&:hover
+		background: $accent
+/*-----------------------end----------------------*/

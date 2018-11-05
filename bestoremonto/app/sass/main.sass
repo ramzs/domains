@@ -1,0 +1,1316 @@
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "sprite"
+
+.header__top
+	padding: 29px 0 0
+
+.logo
+	position: relative
+	float: left
+	width: 210px
+	top: -2px
+	margin-right: 65px
+	img
+		width: 100%
+
+.header__contact
+	padding-left: 42px
+	overflow: hidden
+	border-bottom: 2px solid $color-8
+
+.header__address
+	display: inline-block
+	padding: 13px 0 20px 68px
+	font-size: 15px
+	font-weight: 300
+	color: $color-1
+	border-left: 2px solid $color-9
+
+.header__callback
+	display: inline-block
+	margin-left: 190px
+	padding: 13px 69px 19px 0
+	border-right: 2px solid $color-9
+	.callback__link
+		display: inline-block
+		font-size: 15px
+		font-weight: 300
+		color: $color-1
+		border-bottom: 1px dashed $color-1
+		&:hover
+			border-bottom: none
+
+.header__phone
+	float: right
+	.phone__link
+		display: inline-block
+		font-size: 28px
+		font-weight: 300
+		color: $color-1
+
+.menu__mob
+	display: none
+	position: absolute
+	top: 135px
+	right: 0
+	width: 400px
+	z-index: 999
+	background: $color-2
+	&:before
+		content: ' '
+		position: absolute
+		top: -44px
+		right: 60px
+		border: 20px solid transparent
+		border-bottom: 25px solid #00b0cc
+
+.mob__list
+		.list__item
+			display: block
+			padding: 15px 0
+			text-align: center
+			border-bottom: 2px solid #fff
+			a
+				display: block
+				font-size: 27px
+				font-weight: 500
+				color: #fff
+				text-transform: uppercase
+				transition: all .15s ease
+				&:hover
+					color: $main-color
+				i
+					display: inline-block
+					position: relative
+					left: 20px
+					@include sprite($arrow-menu-mob)
+					transition: all .15s ease
+				&.active
+					padding-bottom: 15px
+					color: $main-color
+					border-bottom: 2px solid #fff
+					i
+						transform: rotate(180deg)
+		&.mob__list-dropmenu
+			display: none
+			.list__item
+				border-bottom: none
+
+.header__nav
+	padding: 7px 0 14px 243px
+	clear: both
+
+.header__list
+	&.header__list-dropmenu
+		display: none
+		position: absolute
+		top: 100%
+		left: 0
+		padding: 15px 0 35px
+		z-index: 9
+		background: #fff
+		.list__item
+			float: none
+			display: block
+			margin-left: 32px
+			padding: 0 38px 30px 63px
+			border-left: 2px solid #e5e5e5
+			a
+				color: #a596e3
+			&:first-child
+				padding-top: 20px
+				&:before
+					top: 39px
+			&:last-child
+				padding-bottom: 0
+			a
+				position: relative
+				bottom: -9px
+			&:before
+				content: ' '
+				position: absolute
+				width: 45px
+				height: 2px
+				top: 19px
+				left: 0
+				background: #e5e5e5
+	.list__item
+		float: left
+		position: relative
+		padding: 0 32px
+		a
+			display: block
+			font-size: 15px
+			font-weight: 500
+			color: $main-color
+			text-transform: uppercase
+			transition: all .15s ease
+			&:hover
+				color: $color-2
+		&.list__item-drop
+			> a
+				i
+					display: inline-block
+					margin-left: 10px
+					@include sprite($arrow-down)
+			&:hover
+				> a
+					color: $color-2
+					i
+						@include sprite($arrow-up-blue)
+				.header__list
+					&.header__list-dropmenu
+						display: block
+
+.header__price
+	float: right
+	a
+		display: inline-block
+		font: 200 15px "helvetica"
+		color: $color-3
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+.header__icons
+	display: none
+	background: $color-3
+	border-bottom: 3px solid $color-9
+	.icon__item
+		position: relative
+		float: left
+		width: 16.6666%
+		width: calc(100%/6)
+		height: 131px
+		text-align: center
+		border-right: 3px solid $color-9
+		&:last-child
+			border-right: none
+		a
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
+			font-size: 0
+		&.icon__item-1
+			a
+				width: 60px
+				height: 56px
+				background: url(../img/home-icon.png) 0 0 no-repeat
+		&.icon__item-2
+			a
+				width: 71px
+				height: 56px
+				background: url(../img/map-icon.png) 0 0 no-repeat
+		&.icon__item-3
+			a
+				width: 71px
+				height: 56px
+				background: url(../img/mail-icon.png) 0 0 no-repeat
+		&.icon__item-4
+			a
+				width: 71px
+				height: 56px
+				left: 15px
+				background: url(../img/phone-icon.png) 0 0 no-repeat
+		&.icon__item-5
+			a
+				width: 71px
+				height: 56px
+				left: 15px
+				background: url(../img/event-icon.png) 0 0 no-repeat
+		&.icon__item-6
+			.btn__menu
+				width: 73px
+				height: 50px
+				b
+					display: block
+					width: 73px
+					height: 9px
+					margin-bottom: 12px
+					background: #000
+
+.header__main
+	display: none
+	position: relative
+	height: 131px
+	padding: 12px 30px
+	.price__icon
+		float: left
+		padding: 32px 0
+		a
+			display: block
+			width: 41px
+			height: 48px
+			font-size: 0
+			background: url(../img/download-icon.png) 0 0 no-repeat
+	.logo__mob
+		position: absolute
+		width: 390px
+		left: 0
+		right: 0
+		margin: 0 auto
+		img
+			width: 100%
+	.callback__icon
+		float: right
+		padding: 32px 0
+		a
+			display: block
+			width: 67px
+			height: 48px
+			font-size: 0
+			outline: none
+			background: url(../img/rol-icon.png) 0 0 no-repeat
+
+.header__banner
+	position: relative
+	padding: 90px 0 110px
+	background: url(../img/main-banner.jpg) center top no-repeat
+
+.banner__caption
+	position: relative
+	float: left
+	width: 40%
+	margin-left: 90px
+	z-index: 7
+
+.banner__title
+	display: block
+	margin: 0
+	font: 700 83px/92px "helvetica"
+	text-transform: uppercase
+
+.banner__text
+	margin: 22px 0 65px
+	font-size: 26px
+
+.more__link
+	display: block
+	width: 284px
+	height: 67px
+	font: 500 23px "helvetica"
+	color: $main-color
+	line-height: 60px
+	text-align: center
+	text-transform: uppercase
+	border: 5px solid $color-2
+	transition: all .15s ease
+	&:hover
+		color: #fff
+		background: $color-2
+
+.callback__form
+	float: left
+	max-width: 479px
+	width: 100%
+	height: 394px
+	margin-left: 190px
+	padding-top: 30px
+	text-align: center
+	background: rgba(0,0,0, .4)
+	.form__title
+		display: block
+		margin-bottom: 35px
+		padding-left: 63px
+		font: 500 29px "helvetica"
+		color: #fff
+		text-align: left
+		text-transform: uppercase
+	form
+		max-width: 350px
+		margin: 0 auto
+		input
+			display: block
+			width: 100%
+			height: 57px
+			margin-bottom: 15px
+			padding-left: 20px
+			color: #fff
+			background-color: transparent
+			border: 2px solid #fff
+	.form__thank
+		display: block
+		margin-top: 32px
+		font-size: 15px
+		color: #fff
+		opacity: .6
+
+.form__btn
+	display: block
+	width: 100%
+	height: 57px
+	margin-top: 42px
+	font: 500 21px "helvetica"
+	color: #fff
+	cursor: pointer
+	border: none
+	background: $color-3
+
+.section__main
+	padding-bottom: 20px
+	overflow: hidden
+	.container
+		position: relative
+
+.sidebar
+	float: left
+	position: relative
+	width: 21.33%
+	margin: 0 30px 0 32px
+	padding-top: 18px
+	z-index: 5
+	background: #fff
+	&:after
+		content: ' '
+		position: absolute
+		top: 0
+		left: -32px
+		width: 83px
+		height: 85px
+		background: url(../img/triangle-header.png) 0 0 no-repeat
+
+.sidebar__title
+	display: block
+	font: 500 23px "helvetica"
+
+.sidebar__menu
+	position: relative
+	padding: 43px 20px 22px 62px
+	&:after
+		content: ' '
+		position: absolute
+		bottom: 0
+		left: 62px
+		width: 56px
+		height: 2px
+		background: #e6e6e6
+	&.sidebar__menu-2
+		margin-top: 5px
+		padding-bottom: 80px
+		&:after
+			display: none
+	&.sidebar__menu-3
+		margin-top: 5px
+		background: #f5f5f5
+		border-radius: 0 80px 80px 80px
+		&:after
+			display: none
+		&:before
+			content: ' '
+			position: absolute
+			top: -82px
+			left: 0
+			width: 85px
+			height: 83px
+			background: url(../img/triangle-sidebar.png) 0 0 no-repeat
+
+.sidebar__list
+	margin-top: 43px
+	.list__item
+		margin-bottom: 30px
+		a
+			display: block
+			font: 19px "helvetica"
+			color: #000
+			transition: all .15s ease
+			&:hover
+				color: $color-2
+	&.sidebar__list-3
+		.list__item
+			a
+				font-size: 18px
+				font-weight: 200
+				color: $color-2
+				&:hover
+					color: #000
+
+.content
+	float: left
+	position: relative
+	width: 74.1%
+
+.content__work
+	position: relative
+
+.section__title
+	display: table
+	width: 100%
+	position: relative
+	padding: 80px 0 25px
+	vertical-align: middle
+	h2
+		display: table-cell
+		margin: 0
+		font: 200 40px "helvetica"
+		white-space: nowrap
+		text-transform: uppercase
+	span
+		display: table-cell
+		position: relative
+		font-size: 20px
+		color: $color-1
+		text-align: right
+		vertical-align: bottom
+	&.section__title-work
+		padding-left: 38px
+		border-left: 2px solid #e6e6e6
+		&:after
+			content: ' '
+			display: block
+			position: absolute
+			bottom: -56px
+			left: 0
+			width: 100%
+			height: 58px
+			background: url(../img/title-line-1.png) 0 0 no-repeat
+			background-size: 100%
+		span
+			&:after
+				content: ' '
+				position: absolute
+				width: 2px
+				height: 56px
+				top: -80px
+				right: 0
+				background: #e6e6e6
+
+.block__slider
+	position: absolute
+	width: 165%
+	margin-top: 100px
+	right: 0
+	left: 0
+	z-index: 9
+
+.slider__work-mob
+	display: none !important
+
+.slider__item
+	margin-right: 25px
+	border: 5px solid #fff
+	img
+		width: 100%
+
+.slick-dots
+	margin-top: 20px
+	li
+		float: left
+		width: 10px
+		height: 10px
+		margin-right: 10px
+		border-radius: 50%
+		cursor: pointer
+		background: $color-5
+		&.slick-active
+			background: #fff
+		button
+			font-size: 0
+			background: none
+			border: none
+
+.block__like
+	position: relative
+	width: 100%
+	height: 440px
+	margin-top: 240px
+	left: 0
+	padding: 243px 0 0 42px
+	background: $color-3
+	&:before
+		content: ' '
+		display: block
+		position: absolute
+		top: 0
+		left: -34.9%
+		width: 3000px
+		height: 440px
+		z-index: 1
+		border-radius: 50px 0 0 50px
+		background: $color-3
+	&:after
+		content: ' '
+		position: absolute
+		bottom: 0
+		left: 45px
+		right: 0
+		width: 376px
+		height: 367px
+		margin: 0 auto
+		z-index: 10
+		background: url(../img/hand.png) 0 0 no-repeat
+
+.like__title
+	position: relative
+	display: inline-block
+	font: 800 45px "helvetica"
+	color: #fff
+	z-index: 2
+	text-transform: uppercase
+
+.more__link
+	&.more__link-like
+		position: relative
+		display: inline-block
+		margin-left: 315px
+		color: #fff
+		border: 5px solid $color-5
+		z-index: 11
+		&:hover
+			color: $main-color
+			background: $color-5
+
+.content__about
+	margin-left: 40px
+	padding-top: 45px
+
+.section__adv
+	padding-bottom: 102px
+
+.section__title
+	&.section__title-about
+		padding: 80px 0 0
+		border-bottom: 2px solid #e5e5e5
+		h2
+			position: relative
+			bottom: -3px
+			padding-bottom: 25px
+			color: $color-2
+			border-bottom: 4px solid $color-2
+		span
+			padding-bottom: 25px
+
+.about__block
+	margin-top: 83px
+
+.section__title
+	&.section__title-adv
+		margin-bottom: 100px
+		.mob__title
+			display: none
+		&:after
+			content: ' '
+			display: block
+			position: absolute
+			bottom: -56px
+			left: 0
+			width: 100%
+			height: 58px
+			background: url(../img/title-line-2.png) 0 0 no-repeat
+			background-size: 100%
+
+.adv__item
+	position: relative
+	float: left
+	width: 17%
+	margin-right: 105px
+	text-align: left
+	&:last-child
+		margin-right: 0
+	.item__title
+		display: block
+		position: relative
+		margin-bottom: 22px
+		padding-top: 23px
+		font: 600 23px/36px "helvetica"
+		text-transform: uppercase
+		i
+			position: absolute
+			top: 0
+			right: 17px
+			width: 69px
+			height: 69px
+	.item__text
+		font-size: 18px
+		color: $color-1
+		font-weight: 300
+	&.adv__item-1
+		margin-left: 65px
+		.item__title
+			i
+				background: url(../img/home-icon-1.png) right top no-repeat
+	&.adv__item-2
+		.item__title
+			i
+				background: url(../img/home-icon-2.png) right top no-repeat
+	&.adv__item-3
+		.item__title
+			i
+				background: url(../img/home-icon-3.png) right top no-repeat
+	&.adv__item-4
+		.item__title
+			i
+				background: url(../img/home-icon-4.png) right top no-repeat
+
+.section__price
+	position: relative
+	padding: 9px 0 54px
+	background: $color-11
+	&:after
+		content: ' '
+		display: block
+		position: absolute
+		bottom: -36px
+		left: 0
+		right: 0
+		width: 71px
+		height: 36px
+		margin: 0 auto
+		background: url(../img/price-triangle.png) 0 0 no-repeat
+
+.section__title
+	&.section__title-price
+		&:after
+			content: ' '
+			display: block
+			position: absolute
+			bottom: -56px
+			left: 0
+			width: 100%
+			height: 58px
+			background: url(../img/title-line-3.png) 0 0 no-repeat
+			background-size: 100%
+		span
+			color: #fff
+
+.price__form
+	margin-top: 70px
+
+.price__item
+	float: left
+	margin-right: 128px
+	&.price__item-1
+		margin-left: 65px
+	.item__title
+		display: block
+		margin-bottom: 11px
+		font-size: 20px
+	fieldset
+		margin: 0
+		padding: 0 85px 0 0
+		border: none
+		label
+			display: block
+			position: relative
+			span
+				display: inline-block
+				font-size: 26px
+				color: #fff
+			.jq-checkbox
+				float: right
+				top: 11px
+				width: 18px
+				height: 18px
+				margin: 0
+				background: transparent
+				border: 1px solid #fff
+				border-radius: 0
+				box-shadow: none
+				&.checked
+					.jq-checkbox__div
+						margin: 3px 0 0 2px
+						border-radius: 0
+						background: none
+						@include sprite($check-arrow)
+						box-shadow: none
+				&.focused
+					border: 1px solid #fff
+
+.price__item
+	&.price__item-2
+		margin-right: 90px
+		text-align: center
+		.item__title
+			margin-bottom: 33px
+
+.slider__range
+	display: inline-block
+	position: relative
+	width: 412px
+	&:before
+		content: ' '
+		position: absolute
+		top: -30px
+		left: 4px
+		width: 100%
+		height: 23px
+		background: url(../img/range-line.png) 0 0 no-repeat
+		background-size: 100%
+
+.slider__total
+	input
+		display: inline-block
+		width: 64px
+		height: 34px
+		margin-left: 20px
+		font-size: 26px
+		text-align: center
+		background: #f0f0f0
+		border: none
+		box-shadow: inset 0 2px 2px rgba(176, 176, 176, 0.75)
+	i
+		position: relative
+		display: inline-block
+		top: 12px
+		left: 12px
+		width: 45px
+		height: 30px
+		background: url(../img/m2.png) 0 0 no-repeat
+		background-size: 65%
+
+/* Контейнер слайдера*/
+.ui-slider
+	position: relative
+	.ui-slider-handle
+		position: absolute
+		z-index: 2
+		width: 18px /* Задаем нужную ширину*/
+		height: 18px  /* и высоту*/
+		border-radius: 50%
+		background: #f0f0f0 /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления*/
+		box-shadow: 0 2px 2.9px 0.2px rgba(77, 77, 77, 0.75)
+		cursor: pointer
+		outline: none
+
+/* Ползунок*/
+
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок)*/
+.ui-slider-horizontal
+	height: 8px/* задаем высоту согласно дизайна*/
+	.ui-slider-handle /* позиционируем ползунки*/
+		top: -5px
+		margin-left: -6px
+
+/* оформление полосы по которой ходит ползунок*/
+.ui-widget-content
+	background: #f0f0f0
+	box-shadow: inset 0 2px 2px rgba(176, 176, 176, 0.75)
+
+/* скругление для полосы слайдера*/
+.ui-corner-all
+	-moz-border-radius: 4px
+	-webkit-border-radius: 4px
+	border-radius: 4px
+/*------------end----------------*/
+
+.price__item
+	&.price__item-3
+		margin-right: 0
+		text-align: right
+		.item__title
+			margin-bottom: 37px
+
+.price__total
+	display: inline-block
+	position: relative
+	input
+		display: inline-block
+		width: 127px
+		height: 34px
+		font-size: 26px
+		text-align: center
+		border: none
+		background-color: #f0f0f0
+		box-shadow: inset 0 2px 2px rgba(176, 176, 176, 0.75)
+	i
+		position: absolute
+		display: block
+		top: 5px
+		right: -55px
+		width: 40px
+		height: 42px
+		background: url(../img/rub.png) 0 0 no-repeat
+		background-size: 60%
+
+.form__btn
+	&.form__btn-range
+		position: relative
+		top: -23px
+		width: 323px
+		margin: 0 auto
+		line-height: 57px
+		text-align: center
+		clear: both
+		text-transform: uppercase
+		background: $color-6
+
+.section__news
+	position: relative
+	padding: 41px 0 130px
+	&:after
+		content: ' '
+		display: block
+		position: absolute
+		bottom: -36px
+		left: 0
+		right: 0
+		width: 71px
+		height: 36px
+		margin: 0 auto
+		background: url(../img/news-triangle.png) 0 0 no-repeat
+
+.section__title
+	&.section__title-news
+		text-align: center
+		h2
+			display: inline-block
+			padding-bottom: 28px
+			color: $color-6
+			border-bottom: 4px solid $color-11
+
+.slider__news-mob
+	display: none !important
+
+.slider__news
+	.slick-arrow
+		position: absolute
+		top: 50%
+		margin-top: -56px
+		font-size: 0
+		background: none
+		border: none
+		outline: none
+		cursor: pointer
+		opacity: .5
+		transition: all .15s ease
+		&:hover
+			opacity: 1
+		&.slick-prev
+			left: -56px
+			@include sprite($prev-arrow)
+		&.slick-next
+			right: -56px
+			@include sprite($next-arrow)
+
+.news__item
+	min-width: 412px
+	min-height: 631px
+	margin: 0 20px
+	padding: 27px
+	border: 2px solid #ccc
+	border-radius: 107px 0
+	overflow: hidden
+	outline: none
+	.item__img
+		height: 223px
+		border-radius: 107px 0
+		overflow: hidden
+	.item__descr
+		position: relative
+		margin: 30px 0 35px
+		height: 242px
+		overflow: hidden
+		font: 500 16px/28px "helvetica"
+		.item__title
+			display: block
+			margin-bottom: 32px
+			font: 500 19px "helvetica"
+			text-transform: uppercase
+		&:after
+			content: ' '
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			height: 50px
+			box-shadow: inset 0 -60px 60px -20px rgba(255,255,255, .9)
+	.item__btn
+		display: inline-block
+		width: 158px
+		height: 44px
+		font: 500 16px "helvetica"
+		color: $main-color
+		line-height: 42px
+		text-transform: uppercase
+		text-align: center
+		vertical-align: middle
+		border: 1px solid $color-3
+		border-radius: 20px 0px
+		transition: all .15s ease
+		&:hover
+			color: #fff
+			background: $color-3
+	.item__data
+		display: inline-block
+		margin-left: 75px
+		vertical-align: middle
+		font: 500 16px "helvetica"
+		color: $color-6
+
+.section__feedback
+	padding: 38px 0 25px
+	background: #f1f3f2
+
+.section__title
+	&.section__title-feedback
+		margin-bottom: 58px
+		text-align: center
+		h2
+			position: relative
+			padding-bottom: 30px
+			&.mob__title
+				display: none
+			&:after
+				content: ' '
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+				width: 221px
+				height: 4px
+				margin: 0 auto
+				background: $color-9
+
+.feedback__col
+	float: left
+	width: 33.33%
+	&:not(:last-child)
+		border-right: 2px solid $color-9
+	.feedback__item
+		&:first-child
+			border-bottom: 2px solid $color-9
+		&:last-child
+			margin-bottom: 0
+			padding-bottom: 0
+	&.feedback__col-1
+		text-align: left
+	&.feedback__col-2
+		text-align: center
+		.feedback__item
+			padding: 0 0 80px
+			&:last-child
+				padding-bottom: 0
+		.feedback__pict
+			margin-bottom: 42px
+			border-radius: 60px 60px 60px 0
+		.feedback__descr
+			margin-bottom: 0
+	&.feedback__col-3
+		text-align: right
+
+.feedback__item
+	position: relative
+	margin-bottom: 80px
+	padding-bottom: 80px
+	.item__wrap
+		display: inline-block
+		width: 352px
+		max-width: 100%
+		text-align: left
+
+.feedback__name
+	display: inline-block
+	margin-top: 0
+	font: 500 19px "helvetica"
+
+.feedback__data
+	float: right
+	margin-top: 4px
+	font: 500 16px "helvetica"
+	color: $color-2
+	&.feedback__data-mob
+		display: none
+
+.feedback__descr
+	margin-bottom: 40px
+	font: 500 16px/28px "helvetica"
+	color: $color-1
+	p
+		margin-bottom: 4px
+
+.feedback__pict
+	max-width: 352px
+	height: 223px
+	overflow: hidden
+	border-radius: 0 60px 60px 60px
+	img
+		width: 100%
+
+.section__seo
+	margin-bottom: -395px
+	background: #f1f3f2
+
+.section__title
+	&.section__title-seo
+		text-align: center
+		h2
+			position: relative
+			padding-bottom: 30px
+			color: $color-2
+			&:after
+				content: ' '
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+				width: 124px
+				height: 4px
+				margin: 0 auto
+				background: $color-2
+
+.block__seo
+	position: relative
+	margin-top: 30px
+	padding: 55px 65px
+	font: 200 16px/28px "helvetica"
+	border-radius: 0 60px 60px 60px
+	background: $color-9
+	&.block__seo-mob
+		display: none
+
+footer
+	padding-top: 455px
+	clear: both
+	background: $main-color
+
+.footer__block
+	float: left
+	width: 395px
+	height: 450px
+
+.footer__menu
+	position: relative
+	margin-top: 24px
+	padding: 25px 0 60px 65px
+	border-left: 2px solid rgba(25,24,40, .5)
+	&:before
+		content: ' '
+		position: absolute
+		width: 590px
+		height: 2px
+		top: 0
+		left: 0
+		background: rgba(25,24,40, .5)
+
+.header__list
+	&.header__list-footer
+		.list__item
+			float: none
+			display: table
+			margin-bottom: 30px
+			padding: 0 50px 0 0
+			&:last-child
+				margin-bottom: 0
+			a
+				display: inline-block
+				color: #fff
+				&:hover
+					color: $color-2
+			&.list__item-drop
+				> a
+					i
+						@include sprite($arrow-down-white)
+				&:hover
+					> a
+						i
+							transform: rotate(180deg)
+		&.header__list-dropmenu
+			padding: 15px 0 0
+			top: 0
+			left: auto
+			right: -135px
+			.list__item
+				margin-bottom: 15px
+				padding: 0 32px 0 0
+				border-left: none
+				&:before
+					display: none
+				a
+					bottom: 0
+					color: $main-color
+					&:hover
+						color: $color-2
+
+.footer__block-contact
+	padding: 35px
+	border-top: 2px solid rgba(25,24,40, .5)
+	border-left: 2px solid rgba(25,24,40, .5)
+	.block__title
+		display: block
+		font: 500 29px "helvetica"
+		color: $color-2
+		text-transform: uppercase
+
+.contact__list
+	margin-top: 54px
+	li
+		margin-bottom: 28px
+		font: 500 16px "helvetica"
+		color: $color-1
+		span
+			display: block
+			margin-bottom: 23px
+			font: 300 16px "helvetica"
+			color: #fff
+			text-transform: uppercase
+
+.callback__form
+	&.callback__form-footer
+		position: relative
+		margin-left: 0
+		background: rgba(0, 0, 0, 0.2)
+		&:after
+			content: ' '
+			position: absolute
+			bottom: -60px
+			right: -64px
+			width: 64px
+			height: 367px
+			background: url(../img/footer-line.png) 0 0 no-repeat
+		.form__btn
+			margin-top: 15px
+			font-weight: normal
+			background: $color-7
+		.form__thank
+			padding: 0 60px
+			font-weight: 200
+			text-align: left
+	&.callback__form-popup
+		position: relative
+		display: block
+		float: none
+		max-width: 479px
+		margin: 0 auto
+		background: rgba(43,39,59, .9)
+		.mfp-close
+			top: 15px
+			right: 55px
+			font: 500 55px "helvetica"
+			color: #fff
+		.form__title
+			padding-left: 63px
+			font-size: 29px
+			text-align: left
+		form
+			max-width: 350px
+		.form__btn
+			margin-top: 15px
+			font-weight: normal
+			background: $color-7
+		.form__thank
+			padding: 0 60px
+			font-weight: 200
+			text-align: left
+
+.footer__bottom
+	padding: 38px 0 25px
+	background: $color-12
+	clear: both
+
+.copyright
+	display: inline-block
+	font: 200 13px "helvetica"
+	color: #fff
+
+.developer
+	float: right
+	margin-right: 65px
+
+.callback__form
+	&.callback__form-order
+		display: block
+		position: relative
+		float: none
+		max-width: 479px
+		height: auto
+		margin: 0 auto
+		padding-bottom: 35px
+		background: rgba(43,39,59, .9)
+		.mfp-close
+			top: -5px
+			right: 2px
+			font: 500 50px "helvetica"
+			color: #fff
+		.form__title
+			margin-bottom: 28px
+			padding-left: 63px
+			font-size: 27px
+			line-height: 42px
+			text-align: left
+		form
+			max-width: 350px
+			text-align: right
+		.jq-selectbox
+			width: 175px
+			background: #cccad9
+			border-radius: 5px
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.75)
+			&.focused
+				.jq-selectbox__select
+					border: 1px solid transparent
+		.jq-selectbox__select
+			height: 35px
+			padding-left: 12px
+			font: 500 16px/32px "helvetica"
+			text-align: left
+		.jq-selectbox__trigger
+			border-left: none
+		.jq-selectbox__trigger-arrow
+			top: 12px
+			right: 17px
+			border-top: 10px solid #000
+		.jq-selectbox__dropdown
+			margin-top: 35px
+			text-align: left
+			font: 500 16px/18px "helvetica"
+		label
+			display: block
+			margin-top: 30px
+			span
+				display: inline-block
+				margin-right: 15px
+				font: 500 16px "helvetica"
+				color: #fff
+		.form__btn
+			margin-top: 34px
+			background: $color-2
+
+/*------------Плавное появление magnific popup------------*/
+.mfp-fade
+	&.mfp-bg
+	    opacity: 0
+	    background: #000
+	    transition: all .3s
+
+.mfp-fade
+	&.mfp-bg
+		&.mfp-ready
+			opacity: .9
+
+.mfp-fade
+	&.mfp-bg
+		&.mfp-removing
+			opacity: 0
+
+.mfp-fade
+	&.mfp-wrap
+		.mfp-content
+		    opacity: 0
+		    transition: all .3s
+
+.mfp-fade
+	&.mfp-wrap
+		&.mfp-ready
+			.mfp-content
+				opacity: 1
+
+.mfp-fade
+	&.mfp-wrap
+		&.mfp-removing
+			.mfp-content
+				opacity: 0
+/*----------------end-------------------*/
+
+@import "project.sass"
+@import "about.sass"
+@import "partner.sass"
+@import "work.sass"
+@import "contact.sass"
+@import "loft.sass"
+@import "mini.sass"
+@import "hitec.sass"
+@import "eco.sass"

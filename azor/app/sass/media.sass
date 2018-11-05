@@ -1,0 +1,1095 @@
+@import "bourbon"
+@import "grid"
+@import "vars"
+@import "sprite"
+
+@media only screen and (max-width : 1372px)
+	.header-title
+		padding: 5px 75px 0
+
+	.header-contact
+		padding: 15px 10px 0
+
+	.block-top__title
+		padding-right: 10px
+		font-size: 18px
+		&--2
+			&:before
+				top: 12px
+
+	.block-main
+		padding: 12px 10px 0 15px
+
+	.slider-block
+		height: 498px
+
+	.slider-home
+		.slider-item
+			height: 448px
+			img
+				width: auto
+				height: 100%
+
+	.slider-nav
+		padding: 0 5px
+		&__item
+			padding-top: 12px
+			span
+				font-size: 15px
+
+	/*-----------Event page-----------------*/
+	.ev-item
+		padding-right: 150px
+	/*---------------end--------------------*/
+
+	/*-----------Tovar page------------------*/
+	.sidebar--inner
+		padding-left: 0
+
+	.main--inner
+		padding-left: 15px
+
+	.tovar-carousel
+		margin: 27px 25px 34px
+	/*--------------end----------------------*/
+
+	/*-------------News page-----------------*/
+	.news-item
+		width: 50%
+	/*----------------end-------------------*/
+
+	/*-------------Feedback page-----------------*/
+	.feedback-item
+		padding-right: 30px
+	/*------------------end-----------------------*/
+
+	/*-------------News-in page-----------------*/
+	.news-item--in
+		width: 100%
+	/*----------------end------------------------*/
+
+	/*--------------Info page-------------------*/
+	.info-wrap
+		padding-left: 0
+
+	.info-adv
+		width: 66.8%
+	/*-----------------end----------------------*/
+
+@media only screen and (max-width : 1200px)
+	.header
+		padding-top: 0
+		.container
+			width: 100%
+			padding: 0
+
+	.container
+		padding: 0 22px
+
+	.menu-btn
+		display: block
+
+	.bl
+		border: none
+		border-radius: 0
+		box-shadow: none
+
+	.logo
+		float: none
+		width: 100%
+		margin: 0
+		&-pict
+			display: inline-block
+			width: auto
+			height: auto
+			padding-top: 61px
+		img
+			position: relative
+			top: auto
+			left: auto
+			width: 254px
+			height: auto
+			transform: none
+
+	.header-title
+		width: 100%
+		height: auto
+		margin: 0
+		padding: 60px 75px 65px
+		border-radius: 5px
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.11)
+		background: #daf4fd
+		&__top
+			margin-bottom: 34px
+			font-size: 30px
+		&__main
+			font-size: 70px
+			span
+				margin-top: 27px
+				font-size: 30px
+
+	.header-contact
+		display: none
+
+	.nav
+		display: none
+		margin: 12px
+		padding: 62px 0 81px
+		z-index: 998
+		transition: left .35s ease-out
+		&-list
+			width: 100%
+			li
+				display: block
+				float: none
+				a
+					padding: 33px 22px
+					font-size: 50px
+
+	.content
+		padding: 45px 0 18px
+
+	.main
+		display: block
+		width: 100%
+		margin-bottom: 26px
+		&-title
+			margin-bottom: 25px
+			font-size: 30px
+			text-align: center
+
+	.slider-block
+		height: auto
+
+	.slider-home
+		.slider-item
+			height: auto
+			img
+				height: auto
+				width: 100%
+		.slick-arrow
+			width: 89px
+			height: 94px
+			margin-top: -47px
+			&.slick-prev
+				span
+					@include sprite($arrow-left-mob)
+			&.slick-next
+				span
+					@include sprite($arrow-right-mob)
+
+	.slider-caption
+		&__text
+			bottom: 20px
+			left: 0
+			right: 0
+			font-size: 50px
+			text-align: center
+
+	.slider-nav
+		display: none !important
+
+	.sidebar
+		width: 100%
+		&--left
+			float: none
+		&--right
+			float: none
+
+	.block
+		height: auto
+		margin-bottom: 22px
+		border-radius: 15px 15px 5px 5px
+		&--last
+			margin-bottom: 0
+		&-1
+			margin-bottom: 22px
+		&-top
+			height: 138px
+			&__title
+				padding: 0 50px 0 133px
+				font-size: 40px
+				&--1
+					&:before
+						top: 22px
+						left: 51px
+						@include sprite($news-mob)
+				&--2
+					&:before
+						top: 35px
+						left: 41px
+						@include sprite($date-mob)
+				&--3
+					&:before
+						top: 35px
+						left: 53px
+						@include sprite($qst-mob)
+				&--4
+					&:before
+						top: 25px
+						left: 45px
+						@include sprite($partner-mob)
+		&-main
+			padding: 67px 53px 44px 70px
+			+clearfix
+			&__date
+				width: 314px
+				height: 82px
+				margin-bottom: 34px
+				font-size: 30px
+				line-height: 78px
+				&:before
+					bottom: -14px
+					border-width: 14px 14px 0 14px
+			&__title
+				margin-bottom: 11px
+				font-size: 40px
+			&__text
+				max-height: none
+				font-size: 40px
+				line-height: 51px
+			&__location
+				margin: 49px 0
+				padding-left: 37px
+				font-size: 30px
+				&:before
+					@include sprite($location-mob)
+			&__link
+				float: right
+				position: relative
+				bottom: 0
+				right: 0
+				margin-top: 7px
+				font-size: 30px
+			&--2
+				padding: 69px 53px 83px 59px
+			&__descr
+				max-height: none
+				font-size: 40px
+			&__btn
+				position: relative
+				bottom: 0
+				left: 0
+				width: 454px
+				height: 112px
+				margin-top: 41px
+				font-size: 40px
+				line-height: 108px
+
+	.catalog
+		margin-bottom: 0
+		&-item
+			float: none
+			width: 100%
+			margin-bottom: 12px
+
+	.footer
+		padding: 56px 0 45px
+		border-top: 1px solid #cacaca
+		border-radius: 5px
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.11)
+		background: #daf4fd
+		&-logo
+			display: none
+		&-block
+			display: none
+			&--4
+				display: block
+				float: none
+				padding-left: 60px
+
+		.bl-title--footer
+			display: none
+
+		.contact
+			&-phone
+				padding-left: 74px
+				&__link
+					&--footer
+						display: block
+						font-size: 50px
+						&:first-child
+							margin-right: 0
+						span
+							display: none
+				&:before
+					top: 5px
+					@include sprite($phone-mob)
+			&__location
+				margin-top: 53px
+				padding-left: 74px
+				&--footer
+					font-size: 40px
+					span
+						display: block
+				&:before
+					top: 2px
+					@include sprite($location3)
+			&__mail
+				margin-top: 73px
+				padding-left: 74px
+				&--footer
+					font-size: 40px
+				&:before
+					top: 2px
+					left: -11px
+					@include sprite($mail-mob)
+
+		&-bottom
+			display: none
+
+	/*--------------Apparat page----------------*/
+	.breadcrumb
+		display: none
+
+	.ap-title
+		display: block
+
+	.page
+		padding: 30px 0 0
+		&--apparat
+			padding-bottom: 55px
+			.container
+				padding: 0 35px
+		&__title
+			font-size: 40px
+			letter-spacing: 0
+			&--center
+				text-align: center
+		&__text
+			font-size: 40px
+			line-height: 1.3
+
+	.ap-wrap
+		margin-top: 56px
+
+	.ap-item
+		display: block
+		margin-bottom: 87px
+		text-align: center
+		&__pict
+			display: block
+			width: 100%
+		&__descr
+			display: block
+			margin-top: 29px
+			padding-left: 0
+		&__title
+			margin-bottom: 10px
+			font-size: 40px
+		&__text
+			font-size: 40px
+		&__link
+			margin-top: 29px
+			font-size: 40px
+
+	.page-accent
+		max-width: 100%
+		padding: 44px 0
+		font-size: 50px
+		line-height: 61px
+		.container
+			width: 800px
+			padding: 0 30px
+	/*-----------------end----------------------*/
+
+	/*---------------Partner page---------------*/
+	.page--partner
+		padding: 30px 0 5px
+		.container
+			padding: 0 10px
+		.page__title
+			margin-bottom: 37px
+			padding: 0
+			text-align: center
+
+	.tb-wrap
+		display: block
+		margin: 11px 0 62px
+		&__title
+			display: none
+			&--mob
+				display: block
+				margin-bottom: 36px
+				font-size: 40px
+				font-weight: 800
+
+	.tb
+		display: block
+		width: 100%
+		&-row
+			display: block
+			&--head
+				display: none
+			&--body
+				height: auto
+				margin-bottom: 10px
+				padding: 33px 0 70px
+				text-align: center
+				background: #fff
+			&--body2
+				padding-bottom: 46px
+		&-cell
+			display: block
+			width: 100%
+			&--body
+				padding: 0
+				&:first-child
+					padding-left: 0
+			&--c
+				margin-bottom: 49px
+			&--c2
+				margin-bottom: 14px
+			&--p
+				margin-bottom: 22px
+			&--p2
+				.tb-cell__partner
+					padding: 11px 10px 11px 42px
+					font-size: 40px
+					text-align: left
+			&--l
+				margin-bottom: 56px
+			&--t
+				margin-top: 50px
+			&__city
+				display: inline-block
+				padding-left: 0
+				font-size: 40px
+				&:before
+					top: 7px
+					left: -38px
+					@include sprite($location-mob)
+			&__partner
+				font-size: 50px
+			&__link
+				font-size: 40px
+			&__phone
+				font-size: 40px
+				p
+					display: block
+					margin-bottom: 11px
+					span
+						display: none
+	/*-------------------end--------------------*/
+
+	/*---------------History page----------------*/
+	.page--history
+		padding-bottom: 55px
+		.container
+			padding: 0 40px
+
+	.title-mob
+		display: block
+		margin-bottom: 44px
+		text-align: center
+
+	.title-h
+		margin-bottom: 0
+		font-size: 40px
+		text-align: center
+
+	.page--history
+		.page__title
+			margin-bottom: 33px
+			text-align: center
+
+	.top-text
+		margin-bottom: 38px
+		font-size: 40px
+
+	.h-item
+		display: block
+		max-width: 100%
+		margin-bottom: 73px
+		&--last
+			margin-bottom: 0
+		img
+			width: 100%
+			height: auto
+		span
+			font-size: 40px
+
+	.main-text
+		margin-top: 35px
+		font-size: 40px
+		line-height: 1.3
+		p
+			margin-bottom: 43px
+
+	.page-accent--history
+		margin-top: 73px
+
+	.bottom-text
+		margin: 37px auto 22px
+		padding: 0 40px
+		font-size: 40px
+		line-height: 1.3
+	/*-------------------end----------------------/*
+
+	/*-----------Event page-----------------*/
+	.page--event
+		padding-bottom: 22px
+
+	.ev-item
+		float: none
+		width: 100%
+		margin-bottom: 77px
+		padding-right: 0
+		.block-main
+			&__date
+				width: 306px
+				height: 62px
+				margin-bottom: 24px
+				line-height: 63px
+			&__title
+				margin-bottom: 18px
+			&__location
+				margin-top: 42px
+	/*---------------end--------------------*/
+
+	/*--------------Tovar page--------------*/
+	.content--inner
+		padding: 35px 0 90px
+
+	.sidebar--inner
+		margin-bottom: 136px
+		padding-top: 0
+
+	.main--inner
+		padding-left: 0
+
+	.tovar-name
+		font-size: 40px
+		text-align: center
+
+	.tovar-pict
+		width: 100%
+		margin-bottom: 23px
+
+	.tovar-menu
+		text-align: center
+		&__title
+			margin-bottom: 31px
+			font-size: 40px
+
+	.menu-list
+		li
+			margin-bottom: 68px
+			a
+				font-size: 40px
+
+	.tovar-descr
+		display: none
+		&--mob
+			display: block
+			margin-bottom: 57px
+			font-size: 40px
+
+	.tovar-text
+		font-size: 40px
+		&__title
+			margin-bottom: 25px
+			font-size: 40px
+		p
+			margin-bottom: 67px
+		a
+			font-size: 40px
+
+	.tovar-carousel
+		margin: 0 0 49px
+		.carousel-item
+			padding: 5px 0
+	/*-----------------end------------------*/
+
+	/*------------Contact page---------------*/
+	.page--contact
+		padding-bottom: 125px
+		.container
+			padding: 0 20px
+
+	.page__title
+		&--contact
+			display: none
+
+	.title-contact
+		display: block
+
+	.contact-item
+		float: none
+		width: 100%
+		margin-bottom: 51px
+		&__title
+			margin-bottom: 0
+			font-size: 40px
+		&__main
+			font-size: 40px
+			line-height: 48px
+
+	.map
+		float: none
+		width: 100%
+		margin: 65px 0 54px
+		&__title
+			font-size: 40px
+			text-align: center
+
+		&-info
+			margin-top: 53px
+			&__title
+				margin-bottom: 0
+				font-size: 40px
+			&__main
+				font-size: 40px
+
+	.map-scheme
+		float: none
+		width: 100%
+		padding-right: 0
+		&__title
+			font-size: 40px
+			font-weight: 800
+			text-align: center
+		&__pict
+			max-width: 100%
+	/*----------------end--------------------*/
+
+	/*-------------Cosm page-----------------*/
+	.page--cosm
+		padding-bottom: 34px
+		.container
+			padding: 0 10px
+
+	.cosm-content
+		> p
+			font-size: 40px
+		&__top
+			padding: 0 35px
+		&__title
+			font-size: 40px
+			clear: both
+			&--accent
+				margin-bottom: 80px
+				padding: 0 35px
+		&__list
+			margin: 0 0 34px 42px
+			&--top
+				padding: 0 35px
+			li
+				margin-bottom: 45px
+				padding-left: 0
+				font-size: 40px
+
+	.card-item
+		display: block
+		&__pict
+			display: block
+			width: 100%
+			text-align: left
+			img
+				width: 100%
+				max-height: 100%
+		&__descr
+			display: block
+			margin-top: 16px
+			padding-left: 0
+		&__title
+			margin-bottom: 5px
+			font-size: 40px
+		&__text
+			font-size: 40px
+			line-height: 1.3
+
+	.compare-item
+		float: left
+		margin: 0 0 42px
+		&--first
+			margin-right: 35px
+		&--last
+			.compare-item__pict
+				img
+					height: 92px
+		&__num
+			margin-bottom: 7px
+			font-size: 20px
+		&__pict
+			padding: 0 3px
+			img
+				height: 222px
+		&__title
+			font-size: 20px
+
+	.accent-wrap
+		&.container
+			width: 100%
+			padding: 0
+
+	.page-accent--cosm
+		left: 0
+		margin: 55px auto 46px
+		font-size: 40px
+		line-height: 1.3
+		text-align: center
+		.container
+			padding: 0 10px
+
+	.cosm-content--bottom
+		.container
+			padding: 0
+		.cosm-item
+			&__descr
+				padding: 0 26px
+	/*----------------end---------------------*/
+
+	/*-------------News page-----------------*/
+	.page--news
+		.container
+			padding: 0 45px
+
+	.news-item
+		float: none
+		width: 100%
+		margin-bottom: 62px
+		padding-right: 0
+		.block-main
+			&__text
+				max-height: none
+	/*----------------end-------------------*/
+
+	/*-------------About page-----------------*/
+	.page--about
+		padding-bottom: 100px
+		.container
+			padding: 0 35px
+
+	.page__title--about
+		text-align: center
+		span
+			display: none
+
+	.about-content
+		> p
+			margin-bottom: 40px
+			font-size: 40px
+			line-height: 1.3
+		&__link
+			margin-bottom: 50px
+			font-size: 40px
+		&__title
+			margin-bottom: 40px
+			font-size: 40px
+		&--bottom
+			display: none
+
+	.ap-wrap--about
+		margin-top: 0
+	/*----------------end---------------------*/
+
+	/*-------------Learn page-----------------*/
+	.page--learn
+		padding-bottom: 53px
+		.container
+			padding: 0 24px
+
+	.learn-content
+		p
+			margin-bottom: 45px
+			font-size: 40px
+			line-height: 1.3
+		&__contact
+			p
+				font-size: 40px
+				line-height: 1.3
+	/*----------------end---------------------*/
+
+	/*-------------Feedback page-----------------*/
+	.page--feedback
+		.container
+			padding: 0 35px
+
+	.page__title--feedback
+		span
+			display: none
+
+	.feedback-col
+		float: none
+		width: 100%
+
+	.feedback-item
+		margin: 70px 0 132px
+		padding-right: 0
+		text-align: center
+		&__pict
+			float: none
+			width: 357px
+			height: 357px
+			margin: 0 auto 38px
+		.block-main
+			display: block
+			padding: 0
+			&__title
+				margin-bottom: 5px
+				font-size: 40px
+			&__date
+				width: 331px
+				height: 75px
+				margin: 0 auto 36px
+				line-height: 75px
+			&__text
+				font-size: 40px
+	/*------------------end-----------------------*/
+
+	/*-------------Sportmed page-----------------*/
+	.page--sportmed
+		padding-bottom: 32px
+		.container
+			padding: 0 20px
+
+	.title-sm
+		display: block
+
+	.sportmed-content
+		> p
+			margin-bottom: 50px
+			font-size: 40px
+			line-height: 1.3
+
+	.block-pict
+		display: block
+		width: 100%
+		margin: 0 0 82px
+		padding: 0 20px
+		&--last
+			margin-bottom: 20px
+		img
+			width: 100%
+		span
+			margin-top: 38px
+			font-size: 40px
+
+	.page-accent--sportmed
+		margin: 62px 0 33px
+		font-size: 40px
+		text-align: left
+		.container
+			padding: 0 20px
+	/*-----------------end------------------------*/
+
+	/*-------------News-in page-----------------*/
+	.page--newsin
+		padding-bottom: 17px
+		.container
+			padding: 0 20px
+
+	.news-item--in
+		width: 100%
+		margin-bottom: 0
+		.block-main
+			&__date
+				margin: 37px 0 33px
+			&__link
+				display: none
+	/*----------------end------------------------*/
+
+	/*-------------Terapy page-----------------*/
+	.page--terapy
+		padding-bottom: 70px
+		.container
+			padding: 0 25px
+
+	.terapy-content
+		> p
+			font-size: 40px
+		&__title
+			margin-bottom: 30px
+			font-size: 40px
+
+	.card-item--var2
+		.card-item__pict
+			width: 508px
+		.card-item__descr
+			padding-left: 0
+	/*------------------end---------------------*/
+
+	/*-------------Flebology page-----------------*/
+	.page--fleb
+		padding-bottom: 92px
+		.container
+			padding: 0 22px
+
+	.cosm-content--fleb
+		p
+			padding: 0
+			clear: both
+			a
+				font-size: 40px
+
+	.compare-item--var2
+		margin: 0 7px 42px
+
+	.block-pict--var2
+		float: left
+		width: 50%
+		padding: 0 10px
+		span
+			font-size: 25px
+
+	.accent-wrap
+		&.container
+			padding: 0
+
+	.page-accent--fleb
+		font-size: 40px
+
+	.link-accent
+		display: none
+	/*------------------end------------------------*/
+
+	/*---------------Hirurg page--------------------*/
+	.page--hirurg
+		.container
+			padding: 0 22px
+
+	.accent-wrap
+		&.container
+			padding: 0
+	/*-------------------end-------------------------*/
+
+	/*-------------Qst page-----------------*/
+	.page--qst
+		padding-bottom: 105px
+		.container
+			padding: 0 22px
+
+	.qst-item
+		margin-bottom: 79px
+		&__title
+			margin-bottom: 32px
+			font-size: 40px
+			&:before
+				top: 7px
+		&__main
+			margin-bottom: 40px
+			font-size: 40px
+			line-height: 1.3
+		&__btn
+			width: 412px
+			height: 102px
+			font-size: 40px
+			line-height: 100px
+			border-radius: 51px
+	/*-----------------end-------------------*/
+
+	/*--------------Info page-------------------*/
+	.page--info
+		padding-bottom: 105px
+		.container
+			padding: 0 28px
+
+	.info-nav
+		float: none
+		width: 100%
+		&__title
+			margin-bottom: 20px
+			font-size: 40px
+
+	.info-menu
+		padding: 32px 0
+		> li
+			margin: 0 25px
+			> a
+				padding: 33px 0px 33px 85px
+				font-size: 50px
+				border-right: 3px
+			&:hover
+				> a
+					color: #000
+					text-shadow: none
+					box-shadow: none
+					background: #e6d9fe
+					&:after
+						display: none
+
+	.info-dropmenu
+		top: 118px
+		right: 0
+		left: 0
+		width: 100%
+		padding: 26px 0 80px
+		box-shadow: none
+		background: #e6d9fe
+		li
+			margin-bottom: 20px
+			padding: 0
+		&__link
+			padding: 18px 0 18px 175px
+			font-size: 40px
+			&:before
+				top: 16px
+				left: 99px
+			&:hover
+				&:before
+					left: 89px
+			&--c1
+				&:before
+					@include sprite($article-mob)
+			&--c2
+				&:before
+					@include sprite($video-mob)
+			&--c3
+				&:before
+					@include sprite($foto-mob)
+			&--c4
+				&:before
+					@include sprite($present-mob)
+
+	.info-adv
+		display: none
+		float: none
+		&--mob
+			display: block
+			width: 100%
+			margin-top: 58px
+		&__title
+			margin-bottom: 35px
+			font-size: 40px
+
+	.info-links
+		height: auto
+		padding: 80px 48px 77px
+
+	.info-list
+		float: none
+		width: 100%
+		margin-bottom: 79px
+		li
+			margin-bottom: 72px
+			a
+				padding-left: 100px
+				font-size: 40px
+				&:before
+					top: -20px
+					@include sprite($pdf-mob)
+
+	.info-main
+		margin-bottom: 89px
+		padding-top: 26px
+		&__title
+			margin-bottom: 22px
+			font-size: 40px
+
+	.info-article
+		margin-bottom: 60px
+		padding-left: 0
+		&__title
+			margin-bottom: 25px
+			font-size: 40px
+		&__text
+			height: 358px
+			font-size: 40px
+			line-height: 1.3
+			p
+				margin-bottom: 38px
+		&__link
+			margin-top: 29px
+			font-size: 40px
+	/*-----------------end----------------------*/
