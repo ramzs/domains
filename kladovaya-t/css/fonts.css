@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "OfficinaSans";
+  src: url("fonts/OfficinaSansBook/OfficinaSansBook.eot");
+  src: url("fonts/OfficinaSansBook/OfficinaSansBook.eot?#iefix") format("embedded-opentype"),
+  url("fonts/OfficinaSansBook/OfficinaSansBook.woff") format("woff"),
+  url("fonts/OfficinaSansBook/OfficinaSansBook.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+    font-family: "OfficinaSans";
+    src: url("fonts/OfficinaSansBookItalic/OfficinaSansBookItalic.eot");
+    src: url("fonts/OfficinaSansBookItalic/OfficinaSansBookItalic.eot?#iefix")format("embedded-opentype"),
+    url("fonts/OfficinaSansBookItalic/OfficinaSansBookItalic.woff") format("woff"),
+    url("fonts/OfficinaSansBookItalic/OfficinaSansBookItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "OfficinaSans";
+    src: url("fonts/OfficinaSansBold/OfficinaSansBold.eot");
+    src: url("fonts/OfficinaSansBold/OfficinaSansBold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/OfficinaSansBold/OfficinaSansBold.woff") format("woff"),
+    url("fonts/OfficinaSansBold/OfficinaSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "OfficinaSans";
+    src: url("fonts/OfficinaSansMedium/OfficinaSansMedium.eot");
+    src: url("fonts/OfficinaSansMedium/OfficinaSansMedium.eot?#iefix")format("embedded-opentype"),
+    url("fonts/OfficinaSansMedium/OfficinaSansMedium.woff") format("woff"),
+    url("fonts/OfficinaSansMedium/OfficinaSansMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "BrushTypeSemiBold";
+    src: url("fonts/BrushTypeSemiBold/BrushTypeSemiBold.eot");
+    src: url("fonts/BrushTypeSemiBold/BrushTypeSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/BrushTypeSemiBold/BrushTypeSemiBold.woff") format("woff"),
+    url("fonts/BrushTypeSemiBold/BrushTypeSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

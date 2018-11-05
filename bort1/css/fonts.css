@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Play";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PlayRegular/PlayRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayRegular/PlayRegular.woff") format("woff"), url("../fonts/PlayRegular/PlayRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Play";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/PlayBold/PlayBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayBold/PlayBold.woff") format("woff"), url("../fonts/PlayBold/PlayBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/ProximaNovaLight/ProximaNovaLight.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaLight/ProximaNovaLight.woff") format("woff"), url("../fonts/ProximaNovaLight/ProximaNovaLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/ProximaNovaTThin/ProximaNovaTThin.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaTThin/ProximaNovaTThin.woff") format("woff"), url("../fonts/ProximaNovaTThin/ProximaNovaTThin.ttf") format("truetype");
+}

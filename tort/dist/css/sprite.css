@@ -1,0 +1,150 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-down-bl {
+  background-image: url(../img/sprite.png);
+  background-position: -201px -166px;
+  width: 14px;
+  height: 8px;
+}
+.icon-arrow-down {
+  background-image: url(../img/sprite.png);
+  background-position: -138px -109px;
+  width: 13px;
+  height: 8px;
+}
+.icon-arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -71px;
+  width: 67px;
+  height: 71px;
+}
+.icon-arrow-left2 {
+  background-image: url(../img/sprite.png);
+  background-position: -134px 0px;
+  width: 67px;
+  height: 71px;
+}
+.icon-arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 67px;
+  height: 71px;
+}
+.icon-arrow-right2 {
+  background-image: url(../img/sprite.png);
+  background-position: -67px 0px;
+  width: 67px;
+  height: 71px;
+}
+.icon-arrow-up {
+  background-image: url(../img/sprite.png);
+  background-position: -151px -109px;
+  width: 13px;
+  height: 8px;
+}
+.icon-cart {
+  background-image: url(../img/sprite.png);
+  background-position: -34px -142px;
+  width: 31px;
+  height: 33px;
+}
+.icon-clock {
+  background-image: url(../img/sprite.png);
+  background-position: -201px -56px;
+  width: 24px;
+  height: 24px;
+}
+.icon-close {
+  background-image: url(../img/sprite.png);
+  background-position: -67px -71px;
+  width: 57px;
+  height: 57px;
+}
+.icon-close2 {
+  background-image: url(../img/sprite.png);
+  background-position: -65px -142px;
+  width: 30px;
+  height: 30px;
+}
+.icon-feed-left {
+  background-image: url(../img/sprite.png);
+  background-position: -201px -110px;
+  width: 13px;
+  height: 21px;
+}
+.icon-feed-right {
+  background-image: url(../img/sprite.png);
+  background-position: -201px -131px;
+  width: 13px;
+  height: 21px;
+}
+.icon-inst-ic {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -142px;
+  width: 34px;
+  height: 34px;
+}
+.icon-location {
+  background-image: url(../img/sprite.png);
+  background-position: -201px 0px;
+  width: 24px;
+  height: 32px;
+}
+.icon-login {
+  background-image: url(../img/sprite.png);
+  background-position: -201px -152px;
+  width: 18px;
+  height: 14px;
+}
+.icon-login2 {
+  background-image: url(../img/sprite.png);
+  background-position: -201px -32px;
+  width: 24px;
+  height: 24px;
+}
+.icon-mail {
+  background-image: url(../img/sprite.png);
+  background-position: -201px -95px;
+  width: 24px;
+  height: 15px;
+}
+.icon-mail2 {
+  background-image: url(../img/sprite.png);
+  background-position: -201px -80px;
+  width: 24px;
+  height: 15px;
+}
+.icon-phone {
+  background-image: url(../img/sprite.png);
+  background-position: -124px -71px;
+  width: 38px;
+  height: 38px;
+}
+.icon-search {
+  background-image: url(../img/sprite.png);
+  background-position: -124px -109px;
+  width: 14px;
+  height: 13px;
+}
+.icon-vk-ic {
+  background-image: url(../img/sprite.png);
+  background-position: -162px -71px;
+  width: 34px;
+  height: 34px;
+}

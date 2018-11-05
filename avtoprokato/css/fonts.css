@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'CoreMellowLight';
+  src: url('fonts/CoreMellowLight/CoreMellow-Light.eot');
+  src: url('fonts/CoreMellowLight/CoreMellow-Light.woff') format('woff'),
+       url('fonts/CoreMellowLight/CoreMellow-Light.ttf') format('truetype'),
+       url('fonts/CoreMellowLight/CoreMellow-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CoreMellowBold';
+  src: url('fonts/CoreMellowBold/CoreMellow-Bold.eot');
+  src: url('fonts/CoreMellowBold/CoreMellow-Bold.woff') format('woff'),
+       url('fonts/CoreMellowBold/CoreMellow-Bold.ttf') format('truetype'),
+       url('fonts/CoreMellowBold/CoreMellow-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CoreMellowMedium';
+  src: url('fonts/CoreMellowMedium/CoreMellow-Medium.eot');
+  src: url('fonts/CoreMellowMedium/CoreMellow-Medium.woff') format('woff'),
+       url('fonts/CoreMellowMedium/CoreMellow-Medium.ttf') format('truetype'),
+       url('fonts/CoreMellowMedium/CoreMellow-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CoreMellowRegular';
+  src: url('fonts/CoreMellowRegular/CoreMellow-Regular.eot');
+  src: url('fonts/CoreMellowRegular/CoreMellow-Regular.woff') format('woff'),
+       url('fonts/CoreMellowRegular/CoreMellow-Regular.ttf') format('truetype'),
+       url('fonts/CoreMellowRegular/CoreMellow-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot');
+  src: url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-light.woff') format('woff'),
+       url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.ttf') format('truetype'),
+       url('fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

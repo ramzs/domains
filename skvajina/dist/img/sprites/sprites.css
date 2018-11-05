@@ -1,0 +1,220 @@
+.arrow, .pag-left, .pag-right, .phone-head, .marker-head, .mail-foot, .phone-foot, .vk-head, .fb-head, .inst-head, .ok-head, .tw-head, .arrow-link, .fb-foot, .inst-foot, .ok-foot, .tw-foot, .vk-foot, .gears-big, .handshake-big, .pick-big, .player-big, .screw-big, .water-big, .water, .gears, .handshake, .pick, .player, .screw, .gears-hover, .handshake-hover, .pick-hover, .player-hover, .screw-hover, .water-hover{
+	background: url(sprites.png) no-repeat;
+}
+
+.arrow{
+	background-position: 0 0;
+	width: 6px;
+	height: 10px;
+}
+
+.pag-left{
+	background-position: -19px 0;
+	width: 8px;
+	height: 13px;
+}
+
+.pag-right{
+	background-position: -11px 0;
+	width: 8px;
+	height: 13px;
+}
+
+.phone-head{
+	background-position: -30px 0;
+	width: 22px;
+	height: 18px;
+}
+
+.marker-head{
+	background-position: -55px 0;
+	width: 18px;
+	height: 24px;
+}
+
+.mail-foot{
+	background-position: -76px 0;
+	width: 20px;
+	height: 16px;
+}
+
+.phone-foot{
+	background-position: -101px 0;
+	width: 22px;
+	height: 17px;
+}
+
+.vk-head{
+	background-position: 0 -117px ;
+	width: 20px;
+	height: 21px;
+}
+
+.fb-head{
+	background-position: 0 -27px ;
+	width: 22px;
+	height: 21px;
+}
+
+.inst-head{
+	background-position: 0 -72px ;
+	width: 20px;
+	height: 21px;
+}
+
+.ok-head{
+	background-position: 0 -49px ;
+	width: 22px;
+	height: 21px;
+}
+
+.tw-head{
+	background-position: 0 -95px ;
+	width: 20px;
+	height: 21px;
+}
+
+.arrow-link{
+	background-position: -27px -28px ;
+	width: 40px;
+	height: 37px;
+}
+
+.fb-foot{
+	background-position: 0 -284px ;
+	width: 35px;
+	height: 33px;
+}
+
+.inst-foot{
+	background-position: 0 -248px ;
+	width: 33px;
+	height: 33px;
+}
+
+.ok-foot{
+	background-position: 0 -212px ;
+	width: 35px;
+	height: 33px;
+}
+
+.tw-foot{
+	background-position: 0 -177px ;
+	width: 33px;
+	height: 33px;
+}
+
+.vk-foot{
+	background-position: 0 -141px ;
+	width: 33px;
+	height: 33px;
+}
+
+.gears-big{
+	background-position: -52px -281px ;
+	width: 62px;
+	height: 48px;
+}
+
+.handshake-big{
+	background-position: -51px -234px ;
+	width: 60px;
+	height: 43px;
+}
+
+.pick-big{
+	background-position: -52px -159px ;
+	width: 45px;
+	height: 45px;
+}
+
+.player-big{
+	background-position: -51px -120px ;
+	width: 43px;
+	height: 35px;
+}
+
+.screw-big{
+	background-position: -52px -209px ;
+	width: 48px;
+	height: 22px;
+}
+
+.water-big{
+	background-position: -50px -70px ;
+	width: 46px;
+	height: 48px;
+}
+
+.water{
+	background-position: -123px -27px ;
+	width: 36px;
+	height: 36px;
+}
+
+.gears{
+	background-position: -130px -196px ;
+	width: 47px;
+	height: 36px;
+}
+
+.handshake{
+	background-position: -126px -161px ;
+	width: 44px;
+	height: 31px;
+}
+
+.pick{
+	background-position: -130px -102px ;
+	width: 34px;
+	height: 34px;
+}
+
+.player{
+	background-position: -126px -66px ;
+	width: 37px;
+	height: 31px;
+}
+
+.screw{
+	background-position: -129px -139px ;
+	width: 36px;
+	height: 16px;
+}
+
+.gears-hover{
+	background-position: -187px -196px ;
+	width: 47px;
+	height: 36px;
+}
+
+.handshake-hover{
+	background-position: -187px -161px ;
+	width: 44px;
+	height: 31px;
+}
+
+.pick-hover{
+	background-position: -189px -103px ;
+	width: 34px;
+	height: 34px;
+}
+
+.player-hover{
+	background-position: -182px -66px ;
+	width: 37px;
+	height: 31px;
+}
+
+.screw-hover{
+	background-position: -188px -141px ;
+	width: 36px;
+	height: 16px;
+}
+
+.water-hover{
+	background-position: -182px -23px ;
+	width: 36px;
+	height: 36px;
+}
+

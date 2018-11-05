@@ -1,0 +1,218 @@
+$red-light: #ff0000
+$red-title: #e14b34
+$red-dark: #cd0019
+$text-gray: #7c7c7c
+$text-lightgray: #6f6f6f
+$text-yellow: #de8d59
+
+/*----------Personal page----------*/
+.panel__head-personal
+	background: url(../img/gray-line.png) 0 0 no-repeat
+	background-size: cover
+
+.panel__body-personal
+	padding-top: 10px
+
+.body_item-personal
+	display: block
+
+.body__descr-personal
+	display: block
+	padding-left: 0
+
+.body__form-personal
+	min-height: 567px
+	padding: 10px 17px
+	text-align: center
+	border: 1px solid #e4e4e4
+	border-radius: 5px
+	.wrap__box
+		width: 100%
+		margin: 0 0 10px
+		text-align: left
+		span
+			display: block
+			margin-bottom: 5px
+			padding-left: 10px
+		input
+			width: 100%
+			height: 25px
+			margin-bottom: 0
+			border: 1px solid #ccc
+			border-radius: 3px
+	.small__box
+		white-space: nowrap
+		margin-bottom: 10px
+	.small
+		display: inline-block
+		width: 29.8%
+		margin: 0 8px 0 0
+		span
+			font-size: 16px
+			padding-left: 0
+		&.small-last
+			margin-right: 0
+		input
+			width: 100%
+			margin-bottom: 0
+	.comment
+		margin: 0 0 10px
+	p
+		display: block
+		margin-bottom: 15px
+		font-size: 14px
+		text-align: left
+		span
+			color: $red-light
+	.checkbox__news
+		height: 26px
+		margin-bottom: 22px
+		text-align: left
+		span
+			display: inline-block
+			padding-left: 0
+
+.checkbox__add
+	display: block
+	color: #000
+	height: 26px;
+	margin-bottom: 22px
+	padding-left: 5px
+	line-height: 26px
+	text-align: left
+	overflow: hidden
+	background-color: #fff0bb;
+	background: rgba(255, 240, 187, .52)
+	border-radius: 5px
+	i
+		padding-right: 5px
+		color: #eca469
+	&:hover
+		color: #000
+		background: rgba(255, 240, 187, 1)
+
+.personal__select
+	display: block
+	margin-bottom: 10px
+	text-align: left
+	span
+		display: block
+		margin-bottom: 5px
+	&:last-child
+		margin-bottom: 10px
+	.jq-selectbox
+		width: 100%
+		&.focused
+			.jq-selectbox__select
+				border: 1px solid #dcdcdc
+	.jq-selectbox__select
+		height: 25px
+		border-radius: 3px 0 0 3px
+		box-shadow: none
+		border: 1px solid #dcdcdc
+	.jq-selectbox__select-text
+		width: 100% !important
+		padding-left: 5px
+		line-height: 23px
+		color: #888
+	.jq-selectbox__trigger
+		width: 23px
+		border: none
+		border-right: 2px solid #979797
+		border-bottom: 2px solid #979797
+		background: #f7f7f7
+	.jq-selectbox__trigger-arrow
+		top: 9px
+	&.personal__select-day
+		margin-top: 9px
+
+.body__checkbox
+	&.body__checkbox-personal
+		display: block
+		margin: 22px 0 5px
+		text-align: left
+		span
+			display: block
+			margin: -5px 0 3px
+			padding-left: 10px
+			text-align: left
+		input
+			width: 100%
+		.male
+			margin-left: 25px
+			&:before
+				content: ' '
+				position: absolute
+				top: -4px
+				left: -25px
+				width: 20px
+				height: 20px
+				background: url(../img/male.png) 0 0 no-repeat
+		.female
+			margin-left: 30px
+			&:before
+				content: ' '
+				position: absolute
+				top: -5px
+				left: -30px
+				width: 23px
+				height: 20px
+				background: url(../img/female.png) 0 0 no-repeat
+
+.personal__select-day
+	span
+		display: block
+	.jq-selectbox
+		width: 63px
+	.jq-selectbox__select
+		width: 100%
+		height: 23px
+	.jq-selectbox__select-text
+		padding-left: 0
+		font-size: 12px
+		font-weight: 700
+		text-overflow: clip
+	.jq-selectbox__trigger
+		width: 15px
+	.jq-selectbox__trigger-arrow
+		right: 3px
+		border-top: 4px solid #999
+		border-right: 4px solid transparent
+		border-left: 4px solid transparent
+
+.checkbox__add-child
+	margin: 35px 0 025px
+
+.btn__total
+	&.btn__total-personal
+		display: block
+		margin: 0 auto
+		width: 260px
+		height: 38px
+		text-transform: uppercase
+
+.personal__text
+	font-size: 14px
+
+.personal__banner
+	position: relative
+	margin: -30px 0 15px
+	padding: 15px 20px
+	border-radius: 10px
+	background: #fff8e0
+	p
+		margin: 0
+		font-size: 12px
+
+.banner__title
+	margin-bottom: 10px
+	font-weight: 500
+	color: $red-light
+	text-transform: uppercase
+	span
+		position: absolute
+		top: 10px
+		right: 15px
+		font-size: 35px
+		font-weight: 700
+/*--------------end----------------*/

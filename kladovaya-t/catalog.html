@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Кладовая теплоты</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="libs/bxslider/jquery.bxslider.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+	<div class="menu__header"><span>Меню</span></div>
+	<div class="menu__overlay"></div>
+	<div id="menu-mobile" class="menu__mobile">
+		<span id="menu-close" class="menu__close"></span>
+		<div class="menu__inner">
+			<div class="header__login header__login-mob">
+				<a href="#" class="login">Вход</a>
+				<a href="#" class="signup">Регистрация</a>
+			</div>
+			<a href="#" class="full__link">Полная версия сайта</a>
+		</div>
+	</div>
+
+	<div id="header-top" class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="hidden-xs col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-5 col-lg-offset-3 col-lg-5">
+					<div class="header__search">
+						<form action="#" class="search__form">
+							<input type="text" name="search" id="" placeholder="Поиск..." class="search__input">
+							<input type="submit" value="" class="search__submit">
+						</form>
+					</div>
+				</div>
+				<div class="hidden-xs col-sm-3 col-md-2 col-lg-2">
+					<div class="header__login">
+						<a href="#" class="login">Вход</a>
+						<a href="#" class="signup">Регистрация</a>
+					</div>
+				</div>
+				<div class="hidden-xs col-sm-3 col-md-3 col-lg-2">
+					<div class="header__cart">
+						<a href="#" class="cart__pict" title="Перейти в корзину"><img src="img/cart.png" alt=""></a>
+						<div class="cart__total">
+							<div class="cart__count"><span class="upper">Товаров:</span> <span>0</span> шт.</div>
+							<div class="cart__price">на <span>0 руб.</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__top-mob">
+			<div class="container">
+				<div class="menu__mob">
+					<a id="menu-btn" href="#" class="menu__toggle">Меню</a>
+				</div>
+				<a href="#" class="top__icon top__icon-search active"><i></i></a>
+				<a href="#" class="top__icon-home"><img src="img/home-icon.png" alt=""></a>
+				<a href="#" class="top__icon top__icon-cart">
+					<span class="cart__total-mob">2</span>
+					<i></i>
+				</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="wrapper">
+		<div class="header__main">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-3">
+						<div class="header__logo">
+							<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+						</div>
+
+						<div class="header__search-mob">
+							<form action="#" class="search__form-mob">
+								<input type="text" name="search" id="" placeholder="Поиск по названию и номеру артикула" class="search__input-mob">
+								<input type="submit" value="" class="search__submit-mob">
+							</form>
+						</div>
+
+						<div id="cart-mob" class="header__cart-mob">
+							<div class="header__cart">
+								<a href="#" class="cart__pict" title="Перейти в корзину"><img src="img/cart.png" alt=""></a>
+								<div class="cart__total">
+									<div class="cart__count"><span class="upper">Товаров:</span> <span>2</span> шт.</div>
+									<div class="cart__price">на <span>2150 руб.</span></div>
+								</div>
+							</div>
+							<button class="cart__btn">Оформить</button>
+							<a href="#" class="cart__link">Корзина</a>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-3 col-md-4">
+						<div class="header__title">
+							<h1>Интернет-магазин<br>семейных ценностей</h1>
+							<span>г.Москва, г.Зеленоград</span>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-2 col-md-2">
+						<div class="header__icon">
+							<div class="delivery__icon">
+								<a href="#">
+									<img src="img/delivery.png" alt="">
+									Доставка
+								</a>
+							</div>
+							<div class="pay__icon">
+								<a href="#">
+									<img src="img/pay.png" alt="">
+									Оплата
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-4 col-md-3">
+						<div class="header__contact">
+							<div class="header__phone">Телефон: <span>+7 (925) 878-55-70</span></div>
+							<div class="header__whatsapp">WhatsApp: <span>+7 (925) 878-55-70</span></div>
+							<div class="header__email">e-mail: <span>kladovaya.teploty@mail.ru</span></div>
+							<div class="header__skype">skype: <span>Kladovaya-t</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<ul class="header__menu">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Партнеры</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="header__social">
+					<ul>
+						<li><a href="#" class="social__inst"></a></li>
+						<li><a href="#" class="social__fb"></a></li>
+						<li><a href="#" class="social__vk"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="content content__catalog">
+			<div class="container">
+				<div class="row">
+					<div class="hidden-xs col-sm-4 col-md-3">
+						<div class="sidebar">
+							<a href="#" class="sidebar__new">Новинки</a>
+							<a href="#" class="sidebar__new filter__link">Подбор подарка</a>
+							<div class="filter">
+								<h4 class="filter__title">Деревянный погребок</h4>
+								<div class="filter__item filter__item-age">
+									<label>
+										<input type="checkbox" name="" id="">
+										Развивающие игрушки
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Сюжетные игрушки
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Пазлы, мозаики
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Пирамидки, сортеры
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Кубики, конструкторы
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Именные, пазлы
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Расписные фигурки
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Медали
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Ладошки
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Для творчества
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Для дома
+									</label>
+								</div>
+							</div>
+							<div class="catalog">
+								<h4 class="catalog__title">Тканный погребок</h4>
+								<ul class="catalog__menu">
+									<li><a href="#">Игрушки</a></li>
+								</ul>
+							</div>
+							<a href="#" class="sidebar__new sidebar__new-interes">Это интересно!</a>
+							<div class="sidebar__news">
+								<h4 class="sidebar__new sidebar__new-news">Новости</h4>
+								<div class="news__item">
+									<span class="news__date">10 апреля 2016</span>
+									<div class="news__descr">Искренне рекомендуем замечательный спектакль!</div>
+									<a href="#" class="more__link">Подробнее >></a>
+								</div>
+								<div class="news__item">
+									<span class="news__date">10 апреля 2016</span>
+									<div class="news__descr">Искренне рекомендуем замечательный спектакль!</div>
+									<a href="#" class="more__link">Подробнее >></a>
+								</div>
+								<div class="news__item">
+									<span class="news__date">10 апреля 2016</span>
+									<div class="news__descr">Искренне рекомендуем замечательный спектакль!</div>
+									<a href="#" class="more__link">Подробнее >></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-8 col-md-9">
+						<div class="main">
+							<ol class="breadcrumb">
+								<li><a href="#">Деревянный погребок</a></li>
+								<li class="active">Развивающие игрушки</li>
+							</ol>
+							<div class="row">
+								<div class="col-sm-6 col-md-4 col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__stick">
+											<img src="img/new.png" alt="">
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart"></a>
+										<span class="available">В наличии >></span>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart"></a>
+										<span class="available">В наличии >></span>
+									</div>
+								</div>
+								<div class="hidden-xs hidden-sm col-md-4 col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__stick">
+											<img src="img/hit.png" alt="">
+											<span>Хит!</span>
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart item__cart-order">Под заказ</a>
+										<span class="available not">Нет в наличии</span>
+									</div>
+								</div>
+								<div class="hidden-xs hidden-sm hidden-md col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__stick">
+											<img src="img/sale.png" alt="">
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart"></a>
+										<span class="available">В наличии >></span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6 col-md-4 col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__stick">
+											<img src="img/new.png" alt="">
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart"></a>
+										<span class="available">В наличии >></span>
+									</div>
+								</div>
+								<div class="hidden-xs hidden-sm col-md-4 col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart"></a>
+										<span class="available">В наличии >></span>
+									</div>
+								</div>
+								<div class="hidden-xs hidden-sm hidden-md col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__stick">
+											<img src="img/hit.png" alt="">
+											<span>Хит!</span>
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart item__cart-order">Под заказ</a>
+										<span class="available not">Нет в наличии</span>
+									</div>
+								</div>
+								<div class="hidden-xs col-sm-6 col-md-4 col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__stick">
+											<img src="img/sale.png" alt="">
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											<span class="sale__price">1000 руб.</span>
+											500 руб.
+										</div>
+										<a href="#" class="item__cart"></a>
+										<span class="available">В наличии >> </span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6 col-md-4 col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__stick">
+											<img src="img/new.png" alt="">
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart"></a>
+										<span class="available">В наличии >></span>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart"></a>
+										<span class="available">В наличии >></span>
+									</div>
+								</div>
+								<div class="hidden-xs hidden-sm col-md-4 col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__stick">
+											<img src="img/hit.png" alt="">
+											<span>Хит!</span>
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart item__cart-order">Под заказ</a>
+										<span class="available not">Нет в наличии</span>
+									</div>
+								</div>
+								<div class="hidden-xs hidden-sm hidden-md col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__stick">
+											<img src="img/sale.png" alt="">
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart"></a>
+										<span class="available">В наличии >></span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6 col-md-4 col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__stick">
+											<img src="img/new.png" alt="">
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart"></a>
+										<span class="available">В наличии >></span>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart"></a>
+										<span class="available">В наличии >></span>
+									</div>
+								</div>
+								<div class="hidden-xs hidden-sm col-md-4 col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__stick">
+											<img src="img/hit.png" alt="">
+											<span>Хит!</span>
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart item__cart-order">Под заказ</a>
+										<span class="available not">Нет в наличии</span>
+									</div>
+								</div>
+								<div class="hidden-xs hidden-sm hidden-md col-lg-3">
+									<div class="carousel__item catalog__item-page">
+										<div class="item__img">
+											<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+										</div>
+										<div class="item__stick">
+											<img src="img/sale.png" alt="">
+										</div>
+										<div class="item__descr">
+											<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+										</div>
+										<div class="item__price">
+											500 руб.
+										</div>
+										<a href="#" class="item__cart"></a>
+										<span class="available">В наличии >></span>
+									</div>
+								</div>
+							</div>
+							<ul class="pagination">
+								<li class="bread__link"><a href="#">Назад</a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">...</a></li>
+								<li class="bread__link"><a href="#">Следующая</a></li>
+							</ul>
+							<div class="page__count">
+								<span>Показать на странице</span>
+								<select>
+									<option>10</option>
+									<option>60</option>
+									<option selected>120</option>
+								</select>
+								<span>товаров</span>
+							</div>
+							<div class="catalog__text">
+								<p>В нашей кладовой мы бережно собрали для Вас все самое теплое, полезное, развивающее.  Мы постарались найти, а если не смогли найти, то создать уникальные вещи, которые будут радовать Вашу семью и приносить пользу!</p>
+								<p>Все товары опробованы нами лично! Товары для детей проходят жёсткий отбор и испытываются нашими детьми, а сувениры и подарки высоко оценены нашими бабушками, дедушками и друзьями!</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+							<div class="page__title">
+								<div class="wrap__mob">
+									<a href="#"><i class="glyphicon glyphicon-menu-left"></i><h5>Каталог</h5></a>
+								</div>
+							</div>
+
+							<div class="catalog-group" id="accordion">
+								<div class="catalog__list panel">
+									<div class="list__head">
+										<div class="wrap__mob">
+											<a href="#" class="list__title" data-parent="#accordion" data-target="#list-1" data-toggle="collapse">Новинки<i class="glyphicon glyphicon-menu-right"></i></a>
+										</div>
+									</div>
+									<div id="list-1" class="list__body collapse">
+										<div class="wrap__mob">
+											<ul class="catalog__menu catalog__menu-list">
+												<li><a href="#">Новинка 1</a></li>
+												<li><a href="#">Новинка 2</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="catalog__list catalog__list-gift panel">
+									<div class="list__head">
+										<div class="wrap__mob">
+											<a href="#" class="list__title list__title-gift" data-parent="#accordion" data-target="#list-2" data-toggle="collapse">Подбор подарка<i class="glyphicon glyphicon-menu-right"></i></a>
+										</div>
+									</div>
+									<div id="list-2" class="list__body collapse">
+										<div class="list__head list__head-filter">
+											<div class="wrap__mob">
+												<a id="filter-change" href="#" class="list__title list__title-filter">Выбрать фильтр<i></i></a>
+											</div>
+										</div>
+										<div class="filter filter__catalog">
+											<div class="filter__item filter__item-age">
+												<div class="filter__head">
+													<div class="wrap__mob">
+														<span class="age__title">Возраст</span>
+													</div>
+												</div>
+												<div class="wrap__mob">
+													<label>
+														<input type="checkbox" name="" id="">
+														0-12 мес
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														1-2 года
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														2-3 года
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														3-5 лет
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														5-7 лет
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														7-12 лет
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														взрослые
+													</label>
+												</div>
+											</div>
+											<div class="filter__item filter__item-person">
+												<div class="filter__head">
+													<div class="wrap__mob">
+														<span class="person__title">Пол</span>
+													</div>
+												</div>
+												<div class="wrap__mob">
+													<label>
+														<input type="checkbox" name="" id="">
+														М
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														Ж
+													</label>
+												</div>
+											</div>
+											<div class="filter__item filter__item-event">
+												<div class="filter__head">
+													<div class="wrap__mob">
+														<span class="event__title">Повод</span>
+													</div>
+												</div>
+												<div class="wrap__mob">
+													<label>
+														<input type="checkbox" name="" id="">
+														День рождения
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														Новорожденному
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														Крещение
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														Новый год
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														Рождество
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														8 марта
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														23 февраля
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														Пасха
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														Новоселье
+													</label>
+													<label>
+														<input type="checkbox" name="" id="">
+														Свадьба
+													</label>
+												</div>
+											</div>
+											<div class="filter__item filter__item-price">
+												<div class="filter__head">
+													<div class="wrap__mob">
+														<span class="price__title">Цена</span>
+													</div>
+												</div>
+												<div class="wrap__mob">
+													<input type="text" name="" id="" placeholder="0">
+													<label>
+														<input type="text" name="" id="" placeholder="0">
+														руб.
+													</label>
+												</div>
+											</div>
+											<div class="wrap__mob">
+												<div class="filter__btn">
+													<button class="btn__total">Показать</button>
+													<a href="#" class="filter__reset filter__reset-btn">Сбросить</a>
+												</div>
+											</div>
+										</div>
+										<div class="wrap__mob">
+											<div class="catalog__tovar clearfix">
+												<div class="carousel__item catalog__item-page">
+													<div class="item__img">
+														<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+													</div>
+													<div class="item__stick">
+														<img src="img/new.png" alt="">
+													</div>
+													<div class="item__descr">
+														<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+													</div>
+													<span class="available available__mob"><i class="glyphicon glyphicon-ok"></i>Есть в наличии</span>
+													<div class="item__price">
+														500 руб.
+													</div>
+													<a href="#" class="item__cart"></a>
+												</div>
+
+												<div class="carousel__item catalog__item-page">
+													<div class="item__img">
+														<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+													</div>
+													<div class="item__descr">
+														<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+													</div>
+													<div class="item__price">
+														500 руб.
+													</div>
+													<a href="#" class="item__cart"></a>
+													<span class="available not"><i class="glyphicon glyphicon-remove"></i>Нет в наличии</span>
+												</div>
+
+												<div class="carousel__item catalog__item-page">
+													<div class="item__img">
+														<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+													</div>
+													<div class="item__stick">
+														<img src="img/new.png" alt="">
+													</div>
+													<div class="item__descr">
+														<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+													</div>
+													<span class="available available__mob"><i class="glyphicon glyphicon-ok"></i>Есть в наличии</span>
+													<div class="item__price">
+														500 руб.
+													</div>
+													<a href="#" class="item__cart"></a>
+												</div>
+
+												<div class="carousel__item catalog__item-page">
+													<div class="item__img">
+														<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+													</div>
+													<div class="item__descr">
+														<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+													</div>
+													<div class="item__price">
+														500 руб.
+													</div>
+													<a href="#" class="item__cart"></a>
+													<span class="available not"><i class="glyphicon glyphicon-remove"></i>Нет в наличии</span>
+												</div>
+
+												<div class="carousel__item catalog__item-page">
+													<div class="item__img">
+														<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+													</div>
+													<div class="item__stick">
+														<img src="img/new.png" alt="">
+													</div>
+													<div class="item__descr">
+														<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+													</div>
+													<span class="available available__mob"><i class="glyphicon glyphicon-ok"></i>Есть в наличии</span>
+													<div class="item__price">
+														500 руб.
+													</div>
+													<a href="#" class="item__cart"></a>
+												</div>
+
+												<div class="carousel__item catalog__item-page">
+													<div class="item__img">
+														<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+													</div>
+													<div class="item__descr">
+														<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+													</div>
+													<div class="item__price">
+														500 руб.
+													</div>
+													<a href="#" class="item__cart"></a>
+													<span class="available not"><i class="glyphicon glyphicon-remove"></i>Нет в наличии</span>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="catalog__list panel">
+									<div class="list__head">
+										<div class="wrap__mob">
+											<a href="#" class="list__title" data-parent="#accordion" data-target="#list-3" data-toggle="collapse">Деревянный погребок<i class="glyphicon glyphicon-menu-right"></i></a>
+										</div>
+									</div>
+									<div id="list-3" class="list__body collapse">
+										<div class="wrap__mob">
+											<ul class="catalog__menu catalog__menu-list">
+												<li><a href="#">Развивающие игрушки</a></li>
+												<li><a href="#">Сюжетные игрушки</a></li>
+												<li><a href="#">Пазлы, мозаики</a></li>
+												<li><a href="#">Пирамидки, сортеры</a></li>
+												<li><a href="#">Кубики, конструкторы</a></li>
+												<li><a href="#">Именные пазлы</a></li>
+												<li><a href="#">Расписные фигурки</a></li>
+												<li><a href="#">Медали</a></li>
+												<li><a href="#">Ладошки</a></li>
+												<li><a href="#">Для творчества</a></li>
+												<li><a href="#">Для дома</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="catalog__list panel">
+									<div class="list__head">
+										<div class="wrap__mob">
+											<a href="#" class="list__title" data-parent="#accordion" data-target="#list-4" data-toggle="collapse">Тканный погребок<i class="glyphicon glyphicon-menu-right"></i></a>
+										</div>
+									</div>
+									<div id="list-4" class="list__body collapse">
+										<div class="wrap__mob">
+											<ul class="catalog__menu catalog__menu-list">
+												<li><a href="#">Тканный погребок 1</a></li>
+												<li><a href="#">Тканный погребок 2</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="catalog__list panel">
+									<div class="list__head">
+										<div class="wrap__mob">
+											<a href="#" class="list__title" data-parent="#accordion" data-target="#list-5" data-toggle="collapse">Это интересно!<i class="glyphicon glyphicon-menu-right"></i></a>
+										</div>
+									</div>
+									<div id="list-5" class="list__body collapse">
+										<div class="wrap__mob">
+											<ul class="catalog__menu catalog__menu-list">
+												<li><a href="#">Это интересно 1</a></li>
+												<li><a href="#">Это интересно 2</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#header-top" class="link__top"></a>
+
+			<div class="askfox">
+				<a href="#" class="askfox__head">
+					<h5><span>Спроси</span>у Лисёнка</h5>
+				</a>
+				<img src="img/foot-logo.png" alt="">
+			</div>
+
+			<div id="footer" class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 col-md-offset-3 col-md-9">
+							<a href="#" class="full__link full__link-catalog">Полная версия сайта</a>
+							<div class="row">
+								<div class="col-xs-12 col-sm-3 col-md-3">
+									<div class="list__block list__block-social clearfix">
+										<div class="wrap__mob">
+											<h5 class="block__title">Мы в соц. сетях:</h5>
+											<ul>
+												<li><a href="#" class="vk">В контакте</a></li>
+												<li><a href="#" class="fb">Facebook</a></li>
+												<li><a href="#" class="inst">Instagram</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-3 col-md-3">
+									<div class="list__block list__block-delivery">
+										<div class="wrap__mob">
+											<h5 class="block__title" data-target="#collapseOne">Способы доставки<span>:</span><i class="arrow__icon"></i></h5>
+											<ul id="collapseOne" class="collapse">
+												<li>- Почта России</li>
+												<li>- EMC, CDEK</li>
+												<li>- Курьер</li>
+												<li>- Самовывоз</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-3 col-md-3">
+									<div class="list__block list__block-pay">
+										<div class="wrap__mob">
+											<h5 class="block__title" data-target="#collapseTwo">Способы оплаты<span>:</span><i class="arrow__icon"></i></h5>
+											<img id="collapseTwo"  class="pay-1 collapse" src="img/pay-sprite.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-3 col-md-3">
+									<div class="list__block list__block-contact">
+										<div class="wrap__mob">
+											<h5 class="block__title" data-target="#collapseThree">Контакты<span>:</span><i class="arrow__icon"></i></h5>
+											<ul id="collapseThree" class="collapse">
+												<li>+7 (925) 878-55-70</li>
+												<li>kladovaya.teploty@mail.ru</li>
+												<li>Skype: Kladovaya-t</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__bottom">
+		<div class="container">
+			<div class="footer__copyright">Copyright 2016 <sup>©</sup> www.kladovaya-t.ru <span>- магазин семейных ценностей. Все права защищены!</span><span class="copy__mob">Магазин семейных ценностей. Все права защищены!</span></div>
+		</div>
+	</div>
+
+
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.12.4.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+	<script src="libs/bxslider/jquery.bxslider.min.js"></script>
+	<script src="libs/PageScroll2id/PageScroll2id.min.js"></script>
+
+	<script src="js/common.js"></script>
+
+</body>
+</html>

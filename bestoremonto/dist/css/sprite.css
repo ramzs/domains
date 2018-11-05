@@ -1,0 +1,90 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-bread {
+  background-image: url(../img/sprite.png);
+  background-position: -96px -34px;
+  width: 5px;
+  height: 11px;
+}
+.icon-arrow-down-white {
+  background-image: url(../img/sprite.png);
+  background-position: -78px -66px;
+  width: 16px;
+  height: 7px;
+}
+.icon-arrow-down {
+  background-image: url(../img/sprite.png);
+  background-position: -94px -73px;
+  width: 16px;
+  height: 7px;
+}
+.icon-arrow-menu-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -78px 0px;
+  width: 33px;
+  height: 16px;
+}
+.icon-arrow-up-blue {
+  background-image: url(../img/sprite.png);
+  background-position: -78px -73px;
+  width: 16px;
+  height: 7px;
+}
+.icon-arrow-up {
+  background-image: url(../img/sprite.png);
+  background-position: -94px -66px;
+  width: 16px;
+  height: 7px;
+}
+.icon-check-arrow-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -78px -52px;
+  width: 18px;
+  height: 14px;
+}
+.icon-check-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: -96px -16px;
+  width: 12px;
+  height: 9px;
+}
+.icon-checkbox {
+  background-image: url(../img/sprite.png);
+  background-position: -78px -34px;
+  width: 18px;
+  height: 18px;
+}
+.icon-checked {
+  background-image: url(../img/sprite.png);
+  background-position: -78px -16px;
+  width: 18px;
+  height: 18px;
+}
+.icon-next-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: -39px 0px;
+  width: 39px;
+  height: 112px;
+}
+.icon-prev-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 39px;
+  height: 112px;
+}

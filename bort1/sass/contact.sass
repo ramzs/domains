@@ -1,0 +1,90 @@
+@import "vars.sass"
+/*---------------Contact page----------*/
+.contact__inner
+	padding: 25px 0 50px
+
+.contact__block
+	display: inline-block
+
+.block__title
+	display: block
+	margin: 0 0 20px
+	font-size: 24px
+	font-weight: bold
+	text-transform: uppercase
+
+.contact__line
+	margin-bottom: 15px
+	span
+		position: relative
+		display: inline-block
+		margin-left: 40px
+		font-size: 18px
+		&:before
+			content: ' '
+			position: absolute
+			width: 25px
+			height: 30px
+			top: -4px
+			left: -40px
+			background: url(../img/sprites/sprites.png) 0 -294px no-repeat
+	&.contact__line-phone
+		span
+			font-size: 24px
+			&:before
+				width: 26px
+				height: 26px
+				top: 2px
+				background: url(../img/sprites/sprites.png) -2px -245px no-repeat
+	&.contact__line-mail
+		a
+			display: inline-block
+			position: relative
+			margin-left: 40px
+			color: #de9400
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+			&:before
+				content: ' '
+				position: absolute
+				width: 26px
+				height: 21px
+				top: 2px
+				left: -40px
+				background: url(../img/sprites/sprites.png) 0 -272px no-repeat
+	&.contact__line-work
+		span
+			&:before
+				width: 25px
+				height: 25px
+				top: 0
+				background: url(../img/sprites/sprites.png) 0 -326px no-repeat
+
+.header__form
+	&.header__form-inner
+		width: 300px
+		height: auto
+		margin: 0 0 0 116px
+		form
+			padding: 18px 0 0
+
+.form__head
+	&.form__head-inner
+		height: auto
+		line-height: 24px
+		text-align: left
+		background: #fff
+
+.form__title
+	&.form__title-inner
+		margin-left: 0
+		font-size: 24px
+		color: $main-color
+		text-transform: none
+		&:before
+			display: none
+
+.contact__map
+	margin-top: 68px
+/*------------------end---------------*/

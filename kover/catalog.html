@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Ковёр-сказка</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+	<link rel="stylesheet" href="libs/jcarousel/responsive/jcarousel.responsive.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<div class="menu-mobile__overlay"></div>
+		<div id="menu-mobile">
+			<div class="menu-mobile__inner">
+				<span id="menu-mobile__close"></span>
+			</div>
+		</div>
+		<div class="header-top">
+			<div class="container">
+				<div class="header-logo">
+					<a href="#">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+				<div class="header-phone">
+					<span>+7 (929) <b>593-25-25</b></span>
+					<span>+7 (926) <b>481-24-82</b></span>
+				</div>
+				<div class="header-work">
+					<span>Пн-Пт: <b>9:00-18:00</b></span>
+					<span>Сб-Вс: <b>10:00-17:00</b></span>
+					<a href="mailto:kover.skazka@mail.ru">kover.skazka@mail.ru</a>
+				</div>
+				<div class="header-cart">
+					<a href="#">
+						<div class="header-cart__img">
+							<span class="header-cart__count">104</span>
+						</div>
+					</a>
+					<div class="header-cart__price">
+						<span class="header-cart__title">Корзина:</span>2 150 000 <b>₽</b>
+					</div>
+					<a href="#" id="menu__btn" class="nav-menu__btn"><b></b><b></b><b></b></a>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<div class="container">
+				<ul id="nav-menu">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Оплата и доставка</a></li>
+					<li><a href="#">Скидки</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Новости</a></li>
+				</ul>
+				<div class="header-search">
+					<input type="search" placeholder="Поиск ковра...">
+					<i class="glyphicon glyphicon-search"></i>
+					<span class="reset-search"><img src="img/reset-ico.png" alt=""></span>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="breadcrumb-wrap">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Каталог товаров</a></li>
+				<li class="active">Детские товары</li>
+			</ol>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-3 col-lg-3">
+					<div class="sidebar">
+						<div class="catalog clearfix">
+							<a href="#" class="catalog-mobile__btn"><b></b><b></b><b></b></a>
+							<span class="catalog-title">Каталог</span>
+							<ul id="cat-menu" class="catalog-menu">
+								<li><a href="#">Детские ковры<span>(38)</span></a></li>
+								<li><a href="#">Ковровые дорожки<span>(10)</span></a></li>
+								<li><a href="#">Ковры ручной работы<span>(0)</span></a></li>
+								<li><a href="#">Модерн. Абстракция<span>(384)</span></a></li>
+								<li><a href="#">Циновки. Ковры без ворса<span>(8)</span></a></li>
+								<li><a href="#">ЭКСКЛЮЗИВ<span>(5)</span></a></li>
+								<li><a href="#">Дешевые ковры<span>(101)</span></a></li>
+								<li><a href="#">Длинноворсные ковры<span>(108)</span></a></li>
+								<li><a href="#">Классические ковры<span>(360)</span></a></li>
+								<li><a href="#">Круглые ковры<span>(121)</span></a></li>
+								<li><a href="#">Овальные ковры<span>(289)</span></a></li>
+								<li><a href="#">Рельефные ковры<span>(403)</span></a></li>
+							</ul>
+						</div>
+						<div class="menu-change" id="accord">
+							<div class="panel panel-1">
+								<a class="menu-change__link" data-toggle="collapse" data-parent="#accord" href="#collapseOne">Выбор по материалу</a>
+								<div id="collapseOne" class="panel-collapse collapse">
+									<div class="menu-change__body">
+										<ul class="catalog-menu">
+											<li><a href="#">Материал 1<span>(38)</span></a></li>
+											<li><a href="#">Материал 2<span>(10)</span></a></li>
+											<li><a href="#">Материал 3<span>(0)</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-2">
+								<a class="menu-change__link" data-toggle="collapse" data-parent="#accord" href="#collapseTwo">Выбор по стране</a>
+								<div id="collapseTwo" class="panel-collapse collapse">
+									<div class="menu-change__body">
+										<ul class="catalog-menu">
+											<li><a href="#">Страна 1<span>(38)</span></a></li>
+											<li><a href="#">Страна 2<span>(10)</span></a></li>
+											<li><a href="#">Страна 3<span>(0)</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-3">
+								<a class="menu-change__link" data-toggle="collapse" data-parent="#accord" href="#collapseThree">Выбор по цвету</a>
+								<div id="collapseThree" class="panel-collapse collapse">
+									<div class="menu-change__body">
+										<ul class="catalog-menu">
+											<li><a href="#">Цвет 1<span>(38)</span></a></li>
+											<li><a href="#">Цвет 2<span>(10)</span></a></li>
+											<li><a href="#">Цвет 3<span>(0)</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-9 col-lg-9">
+					<div class="main-content">
+						<div class="category-block clearfix">
+							<div class="page-title">
+								<h3>Детские товары</h3>
+							</div>
+							<div class="select-block clearfix">
+								<div class="sort-select sel-one">
+									<select>
+										<option>Все коллекции</option>
+										<option>Новые коллекции</option>
+									</select>
+								</div>
+								<div class="sort-select sel-two">
+									<span>Сортировка по:</span>
+									<select>
+										<option>Цене</option>
+										<option>Размеру</option>
+									</select>
+								</div>
+							</div>
+							<div class="catalog-item">
+								<div class="catalog-item__img">
+									<a href="#"><img src="img/hit-1.jpg" alt=""></a>
+								</div>
+								<div class="catalog-item__descr">
+									<a href="#">Классический ковер Antique Imperial CHERRY CHERRY (1486A)</a>
+									<p>Страна: <span>Турция</span></p>
+									<p>Материал: <span>100% Шерсть</span></p>
+								</div>
+								<div class="catalog-item__param clearfix">
+									<div class="select one-sel">
+										<select>
+											<option>244x380</option>
+											<option>344x480</option>
+											<option>444x580</option>
+										</select>
+									</div>
+									<div class="select two-sel">
+										<select>
+											<option>Прямой</option>
+											<option>Овал</option>
+											<option>Круг</option>
+										</select>
+									</div>
+								</div>
+								<span class="catalog-item__price">12 261 605,5 <b>₽</b></span>
+								<a href="#" class="catalog-item__btn">В корзину</a>
+							</div>
+							<div class="catalog-item">
+								<div class="catalog-item__img">
+									<a href="#"><img src="img/hit-2-2.jpg" alt=""></a>
+								</div>
+								<div class="catalog-item__descr">
+									<a href="#">Классический ковер Antique Imperial (1486A)</a>
+									<p>Страна: <span>Турция</span></p>
+									<p>Материал: <span>100% Шерсть</span></p>
+								</div>
+								<div class="catalog-item__param clearfix">
+									<div class="select one-sel">
+										<select>
+											<option>244x380</option>
+											<option>344x480</option>
+											<option>444x580</option>
+										</select>
+									</div>
+									<div class="select two-sel">
+										<select>
+											<option>Прямой</option>
+											<option>Овал</option>
+											<option>Круг</option>
+										</select>
+									</div>
+								</div>
+								<span class="catalog-item__price">15 000 <b>₽</b></span>
+								<a href="#" class="catalog-item__btn">В корзину</a>
+							</div>
+							<div class="catalog-item">
+								<div class="catalog-item__img">
+									<a href="#"><img src="img/hit-3.jpg" alt=""></a>
+								</div>
+								<div class="catalog-item__descr">
+									<a href="#">Классический ковер (14A)</a>
+									<p>Страна: <span>Турция</span></p>
+									<p>Материал: <span>100% Шерсть</span></p>
+								</div>
+								<div class="catalog-item__param clearfix">
+									<div class="select one-sel">
+										<select>
+											<option>244x380</option>
+											<option>344x480</option>
+											<option>444x580</option>
+										</select>
+									</div>
+									<div class="select two-sel">
+										<select>
+											<option>Прямой</option>
+											<option>Овал</option>
+											<option>Круг</option>
+										</select>
+									</div>
+								</div>
+								<span class="catalog-item__price">990 <b>₽</b></span>
+								<a href="#" class="catalog-item__btn">В корзину</a>
+							</div>
+							<div class="catalog-item">
+								<div class="catalog-item__img">
+									<a href="#"><img src="img/hit-1.jpg" alt=""></a>
+								</div>
+								<div class="catalog-item__descr">
+									<a href="#">Классический ковер Antique Imperial CHERRY CHERRY (1486A)</a>
+									<p>Страна: <span>Турция</span></p>
+									<p>Материал: <span>100% Шерсть</span></p>
+								</div>
+								<div class="catalog-item__param clearfix">
+									<div class="select one-sel">
+										<select>
+											<option>244x380</option>
+											<option>344x480</option>
+											<option>444x580</option>
+										</select>
+									</div>
+									<div class="select two-sel">
+										<select>
+											<option>Прямой</option>
+											<option>Овал</option>
+											<option>Круг</option>
+										</select>
+									</div>
+								</div>
+								<span class="catalog-item__price">12 261 605,5 <b>₽</b></span>
+								<a href="#" class="catalog-item__btn">В корзину</a>
+							</div>
+							<div class="catalog-item">
+								<div class="catalog-item__img">
+									<a href="#"><img src="img/hit-2-2.jpg" alt=""></a>
+								</div>
+								<div class="catalog-item__descr">
+									<a href="#">Классический ковер Antique Imperial (1486A)</a>
+									<p>Страна: <span>Турция</span></p>
+									<p>Материал: <span>100% Шерсть</span></p>
+								</div>
+								<div class="catalog-item__param clearfix">
+									<div class="select one-sel">
+										<select>
+											<option>244x380</option>
+											<option>344x480</option>
+											<option>444x580</option>
+										</select>
+									</div>
+									<div class="select two-sel">
+										<select>
+											<option>Прямой</option>
+											<option>Овал</option>
+											<option>Круг</option>
+										</select>
+									</div>
+								</div>
+								<span class="catalog-item__price">15 000 <b>₽</b></span>
+								<a href="#" class="catalog-item__btn">В корзину</a>
+							</div>
+							<div class="catalog-item">
+								<div class="catalog-item__img">
+									<a href="#"><img src="img/hit-3.jpg" alt=""></a>
+								</div>
+								<div class="catalog-item__descr">
+									<a href="#">Классический ковер (14A)</a>
+									<p>Страна: <span>Турция</span></p>
+									<p>Материал: <span>100% Шерсть</span></p>
+								</div>
+								<div class="catalog-item__param clearfix">
+									<div class="select one-sel">
+										<select>
+											<option>244x380</option>
+											<option>344x480</option>
+											<option>444x580</option>
+										</select>
+									</div>
+									<div class="select two-sel">
+										<select>
+											<option>Прямой</option>
+											<option>Овал</option>
+											<option>Круг</option>
+										</select>
+									</div>
+								</div>
+								<span class="catalog-item__price">990 <b>₽</b></span>
+								<a href="#" class="catalog-item__btn">В корзину</a>
+							</div>
+							<ul class="pagination">
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#"><i class="glyphicon glyphicon-menu-right"></i></a></li>
+							</ul>
+						</div>
+						<div class="main-content__descr">
+							<article>
+								<h3>Детский ковер на пол.</h3>
+								<p>Еще задолго до рождения малыша родители занимаются обустройством детской комнаты, в которой ребенку будет комфортно, уютно и интересно. И обязательным атрибутом комнаты малыша является детский ковер на пол. С его помощью в помещении создается теплая атмосфера, а когда ребенок начнет ползать и делать свои первые шаги, именно коврик убережет его от травм при падениях.</p>
+							</article>
+							<article>
+								<h3>Ковры детские в интернет магазине обладают рядом преимуществ:</h3>
+								<ul>
+									<li>отличное качество, что позволяет товарам продолжительное время сохранять безупречный внешний вид;</li>
+									<li>в нашем магазине продажа ковров в детские осуществляется по самым низким ценам. Это обусловлено прямыми поставками изделий с фабрик;</li>
+									<li>каждый ковер в детскую комнату изготавливается из современных материалов, отвечающих действующим нормам и стандартам;</li>
+									<li>представленные в каталоге товары являются экологически чистыми и гипоаллергенными;</li>
+									<li>у нас Вы можете заказать изделия разных форм, размеров и расцветок. Яркий ковер в детскую комнату каждый день будет радовать Вашего малыша.</li>
+								</ul>
+							</article>
+							<article>
+								<h3>На что следует обратить внимание при выборе детского ковра на пол?</h3>
+								<p>Одним из главных критериев выбора ковровых покрытий является их практичность. Детская – это комната, в которой уборка проводится очень часто, поэтому изделие должно легко поддаваться чистке, даже при серьезных загрязнениях. Поскольку маленькие дети нередко что-то проливают и опрокидывают в детскую лучше купить детский ковер с коротким ворсом. Помимо простоты в уборке такие напольные покрытия не будут «маскировать» мелкие игрушки, которые легко не заметить в длинноворсных изделиях.</p>
+								<p>Выбирать продукцию данной категории нужно, ориентируясь на ее качество. Поэтому важно не концентрировать внимание только на цене. Разумеется, цена является важным фактором, который нередко определяет качество продукции. Однако в нашем случае стоит учитывать другие аспекты. К примеру, очень важно с раннего возраста формировать у ребенка чувство стиля и вкус. Сделать это довольно просто – окружите свое чадо красивыми вещами!</p>
+								<p>Главным критерием при выборе детского ковра в интернет магазине выступает качество продукции. Современные ковровые покрытия изготавливаются из синтетических, смешанных и натуральных волокон. Каждый из материалов обладает своими преимуществами. Например, натуральные материалы считаются самыми экологичными, смешанные отличаются чрезвычайной прочностью и долговечностью, а изделия из синтетики – долго сохраняют сочность и яркость цветов.</p>
+							</article>
+							<article>
+								<h3>Детский ковер можно купить в магазине «Ковер-Сказка» по выгодной цене.</h3>
+								<p>В нашем каталоге представлен огромный выбор качественных товаров по минимальным ценам. У нас Вы также можете купить детские ковры оптом. При этом Москва – не единственный город, в котором мы работаем, наш магазин также осуществляет доставку в другие регионы страны. Мы всегда готовы пойти навстречу покупателям, делаем хорошие скидки на весь ассортиментный ряд. Мы предлагаем только качественную сертифицированную продукцию, которая прослужит Вам долго. Позвоните нам, мы поможем Вам выбрать коврик желаемого размера и цвета.</p>
+								<p>В нашем магазине представлены изделия известных торговых марок, которые огромное внимание уделяют не только внешнему оформлению, дизайну и прочности, но также безопасности своей продукции. Убедиться в этом Вам помогут фото изделий в каталоге. Поэтому Вы можете быть уверены в том, что покупка принесет Вам и Вашему малышу исключительную радость.</p>
+							</article>
+							<div class="articles">
+								<h3>Статьи:</h3>
+								<ul>
+									<li><a href="#">Подбираем ковер в детскую.</a></li>
+									<li><a href="#">Выбор ковра для современного интерьера.</a></li>
+									<li><a href="#">Роль цвета в выборе ковра.</a></li>
+									<li><a href="#">Ковер в роли подарка ребенку.</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+					<div class="logo-foot">
+						<a href="#"><img src="img/logo-foot.png" alt=""></a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+					<div class="nav-footer">
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Оплата и доставка</a></li>
+							<li><a href="#">Скидки</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Новости</a></li>
+						</ul>
+					</div>
+					<div class="footer-phone">
+						<span>+7 (929) <b>593-25-25</b></span>
+						<span>+7 (926) <b>481-24-82</b></span>
+					</div>
+					<div class="copyright">
+						&copy; 2015-2016 <a href="#">Kover-skazka.ru</a>
+					</div>
+					<div class="develop">Создание сайта-<a href="#">АБВ-сайт</a></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.12.4.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="libs/jcarousel/jquery.jcarousel.min.js"></script>
+	<script src="libs/jcarousel/responsive/jcarousel.responsive.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+
+	<script src="js/common.js"></script>
+
+</body>
+</html>

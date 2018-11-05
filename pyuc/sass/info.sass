@@ -1,0 +1,47 @@
+/*----------------Info page------------*/
+.info__page
+	padding-bottom: 105px
+.info__item
+	&:first-child
+		.info__head
+			border-top: 1px solid #d6d6d6
+
+.info__head
+	position: relative
+	height: 70px
+	line-height: 70px
+	border-bottom: 1px solid #d6d6d6
+
+.info__link
+	display: inline-block
+	height: 70px
+	margin: 0
+	padding: 9px 15px
+	font-size: 18px
+	font-weight: 800
+	line-height: 24px
+	cursor: pointer
+	i
+		float: right
+		position: absolute
+		top: 18px
+		right: 15px
+		width: 31px
+		height: 31px
+		background: url(../img/plus.png) 0 0 no-repeat
+		transition: all .25s ease
+	&.open
+		i
+			transform: rotate(180deg)
+			background: url(../img/minus.png) 0 0 no-repeat
+
+.info__body
+	display: none
+	padding: 20px 15px 15px
+	font-size: 16px
+	font-weight: 300
+	border-bottom: 1px solid #d6d6d6
+	p
+		margin: 0 0 10px
+
+/*----------------end----------------*/

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>СтопШум</title>
+
+	<meta name="description" content="">
+
+	<meta property="og:image" content="img/home-og.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/normalize/normilize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+
+	<header id="top">
+	<div class="header__topline clearfix">
+
+		<!--     Mobile menu     -->
+		<div class="menu__overlay"></div>
+		<div class="header__nav header__nav-mob">
+			<ul class="header__menu">
+				<li class="menu__item menu__item-mob">
+					<a href="#" class="menu__link">Готовые конструкции<i class="link__caret"></i></a>
+					<ul class="menu__drop menu__drop-mob">
+						<li class="drop__item"><a href="#" class="drop__link">Конструкция стены</a></li>
+						<li class="drop__item"><a href="#" class="drop__link">Конструкция потолка</a></li>
+						<li class="drop__item"><a href="#" class="drop__link">Конструкция пола</a></li>
+						<li class="drop__item"><a href="#" class="drop__link">Конструкция перегородки</a></li>
+					</ul>
+				</li>
+				<li class="menu__item menu__item-mob">
+					<a href="#" class="menu__link">Материалы<i class="link__caret"></i></a>
+					<ul class="menu__drop menu__drop-mob">
+						<li class="drop__item"><a href="#" class="drop__link">Звукоизоляционные:<br>мембрана, плита и т.д</a></li>
+						<li class="drop__item"><a href="#" class="drop__link">Звукопоглощающие: каменная вата, пирамиды и т.д.</a></li>
+						<li class="drop__item"><a href="#" class="drop__link">Виброизоляционные и вибропоглощающие виброопоры, пружинные виброизоляторы и т.д.</a></li>
+						<li class="drop__item"><a href="#" class="drop__link">Сопутствующие:<br>герметики, виброподвесы, клея и т.д.</a></li>
+					</ul>
+				</li>
+				<li class="menu__item menu__item-mob">
+					<a href="#" class="menu__link">Услуги<i class="link__caret"></i></a>
+					<ul class="menu__drop menu__drop-mob">
+						<li class="drop__item"><a href="#" class="drop__link">Консультация</a></li>
+						<li class="drop__item"><a href="#" class="drop__link">Проведение акустических замеров и выдача протокола</a></li>
+						<li class="drop__item"><a href="#" class="drop__link">Шеф-монтаж</a></li>
+						<li class="drop__item"><a href="#" class="drop__link">Монтаж<br>звукоизоляции</a></li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+			</ul>
+
+			<div class="menu__service menu__service-mob">
+				<h3 class="sidebar__title">Услуги</h3>
+				<ul class="service__list">
+					<li><a href="#">Консультация</a></li>
+					<li><a href="#">Проведение<br>аккустических замеров</a></li>
+					<li><a href="#">Шефмонтаж</a></li>
+					<li><a href="#">Монтаж звукоизоляции</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--   end mobile menu -->
+
+		<div class="container">
+
+			<div class="menu__btn">
+				<b></b>
+				<b></b>
+				<b></b>
+			</div>
+
+			<div class="header__logo header__logo-mob">
+				<a href="#" class="logo__link logo__link-mob"><img src="img/logo.png" alt=""></a>
+			</div>
+
+			<div class="topline__city">
+				<a href="#" class="city__change">г.Москва</a>
+			</div>
+
+			<div class="topline__phone">
+				<a href="tel:+74957967056" class="phone__link">+7(495) 796-70-56</a>
+				<a href="tel:+79031374081" class="phone__link">+7(903) 137-40-81</a>
+			</div>
+
+			<div class="topline__email">
+				<a href="mailto:info@stopshum.com" class="email__link">info@stopshum.com</a>
+			</div>
+
+			<div class="topline__right">
+				<span class="hide"><![CDATA[<noindex>]]></span>
+					<div class="topline__search">
+						<a href="#" class="search__link">search</a>
+						<input type="search" name="search" id="header-search" class="search__in">
+					</div>
+				<span class="hide"><![CDATA[</noindex>]]></span>
+
+				<span class="hide"><![CDATA[<noindex>]]></span>
+				<a href="#cart-modal" class="cart__mob popup" data-effect="mfp-zoom-in">корзина</a>
+
+				<div class="topline__cart">
+					<div class="cart__main">
+						<div class="cart__price">37 000<span>&nbsp;руб.</span></div>
+						<div class="cart__count">5<span>&nbsp;шт.</span></div>
+					</div>
+					<div class="cart__list">
+						<a href="#" class="cart__item">K-Fonik</a>
+						<a href="#" class="cart__item">СтопЗвук БП Стандарт</a>
+						<a href="#" class="cart__item">Стопзвук-М</a>
+						<a href="#cart-modal" class="order__link popup" data-effect="mfp-zoom-in">Оформить заказ</a>
+					</div>
+				</div>
+				<span class="hide"><![CDATA[</noindex>]]></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__main clearfix">
+		<div class="container">
+			<div class="header__logo">
+				<a href="#" class="logo__link"><img src="img/logo.png" alt=""></a>
+			</div>
+
+			<div class="header__nav">
+				<ul class="header__menu">
+					<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+					<li class="menu__item menu__item-drop">
+						<a href="#" class="menu__link">Готовые конструкции<i class="link__caret"></i></a>
+						<ul class="menu__drop">
+							<li class="drop__item"><a href="#" class="drop__link">Конструкция стены</a></li>
+							<li class="drop__item"><a href="#" class="drop__link">Конструкция потолка</a></li>
+							<li class="drop__item"><a href="#" class="drop__link">Конструкция пола</a></li>
+							<li class="drop__item"><a href="#" class="drop__link">Конструкция перегородки</a></li>
+						</ul>
+					</li>
+					<li class="menu__item menu__item-drop">
+						<a href="#" class="menu__link">Материалы<i class="link__caret"></i></a>
+						<ul class="menu__drop">
+							<li class="drop__item"><a href="#" class="drop__link">Звукоизоляционные:<br>мембрана, плита и т.д</a></li>
+							<li class="drop__item"><a href="#" class="drop__link">Звукопоглощающие:<br>каменная вата,<br>пирамиды и т.д.</a></li>
+							<li class="drop__item"><a href="#" class="drop__link">Виброизоляционные и<br>вибропоглощающие<br>виброопоры, пружинные<br>виброизоляторы и т.д.</a></li>
+							<li class="drop__item"><a href="#" class="drop__link">Сопутствующие:<br>герметики, виброподвесы,<br>клея и т.д.</a></li>
+						</ul>
+					</li>
+					<li class="menu__item menu__item-drop">
+						<a href="#" class="menu__link">Услуги<i class="link__caret"></i></a>
+						<ul class="menu__drop">
+							<li class="drop__item"><a href="#" class="drop__link">Консультация</a></li>
+							<li class="drop__item"><a href="#" class="drop__link">Проведение<br>акустических замеров<br>и выдача протокола</a></li>
+							<li class="drop__item"><a href="#" class="drop__link">Шеф-монтаж</a></li>
+							<li class="drop__item"><a href="#" class="drop__link">Монтаж<br>звукоизоляции</a></li>
+						</ul>
+					</li>
+					<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+				</ul>
+			</div>
+
+			<a href="#callback-form" class="btn btn__callback popup" data-effect="mfp-zoom-in"><i></i>Перезвонить мне</a>
+
+		</div>
+	</div>
+
+	<div class="header__slider">
+		<div class="slider__item">
+			<img src="img/slide-1.jpg" alt="">
+			<div class="slider__caption">
+				<div class="container">
+					<div class="slider__accent">
+						<h1 class="accent__title">Надежная шумоизоляция</h1>
+						<div class="accent__text">
+							<p>Мы ценим, прежде всего качество, поэтому каждая позиция нашего ассортимента проверена и отобрана лично нами. Доверьтесь нам один раз и вы станете нашим клиентом!</p>
+						</div>
+					</div>
+					<div class="stick">
+						<div class="stick__wrap">
+							<div class="stick__title">Скидка 15%</div>
+							<div class="stick__text">
+								<p>На материалы K-Fonik при самостоятельном монтаже</p>
+							</div>
+							<a href="#" class="btn btn__stick">Узнать подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slider__item">
+			<img src="img/slide-2.jpg" alt="">
+			<div class="slider__caption">
+				<div class="container">
+					<div class="slider__accent slider__accent-outer">
+						<div class="accent__text">
+							<p>Скидки до 15% на материалы<br>при самостоятельном монтаже.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slider__item">
+			<img src="img/slide-3.jpg" alt="">
+			<div class="slider__caption">
+				<div class="container">
+					<div class="slider__accent slider__accent-outer">
+						<div class="accent__text">
+							<p>Монтаж звукоизоляции сотрудниками,<br>имеющими удостоверение,<br>полученное на заводе-производителе.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slider__item">
+			<img src="img/slide-4.jpg" alt="">
+			<div class="slider__caption">
+				<div class="container">
+					<div class="slider__accent slider__accent-outer">
+						<div class="accent__text">
+							<p>Бесплатный шефмонтаж на объекте.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slider__item">
+			<img src="img/slide-5.jpg" alt="">
+			<div class="slider__caption">
+				<div class="container">
+					<div class="slider__accent slider__accent-outer">
+						<div class="accent__text">
+							<p>Проведение акустических замеров,<br>создание проектов и выдача протокола<br>для предоставления контролирующим органам.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="header__carousel">
+		<div class="container">
+			<div class="carousel__block">
+				<div class="carousel__item">
+					<div class="item__pict">
+						<a href="#"><img src="img/carousel-1.png" alt=""></a>
+					</div>
+					<a href="#" class="item__descr"><h5>Конструкция стены</h5></a>
+				</div>
+
+				<div class="carousel__item">
+					<div class="item__pict">
+						<a href="#"><img src="img/carousel-2.png" alt=""></a>
+					</div>
+					<a href="#" class="item__descr"><h5>Конструкция потолка</h5></a>
+				</div>
+
+				<div class="carousel__item">
+					<div class="item__pict">
+						<a href="#"><img src="img/carousel-3.png" alt=""></a>
+					</div>
+					<a href="#" class="item__descr"><h5>Конструкция пола</h5></a>
+				</div>
+
+				<div class="carousel__item">
+					<div class="item__pict">
+						<a href="#"><img src="img/carousel-4.png" alt=""></a>
+					</div>
+					<a href="#" class="item__descr"><h5>Перегородки</h5></a>
+				</div>
+
+				<div class="carousel__item">
+					<div class="item__pict">
+						<a href="#"><img src="img/carousel-1.png" alt=""></a>
+					</div>
+					<a href="#" class="item__descr"><h5>Конструкция стены</h5></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+	<div class="content content__inner clearfix">
+		<div class="container">
+			<ul class="breadcrumb">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Звукоизоляционные: мембрана, плита и тд.</a></li>
+				<li>Tecsound FT 55, 55AL, 75, 2FT 80</li>
+			</ul>
+			<div class="sidebar__left">
+				<div class="menu__service">
+					<div class="sidebar__title">Услуги</div>
+					<ul class="service__list">
+						<li><a href="#">Консультация</a></li>
+						<li><a href="#">Проведение<br>аккустических замеров</a></li>
+						<li><a href="#">Шефмонтаж</a></li>
+						<li><a href="#">Монтаж звукоизоляции</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="main__center">
+				<div class="page__title">
+					<h2>Звукоизоляционные материалы</h2>
+				</div>
+
+				<div class="product product__page">
+					<div class="product__pict">
+						<img class="main__pict" src="img/tovar-1.jpg" alt="">
+						<div class="thumb__pict">
+							<img src="../img/tovar-1.jpg" alt="">
+							<img src="../img/hit-2.jpg" alt="">
+							<img src="../img/hit-3.jpg" alt="">
+						</div>
+					</div>
+					<div class="product__descr">
+						<a href="#" class="product__title">TECSOUND SY 70, 50, 35 (самоклеящийся)</a>
+						<div class="product__cat">Звукоизоляция, Вибродемпфирование</div>
+						<div class="product__text">
+							<p>Тонкая тяжелая звукоизоляционная мембрана. Применяется в звукоизоляционных конструкциях потолка, стен, перегородок в помещениях разного назначения.</p>
+							<div class="text__hide">
+								<span class="list__title">Назначение</span>
+								<ul>
+									<li>Стены и перегородки</li>
+									<li>Подвесные потолки из ГКЛ</li>
+									<li>Натяжные потолки</li>
+									<li>Прочее</li>
+								</ul>
+
+								<span class="list__title">Состав</span>
+								<ul>
+									<li>Природный минерал арагонит</li>
+									<li>Полимеры, не содержащие вредные примеси</li>
+									<li>Войлок</li>
+								</ul>
+							</div>
+						</div>
+						<div class="product__price">9 974.04&nbsp;<span>руб.</span></div>
+						<a href="#" class="btn btn__cart"><i></i>В корзину</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="sidebar__right">
+				<div class="sidebar__banner">
+					<div class="banner__pict">
+						<img src="img/banner-1.jpg" alt="">
+					</div>
+					<div class="banner__title"><h4>Посоветуйте мне<br>конструкцию</h4></div>
+					<div class="banner__descr">
+						<p>Если Вы не уверены, мы можем помочь вам сделать выбор</p>
+					</div>
+					<a href="#" class="btn btn__banner">Да, посоветовать</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+		<footer>
+		<div class="container clearfix">
+			<a href="#top" class="btn btn__top"><i></i>Наверх</a>
+			<div class="footer__left">
+				<span class="form__title">Для вопросов</span>
+				<form action="#" class="form form__footer">
+					<fieldset>
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="Ваша электропочта">
+					</fieldset>
+					<textarea cols="30" rows="10" placeholder="Сообщение"></textarea>
+					<button class="form__btn">Отправить</button>
+					<span class="form__accent">Мы отправим ответ на вашу электронную почту,<br>спасибо за обращение!</span>
+				</form>
+			</div>
+
+			<div class="footer__main">
+				<ul class="footer__menu">
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+
+				<div class="footer__contact">
+					<a href="tel:+74957967056" class="contact__phone">+7 (495) 796-70-56</a>
+					<a href="tel:+79031374081" class="contact__phone">+7 (903) 137-40-81</a>
+					<a href="mailto:info@stopshum.com" class="contact__mail">info@stopshum.com</a>
+				</div>
+
+				<div class="footer__social">
+					<span>В сети:</span>
+					<a href="#" class="social social__vk">Vkontakte</a>
+					<a href="#" class="social social__fb">Facebook</a>
+					<a href="#" class="social social__yt">Youtube</a>
+					<a href="#" class="social social__inst">Instagram</a>
+				</div>
+
+				<div class="copyright">&copy; 2016. Все права защищены.</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div class="hidden">
+		<div id="cart-modal" class="cart__modal mfp-with-anim">
+			<div class="cart__title">Вы добавили товары в корзину</div>
+			<div class="table">
+				<div class="table__row">
+
+					<div class="table__cell table__cell-pict">
+						<img class="cart__img" src="../img/hit-1.jpg" alt="">
+					</div>
+
+					<div class="table__cell table__cell-name">
+						<a href="#" class="name__link">K-Fonik</a>
+						<div class="name__price">6 000&nbsp;руб<span>за ед.</span></div>
+					</div>
+
+					<div class="table__cell table__cell-count">
+						<div class="count__total">
+							<input type="number" min="0" value="3">
+						</div>
+					</div>
+
+					<div class="table__cell table__cell-total">
+						<div class="total__block">
+							<span class="block__title">Сумма</span>
+							<div class="block__price">18 000 руб</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="table__row">
+
+					<div class="table__cell table__cell-pict">
+						<img class="cart__img" src="../img/hit-2.jpg" alt="">
+					</div>
+
+					<div class="table__cell table__cell-name">
+						<a href="#" class="name__link">СтопЗвук БП Стандарт</a>
+						<div class="name__price">10 000&nbsp;руб<span>за ед.</span></div>
+					</div>
+
+					<div class="table__cell table__cell-count">
+						<div class="count__total">
+							<input type="number" min="0" value="10">
+						</div>
+					</div>
+
+					<div class="table__cell table__cell-total">
+						<div class="total__block">
+							<span class="block__title">Сумма</span>
+							<div class="block__price">690 руб</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="table__row">
+
+					<div class="table__cell table__cell-pict">
+						<img class="cart__img" src="../img/hit-3.jpg" alt="">
+					</div>
+
+					<div class="table__cell table__cell-name">
+						<a href="#" class="name__link">СтопЗвук БП Стандарт</a>
+						<div class="name__price">600 000&nbsp;руб<span>за ед.</span></div>
+					</div>
+
+					<div class="table__cell table__cell-count">
+						<div class="count__total">
+							<input type="number" min="0" value="30">
+						</div>
+					</div>
+
+					<div class="table__cell table__cell-total">
+						<div class="total__block">
+							<span class="block__title">Сумма</span>
+							<div class="block__price">180 000 руб</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="total__order">
+				<span class="order__title">Итого</span>
+				<div class="order__price">36 150 руб</div>
+				<a href="#" class="cart__link cart__link-order">Оформить заказ</a>
+			</div>
+
+			<a href="#" class="cart__link cart__link-pay">Продолжить покупки</a>
+		</div>
+
+		<div id="callback-form" class="callback__form mfp-with-anim">
+			<form action="#">
+				<input type="text" placeholder="Ваше имя:">
+				<input type="text" placeholder="Ваш номер телефона:">
+				<button class="form__btn">Перезвонить</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.12.4.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/magnific/jquery.magnific-popup.min.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+
+	<script src="js/common.js"></script>
+
+</body>
+</html>

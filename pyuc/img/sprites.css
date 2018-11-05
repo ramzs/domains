@@ -1,0 +1,64 @@
+.arrow-right, .mail, .marker, .message, .minus, .phone, .plus, .read-more, .zoom, .arrow-left{
+	background: url(sprites.png) no-repeat;
+}
+
+.arrow-right{
+	background-position: -19px 0;
+	width: 15px;
+	height: 21px;
+}
+
+.mail{
+	background-position: 0 -89px ;
+	width: 26px;
+	height: 18px;
+}
+
+.marker{
+	background-position: 0 -26px ;
+	width: 19px;
+	height: 30px;
+}
+
+.message{
+	background-position: 0 -138px ;
+	width: 47px;
+	height: 22px;
+}
+
+.minus{
+	background-position: -33px -57px ;
+	width: 31px;
+	height: 31px;
+}
+
+.phone{
+	background-position: 0 -60px ;
+	width: 26px;
+	height: 26px;
+}
+
+.plus{
+	background-position: -34px -25px ;
+	width: 31px;
+	height: 31px;
+}
+
+.read-more{
+	background-position: 0 -111px ;
+	width: 21px;
+	height: 21px;
+}
+
+.zoom{
+	background-position: -38px 0;
+	width: 22px;
+	height: 22px;
+}
+
+.arrow-left{
+	background-position: 0 0;
+	width: 15px;
+	height: 21px;
+}
+

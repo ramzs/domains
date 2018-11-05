@@ -1,0 +1,244 @@
+/*------------About page---------------------*/
+body.body__inner {
+  background: #f2f2f2;
+}
+
+header.header__inner {
+  height: 500px;
+  background: url(../img/head-bg-inner.jpg) center top no-repeat;
+}
+
+.menu__list.menu__list-inner li a {
+  color: #fff;
+}
+
+.page__title {
+  float: right;
+}
+
+.page__title h1 {
+  display: block;
+  font-size: 72px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  position: relative;
+  width: 1200px;
+  margin: -180px auto 0;
+  z-index: 5;
+  background: #fff;
+  overflow: hidden;
+}
+
+.wrapper .container {
+  width: 1200px;
+  padding: 0 50px;
+}
+
+.breadcrumb {
+  height: 60px;
+}
+
+.breadcrumb .container {
+  padding: 0 20px;
+}
+
+.breadcrumb li {
+  position: relative;
+  display: inline-block;
+  margin-right: 22px;
+  padding: 17px 0;
+  font-size: 18px;
+}
+
+.breadcrumb li:not(:first-child):before {
+  content: ' ';
+  position: absolute;
+  top: 26px;
+  left: -15px;
+  width: 5px;
+  height: 9px;
+  background: url(../img/sprites/sprites.png) -1px -353px no-repeat;
+}
+
+.breadcrumb li:first-child {
+  padding-left: 30px;
+}
+
+.breadcrumb li:first-child:before {
+  content: ' ';
+  position: absolute;
+  top: 17px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url(../img/sprites/sprites.png) 0 0 no-repeat;
+}
+
+.breadcrumb li a {
+  font-size: 18px;
+  color: #3c3c46;
+}
+
+.about__banner {
+  padding-bottom: 32px;
+}
+
+.banner__block {
+  position: relative;
+  height: 290px;
+  overflow: hidden;
+}
+
+.banner__block img {
+  height: 100%;
+}
+
+.banner__block .container {
+  position: relative;
+  padding: 0;
+}
+
+.circle__bg {
+  position: absolute;
+  top: -460px;
+  left: -235px;
+  width: 782px;
+  height: 782px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner__article {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  width: 400px;
+}
+
+.banner__article p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.banner__text {
+  margin-top: 22px;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+  font-size: 18px;
+}
+
+.text__accent {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.section__title-inner {
+  margin: 5px 0 22px;
+}
+
+.benefits__inner {
+  height: auto;
+  background: #fff;
+}
+
+.benefits__item-inner {
+  position: relative;
+}
+
+.benefits__item-inner .descr__img {
+  display: block;
+  position: relative;
+  width: 735px;
+  height: 735px;
+  vertical-align: middle;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.benefits__item-inner .descr__img img {
+  width: 100%;
+}
+
+.benefits__item-inner.benefits__item-1 {
+  top: 0;
+  left: 0;
+}
+
+.benefits__item-inner.benefits__item-1 .descr__img {
+  float: left;
+  margin-left: -215px;
+  background: url(../img/benefit-1-b.jpg) -390px -175px no-repeat;
+  background-size: 190%;
+}
+
+.benefits__item-inner.benefits__item-1 .benefits__descr-inner {
+  float: right;
+  margin-top: 130px;
+  vertical-align: middle;
+}
+
+.benefits__item-inner.benefits__item-2 {
+  top: 0;
+  right: 0;
+  margin-top: -60px;
+}
+
+.benefits__item-inner.benefits__item-2 .descr__img {
+  float: right;
+  margin-right: -215px;
+  background: url(../img/benefit-2-b.jpg) -85px -50px no-repeat;
+  background-size: 175%;
+}
+
+.benefits__item-inner.benefits__item-2 .benefits__descr-inner {
+  float: left;
+  margin-top: 50px;
+}
+
+.benefits__item-inner.benefits__item-3 {
+  top: 0;
+  left: 0;
+  margin-top: -60px;
+}
+
+.benefits__item-inner.benefits__item-3 .descr__img {
+  float: left;
+  margin-left: -215px;
+  background: url(../img/benefit-3-b.jpg) -415px -85px no-repeat;
+  background-size: 175%;
+}
+
+.benefits__item-inner.benefits__item-3 .benefits__descr-inner {
+  float: right;
+  margin-top: 150px;
+}
+
+.benefits__descr-inner {
+  width: 525px;
+}
+
+.service.service__inner {
+  padding: 0 0 117px;
+}
+
+.service__item-inner {
+  width: 18%;
+  margin: 0 30px 50px;
+}
+
+.service__bottom-inner:after {
+  display: none;
+}
+
+/*-------------end--------------------------*/

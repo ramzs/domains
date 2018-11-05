@@ -1,0 +1,89 @@
+/*------------------Avtopark page-------------*/
+.avtopark__inner {
+  padding: 25px 0 50px;
+}
+
+.avtopark__text {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+  font-size: 18px;
+}
+
+.avtopark__text p {
+  margin: 0;
+}
+
+.avtopark__slider {
+  position: relative;
+  margin-top: 80px;
+}
+
+.avtopark__slider .container {
+  padding: 0;
+}
+
+.avtopark__slider .bx-wrapper {
+  float: left;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.avtopark__slider .bx-wrapper .bx-viewport {
+  left: 0;
+  border: 1px solid transparent;
+  border-right: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background: none;
+}
+
+.avtopark__slider .bx-wrapper .bx-controls-direction a {
+  height: 48px;
+  opacity: .7;
+}
+
+.avtopark__slider .bx-wrapper .bx-prev {
+  background: url(../img/slide-left.png) 0 0 no-repeat;
+}
+
+.avtopark__slider .bx-wrapper .bx-prev:hover {
+  opacity: 1;
+}
+
+.avtopark__slider .bx-wrapper .bx-next {
+  background: url(../img/slide-right.png) 0 0 no-repeat;
+}
+
+.avtopark__slider .bx-wrapper .bx-next:hover {
+  opacity: 1;
+  background-position: 0 0;
+}
+
+.slider__thumbs {
+  float: left;
+  width: 25%;
+}
+
+.slider__thumbs a {
+  float: left;
+  position: relative;
+  width: 150px;
+  height: 100px;
+  opacity: .7;
+  border: 1px solid transparent;
+}
+
+.slider__thumbs a.active {
+  opacity: 1;
+}
+
+.slider__thumbs a img {
+  width: 100%;
+  height: 100%;
+}
+
+/*---------------------end-------------------*/

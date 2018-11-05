@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Кладовая теплоты</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="libs/bxslider/jquery.bxslider.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+	<div class="menu__header"><span>Меню</span></div>
+	<div class="menu__overlay"></div>
+	<div id="menu-mobile" class="menu__mobile">
+		<span id="menu-close" class="menu__close"></span>
+		<div class="menu__inner">
+			<div class="header__login header__login-mob">
+				<a href="#" class="login">Вход</a>
+				<a href="#" class="signup">Регистрация</a>
+			</div>
+			<a href="#" class="full__link">Полная версия сайта</a>
+		</div>
+	</div>
+
+	<div id="header-top" class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="hidden-xs col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-5 col-lg-offset-3 col-lg-5">
+					<div class="header__search">
+						<form action="#" class="search__form">
+							<input type="text" name="search" id="" placeholder="Поиск..." class="search__input">
+							<input type="submit" value="" class="search__submit">
+						</form>
+					</div>
+				</div>
+				<div class="hidden-xs col-sm-3 col-md-2 col-lg-2">
+					<div class="header__login header__login-in">
+						<span>kladovaya.teploty@mail.ru</span>
+						<a href="#" class="login__exit">Выход</a>
+					</div>
+				</div>
+				<div class="hidden-xs col-sm-3 col-md-3 col-lg-2">
+					<div class="header__cart">
+						<a href="#" class="cart__pict" title="Перейти в корзину"><img src="img/cart.png" alt=""></a>
+						<div class="cart__total">
+							<div class="cart__count"><span class="upper">Товаров:</span> <span>0</span> шт.</div>
+							<div class="cart__price">на <span>0 руб.</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__top-mob">
+			<div class="container">
+				<div class="menu__mob">
+					<a id="menu-btn" href="#" class="menu__toggle">Меню</a>
+				</div>
+				<a href="#" class="top__icon top__icon-search active"><i></i></a>
+				<a href="#" class="top__icon-home"><img src="img/home-icon.png" alt=""></a>
+				<a href="#" class="top__icon top__icon-cart">
+					<span class="cart__total-mob">2</span>
+					<i></i>
+				</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="wrapper">
+		<div class="header__main">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-3">
+						<div class="header__logo">
+							<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+						</div>
+
+						<div id="cart-search" class="header__search-mob open">
+							<form action="#" class="search__form-mob">
+								<input type="text" name="search" id="" placeholder="Поиск по названию и номеру артикула" class="search__input-mob">
+								<input type="submit" value="" class="search__submit-mob">
+							</form>
+						</div>
+
+						<div id="cart-mob" class="header__cart-mob">
+							<div class="header__cart">
+								<a href="#" class="cart__pict" title="Перейти в корзину"><img src="img/cart.png" alt=""></a>
+								<div class="cart__total">
+									<div class="cart__count"><span class="upper">Товаров:</span> <span>2</span> шт.</div>
+									<div class="cart__price">на <span>2150 руб.</span></div>
+								</div>
+							</div>
+							<button class="cart__btn">Оформить</button>
+							<a href="#" class="cart__link">Корзина</a>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-3 col-md-4">
+						<div class="header__title">
+							<h1>Интернет-магазин<br>семейных ценностей</h1>
+							<span>г.Москва, г.Зеленоград</span>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-2 col-md-2">
+						<div class="header__icon">
+							<div class="delivery__icon">
+								<a href="#">
+									<img src="img/delivery.png" alt="">
+									Доставка
+								</a>
+							</div>
+							<div class="pay__icon">
+								<a href="#">
+									<img src="img/pay.png" alt="">
+									Оплата
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-4 col-md-3">
+						<div class="header__contact">
+							<div class="header__phone">Телефон: <span>+7 (925) 878-55-70</span></div>
+							<div class="header__whatsapp">WhatsApp: <span>+7 (925) 878-55-70</span></div>
+							<div class="header__email">e-mail: <span>kladovaya.teploty@mail.ru</span></div>
+							<div class="header__skype">skype: <span>Kladovaya-t</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<ul class="header__menu">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Партнеры</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="header__social">
+					<ul>
+						<li><a href="#" class="social__inst"></a></li>
+						<li><a href="#" class="social__fb"></a></li>
+						<li><a href="#" class="social__vk"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="content content__catalog content__tovar">
+			<div class="container">
+				<div class="row">
+					<div class="hidden-xs col-sm-4 col-md-3">
+						<div class="sidebar">
+							<a href="#" class="sidebar__new">Новинки</a>
+							<a href="#" class="sidebar__new filter__link">Подбор подарка</a>
+							<div class="filter">
+								<h4 class="filter__title">Деревянный погребок</h4>
+								<div class="filter__item filter__item-age">
+									<label>
+										<input type="checkbox" name="" id="">
+										Развивающие игрушки
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Сюжетные игрушки
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Пазлы, мозаики
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Пирамидки, сортеры
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Кубики, конструкторы
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Именные, пазлы
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Расписные фигурки
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Медали
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Ладошки
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Для творчества
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Для дома
+									</label>
+								</div>
+							</div>
+							<div class="catalog">
+								<h4 class="catalog__title">Тканный погребок</h4>
+								<ul class="catalog__menu">
+									<li><a href="#">Игрушки</a></li>
+								</ul>
+							</div>
+							<a href="#" class="sidebar__new sidebar__new-interes">Это интересно!</a>
+							<div class="sidebar__news">
+								<h4 class="sidebar__new sidebar__new-news">Новости</h4>
+								<div class="news__item">
+									<span class="news__date">10 апреля 2016</span>
+									<div class="news__descr">Искренне рекомендуем замечательный спектакль!</div>
+									<a href="#" class="more__link">Подробнее >></a>
+								</div>
+								<div class="news__item">
+									<span class="news__date">10 апреля 2016</span>
+									<div class="news__descr">Искренне рекомендуем замечательный спектакль!</div>
+									<a href="#" class="more__link">Подробнее >></a>
+								</div>
+								<div class="news__item">
+									<span class="news__date">10 апреля 2016</span>
+									<div class="news__descr">Искренне рекомендуем замечательный спектакль!</div>
+									<a href="#" class="more__link">Подробнее >></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">
+						<div class="main">
+							<ol class="breadcrumb">
+								<li><a href="#">Главная</a></li>
+								<li class="active">Личный кабинет</li>
+							</ol>
+							<div class="page__title">
+								<div class="wrap__mob">
+									<a href="#"><i class="glyphicon glyphicon-menu-left"></i><h5>Корзина</h5></a>
+								</div>
+							</div>
+							<div class="category__title category__title-checkout">
+								<div class="wrap__mob">
+									<span>kladovaya.teploty@mail.ru</span>
+									<a href="#" class="cart__clean cart__clean-checkout"><i class="glyphicon glyphicon-remove"></i>Выход</a>
+								</div>
+							</div>
+							<div class="cart__title checkout__title clearfix">
+								<h4>Оформление заказа</h4>
+							</div>
+
+							<div class="checkout__panel">
+								<div class="panel__head">
+									<div class="wrap__mob">
+										<h5 class="panel__title open" data-target="#panel-1">Доставка<i class="arrow__icon"></i></h5>
+										<span>(Пожалуйста, выберите предпочтительный способ доставки)</span>
+									</div>
+								</div>
+								<div id="panel-1" class="panel__body collapse in">
+									<div class="wrap__mob">
+										<div class="body__item">
+											<div class="body__checkbox">
+												<input type="radio" name="delivery">
+											</div>
+											<div class="body__img">
+												<img src="img/delivery-1.png" alt="">
+											</div>
+											<div class="body__descr">
+												<span class="body__title">Самовывоз (Зеленоград)</span>
+												<dl>
+													<dt>Стоимость:</dt>
+													<dd class="upper">Бесплатно</dd>
+												</dl>
+											</div>
+										</div>
+										<div class="body__item">
+											<div class="body__checkbox">
+												<input type="radio" name="delivery">
+											</div>
+											<div class="body__img">
+												<img src="img/delivery-2.png" alt="">
+											</div>
+											<div class="body__descr">
+												<span class="body__title">Курьерская доставка (Зеленоград, Андреевка, Голубое)</span>
+												<dl>
+													<dt>Стоимость:</dt>
+													<dd>150 <span>руб.</span></dd>
+												</dl>
+											</div>
+										</div>
+										<div class="body__item">
+											<div class="body__checkbox">
+												<input type="radio" name="delivery">
+											</div>
+											<div class="body__img">
+												<img src="img/delivery-3.png" alt="">
+											</div>
+											<div class="body__descr">
+												<span class="body__title">Курьерская доставка (Москва и Москoвская область)</span>
+												<dl>
+													<dt>Стоимость:</dt>
+													<dd>350 <span>руб.</span></dd>
+												</dl>
+												<i>Рассчитывается индивидуально, зависит от срочности, габаритов, местонахождения</i>
+											</div>
+										</div>
+										<div class="body__item">
+											<div class="body__checkbox">
+												<input type="radio" name="delivery">
+											</div>
+											<div class="body__img">
+												<img src="img/delivery-4.png" alt="">
+											</div>
+											<div class="body__descr">
+												<span class="body__title">Почта "России" (по России и всему миру)</span>
+												<dl>
+													<dt>Стоимость:</dt>
+													<dd><span>от</span> 250 <span>руб.</span></dd>
+												</dl>
+												<i>Рассчитывается индивидуально, зависит от срочности, габаритов, местонахождения</i>
+											</div>
+										</div>
+										<div class="body__item">
+											<div class="body__checkbox">
+												<input type="radio" name="delivery">
+											</div>
+											<div class="body__img">
+												<img src="img/delivery-5.png" alt="">
+											</div>
+											<div class="body__descr">
+												<span class="body__title">Курьерская доставка “EMS” (2-3 рабочих дня)</span>
+												<dl>
+													<dt>Стоимость:</dt>
+													<dd><span>от</span> 230 <span>руб.</span></dd>
+												</dl>
+												<i>Срок доставки 1-2 рабочих дня.</i>
+											</div>
+										</div>
+										<div class="body__item">
+											<div class="body__checkbox">
+												<input type="radio" name="delivery">
+											</div>
+											<div class="body__img">
+												<img src="img/delivery-6.png" alt="">
+											</div>
+											<div class="body__descr">
+												<span class="body__title">Экспресс-доставка EMS, СДЭК, др. (по России и всему миру)</span>
+												<dl>
+													<dt>Стоимость:</dt>
+													<dd><span>от</span> 230 <span>руб.</span></dd>
+												</dl>
+												<i>Рассчитывается индивидуально, зависит от срочности, габаритов, местонахождения</i>
+											</div>
+										</div>
+										<div class="body__item">
+											<div class="body__checkbox">
+												<input type="radio" name="delivery">
+											</div>
+											<div class="body__img">
+												<img src="img/delivery-7.png" alt="">
+											</div>
+											<div class="body__descr">
+												<span class="body__title">Другое <i>(Укажите другой удобный для Вас способ доставки)</i></span>
+												<input type="text">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="checkout__panel">
+								<div class="panel__head">
+									<div class="wrap__mob">
+										<h5 class="panel__title open" data-target="#panel-2">Оплата<i class="arrow__icon"></i></h5>
+										<span>(Пожалуйста, выберите предпочтительный способ оплаты)</span>
+									</div>
+								</div>
+								<div id="panel-2" class="panel__body collapse in">
+									<div class="wrap__mob">
+										<div class="body__item body_item-pay">
+											<div class="body__checkbox">
+												<input type="radio" name="pay">
+											</div>
+											<div class="body__img">
+												<img src="img/pay-1.png" alt="">
+											</div>
+											<div class="body__descr body__descr-pay">
+												<span class="body__title">Оплата на счет банка (карту банка)</span>
+												<i>На указанный вами адрес электронной почты будет выслан номер счета (номер кредитной карты), по которому можно оплатить ваш заказ.</i>
+											</div>
+										</div>
+										<div class="body__item body_item-pay">
+											<div class="body__checkbox">
+												<input type="radio" name="pay">
+											</div>
+											<div class="body__img">
+												<img src="img/pay-2.png" alt="">
+											</div>
+											<div class="body__descr body__descr-pay">
+												<span class="body__title">Оплата электронными деньгами</span>
+												<i>(Yandex-кошелек)</i>
+											</div>
+										</div>
+										<div class="body__item body_item-pay">
+											<div class="body__checkbox">
+												<input type="radio" name="pay">
+											</div>
+											<div class="body__img">
+												<img src="img/pay-3.png" alt="">
+											</div>
+											<div class="body__descr body__descr-pay">
+												<span class="body__title">Оплата наличными</span>
+												<i>Оплату можно осуществить наличными при передаче заказа.</i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="checkout__panel">
+								<div class="panel__head">
+									<div class="wrap__mob">
+										<h5 class="panel__title open" data-target="#panel-3">Персональные данные<i class="arrow__icon"></i></h5>
+									</div>
+								</div>
+								<div id="panel-3" class="panel__body collapse in">
+									<div class="wrap__mob">
+										<div class="body__item body_item-data">
+											<div class="body__descr body__descr-data">
+												<form action="#" class="body__form">
+													<label class="base__1"><span class="name">Фамилия<i>*</i>:</span><input type="text"></label>
+													<label class="base__2"><span class="name">Отчество<i>*</i>:</span><input type="text"></label>
+													<label class="base__3"><span class="name">Имя<i>*</i>:</span><input type="text"></label>
+													<label class="base__4"><span class="name">Телефон<i>*</i>:</span><input type="text"></label>
+													<label class="base__5"><span class="name">Город<i>*</i>:</span><input type="text"></label>
+													<label class="base__6"><span class="name">Индекс<i>*</i>:</span><input type="text"></label>
+													<label class="base__7"><span class="name">Регион/Область:</span><input type="text"></label>
+													<label class="base__8"><span class="name">Улица<i>*</i>:</span><input type="text"></label>
+													<label class="small"><span class="name">Дом<i>*</i>:</span><input type="text"></label>
+													<label class="small"><span class="name">Корпус:</span><input type="text"></label>
+													<label class="small small-last"><span class="name">Строение:</span><input type="text"></label>
+													<label class="middle"><span class="name">Квар-ра/Офис<i>*</i>:</span><input type="text"></label>
+													<div class="comment"><span class="name">Ваши комментарии:</span><textarea></textarea></div>
+												</form>
+												<i><span>*</span>Поля обязательные для заполнения</i>
+												<p class="body__text">Для удобства оформления текущего и последующих заказов, предлагаем Вам зарегистрироваться. В этом случае, Вы сможеете единожды указать предпочтительный способ оплаты и доставки и Вам не придется заводить эти данные вновь и вновь.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="wrap__mob">
+								<div class="cart__block cart__block-checkout">
+									<div class="table__head">
+										<div class="head__cell head__cell-photo">Корзина</div>
+										<div class="head__cell head__cell-price">Цена</div>
+										<div class="head__cell head__cell-count">Кол-во</div>
+										<div class="head__cell head__cell-sum">Сумма</div>
+										<div class="head__cell head__cell-action"><span>Действия</span></div>
+									</div>
+									<div class="table__body">
+										<div class="body__cell body__cell-img">
+											<img src="img/gallery-1.jpg" alt="">
+										</div>
+										<div class="body__cell body__cell-descr">
+											<div class="descr__cell descr__cell-title">Гномы &quot;12 месяцев&quot;</div>
+											<div class="descr__cell descr__cell-price">1 600 <span>руб.</span></div>
+											<div class="descr__cell descr__cell-count">
+												<input type="number" name="count" min="0" value="0">
+											</div>
+											<div class="descr__cell descr__cell-sum">1 600 <span>руб.</span></div>
+											<div class="descr__cell descr__cell-remove">
+												<a href="#">Удалить</a>
+											</div>
+										</div>
+									</div>
+									<div class="table__body">
+										<div class="body__cell body__cell-img">
+											<img src="img/carousel-2.jpg" alt="">
+										</div>
+										<div class="body__cell body__cell-descr">
+											<div class="descr__cell descr__cell-title">Морские камешки-галька из дерева</div>
+											<div class="descr__cell descr__cell-price">550 <span>руб.</span></div>
+											<div class="descr__cell descr__cell-count">
+												<input type="number" name="count" min="0" value="0">
+											</div>
+											<div class="descr__cell descr__cell-sum">550 <span>руб.</span></div>
+											<div class="descr__cell descr__cell-remove">
+												<a href="#">Удалить</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="checkout__total clearfix">
+									<div class="cart__promo">
+										<input type="text" placeholder="Введите Ваш промокод">
+										<a href="#" class="promo__btn"><img src="img/promo-btn.png" alt=""></a>
+									</div>
+									<dl class="checkout__list">
+										<dt>Общая стоимость товаров:</dt>
+										<dd>2150 <span>руб.</span></dd>
+										<dt>Стоимость доставки:</dt>
+										<dd>250 <span>руб.</span></dd>
+										<dt>Скидка на заказ:</dt>
+										<dd>0 <span>руб.</span></dd>
+									</dl>
+								</div>
+								<div class="table__foot table__foot-checkout">
+									<div class="foot__cell-total">Общая стоимость: <div class="price__sum">2 150 <span>руб.</span></div>
+								</div>
+							</div>
+							<div class="cart__group cart__group-checkout clearfix">
+								<a href="#" class="link__cont">Продолжить покупки</a>
+								<button class="btn__total btn__total-checkout">Оформить заказ</button>
+							</div>
+							<a href="#" class="link__cont link__cont-checkout">Продолжить</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a href="#header-top" class="link__top"></a>
+
+	<div class="askfox">
+		<a href="#" class="askfox__head">
+			<h5><span>Спроси</span>у Лисёнка</h5>
+		</a>
+		<img src="img/foot-logo.png" alt="">
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-offset-3 col-md-9">
+					<a href="#" class="full__link full__link-catalog">Полная версия сайта</a>
+					<div class="row">
+						<div class="col-xs-12 col-sm-3 col-md-3">
+							<div class="list__block list__block-social clearfix">
+								<div class="wrap__mob">
+									<h5 class="block__title">Мы в соц. сетях:</h5>
+									<ul>
+										<li><a href="#" class="vk">В контакте</a></li>
+										<li><a href="#" class="fb">Facebook</a></li>
+										<li><a href="#" class="inst">Instagram</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3">
+							<div class="list__block list__block-delivery">
+								<div class="wrap__mob">
+									<h5 class="block__title" data-target="#collapseOne">Способы доставки<span>:</span><i class="arrow__icon"></i></h5>
+									<ul id="collapseOne" class="collapse">
+										<li>- Почта России</li>
+										<li>- EMC, CDEK</li>
+										<li>- Курьер</li>
+										<li>- Самовывоз</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3">
+							<div class="list__block list__block-pay">
+								<div class="wrap__mob">
+									<h5 class="block__title" data-target="#collapseTwo">Способы оплаты<span>:</span><i class="arrow__icon"></i></h5>
+									<img id="collapseTwo" class="pay-1 collapse" src="img/pay-sprite.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3">
+							<div class="list__block list__block-contact">
+								<div class="wrap__mob">
+									<h5 class="block__title" data-target="#collapseThree">Контакты<span>:</span><i class="arrow__icon"></i></h5>
+									<ul id="collapseThree" class="collapse">
+										<li>+7 (925) 878-55-70</li>
+										<li>kladovaya.teploty@mail.ru</li>
+										<li>Skype: Kladovaya-t</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__bottom">
+		<div class="container">
+			<div class="footer__copyright">Copyright 2016 <sup>©</sup> www.kladovaya-t.ru <span>- магазин семейных ценностей. Все права защищены!</span><span class="copy__mob">Магазин семейных ценностей. Все права защищены!</span></div>
+		</div>
+	</div>
+
+
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.12.4.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+	<script src="libs/bxslider/jquery.bxslider.min.js"></script>
+	<script src="libs/PageScroll2id/jquery.malihu.PageScroll2id.min.js"></script>
+
+	<script src="js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "MuseoSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MuseoSansRegular/MuseoSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansRegular/MuseoSansRegular.woff") format("woff"), url("../fonts/MuseoSansRegular/MuseoSansRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/MuseoSansBold/MuseoSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansBold/MuseoSansBold.woff") format("woff"), url("../fonts/MuseoSansBold/MuseoSansBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/MuseoSansBlack/MuseoSansBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansBlack/MuseoSansBlack.woff") format("woff"), url("../fonts/MuseoSansBlack/MuseoSansBlack.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/MuseoSansLight/MuseoSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansLight/MuseoSansLight.woff") format("woff"), url("../fonts/MuseoSansLight/MuseoSansLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Palatino";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PalatinoLinotype/PalatinoLinotypeRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PalatinoLinotype/PalatinoLinotypeRegular.woff") format("woff"), url("../fonts/PalatinoLinotype/PalatinoLinotypeRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Palatino";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PalatinoLinotypeBold/PalatinoLinotypeBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PalatinoLinotypeBold/PalatinoLinotypeBold.woff") format("woff"), url("../fonts/PalatinoLinotypeBold/PalatinoLinotypeBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Palatino";
+  font-style: 700;
+  font-weight: italic;
+  src: url("../fonts/PalatinoLinotypeBoldItalic/PalatinoLinotypeBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PalatinoLinotypeBoldItalic/PalatinoLinotypeBoldItalic.woff") format("woff"), url("../fonts/PalatinoLinotypeBoldItalic/PalatinoLinotypeBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Palatino";
+  font-style: normal;
+  font-weight: italic;
+  src: url("../fonts/PalatinoLinotypeItalic/PalatinoLinotypeItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PalatinoLinotypeItalic/PalatinoLinotypeItalic.woff") format("woff"), url("../fonts/PalatinoLinotypeItalic/PalatinoLinotypeItalic.ttf") format("truetype");
+}

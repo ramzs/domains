@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "RobotoSlab";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlabBold/RobotoSlabBold.woff") format("woff"), url("../fonts/RobotoSlabBold/RobotoSlabBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoSlab";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/RobotoSlabLight/RobotoSlabLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlabLight/RobotoSlabLight.woff") format("woff"), url("../fonts/RobotoSlabLight/RobotoSlabLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoSlab";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoSlabRegular/RobotoSlabRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlabRegular/RobotoSlabRegular.woff") format("woff"), url("../fonts/RobotoSlabRegular/RobotoSlabRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoSlab";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/RobotoSlabThin/RobotoSlabThin.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlabThin/RobotoSlabThin.woff") format("woff"), url("../fonts/RobotoSlabThin/RobotoSlabThin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/BitterBold/BitterBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BitterBold/BitterBold.woff") format("woff"), url("../fonts/BitterBold/BitterBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "StencilStd";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/StencilStd/StencilStd.eot?#iefix") format("embedded-opentype"), url("../fonts/StencilStd/StencilStd.woff") format("woff"), url("../fonts/StencilStd/StencilStd.ttf") format("truetype");
+}

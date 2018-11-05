@@ -1,0 +1,617 @@
+@import "bourbon"
+@import "vars.sass"
+@import "base.sass"
+
+header
+	position: relative
+	height: 1200px
+	background: url(../img/header-bg.jpg) center top no-repeat
+	background-size: cover
+
+.header__logo
+	display: inline-block
+	margin-top: 10px
+	vertical-align: middle
+	img
+		width: 100%
+
+.menu__btn
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	width: 120px
+	height: 100px
+	padding: 32px 0 0 50px
+	background: $main-color
+	b
+		display: block
+		width: 45px
+		height: 7px
+		margin-bottom: 8px
+		border-radius: 5px
+		background: #fff
+
+#menu-overlay
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 997
+
+.header__menu
+	display: inline-block
+	margin-left: 40px
+	vertical-align: middle
+	.menu__top
+		display: none
+		height: 100px
+		background: #fff
+		.menu__btn
+			background: #fff
+			b
+				background: $main-color
+
+.menu__list
+	li
+		float: left
+		&.active
+			a
+				color: #fff
+				background: #3c3c46
+		a
+			display: block
+			padding: 1px 10px
+			font-size: 18px
+			color: $main-color
+			text-transform: uppercase
+			border-radius: 3px
+			&:hover
+				color: #fff
+				background: #3c3c46
+
+.phone__mob
+	display: none
+	position: absolute
+	top: 0
+	right: 0
+	width: 125px
+	height: 120px
+	overflow: hidden
+
+.phone__btn
+	display: block
+	position: relative
+	top: -77px
+	right: 0
+	width: 196px
+	height: 196px
+	border-radius: 50%
+	background: #f2ad24 url(../img/head-phone-mob.png) 30px 95px no-repeat
+
+.header__phone
+	float: right
+	margin-top: 15px
+	.menu__top
+		display: none
+		height: 100px
+		background: #f2ad24
+		.close
+			position: absolute
+			top: 12px
+			right: 20px
+			width: 75px
+			height: 75px
+			font-size: 0
+			background: url(../img/close.png) 0 0 no-repeat
+
+.phone__link
+	display: block
+	font-size: 40px
+	font-weight: bold
+	color: #fff
+	text-shadow: 0 0 2px $main-color
+
+.header__text
+	display: inline-block
+	margin: 40px 0 0 70px
+	text-align: left
+
+.header__title
+	display: inline-block
+	font-size: 36px
+	font-weight: bold
+	line-height: 36px
+	color: #fff
+	text-align: center
+	text-transform: uppercase
+	.subtitle
+		text-transform: none
+
+.header__list
+	font-size: 22px
+	color: #fff
+	list-style-type: disc
+
+.form__head
+	height: 50px
+	line-height: 50px
+	text-align: center
+	background: #3c3c46
+	border-radius: 3px 3px 0 0
+
+.form__title
+	display: inline-block
+	position: relative
+	margin: 0 0 0 60px
+	font-size: 18px
+	color: #fff
+	text-transform: uppercase
+	&:before
+		content: ' '
+		position: absolute
+		top: 15px
+		left: -58px
+		width: 50px
+		height: 20px
+		z-index: 9
+		background: url(../img/sprites/sprites.png) -23px 0 no-repeat
+
+.header__form
+	display: inline-block
+	margin: 50px 0 0 270px
+	width: 350px
+	height: 430px
+	vertical-align: top
+	background-color: rgba(255, 255, 255, 0.85)
+	border-radius: 4px
+	form
+		padding: 25px 25px 0
+	input
+		display: block
+		width: 100%
+		height: 40px
+		margin-bottom: 10px
+		padding-left: 20px
+		border: 1px solid #c9c9ce
+	.jq-radio
+		display: inline-block
+		width: 14px
+		height: 14px
+		border-radius: 50%
+		background: #fff
+		border: 1px solid #c9c9ce
+		&.checked
+			.jq-radio__div
+				width: 8px
+				height: 8px
+				margin: 2px 0 0 2px
+				border-radius: 50%
+				background: $main-color
+		&.focused
+			border: 1px solid #c9c9ce
+	fieldset
+		border: none
+		margin: 0
+		padding: 0
+		.jq-radio
+			margin-top: 27px
+		.date__in
+			float: right
+			position: relative
+			width: 92.7%
+			margin-top: 14px
+			vertical-align: middle
+			input
+				padding-left: 58px
+			&:before
+				content: ' '
+				position: absolute
+				top: 9px
+				left: 10px
+				width: 36px
+				height: 20px
+				z-index: 9
+				background: url(../img/sprites/sprites.png) 0 -196px no-repeat
+	.address__in
+		position: relative
+		input
+			padding-left: 58px
+		.map__link
+			position: absolute
+			margin-top: 8px
+			left: 10px
+			width: 36px
+			height: 24px
+			font-size: 0
+			z-index: 9
+			outline: none
+			background: url(../img/sprites/sprites.png) 0 -218px no-repeat
+	button
+		width: 100%
+		height: 40px
+		background-color: #ffc600
+		background-image: linear-gradient(to top, #ffb400 0%, #ffc600 100%)
+		border: 1px solid #ffd238
+		border-radius: 4px
+		box-shadow: 0.5px 0.9px 3px rgba(0, 0, 0, 0.25)
+
+.header__banner
+	position: absolute
+	bottom: 80px
+	left: 0
+	right: 0
+	text-align: center
+
+.banner__item
+	display: inline-block
+	position: relative
+	vertical-align: middle
+	text-align: center
+
+.banner__divider
+	position: relative
+	top: -35px
+	margin: 0 7px
+	b
+		display: inline-block
+		width: 4px
+		height: 4px
+		margin: 0 2px
+		border-radius: 50%
+		background: #fff
+
+.banner__img
+	width: 100px
+	height: 100px
+	border-radius: 50%
+	border: 2px solid #fff
+	overflow: hidden
+	img
+		position: relative
+
+.banner__item-1
+	.banner__img
+		img
+			left: -80%
+
+.banner__item-2
+	.banner__img
+		img
+			left: -10%
+
+.banner__item-center
+	.banner__img
+		width: 205px
+		height: 205px
+		img
+			top: -10px
+			left: -40%
+			width: 150%
+
+.banner__descr
+	display: block
+	margin-top: 15px
+	font: 300 14px "Proxima"
+	color: #fff
+
+.modal__map
+	position: relative
+	max-width: 800px
+	margin: auto
+	border: 5px solid #fff
+	border-radius: 5px
+	.mfp-close
+		top: -15px
+		right: -5px
+		width: 20px
+		height: 20px
+		&:active
+			top: -15px
+
+.rate
+	padding-bottom: 142px
+
+.rate__table
+	width: 100%
+	margin-top: 30px
+	text-align: center
+
+.rate__cell
+	float: left
+	width: 50%
+	&.rate__cell-right
+		.rate__img
+			img
+				position: relative
+				top: -15px
+		.rate__list
+			background: #f4f4f9
+
+.rate__img
+	width: 250px
+	height: 120px
+	margin: 0 auto 14px
+	img
+		width: 100%
+
+.arrow__btn
+	display: none
+
+.rate__list
+	display: table
+	width: 100%
+	.list__item
+		display: table-row
+		height: 40px
+		text-align: left
+		.count
+			display: table-cell
+			position: relative
+			padding-left: 45%
+			vertical-align: middle
+			border-bottom: 1px dashed #ccc
+			i
+				display: inline-block
+				position: relative
+				left: -15px
+				width: 22px
+				height: 25px
+				vertical-align: middle
+				background: url(../img/sprites/sprites.png) 0 -22px no-repeat
+			span
+				display: inline-block
+				font: 300 18px "Proxima"
+				vertical-align: middle
+		&.list__item-2
+			.count
+				i
+					height: 19px
+					background-position: 0 -49px
+		&.list__item-3
+			.count
+				i
+					left: -12px
+					background-position: 0 -70px
+		&.list__item-4
+			.count
+				i
+					height: 21px
+					background-position: 0 -97px
+		&.list__item-5
+			.count
+				i
+					left: -12px
+					background-position: 0 -121px
+		&.list__item-head
+			height: 60px
+			text-align: center
+			span
+				display: table-cell
+				padding-left: 0
+				vertical-align: middle
+				font-family: "Play"
+				font-weight: bold
+				border-top: 1px dashed #000
+				border-bottom: 1px dashed #000
+				&:before
+					display: none
+
+.pay__block
+	width: 100%
+	text-align: center
+	.hide
+		display: none
+
+.pay__title
+	display: block
+	height: 50px
+	margin: 0
+	padding: 14px 0
+	font-size: 18px
+	font-weight: bold
+	text-transform: uppercase
+
+.pay__subtitle
+	display: block
+	min-height: 30px
+	font-size: 18px
+	line-height: 30px
+	background: #f4f4f9
+
+.pay__item
+	display: table
+	width: 100%
+	.item__cell
+		float: left
+		position: relative
+		width: 50%
+		height: 40px
+		vertical-align: middle
+		border-bottom: 1px dashed #ccc
+		i
+			display: inline-block
+			position: relative
+			top: 5px
+			width: 22px
+			height: 25px
+			background: url(../img/sprites/sprites.png) 0 -70px no-repeat
+
+.benefits
+	height: 1848px
+	background: url(../img/main.jpg) center top no-repeat
+
+.section__title
+	font-size: 48px
+	font-weight: bold
+	text-align: center
+	text-transform: uppercase
+
+.benefits__wrap
+	position: relative
+
+.benefits__item
+	position: absolute
+	.descr__img
+		display: none
+		text-align: center
+		width: 500px
+		height: 500px
+		overflow: hidden
+		border-radius: 50%
+
+.benefits__descr
+	width: 595px
+	.descr__title
+		margin-bottom: 28px
+		font-size: 48px
+		font-weight: bold
+		text-transform: uppercase
+	p
+		display: block
+		margin: 0
+	.descr__accent
+		display: block
+		width: 70%
+		margin-top: 14px
+		font-weight: bold
+
+.benefits__item-1
+	top: 40px
+	left: 0
+
+.benefits__item-2
+	top: 622px
+	right: 2px
+	.descr__title
+		margin-bottom: 8px
+	p
+		margin-bottom: 16px
+
+.benefits__item-3
+	top: 1203px
+	left: 0
+
+.service
+	padding: 22px 0 0
+	text-align: center
+
+.service__title
+	margin-bottom: 57px
+	font-size: 24px
+	font-weight: bold
+
+.service__item
+	display: inline-block
+	width: 15%
+	margin: 0 55px 50px
+	text-align: center
+	vertical-align: top
+	img
+		display: inline-block
+		height: 60px
+	span
+		display: block
+		margin-top: 9px
+		font-size: 20px
+
+.service__item-last
+	width: 27%
+
+.service__bottom
+	position: relative
+	margin-top: -8px
+	text-align: center
+	h2
+		display: inline-block
+		margin: 0
+		width: 65%
+		font: 200 30px "Proxima"
+	&:after
+		content: ' '
+		position: absolute
+		bottom: -60px
+		left: 0
+		height: 122px
+		width: 100%
+		background: url(../img/arrow-down-big.png) center top no-repeat
+
+.about
+	position: relative
+	height: 675px
+	padding: 125px 0 0
+	overflow: hidden
+
+.about__block
+	float: left
+	width: 100%
+	text-align: left
+	.section__title
+		margin-bottom: 30px
+		text-align: left
+	.about__descr
+		width: 590px
+
+.about__bg
+	position: absolute
+	top: -70px
+	right: 0
+	width: 150%
+	height: 800px
+	overflow: hidden
+	background: url(../img/main-about.png) right -400px no-repeat
+	background-size: 1250px
+
+footer
+	position: relative
+	height: 150px
+	text-align: center
+	.divider
+		border-top: 1px solid #d7d7dc
+
+.footer__logo
+	float: left
+	margin-top: 25px
+	.logo__mob
+		display: none
+
+.footer__phone
+	display: inline-block
+	margin-top: 45px
+	text-align: right
+	span
+		display: block
+		font-size: 18px
+	a
+		display: block
+		font-size: 36px
+		font-weight: bold
+		color: $main-color
+		line-height: 32px
+
+.copyright
+	position: absolute
+	top: 95px
+
+.developer
+	float: right
+	margin-top: 65px
+	a
+		display: inline-block
+		color: $main-color
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+
+@import "about.sass"
+
+@import "contact.sass"
+
+@import "driver.sass"
+
+@import "tarif.sass"
+
+@import "avtopark.sass"

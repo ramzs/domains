@@ -1,0 +1,123 @@
+@import "vars.sass"
+/*-----------------Concert page----------------*/
+.wrapper
+	&.wrapper__inner-concert
+		position: relative
+		height: 1750px
+		background: url(../img/concert-bg.jpg) 31% top repeat-y
+		background-size: auto 1200px
+
+.concert__block
+	float: right
+	margin-top: 50px
+
+.concert__item
+	margin-bottom: 46px
+
+.concert__img
+	position: relative
+	display: inline-block
+	max-width: 600px
+	height: 300px
+
+.item__overlay
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	height: 75px
+	padding-top: 17px
+	background: rgba(0, 0, 0, 0.35)
+	span
+		position: relative
+		display: inline-block
+		margin-left: 55px
+		vertical-align: middle
+		font-size: 14px
+		&:before
+			content: ' '
+			position: absolute
+			top: 0
+			left: -34px
+	.date
+		&:before
+			width: 22px
+			height: 20px
+			background: url(../img/calendare-icon.png) 0 0 no-repeat
+	.time
+		&:before
+			width: 21px
+			height: 21px
+			background: url(../img/time-icon.png) 0 0 no-repeat
+	.address
+		&:before
+			top: 10px
+			width: 19px
+			height: 23px
+			background: url(../img/map-icon.png) 0 0 no-repeat
+
+.concert__title
+	display: block
+	margin: 8px 0 4px
+	font-size: 24px
+	font-weight: 800
+
+.concert__entry
+	display: block
+	font-size: 18px
+
+.bottom__overlay
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	height: 550px
+	background: rgba(167, 167, 167, 0.6)
+
+.concert__form
+	display: inline-block
+	position: relative
+	margin: 45px 0 0 55%
+	text-align: center
+	width: 450px
+	z-index: 9
+	input
+		display: inline-block
+		width: 400px
+		height: 60px
+		margin-bottom: 10px
+		padding-left: 20px
+		font-size: 18px
+		color: #fff
+		border: none
+		background-color: rgba(255, 255, 255, 0.25)
+		outline: none
+		transition: all .15s ease
+		&:focus
+			box-shadow: 0 0 10px #000
+
+.form__title
+	display: block
+	margin-bottom: 33px
+	font-size: 24px
+	font-weight: 800
+
+.form__btn
+	display: inline-block
+	width: 400px
+	height: 60px
+	font-size: 18px
+	border: none
+	background: #fff
+	cursor: pointer
+	outline: none
+	transition: all .15s ease
+	&:hover
+		box-shadow: 0 0 10px #000
+
+.photo__dev
+	display: inline-block
+	margin-right: 175px
+	font-size: 18px
+	color: #87868b
+/*-------------------end---------------------*/

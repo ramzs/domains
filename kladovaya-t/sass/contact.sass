@@ -1,0 +1,39 @@
+$red-light: #ff0000
+$red-title: #e14b34
+$red-dark: #cd0019
+$text-gray: #7c7c7c
+$text-lightgray: #6f6f6f
+$text-yellow: #de8d59
+
+/*---------Contact page---------*/
+.contact__list
+	margin-top: 20px
+	span
+		position: relative
+		display: block
+		padding-left: 45px
+		margin-bottom: 15px
+		&:before
+			content: ' '
+			position: absolute
+			top: -5px
+			left: 0
+			width: 33px
+			height: 33px
+			background: url(../img/cont-sprites.png) 0 0 no-repeat
+	.message__item
+		span
+			&:before
+				background-position: 0 -35px
+	.email__item
+		span
+			&:before
+				background-position: 0 -70px
+	.skype__item
+		span
+			&:before
+				background-position: 0 -106px
+
+.contact__main
+	margin-bottom: 20px
+/*----------end--------------*/

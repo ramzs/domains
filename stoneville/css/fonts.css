@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "RalewayRegular";
+    src: url("fonts/RalewayRegular/RalewayRegular.eot");
+    src: url("fonts/RalewayRegular/RalewayRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/RalewayRegular/RalewayRegular.woff") format("woff"),
+    url("fonts/RalewayRegular/RalewayRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "RalewayBold";
+    src: url("fonts/RalewayBold/RalewayBold.eot");
+    src: url("fonts/RalewayBold/RalewayBold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/RalewayBold/RalewayBold.woff") format("woff"),
+    url("fonts/RalewayBold/RalewayBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MyriadProBold";
+    src: url("fonts/MyriadProBold/MyriadProBold.eot");
+    src: url("fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GoodVibesPro";
+    src: url("fonts/GoodVibesPro/GoodVibesPro.eot");
+    src: url("fonts/GoodVibesPro/GoodVibesPro.eot?#iefix")format("embedded-opentype"),
+    url("fonts/GoodVibesPro/GoodVibesPro.woff") format("woff"),
+    url("fonts/GoodVibesPro/GoodVibesPro.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PTRoubleSans";
+    src: url("fonts/PTRoubleSans/PTRoubleSans.eot");
+    src: url("fonts/PTRoubleSans/PTRoubleSans.eot?#iefix")format("embedded-opentype"),
+    url("fonts/PTRoubleSans/PTRoubleSans.woff") format("woff"),
+    url("fonts/PTRoubleSans/PTRoubleSans.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

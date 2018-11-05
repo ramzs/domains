@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>BestoRemonto</title>
+	<meta name="description" content="Ремонт под ключ">
+
+	<meta property="og:image" content="img/home.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="libs/normalize/normilize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+	<link rel="stylesheet" href="libs/magnific/magnific-popup.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+	<header>
+
+		<div class="header__top clearfix">
+			<div class="container">
+
+				<div class="logo">
+					<a href="#"><img src="img/logo.png" alt=""></a>
+				</div>
+
+				<div class="header__contact clearfix">
+					<div class="header__address">Адрес: <span>г. Москва, ул. Пушкина, дом 13</span></div>
+					<div class="header__callback">
+						<a href="#callback-1" class="callback__link popup">Обратный звонок</a>
+					</div>
+					<div class="header__phone">
+						<a href="tel:+7(495)5325468" class="phone__link">+7 (495) 532-54-68</a>
+					</div>
+				</div>
+
+				<div class="header__nav clearfix">
+					<ul class="header__list">
+						<li class="list__item"><a href="#">Главная</a></li>
+						<li class="list__item"><a href="#">Дизайн-проект</a></li>
+						<li class="list__item list__item-drop">
+							<a href="#">Стили<i></i></a>
+							<ul class="header__list header__list-dropmenu">
+								<li class="list__item list__item-dropmenu"><a href="#">Минимализм</a></li>
+								<li class="list__item list__item-dropmenu"><a href="#">Эко стиль</a></li>
+								<li class="list__item list__item-dropmenu"><a href="#">Хай-тек</a></li>
+								<li class="list__item list__item-dropmenu"><a href="#">Лофт</a></li>
+							</ul>
+						</li>
+						<li class="list__item"><a href="#">О нас</a></li>
+						<li class="list__item"><a href="#">Партнерам</a></li>
+						<li class="list__item"><a href="#">Контакты</a></li>
+					</ul>
+
+					<div class="header__price">
+						<a href="#" class="price__link">Скачать прайс</a>
+					</div>
+				</div>
+
+				<div class="header__icons clearfix">
+					<div class="icon__item icon__item-1">
+						<a href="#">home</a>
+					</div>
+
+					<div class="icon__item icon__item-2">
+						<a href="#">map</a>
+					</div>
+
+					<div class="icon__item icon__item-3">
+						<a href="#">email</a>
+					</div>
+
+					<div class="icon__item icon__item-4">
+						<a href="tel:+7(495)5325468">phone</a>
+					</div>
+
+					<div class="icon__item icon__item-5">
+						<a href="#">event</a>
+					</div>
+
+					<div class="icon__item icon__item-6">
+						<a id="btn__menu" href="#" class="btn__menu"><b></b><b></b><b></b></a>
+					</div>
+				</div>
+
+				<div class="menu__mob">
+					<ul class="mob__list">
+						<li class="list__item"><a href="#">Дизайн-проект</a></li>
+						<li class="list__item list__item-drop">
+							<a href="#" class="drop__link">Стили<i></i></a>
+							<ul class="mob__list mob__list-dropmenu">
+								<li class="list__item list__item-dropmenu"><a href="#">Минимализм</a></li>
+								<li class="list__item list__item-dropmenu"><a href="#">Эко стиль</a></li>
+								<li class="list__item list__item-dropmenu"><a href="#">Хай-тек</a></li>
+								<li class="list__item list__item-dropmenu"><a href="#">Лофт</a></li>
+							</ul>
+						</li>
+						<li class="list__item"><a href="#">О нас</a></li>
+						<li class="list__item"><a href="#">Партнерам</a></li>
+						<li class="list__item"><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+
+				<div class="header__main clearfix">
+					<div class="price__icon">
+						<a href="#">Скачать прайс</a>
+					</div>
+
+					<div class="logo__mob">
+						<a href="#"><img src="img/logo.png" alt=""></a>
+					</div>
+
+					<div class="callback__icon">
+						<a href="#callback-1" class="popup">вызов замерщика</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="section__main section__main-project clearfix">
+		<div class="container">
+			<div class="sidebar sidebar__project">
+
+				<div class="sidebar__menu">
+					<span class="sidebar__title">Услуги</span>
+					<ul class="sidebar__list">
+						<li class="list__item"><a href="#">Отделочные работы</a></li>
+						<li class="list__item"><a href="#">Ремонт под ключ</a></li>
+						<li class="list__item"><a href="#">Сварочные работы</a></li>
+						<li class="list__item"><a href="#">Проектирование</a></li>
+						<li class="list__item"><a href="#">Дизайн интерьеров</a></li>
+						<li class="list__item"><a href="#">Электрика</a></li>
+						<li class="list__item"><a href="#">Штукатурные работы</a></li>
+						<li class="list__item"><a href="#">Услуги плотника</a></li>
+						<li class="list__item"><a href="#">Укладка плитки</a></li>
+					</ul>
+				</div>
+
+				<div class="sidebar__menu sidebar__menu-2">
+					<span class="sidebar__title">Разделы</span>
+					<ul class="sidebar__list sidebar__list-2">
+						<li class="list__item"><a href="#">Отделочные работы</a></li>
+						<li class="list__item"><a href="#">Ремонт под ключ</a></li>
+						<li class="list__item"><a href="#">Сварочные работы</a></li>
+					</ul>
+				</div>
+
+				<div class="sidebar__menu sidebar__menu-3">
+					<span class="sidebar__title">Документы</span>
+					<ul class="sidebar__list sidebar__list-3">
+						<li class="list__item"><a href="#">Прайс на ремонтные работы</a></li>
+						<li class="list__item"><a href="#">Образец договора по ремонту помещений</a></li>
+						<li class="list__item"><a href="#">Образец договора по дизайну интерьера</a></li>
+						<li class="list__item"><a href="#">Типовая смета на ремонт санузла</a></li>
+						<li class="list__item"><a href="#">Типовая смета на ремонт кухни</a></li>
+						<li class="list__item"><a href="#">Типовая смета на ремонт комнаты</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="content">
+				<div class="content__work">
+					<ul class="bredcrumb">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li>Отделочные работы</li>
+					</ul>
+					<div class="section__title section__title-work section__title-project section__title-service">
+						<h2>Отделочные работы</h2>
+						<span>Хороший ремонт начинается с нас!</span>
+					</div>
+					<div class="block__slider">
+
+						<div class="slider__work">
+							<div class="slider__item">
+								<img src="img/work-slide-1.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/work-slide-2.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/work-slide-3.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/work-slide-1.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/work-slide-2.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/work-slide-3.jpg" alt="">
+							</div>
+
+						</div>
+
+						<div id="work-mob" class="slider__work-mob">
+							<div class="slider__item">
+								<img src="img/work-slide-1.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/work-slide-2.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/work-slide-3.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/work-slide-1.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/work-slide-2.jpg" alt="">
+							</div>
+
+							<div class="slider__item">
+								<img src="img/work-slide-3.jpg" alt="">
+							</div>
+
+						</div>
+					</div>
+					<div class="block__like">
+						<span class="like__title">Нравится?</span>
+						<a href="#callback-2" class="more__link more__link-like popup">Я тоже так хочу</a>
+					</div>
+				</div>
+
+				<div class="content__service">
+					<div class="about__box about__box-partner about__box-service">
+						<p><b>Отделочные работы</b> - это особенный и значимый момент ремонтного процесса в помещении, его финальная фаза, от качества выполнения которой зависит не только великолепие внешнего вида, но и долговечная добротность сделанного ремонта.<br> Условия современной жизни таковы, что к интерьеру своей квартиры или дома человек выдвигает все больше требований. В нынешнее время его дом должен быть не только крепостью, но и максимально комфортным оазисом, где можно расслабиться, отдохнуть от трудового дня, получить дополнительный заряд бодрости перед новыми свершениями. Профессиональное выполнение отделочных работ позволяет добиться удивительного, непревзойденного - оформления жилища, создать уникальный интерьер не только по своей функциональности, но и по красоте и - комфортабельности.</p>
+						<h4>ЗАДАЧА ОТДЕЛОЧНЫХ РАБОТ</h4>
+						<p>Отделочные работы - это окончательная стадия всего ремонтного процесса. Задача отделочных работ — придать квартире или дому завершенный вид. Кроме того, должным образом выполненная отделка защищает поверхности от неблагоприятного влияния внешних природных факторов, механических воздействий, предохраняет от - появления коррозии, грибка, плесени, увлажнения. С другой стороны, качественная отделка способна усовершенствовать акустику в помещении, воздухообмен, освещение комнат солнечными лучами.</p>
+						<h4>Виды ОТДЕЛОЧНЫХ РАБОТ</h4>
+						<p>Отделочные работы по технологичным способам можно разделить на:</p>
+						<h5>ШТУКАТУРНЫЕ</h5>
+						<p>Это нанесение специальных строительных смесей на поверхности с целью выравнивания, декорирования стен, потолка и др. Штукатурку классифицируют на три типа: обычную, декоративную и специальную. Обычная штукатурка предназначена для выравнивания, создает ровную и гладкую поверхность. Используя декоративную штукатурку получают фактурную, цветную или художественную поверхность.  В состав таких штукатурок входят гранитная крошка, различные минеральные и синтетические вещества;</p>
+						<h5>МАЛЯРНЫЕ РАБОТЫ</h5>
+						<p>Предусматривают покрытие поверхностей краской и лаком, которые бывают внутренние и наружные. Наружная краска обладает более высокой устойчивостью к повышенной влажности, низким и высоким температурным перепадам. Применяется для отделки фасадов, балконов и лоджий;</p>
+						<h5>ОБЛИЦОВОЧНЫЕ РАБОТЫ</h5>
+						<p>Это действия, связанные с укладкой различной плитки или панелей из натуральных и синтетических материалов. Облицовка служит для поддержания надлежащих санитарно-гигиенических норм в квартире. Придает интерьеру изысканность и живописность;</p>
+						<h5>ОБОЙНЫЕ РАБОТЫ</h5>
+						<p>Это оклейка стен различными видами обоев - флизелиновыми, виниловыми, обоями под покраску;</p>
+						<h5>ОБОРУДОВАНИЕ НАПОЛЬНОГО ПОКРЫТИЯ</h5>
+						<p>Выполняются работы по настилу пола: укладка ламината, паркетной доски, пробковой доски, плитки, камня, линолеума.</p>
+						<h4>ОСОБЕННОСТЬ ОТДЕЛОЧНЫХ РАБОТ</h4>
+						<p>Выполняя отделочные работы в квартирах, наша профессиональная профильная бригада обеспечивает полный комплекс работ, разработку уникального дизайнерского проекта, своевременное поступление строительных материалов, умелое использование новаторского строительного оборудования и инструментов, высокую степень ответственности.</p>
+						<p>Отделка жилых помещений - творческий и созидательный процесс, включающий в себя полный комплекс отделочно-ремонтных работ. Мы их проводим в строгом соответствии с европейскими нормами. Помимо стандартного набора отделочных работ наши специалисты выполняют следующее:</p>
+						<ul>
+							<li>сантехнические работы - установка сантехники, смесителей, сантехфаянса;</li>
+							<li>электромонтажные работы - монтирование систем вентиляции и кондиционирования, размещение встраиваемых светильников, навешивание люстр;</li>
+							<li>монтаж гипсокартона - установка подвесных каркасных двухуровневых потолков, архитектурно-декоративных          элементов, ниш, перегородок;</li>
+							<li>осуществление лепного декора - создание гипсовой лепнины на потолке, отделка стен плитами из гипсовых 3D панелей. Это один их новых приемов декоративной отделки интерьера.</li>
+						</ul>
+						<h4>ПОЧЕМУ СТОИТ ВЫБРАТЬ НАШУ КОМПАНИЮ</h4>
+						<p>Наша компания осуществляет отделочные работы, применяя новейшие современные строительные технологии и материалы. Как показывает опыт, большинство наших заказчиков при выборе вариантов отделки стен предпочитает декоративную штукатурку. Объясняется это ее великолепными качествами: износоустойчивостью, неприхотливостью в уборке, роскошным видом. Применение декоративной штукатурки на стенах вашего дома позволяет создавать поистине волшебные эффекты шелковых складок, мягкости бархата, стильного блеска металла, благородной старины, фактуры кожи, коры дерева и многое другое.</p>
+						<p>Наши дизайнеры продуманно и профессионально реализуют ваши идеи касательно оформления интерьера. К каждой комнате вашего дома, учитывая ее предназначение, будет подобран свой вид отделочных работ, использованы соответствующие материалы.</p>
+						<p>Безукоризненно выполненная отделка станет прочной основой для создания неповторимого стиля вашего дома.</p>
+
+						<a href="#" class="download__price">Скачать прайс<br>отделочные<br>работы</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section__seo section__seo-service">
+		<div class="container">
+			<div class="section__title section__title-seo section__title-team section__title-service">
+				<h2>Еще текст о отделочных работах</h2>
+				<h2 class="mob__title">Текст про работы</h2>
+			</div>
+
+			<div class="block__seo">
+				<p>Дизайн проект. Заказчику предоставляется готовый дизайн квартир со всем комплексом ремонтных работ под контролем прораба и дизайнера «авторский надзор»,указанием сроков и проектной документацией. Ремонт квартир «евро» стандарта, перепланировка и обустройство с применением современных ремонтных технологий и высококачественных материалов.</p>
+				<p>Отделка потолков. Вариаций выполнения с применением необычных раскрасок и форм потолочных покрытий зависит от дизайна квартиры и замысла дизайнера помещения под евроремонт. Используем практичные ткани натяжных потолков, отделку штукатуркой, индивидуальную роспись и другие комбинации строительных материалов.</p>
+				<p>Спальня, гостиная. Основные комнаты в любой квартире спальня, гостиная в их ремонте используют схожий спектр технических и материальных ресурсов.	Наиболее разумно реализуют их планировку специалисты компании в личной консультации, а так же замерщик-мастер при выезде на объект.</p>
+				<p>Ванная комната. Ремонт квартиры начинается с ванной комнаты по причине самых трудоемких и продолжительных работ. Евроремонт ванной комнаты – разводка	сантехнической части и благоустройство рабочей площади комнаты с применением водостойкой мебели и укладка плитки на пол. Цветные ванные комнаты, джакузи, парилки, душевые кабины подходят для «евро» класса.</p>
+			</div>
+
+			<div class="block__seo block__seo-mob">
+				<p>Дизайн проект. Заказчику предоставляется готовый дизайн квартир со всем комплексом ремонтных работ под контролем прораба и дизайнера «авторский надзор»,указанием сроков и проектной документацией. Ремонт квартир «евро» стандарта, перепланировка и обустройство с применением современных ремонтных технологий и высококачественных материалов.</p>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer__main">
+			<div class="container">
+
+				<div class="footer__block">
+					<a href="#" class="footer__logo"><img src="img/logo-footer.png" alt=""></a>
+
+					<div class="footer__menu">
+						<ul class="header__list header__list-footer">
+							<li class="list__item"><a href="#">Главная</a></li>
+							<li class="list__item"><a href="#">Дизайн-проект</a></li>
+							<li class="list__item list__item-drop">
+								<a href="#">Стили<i></i></a>
+								<ul class="header__list header__list-footer header__list-dropmenu">
+									<li class="list__item list__item-dropmenu"><a href="#">Минимализм</a></li>
+									<li class="list__item list__item-dropmenu"><a href="#">Эко стиль</a></li>
+									<li class="list__item list__item-dropmenu"><a href="#">Хай-тек</a></li>
+									<li class="list__item list__item-dropmenu"><a href="#">Лофт</a></li>
+								</ul>
+							</li>
+							<li class="list__item"><a href="#">О нас</a></li>
+							<li class="list__item"><a href="#">Партнерам</a></li>
+							<li class="list__item"><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer__block footer__block-contact">
+					<span class="block__title">Контакты</span>
+					<ul class="contact__list">
+						<li><span>Адрес:</span>г. Москва, ул. Пушкина, дом 13</li>
+						<li><span>Телефон:</span>+7 (495) 532-54-68</li>
+						<li><span>Email:</span>info@remont-pod-cluch.ru</li>
+					</ul>
+				</div>
+
+				<div class="callback__form callback__form-footer">
+					<span class="form__title">Обратная связь</span>
+					<form action="#">
+						<input type="text" placeholder="Ваше имя:" required>
+						<input type="text" placeholder="Ваш телефон:" required>
+						<button class="form__btn" type="submit">Отправить</button>
+					</form>
+					<span class="form__thank">Наш менеджер свяжется с Вами в течение 15 минут и ответит на все Ваши вопросы</span>
+				</div>
+
+			</div>
+		</div>
+		<div class="footer__bottom clearfix">
+			<div class="container">
+				<div class="copyright">&copy; 2016. Все права защищены.</div>
+				<div class="developer">
+					<a href="#" title="Рекламотерапия"><img src="img/adtherapy.png" alt="Рекламотерапия"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div class="hidden">
+		<div id="callback-1" class="callback__form callback__form-popup">
+			<span class="form__title">Обратная связь</span>
+			<form action="#">
+				<input type="text" placeholder="Ваше имя:" required>
+				<input type="text" placeholder="Ваш телефон:" required>
+				<button class="form__btn" type="submit">Отправить</button>
+			</form>
+			<span class="form__thank">Наш менеджер свяжется с Вами в течение 15 минут и ответит на все Ваши вопросы</span>
+		</div>
+
+		<div id="callback-2" class="callback__form callback__form-order">
+			<span class="form__title">заявка на разработку<br>дизайн-проекта</span>
+			<form action="#">
+				<input type="text" placeholder="Ваше имя:" required>
+				<input type="text" placeholder="Ваш телефон:" required>
+				<input type="text" placeholder="Ваша электронная почта:" required>
+				<label for="style">
+					<span>Выберите стиль:</span>
+					<select name="style" id="style">
+						<option>Минимализм</option>
+						<option>Эко стиль</option>
+						<option>Хай-тек</option>
+						<option>Лофт</option>
+					</select>
+				</label>
+				<button class="form__btn" type="submit">Отправить заявку</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.12.4.min.js"></script>
+	<script src="libs/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+	<script src="libs/magnific/jquery.magnific-popup.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+
+	<script src="js/common.js"></script>
+
+</body>
+</html>

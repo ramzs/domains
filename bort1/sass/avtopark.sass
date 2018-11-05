@@ -1,0 +1,57 @@
+@import "vars.sass"
+/*------------------Avtopark page-------------*/
+.avtopark__inner
+	padding: 25px 0 50px
+
+.avtopark__text
+	column-count: 2
+	column-gap: 50px
+	font-size: 18px
+	p
+		margin: 0
+
+.avtopark__slider
+	position: relative
+	margin-top: 80px
+	.container
+		padding: 0
+	.bx-wrapper
+		float: left
+		width: 75%
+		margin: 0 auto
+		.bx-viewport
+			left: 0
+			border: 1px solid transparent
+			border-right: none
+			border-radius: 0
+			background: none
+		.bx-controls-direction
+			a
+				height: 48px
+				opacity: .7
+		.bx-prev
+			background: url(../img/slide-left.png) 0 0 no-repeat
+			&:hover
+				opacity: 1
+		.bx-next
+			background: url(../img/slide-right.png) 0 0 no-repeat
+			&:hover
+				opacity: 1
+				background-position: 0 0
+
+.slider__thumbs
+	float: left
+	width: 25%
+	a
+		float: left
+		position: relative
+		width: 150px
+		height: 100px
+		opacity: .7
+		border: 1px solid transparent
+		&.active
+			opacity: 1
+		img
+			width: 100%
+			height: 100%
+/*---------------------end-------------------*/

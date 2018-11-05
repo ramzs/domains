@@ -1,0 +1,156 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-active {
+  background-image: url(../img/sprite.png);
+  background-position: -119px -84px;
+  width: 13px;
+  height: 17px;
+}
+.icon-arrow-down {
+  background-image: url(../img/sprite.png);
+  background-position: -72px -110px;
+  width: 16px;
+  height: 12px;
+}
+.icon-arrow-pag-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -77px -78px;
+  width: 31px;
+  height: 10px;
+}
+.icon-arrow-pag {
+  background-image: url(../img/sprite.png);
+  background-position: -119px -101px;
+  width: 15px;
+  height: 5px;
+}
+.icon-arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: -119px -67px;
+  width: 13px;
+  height: 17px;
+}
+.icon-change {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -78px;
+  width: 32px;
+  height: 32px;
+}
+.icon-delivery {
+  background-image: url(../img/sprite.png);
+  background-position: -119px 0px;
+  width: 23px;
+  height: 13px;
+}
+.icon-door-icon-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -119px -13px;
+  width: 13px;
+  height: 22px;
+}
+.icon-door-icon-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -32px -78px;
+  width: 24px;
+  height: 22px;
+}
+.icon-fb {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 40px;
+  height: 39px;
+}
+.icon-gl {
+  background-image: url(../img/sprite.png);
+  background-position: -40px -39px;
+  width: 40px;
+  height: 39px;
+}
+.icon-headphone {
+  background-image: url(../img/sprite.png);
+  background-position: -43px -110px;
+  width: 14px;
+  height: 14px;
+}
+.icon-home {
+  background-image: url(../img/sprite.png);
+  background-position: -57px -110px;
+  width: 15px;
+  height: 13px;
+}
+.icon-measure {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -110px;
+  width: 15px;
+  height: 14px;
+}
+.icon-phone-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -80px 0px;
+  width: 39px;
+  height: 39px;
+}
+.icon-phone {
+  background-image: url(../img/sprite.png);
+  background-position: -56px -78px;
+  width: 21px;
+  height: 21px;
+}
+.icon-search-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -80px -39px;
+  width: 37px;
+  height: 38px;
+}
+.icon-search {
+  background-image: url(../img/sprite.png);
+  background-position: -119px -35px;
+  width: 16px;
+  height: 16px;
+}
+.icon-setup {
+  background-image: url(../img/sprite.png);
+  background-position: -119px -51px;
+  width: 15px;
+  height: 16px;
+}
+.icon-star-active {
+  background-image: url(../img/sprite.png);
+  background-position: -15px -110px;
+  width: 14px;
+  height: 14px;
+}
+.icon-star {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -110px;
+  width: 14px;
+  height: 14px;
+}
+.icon-tw {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -39px;
+  width: 40px;
+  height: 39px;
+}
+.icon-vk {
+  background-image: url(../img/sprite.png);
+  background-position: -40px 0px;
+  width: 40px;
+  height: 39px;
+}

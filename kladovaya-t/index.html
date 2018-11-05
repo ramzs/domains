@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Кладовая теплоты</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="libs/bxslider/jquery.bxslider.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+	<div class="menu__header"><span>Меню</span></div>
+	<div class="menu__overlay"></div>
+	<div id="menu-mobile" class="menu__mobile">
+		<span id="menu-close" class="menu__close"></span>
+		<div class="menu__inner">
+			<div class="header__login header__login-mob">
+				<a href="#" class="login">Вход</a>
+				<a href="#" class="signup">Регистрация</a>
+			</div>
+			<a href="#" class="full__link">Полная версия сайта</a>
+		</div>
+	</div>
+
+	<div id="header-top" class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="hidden-xs col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-5 col-lg-offset-3 col-lg-5">
+					<div class="header__search">
+						<form action="#" class="search__form">
+							<input type="text" name="search" id="" placeholder="Поиск..." class="search__input">
+							<input type="submit" value="" class="search__submit">
+						</form>
+					</div>
+				</div>
+				<div class="hidden-xs col-sm-3 col-md-2 col-lg-2">
+					<div class="header__login">
+						<a href="#" class="login">Вход</a>
+						<a href="#" class="signup">Регистрация</a>
+					</div>
+				</div>
+				<div class="hidden-xs col-sm-3 col-md-3 col-lg-2">
+					<div class="header__cart">
+						<a href="#" class="cart__pict" title="Перейти в корзину"><img src="img/cart.png" alt=""></a>
+						<div class="cart__total">
+							<div class="cart__count"><span class="upper">Товаров:</span> <span>0</span> шт.</div>
+							<div class="cart__price">на <span>0 руб.</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__top-mob">
+			<div class="container">
+				<div class="menu__mob">
+					<a id="menu-btn" href="#" class="menu__toggle">Меню</a>
+				</div>
+				<a href="#" class="top__icon top__icon-search active"><i></i></a>
+				<a href="#" class="top__icon-home"><img src="img/home-icon.png" alt=""></a>
+				<a href="#" class="top__icon top__icon-cart">
+					<span class="cart__total-mob">2</span>
+					<i></i>
+				</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="wrapper">
+		<div class="header__main">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-3">
+						<div class="header__logo">
+							<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+						</div>
+
+						<div id="cart-search" class="header__search-mob open active">
+							<form action="#" class="search__form-mob">
+								<input type="text" name="search" id="" placeholder="Поиск по названию и номеру артикула" class="search__input-mob">
+								<input type="submit" value="" class="search__submit-mob">
+							</form>
+						</div>
+
+						<div id="cart-mob" class="header__cart-mob">
+							<div class="header__cart">
+								<a href="cart.html" class="cart__pict" title="Перейти в корзину"><img src="img/cart.png" alt=""></a>
+								<div class="cart__total">
+								<div class="cart__count"><span class="upper">Товаров:</span> <span>2</span> шт.</div>
+									<div class="cart__price">на <span>2150 руб.</span></div>
+								</div>
+							</div>
+							<button class="cart__btn">Оформить</button>
+							<a href="cart.html" class="cart__link">Корзина</a>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-3 col-md-4">
+						<div class="header__title">
+							<h1>Интернет-магазин<br>семейных ценностей</h1>
+							<span>г.Москва, г.Зеленоград</span>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-2 col-md-2">
+						<div class="header__icon">
+							<div class="delivery__icon">
+								<a href="delivery.html">
+									<img src="img/delivery.png" alt="">
+									Доставка
+								</a>
+							</div>
+							<div class="pay__icon">
+								<a href="checkout.html">
+									<img src="img/pay.png" alt="">
+									Оплата
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-4 col-md-3">
+						<div class="header__contact">
+							<div class="header__phone">Телефон: <span>+7 (925) 878-55-70</span></div>
+							<div class="header__whatsapp">WhatsApp: <span>+7 (925) 878-55-70</span></div>
+							<div class="header__email">e-mail: <span>kladovaya.teploty@mail.ru</span></div>
+							<div class="header__skype">skype: <span>Kladovaya-t</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<ul class="header__menu">
+					<li><a href="#">Главная</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Партнеры</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+				<div class="header__social">
+					<ul>
+						<li><a href="#" class="social__inst"></a></li>
+						<li><a href="#" class="social__fb"></a></li>
+						<li><a href="#" class="social__vk"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="hidden-xs col-sm-4 col-md-3">
+						<div class="sidebar">
+							<a href="#" class="sidebar__new">Новинки</a>
+							<div class="filter">
+								<h4 class="filter__title">Подбор подарка</h4>
+								<a href="#" class="filter__reset">Сбросить фильтр</a>
+								<div class="filter__item filter__item-age">
+									<span class="age__title">Возраст</span>
+									<label>
+										<input type="checkbox" name="" id="">
+										0-12 мес
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										1-2 года
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										2-3 года
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										3-5 лет
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										5-7 лет
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										7-12 лет
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										взрослые
+									</label>
+								</div>
+								<div class="filter__item filter__item-person">
+									<span class="person__title">Пол</span>
+									<label>
+										<input type="checkbox" name="" id="">
+										М
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Ж
+									</label>
+								</div>
+								<div class="filter__item filter__item-event">
+									<span class="event__title">Повод</span>
+									<label>
+										<input type="checkbox" name="" id="">
+										День рождения
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Новорожденному
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Крещение
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Новый год
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Рождество
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										8 марта
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										23 февраля
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Пасха
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Новоселье
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Свадьба
+									</label>
+								</div>
+								<div class="filter__item filter__item-price">
+									<span class="price__title">Цена</span>
+									<input type="text" name="" id="" placeholder="0">
+									<label>
+										<input type="text" name="" id="" placeholder="0">
+										руб.
+									</label>
+								</div>
+								<div class="filter__btn">
+									<button class="btn__total">Показать</button>
+									<a href="#" class="filter__reset filter__reset-btn">Сбросить</a>
+								</div>
+							</div>
+							<div class="catalog">
+								<h4 class="catalog__title">Деревянный погребок</h4>
+								<ul class="catalog__menu">
+									<li><a href="#">Развивающие игрушки</a></li>
+									<li><a href="#">Сюжетные игрушки</a></li>
+									<li><a href="#">Пазлы, мозаики</a></li>
+									<li><a href="#">Пирамидки, сортеры</a></li>
+									<li><a href="#">Кубики, конструкторы</a></li>
+									<li><a href="#">Именные пазлы</a></li>
+									<li><a href="#">Расписные фигурки</a></li>
+									<li><a href="#">Медали</a></li>
+									<li><a href="#">Ладошки</a></li>
+									<li><a href="#">Для творчества</a></li>
+									<li><a href="#">Для дома</a></li>
+								</ul>
+							</div>
+							<div class="catalog">
+								<h4 class="catalog__title">Тканный погребок</h4>
+								<ul class="catalog__menu">
+									<li><a href="#">Игрушки</a></li>
+								</ul>
+							</div>
+							<a href="#" class="sidebar__new sidebar__new-interes">Это интересно!</a>
+							<a href="#" class="full__link">Полная версия сайта</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">
+						<div class="main">
+							<div class="main__slider">
+								<ul class="bxslider">
+									<li>
+										<img src="img/slide-1.jpg" alt="">
+										<div class="bx-caption">
+											<div class="slider__title">
+												<h3>Кто так долго ждал игрушки <span>от мастерской Михеевых?</span></h3>
+												<h3>Сегодня они снова <span>в наличии!</span></h3>
+											</div>
+											<a href="#" class="link__more">Перейти<i class="glyphicon glyphicon-menu-right"></i></a>
+										</div>
+									</li>
+									<li>
+										<img src="img/slide-1.jpg" alt="">
+										<div class="bx-caption">
+											<div class="slider__title">
+												<h3>Кто так долго ждал игрушки <span>от мастерской Михеевых?</span></h3>
+												<h3>Сегодня они снова <span>в наличии!</span></h3>
+											</div>
+											<a href="#" class="link__more">Перейти<i class="glyphicon glyphicon-menu-right"></i></a>
+										</div>
+									</li>
+									<li>
+										<img src="img/slide-1.jpg" alt="">
+										<div class="bx-caption">
+											<div class="slider__title">
+												<h3>Кто так долго ждал игрушки <span>от мастерской Михеевых?</span></h3>
+												<h3>Сегодня они снова <span>в наличии!</span></h3>
+											</div>
+											<a href="#" class="link__more">Перейти<i class="glyphicon glyphicon-menu-right"></i></a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="main__banner">
+								<div class="row">
+									<div class="col-md-4">
+										<a href="#"><img src="img/banner-1.jpg" alt=""></a>
+									</div>
+									<div class="col-md-4">
+										<a href="#"><img src="img/banner-2.jpg" alt=""></a>
+									</div>
+									<div class="col-md-4">
+										<a href="#"><img src="img/banner-3.jpg" alt=""></a>
+									</div>
+								</div>
+							</div>
+							<div class="wrap__mob">
+								<a href="#" class="catalog__btn">Каталог</a>
+
+								<div class="main__carousel clearfix">
+									<h4 class="carousel__title">Вас может заинтересовать</h4>
+									<div class="bxcarousel">
+										<div class="slide">
+											<div class="carousel__item">
+												<div class="item__img">
+													<a href="#"><img src="img/carousel-1.jpg" alt=""></a>
+												</div>
+												<div class="item__stick">
+													<img src="img/new.png" alt="">
+												</div>
+												<div class="item__descr">
+													<a href="#"><h5>Деревянные куколки "Учим цвета"</h5></a>
+												</div>
+												<div class="item__price">
+													500 руб.
+												</div>
+												<a href="#" class="item__cart"></a>
+											</div>
+										</div>
+
+										<div class="slide">
+											<div class="carousel__item">
+												<div class="item__img">
+													<a href="#"><img src="img/carousel-2.jpg" alt=""></a>
+												</div>
+												<div class="item__descr">
+													<a href="#"><h5>Морские камешки-галька из дерева</h5></a>
+												</div>
+												<div class="item__price">
+													550 руб.
+												</div>
+												<a href="#" class="item__cart"></a>
+											</div>
+										</div>
+
+										<div class="slide">
+											<div class="carousel__item">
+												<div class="item__img">
+													<a href="#"><img src="img/carousel-3.jpg" alt=""></a>
+												</div>
+												<div class="item__stick">
+													<img src="img/hit.png" alt="">
+													<span>Хит!</span>
+												</div>
+												<div class="item__descr">
+													<a href="#"><h5>Фигурки-закладки по любимым книжкам</h5></a>
+												</div>
+												<div class="item__price">
+													150 руб.
+												</div>
+												<a href="#" class="item__cart"></a>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div class="main__carousel main__carousel-news clearfix">
+									<h4 class="carousel__title">Новости и события</h4>
+									<div class="bxcarousel">
+										<div class="slide">
+											<div class="carousel__item">
+												<div class="item__img">
+													<a href="#"><img src="img/carousel-news-1.jpg" alt=""></a>
+												</div>
+												<div class="item__descr">
+													<i>10 апреля 2016</i>
+													<a href="#">Искренне рекомендуем замечательный спектакль!</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="slide">
+											<div class="carousel__item">
+												<div class="item__img">
+													<a href="#"><img src="img/carousel-news-2.jpg" alt=""></a>
+												</div>
+												<div class="item__descr">
+													<i>9 апреля 2016</i>
+													<a href="#">Приглашаем на семейную игротеку <span>&laquo;Лепилка&raquo;</span></a>
+												</div>
+											</div>
+										</div>
+
+										<div class="slide">
+											<div class="carousel__item">
+												<div class="item__img">
+													<a href="#"><img src="img/carousel-news-3.jpg" alt=""></a>
+												</div>
+												<div class="item__descr item__descr-news">
+													<i>8 марта 2016</i>
+													<a href="#">С 8 марта Вас, дорогие девочки, девушки, женщины, бабушки!</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div class="main__about">
+									<h5 class="about__title">Магазин семейных ценностей!</h5>
+									<p>В нашей кладовой мы бережно собрали для Вас все самое теплое, полезное, развивающее.  Мы постарались найти, а если не смогли найти, то создать уникальные вещи, которые будут радовать Вашу семью и приносить пользу!</p>
+									<p>Все товары опробованы нами лично! Товары для детей проходят жёсткий отбор и испытываются нашими детьми, а сувениры и подарки высоко оценены нашими бабушками, дедушками и друзьями!</p>
+									<p>Наша кладовая уникальна тем, что почти каждый товар сделан руками мастера и несёт в себе их тепло. А еще многое мы можем сделать по Вашим размерам, что-то убрать или, наоборот, добавить!</p>
+									<p>Мы рады поделится с Вами накопленными полезностями и будем радовать Вас новыми идеями и их воплощением! Желаем приятных покупок!</p>
+									<div class="about__overlay">
+										<a href="#" class="overlay__block"></a>
+										<a href="#" class="overlay__arrow"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#header-top" class="link__top"></a>
+		</div>
+
+		<div class="askfox">
+			<a href="#" class="askfox__head">
+				<h5><span>Спроси</span>у Лисёнка</h5>
+			</a>
+			<img src="img/foot-logo.png" alt="">
+		</div>
+
+		<div id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-offset-3 col-md-9">
+						<div class="row">
+							<div class="col-xs-12 col-sm-3 col-md-3">
+								<div class="list__block list__block-social clearfix">
+									<div class="wrap__mob">
+										<h5 class="block__title">Мы в соц. сетях:</h5>
+										<ul>
+											<li><a href="#" class="vk">В контакте</a></li>
+											<li><a href="#" class="fb">Facebook</a></li>
+											<li><a href="#" class="inst">Instagram</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3">
+								<div class="list__block list__block-delivery">
+									<div class="wrap__mob">
+										<h5 class="block__title" data-target="#collapseOne">Способы доставки<span>:</span><i class="arrow__icon"></i></h5>
+										<ul id="collapseOne" class="collapse">
+											<li>- Почта России</li>
+											<li>- EMC, CDEK</li>
+											<li>- Курьер</li>
+											<li>- Самовывоз</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3">
+								<div class="list__block list__block-pay">
+									<div class="wrap__mob">
+										<h5 class="block__title" data-target="#collapseTwo">Способы оплаты<span>:</span><i class="arrow__icon"></i></h5>
+										<img id="collapseTwo"  class="pay-1 collapse" src="img/pay-sprite.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3">
+								<div class="list__block list__block-contact">
+									<div class="wrap__mob">
+										<h5 class="block__title" data-target="#collapseThree">Контакты<span>:</span><i class="arrow__icon"></i></h5>
+										<ul id="collapseThree" class="collapse">
+											<li>+7 (925) 878-55-70</li>
+											<li>kladovaya.teploty@mail.ru</li>
+											<li>Skype: Kladovaya-t</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer__bottom">
+		<div class="container">
+			<div class="footer__copyright">Copyright 2016 <sup>©</sup> www.kladovaya-t.ru <span>- магазин семейных ценностей. Все права защищены!</span><span class="copy__mob">Магазин семейных ценностей. Все права защищены!</span></div>
+		</div>
+	</div>
+
+
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.12.4.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+	<script src="libs/bxslider/jquery.bxslider.min.js"></script>
+	<script src="libs/PageScroll2id/PageScroll2id.min.js"></script>
+
+	<script src="js/common.js"></script>
+
+</body>
+</html>

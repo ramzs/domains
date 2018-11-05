@@ -1,0 +1,128 @@
+@import "vars.sass"
+/*-----------------Contact page----------------*/
+.wrapper
+	&.wrapper__inner-contact
+		position: relative
+		height: 1600px
+		background: url(../img/contact-bg.jpg) 31% top repeat-y
+		background-size: auto 1200px
+
+.contact__block
+	margin: 47px 0 0 50%
+
+.contact__item
+	display: block
+	position: relative
+	margin: 0 0 7px 40px
+	font: 700 24px "Proxima"
+	a
+		display: inline-block
+		margin-left: 140px
+		font: 300 24px "Proxima"
+		color: #fff
+	&:before
+		content: ' '
+		position: absolute
+		top: -2px
+		left: -40px
+	&.contact__item-phone
+		&:before
+			width: 30px
+			height: 30px
+			background: url(../img/phone-icon.png) 0 0 no-repeat
+	&.contact__item-mail
+		&:before
+			top: 3px
+			width: 28px
+			height: 20px
+			background: url(../img/mail-icon.png) 0 0 no-repeat
+		a
+			margin-left: 175px
+
+.contact__social
+	display: inline-block
+	margin-top: 25px
+	a
+		display: block
+		position: relative
+		margin: 0 0 8px 40px
+		font: 700 24px "Proxima"
+		color: #fff
+		&:hover
+			text-decoration: underline
+		&:before
+			content: ' '
+			position: absolute
+			width: 31px
+			height: 30px
+			top: 0
+			left: -40px
+	.fb__link
+		&:before
+			left: -32px
+			background: url(../img/facebook-icon.png) 0 0 no-repeat
+	.inst__link
+		&:before
+			background: url(../img/inst-icon.png) 0 0 no-repeat
+	.yt__link
+		&:before
+			background: url(../img/youtube-icon.png) 0 0 no-repeat
+
+.contact__form
+	width: 400px
+	margin-top: 32px
+	input
+		width: 100%
+		height: 60px
+		margin-bottom: 10px
+		padding-left: 20px
+		font-size: 18px
+		border: none
+		outline: none
+		background: rgba(255, 255, 255, 0.25)
+		transition: all .15s ease
+		&:focus
+			box-shadow: 0 0 10px #000
+	textarea
+		width: 100%
+		height: 130px
+		margin-bottom: 6px
+		padding: 20px 0 0 20px
+		font-size: 18px
+		border: none
+		outline: none
+		background: rgba(255, 255, 255, 0.25)
+		transition: all .15s ease
+		&:focus
+			box-shadow: 0 0 10px #000
+	button
+		width: 100%
+		height: 60px
+		border: none
+
+.form__title
+	&.form__title-contact
+		margin-bottom: 17px
+
+.press__kit
+	margin-top: 26px
+
+.press__title
+	margin-bottom: 33px
+	font: 100px "Avalon"
+
+.press__link
+	display: block
+	position: relative
+	margin: 0 0 32px 50px
+	font: 700 24px "Proxima"
+	color: #fff
+	&:before
+		content: ' '
+		position: absolute
+		top: -12px
+		left: -50px
+		width: 38px
+		height: 51px
+		background: url(../img/pdf-icon.png) 0 0 no-repeat
+/*---------------------end---------------------*/

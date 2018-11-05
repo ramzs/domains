@@ -1,0 +1,2051 @@
+@media only screen and (max-width : 1250px) {
+	.header-search input {
+		width: 497px;
+	}
+}
+@media only screen and (max-width : 1200px) {
+	.container {
+		max-width: 980px;
+	}
+	.header-search {
+		margin-left: 10px;
+	}
+	.header-search input {
+		width: 300px;
+	}
+	.header-body_menu {
+	    margin: 40px 0 0 0;
+	    text-align: center;
+	}
+	.breadcrumb {
+		width: 200px;
+	}
+	.footer-menu {
+		width: 18%;
+	}
+	/*Страница категории авто*/
+	.cat-avto_title {
+		margin-right: 0;
+	}
+	/*конец*/
+
+	/*Страница легковые авто*/
+	.result-item {
+		width: 100%;
+	}
+	/*конец*/
+
+	/*-----Card-tovar page-----*/
+	.card-head_title h2 {
+	    font-size: 28px;
+	    width: 48%;
+	    line-height: 33px;
+	}
+	.card-main_gallery .connected-carousels .stage {
+	    width: 540px;
+	}
+	.card-main_gallery .connected-carousels .carousel-stage {
+		height: auto;
+	}
+	.card-main_gallery .connected-carousels .carousel-stage li img {
+	    width: 540px;
+	    height: auto;
+	}
+	.card-main_gallery .connected-carousels .carousel-stage li {
+	    height: 330px;
+	}
+	.card-main_gallery .connected-carousels .carousel-navigation {
+	    width: 540px;
+	}
+	.card-main_gallery .connected-carousels .carousel-navigation li img {
+	    width: 132px;
+   		height: 90px;
+	}
+	/*-----end----------*/
+
+	/*-------Personal page---------*/
+	.personal-title {
+		width: 100%;
+	}
+	.personal-item {
+		width: 96.6%;
+		margin-left: 34px;
+	}
+	.personal-item_descr,
+	.personal-item_price,
+	.personal-item_message,
+	.personal-item_view {
+	    padding: 20px 35px 0;
+	}
+	.personal-item_btn {
+		left: 170px;
+	}
+	.message-item {
+		width: 100%;
+	}
+	.pay-block {
+		width: 100%;
+	}
+	.pay-title {
+		margin-left: 0;
+	}
+	.pay-block .personal-item {
+		margin-left: 0;
+	}
+	.service-block {
+		width: 100%;
+	}
+	.personal-option {
+		width: 100%;
+	}
+	.personal-option label {
+		width: 30%;
+	}
+	/*--------end-------------*/
+}
+
+@media only screen and (max-width : 992px) {
+	.container {
+		max-width: 740px;
+	}
+	.header-top_menu li > a {
+		padding: 18px 6px;
+	}
+	.header-top_menu li .header-phone {
+		padding: 0 8px;
+	}
+	.header-top_menu li .area-link,
+	.header-top_menu li .account-link {
+	    padding: 0 35px;
+	}
+	.header-search {
+		float: right;
+		margin-left: 0;
+	}
+	.header-body_top .add-post {
+		margin-top: 20px;
+	}
+	.header-body_menu {
+	    margin-top: 35px;
+	    text-align: left;
+	}
+	.header-menu li {
+		margin: 0 14px 0 0;
+	}
+	.header-menu li:last-child {
+		margin-right: 0;
+	}
+	.header-bottom {
+	    margin-top: 35px;
+	}
+	.header-bottom h1 {
+		font-size: 22px;
+	}
+	.header-block_tab a {
+		width: 175px;
+	}
+	.header-block_tab .btn-select {
+		width: 175px;
+	}
+	.header-block_tab .btn-select-value {
+		padding: 0 20px;
+	}
+	.header-block_tab .btn-select-value:after {
+		right: 15px;
+	}
+	.header-block_tab a:hover:before,
+	.header-block_tab a.focus:before {
+		width: 175px;
+	}
+	.main-content_option {
+		width: 700px;
+	}
+	.main-cat-item {
+		width: 235px;
+		margin: 0 4px 30px;
+	}
+	.footer-form form {
+		width: auto;
+	}
+	.footer-form form input {
+		width: 100%;
+	}
+	.footer-form form textarea {
+		display: block;
+		float: none;
+		margin-top: 0;
+	}
+	.footer-menu {
+		width: 30%;
+	}
+	/*Страница категории авто*/
+	.breadcrumb {
+		width: 100%;
+		margin-top: 30px;
+	}
+	.breadcrumb li {
+		float: left;
+		margin-right: 8px;
+	}
+	.cat-avto_title {
+		margin-top: 20px;
+	}
+	.sel-cat-list {
+		padding: 0;
+	}
+	.sel-cat-list li a {
+		font-size: 16px;
+	}
+	.cat-item_list {
+	    padding: 20px 20px 0;
+	}
+	.cat-item_list li a {
+		font-size: 16px;
+	}
+	.select-brand_item {
+		width: 19%;
+	}
+	/*конец*/
+
+	/*Страница легковые авто*/
+	.result-item {
+		display: inline-block;
+		width: 45%;
+		height: auto;
+		margin: 0 15px 30px;
+	}
+	.result-item .item-img {
+		float: none;
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.result-item .item-head {
+	    padding: 28px 20px 0;
+	}
+	.result-item .item-head .date-item {
+		display: none;
+	}
+	.result-item .item-main {
+		height: 95px;
+		padding: 26px 20px 0;
+	}
+	.result-item .item-foot {
+		padding: 15px 20px 20px;
+		bottom: 0;
+	}
+	.result-item .item-foot .release-year,
+	.result-item .item-foot .mileage {
+		margin-bottom: 10px;
+	}
+	.result-item .item-foot .price-item {
+		position: relative;
+		right: 0;
+		margin-top: 10px;
+	}
+	.pagination {
+		float: none;
+		display: block;
+		margin-left: 0;
+	}
+	/*конец*/
+
+	/*-----Card-tovar page-----*/
+	.card-head_title {
+		top: 0;
+		margin-top: 35px;
+	}
+	.card-head_base {
+		position: relative;
+		top: 0;
+		margin-top: 20px;
+	}
+	.card-head_title h2 {
+	    font-size: 30px;
+	    width: 100%;
+	}
+	.card-head_trade {
+		margin-top: 20px;
+	}
+	.card-head .cold-ads {
+		display: none;
+	}
+	.card-head .cold-ads_mob {
+		display: inline-block;
+		margin-top: 0;
+	}
+	.card-head_connect {
+		position: relative;
+		top: 0;
+		margin-top: 30px;
+	}
+	.card-main_gallery {
+		float: none;
+		display: inline-block;
+		width: 100%;
+	}
+	.card-main_gallery .connected-carousels .stage {
+	    width: 740px;
+	}
+	.card-main_gallery .connected-carousels .carousel-stage li img {
+	    width: 740px;
+	}
+	.card-main_gallery .connected-carousels .carousel-stage li {
+	    height: 440px;
+	}
+	.card-main_gallery .connected-carousels .carousel-navigation {
+	    width: 740px;
+	}
+	.card-main_gallery .connected-carousels .carousel-navigation li img {
+        width: 182px;
+	    height: 108px;
+	}
+	.card-main_features {
+		width: 100%;
+		margin-top: 40px;
+	}
+	.card-main_descr {
+		width: 55%;
+		margin-right: 5%;
+	}
+	/*-----end----------*/
+
+	/*-----------Personal page----------*/
+	.personal-page {
+		padding-bottom: 30px;
+	}
+	.total-score {
+		margin: 30px 0 0;
+	}
+	.personal-block_tab a {
+		width: auto;
+		padding: 0 18px;
+	}
+	.personal-item {
+	    width: 100%;
+	    margin-left: 0;
+	}
+	.personal-item .number {
+		display: none;
+	}
+	.personal-item_descr,
+	.personal-item_price,
+	.personal-item_message,
+	.personal-item_view {
+		padding: 20px 10px 0;
+	}
+	.personal-item_btn {
+		left: 146px;
+	}
+	/*-------------end----------------*/
+}
+
+@media only screen and (max-width : 768px) {
+	.container {
+		max-width: 680px;
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
+	.header {
+	    text-align: center;
+	}
+	.header-top_line {
+		display: none;
+	}
+	.nav-mobile {
+		display: block;
+	}
+	#nav-mobile {
+		display: block;
+	}
+	#nav-mobile.mobile-open {
+	    left: 0;
+	}
+	.header-body {
+		height: auto;
+		text-align: center;
+		padding: 20px 0;
+	}
+	.header-body_top .logo {
+		float: none;
+		display: inline-block;
+		margin-bottom: 40px;
+	}
+	.header-body_top .logo .logo-img {
+		font-size: 35px;
+	}
+	.header-body_top .logo img {
+		width: 70px;
+	}
+	.area-change {
+		display: block;
+	}
+	.header-body_top .area-link_mob {
+		display: block;
+		height: 70px;
+		font-size: 32px;
+		padding: 10px 100px;
+	}
+	.header-body_top .area-link_mob:before {
+		top: 8px;
+    	left: 115px;
+    	-webkit-background-size: 25px;
+    	background-size: 25px;
+	}
+	.header-body_top .area-link_mob:after {
+		top: 25px;
+		right: 105px;
+	}
+	.header-body_top .area-link_mob.active:after {
+		top: 22px;
+    	right: 110px;
+	}
+	.area-change {
+		line-height: 51px;
+	}
+	.header-search {
+		display: none;
+	}
+	.header-search_mob input {
+		display: inline-block;
+	    width: 100%;
+	    max-width: 100%;
+	    height: 70px;
+	    position: relative;
+	    padding: 0 0 4px 20px;
+	    font: 32px "LatoMedium", sams-serif;
+	    vertical-align: middle;
+	    background: #fff;
+	    border: 1px solid #ccc;
+	    border-radius: 2px 0 0 2px;
+	    outline: none;
+	}
+	.header-body_top .add-post {
+		float: none;
+		display: block;
+		width: 100%;
+		height: 90px;
+	    font-size: 35px;
+	    line-height: 90px;
+		margin-top: 45px;
+	}
+	.header-search_mob {
+	    display: block;
+	    margin-top: 45px;
+	    position: relative;
+	}
+	.header-search_mob .btn-search_mob {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 193px;
+		height: 70px;
+		text-align: center;
+		vertical-align: middle;
+		background: #ff6f69;
+		border-radius: 0 2px 2px 0;
+	}
+	.header-search_mob .btn-search_mob img {
+	    position: relative;
+	    top: 17px;
+	}
+	.header-body_menu {
+	    margin-top: 45px;
+	    text-align: center;
+	}
+	.header-menu li {
+		display: block;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+	.header-menu li a {
+		font-size: 32px;
+	}
+	.header-bottom {
+		display: none;
+	}
+	.header-block_tab {
+		display: none;
+	}
+	.main-content {
+	    padding: 45px 0 0;
+	}
+	.main-content_title {
+		display: block;
+		font-size: 52px;
+	}
+	.main-search .main-search_title {
+		display: none;
+	}
+	.main-price {
+		display: none;
+	}
+	.main-content_option {
+		width: 100%;
+	}
+	.main-search {
+		float: none;
+		width: 100%;
+		margin-top: 45px;
+	}
+	.main-search .btn-select {
+		width: 100%;
+		height: 70px;
+	}
+	.main-search .btn-select-value {
+		padding: 11px 115px;
+    	font-size: 32px;
+	}
+	.main-search.mob .btn-select-value:after {
+	    width: 31px;
+	    height: 20px;
+	    top: 28px;
+    	right: 150px;
+    	background: url(../img/arrow-down-big.png) no-repeat;
+	    -webkit-background-size: 25px;
+	    background-size: 25px;
+	}
+	.main-search .btn-select.active .btn-select-value:after {
+		background-position: 0 0;
+		top: 24px;
+		right: 153px;
+	}
+	.main-search .btn-select ul {
+		top: 70px;
+	}
+	.main-search .btn-select ul li {
+		font-size: 20px;
+	}
+	.main-catalog {
+	    padding-top: 45px;
+	    padding-bottom: 40px;
+	}
+	.main-cat-item {
+		width: 100%;
+		height: auto;
+	}
+	.main-cat-item .item-img {
+		width: 100%;
+		height: auto;
+	}
+	.main-cat-item .item-descr {
+		height: auto;
+		padding: 25px 15px 25px;
+	}
+	.main-cat-item .item-descr p {
+		font-size: 36px;
+		line-height: 40px;
+	}
+	.main-cat-item .item-price {
+		padding-bottom: 40px;
+	}
+	.main-cat-item .item-price span {
+		font-size: 47px;
+	}
+	.main-cat-item .item-date {
+		padding-top: 15px;
+	}
+	.main-cat-item .item-date span {
+		font-size: 31px;
+	}
+	.footer {
+		padding: 45px 0 35px;
+	}
+	.footer-form {
+		display: none;
+	}
+	.footer-menu {
+		display: none;
+	}
+	.footer-contact .footer-contact_title {
+		display: none;
+	}
+	.footer-contact {
+		width: 100%;
+	}
+	.footer-contact_center {
+		width: 100%;
+		text-align: center;
+	}
+	.footer-contact .contact-phone {
+		margin-bottom: 35px;
+		font-size: 38px;
+	}
+	.footer-contact .contact-mail {
+		margin-bottom: 60px;
+		font-size: 38px;
+	}
+	.footer-contact .footer-developer {
+		margin-bottom: 35px;
+		font-size: 30px;
+	}
+	.footer-contact .footer-copyright {
+		font-size: 30px;
+	}
+	/*Страница категории авто*/
+	.breadcrumb {
+		display: none;
+	}
+	.cat-avto_title.mobile {
+		display: inline-block;
+		font-size: 32px;
+	}
+	.select-cat_title span {
+		font-size: 26px;
+	}
+	.select-brand_title span {
+		font-size: 26px;
+	}
+	.sel-cat-list {
+		margin-bottom: 40px;
+	}
+	.cat-avto_title {
+		display: none;
+	}
+	.cat-avto_title.mobile {
+		margin-bottom: 50px;
+	}
+	.select-cat_title {
+		display: none;
+	}
+	.sel-cat-list li {
+		float: none;
+		display: block;
+		margin: 0 0 30px;
+	}
+	.sel-cat-list li a {
+		font-size: 32px;
+		color: #00b2e2;
+	}
+	.select-cat_item {
+		display: none;
+	}
+	.select-brand_item {
+		width: 32%;
+	}
+	/*конец*/
+
+	/*Страница легковые авто*/
+	.select-block .sel-box {
+		width: 100%;
+		margin: 0 0 20px;
+	}
+	.select-block .sel-box span {
+		font-size: 22px;
+	}
+	.select-block .sel-box.group .divide {
+		top: 40px;
+		right: 16px;
+		width: 10px;
+	}
+	.select-block .jq-selectbox {
+		padding-top: 10px;
+	}
+	.select-block .sel-box .jq-selectbox__select {
+		height: 60px;
+		font-size: 22px;
+		line-height: 60px;
+	}
+	.select-block .jq-selectbox__trigger-arrow {
+		top: 27px;
+	}
+	.select-block .jq-selectbox li {
+		font-size: 22px;
+	}
+	.select-block .sel-box input {
+		margin-top: 10px;
+		font-size: 22px;
+	}
+	.select-block .search-avto {
+		text-align: center;
+	}
+	.select-block .search-avto .btn_filter {
+		display: inline-block;
+		float: none;
+		width: 40%;
+		margin-top: 65px;
+		font-size: 22px;
+	}
+	.select-block .search-avto .filter_reset {
+	    float: none;
+	    position: absolute;
+	    top: 15px;
+	    left: 0;
+	    right: 0;
+	    font-size: 22px;
+	}
+	.search-result_title {
+		text-align: center;
+	}
+	.result-item {
+		width: 100%;
+		margin: 0 0 30px;
+	}
+	.result-item .item-head a {
+		font-size: 30px;
+	}
+	.result-item .item-main {
+		height: 135px;
+	}
+	.result-item .item-main p {
+		font-size: 22px;
+	}
+	.result-item .item-foot {
+	    padding: 25px 20px 35px;
+	}
+	.result-item .item-foot .release-year,
+	.result-item .item-foot .mileage {
+		display: block;
+		margin-bottom: 20px;
+		font-size: 22px;
+	}
+	.result-item .item-foot .release-year span,
+	.result-item .item-foot .mileage span {
+		font-size: 24px;
+	}
+	.result-item .item-foot .price-item {
+		display: block;
+		margin-top: 30px;
+		font-size: 30px;
+	}
+	.pagination {
+		display: none;
+	}
+	/*конец*/
+
+	/*-----Card-tovar page-----*/
+	.card-head_title h2 {
+		font-size: 50px;
+		text-align: center;
+		line-height: 50px;
+	}
+	.card-head_title .card-head_price {
+		margin: 30px 0 45px;
+		font-size: 50px;
+		text-align: center;
+	}
+	.card-head_base li,
+	.card-head_base li a {
+		font-size: 24px;
+	}
+	.card-head_print {
+		display: none;
+	}
+	.card-head_trade .seller {
+		font-size: 24px;
+	}
+	.card-head_trade .seller a {
+		display: block;
+		font-size: 24px;
+	}
+	.card-head_trade  .btn-send_seller {
+		display: none;
+	}
+	.card-head_trade .time-region {
+		margin-top: 25px;
+		font-size: 24px;
+	}
+	.card-head_trade .time-region a {
+		font-size: 24px;
+	}
+	.card-head_connect .btn-connect_one {
+		width: 100%;
+	}
+	.card-head_connect .btn-connect_one:before {
+		left: 105px;
+	}
+	.card-head_connect .btn-connect_two {
+		width: 25%;
+	}
+	.card-head_connect .btn-connect_two:after {
+		right: 30px;
+	}
+	.card-head_connect .btn-connect_three {
+		width: 25%;
+	}
+	.card-head_connect .btn-connect_three:after {
+		right: 45px;
+	}
+	.card-head .cold-ads_mob {
+		width: 44.6%;
+	}
+	.card-main_gallery .connected-carousels .stage {
+		width: 640px;
+	}
+	.card-main_gallery .connected-carousels .carousel-stage {
+		height: auto;
+	}
+	.card-main_gallery .connected-carousels .carousel-stage li {
+		height: 440px;
+		overflow: hidden;
+	}
+	.card-main_gallery .connected-carousels .carousel-stage li img {
+		width: 640px;
+		height: 100%;
+	}
+	.card-main_gallery .connected-carousels .carousel-navigation {
+		width: 640px;
+	}
+	.card-main_gallery .connected-carousels .carousel-navigation li img {
+		width: 157px;
+	}
+	.card-main_features h4 {
+		font-size: 22px;
+	}
+	.card-main_features ul li {
+		font-size: 20px;
+	}
+	.card-main_descr {
+		width: 100%;
+	}
+	.card-main_descr h4 {
+		font-size: 22px;
+	}
+	.card-main_descr li {
+		font-size: 20px;
+	}
+	.card-main_complect {
+		display: none;
+	}
+	/*-----end--------*/
+
+	/*------------Personal page----------*/
+	.personal-page {
+		text-align: center;
+	}
+	.personal-page_title h1 {
+		font-size: 50px;
+	}
+	.total-score {
+		display: none;
+	}
+	.header-body.personal {
+		border-bottom: none;
+	}
+	.personal-title {
+		display: none;
+	}
+	.personal-link {
+		display: block;
+	}
+	.personal-item {
+		display: none;
+	}
+	.result-item.result-item_personal {
+		display: block;
+		margin-bottom: 260px;
+		overflow: visible;
+	}
+	.personal-item_message {
+		position: absolute;
+	    bottom: -85px;
+	    left: 0;
+	}
+	.personal-item_message span {
+		font-size: 26px;
+	}
+	.personal-item_message a {
+		padding-left: 65px;
+	}
+	.personal-item_message a:before {
+		top: -3px;
+		width: 51px;
+	    height: 34px;
+	    background: url(../img/mail-big.png) 0 0 no-repeat;
+	}
+	.personal-item_view {
+	    position: absolute;
+	    bottom: -87px;
+	    left: 245px;
+	}
+	.personal-item_view span {
+		font-size: 26px;
+	}
+	.personal-item_view .total-view {
+		padding-left: 50px;
+		font-size: 26px;
+	}
+	.personal-item_view .total-view:before {
+	    width: 36px;
+	    height: 24px;
+	    background: url(../img/view-big.png) 0 0 no-repeat;
+	}
+	.personal-item_btn {
+		left: 0;
+		bottom: -175px;
+	}
+	.personal-item_btn a {
+	    margin-right: 100px;
+		font-size: 32px;
+	}
+	.message-item {
+		display: block;
+	    margin: 140px auto 190px;
+	}
+	.message-item:last-child {
+	    margin-bottom: 100px;
+	}
+	.message-item_img {
+		display: inline-block;
+		width: 0;
+	}
+	.message-item_img img {
+		display: none;
+	}
+	.message-item_img span {
+		position: absolute;
+		top: -45px;
+		left: 0;
+		margin-left: 0;
+		font-size: 18px;
+	}
+	.message-item_descr {
+		padding: 20px 20px 30px;
+	}
+	.message-item_descr span {
+		position: absolute;
+		top: -80px;
+		left: 0;
+		font-size: 32px;
+	}
+	.message-item .message-item_descr p {
+		font-size: 26px;
+	}
+	.message-item .stick {
+		top: -30px;
+	}
+	.message-item_btn {
+		position: absolute;
+		bottom: -45px;
+		left: 0;
+	}
+	.message-item_btn a {
+		font-size: 32px;
+	}
+	.pay-title {
+		font-size: 32px;
+		text-align: left;
+	}
+	.pay-block {
+	    margin: 0 auto 80px;
+	}
+	.pay-block p {
+		font-size: 26px;
+		text-align: left;
+	}
+	.result-item.result-item_personal {
+		margin-bottom: 135px;
+	}
+	.pay-block p {
+		margin-bottom: 60px;
+	}
+	.more-service {
+		display: inline-block;
+		width: 85%;
+		height: 60px;
+		font-size: 32px;
+		line-height: 60px;
+	}
+	.personal-title_mob {
+		display: block;
+		font-size: 32px;
+		text-align: left;
+	}
+	.service-block {
+		margin-bottom: 30px;
+	}
+	.service-block span {
+		margin-bottom: 25px;
+		font-size: 32px;
+		text-align: left;
+	}
+	.service-block p {
+		margin-bottom: 100px;
+		font-size: 26px;
+		text-align: left;
+	}
+	.service-price {
+	    top: auto;
+	    bottom: 116px;
+	    right: auto;
+	    left: 20px;
+	    font-size: 32px;
+	}
+	.personal-option label {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		font-size: 32px;
+		text-align: left;
+	}
+	.personal-option input {
+		height: 60px;
+		font-size: 22px;
+	}
+	.personal-option  button {
+		width: 250px;
+		height: 60px;
+		font-size: 32px;
+	}
+	.personal-option .delete-btn {
+		width: 250px;
+		height: 60px;
+		line-height: 60px;
+		overflow: hidden;
+	}
+	/*-------------end--------------*/
+}
+
+@media only screen and (max-width : 680px) {
+	.container {
+		max-width: 540px;
+	}
+	.header-body_top .area-link_mob {
+		height: 50px;
+	    font-size: 24px;
+	    padding: 7px 40px;
+	}
+	.header-body_top .area-link_mob:before {
+		-webkit-background-size: 17px;
+	    background-size: 17px;
+	    top: 8px;
+	    left: 100px;
+	}
+	.header-body_top .logo {
+		margin-bottom: 25px;
+	}
+	.header-body_top .area-link_mob:after {
+        -webkit-background-size: 17px;
+	    background-size: 17px;
+	    top: 20px;
+	    right: 80px;
+	    width: 17px;
+    	height: 10px;
+	}
+	.header-body_top .area-link_mob.active:after {
+	    top: 20px;
+    	right: 80px;
+	}
+	.header-body_top .form-area_mob span {
+		font-size: 22px;	}
+	.header-body_top .add-post {
+		height: 60px;
+		margin-top: 30px;
+	    font-size: 28px;
+	    line-height: 60px;
+	}
+	.header-search_mob {
+		margin-top: 30px;
+	}
+	.header-search_mob input {
+	    height: 50px;
+	    padding-left: 15px;
+	    font-size: 22px;
+	}
+	.header-search_mob .btn-search_mob {
+		width: 120px;
+    	height: 50px;
+	}
+	.header-search_mob .btn-search_mob img {
+		top: 14px;
+		width: 25px;
+	}
+	.header-body_menu {
+		margin-top: 35px;
+	}
+	.header-menu li {
+		margin-bottom: 20px;
+	}
+	.header-menu li a {
+	    font-size: 24px;
+	}
+	.main-content {
+		padding-top: 35px;
+	}
+	.main-content_title {
+		font-size: 45px;
+	}
+	.main-search {
+		margin-top: 30px;
+	}
+	.main-search .btn-select {
+		height: 50px;
+	}
+	.main-search .btn-select-value {
+	    padding: 8px 123px;
+	    font-size: 24px;
+	}
+	.main-search.mob .btn-select-value:after {
+		-webkit-background-size: 17px;
+		background-size: 17px;
+		top: 20px;
+    	right: 95px;
+    	width: 17px;
+    	height: 10px;
+	}
+	.main-search .btn-select.active .btn-select-value:after {
+		top: 20px;
+    	right: 95px;
+	}
+	.btn-select.active .btn-select-value:after {
+		top: 35px;
+	}
+	.main-search .btn-select ul {
+		top: 50px;
+	}
+	.main-cat-item .item-descr {
+		padding: 15px 15px 15px;
+	}
+	.main-cat-item .item-descr p {
+	    font-size: 32px;
+	    line-height: 38px;
+	}
+	.main-cat-item .item-price {
+	    padding-bottom: 25px;
+	}
+	.main-cat-item .item-price span {
+	    font-size: 38px;
+	}
+	.main-cat-item .item-date span {
+	    font-size: 26px;
+	}
+	.footer {
+		padding: 30px 0 20px;
+	}
+	.footer-contact .contact-phone {
+		margin-bottom: 30px;
+    	font-size: 28px;
+	}
+	.footer-contact .contact-mail {
+	    margin-bottom: 40px;
+   		font-size: 28px;
+	}
+	.footer-contact .footer-developer {
+	    margin-bottom: 25px;
+    	font-size: 20px;
+	}
+	.footer-contact .footer-copyright {
+	    font-size: 18px;
+	}
+
+	/*Страница категории авто*/
+	.select-cat {
+		padding-top: 20px;
+	}
+	.cat-avto_title.mobile {
+		font-size: 28px;
+	}
+	.select-cat_title span {
+		font-size: 24px;
+	}
+	.select-brand_title span {
+		font-size: 24px;
+	}
+	.select-cat_title {
+		margin-bottom: 50px;
+	}
+	.select-brand {
+		padding-bottom: 40px;
+	}
+	.select-brand_item {
+		width: 32%;
+		margin-bottom: 40px;
+	}
+	/*конец*/
+
+	/*Страница легковые авто*/
+	.select-block .sel-box span {
+		font-size: 20px;
+	}
+	.select-block .sel-box.group .divide {
+		top: 35px;
+	}
+	.select-block .jq-selectbox {
+		padding-top: 8px;
+	}
+	.select-block .sel-box .jq-selectbox__select {
+		height: 50px;
+		font-size: 20px;
+		line-height: 50px;
+	}
+	.select-block .jq-selectbox__trigger-arrow {
+		top: 23px;
+	}
+	.select-block .jq-selectbox li {
+		font-size: 20px;
+	}
+	.select-block .sel-box input {
+		margin-top: 8px;
+		font-size: 20px;
+	}
+	.select-block .search-avto .btn_filter {
+		font-size: 20px;
+	}
+	.select-block .search-avto .filter_reset {
+	    font-size: 20px;
+	}
+	.search-result_title {
+		font-size: 26px;
+	}
+	.result-item .item-head a {
+		font-size: 26px;
+	}
+	.result-item .item-main {
+		height: 100px;
+	}
+	.result-item .item-main p {
+		font-size: 20px;
+	}
+	.result-item .item-foot .release-year,
+	.result-item .item-foot .mileage {
+		font-size: 20px;
+	}
+	.result-item .item-foot .release-year span,
+	.result-item .item-foot .mileage span {
+		font-size: 22px;
+	}
+	.result-item .item-foot .price-item {
+		font-size: 26px;
+	}
+	/*конец*/
+
+	/*-----Card-tovar page-----*/
+	.card-head_connect .btn-connect_one:before {
+	    left: 35px;
+	}
+	.card-head .cold-ads_mob {
+	    width: 43%;
+	}
+	.card-head_connect .btn-connect_two:after {
+	    right: 15px;
+	}
+	.card-head_connect .btn-connect_three:after {
+	    right: 26px;
+	}
+	.card-main_gallery .connected-carousels .stage {
+	    width: 500px;
+	}
+	.card-main_gallery .connected-carousels .carousel-stage li img {
+		width: 500px;
+	}
+	.card-main_gallery .connected-carousels .carousel-stage li {
+		height: 360px;
+	}
+	.card-main_gallery .connected-carousels .carousel-navigation {
+	    width: 500px;
+	    height: auto;
+	}
+	.card-main_gallery .connected-carousels .carousel-navigation li img {
+	    width: 122px;
+	    height: 90px;
+	}
+	/*-------end---------*/
+
+	/*------------Personal page----------*/
+	.personal-page {
+	    padding: 20px 0 50px;
+	}
+	.personal-page_title {
+		margin-bottom: 40px;
+	}
+	.personal-page_title h1 {
+		font-size: 42px;
+	}
+	.message-item {
+	    margin: 120px auto 165px;
+	}
+	.personal-item_btn a {
+		margin-right: 65px;
+	}
+	.message-item:last-child {
+	    margin-bottom: 40px;
+	}
+	.message-item_img span {
+		font-size: 16px;
+	}
+	.message-item .message-item_descr p {
+	    font-size: 22px;
+	}
+	.message-item_descr span {
+		font-size: 28px;
+	}
+	.message-item_btn a {
+		font-size: 28px;
+	}
+	/*-----------end---------------*/
+}
+
+@media only screen and (max-width: 540px) {
+	.container {
+	    max-width: 440px;
+	}
+	.header-body_top .area-link_mob {
+	    height: 45px;
+	    font-size: 18px;
+	    padding: 10px 10px;
+	}
+	.header-body_top .area-link_mob:before {
+	    -webkit-background-size: 15px;
+	    background-size: 15px;
+	    top: 9px;
+	    left: 85px;
+	}
+	.header-body_top .area-link_mob:after {
+	    -webkit-background-size: 14px;
+	    background-size: 14px;
+	    top: 19px;
+	    right: 65px;
+	    width: 14px;
+	    height: 9px;
+	}
+	.header-body_top .area-link_mob.active:after {
+	    top: 19px;
+    	right: 65px;
+	}
+	.header-body_top .form-area_mob span {
+		font-size: 18px;
+	}
+	.header-body_top .form-area_mob input {
+		height: 45px;
+	}
+	.header-body_top .form-area_mob .btn-save {
+		width: 120px;
+	    height: 45px;
+	    margin-top: 12px;
+	    line-height: 46px;
+	}
+	.header-body_top .add-post {
+	    margin-top: 25px;
+	    height: 60px;
+	    font-size: 20px;
+	    line-height: 62px;
+	}
+	.header-search_mob {
+	    margin-top: 25px;
+	}
+	.header-search_mob input {
+	    height: 45px;
+	    padding-left: 10px;
+	    font-size: 14px;
+	}
+	.header-search_mob .btn-search_mob {
+	   	width: 90px;
+    	height: 45px;
+	}
+	.header-search_mob .btn-search_mob img {
+	    top: 12px;
+    	width: 22px;
+	}
+	.header-body_menu {
+	    margin-top: 25px;
+	}
+	.header-menu li {
+	    margin-bottom: 15px;
+	}
+	.header-menu li a {
+	    font-size: 18px;
+	}
+	.main-content {
+	    padding-top: 25px;
+	}
+	.main-content_title {
+	    font-size: 36px;
+	}
+	.main-search {
+		margin-top: 25px;
+	}
+	.main-search .btn-select {
+	    height: 45px;
+	}
+	.main-search .btn-select-value {
+		padding: 10px 95px;
+    	font-size: 18px;
+	}
+	.main-search.mob .btn-select-value:after {
+	    -webkit-background-size: 14px;
+    	background-size: 14px;
+    	top: 19px;
+    	right: 80px;
+    	width: 14px;
+    	height: 9px;
+	}
+	.main-search .btn-select.active .btn-select-value:after {
+	    top: 19px;
+    	right: 80px;
+	}
+	.main-search .btn-select ul {
+	    top: 45px;
+	}
+	.main-search .btn-select ul li {
+		font-size: 16px;
+	}
+	.main-catalog {
+	    padding: 35px 0 15px;
+	}
+	.main-cat-item .item-descr {
+	    height: auto;
+	    padding: 15px 15px 15px;
+	}
+	.main-cat-item .item-descr p {
+        font-size: 20px;
+    	line-height: 24px;
+	}
+	.main-cat-item .item-price {
+	    padding-bottom: 20px;
+	}
+	.main-cat-item .item-price span {
+	    font-size: 28px;
+	}
+	.main-cat-item .item-date {
+	    padding-top: 10px;
+	}
+	.main-cat-item .item-date span {
+	    font-size: 18px;
+	}
+	.footer {
+	    padding: 25px 0 15px;
+	}
+	.footer-contact .contact-phone {
+	    margin-bottom: 20px;
+	    font-size: 22px;
+	}
+	.footer-contact .contact-mail {
+	    margin-bottom: 35px;
+	    font-size: 22px;
+	}
+	.footer-contact .footer-developer {
+	    margin-bottom: 20px;
+	    font-size: 16px;
+	}
+	.footer-contact .footer-copyright {
+	    font-size: 16px;
+	}
+
+	/*страница категории авто*/
+	.select-cat {
+	    padding-top: 10px;
+	}
+	.sel-cat-list li a {
+		font-size: 26px;
+	}
+	.select-brand {
+		padding: 15px 0 30px;
+	}
+	.select-brand_title {
+		margin-bottom: 20px;
+	}
+	.select-brand_item {
+		margin-bottom: 30px;
+	}
+	/*конец*/
+
+	/*Страница легковые авто*/
+	.select-block .sel-box span {
+		font-size: 18px;
+	}
+	.select-block .sel-box.group .divide {
+	    top: 30px;
+	}
+	.select-block .jq-selectbox {
+		padding-top: 5px;
+	}
+	.select-block .sel-box .jq-selectbox__select {
+		height: 45px;
+		font-size: 18px;
+		line-height: 45px;
+	}
+	.select-block .jq-selectbox__trigger-arrow {
+		top: 20px;
+	}
+	.select-block .jq-selectbox li {
+		font-size: 18px;
+	}
+	.select-block .sel-box input {
+		margin-top: 5px;
+		font-size: 18px;
+	}
+	.select-block .search-avto .btn_filter {
+		font-size: 18px;
+	}
+	.select-block .search-avto .filter_reset {
+	    font-size: 18px;
+	}
+	.search-result_title {
+		font-size: 22px;
+	}
+	.result-item .item-head {
+		padding-top: 20px;
+	}
+	.result-item .item-head a {
+		font-size: 22px;
+	}
+	.result-item .item-main {
+		height: 115px;
+		padding-top: 20px;
+	}
+	.result-item .item-main p {
+		font-size: 18px;
+	}
+	.result-item .item-foot {
+	    padding: 15px 20px 25px;
+	}
+	.result-item .item-foot .release-year,
+	.result-item .item-foot .mileage {
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+	.result-item .item-foot .release-year span,
+	.result-item .item-foot .mileage span {
+		font-size: 20px;
+	}
+	.result-item .item-foot .price-item {
+		margin-top: 20px;
+		font-size: 22px;
+	}
+	/*конец*/
+
+	/*-----Card-tovar page-----*/
+	.card-head_title h2 {
+		font-size: 40px;
+		line-height: 45px;
+	}
+	.card-head_title .card-head_price {
+		font-size: 40px;
+	}
+	.card-head_base li,
+	.card-head_base li a {
+	    font-size: 20px;
+	}
+	.card-head_trade .seller {
+	    font-size: 20px;
+	}
+	.card-head_trade .seller a {
+		font-size: 20px;
+	}
+	.card-head_trade .time-region {
+		font-size: 20px;
+	}
+	.card-head_trade .time-region a {
+	    font-size: 20px;
+	}
+	.card-head_connect .btn-connect_one {
+		font-size: 20px;
+		padding-left: 40px;
+	}
+	.card-head_connect .btn-connect_one:before {
+	    left: 25px;
+	}
+	.card-head_connect .btn-connect_two:after {
+	    right: 5px;
+	}
+	.card-head_connect .btn-connect_three:after {
+	    right: 15px;
+	}
+	.card-head .cold-ads_mob {
+		width: 41%;
+	}
+	.card-main_gallery .connected-carousels .stage {
+	    width: 400px;
+	}
+	.card-main_gallery .connected-carousels .carousel-stage li img {
+	    width: 400px;
+	}
+	.card-main_gallery .connected-carousels .carousel-stage li {
+	    height: 270px;
+	}
+	.card-main_gallery .connected-carousels .carousel-navigation {
+	    width: 400px;
+	    height: auto;
+	}
+	.card-main_gallery .connected-carousels .carousel-navigation li img {
+	    width: 97px;
+	    height: 65px;
+	}
+	/*--------end------*/
+
+	/*------------Personal page----------*/
+	.personal-page {
+	    padding: 20px 0 50px;
+	}
+	.personal-page_title.mobile {
+		margin-bottom: 40px;
+	}
+	.personal-page_title h1 {
+		font-size: 32px;
+	}
+	.personal-link a {
+		margin-bottom: 30px;
+		font-size: 28px;
+	}
+	.result-item.result-item_personal {
+		margin-bottom: 200px;
+	}
+	.personal-item_message {
+		bottom: -75px;
+	}
+	.personal-item_message span {
+	    font-size: 22px;
+	}
+	.personal-item_view {
+		bottom: -79px;
+		left: 190px;
+	}
+	.personal-item_view span {
+	    font-size: 22px;
+	}
+	.personal-item_view .total-view {
+		font-size: 22px;
+	}
+	.personal-item_btn {
+		bottom: -150px;
+	}
+	.personal-item_btn a {
+		margin-right: 45px;
+		font-size: 28px;
+	}
+	.pay-title {
+		font-size: 28px;
+	}
+	.pay-block {
+	    margin: 0 auto 50px;
+	}
+	.pay-block p {
+		font-size: 22px;
+	}
+	.personal-title_mob {
+		font-size: 28px;
+	}
+	.service-block span {
+		font-size: 28px;
+	}
+	.service-block p {
+		margin-bottom: 60px;
+		font-size: 22px;
+	}
+	.service-price {
+		bottom: 100px;
+		font-size: 28px;
+	}
+	.more-service {
+		height: 45px;
+		font-size: 28px;
+		line-height: 45px;
+	}
+	.pay-block .result-item.result-item_personal {
+		margin-bottom: 115px;
+	}
+	.personal-option label {
+		font-size: 28px;
+	}
+	.personal-option button {
+	    width: 200px;
+	    height: 45px;
+	    font-size: 28px;
+	}
+	.personal-option .delete-btn {
+	    width: 200px;
+	    height: 45px;
+	    line-height: 45px;
+	}
+	/*-----------end---------------*/
+}
+
+@media only screen and (max-width: 440px) {
+	.container {
+	    max-width: 300px;
+	}
+	#navmobile-btn {
+	    width: 30px;
+	}
+	.header-body_top .logo .logo-img {
+	    font-size: 28px;
+	}
+	.header-body_top .logo img {
+	    width: 65px;
+	}
+	.header-body_top .area-link_mob:before {
+	    left: 15px;
+	}
+	.header-body_top .area-link_mob:after {
+	    right: 10px;
+	}
+	.header-body_top .area-link_mob.active:after {
+	    right: 10px;
+	}
+	.header-body_top .form-area_mob .btn-save {
+		width: 105px;
+	    font-size: 16px;
+	}
+	.header-search_mob .btn-search_mob {
+	   	width: 60px;
+	}
+	.main-content_title {
+	    font-size: 26px;
+	}
+	.main-search .btn-select {
+	    height: 45px;
+	}
+	.main-search .btn-select-value {
+	    padding: 10px 20px;
+	}
+	.main-search.mob .btn-select-value:after {
+	    -webkit-background-size: 14px;
+	    background-size: 14px;
+	}
+	.main-search.mob .btn-select-value:after {
+	    top: 19px;
+	    right: 10px;
+	}
+	.main-search .btn-select.active .btn-select-value:after {
+	    top: 19px;
+	    right: 10px;
+	}
+	.main-search .btn-select ul {
+	    top: 45px;
+	}
+	.main-search .btn-select ul li {
+		font-size: 16px;
+	}
+	.main-catalog {
+	    padding-top: 25px;
+	}
+	.main-cat-item .item-descr p {
+	    font-size: 16px;
+	}
+	.main-cat-item .item-price span {
+	    font-size: 24px;
+	}
+	.main-cat-item .item-date {
+	    padding-top: 8px;
+	}
+	.main-cat-item .item-date span {
+	    font-size: 14px;
+	}
+	.footer-contact .contact-phone {
+	    margin-bottom: 15px;
+	    font-size: 16px;
+	}
+	.footer-contact .contact-mail {
+	    margin-bottom: 25px;
+	    font-size: 16px;
+	}
+	.footer-contact .footer-developer {
+	    margin-bottom: 15px;
+	    font-size: 12px;
+	}
+	.footer-contact .footer-copyright {
+	    font-size: 12px;
+	}
+
+	/*Страница категории авто*/
+	.cat-avto_title {
+		margin: 10px 0;
+	}
+	.cat-avto_title h1 {
+		font-size: 26px;
+		text-align: center;
+	}
+	.cat-avto_title.mobile {
+	    margin-bottom: 30px;
+	}
+	.select-cat_title {
+		margin-bottom: 25px;
+	}
+	.select-cat_title span {
+	    font-size: 18px;
+	}
+	.sel-cat-list li a {
+	    font-size: 22px;
+	}
+	.select-brand {
+		padding-top: 0;
+	}
+	.select-brand_title span {
+	    font-size: 18px;
+	}
+	.select-brand_item {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	/*конец*/
+
+	/*Страница легковые авто*/
+	.sel-cat-list.cat-lnks {
+	    margin-bottom: 20px;
+	}
+	.select-block {
+		padding-bottom: 20px;
+	}
+	.select-block .sel-box {
+		margin-bottom: 15px;
+	}
+	.select-block .sel-box span {
+		font-size: 16px;
+	}
+	.select-block .sel-box.group .divide {
+	    top: 25px;
+	    width: 6px;
+	}
+	.select-block .sel-box .jq-selectbox__select {
+		font-size: 16px;
+	}
+	.select-block .jq-selectbox li {
+		font-size: 16px;
+	}
+	.select-block .sel-box input {
+		font-size: 16px;
+	}
+	.select-block .search-avto .btn_filter {
+		margin-top: 50px;
+		font-size: 16px;
+	}
+	.select-block .search-avto .filter_reset {
+	    font-size: 16px;
+	}
+	.search-result_title {
+		font-size: 20px;
+	}
+	.result-item .item-head {
+		padding-top: 15px;
+	}
+	.result-item .item-head a {
+		font-size: 20px;
+	}
+	.result-item .item-main {
+		height: 130px;
+		padding-top: 15px;
+	}
+	.result-item .item-main p {
+		font-size: 16px;
+	}
+	.result-item .item-foot {
+	    padding: 15px 20px 20px;
+	}
+	.result-item .item-foot .release-year,
+	.result-item .item-foot .mileage {
+		margin-bottom: 5px;
+		font-size: 16px;
+	}
+	.result-item .item-foot .release-year span,
+	.result-item .item-foot .mileage span {
+		font-size: 18px;
+	}
+	.result-item .item-foot .price-item {
+		margin-top: 15px;
+		font-size: 20px;
+	}
+	/*конец*/
+
+	/*-----Card-tovar page-----*/
+	.card-head_title h2 {
+		font-size: 22px;
+    	line-height: 32px;
+	}
+	.card-head_title .card-head_price {
+	    margin: 15px 0 25px;
+		font-size: 22px;
+	}
+	.card-head_base li,
+	.card-head_base li a {
+	    font-size: 12px;
+	}
+	.card-head_trade .seller {
+	    font-size: 14px;
+	}
+	.card-head_trade .seller a {
+		font-size: 14px;
+	}
+	.card-head_trade .time-region {
+		font-size: 12px;
+	}
+	.card-head_trade .time-region a {
+	    font-size: 12px;
+	}
+	.card-head_connect .btn-connect_one {
+		height: 60px;
+		line-height: 60px;
+		font-size: 12px;
+	}
+	.card-head_connect .btn-connect_one:before {
+	    left: 15px;
+	    top: 12px;
+	}
+	.card-head_connect .btn-connect_two {
+		width: 46%;
+		margin-right: 16px;
+	}
+	.card-head_connect .btn-connect_two:after {
+	    right: 5px;
+	}
+	.card-head_connect .btn-connect_three {
+	    width: 46%;
+	}
+	.card-head_connect .btn-connect_three:after {
+	    right: 15px;
+	}
+	.card-head .cold-ads_mob {
+		width: 100%;
+		margin: 20px 0 0;
+	}
+	.card-main_gallery .connected-carousels .stage {
+	    width: 260px;
+	}
+	.card-main_gallery .connected-carousels .carousel-stage li img {
+	    width: 260px;
+	}
+	.card-main_gallery .connected-carousels .carousel-stage li {
+	    height: 190px;
+	}
+	.card-main_gallery .connected-carousels .carousel-navigation {
+	    width: 260px;
+	}
+	.card-main_gallery .connected-carousels .carousel-navigation li img {
+	    width: 62px;
+	    height: 40px;
+	}
+	.card-main_features {
+		margin-top: 25px;
+	}
+	.card-main_features h4 {
+	    font-size: 18px;
+	}
+	.card-main_features ul li {
+	    font-size: 16px;
+	}
+	.card-main_descr {
+		padding-top: 20px;
+	}
+	.card-main_descr h4 {
+	    font-size: 18px;
+	}
+	.card-main_descr li {
+		margin-bottom: 10px;
+	    font-size: 16px;
+	}
+	/*--------end------*/
+
+	/*--------Personal page---------*/
+	.cat-avto_title.personal-page_title {
+		margin-bottom: 20px;
+	}
+	.personal-link a {
+		margin-bottom: 15px;
+		font-size: 22px;
+	}
+	.result-item.result-item_personal {
+	    margin-bottom: 140px;
+	}
+	.personal-item_message {
+	    bottom: -65px;
+	}
+	.personal-item_message span {
+		font-size: 18px;
+	}
+	.personal-item_message a {
+		padding-left: 40px;
+	}
+	.personal-item_message a:before {
+		top: -1px;
+	    width: 25px;
+	    height: 17px;
+	    background: url(../img/mail.png) 0 0 no-repeat;
+	}
+	.personal-item_view {
+	    bottom: -68px;
+	    left: 130px;
+	}
+	.personal-item_view span {
+	    font-size: 18px;
+	}
+	.personal-item_view .total-view {
+		padding-left: 35px;
+	    font-size: 18px;
+	}
+	.personal-item_view .total-view:before {
+	    width: 18px;
+	    height: 12px;
+	    background: url(../img/view.png) 0 0 no-repeat;
+	}
+	.personal-item_btn {
+	    bottom: -110px;
+	}
+	.personal-item_btn a {
+	    margin-right: 30px;
+	    font-size: 18px;
+	}
+	.message-item {
+	    margin: 100px auto 130px;
+	}
+	.message-item_descr {
+	    padding: 0 10px 10px;
+	}
+	.message-item_descr span {
+		top: -70px;
+		font-size: 22px;
+	}
+	.message-item .message-item_descr p {
+	    font-size: 18px;
+	}
+	.message-item_btn {
+		bottom: -35px;
+	}
+	.message-item_btn a {
+	    font-size: 22px;
+	}
+	.pay-title {
+	    font-size: 18px;
+	}
+	.more-service {
+		width: 100%;
+		font-size: 18px;
+	}
+	.pay-block .result-item.result-item_personal {
+	    margin-bottom: 85px;
+	}
+	.pay-block {
+	    margin: 0 auto 25px;
+	}
+	.pay-block p {
+		margin-bottom: 25px;
+	    font-size: 18px;
+	}
+	.personal-title_mob {
+	    font-size: 18px;
+	}
+	.service-block {
+	    margin-bottom: 10px;
+	}
+	.service-block span {
+		margin-bottom: 10px;
+	    font-size: 18px;
+	}
+	.service-block p {
+	    margin-bottom: 40px;
+	    font-size: 18px;
+	}
+	.service-price {
+	    bottom: 75px;
+	    font-size: 18px;
+	}
+	.personal-title_option {
+		margin-bottom: 20px;
+	}
+	.personal-option {
+		margin-bottom: 20px;
+	}
+	.personal-option label {
+	    font-size: 18px;
+	}
+	.personal-option input {
+	    height: 45px;
+	    font-size: 16px;
+	}
+	.personal-option button {
+	    width: 160px;
+	    font-size: 22px;
+	}
+	.personal-option .delete-btn {
+		width: 160px;
+	}
+	/*----------end--------------*/
+}

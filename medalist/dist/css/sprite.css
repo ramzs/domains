@@ -1,0 +1,78 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-inner {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 43px;
+  height: 19px;
+}
+.icon-arrow-more {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -19px;
+  width: 43px;
+  height: 19px;
+}
+.icon-arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: -77px -19px;
+  width: 8px;
+  height: 12px;
+}
+.icon-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: -43px 0px;
+  width: 43px;
+  height: 19px;
+}
+.icon-mail-footer-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -43px -19px;
+  width: 17px;
+  height: 15px;
+}
+.icon-mail-ico-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -60px -19px;
+  width: 17px;
+  height: 15px;
+}
+.icon-mail-ico {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -38px;
+  width: 17px;
+  height: 15px;
+}
+.icon-phone-footer-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -17px -38px;
+  width: 15px;
+  height: 15px;
+}
+.icon-phone-ico-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -32px -38px;
+  width: 15px;
+  height: 15px;
+}
+.icon-phone-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -47px -38px;
+  width: 15px;
+  height: 15px;
+}

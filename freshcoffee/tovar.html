@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Фрэш Кофе</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" href="libs/bxslider/jquery.bxslider.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="hidden-xs col-sm-1 col-md-2 col-lg-2">
+					<div class="header-social">
+						<a href="#"><img src="img/inst-icon.png" alt=""></a>
+						<a href="#"><img src="img/vk-icon.png" alt=""></a>
+					</div>
+				</div>
+				<div class="hidden-xs col-sm-4 col-md-3 col-lg-3 menu-left">
+					<ul class="header-menu__left">
+						<li><a href="#">О компании<span></span></a></li>
+						<li><a href="#">Доставка<span></span></a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-1 col-md-2 col-lg-2">
+					<a href="#" class="header-logo"><img src="img/logo.png" alt=""></a>
+				</div>
+				<div class="hidden-xs col-sm-4 col-md-3 col-lg-3 menu-right">
+					<ul class="header-menu__right">
+						<li><a href="#">Оплата<span></span></a></li>
+						<li><a href="#">Контакты <span></span></a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
+					<div class="header-langs">
+						<a href="#" class="ru"></a>
+						<a href="#" class="en"></a>
+					</div>
+					<div class="header-btn__login">
+						<a href="#">Войти</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="hidden-xs col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3 col-lg-offset-1 col-lg-3">
+					<a href="#" class="header-callback__link">Заказать звонок</a>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="header-tel"><span class="phone">+7 (925) 665-23-45</span>  <span class="phone-title">Главный офис</span></div>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="shop-cart__small">
+						<span class="total-sell">Товаров: <b>1000</b></span> <span class="total-price">на сумму</span> <b>10000</b> р.<br><a href="#">в корзину</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="navmenu_mob">
+		<ul>
+			<li class="navmenu_mob__btn"><a href="#"><b></b><b></b><b></b>Меню</a></li>
+			<li><a href="#" class="navmenu-callback">Заказать звонок</a></li>
+			<li><a href="#" class="navmenu-login">Войти</a></li>
+		</ul>
+	</div>
+	<nav id="navmenu">
+		<ul class="top-menu">
+			<li><a href="#">Оптовые цены</a></li>
+			<li><a href="#">Кофе с вашим брендом</a></li>
+			<li><a href="#">Отзывы</a></li>
+			<li><a href="#">Интернет-магазин</a></li>
+		</ul>
+	</nav>
+
+	<div class="wrapper">
+		<section class="tovar-page">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Интернет-магазин</a></li>
+					<li><a href="#">Экзотические наименования</a></li>
+					<li class="active">Кофе в зернах "Эквадор Вилкабамба"</li>
+				</ol>
+				<div class="type-menu">
+					<a href="#" id="type-btn" class="type-menu__btn"><i class="glyphicon glyphicon-th-list"></i>Виды кофе</a>
+					<ul id="category-menu" class="category-menu">
+						<li><a href="#">Все</a></li>
+						<li><a href="#">Экзотические наименования</a></li>
+						<li><a href="#">Стандартные наименования</a></li>
+						<li><a href="#">Фирменные смеси</a></li>
+						<li><a href="#">Эспрессо смеси</a></li>
+						<li><a href="#">Ароматизированный кофе</a></li>
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle">Другие<b class="caret"></b></a>
+							<ul id="drop-menu" class="dropdown-menu"></ul>
+						</li>
+						<li class="drop-li"><a href="#">Капсулы NESPRESSO</a></li>
+						<li class="drop-li"><a href="#">Хаск (кофейная ягода)</a></li>
+						<li class="drop-li"><a href="#">Кофе по степени обжарки</a></li>
+					</ul>
+				</div>
+				<h1>Кофе в зернах "Эквадор Вилкабамба"</h1>
+				<div class="tovar-card">
+					<div class="row">
+						<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+							<div class="tovar-card__img">
+								<a href="img/product-1.png" class="fancybox"><img src="img/product-1.png" alt=""></a>
+							</div>
+							<div class="tovar-card__rait">
+								<div id="stars-existing" class="starrr" data-rating='4'></div>
+								<div class="rait-info">Рейтинг:
+									<span id="count-existing">4</span>/5 (<span id="star-votes">2</span>)
+								</div>
+							</div>
+							<a href="#" class="link-param__more">Подробное описание</a>
+							<div class="tovar-card__param">
+								<span>Состав:</span><p>100% арабика</p>
+								<span>Вес:</span><p>250 гр.</p>
+								<span>Регион происхождения:</span><p>Латинская Америка</p>
+								<span>Степень обжарки:</span><p>Светлая</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+							<div class="tovar-card__descr">
+								<p>Уникальный кофе из высокогорного района Эквадора. Обладает превосходным ароматом, хорошо сбалансированным, богатым вкусом, характерной легкой горчинкой с дымной ноткой, слегка кисловатым с мягким ореховым тоном.</p>
+							</div>
+									<div class="change-milling">
+										<span class="change-milling__title">Выберите помол:</span>
+										<select id="change-milling">
+											<option disabled selected>Выберите помол</option>
+											<option>В зернах</option>
+											<option>Для турки</option>
+											<option>Для эспрессо</option>
+											<option>Для гейзера</option>
+											<option>Для френч-пресса</option>
+											<option>Для кемекса</option>
+										</select>
+										<div class="radio-block">
+										<label>
+											<input type="radio" name="milling">
+											<span class="hint" data-toggle="tooltip" data-placement="top" title="В зернах">В зернах</span>
+										</label>
+										<label>
+											<input type="radio" name="milling">
+											<span class="hint" data-toggle="tooltip" data-placement="top" title="Самый мелкий помол зерна, используется при дальнейшем приготовлении кофе в турке">Для турки</span>
+										</label>
+										<label>
+											<input type="radio" name="milling">
+											<span class="hint" data-toggle="tooltip" data-placement="top" title="Помол зерна чуть мельче среднего, идеально подходит для дальнейшего заваривания кофе в эспрессо машине">Для эспрессо</span>
+										</label>
+										<label>
+											<input type="radio" name="milling">
+											<span class="hint" data-toggle="tooltip" data-placement="top" title="Самый крупный помол зерна, ориентирован на заваривание кофе в специальных чайниках – френч-прессах">Для френч-пресса</span>
+										</label>
+										<label>
+											<input type="radio" name="milling">
+											<span class="hint" data-toggle="tooltip" data-placement="top" title="Помол зерна чуть крупнее среднего, используется при заваривании кофе в фильтре и в гейзерных кофеварках">Для гейзера</span>
+										</label>
+										<label>
+											<input type="radio" name="milling">
+											<span class="hint" data-toggle="tooltip" data-placement="top" title="Средний помол зерна, используется при дальнейшем приготовлении кофе в кемексе">Для кемекса</span>
+										</label>
+										</div>
+									</div>
+									<div class="tovar-card__change">
+										<div class="tovar-card__price"><span>99999.00</span> руб.</div>
+										<label for="num">Кол-во:
+											<input id="num" type="number" min="1" max="100" step="1" value="1">
+										</label>
+										<a href="#" class="tovar-card__sell">Купить в 1 клик</a>
+										<form method="post" action="http://www.freshcoffee.ru/ru/internet-magazin/ekzoticheskie-naimenovaniya/kofe-v-zernah-kuba-turkino.html">
+											<input type="hidden" value="132" name="shk-id">
+											<input type="hidden" maxlength="3" size="2" value="4" name="shk-count">
+											<input type="hidden" value="401" name="milling__132__add" class="milling">
+											<input type="submit" value="в корзину" class="button2 aactive buttonFirstVariant" onclick="yaCounter22056403.reachGoal('vkorz');return true;">
+										</form>
+									</div>
+							<div class="detail-icon">
+								<a class="detail-icon__payment" href="#">Способ оплаты</a>
+								<a class="detail-icon__delivery" href="#">Доставка</a>
+							</div>
+							<div class="advice">
+								<h4 class="advice-title">Как готовить:</h4>
+								<p>Мы рекомендуем Вам следующие способы приготовления, максимально раскрывающие все самые лучшие ароматические и вкусовые качества данного сорта.</p>
+								<div class="advice-icon">
+									<ul>
+										<li>
+											<a href="#advice-popup-1" class="fancybox"><img src="img/advice-icon-1.png" alt=""></a>
+											<span>Эспрессо</span>
+										</li>
+										<li>
+											<a href="#advice-popup-2" class="fancybox"><img src="img/advice-icon-2.png" alt=""></a>
+											<span>Турка</span>
+										</li>
+										<li>
+											<a href="#advice-popup-3" class="fancybox"><img src="img/advice-icon-3.png" alt=""></a>
+											<span>Френч-пресс</span>
+										</li>
+										<li>
+											<a href="#advice-popup-5" class="fancybox"><img src="img/advice-icon-5.png" alt=""></a>
+											<span>Кемекс</span>
+										</li>
+										<li>
+											<a href="#advice-popup-4" class="fancybox"><img src="img/advice-icon-4.png" alt=""></a>
+											<span>Мока (кофеварка гейзерного типа)</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="popular-tovar">
+					<h4>Случайные товары:</h4>
+					<div class="jcarousel-wrapper">
+						<div class="jcarousel">
+							<ul>
+								<li>
+									<div class="product-item">
+										<a href="#" class="product-item__img"><img src="img/product-1.png" alt=""></a>
+										<div class="product-item__title">
+											<a href="#">Кофе в зернах<br>"Мокко ява смесь"</a>
+										</div>
+										<span class="product-item__price"><b>160 руб.</b> за 1 уп. (100 гр.)</span>
+										<a href="#" class="product-item__sell">Купить в 1 клик</a>
+										<input type="submit" value="В корзину" class="button2 aactive buttonFirstVariant" onclick="yaCounter22056403.reachGoal('vkorz');return true;">
+									</div>
+								</li>
+								<li>
+									<div class="product-item">
+										<a href="#" class="product-item__img"><img src="img/product-1.png" alt=""></a>
+										<div class="product-item__title">
+											<a href="#">ESPRESSO DARK ROAST капсулы для NESPRESSO"</a>
+										</div>
+										<span class="product-item__price"><b>160 руб.</b> за 1 уп. (100 гр.)</span>
+										<a href="#" class="product-item__sell">Купить в 1 клик</a>
+										<input type="submit" value="В корзину" class="button2 aactive buttonFirstVariant" onclick="yaCounter22056403.reachGoal('vkorz');return true;">
+									</div>
+								</li>
+								<li>
+									<div class="product-item">
+										<a href="#" class="product-item__img"><img src="img/product-1.png" alt=""></a>
+										<div class="product-item__title">
+											<a href="#">Хаск (кофейная ягода) 100 грамм черный пакет</a>
+										</div>
+										<span class="product-item__price"><b>160 руб.</b> за 1 уп. (100 гр.)</span>
+										<a href="#" class="product-item__sell">Купить в 1 клик</a>
+										<input type="submit" value="В корзину" class="button2 aactive buttonFirstVariant" onclick="yaCounter22056403.reachGoal('vkorz');return true;">
+									</div>
+								</li>
+								<li>
+									<div class="product-item">
+										<a href="#" class="product-item__img"><img src="img/product-1.png" alt=""></a>
+										<div class="product-item__title">
+											<a href="#">ESPRESSO DARK ROAST капсулы для NESPRESSO"</a>
+										</div>
+										<span class="product-item__price"><b>160 руб.</b> за 1 уп. (100 гр.)</span>
+										<a href="#" class="product-item__sell">Купить в 1 клик</a>
+										<input type="submit" value="В корзину" class="button2 aactive buttonFirstVariant" onclick="yaCounter22056403.reachGoal('vkorz');return true;">
+									</div>
+								</li>
+								<li>
+									<div class="product-item">
+										<a href="#" class="product-item__img"><img src="img/product-1.png" alt=""></a>
+										<div class="product-item__title">
+											<a href="#">ESPRESSO DARK ROAST капсулы для NESPRESSO"</a>
+										</div>
+										<span class="product-item__price"><b>160 руб.</b> за 1 уп. (100 гр.)</span>
+										<a href="#" class="product-item__sell">Купить в 1 клик</a>
+										<input type="submit" value="В корзину" class="button2 aactive buttonFirstVariant" onclick="yaCounter22056403.reachGoal('vkorz');return true;">
+									</div>
+								</li>
+							</ul>
+						</div>
+						<a href="#" class="jcarousel-control-prev"></a>
+						<a href="#" class="jcarousel-control-next"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+					<div class="header-social footer-social">
+						<a href="#"><img src="img/inst-icon.png" alt=""></a>
+						<a href="#"><img src="img/vk-icon.png" alt=""></a>
+					</div>
+					<div class="footer-contact">
+						<span class="footer-contact__address">г. Железнодорожный, ул. Южная, д. 1</span>
+						<span class="footer-contact__phone">+7 (925) 665-23-45</span>
+						<a href="mailto:coffeefr@yandex.ru" class="footer-contact__mail">coffeefr@yandex.ru</a>
+						<span class="footer-contact__time">С 9.00 до 18.00, сб, вс - выходной</span>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+					<div class="footer-menu">
+						<ul class="footer-menu__one">
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Доставка</a></li>
+						</ul>
+						<ul class="footer-menu__two">
+							<li><a href="#">Оптовые цены</a></li>
+							<li><a href="#">Кофе с Вашим брендом</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Интернет-магазин</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="footer-pay">
+						<span>Принимаем к оплате:</span>
+						<img src="img/visa-icon.png" alt="">
+						<img src="img/mastercard-icon.png" alt="">
+						<img src="img/yandex-icon.png" alt="">
+						<img src="img/webmoney-icon.png" alt="">
+						<img src="img/robokassa-icon.png" alt="">
+					</div>
+					<div class="footer-developer">
+						<span>Создание сайта: </span><a href="#"><img src="img/ab_logo.png" alt=""></a>
+					</div>
+					<div class="footer-rank">
+						<img src="img/rambler.png" alt="">
+						<img src="img/yandex.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="hidden">
+		<div id="advice-popup-1" class="advice-popup__content" style="max-width:600px;height:auto;padding:20px;text-align:left;">
+			<p><img style="float: left; margin: 5px;" src="img/popup-1.jpg" alt="" width="200" height="200"/>Эспрессо &ndash; кофе, с которым миллионы людей встречают каждое свое утро. Для многих именно эспрессо ассоциируется с отменным качеством, непревзойденным ароматом и превосходным слегка терпким вкусом. И это неслучайно, ведь эспрессо &ndash; это &laquo;начало начал&raquo;, именно на его основе готовят многие другие виды кофе.</p>
+			<h5>1.&nbsp;Помол</h5>
+			<p>Для приготовления качественного напитка используются	свежесмолотые зерна кофе. При этом рекомендуется хорошо измельчать зерна (до 0,15 мм), но исключая образование слишком мелкой фракции. В противном случае кофе будет иметь жженый привкус с горечью. Слишком грубый помол наделит напиток кислым послевкусием. Зерна для приготовления эспрессо не рекомендуется держать в кофемашине более 1-го дня, поскольку при взаимодействии с кислородом кофе теряет свои вкусовые качества.</p>
+			<h5>2.&nbsp;Дозировка</h5>
+			<p>Существует несколько способов дозировки кофе &ndash; это	автоматическая дозировка, когда бармен пользуется настройками кофемолки и помол	&laquo;в рожок&raquo;. Обычно бункер для кофе в кофемашине остается пустым после приготовления напитка. Поэтому рекомендуется использовать второй способ дозировки. Для приготовления эспрессо можно использовать разную посуду: темпер, кофемашина, холдер, кофейная пара.</p>
+			<h5>3.&nbsp;Формирование кофейной таблетки</h5>
+			<p>Формирование кофейной таблетки происходит вследствие	прессования кофе. Для этого холдер слегка опирают на столешницу и прессуют кофе	темпером, прилагая небольшое усилие. Процесс прессовки желательно проводить	только 1 раз. При повторном прессовании готовый напиток не будет обладать желаемым вкусом и ароматом.</p>
+			<p>Если таблетка спрессована правильно, она будет иметь	ровную форму. При этом ободок холдера должен быть чистым, исключая наличие на нем кофейных крошек. Проверить правильность процесса приготовления просто &ndash; достаточно перевернуть холдер. Если таблетка не выпадает, то она приготовлена правильно.</p>
+			<h5>4.&nbsp;Экстракция</h5>
+			<p>Для приготовления эспрессо пролив воды включают сразу после установки в группу холдера с таблеткой. Если этого не сделать, то кофе сразу начнет пригорать. Время приготовления кофе занимает 3 &ndash; 5 минут, температура составляет 98 &ndash; 100 &ordm; С. Для эспрессо используют только подогретые чашки.</p>
+			<p>Экстракция кофе занимает примерно 25 секунд. В процессе пролива воды обязательно нужно смотреть за показаниями датчика давления, стрелка которого должна находиться на отметке в 9 атмосфер.&nbsp;</p>
+			<p>Порция эспрессо составляет 40 мл. При этом нужно регулировать скорость наполнения чашки. Если стандартную посуду наполнять в течение 10 &ndash; 15 секунд, тогда следует уменьшить величину помола, если время наполнения чашки увеличить до 30 секунд и более &ndash; помол нужно увеличить. &nbsp;</p>
+		</div>
+
+		<div id="advice-popup-2" class="advice-popup__content" style="max-width:600px;height:auto;padding:20px;text-alaign:left;">
+			<p><img style="float: left; margin: 5px;" src="img/popup-2.jpg" width="200" height="200" alt=""/>Существует масса способов приготовления кофе. Однако эксперты рекомендуют для начала научиться готовить кофе в турке. И, несмотря на то, что данная методика считается самой простой, даже такой способ приготовления ароматного напитка имеет массу нюансов. Остановимся на классическом рецепте приготовления.</p>
+			<h5>1. Слегка прогрейте дно турки на медленном огне.</h5>
+			<p>Для приготовления кофе рекомендуется использовать медную турку с узким горлышком.&nbsp;</p>
+			<h5>2. Насыпьте в турку свежесмолотый кофе, сахар (по желанию).</h5>
+			<p>Количество кофе напрямую зависит от того, какой крепости напиток Вы хотите получить. Также немаловажную роль играет сорт используемого кофе. Обычно придерживаются следующей пропорции: 2 ч.л. кофе на 150 гр. воды. Улучшить качество готового напитка, наделить его дополнительным ароматом можно, используя, например, молотый имбирь (достаточно щепотки на турку).</p>
+			<h5>3. В смесь наливают холодную воду.</h5>
+			<p>При этом вода должна доходить до наиболее узкого участка горлышка посуды. Наличие свободного пространства позволит кофе во время приготовления подняться до нужного уровня, при этом &ndash; исключит перелив. В то время как вода в турке закипает нужно немного прогреть чашку, наполнив ее кипятком.</p>
+			<h5>4. Варить кофе нужно на медленном огне.</h5>
+			<p>Следите, чтоб масса не закипела &ndash; это очень важно! Дело в том, что по мере закипания на поверхности массы образуется тоненькая корочка, которая позволяет сохранить аромат напитка, исключая его испарение из турки. Как только кофе начнет закипать, турку нужно снять с огня и подождать пока пенка осядет, затем вновь поставить на огонь. Эту манипуляцию нужно проделать 2 &ndash; 3 раза.</p>
+			<h5>5. Уже согретую чашку нужно освободить от кипятка и сразу наполнить ее ароматным напитком.</h5>
+			<p>Готовый кофе будет иметь приятный вкус, легкое послевкусие и превосходный насыщенный аромат. Ваш кофе готов, но самое главное то, что он приготовлен правильно!&nbsp;</p>
+		</div>
+
+		<div id="advice-popup-3" class="advice-popup__content" style="max-width:600px;height:auto;padding:20px;text-alaign:left;">
+			<p><img style="float: left; margin: 5px;" src="img/popup-3.jpg" alt="" width="200" height="200" />Кофе, приготовленный во френч-прессе, является довольно популярным и наиболее простым способом приготовления ароматного напитка. Френч-пресс представляет собой емкость (кружку), оснащенную ситечком для процеживания кофе и шомполом, при помощи которого осуществляется отжим готового напитка. Обычно такой кофе готовится на одного человека. О кофе френч-пресс говорят: &laquo;4 минуты и ароматный кофе готов!&raquo; Стоит отметить, что кофе получается очень крепким и ароматным, по крепости он опережает даже эспрессо.</p>
+			<h5>1.&nbsp;Помол</h5>
+			<p>Для приготовления кофе во френч-прессе используется наиболее крупный помол, предпочтительно использовать зерна средней обжарки. Именно такие зерна позволяют максимально раскрыть вкусовые качества напитка. Такой помол может обеспечить каждая домашняя кофемолка. К тому же зерна сильной	обжарки используются для приготовления эспрессо.&nbsp;</p>
+			<h5>2.&nbsp;Дозировка</h5>
+			<p>При приготовлении кофе рекомендуется придерживаться пропорции 7 гр. на 100 мл воды. Отмерить необходимое количество кофе очень просто, поскольку 7 гр. кофе тонкого помола вмещается в обычную чайную ложку. Поскольку для френч-пресса требуется кофе грубого помола, то ложку следует набирать &laquo;с горкой&raquo;. При желании можно проверить, насколько верно Вы отмерили количество кофе &ndash; накладывать кофе следует до начала ручки френч-пресса.</p>
+			<h5>3.&nbsp;Как и чем правильно заливать</h5>
+			<p>Заливать кофе нужно кипяченной водой (температура воды должна составлять примерно 95 &ndash; 98&ordm; С). Т.е. после того, как вода в чайнике закипела, нужно подождать несколько секунд и наполнить ею френч-пресс. Массу нужно тщательно перемещать и закрыть емкость. Настаивается кофе быстро &ndash; достаточно 4 минут. По истечению времени нужно спрессовать кофе, чтоб вся гуща опустилась вниз. Для этого нужно надавить на шомпол, вместе с которым также опускается ситечко. &laquo;Отжатый&raquo; кофе можно разливать по чашкам.</p>
+			<h5>4.&nbsp;Как определить правильность приготовленного напитка</h5>
+			<p>На поверхности кофе должна присутствовать легкая пенка, образованная из пузырьков углекислого газа. Наличие пенки свидетельствует о том, что кофе приготовлен правильно. Теперь попробуйте напиток, он не должен горчить, скорее он будет иметь легкую кислинку. Несмотря на то, что на вкус такой кофе кажется более крепким, нежели напиток, приготовленный в турке &ndash; это совсем не так.</p>
+			<h5>5.&nbsp;Вкус готового кофе</h5>
+			<p>Готовый напиток по своим вкусовым качествам немного напоминает кофе по-восточному. И даже, невзирая на то, что при прессовании вся гуща опускается вниз, сквозь ситечко все равно просачивается незначительная взвесь.</p>
+		</div>
+
+		<div id="advice-popup-4" class="advice-popup__content" style="max-width:600px;height:auto;padding:20px;text-alaign:left;">
+			<p><img style="float: left; margin: 5px;" title="Мокка" src="img/popup-4.jpg" alt="Мокка" width="200" height="200" />Гейзерная кофеварка (Мока) дает возможность быстро приготовить кофе в домашних условиях. При этом в кофе перед приготовлением можно добавлять различные специи. Это позволит разнообразить вкусовые качества и аромат готового напитка. Главное, что нужно помнить при работе с мока &ndash; это то, что такие кофеварки нужно использовать только при полной загрузке. </p>
+			<p>1. Сначала разбираем кофеварку на отдельные части, их у нее 3 (коллектор, сетчатый фильтр и нижняя колба). В нижнюю часть нужно налить холодную воду до уровня предохранительного клапана. Этот клапан выглядит в виде небольшого отверстия, через которое высвобождается пар, если вода сквозь молотый кофе не просочилась, т.е. если воды в кофеварке слишком много.</p>
+			<p>2. Сетчатый фильтр нужно наполнить с горкой кофе среднего или грубого помола (до 0,6 мм). Теперь разровняйте кофе, излишки ссыпьте. В фильтре должно присутствовать столько кофе, сколько в него вмещается &ndash; ни меньше, ни больше. Важно отметить, что прессовать (темперовать) кофе в данном случае не требуется, поскольку в гейзерных кофеварках вода проходит под небольшим давлением. К тому же прессование ухудшит вкус напитка, который приобретет горчинку, а сам кофе будет слишком горячим.</p>
+			<p>3. Соедините все части кофеварки в единую конструкцию (вставьте фильтр в нижний резервуар с водой и закрутите верхнюю колбу), они должны плотно прилегать друг к другу. Готовый кофе будет наполнять верхнюю часть кофеварки.</p>
+			<p>4. Поставьте мока на медленный огонь. Спустя несколько минут вода в нижнем резервуаре начнет	закипать, постепенно проходя сквозь фильтр с кофе. По трубке жидкость будет попадать в верхнюю колбу.</p>
+			<p>5. Определить готовность напитка довольно просто. Кофеварка начнет издавать шипящие звуки &ndash; это капли воды, которые испаряются из нижнего резервуара. Огонь нужно выключить, поскольку кофе при наливании в чашки может &laquo;фыркать&raquo; и расплескиваться.</p>
+			<p>6. Как только напиток приготовлен нужно немного прогреть чашки, ополоснув посуду кипятком или подержав их в теплой воде. Теперь кофе можно наливать в чашки и наслаждаться его очаровательным вкусом и ароматом.</p>
+			<p>7. После использования кофеварку нужно обязательно разобрать, освободить фильтр от кофе. К слову, если кофейная таблетка в фильтре слишком плотная, в следующие разы нужно использовать меньшее количество кофе, если же она мягкая &ndash; Вы все сделали правильно. Кофеварку нужно вымыть и высушить, подготовив ее к следующему использованию. Уделите внимание клапану, через который выходит пар &ndash; он должен быть всегда свободным.&nbsp;</p>
+		</div>
+
+		<div id="advice-popup-5" class="advice-popup__content" style="width:600px;height:auto;padding:20px;text-alaign:left;">
+			<p><img style="float: left; margin: 5px;" src="img/popup-5.png" alt="" width="200" height="200"/>Готовить кофе в кемексе очень просто. Ведь фактически это чудо устройство все сделает самостоятельно. Минимум времени и сил, а напиток получается очень ароматным и вкусным.</p>
+			<p>1. Свежеобжаренные кофейные зерна нужно помолоть, добившись эффекта &laquo;среднего помола&raquo;. Получить массу требуемого помола можно при помощи жерновой кофемолки. Использовать ножевые приборы не рекомендуется, поскольку они не обеспечивают равномерность помола.</p>
+			<p>2. Подготовьте кемекс и фильтр к работе. Для этого фильтр нужно сложить так, чтоб в результате получился конус со сторонами в 1 и 3 слоя. Далее бумажный фильтр помещают в верхнюю часть прибора, при этом трехслойная сторона фильтра должна располагаться ближе к носику колбы. После установки фильтра его следует обильно полить горячей водой. Эта процедура позволит прогреть кемекс и устранить из готовящегося напитка бумажный привкус. Как только вода полностью стекла сквозь фильтр в колбу, ее нужно слить через носик, не трогая при этом сам фильтр, который должен плотно прилегать к стенкам прибора.</p>
+			<p>3. Засыпьте кофе из расчета 42 гр. на 600 мл воды. В горке насыпанного кофе нужно сделать маленькое углубление. Это обеспечит более удобное наливание воды.</p>
+			<p>4. Слегка смочите поверхность кофе, используя примерно 50 мл воды. В этот момент начинается процесс предварительной экстракции. Воду следует добавлять очень плавно и аккуратно. Это позволит равномерно смочить весь кофе. Для этого используется вода, температура которой должна составлять 95&ordm; С.</p>
+			<p>5. В течение примерно 30 секунд вся налитая в кемекс вода впитается в кофе. Теперь можно заливать оставшуюся воду. Опять же воду следует наливать плавно и медленно, желательно двигаться по кругу, распределяя воду равномерно от края к центру фильтра. Воду нужно наливать не до самого края прибора, не доливая воду примерно на 2 пальца до верха. При этом нужно смотреть, что кофе не поменял цвет, на нем не должно присутствовать светлых или темных пятен.</p>
+			<p>6. Как только в кемексе начнет появляться сухой кофе, в него нужно долить всю оставшуюся воду (напомним, нам потребуется 600 мл воды).</p>
+			<p>7. Удалите из емкости фильтр после того, как вся вода просочиться сквозь кофе.</p>
+			<p>8. Теперь приготовленный кофе можно разливать по чашкам. Ваш свежеприготовленный кофе готов порадовать Вас и Ваших гостей приятным ароматом и неповторимым вкусом.</p>
+		</div>
+	</div>
+
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.12.4.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.js"></script>
+	<script src="libs/bxslider/jquery.bxslider.min.js"></script>
+	<script src="libs/jcarousel/jquery.jcarousel.js"></script>
+	<script src="libs/jcarousel/jcarousel.responsive.js"></script>
+	<script src="libs/star-raiting/raiting.js"></script>
+
+	<script src="js/common.js"></script>
+
+</body>
+</html>

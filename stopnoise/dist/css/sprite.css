@@ -1,0 +1,282 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-bc {
+  background-image: url(../img/sprite.png);
+  background-position: -216px -69px;
+  width: 8px;
+  height: 15px;
+}
+.icon-arrow-left-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -120px;
+  width: 29px;
+  height: 69px;
+}
+.icon-arrow-left-small {
+  background-image: url(../img/sprite.png);
+  background-position: -216px -111px;
+  width: 8px;
+  height: 13px;
+}
+.icon-arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -120px;
+  width: 29px;
+  height: 69px;
+}
+.icon-arrow-right-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -120px;
+  width: 29px;
+  height: 69px;
+}
+.icon-arrow-right-small {
+  background-image: url(../img/sprite.png);
+  background-position: -215px -90px;
+  width: 8px;
+  height: 13px;
+}
+.icon-arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -120px;
+  width: 29px;
+  height: 69px;
+}
+.icon-arrow-select-up {
+  background-image: url(../img/sprite.png);
+  background-position: -94px -108px;
+  width: 11px;
+  height: 7px;
+}
+.icon-arrow-select {
+  background-image: url(../img/sprite.png);
+  background-position: -105px -108px;
+  width: 11px;
+  height: 7px;
+}
+.icon-arrow-up-small {
+  background-image: url(../img/sprite.png);
+  background-position: -57px -108px;
+  width: 13px;
+  height: 7px;
+}
+.icon-banner-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -97px 0px;
+  width: 97px;
+  height: 73px;
+}
+.icon-calend-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -194px -90px;
+  width: 21px;
+  height: 21px;
+}
+.icon-cart-arrow-up {
+  background-image: url(../img/sprite.png);
+  background-position: -82px -108px;
+  width: 12px;
+  height: 7px;
+}
+.icon-cart-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: -70px -108px;
+  width: 12px;
+  height: 7px;
+}
+.icon-cart-ico-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -143px -151px;
+  width: 26px;
+  height: 25px;
+}
+.icon-cart-ico-small {
+  background-image: url(../img/sprite.png);
+  background-position: -34px -189px;
+  width: 16px;
+  height: 16px;
+}
+.icon-cart-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -194px -69px;
+  width: 22px;
+  height: 21px;
+}
+.icon-delivery-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -147px -120px;
+  width: 35px;
+  height: 26px;
+}
+.icon-email-ico-white {
+  background-image: url(../img/sprite.png);
+  background-position: -194px -149px;
+  width: 21px;
+  height: 18px;
+}
+.icon-email-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -194px -131px;
+  width: 21px;
+  height: 18px;
+}
+.icon-fb-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -120px;
+  width: 31px;
+  height: 31px;
+}
+.icon-flag-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -194px 0px;
+  width: 30px;
+  height: 21px;
+}
+.icon-inst-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -94px -73px;
+  width: 31px;
+  height: 31px;
+}
+.icon-m2-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -194px -46px;
+  width: 25px;
+  height: 23px;
+}
+.icon-mail-contact {
+  background-image: url(../img/sprite.png);
+  background-position: -50px -189px;
+  width: 16px;
+  height: 14px;
+}
+.icon-map-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -169px -151px;
+  width: 19px;
+  height: 17px;
+}
+.icon-menu-arrow-down {
+  background-image: url(../img/sprite.png);
+  background-position: -182px -120px;
+  width: 11px;
+  height: 8px;
+}
+.icon-menu-arrow-up {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -108px;
+  width: 11px;
+  height: 7px;
+}
+.icon-page-left-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -187px -73px;
+  width: 7px;
+  height: 14px;
+}
+.icon-page-left {
+  background-image: url(../img/sprite.png);
+  background-position: -215px -131px;
+  width: 7px;
+  height: 14px;
+}
+.icon-page-right-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -215px -149px;
+  width: 7px;
+  height: 14px;
+}
+.icon-page-right {
+  background-image: url(../img/sprite.png);
+  background-position: -213px -167px;
+  width: 7px;
+  height: 14px;
+}
+.icon-pay-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -57px -73px;
+  width: 37px;
+  height: 35px;
+}
+.icon-phone-btn-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -176px;
+  width: 13px;
+  height: 13px;
+}
+.icon-phone-contact {
+  background-image: url(../img/sprite.png);
+  background-position: -17px -189px;
+  width: 17px;
+  height: 17px;
+}
+.icon-phone-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -194px -111px;
+  width: 22px;
+  height: 20px;
+}
+.icon-search-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -194px -21px;
+  width: 25px;
+  height: 25px;
+}
+.icon-slider-ico-2 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 97px;
+  height: 73px;
+}
+.icon-slider-ico-2mob {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -73px;
+  width: 57px;
+  height: 47px;
+}
+.icon-slider-ico-mob {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -189px;
+  width: 17px;
+  height: 17px;
+}
+.icon-slider-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -151px;
+  width: 27px;
+  height: 25px;
+}
+.icon-vk-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -156px -73px;
+  width: 31px;
+  height: 31px;
+}
+.icon-work-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -194px -167px;
+  width: 19px;
+  height: 19px;
+}
+.icon-yt-ico {
+  background-image: url(../img/sprite.png);
+  background-position: -125px -73px;
+  width: 31px;
+  height: 31px;
+}

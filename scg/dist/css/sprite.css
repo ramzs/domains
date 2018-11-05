@@ -1,0 +1,192 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: -227px -50px;
+  width: 7px;
+  height: 12px;
+}
+.icon-arrow-next-green {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -162px;
+  width: 23px;
+  height: 23px;
+}
+.icon-arrow-next {
+  background-image: url(../img/sprite.png);
+  background-position: -23px -162px;
+  width: 23px;
+  height: 23px;
+}
+.icon-arrow-prev-green {
+  background-image: url(../img/sprite.png);
+  background-position: -163px -137px;
+  width: 23px;
+  height: 23px;
+}
+.icon-arrow-prev {
+  background-image: url(../img/sprite.png);
+  background-position: -138px -114px;
+  width: 23px;
+  height: 23px;
+}
+.icon-arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: -227px -38px;
+  width: 7px;
+  height: 12px;
+}
+.icon-fb-logo {
+  background-image: url(../img/sprite.png);
+  background-position: -186px -137px;
+  width: 9px;
+  height: 16px;
+}
+.icon-google-plus {
+  background-image: url(../img/sprite.png);
+  background-position: -86px -145px;
+  width: 22px;
+  height: 14px;
+}
+.icon-menu-icon-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -56px 0px;
+  width: 55px;
+  height: 55px;
+}
+.icon-menu-icon-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -111px 0px;
+  width: 52px;
+  height: 51px;
+}
+.icon-menu-icon-3 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -114px;
+  width: 55px;
+  height: 48px;
+}
+.icon-menu-icon-4 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -56px;
+  width: 51px;
+  height: 58px;
+}
+.icon-menu-icon-5 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 56px;
+  height: 56px;
+}
+.icon-menu-icon-6 {
+  background-image: url(../img/sprite.png);
+  background-position: -163px 0px;
+  width: 33px;
+  height: 53px;
+}
+.icon-menu-icon-7 {
+  background-image: url(../img/sprite.png);
+  background-position: -55px -114px;
+  width: 64px;
+  height: 31px;
+}
+.icon-menu-icon-8 {
+  background-image: url(../img/sprite.png);
+  background-position: -111px -51px;
+  width: 50px;
+  height: 50px;
+}
+.icon-menu-icon-9 {
+  background-image: url(../img/sprite.png);
+  background-position: -51px -56px;
+  width: 54px;
+  height: 54px;
+}
+.icon-menu-icon-small-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -196px -101px;
+  width: 30px;
+  height: 31px;
+}
+.icon-menu-icon-small-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -163px -83px;
+  width: 27px;
+  height: 27px;
+}
+.icon-menu-icon-small-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -196px -132px;
+  width: 31px;
+  height: 27px;
+}
+.icon-menu-icon-small-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -163px -53px;
+  width: 27px;
+  height: 30px;
+}
+.icon-menu-icon-small-5 {
+  background-image: url(../img/sprite.png);
+  background-position: -196px -38px;
+  width: 31px;
+  height: 32px;
+}
+.icon-menu-icon-small-6 {
+  background-image: url(../img/sprite.png);
+  background-position: -119px -114px;
+  width: 19px;
+  height: 31px;
+}
+.icon-menu-icon-small-7 {
+  background-image: url(../img/sprite.png);
+  background-position: -55px -145px;
+  width: 31px;
+  height: 14px;
+}
+.icon-menu-icon-small-8 {
+  background-image: url(../img/sprite.png);
+  background-position: -163px -110px;
+  width: 26px;
+  height: 27px;
+}
+.icon-menu-icon-small-9 {
+  background-image: url(../img/sprite.png);
+  background-position: -196px -70px;
+  width: 31px;
+  height: 31px;
+}
+.icon-play-icon-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -196px 0px;
+  width: 38px;
+  height: 38px;
+}
+.icon-tw-logo {
+  background-image: url(../img/sprite.png);
+  background-position: -108px -145px;
+  width: 17px;
+  height: 14px;
+}
+.icon-vk-logo {
+  background-image: url(../img/sprite.png);
+  background-position: -111px -101px;
+  width: 18px;
+  height: 10px;
+}

@@ -1,0 +1,66 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-gal-left {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 63px;
+  height: 63px;
+}
+.icon-arrow-gal-right {
+  background-image: url(../img/sprite.png);
+  background-position: -63px 0px;
+  width: 63px;
+  height: 63px;
+}
+.icon-arrows-left {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -63px;
+  width: 44px;
+  height: 45px;
+}
+.icon-arrows-right {
+  background-image: url(../img/sprite.png);
+  background-position: -44px -63px;
+  width: 44px;
+  height: 45px;
+}
+.icon-clock {
+  background-image: url(../img/sprite.png);
+  background-position: -126px 0px;
+  width: 25px;
+  height: 26px;
+}
+.icon-close-gal {
+  background-image: url(../img/sprite.png);
+  background-position: -88px -63px;
+  width: 33px;
+  height: 33px;
+}
+.icon-placeholder {
+  background-image: url(../img/sprite.png);
+  background-position: -126px -26px;
+  width: 25px;
+  height: 26px;
+}
+.icon-speech-bubble {
+  background-image: url(../img/sprite.png);
+  background-position: -126px -52px;
+  width: 25px;
+  height: 25px;
+}

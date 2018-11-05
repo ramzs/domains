@@ -1,0 +1,358 @@
+/*--------Catalog page-----------*/
+.filter__link {
+  color: #000;
+}
+
+.filter__link:hover {
+  color: #000;
+}
+
+.sidebar__news {
+  padding-bottom: 30px;
+}
+
+.sidebar__new-news {
+  margin-bottom: 10px;
+  color: #fff;
+  border: none;
+  background: #cc0e05;
+  background: -moz-linear-gradient(top, #e68520 0%, #cc0e05 100%);
+  background: -webkit-linear-gradient(top, #e68520 0%, #cc0e05 100%);
+  background: linear-gradient(to bottom, #e68520 0%, #cc0e05 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e68520', endColorstr='#cc0e05',GradientType=0 );
+}
+
+.sidebar__new-news:hover {
+  color: #fff;
+}
+
+.news__item {
+  margin-bottom: 15px;
+}
+
+.news__date {
+  color: #ff0000;
+  font-style: italic;
+}
+
+.news__descr {
+  font-size: 15px;
+}
+
+.more__link {
+  color: #7c7c7c;
+  font-style: italic;
+}
+
+.more__link:hover {
+  color: #7c7c7c;
+}
+
+.full__link-catalog {
+  position: absolute;
+  top: -90px;
+}
+
+.breadcrumb {
+  padding: 8px 0;
+  background: none;
+}
+
+.breadcrumb li + li:before {
+  content: '>';
+  margin-right: 2px;
+}
+
+.breadcrumb a {
+  color: #7c7c7c;
+}
+
+.catalog__item-page {
+  margin-bottom: 30px;
+}
+
+.catalog__item-page .item__img {
+  height: 165px;
+}
+
+.catalog__item-page .item__descr {
+  width: 100%;
+}
+
+.catalog__item-page .item__price {
+  bottom: 35px;
+}
+
+.catalog__item-page .item__cart {
+  bottom: 14px;
+}
+
+.catalog__item-page .item__cart-order {
+  right: 32px;
+  bottom: 2px;
+  font-size: 14px;
+  color: #de8d59;
+  white-space: nowrap;
+  background: none;
+}
+
+.catalog__item-page .available {
+  display: block;
+  margin-top: -5px;
+  font-size: 14px;
+  color: #de8d59;
+}
+
+.catalog__item-page .available.not {
+  color: #7c7c7c;
+}
+
+.sale__price {
+  position: relative;
+  padding: 0 1px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #636363;
+}
+
+.sale__price:before {
+  content: ' ';
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ff0000;
+}
+
+.pagination {
+  position: relative;
+  top: -11px;
+  height: 45px;
+  border: 1px solid #ddd;
+}
+
+.pagination li {
+  display: table-cell;
+}
+
+.pagination li:not(.bread__link) a {
+  padding: 0 29px;
+}
+
+.pagination li.active a {
+  color: #fff;
+  background: #e16f2c;
+}
+
+.pagination li.active a:hover {
+  color: #fff;
+  background: #e16f2c;
+}
+
+.pagination li a {
+  padding: 0 22px;
+  font-size: 14px;
+  color: #6f6f6f;
+  line-height: 44px;
+  border: none;
+  background: none;
+}
+
+.pagination li a:hover {
+  color: #fff;
+  background: #e16f2c;
+}
+
+.pagination li a:focus {
+  color: #fff;
+  background: #e16f2c;
+}
+
+.page__count {
+  float: right;
+  margin-top: 20px;
+}
+
+.page__count span {
+  font-size: 14px;
+}
+
+.jq-selectbox {
+  width: 55px;
+}
+
+.jq-selectbox.focused .jq-selectbox__select {
+  border: 1px solid #ccc;
+}
+
+.jq-selectbox__select {
+  height: 20px;
+  padding: 0 20px 0 3px;
+  line-height: 20px;
+  background: none;
+  border-radius: 0;
+}
+
+.jq-selectbox__trigger {
+  border: 1px solid #ccc;
+  width: 20px;
+  background: -moz-linear-gradient(top, #fff 0%, #e6e6e6 100%);
+  background: -webkit-linear-gradient(top, #FFF 0%, #E6E6E6 100%);
+  background: linear-gradient(to bottom, #FFF 0%, #E6E6E6 100%);
+  box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.jq-selectbox__trigger-arrow {
+  top: 7px;
+  right: 5px;
+}
+
+.jq-selectbox__dropdown {
+  border-radius: 0;
+}
+
+.catalog__text {
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.page__title {
+  display: none;
+  height: 45px;
+  background: #fa8140;
+  background: -moz-linear-gradient(top, #fa8140 0%, #b22e4b 100%);
+  background: -webkit-linear-gradient(top, #fa8140 0%, #b22e4b 100%);
+  background: linear-gradient(to bottom, #fa8140 0%, #b22e4b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa8140', endColorstr='#b22e4b',GradientType=0 );
+}
+
+.page__title a {
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page__title a i {
+  float: left;
+  position: relative;
+  top: 10px;
+}
+
+.page__title a h5 {
+  position: relative;
+  left: -12px;
+}
+
+.list__head {
+  height: 45px;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+
+.list__title {
+  display: block;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.list__title i {
+  float: right;
+  position: relative;
+  top: 15px;
+}
+
+.list__title:hover {
+  color: #000;
+}
+
+.list__title:focus {
+  color: #000;
+}
+
+.list__body {
+  padding: 0 0 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.catalog__list-gift.active .list__head {
+  height: 35px;
+  background: #fff0b9;
+  border-bottom: none;
+}
+
+.catalog__list-gift.active .list__head.list__head-filter {
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+.catalog__list-gift.active .list__title {
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.catalog__list-gift.active .list__title i {
+  display: none;
+}
+
+.catalog__list-gift.active .list__body {
+  border-bottom: none;
+}
+
+.catalog__list-gift.active .list__title-filter {
+  height: 35px;
+  text-align: left;
+}
+
+.catalog__list-gift.active .list__title-filter i {
+  display: block;
+  position: relative;
+  top: 9px;
+  width: 22px;
+  height: 18px;
+  background: url(../img/filter-sprite.png) 0 0 no-repeat;
+}
+
+.catalog__list-gift.active .list__title-filter.opened i {
+  background-position: -22px 0;
+}
+
+.filter__catalog {
+  display: none;
+  border: none;
+}
+
+.filter__catalog .filter__item {
+  margin-bottom: 0;
+  padding: 0 0 10px;
+}
+
+.filter__catalog .filter__item.filter__item-age {
+  margin-top: 0;
+}
+
+.filter__catalog .filter__item .filter__head {
+  height: 35px;
+  margin-bottom: 10px;
+  line-height: 35px;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+.filter__catalog .filter__btn {
+  border-top: none;
+}
+
+.catalog-group.open .catalog__list:not(.catalog__list-gift) {
+  display: none;
+}
+
+/*---------end-------------*/

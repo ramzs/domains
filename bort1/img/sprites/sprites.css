@@ -1,0 +1,160 @@
+.forma-icon, .head-phone-mob, .home-icon, .service-1, .service-2, .service-3, .service-4, .service-5, .service-6, .service-7, .tarif-ico-1, .tarif-ico-2, .tarif-ico-3, .tarif-ico-4, .tarif-ico-5, .arrow-left-big, .arrow-right, .arrow-right-big, .contact-ico-1, .contact-ico-2, .contact-ico-3, .contact-ico-4, .marker, .calendar, .forma-calendare, .forma-marker{
+	background: url(sprites.png) no-repeat;
+}
+
+.forma-icon{
+	background-position: -23px 0;
+	width: 50px;
+	height: 20px;
+}
+
+.head-phone-mob{
+	background-position: -102px -135px ;
+	width: 76px;
+	height: 76px;
+}
+
+.home-icon{
+	background-position: 0 0;
+	width: 20px;
+	height: 20px;
+}
+
+.service-1{
+	background-position: 0 -365px ;
+	width: 52px;
+	height: 60px;
+}
+
+.service-2{
+	background-position: -49px -310px ;
+	width: 56px;
+	height: 55px;
+}
+
+.service-3{
+	background-position: -46px -257px ;
+	width: 59px;
+	height: 50px;
+}
+
+.service-4{
+	background-position: -29px -76px ;
+	width: 71px;
+	height: 55px;
+}
+
+.service-5{
+	background-position: -30px -24px ;
+	width: 50px;
+	height: 50px;
+}
+
+.service-6{
+	background-position: -40px -197px ;
+	width: 53px;
+	height: 55px;
+}
+
+.service-7{
+	background-position: -30px -135px ;
+	width: 58px;
+	height: 60px;
+}
+
+.tarif-ico-1{
+	background-position: 0 -22px ;
+	width: 22px;
+	height: 24px;
+}
+
+.tarif-ico-2{
+	background-position: 0 -49px ;
+	width: 22px;
+	height: 19px;
+}
+
+.tarif-ico-3{
+	background-position: 0 -70px ;
+	width: 17px;
+	height: 25px;
+}
+
+.tarif-ico-4{
+	background-position: 0 -97px ;
+	width: 21px;
+	height: 21px;
+}
+
+.tarif-ico-5{
+	background-position: 0 -121px ;
+	width: 17px;
+	height: 25px;
+}
+
+.arrow-left-big{
+	background-position: -108px 0;
+	width: 80px;
+	height: 64px;
+}
+
+.arrow-right{
+	background-position: -1px -353px ;
+	width: 5px;
+	height: 9px;
+}
+
+.arrow-right-big{
+	background-position: -117px -66px ;
+	width: 80px;
+	height: 64px;
+}
+
+.contact-ico-1{
+	background-position: 0 -294px ;
+	width: 25px;
+	height: 30px;
+}
+
+.contact-ico-2{
+	background-position: -2px -245px ;
+	width: 26px;
+	height: 26px;
+}
+
+.contact-ico-3{
+	background-position: 0 -272px ;
+	width: 26px;
+	height: 21px;
+}
+
+.contact-ico-4{
+	background-position: 0 -326px ;
+	width: 25px;
+	height: 25px;
+}
+
+.marker{
+	background-position: 0 -218px ;
+	width: 36px;
+	height: 24px;
+}
+
+.calendar{
+	background-position: 0 -196px ;
+	width: 36px;
+	height: 20px;
+}
+
+.forma-calendare{
+	background-position: 0 -173px ;
+	width: 19px;
+	height: 20px;
+}
+
+.forma-marker{
+	background-position: 0 -147px ;
+	width: 17px;
+	height: 24px;
+}
+

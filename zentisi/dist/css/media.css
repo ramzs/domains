@@ -1,0 +1,25 @@
+@media only screen and (max-width: 1310px) {
+  .arrow-prev {
+    left: 0;
+  }
+  .arrow-next {
+    right: 0;
+  }
+  /**/
+}
+
+@media only screen and (max-width: 992px) {
+  /**/
+}
+
+@media only screen and (max-width: 768px) {
+  /**/
+}
+
+@media only screen and (max-width: 480px) {
+  /**/
+}
+
+@media only screen and (max-width: 320px) {
+  /**/
+}

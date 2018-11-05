@@ -1,0 +1,3671 @@
+@charset "UTF-8";
+/*-------Base styles----------*/
+*::-webkit-input-placeholder {
+  color: #000;
+  font-style: italic;
+  opacity: .51;
+}
+
+*:-moz-placeholder {
+  color: #000;
+  font-style: italic;
+  opacity: .51;
+}
+
+*::-moz-placeholder {
+  color: #000;
+  font-style: italic;
+  opacity: .51;
+}
+
+*:-ms-input-placeholder {
+  color: #000;
+  font-style: italic;
+  opacity: .51;
+}
+
+html.js .loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+html.js .loader .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green;
+}
+
+body {
+  font-family: "ptsans", sans-serif;
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/*----------end---------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+.wrapper {
+  position: relative;
+  height: 100%;
+  max-width: 1780px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/*-------------mobile menu-----------*/
+.menu__btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  padding: 15px 10px;
+  cursor: pointer;
+  z-index: 100;
+  background: #4130b4;
+  -webkit-transition: background .15s;
+  transition: background .15s;
+}
+
+.menu__btn.active {
+  background: #fbab12;
+}
+
+.menu__btn.active b {
+  background: #efefef;
+}
+
+.menu__btn b {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 7px;
+  background: #fff;
+}
+
+.menu__mob {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  top: 0;
+  left: -100%;
+  padding: 15px 0 60px;
+  z-index: 99;
+  background: rgba(51, 48, 72, 0.89);
+  -webkit-box-shadow: 0 0 51px rgba(172, 172, 172, 0.34);
+          box-shadow: 0 0 51px rgba(172, 172, 172, 0.34);
+  -webkit-transition: left 0.2s ease-out;
+  transition: left 0.2s ease-out;
+}
+
+.menu__mob.show {
+  left: 0;
+}
+
+/*----------------end----------------*/
+/*------------mobile phone------------*/
+.phone__btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  padding: 15px 0;
+  text-align: center;
+  cursor: pointer;
+  z-index: 100;
+  background: #4130b4;
+  -webkit-transition: background .15s;
+  transition: background .15s;
+}
+
+.phone__btn.active {
+  background: #fbab12;
+}
+
+.phone__btn img {
+  width: 30px;
+}
+
+.phone__menu {
+  position: absolute;
+  width: 380px;
+  height: 75px;
+  top: 0;
+  right: -100%;
+  padding: 15px 0 25px;
+  z-index: 99;
+  background: rgba(51, 48, 72, 0.89);
+  -webkit-box-shadow: 0 0 51px rgba(172, 172, 172, 0.34);
+          box-shadow: 0 0 51px rgba(172, 172, 172, 0.34);
+  -webkit-transition: right 0.2s ease-out;
+  transition: right 0.2s ease-out;
+}
+
+.phone__menu.show {
+  right: 0;
+}
+
+/*--------------end-------------------*/
+.header {
+  position: relative;
+  height: 1079px;
+  background: url(../img/header-bg.jpg) center top no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.header__top {
+  padding-top: 32px;
+}
+
+.header__social {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header__social a {
+  display: inline-block;
+  position: relative;
+  vertical-align: bottom;
+  font-size: 0;
+}
+
+.social__link.social__link-vk {
+  background-image: url(../img/sprite.png);
+  background-position: -146px -310px;
+  width: 39px;
+  height: 25px;
+}
+
+.social__link.social__link-fb {
+  margin-left: 25px;
+  background-image: url(../img/sprite.png);
+  background-position: -298px -459px;
+  width: 16px;
+  height: 32px;
+}
+
+.header__menu {
+  display: inline-block;
+  margin-left: 35px;
+  vertical-align: middle;
+}
+
+.header__menu li {
+  display: inline-block;
+}
+
+.header__menu li:last-child {
+  margin-right: 0;
+}
+
+.header__menu li a {
+  display: block;
+  padding: 5px 14px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: underline;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.header__menu li a:hover {
+  color: #000;
+  text-decoration: none;
+  background: #f7b319;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.header__menu.header__menu-center {
+  display: block;
+  width: 450px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.header__logo {
+  width: 450px;
+  margin: -30px auto 0;
+  text-align: center;
+}
+
+.header__logo a {
+  display: block;
+}
+
+.logo__title {
+  display: block;
+  margin: 0;
+  font: 40px "kelson";
+}
+
+.logo__text {
+  display: block;
+  font-size: 27px;
+}
+
+.header__phone {
+  position: absolute;
+  top: 42px;
+  right: 10px;
+  text-align: right;
+}
+
+.header__phone a {
+  display: block;
+}
+
+.phone__link {
+  margin-bottom: 5px;
+  font: 700 36px "kelson";
+  color: #fff;
+}
+
+.callback__link {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: underline;
+  outline: none;
+}
+
+.callback__link:hover {
+  text-decoration: none;
+}
+
+.main__block {
+  width: 610px;
+  height: 410px;
+  margin: 98px auto 0;
+  padding-top: 35px;
+  text-align: center;
+  background: rgba(26, 23, 50, 0.89);
+}
+
+.block__date {
+  margin-bottom: 12px;
+  font-size: 30px;
+  color: #fcb413;
+}
+
+.block__date span {
+  font-weight: 700;
+}
+
+.block__title {
+  display: block;
+  font: 51px/53px "kelson";
+}
+
+.block__limit {
+  display: block;
+  margin: 38px 0 20px;
+  font-size: 27px;
+}
+
+.btn__link {
+  display: block;
+  width: 308px;
+  height: 57px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  line-height: 55px;
+  text-align: center;
+  background: #fcb413;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.btn__link.btn__link-mob {
+  display: none;
+}
+
+.section {
+  height: 1080px;
+}
+
+.section__title {
+  font: 700 102px "kelson";
+  color: #000;
+}
+
+.section__fabric {
+  padding-top: 100px;
+  background: url(../img/home-bg-1.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.fabric__accent {
+  display: block;
+  margin: 0 0 23px 50px;
+  font: 700 36px "kelson";
+  color: #000;
+}
+
+.section__title.section__title-fabric {
+  margin: 0 0 57px -50px;
+  font: 700 82px "kelson";
+  color: #000;
+  white-space: nowrap;
+}
+
+.section__title.fabric__title-mob {
+  display: none;
+}
+
+.fabric__item {
+  float: left;
+  width: 30%;
+  margin-right: 45px;
+  text-align: left;
+}
+
+.fabric__item:nth-child(4) {
+  margin-right: 0;
+}
+
+.fabric__item.fabric__item-big {
+  width: 100%;
+  margin: 100px 0 0;
+}
+
+.fabric__item .item__img {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.fabric__item .item__img.item__img-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -384px 0px;
+  width: 127px;
+  height: 127px;
+}
+
+.fabric__item .item__img.item__img-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -384px -127px;
+  width: 127px;
+  height: 127px;
+}
+
+.fabric__item .item__img.item__img-3 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -136px;
+  width: 127px;
+  height: 130px;
+}
+
+.fabric__item .item__img.item__img-4 {
+  float: left;
+  margin: 0 14px 0 0;
+  font-size: 48px;
+  background-image: url(../img/sprite.png);
+  background-position: -255px -136px;
+  width: 127px;
+  height: 127px;
+}
+
+.fabric__item .item__descr {
+  font-size: 30px;
+  color: #000;
+  line-height: 40px;
+}
+
+.fabric__item .item__descr span {
+  font-weight: 700;
+}
+
+.fabric__item .item__descr.item__descr-big {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.fabric__item .item__descr.item__descr-big span {
+  font-size: 54px;
+}
+
+.section__program {
+  padding-top: 64px;
+  background: url(../img/home-bg-2.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-program {
+  text-align: center;
+}
+
+.program__video {
+  margin-top: 40px;
+}
+
+.video__descr {
+  display: none;
+  margin-top: 3px;
+  font-size: 16px;
+  color: #000;
+}
+
+.program__trust {
+  margin-top: 50px;
+  text-align: justify;
+  line-height: 0;
+}
+
+.program__trust:after {
+  display: inline-block;
+  content: ' ';
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.trust__title {
+  margin-bottom: 30px;
+  font: 700 60px "kelson";
+  color: #000;
+  text-align: center;
+}
+
+.trust__item {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.trust__item i {
+  display: block;
+}
+
+.trust__item.trust__item-1 i {
+  background-image: url(../img/sprite.png);
+  background-position: -146px -266px;
+  width: 183px;
+  height: 44px;
+}
+
+.trust__item.trust__item-2 i {
+  background-image: url(../img/sprite.png);
+  background-position: -598px -422px;
+  width: 68px;
+  height: 87px;
+}
+
+.trust__item.trust__item-3 i {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -459px;
+  width: 109px;
+  height: 69px;
+}
+
+.trust__item.trust__item-4 i {
+  background-image: url(../img/sprite.png);
+  background-position: -598px -333px;
+  width: 72px;
+  height: 89px;
+}
+
+.trust__item.trust__item-5 i {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -266px;
+  width: 146px;
+  height: 70px;
+}
+
+.section__free {
+  display: none;
+  height: 310px;
+  padding-top: 17px;
+  text-align: center;
+  background: #333048;
+}
+
+.section__title.section__title-free {
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.section__text {
+  display: block;
+  margin-bottom: 37px;
+  font-size: 18px;
+}
+
+.btn__link.btn__link-free {
+  display: block;
+  width: 270px;
+}
+
+.section__help {
+  background: url(../img/home-bg-3.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-help {
+  padding-top: 80px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.section__title span {
+  display: block;
+  font-size: 48px;
+  text-transform: none;
+}
+
+.help__item {
+  position: absolute;
+}
+
+.help__item.help__item-1 {
+  bottom: 160px;
+  left: 210px;
+}
+
+.help__item.help__item-2 {
+  bottom: 390px;
+  left: 580px;
+}
+
+.help__item.help__item-3 {
+  top: 290px;
+  left: 905px;
+}
+
+.help__item.help__item-4 {
+  top: 60px;
+  left: 1220px;
+}
+
+.help__num {
+  float: left;
+  font: 700 100px "segoe";
+  color: #fcb413;
+}
+
+.help__descr {
+  display: inline-block;
+  padding: 25px 0 0 10px;
+  font: 30px "segoe";
+}
+
+.help__form {
+  float: right;
+  margin: 230px -255px 0 0;
+  width: 586px;
+  height: 484px;
+  padding: 20px 50px 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.44);
+  border: 3px solid white;
+}
+
+.help__form input {
+  display: block;
+  width: 308px;
+  height: 47px;
+  margin: 0 auto 10px;
+  padding-left: 20px;
+  font-size: 18px;
+  border: none;
+}
+
+.form__title {
+  font: 48px/48px "kelson";
+}
+
+.form__descr {
+  display: block;
+  margin: 17px 0 30px;
+  font-size: 26px;
+}
+
+.form__btn {
+  display: block;
+  width: 308px;
+  height: 57px;
+  margin: 30px auto 0;
+  padding-bottom: 5px;
+  font: 700 20px "segoe";
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background: #fcb413;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.section__trening {
+  padding-top: 102px;
+  background: url(../img/home-bg-4.jpg) right top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-trening {
+  margin-bottom: 42px;
+}
+
+.trening__item {
+  position: relative;
+  width: 580px;
+  margin-bottom: 40px;
+}
+
+.trening__item:before {
+  content: ' ';
+  position: absolute;
+  left: -118px;
+  top: 14px;
+}
+
+.trening__item.trening__item-1:before {
+  background-image: url(../img/sprite.png);
+  background-position: -304px -336px;
+  width: 87px;
+  height: 97px;
+}
+
+.trening__item.trening__item-2:before {
+  background-image: url(../img/sprite.png);
+  background-position: -391px -336px;
+  width: 87px;
+  height: 97px;
+}
+
+.trening__item.trening__item-3:before {
+  background-image: url(../img/sprite.png);
+  background-position: -511px 0px;
+  width: 87px;
+  height: 97px;
+}
+
+.trening__descr {
+  font: 30px "segoe";
+  color: #000;
+}
+
+.trening__descr span {
+  font: 700 34px "segoe";
+}
+
+.section__advant {
+  padding-top: 105px;
+  background: url(../img/home-bg-1.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-advant {
+  margin-bottom: 76px;
+}
+
+.advant__project {
+  display: inline-block;
+  margin-right: 135px;
+}
+
+.advant__project > span {
+  display: block;
+  font: 24px "segoe";
+  color: #000;
+}
+
+.project__total {
+  font: 52px "segoe";
+  color: #000;
+}
+
+.project__total span {
+  font: 700 72px "segoe";
+  color: #000;
+}
+
+.advant__total {
+  display: inline-block;
+}
+
+.advant__total > span {
+  display: block;
+  font: 24px "segoe";
+  color: #000;
+}
+
+.total__price {
+  font: 700 72px "segoe";
+  color: #000;
+}
+
+.total__price span {
+  font: 62px "alsrubl";
+}
+
+.advant__items {
+  margin-top: 120px;
+}
+
+.advant__item {
+  float: left;
+  position: relative;
+  width: 45%;
+  margin: 0 45px 112px 0;
+  text-align: left;
+}
+
+.advant__item:nth-child(n+2n) {
+  margin-right: 0;
+}
+
+.advant__item:before {
+  content: ' ';
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+.advant__item.advant__item-1:before {
+  background-image: url(../img/sprite.png);
+  background-position: -127px -136px;
+  width: 128px;
+  height: 127px;
+}
+
+.advant__item.advant__item-2:before {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 128px;
+  height: 136px;
+}
+
+.advant__item.advant__item-3:before {
+  background-image: url(../img/sprite.png);
+  background-position: -128px 0px;
+  width: 128px;
+  height: 130px;
+}
+
+.advant__item.advant__item-4:before {
+  background-image: url(../img/sprite.png);
+  background-position: -256px 0px;
+  width: 128px;
+  height: 129px;
+}
+
+.advant__item .item__descr {
+  padding-left: 162px;
+  font: 24px "segoe";
+  color: #000;
+}
+
+.advant__item .item__descr span {
+  font-weight: 700;
+}
+
+.section__can {
+  padding-top: 88px;
+  background: url(../img/home-bg-5.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-can span {
+  display: block;
+  font: 700 102px/97px "kelson";
+  text-align: right;
+}
+
+.help__form.help__form-can {
+  float: left;
+  margin: 68px 60px 0 -70px;
+  width: 487px;
+  height: 471px;
+  padding-top: 37px;
+  background: rgba(255, 255, 255, 0.77);
+  border: none;
+}
+
+.help__form.help__form-can input {
+  border: 1px solid #dbdbdb;
+}
+
+.form__title.form__title-can {
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.can__text {
+  float: right;
+  width: 49%;
+  margin-top: 52px;
+}
+
+.can__text p {
+  margin-bottom: 46px;
+  font: 40px/48px "segoe";
+  color: #000;
+}
+
+.can__text p span {
+  display: block;
+  margin-top: 50px;
+  font: 40px/48px "segoe";
+  color: #000;
+}
+
+.section__mcity {
+  padding-top: 100px;
+  text-align: center;
+  background: url(../img/home-bg-6.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-mcity {
+  display: inline-block;
+  text-align: right;
+  line-height: 64px;
+}
+
+.section__title.section__title-mcity span {
+  display: block;
+  font-size: 30px;
+}
+
+.section__title.section__title-mcity a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.section__title.section__title-mcity a:hover {
+  text-decoration: none;
+}
+
+.section__date {
+  height: 808px;
+  padding-top: 88px;
+  text-align: center;
+  background: url(../img/home-bg-7.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.date__tren {
+  margin-bottom: 12px;
+  font-size: 51px;
+  color: #000;
+}
+
+.date__tren span {
+  font-weight: 700;
+}
+
+.section__title.section__title-date {
+  line-height: 100px;
+  font-weight: normal;
+}
+
+.date__seats {
+  margin: 47px 0 50px;
+  font-size: 46px;
+  color: #000;
+}
+
+.btn__link.btn__link-date {
+  width: 391px;
+  height: 72px;
+  font-size: 30px;
+  color: #fff;
+  line-height: 65px;
+  background: #000;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.btn__link.btn__link-free {
+  display: none;
+}
+
+.footer {
+  height: 250px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.footer__left {
+  float: left;
+}
+
+.footer__social {
+  margin: 5px 50px 0 0;
+}
+
+.footer__social a {
+  display: inline-block;
+  position: relative;
+  vertical-align: bottom;
+  font-size: 0;
+}
+
+.footer__social .social__link.social__link-vk {
+  background-image: url(../img/sprite.png);
+  background-position: -454px -266px;
+  width: 39px;
+  height: 25px;
+}
+
+.footer__social .social__link.social__link-fb {
+  background-image: url(../img/sprite.png);
+  background-position: -282px -459px;
+  width: 16px;
+  height: 32px;
+}
+
+.footer__logo {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  margin-left: 75px;
+  text-align: center;
+}
+
+.footer__logo a {
+  display: block;
+}
+
+.footer__logo .logo__title {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #000;
+}
+
+.footer__logo .logo__text {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #000;
+}
+
+.footer__right {
+  float: right;
+  text-align: right;
+}
+
+.footer__phone {
+  display: block;
+  margin-bottom: 8px;
+  font: 700 24px "kelson";
+  color: #000;
+}
+
+.footer__menu {
+  width: 300px;
+}
+
+.footer__menu li {
+  display: inline-block;
+  margin: 0 0 7px 17px;
+}
+
+.footer__menu li a {
+  display: block;
+  font-size: 18px;
+  color: #000;
+  text-decoration: underline;
+}
+
+.footer__menu li a:hover {
+  text-decoration: none;
+}
+
+/*-------------modal бесплатная консультация-----------*/
+.free__form {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 446px;
+  margin: 0 auto;
+  padding: 25px 15px 0;
+  text-align: center;
+  background: #333048;
+}
+
+.free__form input {
+  width: 100%;
+  height: 47px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  border: none;
+  outline: none;
+}
+
+.free__form .mfp-close {
+  top: -2px;
+}
+
+.free__form .mfp-close:active {
+  top: -2px;
+}
+
+.mfp-close-btn-in .mfp-close {
+  color: #fff !important;
+}
+
+.free__title {
+  margin-bottom: 15px;
+  font: 36px/40px "kelson";
+}
+
+.free__accent {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.form__btn.form__btn-free {
+  width: 270px;
+}
+
+/*-----------------------end---------------------------*/
+/*-------------------Form city---------------------*/
+.form__city {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  height: 498px;
+  margin: auto;
+  padding: 12px 15px;
+  background: #e9e9ed;
+}
+
+.form__city .mfp-close {
+  display: none;
+}
+
+.city__change {
+  height: 470px;
+  overflow: hidden;
+}
+
+.change__list {
+  height: 100%;
+  overflow: auto;
+}
+
+.change__list li {
+  position: relative;
+  display: block;
+  width: 225px;
+  height: 32px;
+  margin-bottom: 12px;
+  padding: 4px 0 4px 15px;
+  cursor: pointer;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.change__list li:hover, .change__list li.active {
+  background: #ffc000;
+}
+
+.change__list li:hover:after, .change__list li.active:after {
+  content: ' ';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 225px;
+  height: 20px;
+}
+
+.change__list li:hover .form__phone, .change__list li.active .form__phone {
+  visibility: visible;
+  opacity: 1;
+}
+
+.change__list li > span {
+  display: block;
+  font: 16px "segoe";
+  color: #000;
+}
+
+.form__phone {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 290px;
+  height: 175px;
+  padding-top: 25px;
+  opacity: 0;
+  text-align: center;
+  z-index: 5;
+  cursor: default;
+  background: #fff;
+  -webkit-box-shadow: 0 3px 21px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 3px 21px rgba(0, 0, 0, 0.08);
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.form__phone span {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+}
+
+.form__phone .consalt__link {
+  display: block;
+  width: 254px;
+  height: 57px;
+  margin: 0 auto;
+  font: 700 16px "segoe";
+  line-height: 57px;
+  color: #000;
+  background-color: #fcb413;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+
+/*-----------------------end--------------------------*/
+/*----------magnific popup------------*/
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  background: #000;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: .9;
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+/*--------------end-------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*--------------Start business page---------------*/
+.header.header__inner._start {
+  background: url(../img/start-bg-1.jpg) left top no-repeat;
+  background-size: cover;
+}
+
+.header__top.header__top-inner {
+  padding: 42px 0 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.header__social.header__social-inner {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.social__link.social__link-inner.social__link-vk {
+  background-image: url(../img/sprite.png);
+  background-position: -454px -266px;
+  width: 39px;
+  height: 25px;
+}
+
+.social__link.social__link-inner.social__link-fb {
+  background-image: url(../img/sprite.png);
+  background-position: -282px -459px;
+  width: 16px;
+  height: 32px;
+}
+
+.header__menu.header__menu-inner {
+  display: inline-block;
+  margin-left: 0;
+  vertical-align: top;
+}
+
+.header__menu.header__menu-inner li {
+  margin-right: 0;
+}
+
+.header__menu.header__menu-inner li a {
+  padding: 5px 14px;
+  color: #000;
+}
+
+.header__menu.header__menu-inner li a:hover {
+  background: #f7b319;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.header__logo.header__logo-inner {
+  display: inline-block;
+  width: auto;
+  margin: -30px 0 0;
+}
+
+.logo__link.logo__link-mob {
+  display: none;
+}
+
+.logo__title.logo__title-inner {
+  font-size: 24px;
+  color: #000;
+}
+
+.logo__text.logo__text-inner {
+  display: none;
+}
+
+.header__phone.header__phone-inner {
+  top: 12px;
+}
+
+.phone__link.phone__link-inner {
+  font-size: 24px;
+  color: #000;
+}
+
+.callback__link.callback__link-inner {
+  font-size: 16px;
+  color: #000;
+}
+
+.header__main {
+  position: relative;
+  margin-top: 75px;
+  text-align: center;
+}
+
+.header__main .container {
+  width: 100%;
+  padding: 0;
+}
+
+.main__block.main__block-inner {
+  display: inline-block;
+  width: 664px;
+  height: 520px;
+  margin: 0 20px 0 0;
+  padding: 38px 45px 0;
+  text-align: left;
+  vertical-align: top;
+  background: rgba(39, 120, 184, 0.7);
+}
+
+.block__date.block__date-inner {
+  font-weight: normal;
+  color: #fccd13;
+}
+
+.block__title.block__title-inner {
+  font-size: 60px;
+}
+
+.block__text {
+  margin: 40px 0 25px;
+  font-size: 27px;
+}
+
+.block__price {
+  font-size: 26px;
+}
+
+.block__price span {
+  font-size: 30px;
+  color: #fccd13;
+}
+
+.btn__link.btn__link-header {
+  display: none;
+}
+
+.help__form.help__form-header {
+  display: inline-block;
+  float: none;
+  width: 342px;
+  height: 520px;
+  margin: 0;
+  padding: 35px 45px 0;
+  border: none;
+  vertical-align: top;
+  background: rgba(39, 120, 184, 0.7);
+}
+
+.help__form.help__form-header input {
+  width: 100%;
+}
+
+.form__title.form__title-header {
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.form__btn.form__btn-header {
+  width: 195px;
+  background: #ffd200;
+}
+
+.section__start {
+  height: 1080px;
+  padding-top: 98px;
+}
+
+.section__start.section__start-msk {
+  height: 2160px;
+  background: url(../img/start-bg-2.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__accent {
+  font: 700 36px "kelson";
+  color: #000;
+}
+
+.section__title.section__title-start {
+  font-size: 90px;
+}
+
+.start__block.start__block-1 {
+  margin: 105px 0 380px;
+}
+
+.start__title {
+  margin-bottom: 22px;
+  font: 700 36px "kelson";
+  color: #000;
+}
+
+.items__box {
+  width: 65%;
+}
+
+.items__box.items__box-1 {
+  float: left;
+  margin-left: -115px;
+}
+
+.items__box.items__box-2 {
+  float: right;
+  margin-right: -280px;
+}
+
+.msk__item {
+  display: table;
+  margin-bottom: 22px;
+}
+
+.msk__item img {
+  display: table-cell;
+  width: 95px;
+}
+
+.msk__item .item__descr {
+  display: table-cell;
+  padding-left: 20px;
+  font-size: 30px;
+  color: #000;
+  vertical-align: middle;
+}
+
+.section__start.section__start-nat {
+  background: url(../img/start-bg-3.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-nat {
+  margin-bottom: 60px;
+}
+
+.nat__item {
+  margin-bottom: 60px;
+}
+
+.nat__item .item__list .list__label {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 57px;
+  font-size: 36px;
+  color: #000;
+}
+
+.nat__item .item__list .list__label:before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 37px;
+  height: 24px;
+  background: url(../img/tren-arrow-icon.png) 0 0 no-repeat;
+}
+
+.nat__item .item__list .list__label.list__label-2 {
+  margin-left: 125px;
+}
+
+.nat__item .item__list .list__label.list__label-3 {
+  margin-left: 225px;
+}
+
+.section__start.section__start-walk {
+  padding-top: 150px;
+  background: url(../img/start-bg-4.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-walk {
+  width: 115%;
+  margin-left: -70px;
+  text-align: center;
+  color: #fff;
+}
+
+.btn__link.btn__link-walk {
+  display: none;
+}
+
+.help__form.help__form-walk {
+  float: none;
+  margin: 140px auto 0;
+  width: 1179px;
+  height: 242px;
+  padding-top: 58px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.46);
+}
+
+.help__form.help__form-walk input {
+  display: inline-block;
+  margin: 0 8px;
+  border: 1px solid #969696;
+}
+
+.form__btn.form__btn-walk {
+  margin-top: 35px;
+}
+
+.section__start.section__start-part {
+  background: url(../img/start-bg-5.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-part {
+  margin-bottom: 75px;
+}
+
+.part__item {
+  display: table;
+  margin-bottom: 25px;
+}
+
+.part__item img {
+  display: table-cell;
+  width: 60px;
+}
+
+.part__item .item__descr {
+  display: table-cell;
+  padding-left: 40px;
+  font-size: 36px;
+  color: #000;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.section__start.section__start-get {
+  padding-top: 178px;
+  background: url(../img/start-bg-6.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-get {
+  margin-left: -62px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.get__box {
+  margin-top: 72px;
+}
+
+.get__box .container {
+  width: 1100px;
+  text-align: center;
+}
+
+.get__item {
+  display: inline-block;
+  position: relative;
+  width: 515px;
+  height: 205px;
+  margin: 0 8px 20px;
+  padding: 0 15px 0 30px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.get__item .wrap__item {
+  display: table;
+}
+
+.get__item img {
+  display: table-cell;
+  width: 110px;
+  padding: 48px 0;
+}
+
+.get__item .item__descr {
+  display: table-cell;
+  padding-left: 15px;
+  font-size: 30px;
+  color: #000;
+  vertical-align: middle;
+}
+
+.section__start.section__start-price {
+  height: 810px;
+  padding-top: 82px;
+  text-align: center;
+  background: url(../img/home-bg-7.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__accent.section__accent-price {
+  margin-bottom: 10px;
+  font: 51px "ptsans";
+}
+
+.section__accent.section__accent-price span {
+  font-weight: 700;
+}
+
+.section__title.section__title-price {
+  margin-bottom: 90px;
+}
+
+.date__price {
+  display: inline-block;
+}
+
+.date__price p {
+  margin: 0;
+  font-size: 36px;
+  color: #000;
+}
+
+.date__price p span {
+  font-weight: 700;
+}
+
+.date__price p i {
+  font-style: normal;
+  font-family: "alsrubl";
+}
+
+.date__price.date__price-1 {
+  float: left;
+}
+
+.date__price.date__price-2 {
+  float: right;
+}
+
+.btn__link.btn__link-price {
+  width: 391px;
+  height: 72px;
+  margin-top: 27px;
+  font-size: 30px;
+  color: #fff;
+  line-height: 72px;
+  background: #000;
+}
+
+/*--------------------end--------------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*--------------Power page---------------*/
+.header.header__inner._power {
+  background: url(../img/power-bg-1.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.main__block.main__block-inner._power {
+  background: rgba(247, 179, 25, 0.83);
+}
+
+.help__form.help__form-header._power {
+  background: rgba(247, 179, 25, 0.83);
+}
+
+.block__date.block__date-inner._power {
+  color: #000;
+}
+
+.block__title.block__title-inner._power {
+  color: #000;
+}
+
+.block__text._power {
+  color: #000;
+}
+
+.block__text._power p {
+  display: table;
+  padding-left: 30px;
+}
+
+.day__box {
+  float: left;
+  position: relative;
+  width: 128px;
+  height: 128px;
+  padding: 15px 0;
+  font: 700 99px/70px "kelson";
+  color: #000;
+  text-align: center;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #fff;
+}
+
+.day__box span {
+  display: block;
+  font: 700 24px "kelson";
+  color: #000;
+}
+
+.block__price._power {
+  color: #000;
+}
+
+.block__price._power span {
+  color: #000;
+}
+
+.form__title.form__title-header._power {
+  color: #000;
+}
+
+.form__btn.form__btn-header._power {
+  color: #fff;
+  background: #000;
+}
+
+.pen__box {
+  position: absolute;
+  bottom: -200px;
+  left: 455px;
+  right: 0;
+}
+
+.section__start.section__start-msk._power {
+  height: auto;
+  padding-bottom: 195px;
+  background: url(../img/power-bg-2.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.start__block.start__block-1._power {
+  margin: 80px 0 0;
+}
+
+.msk__item._power {
+  margin-bottom: 40px;
+}
+
+.section__start.section__start-nat._power {
+  background: url(../img/power-bg-3.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-nat._power {
+  margin-bottom: 120px;
+}
+
+.nat__items {
+  text-align: center;
+}
+
+.nat__items .container {
+  width: 1500px;
+}
+
+.nat__item._power {
+  position: relative;
+  display: inline-block;
+  left: 180px;
+  width: 23%;
+  margin: 0 140px 90px 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.nat__item._power:first-child {
+  margin-right: 0;
+}
+
+.nat__descr {
+  margin-top: 10px;
+  font-size: 30px;
+  color: #000;
+}
+
+.section__start.section__start-walk._power {
+  background: url(../img/power-bg-4.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-walk._power {
+  color: #000;
+}
+
+.form__btn.form__btn-walk._power {
+  color: #fff;
+  background: #000;
+}
+
+.section__start.section__start-get._power {
+  background: url(../img/power-bg-5.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-get._power {
+  color: #000;
+}
+
+.get__item._power {
+  background: rgba(252, 180, 19, 0.91);
+}
+
+.get__item._power:nth-child(3) {
+  right: -260px;
+}
+
+.get__item._power:nth-child(4) {
+  right: -260px;
+}
+
+.section__title.section__title-price._power {
+  margin-bottom: 18px;
+}
+
+.text__banner {
+  width: 620px;
+  height: 96px;
+  margin: 0 auto 65px;
+  font-size: 30px;
+  color: #000;
+  line-height: 96px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/*-----------------end--------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*--------------Couch page---------------*/
+.header.header__inner._couch {
+  background: url(../img/kouch-bg-1.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.main__block.main__block-inner._couch {
+  width: 664px;
+  height: 457px;
+  background: rgba(255, 255, 255, 0.83);
+}
+
+.block__date.block__date-inner._couch {
+  color: #000;
+}
+
+.block__title.block__title-inner._couch {
+  color: #000;
+}
+
+.block__text._couch {
+  color: #000;
+}
+
+.block__price._couch {
+  color: #000;
+}
+
+.block__price._couch span {
+  font-weight: 700;
+  color: #000;
+}
+
+.help__form.help__form-header._couch {
+  height: 457px;
+  background: rgba(175, 159, 143, 0.83);
+}
+
+.form__btn.form__btn-header._couch {
+  background: #f7b319;
+}
+
+.main__accent {
+  margin-top: 20px;
+  font: 600 102px "proxima";
+  font-style: italic;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0 49px rgba(0, 0, 0, 0.63);
+}
+
+.section__program.section__program-couch {
+  height: auto;
+  padding: 38px 0 125px;
+  background: url(../img/kouch-bg-5.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-program._couch {
+  font-size: 80px;
+}
+
+.program__video.program__video-couch {
+  margin-top: 60px;
+}
+
+.program__video.program__video-couch .container {
+  width: 1175px;
+}
+
+.program__video.program__video-couch .container iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.program__descr {
+  margin-top: 35px;
+  font: 700 60px/60px "kelson";
+  color: #000;
+  text-align: center;
+}
+
+.program__descr .program__data {
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.section__start.section__start-couch {
+  padding-top: 62px;
+  background: url(../img/kouch-bg-6.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.part__wrap {
+  float: right;
+  position: relative;
+  right: -310px;
+  width: 650px;
+}
+
+.part__accent {
+  display: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.section__title-start.section__title-couch {
+  margin-bottom: 27px;
+  font-size: 91px;
+  line-height: 110px;
+  text-align: left;
+}
+
+.part__item.part__item-couch {
+  margin-bottom: 32px;
+}
+
+.part__item.part__item-couch img {
+  width: 84px;
+}
+
+.part__item.part__item-couch .item__descr {
+  padding-left: 22px;
+  font-size: 30px;
+  white-space: normal;
+}
+
+.part__item.part__item-couch._left {
+  float: left;
+  width: 50%;
+}
+
+.part__item.part__item-couch._right {
+  float: right;
+}
+
+.section__task {
+  padding-top: 162px;
+  background: url(../img/kouch-bg-2.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-task {
+  position: relative;
+  left: -127px;
+}
+
+.task__accent {
+  position: relative;
+  display: block;
+  margin: 5px 0 140px 155px;
+  font: 60px "kelson";
+  color: #000;
+}
+
+.task__accent:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: -195px;
+  width: 111px;
+  height: 115px;
+  background: url(../img/kouch-arrows.png) 0 0 no-repeat;
+}
+
+.section__expert {
+  padding-top: 105px;
+  background: url(../img/kouch-bg-3.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__accent.section__accent-expert {
+  position: relative;
+  width: 1500px;
+  margin: 0 0 95px -200px;
+}
+
+.section__accent.section__accent-expert:before, .section__accent.section__accent-expert:after {
+  content: ' ';
+  position: absolute;
+  width: 534px;
+  height: 3px;
+  background: #f7b319;
+  top: -25px;
+  left: -90px;
+  right: 0;
+  margin: 0 auto;
+}
+
+.section__accent.section__accent-expert:after {
+  bottom: -30px;
+  top: auto;
+}
+
+.section__title.section__title-expert {
+  width: 1250px;
+  margin-left: -180px;
+  font-size: 82px;
+  font-weight: normal;
+  line-height: 96px;
+  text-align: center;
+}
+
+.start__block.start__block-couch.start__block-1 {
+  margin: 105px 0 0;
+}
+
+.items__box.items__box-couch {
+  width: 80%;
+}
+
+.items__box.items__box-couch.items__box-1 {
+  margin-left: -200px;
+}
+
+.items__box.items__box-couch.items__box-2 {
+  margin-right: -380px;
+}
+
+.msk__item.msk__item-couch {
+  margin-bottom: 50px;
+}
+
+.msk__item.msk__item-couch img {
+  width: 60px;
+}
+
+.section__start.section__start-plan {
+  padding-top: 145px;
+  background: url(../img/kouch-bg-4.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__start.section__start-plan .container {
+  position: relative;
+}
+
+.section__title.section__title-plan {
+  position: relative;
+  width: 900px;
+  right: -425px;
+  margin-bottom: 60px;
+  font-size: 90px;
+  line-height: 106px;
+}
+
+.part__item.part__item-plan {
+  position: relative;
+  right: -430px;
+  width: 725px;
+  margin-bottom: 42px;
+}
+
+.part__item.part__item-plan img {
+  float: left;
+  width: 64px;
+}
+
+.part__item.part__item-plan .item__descr {
+  display: table;
+  padding-left: 25px;
+  font-size: 30px;
+  white-space: normal;
+}
+
+.plan__author {
+  position: absolute;
+  top: 140px;
+  left: -200px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.plan__author span {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.section__start.section__start-order {
+  height: 815px;
+  padding-top: 103px;
+  background: url(../img/home-bg-7.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-order {
+  text-align: center;
+  font-size: 99px;
+  font-weight: normal;
+}
+
+.section__accent.section__accent-order {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.help__form.help__form-order {
+  width: 1022px;
+  height: 273px;
+  margin: 72px auto 0;
+  padding: 50px 0 0;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.form__btn.form__btn-order {
+  margin-top: 36px;
+  color: #fff;
+  background: #000;
+}
+
+/*-----------------end--------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*--------------Steel page---------------*/
+.header.header__inner._steel {
+  background: url(../img/iron-bg-1.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.main__block.main__block-inner._steel {
+  background: rgba(255, 255, 255, 0.83);
+}
+
+.help__form.help__form-header._steel {
+  background: rgba(255, 255, 255, 0.83);
+}
+
+.form__title.form__title-header._steel {
+  color: #000;
+}
+
+.main__accent.main__accent-steel {
+  margin-top: -60px;
+}
+
+.section.section__steel {
+  height: auto;
+  padding: 95px 0 150px;
+  background: url(../img/iron-bg-2.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.steel__accent {
+  display: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.section__title.section__title-steel {
+  position: relative;
+  right: -210px;
+  font-size: 90px;
+  white-space: nowrap;
+}
+
+.start__block.start__block-steel {
+  margin: 66px 0 0;
+}
+
+.items__box.items__box-steel {
+  position: relative;
+}
+
+.items__box.items__box-steel.items__box-1 {
+  float: none;
+  display: inline-block;
+  left: 170px;
+  margin: 0 0 12px;
+}
+
+.items__box.items__box-steel.items__box-2 {
+  float: none;
+  display: inline-block;
+  right: -390px;
+  margin-right: 0;
+}
+
+.msk__item.msk__item-steel {
+  margin-bottom: 40px;
+}
+
+.msk__item.msk__item-steel img {
+  width: 43px;
+}
+
+.msk__item.msk__item-steel .item__descr {
+  white-space: nowrap;
+}
+
+.section.section__oneday {
+  height: auto;
+  padding: 80px 0 300px;
+  background: url(../img/iron-bg-3.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.oneday__accent {
+  position: relative;
+  left: -200px;
+  font: 700 36px "kelson";
+  color: #000;
+}
+
+.section__title.section__title-oneday {
+  position: relative;
+  left: -205px;
+  font-size: 90px;
+  line-height: 96px;
+  white-space: nowrap;
+}
+
+.start__block.start__block-oneday {
+  margin: 110px 0 0;
+}
+
+.items__box.items__box-oneday {
+  position: relative;
+  width: 60%;
+}
+
+.items__box.items__box-oneday.items__box-1 {
+  margin-left: -205px;
+}
+
+.items__box.items__box-oneday.items__box-2 {
+  margin-right: -225px;
+}
+
+.msk__item.msk__item-oneday {
+  margin-bottom: 20px;
+}
+
+.msk__item.msk__item-oneday img {
+  width: 100px;
+}
+
+.section__start.section__start-twoday {
+  height: auto;
+  padding: 80px 0 110px;
+  background: url(../img/iron-bg-4.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__accent.section__accent-twoday {
+  position: relative;
+  left: -130px;
+  color: #fff;
+}
+
+.section__title.section__title-twoday {
+  position: relative;
+  left: -130px;
+  font-size: 90px;
+  color: #fff;
+}
+
+.nat__items.nat__items-twoday {
+  margin: 90px 0 0 -400px;
+}
+
+.nat__items.nat__items-twoday .container {
+  width: 1300px;
+}
+
+.nat__item.nat__item-twoday {
+  width: 30%;
+  margin: 0 0 45px;
+}
+
+.nat__item.nat__item-twoday .nat__descr {
+  color: #fff;
+}
+
+.section.section__any {
+  height: auto;
+  padding: 185px 0 235px;
+  background: url(../img/iron-bg-5.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-any {
+  margin-left: -200px;
+  font-size: 90px;
+}
+
+.oneday__accent.oneday__accent-any {
+  margin: 8px 0 0 -200px;
+  left: 0;
+}
+
+.start__block.start__block-any {
+  margin-top: 100px;
+}
+
+.items__box.items__box-any {
+  width: 70%;
+}
+
+.items__box.items__box-any.items__box-1 {
+  margin-left: -200px;
+}
+
+.items__box.items__box-any.items__box-2 {
+  margin-right: -250px;
+}
+
+.msk__item.msk__item-any {
+  margin-bottom: 55px;
+}
+
+.section__start.section__start-fear {
+  height: auto;
+  padding: 70px 0 265px;
+  background: url(../img/iron-bg-6.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-fear {
+  font-size: 90px;
+  color: #fff;
+  text-align: center;
+}
+
+.section__accent.section__accent-fear {
+  margin-left: -135px;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.nat__items.nat__items-fear {
+  margin-top: 102px;
+  text-align: right;
+}
+
+.nat__item.nat__item-fear {
+  display: inline-block;
+  width: 28%;
+  margin: 0 80px 0 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.nat__item.nat__item-fear:last-child {
+  margin-right: 0;
+}
+
+.nat__item.nat__item-fear .nat__descr {
+  font-size: 24px;
+}
+
+.nat__item.nat__item-fear .nat__descr .descr__title {
+  position: relative;
+  min-height: 150px;
+  font-size: 36px;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.nat__item.nat__item-fear .nat__descr .descr__title:before {
+  content: ' ';
+  position: absolute;
+  top: -28px;
+  left: -10px;
+  width: 79px;
+  height: 140px;
+  z-index: -1;
+  background: url(../img/questions.png) 0 0 no-repeat;
+}
+
+.section__start.section__start-take {
+  height: auto;
+  padding: 100px 0 330px;
+  background: url(../img/iron-bg-7.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-take {
+  width: 120%;
+  margin-left: -65px;
+  font-size: 90px;
+}
+
+.nat__items.nat__items-take {
+  margin-top: 95px;
+}
+
+.nat__items.nat__items-take .container {
+  width: 1600px;
+}
+
+.nat__item.nat__item-take {
+  display: inline-block;
+  width: 486px;
+  height: 299px;
+  margin-right: 47px;
+  padding: 25px 35px 0;
+  vertical-align: top;
+  border: 3px solid #fff;
+}
+
+.nat__item.nat__item-take:last-child {
+  margin-right: 0;
+}
+
+.nat__item.nat__item-take .item__pict {
+  position: relative;
+  height: 100px;
+  text-align: center;
+}
+
+.nat__item.nat__item-take .item__pict img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.nat__item.nat__item-take .nat__descr {
+  display: inline-block;
+  font-size: 34px;
+  text-align: left;
+}
+
+/*----------------end--------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*--------------Trening page---------------*/
+.header__inner.header__inner-trening {
+  background: #fff;
+}
+
+.header__main.header__main-trening {
+  margin-top: 0;
+}
+
+.header__main.header__main-trening > .container {
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  max-width: 1920px;
+}
+
+.tr__item {
+  position: relative;
+  float: left;
+  min-width: 600px;
+  width: 100%;
+  height: 905px;
+  padding: 38px 0 0 16%;
+  text-align: left;
+  z-index: 1;
+}
+
+.tr__item .item__pict {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.tr__item .container {
+  width: 100%;
+}
+
+.tr__item .item__title {
+  position: relative;
+  padding-right: 140px;
+  z-index: 9;
+  font: 30px "kelson";
+  color: #000;
+  text-shadow: 0 0 98px rgba(255, 255, 255, 0.52);
+}
+
+.tr__item .item__title span {
+  display: block;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.tr__item .item__descr {
+  position: relative;
+  z-index: 9;
+  margin-top: 10px;
+  padding-right: 115px;
+  font-size: 24px;
+  color: #000;
+}
+
+.tr__item .item__price {
+  position: absolute;
+  top: 367px;
+  width: 229px;
+  height: 57px;
+  font: 30px "kelson";
+  line-height: 55px;
+  color: #000;
+  text-align: center;
+  text-shadow: 0 0 98px rgba(255, 255, 255, 0.52);
+  z-index: 1;
+  border-bottom: 5px solid #000;
+  background: #fcb413;
+}
+
+.tr__item.tr__item-1 {
+  max-width: 615px;
+  min-width: 480px;
+  padding: 38px 0 0 5%;
+  z-index: 5;
+}
+
+.tr__item.tr__item-1 .item__pict {
+  background: url(../img/trening-pict-thin-1.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+.tr__item.tr__item-1:hover .item__pict {
+  width: 178%;
+  background: url(../img/trening-pict-1.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+.tr__item.tr__item-1:hover .item__descr {
+  position: absolute;
+  top: 72px;
+  left: 490px;
+  width: 420px;
+}
+
+.tr__item.tr__item-1:hover .item__price {
+  top: 165px;
+  left: 490px;
+}
+
+.tr__item.tr__item-2 {
+  max-width: 730px;
+  margin-left: -260px;
+  z-index: 4;
+}
+
+.tr__item.tr__item-2 .item__pict {
+  background: url(../img/trening-pict-thin-2.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+.tr__item.tr__item-2:hover .item__pict {
+  width: 164%;
+  background: url(../img/trening-pict-2.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+.tr__item.tr__item-2:hover .item__price {
+  top: 265px;
+}
+
+.tr__item.tr__item-3 {
+  max-width: 730px;
+  margin-left: -262px;
+  z-index: 3;
+}
+
+.tr__item.tr__item-3 .item__pict {
+  background: url(../img/trening-pict-thin-3.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+.tr__item.tr__item-3:hover {
+  z-index: 4;
+}
+
+.tr__item.tr__item-3:hover .item__pict {
+  width: 165%;
+  left: -65%;
+  background: url(../img/trening-pict-3.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+.tr__item.tr__item-3:hover .item__title {
+  position: absolute;
+  left: -24%;
+  width: 500px;
+}
+
+.tr__item.tr__item-3:hover .item__descr {
+  top: 35px;
+  width: 420px;
+}
+
+.tr__item.tr__item-3:hover .item__price {
+  top: 220px;
+}
+
+.tr__item.tr__item-4 {
+  max-width: 616px;
+  min-width: 530px;
+  margin-left: -258px;
+  padding-right: 50px;
+  z-index: 2;
+}
+
+.tr__item.tr__item-4 .item__pict {
+  background: url(../img/trening-pict-thin-4.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+.tr__item.tr__item-4 .item__descr {
+  padding-right: 30px;
+}
+
+.tr__item.tr__item-4:hover {
+  z-index: 4;
+}
+
+.tr__item.tr__item-4:hover .item__pict {
+  width: 176%;
+  left: -76%;
+  background: url(../img/trening-pict-4.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+.tr__item.tr__item-4:hover .item__title {
+  position: absolute;
+  left: -16%;
+  width: 400px;
+}
+
+.tr__item.tr__item-4:hover .item__descr {
+  top: 40px;
+}
+
+.tr__item.tr__item-4:hover .item__price {
+  top: 225px;
+}
+
+.section__reason {
+  height: auto;
+  padding: 60px 0 100px;
+  background: url(../img/home-bg-1.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-reason {
+  font-size: 90px;
+}
+
+.reason__items {
+  margin: 57px 0 65px;
+  text-align: justify;
+  -moz-text-align-last: justify;
+       text-align-last: justify;
+}
+
+.reason__item {
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+}
+
+.reason__item:last-child {
+  margin-right: -150px;
+}
+
+.reason__item img {
+  display: block;
+  width: 127px;
+}
+
+.reason__item .item__descr {
+  margin-top: 25px;
+  font-size: 24px;
+  color: #000;
+}
+
+.help__form.help__form-reason {
+  float: none;
+  width: 1176px;
+  height: 116px;
+  margin: 0 auto;
+  padding: 30px 0;
+  clear: both;
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.help__form.help__form-reason input {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form__btn.form__btn-reason {
+  display: inline-block;
+  width: 308px;
+  height: 57px;
+  margin: 0 0 0 10px;
+  color: #fff;
+  background: #000;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+
+/*----------------end--------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-------------Contact page---------------*/
+.header__inner.header__inner-contact {
+  height: auto;
+  padding-bottom: 160px;
+  background: url(../img/contact-bg-1.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.header__top.header__top-inner._contact {
+  background: transparent;
+}
+
+.container.container_inner {
+  width: 1060px;
+}
+
+.header__menu.header__menu-inner._contact li a {
+  color: #fff;
+}
+
+.phone__link.phone__link-inner._contact {
+  color: #fff;
+}
+
+.callback__link.callback__link-inner._contact {
+  color: #fff;
+}
+
+.header__logo.header__logo-inner._contact {
+  margin: -30px -15px 0;
+}
+
+.logo__title.logo__title-inner._contact {
+  color: #fff;
+}
+
+.logo__text.logo__text-inner._contact {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.header__main.header__main-contact {
+  margin-top: 55px;
+  text-align: center;
+}
+
+.contact__item {
+  display: inline-block;
+  width: 373px;
+  height: 238px;
+  padding: 25px 20px 0;
+  margin: 0 13px;
+  vertical-align: top;
+  background: rgba(26, 23, 50, 0.89);
+}
+
+.contact__item .item__title {
+  margin-bottom: 6px;
+  font: 40px "kelson";
+  color: #fff;
+}
+
+.contact__item .item__title.item__title-mob {
+  display: none;
+  outline: none;
+}
+
+.contact__item .item__loc {
+  margin-bottom: 10px;
+  font: 25px "kelson";
+}
+
+.contact__item .item__phone {
+  display: block;
+  margin-bottom: 13px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fcb413;
+}
+
+.contact__item .item__email {
+  display: block;
+  font-size: 22px;
+  color: #fff;
+}
+
+.btn__link.btn__link-contact {
+  width: 255px;
+  height: 47px;
+  margin-top: 22px;
+  line-height: 47px;
+}
+
+.help__form.help__form-contact {
+  float: none;
+  width: 1179px;
+  height: 385px;
+  margin: 55px auto 0;
+  padding: 50px 0 0;
+  background-color: rgba(0, 0, 0, 0.44);
+  border: 3px solid #fff;
+}
+
+.help__form.help__form-contact input {
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.form__btn.form__btn-contact {
+  margin-top: 27px;
+}
+
+.section__city {
+  height: auto;
+  padding: 75px 0 175px;
+  background: url(../img/contact-bg-2.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.section__title.section__title-city {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.section__title.section__title-city span {
+  font-size: 90px;
+  vertical-align: bottom;
+}
+
+.city__search {
+  display: inline-block;
+  margin-left: 75px;
+  vertical-align: bottom;
+}
+
+.city__search input {
+  width: 308px;
+  height: 47px;
+  padding-left: 15px;
+  font-size: 18px;
+  border: 3px solid #ffa800;
+}
+
+.slider__city.slick-slider {
+  margin-top: 55px;
+}
+
+.slider__city.slick-slider .slick-arrow {
+  position: absolute;
+  right: 0;
+  bottom: -105px;
+  font-size: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider__city.slick-slider .slick-next {
+  background-image: url(../img/sprite.png);
+  background-position: -478px -336px;
+  width: 29px;
+  height: 45px;
+}
+
+.slider__city.slick-slider .slick-prev {
+  right: 95px;
+  background-image: url(../img/sprite.png);
+  background-position: -478px -381px;
+  width: 29px;
+  height: 45px;
+}
+
+.slick-slide:focus {
+  outline: none;
+}
+
+.city__list li {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  font: 20px "segoe";
+  color: #000;
+}
+
+.city__list li span {
+  display: inline-block;
+  position: relative;
+  padding: 0 35px 5px 15px;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  cursor: pointer;
+}
+
+.city__list li:hover > span, .city__list li.active > span {
+  background: #fcb413;
+}
+
+.city__list li:hover > span:after, .city__list li.active > span:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: -80px;
+  width: 100px;
+  height: 35px;
+  z-index: 9999 !important;
+}
+
+.webui-popover.in {
+  width: 375px;
+  height: 209px;
+  padding-top: 32px;
+  text-align: center;
+  background: #fff;
+  -webkit-box-shadow: 1.5px 2.6px 21px rgba(0, 0, 0, 0.08);
+          box-shadow: 1.5px 2.6px 21px rgba(0, 0, 0, 0.08);
+}
+
+.webui-popover.in.left-bottom {
+  margin-left: -100px !important;
+}
+
+.webui-popover.in span {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+}
+
+.webui-popover.in .consalt__link {
+  display: block;
+  width: 308px;
+  height: 57px;
+  margin: 0 auto;
+  font: 700 20px "segoe";
+  color: #000;
+  line-height: 55px;
+  background-color: #fcb413;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.webui-popover.in {
+  margin-left: 10px !important;
+  z-index: 98 !important;
+}
+
+.slick-arrow {
+  position: absolute;
+  right: 0;
+  bottom: -105px;
+  font-size: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.slick-next {
+  background-image: url(../img/sprite.png);
+  background-position: -478px -336px;
+  width: 29px;
+  height: 45px;
+}
+
+.slick-prev {
+  right: 95px;
+  background-image: url(../img/sprite.png);
+  background-position: -478px -381px;
+  width: 29px;
+  height: 45px;
+}
+
+/*-----------------end--------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-------------History page---------------*/
+.header__inner.header__inner-history {
+  height: auto;
+  padding-bottom: 150px;
+  background: url(../img/speak-bg-1.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.header__main.header__main-history {
+  margin-top: 50px;
+}
+
+.header__main.header__main-history .container {
+  width: 1540px;
+}
+
+.history__slider.slick-slider .slick-arrow {
+  position: absolute;
+  top: 38%;
+  right: 0;
+  font-size: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.history__slider.slick-slider .slick-next {
+  right: -100px;
+  background-image: url(../img/sprite.png);
+  background-position: -152px -336px;
+  width: 76px;
+  height: 123px;
+}
+
+.history__slider.slick-slider .slick-next:hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -336px;
+  width: 76px;
+  height: 123px;
+}
+
+.history__slider.slick-slider .slick-prev {
+  left: -100px;
+  background-image: url(../img/sprite.png);
+  background-position: -228px -336px;
+  width: 76px;
+  height: 123px;
+}
+
+.history__slider.slick-slider .slick-prev:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -76px -336px;
+  width: 76px;
+  height: 123px;
+}
+
+.slick-dots {
+  margin-top: 28px;
+}
+
+.slick-dots li {
+  display: inline-block;
+}
+
+.slick-dots li button {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: 0 6px;
+  font-size: 0;
+  background: #fff;
+  border: none;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.slick-dots li button:hover {
+  background: #f7b319;
+}
+
+.slick-dots li.slick-active button {
+  background: #f7b319;
+}
+
+.history__block {
+  display: inline-block;
+  width: 750px;
+  height: 646px;
+  padding: 20px 105px;
+  overflow: hidden;
+  background: rgba(26, 23, 50, 0.89);
+}
+
+.history__block .item__pict {
+  float: left;
+  position: relative;
+  width: 210px;
+  height: 210px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.history__block .item__pict img {
+  position: relative;
+  top: 0;
+  left: -135px;
+}
+
+.history__block .item__title {
+  display: table;
+  padding-left: 50px;
+  font: 40px "kelson";
+  text-align: left;
+}
+
+.history__block .item__title span {
+  display: block;
+  margin-top: 7px;
+  font: 18px "ptsans";
+}
+
+.history__block .item__list {
+  display: none;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.history__block .item__list li {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 26px;
+  font-size: 18px;
+}
+
+.history__block .item__list li:last-child {
+  margin-bottom: 0;
+}
+
+.history__block .item__list li:before {
+  content: ' ';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  background-image: url(../img/sprite.png);
+  background-position: -598px -509px;
+  width: 19px;
+  height: 16px;
+}
+
+.history__block .item__descr {
+  position: relative;
+  font-size: 18px;
+  text-align: left;
+  clear: both;
+}
+
+.history__block .item__descr:before {
+  content: '\201C';
+  position: absolute;
+  top: -50px;
+  left: -110px;
+  font-size: 237px;
+  color: #fff;
+}
+
+.history__mob {
+  display: none;
+}
+
+/*-----------------end--------------------*/
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-------------Speaker page---------------*/
+.header__inner.header__inner-speaker {
+  height: auto;
+  padding-bottom: 105px;
+  background: url(../img/speak-bg-1.jpg) center top no-repeat;
+  background-size: cover;
+}
+
+.header__main.header__main-speaker {
+  margin-top: 45px;
+}
+
+.header__main.header__main-speaker .container {
+  max-width: 1725px;
+}
+
+.speaker__slider .slider__item {
+  margin: 0 10px;
+}
+
+.history__block.history__block-speaker {
+  max-width: 845px;
+  width: 100%;
+  height: 617px;
+  padding: 34px 44px 0;
+  border: 3px solid transparent;
+}
+
+.history__block.history__block-speaker .item__pict {
+  width: 395px;
+  height: auto;
+  margin: 0 30px 20px 0;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+}
+
+.history__block.history__block-speaker .item__pict img {
+  position: static;
+  width: 100%;
+}
+
+.history__block.history__block-speaker .item__title {
+  padding: 0 70px 0 0;
+  font-size: 36px;
+}
+
+.history__block.history__block-speaker .item__list {
+  display: table;
+}
+
+.history__block.history__block-speaker .item__descr:before {
+  display: none;
+}
+
+.slider-nav {
+  margin-top: 40px;
+  padding: 0 10px;
+}
+
+.nav__item {
+  max-width: 220px;
+  margin-right: 85px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.nav__item.slick-current .nav__pict {
+  border: 3px solid #FAC43B;
+}
+
+.nav__item.slick-current span {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__item:hover .nav__pict {
+  border: 3px solid #FAC43B;
+}
+
+.nav__item:hover span {
+  text-decoration: none;
+}
+
+.nav__item .nav__pict {
+  position: relative;
+  float: left;
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  border: 3px solid transparent;
+}
+
+.nav__item .nav__pict img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.nav__item span {
+  display: table;
+  padding-left: 17px;
+  font-size: 24px;
+  color: #000;
+  text-decoration: underline;
+}
+
+.section.section__free._speaker {
+  display: none;
+}
+
+/*-----------------end--------------------*/

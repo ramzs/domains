@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "pfdintextpro";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PFDinTextPro-Regular/PFDinTextPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-Regular/PFDinTextPro-Regular.woff") format("woff"), url("../fonts/PFDinTextPro-Regular/PFDinTextPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "pfdintextpro";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PFDinTextPro-Medium/PFDinTextPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-Medium/PFDinTextPro-Medium.woff") format("woff"), url("../fonts/PFDinTextPro-Medium/PFDinTextPro-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "pfdintextpro";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/PFDinTextPro-Light/PFDinTextPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-Light/PFDinTextPro-Light.woff") format("woff"), url("../fonts/PFDinTextPro-Light/PFDinTextPro-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "pfdintextpro";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/PFDinTextPro-Thin/PFDinTextPro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-Thin/PFDinTextPro-Thin.woff") format("woff"), url("../fonts/PFDinTextPro-Thin/PFDinTextPro-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "pfdintextpro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PFDinTextPro-Bold/PFDinTextPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinTextPro-Bold/PFDinTextPro-Bold.woff") format("woff"), url("../fonts/PFDinTextPro-Bold/PFDinTextPro-Bold.ttf") format("truetype");
+}

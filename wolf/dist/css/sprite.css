@@ -1,0 +1,264 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-adv-icon-1-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -511px -357px;
+  width: 85px;
+  height: 83px;
+}
+.icon-adv-icon-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -127px -136px;
+  width: 128px;
+  height: 127px;
+}
+.icon-adv-icon-2-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -511px -97px;
+  width: 85px;
+  height: 89px;
+}
+.icon-adv-icon-2 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 128px;
+  height: 136px;
+}
+.icon-adv-icon-3-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -511px -186px;
+  width: 85px;
+  height: 86px;
+}
+.icon-adv-icon-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -128px 0px;
+  width: 128px;
+  height: 130px;
+}
+.icon-adv-icon-4-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -511px -272px;
+  width: 85px;
+  height: 85px;
+}
+.icon-adv-icon-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -256px 0px;
+  width: 128px;
+  height: 129px;
+}
+.icon-biz-icon-1-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -598px -251px;
+  width: 82px;
+  height: 82px;
+}
+.icon-biz-icon-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -384px 0px;
+  width: 127px;
+  height: 127px;
+}
+.icon-biz-icon-2-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -598px -85px;
+  width: 83px;
+  height: 83px;
+}
+.icon-biz-icon-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -384px -127px;
+  width: 127px;
+  height: 127px;
+}
+.icon-biz-icon-3-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -598px 0px;
+  width: 83px;
+  height: 85px;
+}
+.icon-biz-icon-3 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -136px;
+  width: 127px;
+  height: 130px;
+}
+.icon-biz-icon-4-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -598px -168px;
+  width: 83px;
+  height: 83px;
+}
+.icon-biz-icon-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -255px -136px;
+  width: 127px;
+  height: 127px;
+}
+.icon-contact-arrow-left-small {
+  background-image: url(../img/sprite.png);
+  background-position: -478px -381px;
+  width: 29px;
+  height: 45px;
+}
+.icon-contact-arrow-right-small {
+  background-image: url(../img/sprite.png);
+  background-position: -478px -336px;
+  width: 29px;
+  height: 45px;
+}
+.icon-fb-black {
+  background-image: url(../img/sprite.png);
+  background-position: -282px -459px;
+  width: 16px;
+  height: 32px;
+}
+.icon-fb-icon {
+  background-image: url(../img/sprite.png);
+  background-position: -298px -459px;
+  width: 16px;
+  height: 32px;
+}
+.icon-gazprom-logo-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -109px -459px;
+  width: 99px;
+  height: 47px;
+}
+.icon-gazprom-logo {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -266px;
+  width: 146px;
+  height: 70px;
+}
+.icon-history-arrow-left-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -76px -336px;
+  width: 76px;
+  height: 123px;
+}
+.icon-history-arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: -228px -336px;
+  width: 76px;
+  height: 123px;
+}
+.icon-history-arrow-right-hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -336px;
+  width: 76px;
+  height: 123px;
+}
+.icon-history-arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: -152px -336px;
+  width: 76px;
+  height: 123px;
+}
+.icon-logo-rosatom-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -49px -528px;
+  width: 46px;
+  height: 59px;
+}
+.icon-logo-rosatom {
+  background-image: url(../img/sprite.png);
+  background-position: -598px -422px;
+  width: 68px;
+  height: 87px;
+}
+.icon-logo-rostehnologii-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -329px -266px;
+  width: 125px;
+  height: 30px;
+}
+.icon-logo-rostehnologii {
+  background-image: url(../img/sprite.png);
+  background-position: -146px -266px;
+  width: 183px;
+  height: 44px;
+}
+.icon-phone-icon {
+  background-image: url(../img/sprite.png);
+  background-position: -185px -310px;
+  width: 20px;
+  height: 20px;
+}
+.icon-prog-icon-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -304px -336px;
+  width: 87px;
+  height: 97px;
+}
+.icon-prog-icon-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -391px -336px;
+  width: 87px;
+  height: 97px;
+}
+.icon-prog-icon-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -511px 0px;
+  width: 87px;
+  height: 97px;
+}
+.icon-roscosmos-logo-mob {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -528px;
+  width: 49px;
+  height: 60px;
+}
+.icon-roscosmos-logo {
+  background-image: url(../img/sprite.png);
+  background-position: -598px -333px;
+  width: 72px;
+  height: 89px;
+}
+.icon-rosneft_logo-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -208px -459px;
+  width: 74px;
+  height: 46px;
+}
+.icon-rosneft_logo {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -459px;
+  width: 109px;
+  height: 69px;
+}
+.icon-speak-icon-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -598px -509px;
+  width: 19px;
+  height: 16px;
+}
+.icon-vk-black {
+  background-image: url(../img/sprite.png);
+  background-position: -454px -266px;
+  width: 39px;
+  height: 25px;
+}
+.icon-vk-icon {
+  background-image: url(../img/sprite.png);
+  background-position: -146px -310px;
+  width: 39px;
+  height: 25px;
+}

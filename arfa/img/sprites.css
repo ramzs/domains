@@ -1,0 +1,40 @@
+.youtube, .youtube-big, .facebook, .facebook-big, .inst, .inst-big{
+	background: url(sprites.png) no-repeat;
+}
+
+.youtube{
+	background-position: -16px 0;
+	width: 27px;
+	height: 26px;
+}
+
+.youtube-big{
+	background-position: -23px -30px ;
+	width: 39px;
+	height: 38px;
+}
+
+.facebook{
+	background-position: 0 0;
+	width: 12px;
+	height: 26px;
+}
+
+.facebook-big{
+	background-position: 0 -30px ;
+	width: 18px;
+	height: 39px;
+}
+
+.inst{
+	background-position: -46px -1px ;
+	width: 24px;
+	height: 24px;
+}
+
+.inst-big{
+	background-position: -72px -32px ;
+	width: 36px;
+	height: 36px;
+}
+

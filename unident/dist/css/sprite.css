@@ -1,0 +1,270 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-left-fb {
+  background-image: url(../img/sprite.png);
+  background-position: -320px -194px;
+  width: 17px;
+  height: 66px;
+}
+.icon-arrow-left-lic {
+  background-image: url(../img/sprite.png);
+  background-position: -379px -62px;
+  width: 22px;
+  height: 84px;
+}
+.icon-arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: -357px -146px;
+  width: 22px;
+  height: 84px;
+}
+.icon-arrow-right-fb {
+  background-image: url(../img/sprite.png);
+  background-position: -303px -194px;
+  width: 17px;
+  height: 66px;
+}
+.icon-arrow-right-lic {
+  background-image: url(../img/sprite.png);
+  background-position: -357px -62px;
+  width: 22px;
+  height: 84px;
+}
+.icon-arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: -379px -146px;
+  width: 22px;
+  height: 84px;
+}
+.icon-bread-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: -401px -76px;
+  width: 4px;
+  height: 12px;
+}
+.icon-calendare-foot {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -299px;
+  width: 28px;
+  height: 26px;
+}
+.icon-calendare {
+  background-image: url(../img/sprite.png);
+  background-position: -255px -163px;
+  width: 28px;
+  height: 26px;
+}
+.icon-close {
+  background-image: url(../img/sprite.png);
+  background-position: -401px -62px;
+  width: 14px;
+  height: 14px;
+}
+.icon-email {
+  background-image: url(../img/sprite.png);
+  background-position: -160px -197px;
+  width: 29px;
+  height: 22px;
+}
+.icon-icon-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -160px -163px;
+  width: 27px;
+  height: 34px;
+}
+.icon-icon-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -303px -260px;
+  width: 27px;
+  height: 34px;
+}
+.icon-icon-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -357px -230px;
+  width: 35px;
+  height: 34px;
+}
+.icon-icon-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -303px -158px;
+  width: 33px;
+  height: 36px;
+}
+.icon-icon-5 {
+  background-image: url(../img/sprite.png);
+  background-position: -357px -264px;
+  width: 34px;
+  height: 34px;
+}
+.icon-icon-6 {
+  background-image: url(../img/sprite.png);
+  background-position: -392px -230px;
+  width: 25px;
+  height: 34px;
+}
+.icon-icon-7 {
+  background-image: url(../img/sprite.png);
+  background-position: -330px -260px;
+  width: 27px;
+  height: 34px;
+}
+.icon-map-foot {
+  background-image: url(../img/sprite.png);
+  background-position: -221px -163px;
+  width: 34px;
+  height: 26px;
+}
+.icon-map {
+  background-image: url(../img/sprite.png);
+  background-position: -187px -163px;
+  width: 34px;
+  height: 26px;
+}
+.icon-pag-left {
+  background-image: url(../img/sprite.png);
+  background-position: -337px -194px;
+  width: 17px;
+  height: 47px;
+}
+.icon-pag-right {
+  background-image: url(../img/sprite.png);
+  background-position: -132px -80px;
+  width: 17px;
+  height: 47px;
+}
+.icon-phone-foot {
+  background-image: url(../img/sprite.png);
+  background-position: -391px -264px;
+  width: 26px;
+  height: 26px;
+}
+.icon-phone {
+  background-image: url(../img/sprite.png);
+  background-position: -132px -127px;
+  width: 26px;
+  height: 26px;
+}
+.icon-service-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -231px -71px;
+  width: 72px;
+  height: 71px;
+}
+.icon-service-1h {
+  background-image: url(../img/sprite.png);
+  background-position: -231px 0px;
+  width: 72px;
+  height: 71px;
+}
+.icon-service-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -158px 0px;
+  width: 73px;
+  height: 74px;
+}
+.icon-service-2h {
+  background-image: url(../img/sprite.png);
+  background-position: -158px -74px;
+  width: 73px;
+  height: 74px;
+}
+.icon-service-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -172px -222px;
+  width: 56px;
+  height: 70px;
+}
+.icon-service-3h {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -222px;
+  width: 56px;
+  height: 70px;
+}
+.icon-service-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -357px 0px;
+  width: 60px;
+  height: 62px;
+}
+.icon-service-4h {
+  background-image: url(../img/sprite.png);
+  background-position: -228px -222px;
+  width: 60px;
+  height: 62px;
+}
+.icon-service-5 {
+  background-image: url(../img/sprite.png);
+  background-position: -303px -79px;
+  width: 54px;
+  height: 79px;
+}
+.icon-service-5h {
+  background-image: url(../img/sprite.png);
+  background-position: -303px 0px;
+  width: 54px;
+  height: 79px;
+}
+.icon-service-6 {
+  background-image: url(../img/sprite.png);
+  background-position: -79px 0px;
+  width: 79px;
+  height: 80px;
+}
+.icon-service-6h {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 79px;
+  height: 80px;
+}
+.icon-service-7 {
+  background-image: url(../img/sprite.png);
+  background-position: -80px -163px;
+  width: 80px;
+  height: 59px;
+}
+.icon-service-7h {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -163px;
+  width: 80px;
+  height: 59px;
+}
+.icon-service-8 {
+  background-image: url(../img/sprite.png);
+  background-position: -66px -80px;
+  width: 66px;
+  height: 83px;
+}
+.icon-service-8h {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -80px;
+  width: 66px;
+  height: 83px;
+}
+.icon-service-9 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -222px;
+  width: 58px;
+  height: 77px;
+}
+.icon-service-9h {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -222px;
+  width: 58px;
+  height: 77px;
+}

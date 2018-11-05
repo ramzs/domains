@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "candara";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/CandaraRegular/CandaraRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/CandaraRegular/CandaraRegular.woff") format("woff"), url("../fonts/CandaraRegular/CandaraRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "candara";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/CandaraItalic/CandaraItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CandaraItalic/CandaraItalic.woff") format("woff"), url("../fonts/CandaraItalic/CandaraItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "candara";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/CandaraBold/CandaraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/CandaraBold/CandaraBold.woff") format("woff"), url("../fonts/CandaraBold/CandaraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "candara";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/CandaraBoldItalic/CandaraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CandaraBoldItalic/CandaraBoldItalic.woff") format("woff"), url("../fonts/CandaraBoldItalic/CandaraBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "exo2";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Exo2Regular/Exo2Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo2Regular/Exo2Regular.woff") format("woff"), url("../fonts/Exo2Regular/Exo2Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "exo2";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/Exo2ExtraLight/Exo2ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo2ExtraLight/Exo2ExtraLight.woff") format("woff"), url("../fonts/Exo2ExtraLight/Exo2ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "exo2";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/Exo2ExtraBold/Exo2ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Exo2ExtraBold/Exo2ExtraBold.woff") format("woff"), url("../fonts/Exo2ExtraBold/Exo2ExtraBold.ttf") format("truetype");
+}

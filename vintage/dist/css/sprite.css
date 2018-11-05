@@ -1,0 +1,162 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-add-icon {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -130px;
+  width: 20px;
+  height: 23px;
+}
+.icon-arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -113px;
+  width: 28px;
+  height: 17px;
+}
+.icon-arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -96px;
+  width: 29px;
+  height: 17px;
+}
+.icon-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -103px;
+  width: 5px;
+  height: 7px;
+}
+.icon-benefit-1 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -98px;
+  width: 47px;
+  height: 48px;
+}
+.icon-benefit-1_1 {
+  background-image: url(../img/sprite.png);
+  background-position: -47px -98px;
+  width: 47px;
+  height: 47px;
+}
+.icon-benefit-2 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -56px;
+  width: 58px;
+  height: 42px;
+}
+.icon-benefit-2_2 {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -56px;
+  width: 58px;
+  height: 42px;
+}
+.icon-benefit-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -94px -98px;
+  width: 47px;
+  height: 46px;
+}
+.icon-benefit-3_3 {
+  background-image: url(../img/sprite.png);
+  background-position: -156px 0px;
+  width: 47px;
+  height: 46px;
+}
+.icon-benefit-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -41px -146px;
+  width: 47px;
+  height: 43px;
+}
+.icon-benefit-4_4 {
+  background-image: url(../img/sprite.png);
+  background-position: -156px -98px;
+  width: 47px;
+  height: 43px;
+}
+.icon-benefit-5 {
+  background-image: url(../img/sprite.png);
+  background-position: -156px -46px;
+  width: 41px;
+  height: 52px;
+}
+.icon-benefit-5_5 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -146px;
+  width: 41px;
+  height: 52px;
+}
+.icon-benefit-6 {
+  background-image: url(../img/sprite.png);
+  background-position: -106px 0px;
+  width: 50px;
+  height: 51px;
+}
+.icon-benefit-6_6 {
+  background-image: url(../img/sprite.png);
+  background-position: -56px 0px;
+  width: 50px;
+  height: 51px;
+}
+.icon-benefit-7 {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -48px;
+  width: 41px;
+  height: 48px;
+}
+.icon-benefit-7_7 {
+  background-image: url(../img/sprite.png);
+  background-position: -203px 0px;
+  width: 41px;
+  height: 48px;
+}
+.icon-check-icon {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -96px;
+  width: 8px;
+  height: 7px;
+}
+.icon-close {
+  background-image: url(../img/sprite.png);
+  background-position: -223px -130px;
+  width: 21px;
+  height: 21px;
+}
+.icon-price-icon {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -174px;
+  width: 17px;
+  height: 17px;
+}
+.icon-search_icon {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -153px;
+  width: 20px;
+  height: 21px;
+}
+.icon-search_icon_white {
+  background-image: url(../img/sprite.png);
+  background-position: -223px -153px;
+  width: 20px;
+  height: 21px;
+}
+.icon-zoom-icon {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 56px;
+  height: 56px;
+}

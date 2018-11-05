@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Фрэш Кофе</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" href="libs/bxslider/jquery.bxslider.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="hidden-xs col-sm-1 col-md-2 col-lg-2">
+					<div class="header-social">
+						<a href="#"><img src="img/inst-icon.png"></a>
+						<a href="#"><img src="img/vk-icon.png"></a>
+					</div>
+				</div>
+				<div class="hidden-xs col-sm-4 col-md-3 col-lg-3 menu-left">
+					<ul class="header-menu__left">
+						<li><a href="#">О компании<span></span></a></li>
+						<li><a href="#">Доставка<span></span></a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-1 col-md-2 col-lg-2">
+					<a href="#" class="header-logo"><img src="img/logo.png" alt=""></a>
+				</div>
+				<div class="hidden-xs col-sm-4 col-md-3 col-lg-3 menu-right">
+					<ul class="header-menu__right">
+						<li><a href="#">Оплата<span></span></a></li>
+						<li><a href="#">Контакты <span></span></a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
+					<div class="header-langs">
+						<a href="#" class="ru"></a>
+						<a href="#" class="en"></a>
+					</div>
+					<div class="header-btn__login">
+						<a href="#">Войти</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="hidden-xs col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3 col-lg-offset-1 col-lg-3">
+					<a href="#" class="header-callback__link">Заказать звонок</a>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="header-tel"><span class="phone">+7 (925) 665-23-45</span>  <span class="phone-title">Главный офис</span></div>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="shop-cart__small">
+						<span class="total-sell">Товаров: <b>1000</b></span> <span class="total-price">на сумму</span> <b>10000</b> р.<br><a href="#">в корзину</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="navmenu_mob">
+		<ul>
+			<li class="navmenu_mob__btn"><a href="#"><b></b><b></b><b></b>Меню</a></li>
+			<li><a href="#" class="navmenu-callback">Заказать звонок</a></li>
+			<li><a href="#" class="navmenu-login">Войти</a></li>
+		</ul>
+	</div>
+	<nav id="navmenu">
+		<ul class="top-menu">
+			<li><a href="#">Оптовые цены</a></li>
+			<li><a href="#">Кофе с вашим брендом</a></li>
+			<li><a href="#">Отзывы</a></li>
+			<li><a href="#">Интернет-магазин</a></li>
+		</ul>
+	</nav>
+
+	<div class="wrapper">
+		<section class="category-page">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Интернет-магазин</a></li>
+					<li><a href="#">Экзотические наименования</a></li>
+					<li class="active">Кофе в зернах "Эквадор Вилкабамба"</li>
+				</ol>
+				<div class="type-menu">
+					<a href="#" id="type-btn" class="type-menu__btn"><i class="glyphicon glyphicon-th-list"></i>Виды кофе</a>
+					<ul id="category-menu" class="category-menu">
+						<li><a href="#">Все</a></li>
+						<li><a href="#">Экзотические наименования</a></li>
+						<li><a href="#">Стандартные наименования</a></li>
+						<li><a href="#">Фирменные смеси</a></li>
+						<li><a href="#">Эспрессо смеси</a></li>
+						<li><a href="#">Ароматизированный кофе</a></li>
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle">Другие<b class="caret"></b></a>
+							<ul id="drop-menu" class="dropdown-menu"></ul>
+						</li>
+						<li class="drop-li"><a href="#">Капсулы NESPRESSO</a></li>
+						<li class="drop-li"><a href="#">Хаск (кофейная ягода)</a></li>
+						<li class="drop-li"><a href="#">Кофе по степени обжарки</a></li>
+					</ul>
+				</div>
+				<h1>Кофе в зернах "Эквадор Вилкабамба"</h1>
+				<div class="category-block clearfix">
+					<div class="product-item">
+						<a href="#" class="product-item__img"><img src="img/product-1.png" alt=""></a>
+						<div class="product-item__title">
+							<a href="#">Кофе в зернах<br>"Мокко ява смесь"</a>
+						</div>
+						<span class="product-item__price"><b>160 руб.</b> за 1 уп. (100 гр.)</span>
+						<a href="#" class="product-item__sell">Купить в 1 клик</a>
+						<form method="post" action="http://www.freshcoffee.ru/ru/internet-magazin/ekzoticheskie-naimenovaniya/kofe-v-zernah-kuba-turkino.html">
+							<input type="hidden" value="132" name="shk-id">
+							<input type="hidden" maxlength="3" size="2" value="4" name="shk-count">
+							<input type="hidden" value="401" name="milling__132__add" class="milling">
+							<input type="submit" value="в корзину" class="button2 aactive buttonFirstVariant" onclick="yaCounter22056403.reachGoal('vkorz');return true;">
+						</form>
+					</div>
+					<div class="product-item">
+						<a href="#" class="product-item__img"><img src="img/product-1.png" alt=""></a>
+						<div class="product-item__title">
+							<a href="#">ESPRESSO DARK ROAST капсулы для NESPRESSO"</a>
+						</div>
+						<span class="product-item__price"><b>160 руб.</b> за 1 уп. (100 гр.)</span>
+						<a href="#" class="product-item__sell">Купить в 1 клик</a>
+						<form method="post" action="http://www.freshcoffee.ru/ru/internet-magazin/ekzoticheskie-naimenovaniya/kofe-v-zernah-kuba-turkino.html">
+							<input type="hidden" value="132" name="shk-id">
+							<input type="hidden" maxlength="3" size="2" value="4" name="shk-count">
+							<input type="hidden" value="401" name="milling__132__add" class="milling">
+							<input type="submit" value="в корзину" class="button2 aactive buttonFirstVariant" onclick="yaCounter22056403.reachGoal('vkorz');return true;">
+						</form>
+					</div>
+					<div class="product-item">
+						<a href="#" class="product-item__img"><img src="img/product-1.png" alt=""></a>
+						<div class="product-item__title">
+							<a href="#">Хаск (кофейная ягода) 100 грамм черный пакет</a>
+						</div>
+						<span class="product-item__price"><b>160 руб.</b> за 1 уп. (100 гр.)</span>
+						<a href="#" class="product-item__sell">Купить в 1 клик</a>
+						<form method="post" action="http://www.freshcoffee.ru/ru/internet-magazin/ekzoticheskie-naimenovaniya/kofe-v-zernah-kuba-turkino.html">
+							<input type="hidden" value="132" name="shk-id">
+							<input type="hidden" maxlength="3" size="2" value="4" name="shk-count">
+							<input type="hidden" value="401" name="milling__132__add" class="milling">
+							<input type="submit" value="в корзину" class="button2 aactive buttonFirstVariant" onclick="yaCounter22056403.reachGoal('vkorz');return true;">
+						</form>
+					</div>
+					<div class="product-item">
+						<a href="#" class="product-item__img"><img src="img/product-1.png" alt=""></a>
+						<div class="product-item__title">
+							<a href="#">ESPRESSO DARK ROAST капсулы для NESPRESSO"</a>
+						</div>
+						<span class="product-item__price"><b>160 руб.</b> за 1 уп. (100 гр.)</span>
+						<a href="#" class="product-item__sell">Купить в 1 клик</a>
+						<form method="post" action="http://www.freshcoffee.ru/ru/internet-magazin/ekzoticheskie-naimenovaniya/kofe-v-zernah-kuba-turkino.html">
+							<input type="hidden" value="132" name="shk-id">
+							<input type="hidden" maxlength="3" size="2" value="4" name="shk-count">
+							<input type="hidden" value="401" name="milling__132__add" class="milling">
+							<input type="submit" value="в корзину" class="button2 aactive buttonFirstVariant" onclick="yaCounter22056403.reachGoal('vkorz');return true;">
+						</form>
+					</div>
+					<div class="product-item">
+						<a href="#" class="product-item__img"><img src="img/product-1.png" alt=""></a>
+						<div class="product-item__title">
+							<a href="#">Кофе в зернах<br>"Мокко ява смесь"</a>
+						</div>
+						<span class="product-item__price"><b>160 руб.</b> за 1 уп. (100 гр.)</span>
+						<a href="#" class="product-item__sell">Купить в 1 клик</a>
+						<form method="post" action="http://www.freshcoffee.ru/ru/internet-magazin/ekzoticheskie-naimenovaniya/kofe-v-zernah-kuba-turkino.html">
+							<input type="hidden" value="132" name="shk-id">
+							<input type="hidden" maxlength="3" size="2" value="4" name="shk-count">
+							<input type="hidden" value="401" name="milling__132__add" class="milling">
+							<input type="submit" value="в корзину" class="button2 aactive buttonFirstVariant" onclick="yaCounter22056403.reachGoal('vkorz');return true;">
+						</form>
+					</div>
+					<div class="product-item">
+						<a href="#" class="product-item__img"><img src="img/product-1.png" alt=""></a>
+						<div class="product-item__title">
+							<a href="#">Кофе в зернах<br>"Мокко ява смесь"</a>
+						</div>
+						<span class="product-item__price"><b>160 руб.</b> за 1 уп. (100 гр.)</span>
+						<a href="#" class="product-item__sell">Купить в 1 клик</a>
+						<form method="post" action="http://www.freshcoffee.ru/ru/internet-magazin/ekzoticheskie-naimenovaniya/kofe-v-zernah-kuba-turkino.html">
+							<input type="hidden" value="132" name="shk-id">
+							<input type="hidden" maxlength="3" size="2" value="4" name="shk-count">
+							<input type="hidden" value="401" name="milling__132__add" class="milling">
+							<input type="submit" value="в корзину" class="button2 aactive buttonFirstVariant" onclick="yaCounter22056403.reachGoal('vkorz');return true;">
+						</form>
+					</div>
+					<div class="product-item">
+						<a href="#" class="product-item__img"><img src="img/product-1.png" alt=""></a>
+						<div class="product-item__title">
+							<a href="#">Кофе в зернах<br>"Мокко ява смесь"</a>
+						</div>
+						<span class="product-item__price"><b>160 руб.</b> за 1 уп. (100 гр.)</span>
+						<a href="#" class="product-item__sell">Купить в 1 клик</a>
+						<form method="post" action="http://www.freshcoffee.ru/ru/internet-magazin/ekzoticheskie-naimenovaniya/kofe-v-zernah-kuba-turkino.html">
+							<input type="hidden" value="132" name="shk-id">
+							<input type="hidden" maxlength="3" size="2" value="4" name="shk-count">
+							<input type="hidden" value="401" name="milling__132__add" class="milling">
+							<input type="submit" value="в корзину" class="button2 aactive buttonFirstVariant" onclick="yaCounter22056403.reachGoal('vkorz');return true;">
+						</form>
+					</div>
+					<div class="product-item">
+						<a href="#" class="product-item__img"><img src="img/product-1.png" alt=""></a>
+						<div class="product-item__title">
+							<a href="#">Кофе в зернах<br>"Мокко ява смесь"</a>
+						</div>
+						<span class="product-item__price"><b>160 руб.</b> за 1 уп. (100 гр.)</span>
+						<a href="#" class="product-item__sell">Купить в 1 клик</a>
+						<form method="post" action="http://www.freshcoffee.ru/ru/internet-magazin/ekzoticheskie-naimenovaniya/kofe-v-zernah-kuba-turkino.html">
+							<input type="hidden" value="132" name="shk-id">
+							<input type="hidden" maxlength="3" size="2" value="4" name="shk-count">
+							<input type="hidden" value="401" name="milling__132__add" class="milling">
+							<input type="submit" value="в корзину" class="button2 aactive buttonFirstVariant" onclick="yaCounter22056403.reachGoal('vkorz');return true;">
+						</form>
+					</div>
+					<a href="#" class="more-link ">Показать еще</a>
+				</div>
+				<div class="category-descr">
+					<p>Экзотический кофе, обладающий уникальными свойствами и удивительными вкусовыми качествами, производят в ограниченном количестве из элитных дорогих сортов, выращенных в особых природных условиях на небольших высокогорных плантациях, аккуратно собранных вручную. Потрясающий букет ароматических и вкусовых свойств экзотического напитка обусловлен микроклиматическими особенностями районов возделывания, самобытными традициями сбора и необычными способами обработки высококачественных кофейных зерен.</p>
+					<p>Наша компания подобрала для Вас лучшие зерна самых изысканных и редких сортов кофе, выращенных на известных плантациях Индонезии, Эквадора, Австралии, Йемена, Ямайки, Бразилии и др. Уникальные природные условия этих регионов обеспечивают получение элитного кофе, выделяющегося из общей массы привычных сортов.</p>
+					<p>У нас Вы имеете возможность купить экзотические сорта кофе и насладиться их богатым насыщенным букетом с нотками ореха, корицы, горького шоколада, карамели, фруктов, неповторимым пикантным вкусом, тонким ароматом, долгим приятным послевкусием. Среди элитных сортов присутствует и самый дорогой индонезийский кофе Kopi Luwak, известный своей специфической обработкой, и ароматный сбалансированный Jamaica Blue Mountain, и пикантный Yemen Mokha Matari с насыщенным острым вкусом. Откройте для себя непревзойденный изысканный вкус экзотического кофе вместе с компанией «Фрэш кофе».</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+					<div class="header-social footer-social">
+						<a href="#"><img src="img/inst-icon.png"></a>
+						<a href="#"><img src="img/vk-icon.png"></a>
+					</div>
+					<div class="footer-contact">
+						<span class="footer-contact__address">г. Железнодорожный, ул. Южная, д. 1</span>
+						<span class="footer-contact__phone">+7 (925) 665-23-45</span>
+						<a href="mailto:coffeefr@yandex.ru" class="footer-contact__mail">coffeefr@yandex.ru</a>
+						<span class="footer-contact__time">С 9.00 до 18.00, сб, вс - выходной</span>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+					<div class="footer-menu">
+						<ul class="footer-menu__one">
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Доставка</a></li>
+						</ul>
+						<ul class="footer-menu__two">
+							<li><a href="#">Оптовые цены</a></li>
+							<li><a href="#">Кофе с Вашим брендом</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Интернет-магазин</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="footer-pay">
+						<span>Принимаем к оплате:</span>
+						<img src="img/visa-icon.png" alt="">
+						<img src="img/mastercard-icon.png" alt="">
+						<img src="img/yandex-icon.png" alt="">
+						<img src="img/webmoney-icon.png" alt="">
+						<img src="img/robokassa-icon.png" alt="">
+					</div>
+					<div class="footer-developer">
+						<span>Создание сайта: </span><a href="#"><img src="img/ab_logo.png" alt=""></a>
+					</div>
+					<div class="footer-rank">
+						<img src="img/rambler.png" alt="">
+						<img src="img/yandex.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.12.4.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.js"></script>
+	<script src="libs/bxslider/jquery.bxslider.min.js"></script>
+	<script src="libs/jcarousel/jquery.jcarousel.js"></script>
+	<script src="libs/jcarousel/jcarousel.responsive.js"></script>
+
+	<script src="js/common.js"></script>
+
+</body>
+</html>

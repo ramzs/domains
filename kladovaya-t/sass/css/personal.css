@@ -1,0 +1,13 @@
+/*----------Personal page---------- */
+.body__form-personal {
+  text-align: center;
+}
+.body__form-personal label {
+  width: 90%;
+  margin-right: 0;
+}
+.body__form-personal label input {
+  width: 100%;
+}
+
+/*--------------end---------------- */

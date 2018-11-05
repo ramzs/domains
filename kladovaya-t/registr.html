@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Кладовая теплоты</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="libs/formstyler/jquery.formstyler.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="libs/bxslider/jquery.bxslider.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+	<div class="menu__header"><span>Меню</span></div>
+	<div class="menu__overlay"></div>
+	<div id="menu-mobile" class="menu__mobile">
+		<span id="menu-close" class="menu__close"></span>
+		<div class="menu__inner">
+			<div class="header__login header__login-mob">
+				<a href="#" class="login">Вход</a>
+				<a href="#" class="signup">Регистрация</a>
+			</div>
+			<a href="#" class="full__link">Полная версия сайта</a>
+		</div>
+	</div>
+
+	<div id="header-top" class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="hidden-xs col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-5 col-lg-offset-3 col-lg-5">
+					<div class="header__search">
+						<form action="#" class="search__form">
+							<input type="text" name="search" id="" placeholder="Поиск..." class="search__input">
+							<input type="submit" value="" class="search__submit">
+						</form>
+					</div>
+				</div>
+				<div class="hidden-xs col-sm-3 col-md-2 col-lg-2">
+					<div class="header__login">
+						<a href="#" class="login">Вход</a>
+						<a href="#" class="signup">Регистрация</a>
+					</div>
+				</div>
+				<div class="hidden-xs col-sm-3 col-md-3 col-lg-2">
+					<div class="header__cart">
+						<a href="#" class="cart__pict" title="Перейти в корзину"><img src="img/cart.png" alt=""></a>
+						<div class="cart__total">
+							<div class="cart__count"><span class="upper">Товаров:</span> <span>0</span> шт.</div>
+							<div class="cart__price">на <span>0 руб.</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__top-mob">
+			<div class="container">
+				<div class="menu__mob">
+					<a id="menu-btn" href="#" class="menu__toggle">Меню</a>
+				</div>
+				<a href="#" class="top__icon top__icon-search active"><i></i></a>
+				<a href="#" class="top__icon-home"><img src="img/home-icon.png" alt=""></a>
+				<a href="#" class="top__icon top__icon-cart">
+					<span class="cart__total-mob">2</span>
+					<i></i>
+				</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="wrapper">
+		<div class="header__main">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-3">
+						<div class="header__logo">
+							<a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+						</div>
+
+						<div id="cart-search" class="header__search-mob open">
+							<form action="#" class="search__form-mob">
+								<input type="text" name="search" id="" placeholder="Поиск по названию и номеру артикула" class="search__input-mob">
+								<input type="submit" value="" class="search__submit-mob">
+							</form>
+						</div>
+
+						<div id="cart-mob" class="header__cart-mob">
+							<div class="header__cart">
+								<a href="#" class="cart__pict" title="Перейти в корзину"><img src="img/cart.png" alt=""></a>
+								<div class="cart__total">
+									<div class="cart__count"><span class="upper">Товаров:</span> <span>2</span> шт.</div>
+									<div class="cart__price">на <span>2150 руб.</span></div>
+								</div>
+							</div>
+							<button class="cart__btn">Оформить</button>
+							<a href="#" class="cart__link">Корзина</a>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-3 col-md-4">
+						<div class="header__title">
+							<h1>Интернет-магазин<br>семейных ценностей</h1>
+							<span>г.Москва, г.Зеленоград</span>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-2 col-md-2">
+						<div class="header__icon">
+							<div class="delivery__icon">
+								<a href="#">
+									<img src="img/delivery.png" alt="">
+									Доставка
+								</a>
+							</div>
+							<div class="pay__icon">
+								<a href="#">
+									<img src="img/pay.png" alt="">
+									Оплата
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-4 col-md-3">
+						<div class="header__contact">
+							<div class="header__phone">Телефон: <span>+7 (925) 878-55-70</span></div>
+							<div class="header__whatsapp">WhatsApp: <span>+7 (925) 878-55-70</span></div>
+							<div class="header__email">e-mail: <span>kladovaya.teploty@mail.ru</span></div>
+							<div class="header__skype">skype: <span>Kladovaya-t</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<ul class="header__menu">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Партнеры</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="header__social">
+					<ul>
+						<li><a href="#" class="social__inst"></a></li>
+						<li><a href="#" class="social__fb"></a></li>
+						<li><a href="#" class="social__vk"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="content content__catalog content__tovar">
+			<div class="container">
+				<div class="row">
+					<div class="hidden-xs col-sm-4 col-md-3">
+						<div class="sidebar">
+							<a href="#" class="sidebar__new">Новинки</a>
+							<a href="#" class="sidebar__new filter__link">Подбор подарка</a>
+							<div class="filter">
+								<h4 class="filter__title">Деревянный погребок</h4>
+								<div class="filter__item filter__item-age">
+									<label>
+										<input type="checkbox" name="" id="">
+										Развивающие игрушки
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Сюжетные игрушки
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Пазлы, мозаики
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Пирамидки, сортеры
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Кубики, конструкторы
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Именные, пазлы
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Расписные фигурки
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Медали
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Ладошки
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Для творчества
+									</label>
+									<label>
+										<input type="checkbox" name="" id="">
+										Для дома
+									</label>
+								</div>
+							</div>
+							<div class="catalog">
+								<h4 class="catalog__title">Тканный погребок</h4>
+								<ul class="catalog__menu">
+									<li><a href="#">Игрушки</a></li>
+								</ul>
+							</div>
+							<a href="#" class="sidebar__new sidebar__new-interes">Это интересно!</a>
+							<div class="sidebar__news">
+								<h4 class="sidebar__new sidebar__new-news">Новости</h4>
+								<div class="news__item">
+									<span class="news__date">10 апреля 2016</span>
+									<div class="news__descr">Искренне рекомендуем замечательный спектакль!</div>
+									<a href="#" class="more__link">Подробнее >></a>
+								</div>
+								<div class="news__item">
+									<span class="news__date">10 апреля 2016</span>
+									<div class="news__descr">Искренне рекомендуем замечательный спектакль!</div>
+									<a href="#" class="more__link">Подробнее >></a>
+								</div>
+								<div class="news__item">
+									<span class="news__date">10 апреля 2016</span>
+									<div class="news__descr">Искренне рекомендуем замечательный спектакль!</div>
+									<a href="#" class="more__link">Подробнее >></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-9">
+						<div class="main">
+							<ol class="breadcrumb">
+								<li><a href="#">Главная</a></li>
+								<li class="active">Регистрация</li>
+							</ol>
+
+							<div class="page__title">
+								<div class="wrap__mob">
+									<a href="#"><i class="glyphicon glyphicon-menu-left"></i><h5>Главная</h5></a>
+								</div>
+							</div>
+
+							<div class="category__title category__title-registr">
+								<div class="wrap__mob">
+									<h5>Вход</h5>
+									<span>(для зарегистрированных пользователей)</span>
+								</div>
+							</div>
+
+							<div class="row">
+
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+									<div class="checkout__panel">
+										<div class="panel__head panel__head-registr panel__head-login">
+											<div class="wrap__mob">
+												<h5 class="panel__title open" data-target="#registr-1">Вход<i class="arrow__icon"></i></h5>
+												<span>(для зарегистрированных пользователей)</span>
+											</div>
+										</div>
+										<div id="registr-1" class="panel__body panel__body-registr panel__body-login collapse in">
+											<div class="wrap__mob">
+												<div class="body__item body_item-registr">
+													<div class="body__descr body__descr-registr">
+														<form action="#" class="body__form body__form-registr body__form-login clearfix">
+															<label><span>E-mail:</span><input type="text" placeholder="kladovaya.teploty@mail.ru"></label>
+															<label><span>Пароль:</span><input type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;"></label>
+															<a href="#" class="remember__link">Забыли пароль?</a>
+															<button class="btn__total btn__total-registr btn__total-login">Войти</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="registr__text">
+											<div class="wrap__mob">
+												<span>Регистрация на нашем сайте даст Вам дополнительные возможности!</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+									<div class="checkout__panel">
+										<div class="panel__head panel__head-registr panel__head-signup">
+											<div class="wrap__mob">
+												<h5 class="panel__title open" data-target="#registr-2">Регистрация<i class="arrow__icon"></i></h5>
+												<h5 class="">Регистрация</h5>
+												<span>(для тех, кто впервые на сайте)</span>
+											</div>
+										</div>
+										<div id="registr-2" class="panel__body panel__body-registr collapse in">
+											<div class="wrap__mob">
+												<div class="body__item body_item-registr body_item-signup">
+													<div class="body__descr body__descr-registr">
+														<form action="#" class="body__form body__form-registr clearfix">
+															<label><span>E-mail<i>*</i>:</span><input type="text"></label>
+															<div class="checkbox__news checkbox__news-registr">
+																<input type="checkbox" name="news">
+																<span>Подписаться на новости</span>
+															</div>
+															<div class="name__block">
+																<label><span>Имя<i>*</i>:</span><input type="text"></label>
+																<label><span>Отчество:</span><input type="text"></label>
+																<label><span>Фамилия<i>*</i>:</span><input type="text"></label>
+																<label><span>Телефон:</span><input type="text"></label>
+															</div>
+															<label><span>Пароль<i>*</i>:</span><input type="password"></label>
+															<label><span>Подтвердите пароль<i>*</i>:</span><input type="password"></label>
+															<i class="registr__warning"><span>*</span>Поля обязательные для заполнения</i>
+															<button class="btn__total btn__total-registr btn__total-signup">Зарегистрироваться</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="registr__feature">
+								<div class="feature__head">
+									<div class="wrap__mob">
+										<h5>Что дает регистрация?</h5>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-7 col-lg-8">
+										<div class="wrap__mob">
+											<h5 class="feature__mid">Регистрация на нашем сайте даст Вам дополнительные возможности!</h5>
+											<ul class="feature__list">
+												<li>
+													<span>Вы сможете:</span>
+													<p>откладывать понравившиеся товары; отслеживать статус заказов и хранить их историю в Личном кабинете; однократно ввести адрес доставки и больше не указывать его при заказах.</p>
+												</li>
+												<li>
+													<span>Мы предлагаем:</span>
+													<p>рассылки о скидках, акциях, распродажах, конкурсах: индивидуальные промокоды на скидки.</p>
+												</li>
+												<li>
+													<span>Скидка постоянного покупателя:</span>
+													<p>Все зарегистрированные пользователи, совершившие покупки на сумму от 15 000 руб., получают дополнительную прогрессивную скидку постоянного покупателя. Скидка распространяется на весь ассортимент и действует одновременно с другими скидками на сайте.</p>
+												</li>
+												<li>
+													<span>Обратите внимание:</span>
+													<p>Воспользоваться скидкой постоянного покупателя можно только через Личный кабинет. Для этого необходимо делать заказы после входа на сайт под своим логином.</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="hidden-xs col-sm-12 col-md-5 col-lg-4">
+										<div class="feature__social">
+											<img src="img/registr-pict.jpg" alt="">
+											<h5 class="social__title">Мы в соц. сетях:</h5>
+											<ul class="social__block">
+												<li><a href="#" class="inst">В контакте</a></li>
+												<li><a href="#" class="fb">Facebook</a></li>
+												<li><a href="#" class="vk">Instagram</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="catalog__text catalog__text-tovar">
+								<p>В нашей кладовой мы бережно собрали для Вас все самое теплое, полезное, развивающее.  Мы постарались найти, а если не смогли найти, то создать уникальные вещи, которые будут радовать Вашу семью и приносить пользу!</p>
+								<p>Все товары опробованы нами лично! Товары для детей проходят жёсткий отбор и испытываются нашими детьми, а сувениры и подарки высоко оценены нашими бабушками, дедушками и друзьями!</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a href="#header-top" class="link__top"></a>
+
+		<div class="askfox">
+			<a href="#" class="askfox__head">
+				<h5><span>Спроси</span>у Лисёнка</h5>
+			</a>
+			<img src="img/foot-logo.png" alt="">
+		</div>
+
+		<div id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-offset-3 col-md-9">
+						<a href="#" class="full__link full__link-catalog">Полная версия сайта</a>
+						<div class="row">
+							<div class="col-xs-12 col-sm-3 col-md-3">
+								<div class="list__block list__block-social clearfix">
+									<div class="wrap__mob">
+										<h5 class="block__title">Мы в соц. сетях:</h5>
+										<ul>
+											<li><a href="#" class="vk">В контакте</a></li>
+											<li><a href="#" class="fb">Facebook</a></li>
+											<li><a href="#" class="inst">Instagram</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3">
+								<div class="list__block list__block-delivery">
+									<div class="wrap__mob">
+										<h5 class="block__title" data-target="#collapseOne">Способы доставки<span>:</span><i class="arrow__icon"></i></h5>
+										<ul id="collapseOne" class="collapse">
+											<li>- Почта России</li>
+											<li>- EMC, CDEK</li>
+											<li>- Курьер</li>
+											<li>- Самовывоз</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3">
+								<div class="list__block list__block-pay">
+									<div class="wrap__mob">
+										<h5 class="block__title" data-target="#collapseTwo">Способы оплаты<span>:</span><i class="arrow__icon"></i></h5>
+										<img id="collapseTwo"  class="pay-1 collapse" src="img/pay-sprite.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3">
+								<div class="list__block list__block-contact">
+									<div class="wrap__mob">
+										<h5 class="block__title" data-target="#collapseThree">Контакты<span>:</span><i class="arrow__icon"></i></h5>
+										<ul id="collapseThree" class="collapse">
+											<li>+7 (925) 878-55-70</li>
+											<li>kladovaya.teploty@mail.ru</li>
+											<li>Skype: Kladovaya-t</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer__bottom">
+		<div class="container">
+			<div class="footer__copyright">Copyright 2016 <sup>©</sup> www.kladovaya-t.ru <span>- магазин семейных ценностей. Все права защищены!</span><span class="copy__mob">Магазин семейных ценностей. Все права защищены!</span></div>
+		</div>
+	</div>
+
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.12.4.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/formstyler/jquery.formstyler.min.js"></script>
+	<script src="libs/bxslider/jquery.bxslider.min.js"></script>
+	<script src="libs/PageScroll2id/jquery.malihu.PageScroll2id.min.js"></script>
+
+	<script src="js/common.js"></script>
+
+</body>
+</html>

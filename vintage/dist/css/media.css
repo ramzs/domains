@@ -1,0 +1,714 @@
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class: */
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+/*-------------Grid-----------*/
+@media (min-width: 320px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 740px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 940px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+/*------------end-------------*/
+@media only screen and (max-width: 1200px) {
+  .header__city {
+    margin-right: 5%;
+  }
+  .header__phone {
+    margin-right: 4%;
+  }
+  .header__menu .menu__list {
+    margin-right: 25px;
+  }
+  .header__menu .menu__list li {
+    padding-left: 20px;
+  }
+  .search__block input {
+    width: 73%;
+  }
+  .footer__menu .menu__list {
+    margin-right: 120px;
+  }
+  /*---------------Work page---------------*/
+  .work__block a {
+    width: 23.5%;
+    margin: 0 15px 15px 0;
+  }
+  /*-----------------end-------------------*/
+  /*--------------About page---------------*/
+  .banner__item {
+    width: 435px;
+    margin: 0 5px;
+  }
+  .banner__item .banner__descr {
+    padding-left: 15px;
+  }
+  /*----------------end--------------------*/
+  /*--------------Partner page---------------*/
+  .partner__items {
+    text-align: center;
+  }
+  .item__logo {
+    display: inline-block;
+    float: none;
+    margin-right: 5px;
+  }
+  /*----------------end--------------------*/
+  /*-------------Service-1 page-------------*/
+  .service__item .item__img {
+    width: 380px;
+  }
+  .service__item .item__descr {
+    padding-left: 50px;
+  }
+  .bottom__item .item__descr {
+    width: 45%;
+  }
+  .bottom__item .item__map {
+    width: 50%;
+  }
+  /*-----------------end--------------------*/
+  /*-------------Project page-------------*/
+  .sidebar {
+    width: 29.6%;
+  }
+  .project__filter {
+    padding: 35px 15px 8px;
+  }
+  .main {
+    width: 70.4%;
+  }
+  .project__item {
+    width: 48%;
+  }
+  /*----------------end---------------------*/
+  /*---------------Project-1 page-----------*/
+  .content.content__project {
+    text-align: left;
+  }
+  .project__slider {
+    width: 598px;
+  }
+  .project__slider .bx-pager a {
+    width: 138px;
+    height: 98px;
+    margin: 15px 15px 0 0;
+  }
+  .project__wrap {
+    margin-left: 0;
+  }
+  /*------------------end-------------------*/
+  /*-------------Add page-------------------*/
+  .form__2 {
+    margin-left: 45px;
+  }
+  /*---------------end----------------------*/
+}
+
+@media only screen and (max-width: 991px) {
+  .header__top {
+    padding: 9px 0 18px;
+    border-bottom: 1px solid #eceff1;
+  }
+  .header__city {
+    float: left;
+    margin-right: 0;
+  }
+  .header__phone {
+    margin-right: 0;
+  }
+  .header__calc {
+    display: none;
+  }
+  .header__bottom {
+    padding: 14px 0 10px;
+    text-align: left;
+  }
+  .header__logo {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+  }
+  .logo__link {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .logo__name {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .logo__name:before {
+    top: -15px;
+    height: 80px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__search {
+    display: none;
+  }
+  .search__block {
+    display: none !important;
+  }
+  .menu__btn {
+    display: block;
+  }
+  .header__banner {
+    height: 350px;
+  }
+  .banner__caption {
+    margin: 20px 0 0;
+  }
+  .footer__menu .menu__list {
+    margin-right: 180px;
+  }
+  .footer__menu .menu__list.menu__list-2 {
+    margin-right: 0;
+  }
+  .footer__menu .menu__list.menu__list-3 {
+    display: block;
+    margin-right: 0;
+  }
+  .footer__menu .menu__list.menu__list-3 li {
+    display: inline-block;
+    margin-right: 178px;
+  }
+  .footer__menu .menu__list.menu__list-3 li:last-child {
+    margin-right: 0;
+  }
+  /*---------------Work page---------------*/
+  .work__block a {
+    width: 31.8%;
+  }
+  .work__block a:nth-child(4n) {
+    margin-right: 15px;
+  }
+  .work__block a:nth-child(3n) {
+    margin-right: 0;
+  }
+  /*-----------------end-------------------*/
+  /*--------------About page---------------*/
+  .banner__item {
+    width: 470px;
+    margin: 0 0 15px;
+  }
+  .banner__item .banner__descr {
+    padding-left: 20px;
+  }
+  /*----------------end--------------------*/
+  /*--------------Partner page---------------*/
+  .item__logo {
+    width: 165px;
+  }
+  /*----------------end--------------------*/
+  /*-------------Service-1 page-------------*/
+  .service__item .item__img {
+    width: 300px;
+  }
+  .service__item .item__descr {
+    padding-left: 30px;
+  }
+  .bottom__item .item__descr {
+    width: 45%;
+  }
+  .bottom__item .item__map {
+    width: 50%;
+  }
+  /*-----------------end--------------------*/
+  /*-------------Project page-------------*/
+  .filter__link {
+    display: block;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .project__filter {
+    display: none;
+  }
+  .project__filter.project__filter-mob {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 35px 50px 8px;
+    z-index: 995;
+  }
+  .main {
+    width: 100%;
+    padding-left: 0;
+  }
+  .project__item {
+    width: 48%;
+  }
+  .project__item .item__descr {
+    padding: 23px 20px 29px;
+  }
+  /*----------------end---------------------*/
+  /*---------------Project-1 page-----------*/
+  .project__slider {
+    width: 410px;
+  }
+  .project__slider .bx-pager a {
+    width: 95px;
+    height: 71px;
+    margin: 10px 10px 0 0;
+  }
+  .tab__link.tab__link-project {
+    width: 200px;
+    margin-right: 10px;
+  }
+  /*------------------end-------------------*/
+  /*-------------Add page-------------------*/
+  .form__1 {
+    float: none;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .form__2 {
+    margin-left: 0;
+  }
+  .form__3 {
+    width: 41%;
+  }
+  .btn__form.btn__form-add {
+    margin: 30px auto 0;
+  }
+  .find__form .find__accent.find__accent-add {
+    text-align: center;
+  }
+  /*---------------end----------------------*/
+}
+
+@media only screen and (max-width: 767px) {
+  .header__banner {
+    height: 240px;
+  }
+  .banner__overlay {
+    display: block;
+  }
+  .banner__caption {
+    margin: 42px 0 0;
+  }
+  .header__title {
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+  .header__accent {
+    margin-bottom: 27px;
+    font-size: 14px;
+  }
+  .footer__menu .menu__list {
+    margin-right: 45px;
+  }
+  .footer__menu .menu__list.menu__list-3 li {
+    margin-right: 43px;
+  }
+  /*---------------Work page---------------*/
+  .work__block a {
+    width: 48.5%;
+    margin: 0 15px 15px 0;
+  }
+  .work__block a:nth-child(3n) {
+    margin-right: 15px;
+  }
+  .work__block a:nth-child(2n) {
+    margin-right: 0;
+  }
+  /*-----------------end-------------------*/
+  /*--------------About page---------------*/
+  .descr__block {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  /*----------------end--------------------*/
+  /*-------------Service-1 page-------------*/
+  .service__item .item__img {
+    float: none;
+    width: 100%;
+  }
+  .service__item .item__descr {
+    display: block;
+    padding-left: 0;
+    margin-top: 18px;
+  }
+  .bottom__title {
+    margin: 0 0 25px;
+  }
+  .bottom__item .item__descr {
+    float: none;
+    width: 100%;
+  }
+  .bottom__item .item__map {
+    float: none;
+    width: 100%;
+    margin-top: 30px;
+  }
+  /*-----------------end--------------------*/
+  /*---------------Project-1 page-----------*/
+  .content .content__project {
+    text-align: center;
+  }
+  .project__slider {
+    width: 100%;
+  }
+  .project__slider .bx-wrapper .bx-controls-direction a {
+    display: block;
+    top: auto;
+    bottom: -43px;
+    opacity: .5;
+  }
+  .project__slider .bx-wrapper .bx-prev {
+    background-image: url(../img/sprite.png);
+    background-position: -203px -113px;
+    width: 28px;
+    height: 17px;
+  }
+  .project__slider .bx-wrapper .bx-prev:hover {
+    opacity: 1;
+    background-image: url(../img/sprite.png);
+    background-position: -203px -113px;
+    width: 28px;
+    height: 17px;
+  }
+  .project__slider .bx-wrapper .bx-next {
+    background-image: url(../img/sprite.png);
+    background-position: -203px -96px;
+    width: 29px;
+    height: 17px;
+  }
+  .project__slider .bx-wrapper .bx-next:hover {
+    opacity: 1;
+    background-image: url(../img/sprite.png);
+    background-position: -203px -96px;
+    width: 29px;
+    height: 17px;
+  }
+  .project__slider .bx-pager {
+    margin: 24px 0 26px;
+    text-align: center;
+  }
+  .project__slider .bx-pager a {
+    float: none;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin: 0 10px 0 0;
+    background: #cfd8dc;
+  }
+  .project__slider .bx-pager a:nth-child(4n) {
+    margin-right: 10px;
+  }
+  .project__slider .bx-pager a.active {
+    background: #12a0e6;
+  }
+  .project__slider .bx-pager a img {
+    display: none;
+  }
+  .info__block {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  .project__wrap {
+    margin: 50px 0 0;
+  }
+  .tab__link.tab__link-project {
+    display: block;
+    max-width: 224px;
+    margin: 0 auto 20px;
+  }
+  .project__body {
+    padding-top: 5px;
+  }
+  /*------------------end-------------------*/
+  /*--------------Find page-----------------*/
+  .content__page.content__page-find {
+    padding-bottom: 60px;
+  }
+  .find__form {
+    width: 100%;
+    margin-top: 26px;
+    padding: 45px 23px 47px;
+  }
+  .find__form .form__left {
+    width: 100%;
+  }
+  .find__form .form__right {
+    width: 100%;
+  }
+  .find__form .find__accent {
+    text-align: center;
+  }
+  .btn__form.btn__form-find {
+    margin: 0 auto;
+  }
+  /*----------------end---------------------*/
+  /*-------------Add page-------------------*/
+  .content__page-add {
+    padding-bottom: 60px;
+  }
+  .find__form .jq-file {
+    width: 93%;
+  }
+  .form__2 {
+    float: none;
+    width: 100%;
+  }
+  .form__3 {
+    width: 100%;
+  }
+  /*---------------end----------------------*/
+}
+
+@media only screen and (max-width: 540px) {
+  .phone__link {
+    font-size: 15px;
+  }
+  .map__link {
+    font-size: 13px;
+  }
+  .callback__link {
+    font-size: 13px;
+  }
+  .logo__link {
+    width: 63px;
+  }
+  .logo__name {
+    margin-left: 25px;
+    font-size: 15px;
+  }
+  .logo__name:before {
+    height: 53px;
+    top: -10px;
+    left: -14px;
+  }
+  .menu__btn {
+    margin-top: 5px;
+  }
+  .menu__mob {
+    top: 163px;
+  }
+  .footer__contact {
+    float: none;
+    margin-top: 22px;
+  }
+  .footer__copyright {
+    margin-top: 45px;
+  }
+  /*------------Contact page-------------*/
+  .contact__block {
+    margin-bottom: 55px;
+  }
+  .contact__map {
+    display: none;
+  }
+  /*----------------end------------------*/
+  /*---------------Work page---------------*/
+  .work__tabs {
+    margin: 22px 0 30px;
+  }
+  .tab__link {
+    display: block;
+    margin: 0 auto 12px;
+  }
+  .work__block a {
+    width: 100%;
+    margin: 0 0 15px;
+  }
+  .work__block a:nth-child(4n) {
+    margin-right: 0;
+  }
+  .work__block a:nth-child(3n) {
+    margin-right: 0;
+  }
+  .work__block a:nth-child(2n) {
+    margin-right: 0;
+  }
+  /*-----------------end-------------------*/
+  /*--------------About page---------------*/
+  .content__page.content__page-about {
+    padding-bottom: 40px;
+  }
+  .banner__item {
+    width: 100%;
+    padding: 0 25px;
+  }
+  .banner__item img {
+    display: none;
+  }
+  .banner__item .banner__descr {
+    padding-left: 0;
+  }
+  .about__banner {
+    margin-top: 10px;
+  }
+  .about__benefits {
+    display: none;
+  }
+  /*----------------end--------------------*/
+  /*-------------Service-1 page-------------*/
+  .content__page.content__page-services {
+    padding-bottom: 20px;
+  }
+  .info__link {
+    color: #333;
+    border: 2px solid #333;
+  }
+  .info__link:hover {
+    color: #fff;
+    background: #333;
+  }
+  .service__bottom {
+    display: none;
+  }
+  /*-----------------end--------------------*/
+  /*-------------Project page-------------*/
+  .filter__link {
+    padding-left: 25px;
+  }
+  .filter__link:after {
+    right: 25px;
+  }
+  .project__filter.project__filter-mob {
+    padding: 35px 25px 8px;
+  }
+  .main {
+    text-align: center;
+  }
+  .project__item {
+    width: 275px;
+    margin: 0 auto 22px;
+  }
+  .project__item .item__descr {
+    padding: 23px 20px 29px;
+  }
+  /*----------------end---------------------*/
+  /*-------------Add page-------------------*/
+  .find__form .jq-file {
+    width: 92%;
+  }
+  /*---------------end----------------------*/
+}
+
+@media only screen and (max-width: 480px) {
+  /*----------Calculator page-----------*/
+  .breadcrumb {
+    padding-bottom: 14px;
+  }
+  .page__title {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  .page__accent {
+    width: 100%;
+    margin-top: 18px;
+  }
+  .calc__block {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    padding: 50px 22px 30px;
+  }
+  .count__box {
+    padding-bottom: 7px;
+    text-align: left;
+  }
+  .count__box label {
+    margin-bottom: 23px;
+  }
+  .count__box input {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .total__list li {
+    text-align: center;
+  }
+  .total__list li span {
+    float: none;
+    display: block;
+  }
+  .btn__form.btn__form-calc {
+    margin-top: 30px;
+  }
+  /*--------------end---------------*/
+  /*--------------Partner page---------------*/
+  .content__page.content__page-partner {
+    padding-bottom: 35px;
+  }
+  .partner__descr {
+    width: 100%;
+    margin-top: 0;
+  }
+  .partner__items {
+    margin-top: 55px;
+  }
+  /*----------------end--------------------*/
+  /*-----------------Service-2 page---------------*/
+  .content__page.content__page-service {
+    padding-bottom: 40px;
+  }
+  .service__descr {
+    margin-top: 18px;
+  }
+  .calc__link.calc__link-service {
+    margin: 25px 0 22px;
+  }
+  /*---------------------end---------------------*/
+  /*-------------Add page-------------------*/
+  .find__form .jq-file {
+    width: 87%;
+  }
+  /*---------------end----------------------*/
+}

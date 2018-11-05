@@ -1,0 +1,1003 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1650px)
+	/*-----------Audio page------------*/
+	.audio__item
+		height: 90px
+
+	.audio__title
+		float: none
+		margin-bottom: 10px
+
+	.mejs-container
+		display: block
+		width: 100% !important
+
+	.mejs-controls
+		.mejs-time-rail
+			.mejs-time-total
+				width: 77% !important
+	/*-------------end----------------*/
+
+	/*-------------Party page--------------*/
+	.wrapper
+		&.wrapper__inner-party
+			height: 2400px
+
+	.main__top
+		&.main__top-party
+			margin-left: 45%
+
+	.party__block
+		margin-left: 45%
+
+	.media__block
+		&.media__block-party
+			margin-left: 45%
+	/*----------------end------------------*/
+
+@media only screen and (max-width : 1400px)
+	.calendare__list
+		margin-right: 85px
+		li
+			margin: 0 25px
+			&:before
+				left: -28px
+
+	/*------------Repertory page------------*/
+	.wrapper
+		&.wrapper__inner-repertory
+			height: 1230px
+			background-size: auto 1230px
+	/*---------------end-------------------*/
+
+	/*-------------Audio page--------------*/
+	.mejs-controls
+		.mejs-time-rail
+			.mejs-time-total
+				width: 75% !important
+	/*----------------end------------------*/
+
+	/*-------------Party page--------------*/
+	.main__top
+		&.main__top-party
+			margin-left: 40%
+
+	.party__block
+		margin-left: 40%
+
+	.media__block
+		&.media__block-party
+			margin-left: 40%
+	/*----------------end------------------*/
+
+@media only screen and (max-width : 1270px)
+	.change__lang
+		margin-right: 4%
+
+	.calendare__list
+		margin-right: 95px
+		li
+			margin: 0 15px
+			&:before
+				left: -25px
+
+	/*-------------Audio page--------------*/
+	.mejs-controls
+		.mejs-time-rail
+			.mejs-time-total
+				width: 73% !important
+	/*----------------end------------------*/
+
+	/*-------------Party page--------------*/
+	.main__top
+		&.main__top-party
+			margin-left: 35%
+
+	.party__block
+		margin-left: 35%
+
+	.media__block
+		&.media__block-party
+			margin-left: 35%
+	/*----------------end------------------*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.calendare__list
+		margin-right: 0
+		li
+			margin: 0 2px
+			&:before
+				left: -10px
+
+	.line__right
+		display: none
+
+	/*-------------About page------------*/
+	.main__top
+		&.main__top-about
+			display: block
+			text-align: right
+	.about__block
+		margin: 0 -20px 0 40%
+		padding: 5px 20px 10px
+		background: rgba(0, 0, 0, 0.25)
+	/*---------------end-----------------*/
+
+	/*------------Repertory page------------*/
+	.wrapper
+		&.wrapper__inner-about
+			height: 1230px
+			background-size: auto 1230px
+
+	.repertory__block
+		margin: 45px -20px 0 40%
+		ul
+			padding: 20px 10px 20px 20px
+			background: rgba(0, 0, 0, 0.25)
+	/*---------------end-------------------*/
+
+	/*------------Concert page-------------*/
+	.photo__dev
+		margin-right: 50px
+	/*----------------end------------------*/
+
+	/*-------------Audio page--------------*/
+	.mejs-controls
+		.mejs-time-rail
+			.mejs-time-total
+				width: 68% !important
+	/*----------------end------------------*/
+
+	/*-------------Party page--------------*/
+	.main__top
+		&.main__top-party
+			margin-left: 0
+			text-align: right
+
+	.party__block
+		height: auto
+		margin: 45px -20px 0 20%
+		padding: 10px 20px 10px
+		background: rgba(0, 0, 0, 0.25)
+		p
+			line-height: 28px
+
+	.party__photo
+		margin-top: 30px
+
+	.media__block
+		&.media__block-party
+			margin-left: 20%
+	/*----------------end------------------*/
+
+	/*-----------Contact page-------------*/
+	.contact__block
+		float: right
+		width: 510px
+		margin: 62px -20px 0 45%
+		padding: 45px 0 25px 20px
+		background: rgba(0, 0, 0, 0.25)
+	/*---------------end------------------*/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.wrapper
+		height: 990px
+		background-position: 22% 0
+
+	#menu-mobile
+		width: 500px
+
+	.menu-mobile__inner
+		width: 500px
+		padding-right: 50px
+
+	#menu-mobile__close
+		right: 50px
+
+	.menu__list
+		margin: 53px 0 140px
+		li
+			a
+				height: 60px
+				line-height: 60px
+				margin: 0
+				font-size: 1.875em
+				border-bottom: 1px solid #bbbcbe
+		.list__title
+			font-weight: 700
+		.list__link
+			padding-left: 30px
+
+	.copyright__menu
+		display: none
+
+	.main__top
+		margin: 60px 0 0
+		float: right
+
+	.main__title
+		font-size: 6.25em
+
+	.main__prof
+		font-size: 3em
+		text-align: left
+
+	.main__calendare
+		width: 350px
+		bottom: 105px
+		text-align: right
+
+		.container
+			padding: 0
+
+	.calendare__title
+		margin-bottom: 25px
+		font-size: 2.5em
+
+	.calendare__list
+		float: right
+		li
+			float: none
+			display: inline-block
+			width: 210px
+			height: 60px
+			margin: -2px 0 0
+			line-height: 60px
+			border-top: 1px solid #fff
+			border-bottom: 1px solid #fff
+			cursor: pointer
+			&:before
+				display: none
+			&:hover
+				width: 250px
+				padding-left: 40px
+				background: url(../img/triangle.png) 0 0 no-repeat
+				background-size: 101% 100%
+				border: 1px solid transparent
+				// &:after
+				// 	right: 100%
+				// 	top: 50%
+				// 	border: solid transparent
+				// 	content: " "
+				// 	height: 0
+				// 	width: 0
+				// 	position: absolute
+				// 	pointer-events: none
+				// 	border-color: rgba(255, 255, 255, 0)
+				// 	border-right-color: #fff
+				// 	border-width: 31px
+				// 	margin-top: -31px
+				&:before
+					content: ' '
+					position: absolute
+					top: 0
+					left: 0
+					width: 100px
+					height: 60px
+				.data__title
+					color: #000
+				.data__count
+					display: block
+
+	.data__title
+		font-size: 1.5em
+		font-weight: 700
+
+	.data__count
+		display: none
+		position: absolute
+		top: -395%
+		left: -167px
+		.data__num
+			display: block
+			width: 166px
+			height: 166px
+			margin-bottom: 15px
+			border: 3px solid #fff
+			span
+				width: 150px
+				height: 150px
+				top: 5px
+				left: 5px
+				padding-top: 40px
+				font-size: 3.75em
+				color: #4a4c56
+				font-weight: 700
+				border-radius: 50%
+				background: #fff
+			&:hover
+				background-color: transparent
+				.event__block
+					display: none
+
+	footer
+		padding: 0
+		text-align: center
+
+	.copyright
+		float: none
+		display: block
+		margin-bottom: 25px
+		padding-top: 20px
+		font-size: 1.125em
+		border-top: 1px solid rgba(255, 255, 255, 0.4)
+		&:before
+			display: none
+
+	.footer__social
+		float: left
+		margin: 22px 0 0
+		clear: both
+		.fb
+			background-position: 0 -30px
+			width: 18px
+			height: 39px
+		.yt
+			background-position: -23px -30px
+			width: 39px
+			height: 38px
+		.inst
+			background-position: -72px -32px
+			width: 36px
+			height: 36px
+
+	.footer__contact
+		float: right
+		margin-bottom: 22px
+		a
+			font-size: 1.125em
+		&:before
+			display: none
+
+	.developer
+		font-size: 1.125em
+
+	/*------------About page--------------*/
+	.wrapper
+		&.wrapper__inner-about
+			height: 2000px
+			background-size: auto 1000px
+
+	.main__top
+		&.main__top-about
+			float: none
+
+	.about__block
+		float: right
+		width: 510px
+		padding: 0 20px
+		p
+			font-size: 20px
+			font-weight: normal
+			line-height: 30px
+	/*--------------end-------------------*/
+
+	/*------------Repertory page------------*/
+	.wrapper
+		&.wrapper__inner-repertory
+			height: 1950px
+			background-size: auto 975px
+
+	.repertory__block
+		float: right
+		width: 510px
+		margin-top: 25px
+		ul
+			li
+				font-size: 20px
+				line-height: 30px
+
+	.repertory__title
+		font-size: 30px
+		margin-right: 20px
+	/*---------------end-------------------*/
+
+	/*--------------Concert page-------------*/
+	.wrapper
+		&.wrapper__inner-concert
+			height: 2000px
+			background-size: auto 1000px
+
+	.concert__block
+		margin-top: 120px
+		text-align: center
+
+	.concert__item
+		display: inline-block
+		margin-bottom: 23px
+		text-align: left
+
+	.concert__form
+		width: 100%
+		margin-left: 0
+		input
+			width: 100%
+		.form__btn
+			width: 100%
+
+	.form__title
+		font-size: 30px
+
+	.bottom__overlay
+		display: none
+
+	.photo__dev
+		display: none
+	/*-----------------end-------------------*/
+
+	/*--------------Video page---------------*/
+	.wrapper
+		&.wrapper__inner-media
+			height: 2000px
+			background-position: 5% top
+			background-size: auto 1000px
+
+	.media__block
+		&.media__block-video
+			width: 100%
+
+	.video__item
+		display: block
+		margin: 0 auto 15px
+	/*-----------------end-------------------*/
+
+	/*-------------Photo page----------------*/
+	.media__block
+		&.media__block-photo
+			width: 100%
+			text-align: center
+
+	.photo__item
+		margin: 0 1px 1px
+	/*---------------end--------------------*/
+
+	/*-------------Audio page--------------*/
+	.wrapper
+		&.wrapper__inner-media
+			&.wrapper__inner-audio
+				height: 1200px
+				background-size: auto 1200px
+
+	.media__block
+		&.media__block-audio
+			width: 600px
+			margin: 50px auto 0
+	.audio__item
+		height: 100px
+
+	.mejs-controls
+		.mejs-time-rail
+			.mejs-time-total
+				width: 470px !important
+				height: 10px
+			.mejs-time-current
+				height: 10px
+
+	.mejs-controls
+		.mejs-play
+			button
+				width: 28px !important
+				height: 40px !important
+				background: url(../img/play-icon-2.png) 0 0 no-repeat !important
+		.mejs-pause
+			button
+				left: -5px !important
+				width: 30px !important
+				height: 40px !important
+				background: url(../img/pause-icon-2.png) 0 0 no-repeat !important
+
+	.mejs-container
+		.mejs-controls
+			.mejs-time
+				height: 26px !important
+				padding-left: 19px !important
+			.mejs-button
+				button
+					margin: -1px 3px !important
+			div
+				height: 26px !important
+				font-size: 24px !important
+
+	.mejs-button
+		&.mejs-volume-button
+			display: none !important
+
+	.mejs-controls
+		.mejs-horizontal-volume-slider
+			display: none !important
+	/*----------------end------------------*/
+
+	/*-------------Party page--------------*/
+	.wrapper
+		&.wrapper__inner-party
+			height: 3525px
+			background-size: auto 1175px
+
+	.main
+		&.main__party
+			text-align: right
+
+	.party__block
+		display: inline-block
+		width: 510px
+		margin-left: 0
+		text-align: left
+		p
+			font-size: 20px
+			line-height: 28px
+
+	.party__photo
+		margin-top: 30px
+		a
+			float: none
+			display: block
+			width: 100%
+			margin: 0 0 15px
+			&:last-child
+				display: none
+
+	.media__block
+		&.media__block-party
+			margin-left: 0
+			clear: both
+
+	.audio__item
+		&.audio__item-party
+			width: 600px
+			margin: 0 auto
+
+	.media__title
+		margin-bottom: 42px
+		text-align: right
+
+	.media__category
+		&.media__category-hidden
+			display: none
+
+	.category__title
+		font-size: 24px
+	/*----------------end------------------*/
+
+	/*-----------Contact page-------------*/
+	.wrapper
+		&.wrapper__inner-contact
+			height: 1715px
+			background-size: auto 1035px
+	.contact__item
+		a
+			margin-left: 70px
+		&.contact__item-mail
+			a
+				margin-left: 105px
+
+	.contact__social
+		text-align: center
+		a
+			float: left
+			width: 150px
+			height: 75px
+			margin: 0 10px 0 0
+			padding-top: 40px
+			border: 1px solid #fff
+			border-radius: 5px
+			transition: all .15s ease
+			&:hover
+				text-decoration: none
+				box-shadow: 0 0 10px #000
+			&:before
+				top: 8px
+				left: 57px
+		.fb__link
+			&:before
+				left: 65px
+
+	.contact__form
+		width: 470px
+		margin-top: 10px
+
+	.press__kit
+		text-align: center
+
+	.press__title
+		margin-bottom: 82px
+		text-align: right
+
+	.press__link
+		display: inline-block
+		&:before
+			top: -60px
+			left: 35px
+	/*---------------end------------------*/
+
+@media only screen and (max-width : 639px)
+	/*--------------Concert page------------*/
+	.concert__item
+		width: 100%
+
+	.concert__img
+		height: auto
+		img
+			width: 100%
+
+	.item__overlay
+		height: 105px
+		bottom: 5px
+		.address
+			display: block
+			margin-top: 10px
+	/*-----------------end------------------*/
+
+	/*-------------Photo page----------------*/
+	.wrapper
+		&.wrapper__inner-media
+			height: 2000px
+			background-size: auto 1000px
+
+	.photo__item
+		margin: 0 4px 5px
+		a
+			width: 240px
+			height: 163px
+	/*---------------end--------------------*/
+
+	/*-------------Audio page--------------*/
+	.media__block
+		&.media__block-audio
+			width: 500px
+
+	.mejs-controls
+		.mejs-time-rail
+			.mejs-time-total
+				width: 375px !important
+	/*----------------end------------------*/
+
+	/*-------------Party page--------------*/
+	.audio__item
+		&.audio__item-party
+			width: 500px
+	/*----------------end------------------*/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 540px)
+	.wrapper
+		height: 770px
+		background-position: 20% 0
+		background-size: inherit
+
+	#menu-mobile
+		width: 250px
+
+	.menu-mobile__inner
+		width: 250px
+		padding: 20px 20px 0
+
+	.menu__title
+		padding-bottom: 5px
+		font-size: 1.875em
+
+	#menu-mobile__close
+		top: 27px
+		right: 20px
+		background-size: 75%
+
+	.menu__list
+		margin: 10px 0 40px
+		li
+			a
+				height: 40px
+				line-height: 40px
+				font-size: 1.2em
+		.list__link
+			padding-left: 0
+
+	.change__lang
+		margin-right: 10%
+
+	.main__title
+		font-size: 3.750em
+
+	.main__prof
+		font-size: 1.5em
+		text-align: right
+
+	.main__top
+		margin-top: 15px
+
+	.calendare__title
+		margin-bottom: 15px
+		font-size: 1.5em
+
+	.main__calendare
+		width: 250px
+		bottom: 210px
+
+	.calendare__list
+		li
+			width: 130px
+			height: 40px
+			line-height: 40px
+			&:hover
+				padding-left: 30px
+				width: 160px
+
+	.data__count
+		top: -430%
+		left: -118px
+		.data__num
+			width: 116px
+			height: 116px
+			span
+				width: 100px
+				height: 100px
+				padding-top: 30px
+				font-size: 2.5em
+
+	.copyright
+		top: 0
+
+	.footer__social
+		float: none
+		display: block
+		margin: 15px 0 20px
+		a
+			margin: 0 15px
+
+	.footer__contact
+		float: none
+		display: block
+		text-align: center
+
+	.developer
+		font-size: 1em
+		color: #fff
+		a
+			font-size: 1em
+
+	/*------------About page--------------*/
+	.wrapper
+		&.wrapper__inner-about
+			height: 1660px
+			background-size: auto 830px
+
+	.about__block
+		width: 310px
+		margin-left: 0
+		p
+			font-size: 14px
+			line-height: 18px
+	/*--------------end-------------------*/
+
+	/*------------Repertory page------------*/
+	.wrapper
+		&.wrapper__inner-repertory
+			height: 1530px
+			background-size: auto 765px
+
+	.repertory__block
+		width: 310px
+		ul
+			li
+				font-size: 14px
+				line-height: 18px
+
+	.repertory__title
+		font-size: 24px
+	/*---------------end-------------------*/
+
+	/*---------------Concert page-----------*/
+	.wrapper
+		&.wrapper__inner-concert
+			height: 1150px
+			background-size: auto 575px
+
+	.concert__block
+		margin-top: 30px
+
+	.concert__item
+		width: 280px
+
+	.item__overlay
+		padding-top: 10px
+		span
+			margin-left: 30px
+			font-size: 12px
+			&:before
+				left: -25px
+
+	.concert__title
+		font-size: 15px
+
+	.concert__entry
+		font-size: 14px
+
+	.concert__form
+		margin-top: 20px
+		input
+			font-size: 16px
+			height: 40px
+		.form__btn
+			height: 40px
+
+	.form__title
+		margin-bottom: 16px
+		font-size: 15px
+	/*------------------end----------------*/
+
+	/*--------------Video page---------------*/
+	.wrapper
+		&.wrapper__inner-media
+			height: 1400px
+			background-position: 22% top
+			background-size: auto 700px
+
+	.video__item
+		display: block
+		margin: 0 auto 15px
+		width: 280px
+		text-align: center
+		height: auto
+	/*-----------------end-------------------*/
+
+	/*-------------Photo page----------------*/
+	.photo__item
+		margin: 0 4px 5px
+		a
+			width: 240px
+			height: 163px
+	/*---------------end--------------------*/
+
+	/*-------------Photo page----------------*/
+	.wrapper
+		&.wrapper__inner-media
+			height: 2300px
+			background-size: auto 1150px
+
+	.photo__item
+		margin: 0 4px 5px
+		a
+			width: 280px
+			height: 190px
+	/*---------------end--------------------*/
+
+	/*-------------Audio page--------------*/
+	.media__block
+		&.media__block-audio
+			width: 280px
+
+	.audio__title
+		font-size: 14px
+
+	.mejs-container
+		.mejs-controls
+			.mejs-time
+				margin-top: 5px !important
+				height: 19px !important
+				padding-left: 10px !important
+			div
+				font-size: 16px !important
+
+	.mejs-controls
+		.mejs-play
+			button
+				top: 6px
+				background-size: 20px !important
+		.mejs-pause
+			button
+				top: 8px
+				background-size: 20px !important
+		.mejs-time-rail
+			.mejs-time-total
+				width: 190px !important
+	/*----------------end------------------*/
+
+	/*-------------Party page--------------*/
+	.wrapper
+		&.wrapper__inner-party
+			height: 2790px
+			background-size: auto 930px
+			background-position: 43% top
+
+	.party__block
+		width: 310px
+		margin-top: 20px
+		span
+			margin-bottom: 10px
+			font-size: 16px
+		p
+			font-size: 14px
+			line-height: 20px
+
+	.party__photo
+		margin: 15px 0 5px
+		a
+			margin-bottom: 10px
+
+	.media__block
+		&.media__block-party
+			margin-top: 10px
+
+	.media__title
+		margin-bottom: 5px
+		font-size: 50px
+
+	.media__category
+		margin-bottom: 25px
+
+	.category__title
+		margin-top: 0
+		padding-bottom: 5px
+		font-size: 14px
+
+	.audio__item
+		&.audio__item-party
+			width: 280px
+	/*----------------end------------------*/
+
+	/*-----------Contact page-------------*/
+	.wrapper
+		&.wrapper__inner-contact
+			height: 1350px
+			background-size: auto 815px
+
+	.contact__block
+		width: 310px
+		margin-top: 15px
+		padding: 20px 20px 20px 20px
+
+	.contact__item
+		font-size: 0
+		a
+			margin: 0 0 10px 7px
+			font-size: 22px
+		&.contact__item-mail
+			a
+				margin-left: 10px
+
+	.contact__social
+		a
+			width: 70px
+			height: 70px
+			margin-right: 30px
+			font-size: 0
+			&:last-child
+				margin-right: 0
+			&:before
+				top: 17px
+				left: 19px
+		.fb__link
+			&:before
+				left: 27px
+
+	.contact__form
+		width: 270px
+		input
+			height: 40px
+			padding-left: 10px
+			font-size: 14px
+		textarea
+			height: 110px
+			padding-left: 10px
+			font-size: 14px
+		button
+			height: 40px
+
+	.form__title
+		&.form__title-contact
+			font-size: 18px
+
+	.press__title
+		margin-bottom: 70px
+		font-size: 50px
+
+	.press__link
+		display: inline-block
+		font-size: 18px
+		margin: 0 15px
+		&.press__link-two
+			&:before
+				left: 13px
+	/*---------------end-----------------*/

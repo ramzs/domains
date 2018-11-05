@@ -1,0 +1,539 @@
+@import "bourbon/bourbon"
+@import "vars.sass"
+@import "base.sass"
+
+.container
+	position: relative
+	width: 1240px
+	margin: 0 auto
+	padding: 0 20px
+
+.header__top
+	position: relative
+	text-align: right
+
+.header__logo
+	float: left
+	position: relative
+	top: 44px
+	a
+		font-size: 36px
+		font-weight: bold
+		color: $main-color
+		text-decoration: none
+		span
+			font-weight: 200
+
+.nav__menu
+	display: inline-block
+	vertical-align: middle
+.menu__list
+	display: table
+	li
+		display: table-cell
+		position: relative
+		padding: 0 12px
+		-webkit-transition: all .15s ease
+		-moz-transition: all .15s ease
+		-ms-transition: all .15s ease
+		-o-transition: all .15s ease
+		transition: all .15s ease
+		&:after
+			content: ' '
+			position: absolute
+			top: 65px
+			right: -1px
+			width: 1px
+			height: 20px
+			background: #e3e3e3
+		&:hover, &.active
+			background: $main-color
+			a
+				color: #fff
+		a
+			display: block
+			padding: 65px 0 62px
+			font-weight: 700
+			color: $main-color
+			text-transform: uppercase
+
+
+.header__search
+	display: inline-block
+	position: relative
+	margin: 0 12px
+	vertical-align: middle
+	input
+		display: none
+		position: absolute
+		bottom: -60px
+		right: 0
+		width: 661px
+		height: 50px
+		padding-left: 15px
+		font-size: 24px
+		outline: none
+		border: 1px solid #e3e3e3
+		border-radius: 3px
+	&.open
+		input
+			display: block
+
+.search__icon
+	display: block
+	width: 22px
+	height: 22px
+	background: url(../img/sprites.png) -38px 0 no-repeat
+
+.header__phone
+	position: absolute
+	top: 9px
+	right: 0
+	padding: 5px 20px 5px 15px
+	font-size: 20px
+	font-weight: 300
+	background: #fff
+	border-radius: 20px
+
+.header__slider
+	position: relative
+	.bx-wrapper
+		margin: 50px auto 0
+		.bx-viewport
+			height: 800px !important
+			left: 0
+			border: none
+			box-shadow: none
+			img
+				height: 800px !important
+
+.header__caption
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+
+.caption__block
+	padding-left: 65px
+	&:before
+		content: ' '
+		position: absolute
+		top: -56px
+		left: -980px
+		width: 1000px
+		height: 150px
+		background: #fff
+	h1
+		position: relative
+		margin: 55px 0 40px
+		font-size: 72px
+		font-weight: 600
+		color: #fff
+		line-height: 72px
+		text-transform: uppercase
+		&:after
+			content: ' '
+			position: absolute
+			bottom: -30px
+			left: 0
+			width: 350px
+			height: 8px
+			background: #fff
+
+.caption__list
+	margin-left: 30px
+	list-style-type: disc
+	li
+		position: relative
+		font-size: 30px
+		font-weight: 300
+		color: #fff
+
+.slider__count
+	position: absolute
+	bottom: 0
+	right: 190px
+	h3
+		display: block
+		position: relative
+		left: 10px
+		margin-bottom: 60px
+		font-size: 24px
+		font-weight: 700
+		color: #fff
+
+.bxcontrol
+	width: 120px
+	height: 60px
+	line-height: 60px
+	text-align: center
+	background: #fff
+
+.prevmove
+	display: inline-block
+	position: relative
+	top: 4px
+	left: -5px
+	.bx-prev
+		display: block
+		position: relative
+		width: 15px
+		height: 21px
+		z-index: 99
+		background: url(../img/sprites.png) 0 0 no-repeat
+
+.nextmove
+	display: inline-block
+	position: relative
+	top: 4px
+	right: -5px
+	.bx-next
+		display: block
+		position: relative
+		width: 15px
+		height: 21px
+		z-index: 99
+		background: url(../img/sprites.png) -19px 0 no-repeat
+
+.bxpagers
+	display: inline-block
+	font-size: 18px
+	font-weight: 200
+	color: #9c9c9c
+	&:first-letter
+		font-size: 30px
+
+.content
+	position: relative
+	width: 100%
+	background: #f8f8f8
+	&:before
+		content: ' '
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 1000px
+		height: 1250px
+		background: #fff
+
+.main
+	float: left
+	position: relative
+	width: 800px
+	margin-top: -195px
+	padding: 28px 35px 90px
+	background: #fff
+	z-index: 9
+	p
+		margin: 12px 0 0
+		font-size: 16px
+		font-weight: 300
+		line-height: 20px
+	.text__accent
+		margin-bottom: 18px
+		font-size: 18px
+		font-weight: 700
+
+.article__title
+	margin-bottom: 31px
+	font-size: 48px
+	line-height: 48px
+	font-weight: 200
+	&.article__title-second
+		margin-top: 67px
+
+.emblem__block
+	margin-top: 55px
+
+.emblem__item
+	float: left
+	margin: 0 38px 40px 0
+	text-align: center
+	&:nth-child(4n+4)
+		margin-right: 0
+.emblem__title
+	margin-top: 5px
+	line-height: 16px
+
+.emblem__link
+	color: $blue-text
+	text-decoration: underline
+
+.sidebar
+	float: right
+	width: 400px
+	padding: 40px 0 0 30px
+	background: #f8f8f8
+
+.sidebar__menu
+	position: relative
+	&:after
+		content: ' '
+		position: absolute
+		width: 450px
+		height: 8px
+		top: 0
+		left: -80px
+		background: $main-color
+	&:before
+		content: ' '
+		position: absolute
+		bottom: -22px
+		left: 0
+		width: 370px
+		height: 12px
+		background: url(../img/divider.png) 0 0 no-repeat
+	span
+		display: block
+		padding: 10px 0
+		margin-bottom: 10px
+		font-size: 36px
+		font-weight: 500
+		border-bottom: 1px solid $main-color
+	li
+		-webkit-transition: all .15s ease
+		-moz-transition: all .15s ease
+		-ms-transition: all .15s ease
+		-o-transition: all .15s ease
+		transition: all .15s ease
+		&:hover
+			background: $main-color
+			a
+				color: #fff
+		&.active
+			background: $main-color
+			a
+				color: #fff
+		a
+			display: block
+			padding: 5px 15px 5px
+			font-size: 16px
+			font-weight: bold
+			color: $main-color
+
+.sidebar__block
+	margin-top: 50px
+
+.block__items
+	margin-bottom: 30px
+	img
+		width: 100%
+	.item__name
+		display: block
+		margin: 10px 0
+		font-size: 18px
+		font-weight: 300
+		color: $red-text
+	.item__title
+		display: block
+		margin: 0 0 10px
+		font-size: 24px
+		line-height: 28px
+		font-weight: 700
+		color: $main-color
+	.item__descr
+		font-weight: 300
+
+.sidebar__link
+	display: block
+	width: 100%
+	height: 60px
+	font-size: 16px
+	font-weight: 300
+	line-height: 60px
+	text-align: center
+	color: $red-text
+	text-transform: uppercase
+	border: 1px solid $red-border
+	transition: all .15s ease
+	&:hover
+		color: #fff
+		background: $red-border
+
+.clients
+	padding: 20px 0 0
+	background: #fff
+
+.clients__text
+	float: left
+	width: 350px
+	margin-right: 65px
+	span
+		display: block
+		font-size: 18px
+		font-weight: 700
+
+.article__title
+	&.article__title-clients
+		margin-top: 20px
+		line-height: 38px
+
+.clients__logo
+	display: table
+	img
+		margin: 0 30px 35px 0
+
+.feedback
+	position: relative
+	.container
+		padding: 52px 0 55px
+		background: #f8f8f8
+		&:before
+			content: ' '
+			position: absolute
+			top: 0
+			left: -1000px
+			height: 100%
+			width: 1000px
+			background: #f8f8f8
+
+.feedback__block
+	width: 750px
+	margin: 0 auto
+
+.article__title
+	&.article__title-feedback
+		float: left
+		margin: 0 44px 0 0
+		line-height: 38px
+
+.feedback__title
+	font-size: 18px
+	font-weight: 700
+
+.feedback__form
+	margin-top: 85px
+	input
+		display: block
+		width: 100%
+		margin-bottom: 16px
+		font-size: 36px
+		outline: none
+		background-color: transparent
+		box-shadow: none
+		border: none
+		border-bottom: 1px solid #808184
+	textarea
+		width: 100%
+		height: 270px
+		font-size: 36px
+		outline: none
+		border: none
+		background-color: transparent
+		border-bottom: 1px solid #808184
+
+.form__button
+	display: block
+	position: relative
+	width: 350px
+	height: 60px
+	margin-top: 28px
+	padding-left: 50px
+	font-size: 30px
+	font-weight: 200
+	color: $red-text
+	outline: none
+	cursor: pointer
+	border-radius: 30px
+	border: 1px solid $red-border
+	background-color: transparent
+	transition: all .15s ease
+	&:before
+		content: ' '
+		position: absolute
+		top: 19px
+		left: 65px
+		width: 47px
+		height: 22px
+		background: url(../img/sprites.png) 0 -138px no-repeat
+	&:hover
+		box-shadow: 0 0 5px $red-border
+
+.contact__map
+	float: left
+	width: 50%
+	padding-right: 10px
+
+.contact__detail
+	float: left
+	width: 50%
+	height: 350px
+	padding-left: 117px
+
+.contact__list
+	li
+		display: block
+		position: relative
+		margin-bottom: 15px
+		font-size: 18px
+		font-weight: 700
+		i
+			display: inline-block
+			position: relative
+			top: 5px
+			left: 0
+			width: 19px
+			height: 30px
+			margin-right: 15px
+			background: url(../img/sprites.png) 0 -26px no-repeat
+	.phone, .phone-2
+		i
+			width: 26px
+			height: 26px
+			background: url(../img/sprites.png) 0 -60px no-repeat
+	.mail
+		i
+			top: 3px
+			width: 26px
+			height: 18px
+			background: url(../img/sprites.png) 0 -89px no-repeat
+
+footer
+	position: relative
+	height: 100px
+	text-align: center
+
+.header__logo-footer
+	float: left
+	top: 21px
+	a
+		font-weight: 700
+		color: #b2b6c4
+		span
+			font-weight: 200
+
+.copyright
+	display: inline-block
+	padding: 38px 0
+	font-size: 16px
+	font-weight: 300
+
+.developer
+	float: right
+	padding: 38px 0
+	font-weight: 300
+	a
+		color: $red-text
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	&:before
+		content: ' '
+		position: absolute
+		top: 2px
+		right: 20px
+		height: 2px
+		width: 600px
+		background: $main-color
+
+
+@import about.sass
+
+@import clients.sass
+
+@import contact.sass
+
+@import press.sass
+
+@import info.sass

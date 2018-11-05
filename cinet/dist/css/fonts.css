@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "pfdindisplaypro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PFDinDisplayProBold/PFDinDisplayProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinDisplayProBold/PFDinDisplayProBold.woff") format("woff"), url("../fonts/PFDinDisplayProBold/PFDinDisplayProBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "pfdindisplaypro";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PFDinDisplayProMedium/PFDinDisplayProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinDisplayProMedium/PFDinDisplayProMedium.woff") format("woff"), url("../fonts/PFDinDisplayProMedium/PFDinDisplayProMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "pfdindisplaypro";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/PFDinDisplayProRegular/PFDinDisplayProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PFDinDisplayProRegular/PFDinDisplayProRegular.woff") format("woff"), url("../fonts/PFDinDisplayProRegular/PFDinDisplayProRegular.ttf") format("truetype");
+}

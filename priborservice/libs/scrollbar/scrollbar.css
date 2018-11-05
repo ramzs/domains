@@ -1,0 +1,33 @@
+#licence {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+#licence ul {
+	width: 3000px;
+	height: 180px;
+}
+#licence li {
+	float: left;
+	width: 218px;
+	margin-right: 20px;
+	position: relative;
+	text-align: center;
+}
+#bar {
+	display: inline-block;
+	width: 95%;
+	height: 5px;
+	margin-top: 43px;
+	position: relative;
+	background-color: #dedfe3;
+}
+#knob {
+	top: -24px;
+	width: 59px;
+	height: 59px;
+	background-color: white;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background: url(../../img/ui-slider-handle.png) no-repeat;
+}

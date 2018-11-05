@@ -1,0 +1,28 @@
+/*-------------Blog-in page----------------*/
+.article {
+  margin-bottom: -16px;
+  padding: 25px 0 82px;
+  text-align: center;
+  background: #fcf7d3;
+}
+
+.article .pict__wrap {
+  width: 409px;
+  height: 409px;
+}
+
+.article .pict-stick {
+  top: 106px;
+  right: -170px;
+}
+
+.article .pict-stick__count {
+  top: 29px;
+}
+
+.article__text {
+  width: 88%;
+  margin: 22px auto 0;
+}
+
+/*-------------------end--------------------*/

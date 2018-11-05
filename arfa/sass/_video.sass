@@ -1,0 +1,45 @@
+@import "vars.sass"
+/*-----------------Video page----------------*/
+.wrapper
+	&.wrapper__inner-media
+		position: relative
+		height: 1200px
+		background: url(../img/media-bg.jpg) 31% top repeat-y
+
+.media__block
+	float: right
+	margin-top: 50px
+	text-align: right
+	&.media__block-video
+		width: 950px
+
+.video__item
+	display: inline-block
+	margin: 0 0 15px 15px
+	width: 440px
+	height: 300px
+	transition: all .15s ease
+	&:hover
+		box-shadow: 0 0 10px #000
+	a
+		display: inline-block
+		position: relative
+		outline: none
+		&:hover
+			&:before
+				opacity: 1
+		&:before
+			content: ' '
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			width: 36px
+			height: 40px
+			margin: auto
+			opacity: .6
+			background: url(../img/play-icon.png) 0 0 no-repeat
+		img
+			width: 100%
+/*--------------------end--------------------*/

@@ -1,0 +1,126 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-left-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -189px -35px;
+  width: 15px;
+  height: 35px;
+}
+.icon-arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: -189px -85px;
+  width: 7px;
+  height: 16px;
+}
+.icon-arrow-right-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -189px 0px;
+  width: 15px;
+  height: 35px;
+}
+.icon-arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: -196px -85px;
+  width: 7px;
+  height: 16px;
+}
+.icon-cart-add-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -97px -73px;
+  width: 40px;
+  height: 41px;
+}
+.icon-cart-add {
+  background-image: url(../img/sprite.png);
+  background-position: -149px 0px;
+  width: 40px;
+  height: 41px;
+}
+.icon-cart-btn {
+  background-image: url(../img/sprite.png);
+  background-position: -27px -131px;
+  width: 20px;
+  height: 21px;
+}
+.icon-cart-mob {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -73px;
+  width: 56px;
+  height: 58px;
+}
+.icon-cart-white {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -131px;
+  width: 27px;
+  height: 29px;
+}
+.icon-cart {
+  background-image: url(../img/sprite.png);
+  background-position: -149px -75px;
+  width: 27px;
+  height: 29px;
+}
+.icon-mail-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -72px 0px;
+  width: 77px;
+  height: 54px;
+}
+.icon-mail {
+  background-image: url(../img/sprite.png);
+  background-position: -149px -104px;
+  width: 33px;
+  height: 23px;
+}
+.icon-phone-contact {
+  background-image: url(../img/sprite.png);
+  background-position: -149px -41px;
+  width: 34px;
+  height: 34px;
+}
+.icon-phone-icon-mob {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 72px;
+  height: 73px;
+}
+.icon-phone-icon {
+  background-image: url(../img/sprite.png);
+  background-position: -72px -54px;
+  width: 19px;
+  height: 19px;
+}
+.icon-search-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -56px -73px;
+  width: 41px;
+  height: 45px;
+}
+.icon-search {
+  background-image: url(../img/sprite.png);
+  background-position: -189px -70px;
+  width: 14px;
+  height: 15px;
+}
+.icon-triangle-menu {
+  background-image: url(../img/sprite.png);
+  background-position: -189px -101px;
+  width: 12px;
+  height: 6px;
+}

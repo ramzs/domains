@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "lato";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoRegular/LatoRegular.woff") format("woff"), url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/LatoBold/LatoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoBold/LatoBold.woff") format("woff"), url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "lato";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/LatoBlack/LatoBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoBlack/LatoBlack.woff") format("woff"), url("../fonts/LatoBlack/LatoBlack.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "antiqua";
+  font-style: normal;
+  font-weight: italic;
+  src: url("../fonts/BookAntiquaItalic/BookAntiquaItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/BookAntiquaItalic/BookAntiquaItalic.woff") format("woff"), url("../fonts/BookAntiquaItalic/BookAntiquaItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "aghelvetica";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/AGHelveticaRegular/AGHelveticaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/AGHelveticaRegular/AGHelveticaRegular.woff") format("woff"), url("../fonts/AGHelveticaRegular/AGHelveticaRegular.ttf") format("truetype");
+}

@@ -1,0 +1,1206 @@
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+body
+	position: relative
+	min-width: 320px
+	font-size: 16px
+	font-family: sans-serif
+	font-family: "OfficinaSans", sans-serif
+	line-height: 1.4
+	overflow-x: hidden
+	background: url(../img/bg-main.jpg)
+
+.overflow
+	overflow: hidden
+
+ul
+	padding: 0
+	margin: 0
+	list-style-type: none
+
+.hidden
+	display: none
+
+.clearfix
+	&:after,&:before
+		content: " "
+		display: table
+	&:after
+		clear: both
+
+h6
+	font-size: 14px
+
+h5
+	font-size: 16px
+
+h3
+	font-size: 20px
+
+$red-light: #ff0000
+$red-title: #e14b34
+$red-dark: #cd0019
+$text-gray: #7c7c7c
+$text-yellow: #de8d59
+$text-lightgray: #6f6f6f
+
+.container
+	padding-left: 20px
+	padding-right: 20px
+
+.wrapper
+	max-width: 1175px
+	margin: 0 auto
+	background: #FFF
+	-webkit-box-shadow: 0 0 22px -7px #000
+	box-shadow: 0 0 22px -7px #000
+
+/*-----------Mobile menu-------------*/
+.menu__overlay
+    display: none
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    z-index: 99
+
+.menu__header
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	width: 100%
+	height: 42px
+	z-index: 999
+	background: #fa8140
+	background: -moz-linear-gradient(top,  #fa8140 0%, #b22e4b 100%)
+	background: -webkit-linear-gradient(top,  #fa8140 0%,#b22e4b 100%)
+	background: linear-gradient(to bottom,  #fa8140 0%,#b22e4b 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa8140', endColorstr='#b22e4b',GradientType=0 )
+	span
+		display: block
+		margin: 12px 0 0 30px
+		font-size: 14px
+		color: #fff
+		text-transform: uppercase
+.menu__mobile
+	left: -100%
+	top: 42px
+	width: 270px
+	height: 100%
+	position: fixed
+	transition: left 0.2s ease-out
+	-webkit-transition: left 0.2s ease-out
+	-moz-transition: left 0.2s ease-out
+	z-index: 9999
+	&.mobile__open
+		left: 0
+	.menu__inner
+		width: 270px
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		padding: 0 0 100px
+		overflow-x: hidden
+		background: #fff
+	.menu__close
+	    display: block
+	    position: absolute
+	    width: 24px
+	    height: 24px
+	    top: -33px
+	    right: -35px
+	    cursor: pointer
+	    z-index: 999
+	    background: url(../img/close.png) no-repeat
+/*-------------end----------------*/
+
+.header-top
+	padding: 15px 0
+	height: 60px
+	background: #fa8140
+	background: -moz-linear-gradient(top,  #fa8140 0%, #b22e4b 100%)
+	background: -webkit-linear-gradient(top,  #fa8140 0%,#b22e4b 100%)
+	background: linear-gradient(to bottom,  #fa8140 0%,#b22e4b 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa8140', endColorstr='#b22e4b',GradientType=0 )
+	.container
+		height: 100%
+
+.header__search
+	position: relative
+	text-align: right
+
+.search__form
+	display: inline-block
+	width: 100%
+
+.search__input,
+.search__submit
+	display: inline-block
+	height: 27px
+	vertical-align: middle
+
+.search__input
+	max-width: 444px
+	width: 93%
+	padding-left: 15px
+	font: italic 14px "Calibri"
+	border: 1px solid #d7d7d7
+
+.search__submit
+	width: 31px
+	margin-left: -4px
+	border: none
+	background: url("../img/icon_search.png") 0 -1px no-repeat
+	&:hover
+		background-position: 0 -54px
+
+.header__login
+	position: relative
+	left: 10px
+
+.login
+	display: inline-block
+	color: #FFF
+	&:hover
+		color: #FFF
+
+.signup
+	@extend .login
+	position: relative
+	margin-left: 10px
+	&:before
+		content: "|"
+		position: absolute
+		top: 0
+		left: -9px
+		vertical-align: middle
+
+.header__cart
+	position: relative
+	top: -15px
+	right: 17px
+	width: 179px
+	height: 68px
+	padding: 11px 24px
+	text-align: right
+	-webkit-border-radius: 0 0 3px 3px
+	border-radius: 0 0 3px 3px
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3)
+	background: #fffae3
+	background: -moz-linear-gradient(top,  #fffae3 0%, #fff5c6 100%)
+	background: -webkit-linear-gradient(top,  #fffae3 0%,#fff5c6 100%)
+	background: linear-gradient(to bottom,  #fffae3 0%,#fff5c6 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffae3', endColorstr='#fff5c6',GradientType=0 )
+
+.cart__pict
+	position: relative
+	top: -12px
+	left: -5px
+
+.cart__total
+	display: inline-block
+	position: relative
+	text-align: left
+	line-height: 20px
+
+.cart__count
+	font-size: 13px
+	span
+		font-size: 17px
+		color: $red-light
+		font-weight: 500
+	.upper
+		font-size: 13px
+		color: #000
+		font-weight: 400
+		text-transform: uppercase
+
+.cart__price
+	font-size: 13px
+	text-transform: uppercase
+	span
+		font-size: 17px
+		color: $red-light
+		font-weight: 500
+
+.header__main
+	position: relative
+	height: 135px
+	&:after
+		content: " "
+		position: absolute
+		bottom: 5px
+		left: 0
+		right: 0
+		width: 99%
+		margin: 0 auto
+		border-bottom: 3px dashed #F5865A
+
+.header__logo
+	position: relative
+	margin-top: -82px
+	left: -10px
+
+.header__title
+	position: relative
+	margin-top: -10px
+	text-align: center
+	h1
+		margin: 0 0 0
+		font-family: "BrushTypeSemiBold"
+		color: $red-title
+	span
+		display: block
+		color: $text-gray
+
+.header__icon
+	position: relative
+	top: 17px
+	left: -15px
+	text-align: center
+
+.delivery__icon
+	display: inline-block
+	width: 45%
+	text-align: center
+	a
+		display: block
+		margin-top: 5px
+		font-size: 15px
+		font-weight: 500
+		color: $text-gray
+		text-transform: uppercase
+		&:hover
+			text-decoration: underline
+	img
+		display: inline-block
+		position: relative
+		margin-bottom: 5px
+		text-align: center
+
+.pay__icon
+	@extend .delivery__icon
+
+.header__contact
+	float: right
+
+.header__phone
+	position: relative
+	font-size: 15px
+	span
+		font-size: 18px
+		font-weight: 500
+		color: $red-light
+	&:before
+		content: " "
+		position: absolute
+		top: 4px
+		left: -25px
+		width: 15px
+		height: 16px
+		background: url("../img/sprites-contact.png") no-repeat
+
+.header__whatsapp
+	position: relative
+	font-size: 15px
+	span
+		font-size: 15px
+		font-weight: 500
+		color: $text-yellow
+	&:before
+		content: " "
+		position: absolute
+		top: 4px
+		left: -25px
+		width: 15px
+		height: 16px
+		background: url("../img/sprites-contact.png") -18px -2px no-repeat
+
+.header__email
+	@extend .header__whatsapp
+.header__skype
+	@extend .header__whatsapp
+	&:before
+		background-position: -35px 0
+
+.header__top-mob
+	display: none
+.menu__mob
+	float: left
+	position: relative
+	width: 180px
+	height: 43px
+	background: url(../img/logo-mob.png) 0 0 no-repeat
+	background-size: 180px 46px
+.menu__toggle
+	position: relative
+	top: 22px
+	left: 10px
+	height: 15px
+	padding-top: 18px
+	font-size: 11px
+	font-weight: 700
+	color: $red-light
+	background: url(../img/menu-icon.png) 0 0 no-repeat
+	&:hover
+		color: $red-light
+
+.top__icon
+	float: left
+	position: relative
+	top: 7px
+	width: 38px
+	height: 35px
+	padding-top: 5px
+	margin-left: 20px
+	text-align: center
+	border-radius: 5px 5px 0 0
+	&.active
+		background: #fff
+	i
+		display: block
+		position: relative
+		top: 2px
+		left: 8px
+		width: 22px
+		height: 22px
+.top__icon-search
+	&.active
+		i
+			background-position: -22px 0
+	i
+		background: url(../img/search-sprite.png) 0 0 no-repeat
+.top__icon-home
+	float: left
+	position: relative
+	top: 12px
+	margin-left: 20px
+
+.top__icon-cart
+	float: right
+	position: relative
+	margin-right: 10px
+	.cart__total-mob
+		position: absolute
+		top: 2px
+		left: 2px
+		width: 17px
+		height: 17px
+		font-size: 10px
+		color: $red-light
+		line-height: 18px
+		text-align: center
+		z-index: 5
+		border-radius: 50%
+		background: #fdf3b6
+	&.active
+		i
+			background-position: -28px 0
+	i
+		display: block
+		position: relative
+		top: 2px
+		left: 8px
+		width: 26px
+		height: 22px
+		background: url(../img/cart-sprite.png) 0 0 no-repeat
+
+.header__search-mob
+	display: none
+	position: relative
+	width: 100%
+	&.open
+		display: none
+	.search__input-mob
+		width: 100%
+		height: 40px
+		font-size: 14px
+		font-style: italic
+		padding-left: 10px
+		border-radius: 5px
+		border: 1px solid #b2b2b2
+	.search__submit-mob
+		position: absolute
+		top: 6px
+		right: 6px
+		width: 29px
+		height: 28px
+		border: none
+		background: url(../img/arrow-right-mob.png) 0 0 no-repeat
+
+.header__cart-mob
+	display: none
+	margin-top: 5px
+	text-align: right
+	&.open
+		display: none
+	.header__cart
+		float: left
+		width: auto
+		height: 30px
+		background: none
+		.cart__total
+			margin-left: 25px
+.cart__btn
+	display: inline-block
+	width: 80px
+	height: 24px
+	font-size: 12px
+	color: #fff
+	text-transform: uppercase
+	border: none
+	border-radius: 3px
+	background: #ff5041
+.cart__link
+	display: inline-block
+	margin: 7px 10px 0 20px
+	font-size: 12px
+	color: #000
+	&:hover
+		color: #000
+
+
+.header__bottom
+	position: relative
+	width: 101%
+	left: -5px
+	background: url("../img/menu-bg.png") no-repeat
+	background-size: 100% 100%
+
+.header__menu
+	display: inline-block
+	li
+		display: table-cell
+		position: relative
+		padding: 0 5px
+		&:not(:last-child):after
+			content: " "
+			position: absolute
+			right: -2px
+			top: 9px
+			height: 33px
+			border-right: 2px dashed #fff
+		a
+			display: block
+			height: 50px
+			padding: 14px 35px
+			font: 22px "BrushTypeSemiBold"
+			color: #FFF
+			text-transform: uppercase
+			&:hover
+				text-decoration: none
+		&:first-child a
+			padding-left: 20px
+
+.header__social
+	float: right
+	li
+		display: inline-block
+		padding-top: 9px
+		a
+			display: block
+			width: 35px
+			height: 35px
+			background: url("../img/social-header-sprite.png") no-repeat
+		.social__fb
+			background-position: -37px 0
+		.social__vk
+			background-position: -75px 0
+
+.content
+	padding: 10px 0 0
+
+.sidebar
+	position: relative
+	height: 100%
+
+.sidebar__new
+	display: block
+	height: 40px
+	margin-bottom: 8px
+	padding-left: 15px
+	font-size: 18px
+	font-weight: 700
+	text-transform: uppercase
+	line-height: 40px
+	color: $red-dark
+	-webkit-border-radius: 3px
+	border-radius: 3px
+	border: 1px solid #e4e4e4
+	&:hover
+		color: $red-dark
+
+.filter
+	position: relative
+	padding: 0 0 15px
+	border: 1px solid #e4e4e4
+	-webkit-border-radius: 3px
+	border-radius: 3px
+
+.filter__title
+	position: relative
+	top: -1px
+	left: -28px
+	width: 111.5%
+	height: 55px
+	margin: 0
+	padding-left: 40px
+	color: #000
+	line-height: 50px
+	text-transform: uppercase
+	-webkit-border-radius: 3px 3px 3px 0
+	border-radius: 3px 3px 3px 0
+	background: url("../img/filter-title.png") no-repeat
+	-webkit-background-size: 100% 55px
+	-o-background-size: 100% 55px
+	background-size: 100% 55px
+
+.filter__reset
+	display: inline-block
+	margin-left: 15px
+	font-size: 14px
+	color: $text-gray
+	border-bottom: 1px dashed $text-gray
+	&:hover
+		color: $text-gray
+		border-bottom: 1px solid transparent
+		text-decoration: none
+
+.filter__item
+	margin-bottom: 20px
+	padding-left: 15px
+	&.filter__item-age
+		margin-top: 20px
+	span
+		display: block
+		margin-bottom: 6px
+		color: #000
+	label
+		display: block
+		font-weight: 500
+		font-style: italic
+		color: $text-gray
+
+.jq-checkbox
+	margin-right: 8px
+	box-shadow: none
+	border: none
+	background: url(../img/ok-icon.png) 0 -21px no-repeat
+	&.focused
+		border: none
+	&.checked
+		.jq-checkbox__div
+			position: relative
+			top: 0
+			left: 1px
+			width: 14px
+			height: 14px
+			margin: 0
+			box-shadow: none
+			background: url(../img/ok-icon.png) -1px -1px no-repeat
+
+.filter__item-price
+	input
+		float: left
+		width: 65px
+		height: 30px
+		padding-left: 10px
+		font-style: normal
+		border: 1px solid #e4e4e4
+	label
+		display: inline-block
+		position: relative
+		height: 30px
+		line-height: 28px
+		input
+			margin: 0 7px 0 30px
+		&:before
+			content: ' '
+			position: absolute
+			top: 14px
+			left: 7px
+			width: 15px
+			height: 1px
+			background: #000
+
+.filter__btn
+	padding: 10px 0 0 15px
+	border-top: 1px solid #e4e4e4
+
+.btn__total
+	width: 90px
+	height: 35px
+	color: #fff
+	border: none
+	-webkit-border-radius: 3px
+	border-radius: 3px
+	background: #cc0e05
+	background: -moz-linear-gradient(top,  #e68520 0%, #cc0e05 100%)
+	background: -webkit-linear-gradient(top,  #e68520 0%,#cc0e05 100%)
+	background: linear-gradient(to bottom,  #e68520 0%,#cc0e05 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e68520', endColorstr='#cc0e05',GradientType=0 )
+	&:hover
+		background: -moz-linear-gradient(top,  #cc0e05  0%, #e68520 100%)
+		background: -webkit-linear-gradient(top,  #cc0e05 0%,#e68520 100%)
+		background: linear-gradient(to bottom,  #cc0e05 0%,#e68520 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0e05', endColorstr='#e68520',GradientType=0 )
+
+.filter__reset-btn
+	margin-left: 10px
+	font-size: 16px
+	border-bottom: none
+	&:hover
+		text-decoration: underline
+
+.catalog
+	margin-top: 10px
+	padding-bottom: 15px
+	border: 1px solid #e4e4e4
+	-webkit-border-radius: 3px
+	border-radius: 3px
+
+.catalog__title
+	color: #000
+	padding: 4px 0 10px 15px
+	text-transform: uppercase
+	border-bottom: 1px solid #e4e4e4
+
+.catalog__menu
+	margin-top: 15px
+	padding-left: 35px
+	a
+		color: $text-gray
+		line-height: 24px
+
+.sidebar__new-interes
+	margin-top: 10px
+	color: #000
+
+.full__link
+	display: none
+	position: relative
+	margin-top: 30px
+	padding-left: 35px
+	font-size: 14px
+	color: #000
+	text-decoration: underline
+	&:before
+		content: ' '
+		position: absolute
+		top: 3px
+		left: 0
+		width: 16px
+		height: 11px
+		background: url(../img/eye-icon.png) no-repeat
+	&:hover
+		color: #000
+		text-decoration: none
+
+.main
+	position: relative
+
+.main__slider
+	.bx-wrapper
+		margin-bottom: 15px
+		.bx-viewport
+			left: 0
+			border: none
+			-webkit-box-shadow: none
+			box-shadow: none
+			background: none
+		.bx-caption
+			height: 100%
+			bottom: 20px
+			background: none
+			.slider__title
+				position: absolute
+				top: 33px
+				left: 0
+				h3
+					display: inline-block
+					padding: 5px 63px 5px 30px
+					margin: 6px 0 0
+					font-size: 21px
+					font-weight: 700
+					color: #FFF
+					background: #b2a761
+				span
+					display: inline-block
+					padding: 0
+					font-size: 21px
+					font-family: "OfficinaSans", sans-serif
+					text-transform: uppercase
+		.bx-pager
+			bottom: 5px
+			padding-top: 0
+			&.bx-default-pager
+				a
+					width: 13px
+					height: 13px
+					-webkit-border-radius: 50%
+					border-radius: 50%
+					border: 1px solid #BAB6AD
+					background: #fff
+					&:hover
+						background: #E06618
+					&.active
+						background: #E06618
+		.bx-controls-direction
+			a
+				width: 36px
+				height: 61px
+				top: 46%
+				z-index: 99
+				background: url("../img/slide-arrow-sprite.png") no-repeat
+			.bx-next
+				background-position: -39px 0
+	.link__more
+		position: absolute
+		right: 15px
+		bottom: -5px
+		width: 140px
+		height: 45px
+		font-size: 18px
+		line-height: 45px
+		font-weight: 700
+		color: #FFF
+		text-align: center
+		text-transform: uppercase
+		background: #e06618
+		&:hover
+			text-decoration: none
+		i
+			top: 3px
+			right: -12px
+
+.main__banner
+	margin-bottom: 10px
+	img
+		width: 100%
+
+.catalog__btn
+		display: none
+		width: 100%
+		height: 36px
+		margin: 45px 0 25px
+		font-size: 14px
+		font-weight: 500
+		color: #fff
+		line-height: 36px
+		text-transform: uppercase
+		text-align: center
+		border-radius: 5px
+		background: #cc0e05
+		background: -moz-linear-gradient(top,  #e68520 0%, #cc0e05 100%)
+		background: -webkit-linear-gradient(top,  #e68520 0%,#cc0e05 100%)
+		background: linear-gradient(to bottom,  #e68520 0%,#cc0e05 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e68520', endColorstr='#cc0e05',GradientType=0 )
+		&:hover
+			color: #fff
+			text-decoration: none
+			background: -moz-linear-gradient(top,  #cc0e05  0%, #e68520 100%)
+			background: -webkit-linear-gradient(top,  #cc0e05 0%,#e68520 100%)
+			background: linear-gradient(to bottom,  #cc0e05 0%,#e68520 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0e05', endColorstr='#e68520',GradientType=0 )
+
+.carousel__title
+	position: relative
+	right: 0
+	display: block
+	width: 103.2%
+	height: 55px
+	margin-top: 20px
+	padding-left: 15px
+	line-height: 45px
+	text-transform: uppercase
+	background: url(../img/main-title-bg.png) no-repeat
+	-webkit-background-size: 100% 45px
+	-o-background-size: 100% 45px
+	background-size: 100% 45px
+
+.main__carousel
+	.bx-wrapper
+		margin-bottom: 0
+		.bx-viewport
+			left: 0
+			background: none
+			border: none
+			box-shadow: none
+		.bx-pager
+			display: none
+			&.bx-default-pager
+				a
+					width: 13px
+					height: 13px
+					-webkit-border-radius: 50%
+					border-radius: 50%
+					border: 1px solid #BAB6AD
+					background: #fff
+					&:hover
+						background: #E06618
+					&.active
+						background: #E06618
+		.bx-controls-direction
+			a
+				width: 20px
+				height: 30px
+				left: -20px
+				background: url(../img/carousel-arrow.png) 0 0 no-repeat
+			.bx-next
+				right: -23px
+				left: auto
+				background-position: -25px 0
+.carousel__item
+	float: left
+	position: relative
+	width: 100%
+	padding: 15px
+	border: 1px solid #e4e4e4
+	-webkit-border-radius: 3px
+	border-radius: 3px
+	.item__img
+		height: 212px
+		overflow: hidden
+	.item__stick
+		position: absolute
+		top: 30px
+		left: -1px
+		span
+			position: absolute
+			top: -2px
+			left: 35px
+			font-size: 25px
+			font-weight: 700
+			color: #fff
+			text-transform: uppercase
+	.item__descr
+		width: 80%
+		height: 65px
+		a
+			color: #000
+			h5
+				margin-bottom: 3px
+		i
+			display: block
+			color: $text-gray
+	.item__descr-news
+		width: 100%
+	.item__price
+		position: absolute
+		bottom: 8px
+		font-weight: 700
+		color: $red-light
+	.item__cart
+		position: absolute
+		bottom: 12px
+		right: 15px
+		width: 39px
+		height: 32px
+		background: url(../img/cart.png) 0 0 no-repeat
+
+.main__about
+	position: relative
+	margin-top: 40px
+	padding: 0 0 20px
+	overflow: hidden
+	.about__title
+		display: none
+		text-align: center
+		text-transform: uppercase
+	.about__overlay
+		display: none
+	.overlay__block
+		display: none
+		position: absolute
+		left: 0
+		right: 0
+		bottom: -20px
+		width: 100%
+		height: 101px
+		background: url(../img/about-overlay.png) 0 0 no-repeat
+		background-size: 100% 101px
+	.overlay__arrow
+		position: absolute
+		right: 15px
+		bottom: 5px
+		width: 20px
+		height: 12px
+		background: url(../img/arrow-accord.png) 0 -12px no-repeat
+
+.link__top
+	display: none
+	position: fixed
+	bottom: 250px
+	right: 10px
+	width: 30px
+	height: 30px
+	opacity: .6
+	z-index: 999
+	background: url(../img/scroll-top.png) 0 0 no-repeat
+	&:hover
+		opacity: 1
+	&.mPS2id-highlight
+		display: none
+
+.askfox
+	position: fixed
+	bottom: -1px
+	right: 70px
+	z-index: 9999
+	opacity: .6
+	&:hover
+		opacity: 1
+	.askfox__head
+		position: absolute
+		top: -95px
+		left: 70px
+		width: 125px
+		height: 110px
+		text-align: center
+		background: url(../img/ask-fox.png) 0 0 no-repeat
+		h5
+			display: inline-block
+			position: relative
+			top: 15px
+			left: 0
+			text-align: left
+			color: #fff
+			span
+				display: block
+				font-size: 21px
+				text-transform: uppercase
+
+.footer
+	position: relative
+	padding: 15px 0 20px
+	&:before
+		content: " "
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		width: 99%
+		margin: 0 auto
+		border-bottom: 3px dashed #F5865A
+
+.panel
+	margin-bottom: 0
+	background: none
+	border: none
+	box-shadow: none
+
+.list__block
+	float: left
+	position: relative
+	.block__title
+		font-weight: 500
+		color: #000
+		text-transform: uppercase
+		cursor: default
+		&:hover
+			color: #000
+			text-decoration: none
+	li
+		color: $text-gray
+		a
+			color: $text-gray
+
+.list__block-social
+	a
+		padding: 2px 0 0 35px
+		background: url(../img/social-foot-sprite.png) 0 0 no-repeat
+	.fb
+		background-position: 0 -25px
+	.inst
+		background-position: 0 -49px
+
+.footer__bottom
+	padding: 11px 10px
+	background: #fa8140
+	background: -moz-linear-gradient(top,  #fa8140 0%, #b22e4b 100%)
+	background: -webkit-linear-gradient(top,  #fa8140 0%, #b22e4b 100%)
+	background: linear-gradient(to bottom,  #fa8140 0%, #b22e4b 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa8140', endColorstr='#b22e4b',GradientType=0 )
+
+.footer__copyright
+	font-size: 14px
+	color: #fff
+	.copy__mob
+		display: none
+
+
+/*------------Modal window checkout----------*/
+.modal-dialog
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	width: 835px
+	margin: auto
+
+.close
+	position: absolute
+	top: 10px
+	right: 15px
+	font-size: 20px
+	z-index: 999
+
+.checkout__modal
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	height: 285px
+	padding: 15px 20px 20px
+	background: #fff
+	border-radius: 5px
+	h5
+		margin-left: 25px
+		text-transform: uppercase
+
+.checkout__form
+	float: left
+	width: 280px
+	padding: 10px 20px
+	border: 1px solid #e6e6e6
+	border-radius: 3px
+	label
+		width: 100%
+		span
+			padding-left: 5px
+		input
+			width: 100%
+			height: 25px
+			font-size: 14px
+			padding-left: 10px
+			border: 1px solid #ccc
+			border-radius: 3px
+	.remember__link
+		top: 0
+		left: 0
+		margin: 5px 0 10px
+	.remember__link-modal
+		position: relative
+	button
+		width: 100%
+		margin-bottom: 10px
+.checkout__block
+	float: right
+	width: 495px
+	padding: 15px 20px
+	border: 1px solid #ccc
+	border-radius: 3px
+	.checkout__more
+		display: inline-block
+		margin: 0 0 37px
+		color: $text-lightgray
+	.btn__total-modal
+		float: left
+		margin: 0 0 5px
+	.link__cont-modal
+		display: block
+		float: right
+		width: 225px
+		height: 40px
+		line-height: 40px
+		text-align: center
+		font-size: 18px
+		text-transform: uppercase
+		color: #FB0100
+		background: #fff0bb
+		border-radius: 3px
+
+.btn__total-quest
+	width: 130px
+
+.checkout__modal-quest
+	width: 745px
+	height: 290px
+
+.checkout__form-quest
+	width: 100%
+	label
+		float: left
+		width: 225px
+		input
+			margin-bottom: 8px
+	.btn__total-quest
+		display: block
+		width: 130px
+		margin: 15px auto
+
+.comment__quest
+	float: right
+	width: 400px
+	height: 80px
+	span
+		padding-left: 10px
+		font-weight: 500
+	textarea
+		width: 100%
+		height: 80px
+
+.quest__text
+	display: block
+	text-align: center
+	font-size: 14px
+	clear: both
+/*-------------------end---------------------*/
+
+@import catalog.sass
+
+@import tovar.sass
+
+@import cart.sass
+
+@import checkout.sass
+
+@import personal.sass
+
+@import registr.sass
+
+@import noregistr.sass
+
+@import delivery.sass
+
+@import about.sass
+
+@import contact.sass
+
+@import news.sass

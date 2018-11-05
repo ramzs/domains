@@ -1,0 +1,330 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-down {
+  background-image: url(../img/sprite.png);
+  background-position: -242px -86px;
+  width: 15px;
+  height: 8px;
+}
+.icon-arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: -242px -71px;
+  width: 10px;
+  height: 15px;
+}
+.icon-arrow-next {
+  background-image: url(../img/sprite.png);
+  background-position: -212px -40px;
+  width: 25px;
+  height: 84px;
+}
+.icon-arrow-prev {
+  background-image: url(../img/sprite.png);
+  background-position: -186px -40px;
+  width: 26px;
+  height: 85px;
+}
+.icon-arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: -252px -71px;
+  width: 10px;
+  height: 15px;
+}
+.icon-bread-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: -282px -101px;
+  width: 4px;
+  height: 7px;
+}
+.icon-btn-arrow-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -242px -51px;
+  width: 14px;
+  height: 20px;
+}
+.icon-btn-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: -277px -192px;
+  width: 8px;
+  height: 12px;
+}
+.icon-callback {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -102px;
+  width: 24px;
+  height: 26px;
+}
+.icon-cart-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -262px -172px;
+  width: 19px;
+  height: 20px;
+}
+.icon-cart-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -140px 0px;
+  width: 46px;
+  height: 50px;
+}
+.icon-cart-btn-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -170px -166px;
+  width: 37px;
+  height: 40px;
+}
+.icon-cart-btn {
+  background-image: url(../img/sprite.png);
+  background-position: -262px -24px;
+  width: 23px;
+  height: 25px;
+}
+.icon-cart-gray {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -206px;
+  width: 26px;
+  height: 26px;
+}
+.icon-cart-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -130px -166px;
+  width: 40px;
+  height: 40px;
+}
+.icon-cart-search {
+  background-image: url(../img/sprite.png);
+  background-position: -62px -206px;
+  width: 29px;
+  height: 30px;
+}
+.icon-cart-white {
+  background-image: url(../img/sprite.png);
+  background-position: -32px -206px;
+  width: 30px;
+  height: 30px;
+}
+.icon-catalog-left {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -76px;
+  width: 58px;
+  height: 90px;
+}
+.icon-catalog-right {
+  background-image: url(../img/sprite.png);
+  background-position: -82px 0px;
+  width: 58px;
+  height: 90px;
+}
+.icon-close {
+  background-image: url(../img/sprite.png);
+  background-position: -277px -204px;
+  width: 9px;
+  height: 9px;
+}
+.icon-close2 {
+  background-image: url(../img/sprite.png);
+  background-position: -140px -102px;
+  width: 41px;
+  height: 41px;
+}
+.icon-delete {
+  background-image: url(../img/sprite.png);
+  background-position: -242px -31px;
+  width: 16px;
+  height: 20px;
+}
+.icon-edit {
+  background-image: url(../img/sprite.png);
+  background-position: -119px -206px;
+  width: 26px;
+  height: 26px;
+}
+.icon-footer-callback {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -206px;
+  width: 32px;
+  height: 34px;
+}
+.icon-footer-phone-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -186px 0px;
+  width: 56px;
+  height: 40px;
+}
+.icon-footer-phone {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -240px;
+  width: 28px;
+  height: 20px;
+}
+.icon-login-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -48px -166px;
+  width: 42px;
+  height: 40px;
+}
+.icon-login-modal {
+  background-image: url(../img/sprite.png);
+  background-position: -82px -90px;
+  width: 50px;
+  height: 48px;
+}
+.icon-login {
+  background-image: url(../img/sprite.png);
+  background-position: -262px 0px;
+  width: 24px;
+  height: 24px;
+}
+.icon-map {
+  background-image: url(../img/sprite.png);
+  background-position: -262px -147px;
+  width: 17px;
+  height: 25px;
+}
+.icon-menu-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: -282px -108px;
+  width: 4px;
+  height: 7px;
+}
+.icon-name {
+  background-image: url(../img/sprite.png);
+  background-position: -197px -206px;
+  width: 26px;
+  height: 26px;
+}
+.icon-oneclick {
+  background-image: url(../img/sprite.png);
+  background-position: -82px -138px;
+  width: 38px;
+  height: 28px;
+}
+.icon-oneclick2 {
+  background-image: url(../img/sprite.png);
+  background-position: -186px -125px;
+  width: 54px;
+  height: 40px;
+}
+.icon-order {
+  background-image: url(../img/sprite.png);
+  background-position: -242px -94px;
+  width: 10px;
+  height: 10px;
+}
+.icon-pag-arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: -262px -216px;
+  width: 15px;
+  height: 24px;
+}
+.icon-pag-arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: -262px -192px;
+  width: 15px;
+  height: 24px;
+}
+.icon-pag-next {
+  background-image: url(../img/sprite.png);
+  background-position: -242px 0px;
+  width: 20px;
+  height: 31px;
+}
+.icon-pag-prev {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -128px;
+  width: 20px;
+  height: 31px;
+}
+.icon-phone-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -171px -206px;
+  width: 26px;
+  height: 26px;
+}
+.icon-phone-mob {
+  background-image: url(../img/sprite.png);
+  background-position: -90px -166px;
+  width: 40px;
+  height: 40px;
+}
+.icon-phone {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -76px;
+  width: 24px;
+  height: 26px;
+}
+.icon-present {
+  background-image: url(../img/sprite.png);
+  background-position: -91px -206px;
+  width: 28px;
+  height: 28px;
+}
+.icon-search-gray {
+  background-image: url(../img/sprite.png);
+  background-position: -207px -166px;
+  width: 32px;
+  height: 40px;
+}
+.icon-search-inner {
+  background-image: url(../img/sprite.png);
+  background-position: -262px -75px;
+  width: 22px;
+  height: 26px;
+}
+.icon-search {
+  background-image: url(../img/sprite.png);
+  background-position: -262px -49px;
+  width: 22px;
+  height: 26px;
+}
+.icon-sign {
+  background-image: url(../img/sprite.png);
+  background-position: -262px -101px;
+  width: 20px;
+  height: 26px;
+}
+.icon-signin-modal {
+  background-image: url(../img/sprite.png);
+  background-position: -140px -50px;
+  width: 40px;
+  height: 52px;
+}
+.icon-subscribe-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 82px;
+  height: 76px;
+}
+.icon-subscribe-mob {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -166px;
+  width: 48px;
+  height: 40px;
+}
+.icon-subscribe {
+  background-image: url(../img/sprite.png);
+  background-position: -262px -127px;
+  width: 24px;
+  height: 20px;
+}
+.icon-update {
+  background-image: url(../img/sprite.png);
+  background-position: -140px -143px;
+  width: 38px;
+  height: 22px;
+}

@@ -1,0 +1,77 @@
+/*---------------Press page-----------*/
+.press__page
+	padding-bottom: 54px
+.press__item
+	display: inline-block
+	position: relative
+	width: 570px
+	margin: 0 35px 38px 0
+	&:nth-child(even)
+		margin-right: 0
+	&:after
+		content: ' '
+		position: absolute
+		bottom: -15px
+		left: 0
+		width: 250px
+		height: 1px
+		background: #d6d6d6
+
+.press__date
+	display: block
+	font-size: 18px
+	font-weight: 300
+	color: #ff3b3b
+
+.press__title
+	display: block
+	margin: 3px 0 15px
+	font-size: 18px
+	font-weight: 800
+
+.press__descr
+	font-size: 18px
+	font-weight: 300
+	p
+		margin: 0
+
+.press__link
+	display: inline-block
+	position: relative
+	margin-top: 8px
+	font-size: 16px
+	color: #ff3b3b
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+	i
+		display: inline-block
+		position: relative
+		top: 7px
+		width: 21px
+		height: 21px
+		margin-left: 10px
+		background: url(../img/sprites.png) 0 -111px no-repeat
+
+.pagination
+	width: 100%
+	margin-top: 10px
+	overflow: hidden
+	li
+		float: left
+		margin-right: 10px
+		a
+			display: inline-block
+			font-size: 18px
+			color: $main-color
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+		&.active
+			a
+				position: relative
+				top: 1px
+				font-weight: 700
+				color: #ff3b3b
+				text-decoration: none
+/*-----------------end-----------------*/

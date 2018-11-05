@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "BebasNeue";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BebasNeueRegular/BebasNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeueRegular/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeueRegular/BebasNeueRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BloggerSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BloggerSans/BloggerSans.eot?#iefix") format("embedded-opentype"), url("../fonts/BloggerSans/BloggerSans.woff") format("woff"), url("../fonts/BloggerSans/BloggerSans.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BloggerSans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/BloggerSansBold/BloggerSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BloggerSansBold/BloggerSansBold.woff") format("woff"), url("../fonts/BloggerSansBold/BloggerSansBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BloggerSans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/BloggerSansMedium/BloggerSansMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/BloggerSansMedium/BloggerSansMedium.woff") format("woff"), url("../fonts/BloggerSansMedium/BloggerSansMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BloggerSans";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/BloggerSansItalic/BloggerSansItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/BloggerSansItalic/BloggerSansItalic.woff") format("woff"), url("../fonts/BloggerSansItalic/BloggerSansItalic.ttf") format("truetype");
+}
