@@ -1,0 +1,62 @@
+/*-------Base styles----------*/
+*::-webkit-input-placeholder
+	color: #c8c8c8
+	opacity: 1
+
+*:-moz-placeholder
+	color: #c8c8c8
+	opacity: 1
+
+*::-moz-placeholder
+	color: #c8c8c8
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #c8c8c8
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+body
+	font-family: $default-font
+	color: $main-color
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.4
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+
+*
+	box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+
+a
+	color: $main-color
+	text-decoration: none
+	transition: all .15s ease
+	&:hover
+		text-decoration: none
+	&:focus
+		outline: none
+		text-decoration: none
+
+p
+	margin: 0
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+.container
+	margin: 0 auto
+/*----------end---------------*/

@@ -1,0 +1,179 @@
+@import "vars"
+@import "sprite"
+@import "mixins"
+
+@media (min-width: 768px)
+	.container
+		width: 768px
+
+
+@media only screen and (max-width : 991px)
+	.container
+		padding: 0 15px
+
+	.section-form
+		&__range
+			.range-item
+				&_two
+					left: 108px
+				&_three
+					left: 177px
+				&_four
+					left: 220px
+			.marker
+				&_one
+					left: 176px
+				&_two
+					left: 369px
+
+
+@media only screen and (max-width : 767px)
+	.menu-mob
+	    display: block
+
+	.header
+		position: relative
+		height: auto
+		&-nav
+			position: absolute
+			top: 0
+			transform: none
+			left: -100%
+			right: auto
+			width: 335px
+			padding: 40px 15px 40px
+			transition: all .35s ease
+			z-index: 900
+			box-shadow: 0 0 15px rgba(#000, .9)
+			background: rgba(#fff, .9)
+			&:before, &:after
+				display: none
+			&.open
+				left: 0
+		&-menu
+			li
+				display: block
+				margin: 0 0 15px
+				a
+					font-size: 18px
+
+	.anketa
+		padding-bottom: 30px
+
+	.main
+		margin-top: 0
+		padding: 60px 0 30px
+		&:before
+			height: 106px
+			opacity: .5
+			background-size: auto 100%
+		&-title
+			font-size: 4em
+
+	.section-form
+		padding-bottom: 30px
+		&__title
+			margin-bottom: 30px
+			padding-top: 55px
+			font-size: 1.8em
+			&_about
+				margin-bottom: 5px
+		&__text
+			margin-bottom: 25px
+		&__in
+			> input
+				height: 50px
+				font-size: 1.5em
+			.jq-selectbox
+				&__select
+					height: 50px
+					font-size: 1.5em
+					&-text
+						line-height: 48px
+				&__trigger
+					&-arrow
+						top: 21px
+				&__dropdown
+					height: 260px
+		&__check
+			columns: 3
+			column-gap: 0
+			padding-bottom: 20px
+			label
+				font-size: 1em
+			.jq-checkbox
+				margin-right: 5px
+		&__range
+			display: none
+		&__radio
+			display: block
+
+	.btn-form
+		margin-top: 0
+	/**/
+
+@media only screen and (max-width : 575px)
+	.header
+		&-nav
+			width: 260px
+
+	.main
+		padding: 40px 0 20px
+		&:before
+			height: 85px
+
+	.section-form
+		padding-bottom: 20px
+		&__title
+			margin-bottom: 20px
+		&__text
+			font-size: 1em
+		&__in
+			> input
+				height: 40px
+				margin-bottom: 12px
+				font-size: 1.14em
+			textarea
+				height: 120px
+				padding: 10px 0 0 10px
+				font-size: 1.14em
+			.jq-selectbox
+				&__select
+					height: 40px
+					font-size: 1.14em
+					&-text
+						line-height: 38px
+				&__trigger
+					&-arrow
+						top: 16px
+						right: 10px
+				&__dropdown
+					height: 200px
+					padding: 15px 0 !important
+				li
+					margin-bottom: 2px
+					font-size: 1.14em
+		&__check
+			columns: 2
+
+	/**/
+
+@media only screen and (max-width : 480px)
+	.section-form
+		&__check
+			columns: 1
+			label
+				max-width: 180px
+				margin: 0 auto 12px
+			.jq-checkbox
+				margin-right: 10px
+		&__radio
+			label
+				float: none
+				width: 100%
+				padding-right: 0
+			span
+				font-size: 1em
+			.jq-radio
+				margin-right: 10px
+	/**/
