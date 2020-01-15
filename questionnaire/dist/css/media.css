@@ -1,0 +1,221 @@
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    padding: 0 15px;
+  }
+  .section-form__range .range-item_two {
+    left: 108px;
+  }
+  .section-form__range .range-item_three {
+    left: 177px;
+  }
+  .section-form__range .range-item_four {
+    left: 220px;
+  }
+  .section-form__range .marker_one {
+    left: 176px;
+  }
+  .section-form__range .marker_two {
+    left: 369px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-mob {
+    display: block;
+  }
+  .header {
+    position: relative;
+    height: auto;
+  }
+  .header-nav {
+    position: absolute;
+    top: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    left: -100%;
+    right: auto;
+    width: 335px;
+    padding: 40px 15px 40px;
+    -webkit-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+    z-index: 900;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .header-nav:before, .header-nav:after {
+    display: none;
+  }
+  .header-nav.open {
+    left: 0;
+  }
+  .header-menu li {
+    display: block;
+    margin: 0 0 15px;
+  }
+  .header-menu li a {
+    font-size: 18px;
+  }
+  .anketa {
+    padding-bottom: 30px;
+  }
+  .main {
+    margin-top: 0;
+    padding: 60px 0 30px;
+  }
+  .main:before {
+    height: 106px;
+    opacity: .5;
+    background-size: auto 100%;
+  }
+  .main-title {
+    font-size: 4em;
+  }
+  .section-form {
+    padding-bottom: 30px;
+  }
+  .section-form__title {
+    margin-bottom: 30px;
+    padding-top: 55px;
+    font-size: 1.8em;
+  }
+  .section-form__title_about {
+    margin-bottom: 5px;
+  }
+  .section-form__text {
+    margin-bottom: 25px;
+  }
+  .section-form__in > input {
+    height: 50px;
+    font-size: 1.5em;
+  }
+  .section-form__in .jq-selectbox__select {
+    height: 50px;
+    font-size: 1.5em;
+  }
+  .section-form__in .jq-selectbox__select-text {
+    line-height: 48px;
+  }
+  .section-form__in .jq-selectbox__trigger-arrow {
+    top: 21px;
+  }
+  .section-form__in .jq-selectbox__dropdown {
+    height: 260px;
+  }
+  .section-form__check {
+    -webkit-columns: 3;
+       -moz-columns: 3;
+            columns: 3;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    padding-bottom: 20px;
+  }
+  .section-form__check label {
+    font-size: 1em;
+  }
+  .section-form__check .jq-checkbox {
+    margin-right: 5px;
+  }
+  .section-form__range {
+    display: none;
+  }
+  .section-form__radio {
+    display: block;
+  }
+  .btn-form {
+    margin-top: 0;
+  }
+  /**/
+}
+
+@media only screen and (max-width: 575px) {
+  .header-nav {
+    width: 260px;
+  }
+  .main {
+    padding: 40px 0 20px;
+  }
+  .main:before {
+    height: 85px;
+  }
+  .section-form {
+    padding-bottom: 20px;
+  }
+  .section-form__title {
+    margin-bottom: 20px;
+  }
+  .section-form__text {
+    font-size: 1em;
+  }
+  .section-form__in > input {
+    height: 40px;
+    margin-bottom: 12px;
+    font-size: 1.14em;
+  }
+  .section-form__in textarea {
+    height: 120px;
+    padding: 10px 0 0 10px;
+    font-size: 1.14em;
+  }
+  .section-form__in .jq-selectbox__select {
+    height: 40px;
+    font-size: 1.14em;
+  }
+  .section-form__in .jq-selectbox__select-text {
+    line-height: 38px;
+  }
+  .section-form__in .jq-selectbox__trigger-arrow {
+    top: 16px;
+    right: 10px;
+  }
+  .section-form__in .jq-selectbox__dropdown {
+    height: 200px;
+    padding: 15px 0 !important;
+  }
+  .section-form__in .jq-selectbox li {
+    margin-bottom: 2px;
+    font-size: 1.14em;
+  }
+  .section-form__check {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+  }
+  /**/
+}
+
+@media only screen and (max-width: 480px) {
+  .section-form__check {
+    -webkit-columns: 1;
+       -moz-columns: 1;
+            columns: 1;
+  }
+  .section-form__check label {
+    max-width: 180px;
+    margin: 0 auto 12px;
+  }
+  .section-form__check .jq-checkbox {
+    margin-right: 10px;
+  }
+  .section-form__radio label {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+  }
+  .section-form__radio span {
+    font-size: 1em;
+  }
+  .section-form__radio .jq-radio {
+    margin-right: 10px;
+  }
+  /**/
+}
