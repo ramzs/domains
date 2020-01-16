@@ -70,34 +70,6 @@
 		text-align: center
 	&__in
 		text-align: center
-		> input
-			display: block
-			width: 100%
-			max-width: 530px
-			height: 60px
-			margin: 0 auto 25px
-			font-size: 1.71em
-			text-align: center
-			outline: none
-			transition: all .25s ease
-			border: 1px solid #e5e5e5
-			border-radius: 5px
-			&:focus
-				border-color: $accent
-		textarea
-			display: block
-			width: 100%
-			max-width: 530px
-			height: 180px
-			margin: 0 auto
-			padding: 17px 0 0 18px
-			font-size: 1.42em
-			outline: none
-			transition: all .25s ease
-			border: 1px solid #e5e5e5
-			border-radius: 5px
-			&:focus
-				border-color: $accent
 		.jq-selectbox
 			width: 100%
 			max-width: 320px
@@ -155,11 +127,7 @@
 				font: 300 1.42em/1 "roboto"
 				color: $accent
 				&:hover
-					// color: #1c1c1c
 					background: $accent
-				&.selected
-					// color: #1c1c1c
-					// background: none
 		.mCSB_inside>.mCSB_container
 			margin-right: 0
 			padding: 0 20px
@@ -175,6 +143,59 @@
 						background: #d9d9d9
 			.mCSB_draggerRail
 				background: none
+		textarea
+			display: block
+			width: 100%
+			max-width: 530px
+			height: 180px
+			margin: 0 auto
+			padding: 17px 0 0 18px
+			font-size: 1.42em
+			outline: none
+			transition: all .25s ease
+			border: 1px solid #e5e5e5
+			border-radius: 5px
+			&:focus
+				border-color: $accent
+	&__field
+		position: relative
+		max-width: 530px
+		height: 60px
+		margin: 0 auto 25px
+		&.active
+			span
+				top: 20%
+				font-size: 1em
+				color: #adadad
+		span
+			position: absolute
+			top: 50%
+			left: 0
+			right: 0
+			transform: translateY(-50%)
+			transition: all .25s ease
+			font-size: 1.71em
+			color: #c8c8c8
+			text-align: center
+		input
+			display: block
+			bottom: 12px
+			left: 0
+			right: 0
+			width: 100%
+			height: 100%
+			padding-top: 15px
+			font-size: 1.42em
+			color: #1c1c1c
+			text-align: center
+			outline: none
+			transition: all .25s ease
+			box-shadow: none
+			border: 1px solid #e5e5e5
+			border-radius: 5px
+			background: none
+			&:focus
+				border-color: $accent
 	&__check
 		columns: 3
 		column-gap: 65px

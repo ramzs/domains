@@ -46,6 +46,36 @@ $(function() {
 	        return nearest;
 	    }
 
+	    $('.section-form__field').on('click', function() {
+	    	var fieldIn = $(this).find('input');
+
+	    	$('.section-form__field').removeClass('active');
+			$(this).addClass('active');
+
+			fieldIn.focus();
+
+			$('.section-form__field').find('input').each(function(){
+				if (!$(this).val() || $(this).val() == '') {
+					$(this).parent().addClass('empty');
+				} else {
+					$(this).parent().removeClass('empty');
+					$(this).parent().addClass('active');
+				}
+			});
+		});
+		$('body').click(function(e) {
+		    if ($(e.target).closest(".section-form__field").length) return;
+		    $('.section-form__field').find('input').each(function(){
+				if (!$(this).val() || $(this).val() == '') {
+					$(this).parent().addClass('empty');
+					$(this).parent().removeClass('active');
+				} else {
+					$(this).parent().removeClass('empty');
+					$(this).parent().addClass('active');
+				}
+			});
+		});
+
 		//моб. меню
 		$('#btn-mob').on('click', function() {
 			$(this).toggleClass('active');
