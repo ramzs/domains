@@ -93,10 +93,6 @@
   .section-form__text {
     margin-bottom: 25px;
   }
-  .section-form__in > input {
-    height: 50px;
-    font-size: 1.5em;
-  }
   .section-form__in .jq-selectbox__select {
     height: 50px;
     font-size: 1.5em;
@@ -109,6 +105,12 @@
   }
   .section-form__in .jq-selectbox__dropdown {
     height: 260px;
+  }
+  .section-form__field {
+    height: 50px;
+  }
+  .section-form__field span {
+    font-size: 1.5em;
   }
   .section-form__check {
     -webkit-columns: 3;
@@ -156,11 +158,6 @@
   .section-form__text {
     font-size: 1em;
   }
-  .section-form__in > input {
-    height: 40px;
-    margin-bottom: 12px;
-    font-size: 1.14em;
-  }
   .section-form__in textarea {
     height: 120px;
     padding: 10px 0 0 10px;
@@ -184,6 +181,16 @@
   .section-form__in .jq-selectbox li {
     margin-bottom: 2px;
     font-size: 1.14em;
+  }
+  .section-form__field {
+    height: 40px;
+    margin-bottom: 12px;
+  }
+  .section-form__field span {
+    font-size: 1.14em;
+  }
+  .section-form__field input {
+    font-size: 1em;
   }
   .section-form__check {
     -webkit-columns: 2;

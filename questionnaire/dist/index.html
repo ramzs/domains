@@ -60,7 +60,10 @@
 				<div id="personal" class="section-form">
 					<h2 class="section-form__title section-form__title_personal">Личная информация</h2>
 					<div class="section-form__main section-form__in">
-						<input type="text" name="name" placeholder="ФИО">
+						<div class="section-form__field">
+							<input type="text" name="name">
+							<span>ФИО</span>
+						</div>
 						<select name="year" data-placeholder="Год рождения">
 							<option></option>
 							<option value="2020">2020</option>
@@ -135,9 +138,18 @@
 							<option value="1951">1951</option>
 							<option value="1950">1950</option>
 						</select>
-						<input type="text" name="location" placeholder="Место проживания">
-						<input type="text" name="skype" placeholder="Skype">
-						<input type="text" name="email" class="mail-in" placeholder="E-mail">
+						<div class="section-form__field">
+							<input type="text" name="location">
+							<span>Место проживания</span>
+						</div>
+						<div class="section-form__field">
+							<input type="text" name="skype">
+							<span>Skype</span>
+						</div>
+						<div class="section-form__field">
+							<input type="text" name="email" class="mail-in">
+							<span>E-mail</span>
+						</div>
 					</div>
 				</div>
 				<div id="exp" class="section-form">
